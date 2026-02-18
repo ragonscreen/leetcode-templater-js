@@ -1,0 +1,19 @@
+{
+        "name": "lc-test",
+        "module": "index.js",
+        "type": "module",
+        "private": true,
+        "devDependencies": {
+                "@biomejs/biome": "2.4.2",
+                "@types/bun": "latest"
+        },
+        "peerDependencies": {
+                "typescript": "^5"
+        },
+        "main": "./src/main.js",
+        "author": "ragonscreen",
+        "scripts": {
+                "dev": "bun --watch run ./src/main.js",
+                "fmt": "bunx biome check --write"
+        }
+}

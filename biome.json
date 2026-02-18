@@ -1,0 +1,192 @@
+{
+        "$schema": "https://biomejs.dev/schemas/2.4.2/schema.json",
+        "vcs": {
+                "enabled": true,
+                "clientKind": "git",
+                "useIgnoreFile": true,
+                "defaultBranch": "main"
+        },
+        "files": {
+                "ignoreUnknown": false
+        },
+        "formatter": {
+                "enabled": true,
+                "indentStyle": "space",
+                "attributePosition": "multiline",
+                "bracketSameLine": true,
+                "bracketSpacing": true,
+                "expand": "auto",
+                "formatWithErrors": true,
+                "indentWidth": 8,
+                "lineEnding": "lf",
+                "lineWidth": 80
+        },
+        "linter": {
+                "enabled": true,
+                "rules": {
+                        "recommended": true,
+                        "complexity": {
+                                "noExcessiveCognitiveComplexity": "warn",
+                                "noExcessiveLinesPerFunction": "warn",
+                                "noExcessiveNestedTestSuites": "error",
+                                "noForEach": "error",
+                                "noImplicitCoercions": "info",
+                                "noUselessCatchBinding": "warn",
+                                "noUselessStringConcat": "warn",
+                                "noUselessUndefined": "error",
+                                "noVoid": "error",
+                                "useMaxParams": "error",
+                                "useSimplifiedLogicExpression": "warn",
+                                "useWhile": "warn"
+                        },
+                        "correctness": {
+                                "noGlobalDirnameFilename": "error",
+                                "noProcessGlobal": "error",
+                                "noUndeclaredVariables": "error",
+                                "useImportExtensions": "error",
+                                "useJsonImportAttributes": "error",
+                                "useSingleJsDocAsterisk": "info"
+                        },
+                        "nursery": {
+                                "noEqualsToNull": "error",
+                                "noExcessiveLinesPerFile": {
+                                        "level": "warn",
+                                        "options": {
+                                                "maxLines": 250
+                                        }
+                                },
+                                "noFloatingClasses": "error",
+                                "noFloatingPromises": "error",
+                                "noForIn": "error",
+                                "noMultiAssign": "error",
+                                "noMultiStr": "error",
+                                "noNestedPromises": "error",
+                                "noProto": "error",
+                                "noReturnAssign": "error",
+                                "noRedundantDefaultExport": "error",
+                                "noShadow": "error",
+                                "noSyncScripts": "error",
+                                "useErrorCause": "error",
+                                "useDestructuring": "info",
+                                "useGlobalThis": "error",
+                                "useSpread": "error"
+                        },
+                        "performance": {
+                                "noAwaitInLoops": "error",
+                                "noBarrelFile": "error",
+                                "noDelete": "error",
+                                "noNamespaceImport": "error",
+                                "noReExportAll": "error"
+                        },
+                        "style": {
+                                "noCommonJs": "error",
+                                "noExportedImports": "error",
+                                "noMagicNumbers": "warn",
+                                "noNegationElse": "error",
+                                "noNestedTernary": "error",
+                                "noParameterAssign": "error",
+                                "noRestrictedGlobals": {
+                                        "level": "error",
+                                        "options": {
+                                                "deniedGlobals": {
+                                                        "error": "Do not use the global error identifier.",
+                                                        "event": "Do not use the global event identifier."
+                                                }
+                                        }
+                                },
+                                "noSubstr": "error",
+                                "noUselessElse": "error",
+                                "noYodaExpression": "error",
+                                "useAtIndex": "error",
+                                "useBlockStatements": "error",
+                                "useCollapsedElseIf": "error",
+                                "useCollapsedIf": "error",
+                                "useConsistentBuiltinInstantiation": "error",
+                                "useConsistentObjectDefinitions": "error",
+                                "useDefaultParameterLast": "error",
+                                "useDefaultSwitchClause": "warn",
+                                "useExportsLast": "error",
+                                "useForOf": "error",
+                                "useGroupedAccessorPairs": "error",
+                                "useNodeAssertStrict": "error",
+                                "useNumberNamespace": "error",
+                                "useNumericSeparators": "error",
+                                "useObjectSpread": "error",
+                                "useShorthandAssign": "error",
+                                "useSingleVarDeclarator": "error",
+                                "useSymbolDescription": "error",
+                                "useThrowNewError": "error",
+                                "useThrowOnlyError": "error",
+                                "useTrimStartEnd": "error"
+                        },
+                        "suspicious": {
+                                "noAlert": "error",
+                                "noBitwiseOperators": "warn",
+                                "noUnusedExpressions": "warn",
+                                "noConsole": {
+                                        "level": "warn",
+                                        "options": {
+                                                "allow": [
+                                                        "error",
+                                                        "info",
+                                                        "warn"
+                                                ]
+                                        }
+                                },
+                                "noConstantBinaryExpressions": "error",
+                                "noDuplicateTestHooks": "error",
+                                "noEmptyBlockStatements": "error",
+                                "noEmptySource": "error",
+                                "noExportsInTest": "error",
+                                "noFocusedTests": "error",
+                                "noMisplacedAssertion": "error",
+                                "noSkippedTests": "error",
+                                "noUnassignedVariables": "error",
+                                "noVar": "error",
+                                "useAwait": "error",
+                                "useErrorMessage": "error",
+                                "useNumberToFixedDigitsArgument": "error",
+                                "useStaticResponseMethods": "error"
+                        }
+                }
+        },
+        "javascript": {
+                "formatter": {
+                        "quoteStyle": "single",
+                        "enabled": true,
+                        "arrowParentheses": "always",
+                        "jsxQuoteStyle": "single",
+                        "operatorLinebreak": "after",
+                        "quoteProperties": "asNeeded",
+                        "semicolons": "always",
+                        "trailingCommas": "all"
+                }
+        },
+        "assist": {
+                "enabled": true,
+                "actions": {
+                        "source": {
+                                "organizeImports": "on"
+                        }
+                }
+        },
+        "html": {
+                "formatter": {
+                        "enabled": true,
+                        "selfCloseVoidElements": "always",
+                        "whitespaceSensitivity": "css"
+                }
+        },
+        "css": {
+                "formatter": {
+                        "enabled": true,
+                        "quoteStyle": "single"
+                }
+        },
+        "json": {
+                "formatter": {
+                        "enabled": true,
+                        "trailingCommas": "none"
+                }
+        }
+}
