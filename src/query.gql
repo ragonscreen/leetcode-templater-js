@@ -1,0 +1,94 @@
+query getProblemDetail($titleSlug: String!) {
+        question(titleSlug: $titleSlug) {
+                # ---CORE---
+                questionId
+                questionFrontendId
+                questionDetailUrl
+                questionTitle # or title
+                questionTitleSlug # or titleSlug
+                questionType
+                content
+                difficulty
+                categoryTitle
+                metaData
+
+                # ---TESTCASES---
+                exampleTestcaseList
+                # exampleTestcases
+                # sampleTestCase
+
+                # ---AC STATS---
+                acRate
+                stats
+
+                # ---TOPICS AND SIMILAR QUESTIONS---
+                similarQuestions
+                topicTags {
+                        name
+                        slug
+                        id
+                }
+                # companyTagStats
+                # isPaidOnly
+
+                # ---USER STATUS---
+                # status
+                # isLiked
+                # isFavor
+
+                # ---PUBLIC OPINION---
+                # likes
+                # dislikes
+                # freqBar
+                # hide
+
+                # ---CHALLENGES---
+                # nextChallenges {
+                #         questionId
+                #         questionFrontendId
+                #         title
+                #         titleSlug
+                # }
+                # nextChallengePairs
+
+                # ---HINTS AND SOLUTIONS---
+                # hints
+                # hasSolution
+                # hasVideoSolution
+                # solution {
+                #         id
+                #         title
+                #         content
+                #         contentTypeId
+                #         canSeeDetail
+                #         rating {
+                #                 count
+                #         }
+                # }
+
+                # ---CODE SNIPPETS---
+                # codeSnippets {
+                #         lang
+                #         code
+                # }
+
+                # ---JUDGE---
+                # judgerAvailable
+                # judgeType
+
+                # ---ENVIRONMENT---
+                # envInfo
+                # enableRunCode
+                # enableTestMode
+                # enableDebugger
+
+                # ---CONTRIBUTORS---
+                # contributors {
+                #         username
+                #         profileUrl
+                # }
+
+                # ---OTHER---
+                # randomQuestionUrl
+        }
+}
