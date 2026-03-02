@@ -1,9 +1,9 @@
 query getProblemDetail($titleSlug: String!) {
         question(titleSlug: $titleSlug) {
                 # ---CORE---
-                questionId
+                # questionId
                 questionFrontendId
-                questionDetailUrl
+                # questionDetailUrl
                 questionTitle # or title
                 questionTitleSlug # or titleSlug
                 questionType
@@ -18,8 +18,8 @@ query getProblemDetail($titleSlug: String!) {
                 # sampleTestCase
 
                 # ---AC STATS---
-                acRate
                 stats
+                # acRate
 
                 # ---TOPICS AND SIMILAR QUESTIONS---
                 similarQuestions

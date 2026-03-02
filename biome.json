@@ -64,7 +64,6 @@
                                 "noProto": "error",
                                 "noReturnAssign": "error",
                                 "noRedundantDefaultExport": "error",
-                                "noShadow": "error",
                                 "noSyncScripts": "error",
                                 "useErrorCause": "error",
                                 "useDestructuring": "info",
@@ -81,7 +80,6 @@
                         "style": {
                                 "noCommonJs": "error",
                                 "noExportedImports": "error",
-                                "noMagicNumbers": "warn",
                                 "noNegationElse": "error",
                                 "noNestedTernary": "error",
                                 "noParameterAssign": "error",
