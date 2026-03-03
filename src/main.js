@@ -56,6 +56,15 @@ const main = async () => {
                 throwIdentifierError();
         }
 
+        // console.dir(problemData, { depth: null });
+
+        console.log(
+                problemData.codeSnippets.find((e) => e.lang === 'TypeScript')
+                        ?.code,
+        );
+
+        return;
+
         const problemDataParsed = parseProblemData(problemData);
         const solution = buildSolutionFile(problemDataParsed);
 
@@ -63,3 +72,5 @@ const main = async () => {
 };
 
 await main();
+
+// TODO: parse constructor paramaters (only if metadata.systemdesign === true) from TS code snippet (unavailable in response.metadata)
