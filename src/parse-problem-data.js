@@ -43,7 +43,7 @@ const parseOutputs = (htmlContent) => {
                         const title = sectionTitle?.[i]
                                 ?.replace(reTags, '')
                                 ?.replace(reEscp, replaceEscp)
-                                ?.replace('Output:', 'output')
+                                ?.replace(/Output:*/i, 'output')
                                 ?.trim();
 
                         if (title !== 'output') {
@@ -90,6 +90,26 @@ const parseMetadata = (metaData) => {
         return metadataParsed;
 };
 
+const parseClassConstructor = (codeSnippets) => {
+        const snippet = codeSnippets.find((e) => e.lang === 'TypeScript').code;
+        const match = snippet.match(/constructor\((?<params>.+)\)/i);
+
+        if (!match) {
+                return [];
+        }
+
+        const params = match.groups.params.split(', ');
+
+        return params.map((e) => {
+                const [name, type] = e.split(': ');
+
+                return {
+                        name,
+                        type,
+                };
+        });
+};
+
 const parseProblemData = (problemData) => {
         const {
                 questionFrontendId,
@@ -104,6 +124,7 @@ const parseProblemData = (problemData) => {
                 metaData,
                 content,
                 exampleTestcaseList,
+                codeSnippets,
         } = problemData;
 
         const id = Number(questionFrontendId);
@@ -112,6 +133,9 @@ const parseProblemData = (problemData) => {
         const metaDataParsed = parseMetadata(metaData);
         const outputs = parseOutputs(content);
         const inputs = parseInputs(exampleTestcaseList);
+        metaDataParsed.classConstructorParams = metaDataParsed.systemdesign
+                ? parseClassConstructor(codeSnippets)
+                : null;
 
         return {
                 id,

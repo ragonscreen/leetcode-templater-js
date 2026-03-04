@@ -1,6 +1,7 @@
 import { readFile } from 'node:fs/promises';
 import { argv } from 'node:process';
-import { buildSolutionFile } from './build-solution-file.js';
+import { buildFileSolution, buildFileTest } from './build-problem-files.js';
+import { getFilePathSolution, getFilePathTest } from './get-file-path.js';
 import { parseProblemData } from './parse-problem-data.js';
 
 const parseProvidedIdentifier = () => {
@@ -56,21 +57,26 @@ const main = async () => {
                 throwIdentifierError();
         }
 
-        // console.dir(problemData, { depth: null });
-
-        console.log(
-                problemData.codeSnippets.find((e) => e.lang === 'TypeScript')
-                        ?.code,
-        );
-
-        return;
-
         const problemDataParsed = parseProblemData(problemData);
-        const solution = buildSolutionFile(problemDataParsed);
+        const filePathSolution = getFilePathSolution(problemDataParsed);
+        const filePathTest = getFilePathTest(problemDataParsed);
+        const solution = buildFileSolution(problemDataParsed);
+        const test = buildFileTest(problemDataParsed, filePathSolution);
 
-        // console.dir(problemDataParsed, { depth: null });
+        console.log(filePathSolution);
+        console.log('');
+        console.log(solution);
+        console.log('');
+        console.log(filePathTest);
+        console.log('');
+        console.log(test);
+
+        console.dir(problemDataParsed, { depth: null });
 };
 
 await main();
 
-// TODO: parse constructor paramaters (only if metadata.systemdesign === true) from TS code snippet (unavailable in response.metadata)
+// TODO: construct-string_test-class
+// FIXME: construct-string_test-function -- undefined vs null vs void when checking return values in output[i], use appropriate matcher (.toBeNull, .toBeUndefined)
+// TODO: no inputs/outputs for premium problems
+// TODO: consider adding explanations given for testcases under each testcase?
