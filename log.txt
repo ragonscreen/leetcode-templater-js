@@ -1,0 +1,13 @@
+Features:
+- identifiers
+- basic problems
+- system design (class based) problems
+- partial support for premium problems
+- generate solutions and test files
+
+TODO:
+- separate test function for in place problems (merge-sorted-array)
+- verify vitest and jest compatibility
+- non algorithm problems
+- function type preference
+- normalise default directory names

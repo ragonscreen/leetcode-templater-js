@@ -1,4 +1,3 @@
-import { constructStrTestImports } from './construct-string_test-imports.js';
 import { DEFAULTS } from './defaults.js';
 
 const { INDENT_WIDTH } = DEFAULTS;
@@ -6,7 +5,8 @@ const GAP = `${' '.repeat(INDENT_WIDTH)}`;
 
 const pascalToCamelCase = (str) => str[0].toLowerCase() + str.slice(1);
 
-const getClassMethodCalls = (inputs, outputs) => {
+const getClassMethodCalls = (metadata) => {
+        const { inputs, outputs } = metadata;
         const [_inputs] = inputs;
         const [_outputs] = outputs;
         const [inputMethods, inputParams] = _inputs;
@@ -37,7 +37,7 @@ const constructStrTestMethodParams = (params) => {
 
 const constructStrTestClassExpects = (className, methodCalls) => {
         const fnName = pascalToCamelCase(className);
-        let str = '\n';
+        let str = ';\n\n';
 
         for (let i = 1; i < methodCalls.length; i++) {
                 const { method, params, output } = methodCalls[i];
@@ -55,26 +55,13 @@ const constructStrTestClassExpects = (className, methodCalls) => {
         return str;
 };
 
-const constructStrTestClassTests = (problemData) => {
-        const { metadata, inputs, outputs } = problemData;
+const constructStringTestClass = (metadata) => {
         const { classname } = metadata;
         let str = constructStrTestClassDescribe(classname);
-        const methodCalls = getClassMethodCalls(inputs, outputs);
+        const methodCalls = getClassMethodCalls(metadata);
         const constructorParams = methodCalls[0].params;
         str += constructStrTestMethodParams(constructorParams);
-        str += ';\n';
         str += constructStrTestClassExpects(classname, methodCalls);
-
-        return str;
-};
-
-const constructStringTestClass = (problemData, filePathSolution) => {
-        let str = constructStrTestImports(
-                problemData.metadata.classname,
-                filePathSolution,
-        );
-
-        str += constructStrTestClassTests(problemData);
 
         return str;
 };

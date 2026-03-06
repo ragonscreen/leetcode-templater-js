@@ -20,5 +20,6 @@ query getProblemDetail($titleSlug: String!) {
                         lang
                         code
                 }
+                isPaidOnly
         }
 }

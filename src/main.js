@@ -63,17 +63,15 @@ const main = async () => {
         const solution = buildFileSolution(problemDataParsed);
         const test = buildFileTest(problemDataParsed, filePathSolution);
 
-        console.log(filePathSolution);
-        console.log('');
+        // console.log(filePathSolution);
+        // console.log('');
         console.log(solution);
         console.log('');
-        console.log(filePathTest);
-        console.log('');
+        // console.log(filePathTest);
+        // console.log('');
         console.log(test);
 
         // console.dir(problemDataParsed, { depth: null });
 };
 
 await main();
-
-// TODO: no inputs/outputs for premium problems

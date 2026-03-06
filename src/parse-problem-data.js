@@ -19,7 +19,12 @@ const parseSimilarQuestions = (similarQuestions) => {
 };
 
 const parseOutputs = (htmlContent) => {
-        const testcases = htmlContent.match(/<pre>.+?<\/pre>/gis);
+        if (!htmlContent) {
+                return [];
+        }
+
+        const replaceEscape = (e) => charMap[e];
+
         const charMap = {
                 '&amp;': '&',
                 '&lt;': '<',
@@ -28,21 +33,25 @@ const parseOutputs = (htmlContent) => {
                 '&#39;': `'`,
         };
 
-        const reTags = /<strong>|<\/strong>|<pre>|<\/pre>/gi;
-        const reEscp = /&amp;|&lt;|&gt;|&quot;|&#39/g;
-        const replaceEscp = (e) => charMap[e];
+        const re = {
+                testcases: /<pre>.+?<\/pre>|<div class="example-block">.+?<\/div>/gis,
+                tags: /<strong>|<\/strong>|<pre>|<\/pre>|<span class="example-io">|<\/span>/gi,
+                escape: /&amp;|&lt;|&gt;|&quot;|&#39;/gi,
+                title: /<strong>.+?<\/strong>/gis,
+                content: /<\/strong>.+?(<strong>|<\/pre>)|<span class="example-io">.+?<\/span>/gis,
+        };
+
+        const testcases = htmlContent.match(re.testcases);
         const outputs = [];
 
         for (const testcase of testcases) {
-                const sectionTitle = testcase.match(/<strong>.+?<\/strong>/gis);
-                const sectionContent = testcase.match(
-                        /<\/strong>.+?(<strong>|<\/pre>)/gis,
-                );
+                const sectionTitle = testcase.match(re.title);
+                const sectionContent = testcase.match(re.content);
 
                 for (let i = 0; i < sectionTitle?.length; i++) {
                         const title = sectionTitle?.[i]
-                                ?.replace(reTags, '')
-                                ?.replace(reEscp, replaceEscp)
+                                ?.replace(re.tags, '')
+                                ?.replace(re.escape, replaceEscape)
                                 ?.replace(/Output:*/i, 'output')
                                 ?.trim();
 
@@ -51,8 +60,8 @@ const parseOutputs = (htmlContent) => {
                         }
 
                         const content = sectionContent?.[i]
-                                ?.replace(reTags, '')
-                                ?.replace(reEscp, replaceEscp)
+                                ?.replace(re.tags, '')
+                                ?.replace(re.escape, replaceEscape)
                                 ?.trim();
 
                         outputs.push(JSON.parse(content));
@@ -67,10 +76,10 @@ const parseInputs = (exampleTestcaseList) => {
         const inputs = [];
 
         for (const testcase of exampleTestcaseList) {
+                const inputStrs = testcase.split('\n');
                 const input = [];
-                const inputStr = testcase.split('\n');
 
-                for (const str of inputStr) {
+                for (const str of inputStrs) {
                         input.push(JSON.parse(str));
                 }
 
@@ -81,16 +90,18 @@ const parseInputs = (exampleTestcaseList) => {
 };
 
 const parseMetadata = (metaData) => {
-        const metadataNormalised = metaData
-                .replace(/integer|float|double/g, 'number')
-                .replace(/list<(.+)>/, '$1[]');
-
-        const metadataParsed = JSON.parse(metadataNormalised);
-
-        return metadataParsed;
+        return JSON.parse(
+                metaData
+                        .replace(/integer|float|double/g, 'number')
+                        .replace(/list<(.+)>/g, '$1[]'),
+        );
 };
 
 const parseClassConstructor = (codeSnippets) => {
+        if (!codeSnippets) {
+                return [];
+        }
+
         const snippet = codeSnippets.find((e) => e.lang === 'TypeScript').code;
         const match = snippet.match(/constructor\((?<params>.+)\)/i);
 
@@ -98,15 +109,10 @@ const parseClassConstructor = (codeSnippets) => {
                 return [];
         }
 
-        const params = match.groups.params.split(', ');
-
-        return params.map((e) => {
+        return match.groups.params.split(', ').map((e) => {
                 const [name, type] = e.split(': ');
 
-                return {
-                        name,
-                        type,
-                };
+                return { name, type };
         });
 };
 
@@ -125,17 +131,22 @@ const parseProblemData = (problemData) => {
                 content,
                 exampleTestcaseList,
                 codeSnippets,
+                isPaidOnly,
         } = problemData;
+
+        if (isPaidOnly) {
+                console.warn(
+                        `Premium problem encountered. Outputs will be unavailable.`,
+                );
+        }
 
         const id = Number(questionFrontendId);
         const statsParsed = JSON.parse(stats);
         const similarQuestionsParsed = parseSimilarQuestions(similarQuestions);
-        const metaDataParsed = parseMetadata(metaData);
+        const metadataParsed = parseMetadata(metaData);
         const outputs = parseOutputs(content);
         const inputs = parseInputs(exampleTestcaseList);
-        metaDataParsed.classConstructorParams = metaDataParsed.systemdesign
-                ? parseClassConstructor(codeSnippets)
-                : null;
+        const classConstructorParams = parseClassConstructor(codeSnippets);
 
         return {
                 id,
@@ -147,9 +158,12 @@ const parseProblemData = (problemData) => {
                 stats: statsParsed,
                 topics,
                 similarQuestions: similarQuestionsParsed,
-                metadata: metaDataParsed,
-                inputs,
-                outputs,
+                metadata: {
+                        ...metadataParsed,
+                        classConstructorParams,
+                        inputs,
+                        outputs,
+                },
         };
 };
 

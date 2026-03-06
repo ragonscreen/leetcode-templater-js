@@ -6,7 +6,7 @@ const DEFAULTS = {
         DIR_TESTS: '/__tests__/problems',
         DIR_PROBLEMS_SOLVED: '/solved',
         DIR_PROBLEMS_WIP: '/wip',
-        DIR_PROBLEMS_SHELVED: '/shelved',
+        TEST_FRAMEWORK: 'bun:test',
 };
 
 export { DEFAULTS };

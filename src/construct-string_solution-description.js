@@ -24,14 +24,8 @@ const constructStrBasicDetails = (problemData) => {
  * Difficulty: ${difficulty}
  * Date: ${date}`;
 
-        if (!SOLUTION_AUTHOR_NAME) {
-                return str;
-        }
-
-        str += `\n * Author: ${SOLUTION_AUTHOR_NAME}`;
-
-        if (SOLUTION_AUTHOR_LINK) {
-                str += ` (${SOLUTION_AUTHOR_LINK})`;
+        if (SOLUTION_AUTHOR_NAME) {
+                str += `\n * Author: ${SOLUTION_AUTHOR_NAME}${SOLUTION_AUTHOR_LINK ? ` (${SOLUTION_AUTHOR_LINK})` : ''}`;
         }
 
         return str;
@@ -75,6 +69,8 @@ const constructStrSimilarProblems = (similarQuestions) => {
                 str += `\n * - ${question.titleSlug} (${question.difficulty})`;
         }
 
+        str += '\n */';
+
         return str;
 };
 
@@ -84,7 +80,6 @@ const constructStringSolutionDescription = (problemData) => {
         str += constructStrTopics(topics);
         str += constructStrStats(stats);
         str += constructStrSimilarProblems(similarQuestions);
-        str += '\n */';
 
         return str;
 };

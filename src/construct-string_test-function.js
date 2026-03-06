@@ -1,11 +1,10 @@
-import { constructStrTestImports } from './construct-string_test-imports.js';
 import { DEFAULTS } from './defaults.js';
 
 const { INDENT_WIDTH } = DEFAULTS;
 const GAP = `${' '.repeat(INDENT_WIDTH)}`;
 
-const getTestcases = (problemData) => {
-        const { metadata, inputs, outputs } = problemData;
+const getTestcases = (metadata) => {
+        const { inputs, outputs } = metadata;
         const testcases = [];
 
         for (let i = 0; i < inputs.length; i++) {
@@ -24,8 +23,8 @@ const getTestcases = (problemData) => {
         return testcases;
 };
 
-const constructStrTestTestcases = (problemData) => {
-        const testcases = getTestcases(problemData);
+const constructStrTestFunctionTestcases = (metadata) => {
+        const testcases = getTestcases(metadata);
         let str = '\n\nconst testcases = [\n';
 
         for (const testcase of testcases) {
@@ -47,27 +46,22 @@ const constructStrTestTestcases = (problemData) => {
         return str;
 };
 
-const constructStrTestFuncDescribe = (problemData) => {
-        const { metadata } = problemData;
+const constructStrTestFunctionDescribe = (metadata) => {
         const { name, params } = metadata;
         const paramNames = params.map((e) => e.name);
         const strParamNames = paramNames.join(', ');
 
         let str = `\n\ndescribe('${name}', () => {
 ${GAP}test.each(testcases)('${name}($${paramNames.join(', $')}`;
-        str += `) = $expected', ({ ${strParamNames}, expected }) => {
+        str += `) -> $expected', ({ ${strParamNames}, expected }) => {
 ${GAP + GAP}expect(${name}(${strParamNames})).toStrictEqual(expected);\n${GAP}});\n});`;
 
         return str;
 };
 
-const constructStringTestFunction = (problemData, filePathSolution) => {
-        let str = constructStrTestImports(
-                problemData.metadata.name,
-                filePathSolution,
-        );
-        str += constructStrTestTestcases(problemData);
-        str += constructStrTestFuncDescribe(problemData);
+const constructStringTestFunction = (metadata) => {
+        let str = constructStrTestFunctionTestcases(metadata);
+        str += constructStrTestFunctionDescribe(metadata);
 
         return str;
 };

@@ -1,43 +1,16 @@
-const constructStrFuncComment = (metadata) => {
-        const { params, return: returnValue } = metadata;
+const constructStringSolutionFunction = (metadata) => {
+        const { name, params, return: returnValue } = metadata;
 
-        let str = `\n\n/**
+        return `\n\n/**
  * Approach:
  * Time Complexity: O()
  * Space Complexity: O()
- *`;
+ * ${params.reduce((t, c) => `${t}\n * @param {${c.type}} ${c.name}`, '')}
+ * @return {${returnValue.type}}
+ */
+const ${name} = (${params.map((e) => e.name).join(', ')}) => {};
 
-        for (const param of params) {
-                str += `\n * @param {${param.type}} ${param.name}`;
-        }
-
-        str += `\n * @return {${returnValue.type}}\n */`;
-
-        return str;
-};
-
-const constructStrFuncMain = (metadata) => {
-        const { name, params } = metadata;
-        let str = `\nconst ${name} = (`;
-
-        for (let i = 0; i < params.length; i++) {
-                str += params[i].name;
-
-                if (i !== params.length - 1) {
-                        str += ', ';
-                }
-        }
-
-        str += `) => {};\n\nexport { ${name} };`;
-
-        return str;
-};
-
-const constructStringSolutionFunction = (metadata) => {
-        let str = constructStrFuncComment(metadata);
-        str += constructStrFuncMain(metadata);
-
-        return str;
+export { ${name} };`;
 };
 
 export { constructStringSolutionFunction };
