@@ -1,6 +1,7 @@
 import { constructStringSolutionClass } from './construct-string_solution-class.js';
 import { constructStringSolutionDescription } from './construct-string_solution-description.js';
 import { constructStringSolutionFunction } from './construct-string_solution-function.js';
+import { constructStringTestClass } from './construct-string_test-class.js';
 import { constructStringTestFunction } from './construct-string_test-function.js';
 
 const buildFileSolution = (problemData) => {
@@ -15,7 +16,7 @@ const buildFileSolution = (problemData) => {
 
 const buildFileTest = (problemData, filePathSolution) => {
         const testFile = problemData.metadata.systemdesign
-                ? null
+                ? constructStringTestClass(problemData, filePathSolution)
                 : constructStringTestFunction(problemData, filePathSolution);
 
         return testFile;

@@ -71,12 +71,9 @@ const main = async () => {
         console.log('');
         console.log(test);
 
-        console.dir(problemDataParsed, { depth: null });
+        // console.dir(problemDataParsed, { depth: null });
 };
 
 await main();
 
-// TODO: construct-string_test-class
-// FIXME: construct-string_test-function -- undefined vs null vs void when checking return values in output[i], use appropriate matcher (.toBeNull, .toBeUndefined)
 // TODO: no inputs/outputs for premium problems
-// TODO: consider adding explanations given for testcases under each testcase?

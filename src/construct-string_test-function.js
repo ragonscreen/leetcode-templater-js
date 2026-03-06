@@ -1,38 +1,62 @@
+import { constructStrTestImports } from './construct-string_test-imports.js';
 import { DEFAULTS } from './defaults.js';
 
 const { INDENT_WIDTH } = DEFAULTS;
+const GAP = `${' '.repeat(INDENT_WIDTH)}`;
 
-const constructStrTestImports = (fnName, filePathSolution) => {
-        return `import { describe, expect, test } from 'bun:test';\nimport { ${fnName} } from '${filePathSolution}';`;
-};
-
-const constructStrTestTests = (problemData, indentWidth) => {
+const getTestcases = (problemData) => {
         const { metadata, inputs, outputs } = problemData;
-        const { name } = metadata;
-        const gap = `${' '.repeat(indentWidth)}`;
-        let str = `\n\ndescribe('${name}', () => {\n`;
+        const testcases = [];
 
         for (let i = 0; i < inputs.length; i++) {
                 const input = inputs[i];
-                str += `${gap}test('default test ${i + 1}', () => {\n${gap + gap}expect(${name}(`;
+                const testcase = new Map([['expected', outputs[i]]]);
 
                 for (let j = 0; j < input.length; j++) {
-                        const param = input[j];
-                        str += JSON.stringify(param);
-
-                        if (j !== input.length - 1) {
-                                str += ', ';
-                        }
+                        const paramValue = input[j];
+                        const paramName = metadata.params[j].name;
+                        testcase.set(paramName, paramValue);
                 }
 
-                str += `)).toStrictEqual(${JSON.stringify(outputs[i])});\n${gap}});\n`;
-
-                if (i !== inputs.length - 1) {
-                        str += '\n';
-                }
+                testcases.push(testcase);
         }
 
-        str += '});';
+        return testcases;
+};
+
+const constructStrTestTestcases = (problemData) => {
+        const testcases = getTestcases(problemData);
+        let str = '\n\nconst testcases = [\n';
+
+        for (const testcase of testcases) {
+                str += `${GAP}{ `;
+
+                for (const [key, val] of testcase) {
+                        if (key === 'expected') {
+                                continue;
+                        }
+
+                        str += `${key}: ${JSON.stringify(val)}, `;
+                }
+
+                str += `expected: ${JSON.stringify(testcase.get('expected'))} },\n`;
+        }
+
+        str += '];';
+
+        return str;
+};
+
+const constructStrTestFuncDescribe = (problemData) => {
+        const { metadata } = problemData;
+        const { name, params } = metadata;
+        const paramNames = params.map((e) => e.name);
+        const strParamNames = paramNames.join(', ');
+
+        let str = `\n\ndescribe('${name}', () => {
+${GAP}test.each(testcases)('${name}($${paramNames.join(', $')}`;
+        str += `) = $expected', ({ ${strParamNames}, expected }) => {
+${GAP + GAP}expect(${name}(${strParamNames})).toStrictEqual(expected);\n${GAP}});\n});`;
 
         return str;
 };
@@ -42,8 +66,8 @@ const constructStringTestFunction = (problemData, filePathSolution) => {
                 problemData.metadata.name,
                 filePathSolution,
         );
-
-        str += constructStrTestTests(problemData, INDENT_WIDTH);
+        str += constructStrTestTestcases(problemData);
+        str += constructStrTestFuncDescribe(problemData);
 
         return str;
 };
