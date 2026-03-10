@@ -7,6 +7,7 @@ const DEFAULTS = {
         DIR_PROBLEMS_SOLVED: '/solved',
         DIR_PROBLEMS_WIP: '/wip',
         TEST_FRAMEWORK: 'bun:test',
+        USE_ARROW_FUNCTIONS: true,
 };
 
 export { DEFAULTS };

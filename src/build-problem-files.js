@@ -16,20 +16,20 @@ const buildFileSolution = (problemData) => {
         return solutionFile;
 };
 
-const buildFileTest = (problemData, pathSolution) => {
+const buildFileTest = (problemData, filePathSolution) => {
         const { metadata } = problemData;
         let testFile;
 
         if (metadata.systemdesign) {
                 testFile = constructStringTestImports(
                         metadata.classname,
-                        pathSolution,
+                        filePathSolution,
                 );
                 testFile += constructStringTestClass(metadata);
         } else {
                 testFile = constructStringTestImports(
                         metadata.name,
-                        pathSolution,
+                        filePathSolution,
                 );
                 testFile += constructStringTestFunction(metadata);
         }
