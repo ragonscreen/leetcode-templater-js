@@ -10,3 +10,4 @@ TODO:
 - verify vitest and jest compatibility
 - non algorithm problems
 - normalise default directory names
+- display warnings for non-function problems

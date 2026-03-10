@@ -64,12 +64,12 @@ const main = async () => {
         const test = buildFileTest(problemDataParsed, filePathSolution);
 
         // console.log(filePathSolution);
-        // console.log('');
+        console.log('');
         console.log(solution);
         console.log('');
         // console.log(filePathTest);
         // console.log('');
-        console.log(test);
+        // console.log(test);
 
         // console.dir(problemDataParsed, { depth: null });
 };

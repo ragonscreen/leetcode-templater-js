@@ -80,7 +80,11 @@ const parseInputs = (exampleTestcaseList) => {
                 const input = [];
 
                 for (const str of inputStrs) {
-                        input.push(JSON.parse(str));
+                        try {
+                                input.push(JSON.parse(str));
+                        } catch {
+                                input.push(str);
+                        }
                 }
 
                 inputs.push(input);
@@ -164,6 +168,7 @@ const parseProblemData = (problemData) => {
                         inputs,
                         outputs,
                 },
+                codeSnippets,
         };
 };
 
