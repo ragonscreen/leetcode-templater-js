@@ -46,15 +46,36 @@ const constructStrTestFunctionTestcases = (metadata) => {
         return str;
 };
 
+const constructStrTestFunctionExpect = (name, strParamNames) => {
+        return `\n${GAP + GAP}expect(${name}(${strParamNames})).toStrictEqual(expected);\n${GAP}});\n});`;
+};
+
+const constructStrTestFunctionExpectInPlace = (name, strParamNames) => {
+        return `\n${GAP + GAP}expect(${name}(${strParamNames})).toBeNil();
+
+${GAP + GAP}for (let i = 0; i < expected.length; i++) {
+${GAP + GAP + GAP}expect(${strParamNames.split(',')[0]}[i]).toStrictEqual(expected[i]);
+${GAP + GAP}}
+${GAP}});
+});`;
+};
+
 const constructStrTestFunctionDescribe = (metadata) => {
         const { name, params } = metadata;
         const paramNames = params.map((e) => e.name);
         const strParamNames = paramNames.join(', ');
 
         let str = `\n\ndescribe('${name}', () => {
-${GAP}test.each(testcases)('${name}($${paramNames.join(', $')}`;
-        str += `) -> $expected', ({ ${strParamNames}, expected }) => {
-${GAP + GAP}expect(${name}(${strParamNames})).toStrictEqual(expected);\n${GAP}});\n});`;
+${GAP}test.each(testcases)('${name}($${paramNames.join(', $')}) -> $expected', ({ ${strParamNames}, expected }) => {`;
+
+        if (metadata.return.type === 'void') {
+                str += constructStrTestFunctionExpectInPlace(
+                        name,
+                        strParamNames,
+                );
+        } else {
+                str += constructStrTestFunctionExpect(name, strParamNames);
+        }
 
         return str;
 };
