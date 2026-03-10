@@ -31,7 +31,7 @@ const constructStringSolutionJavaScript = (codeSnippets) => {
                         .replace(/^};$/m, '}');
         }
 
-        str = str.replace(/\{\s+\}/g, '{}');
+        str = str.replace(/\t/, ' '.repeat(2)).replace(/\{\s+\}/g, '{}');
 
         return str;
 };

@@ -4,10 +4,10 @@ Features:
 - system design (class based) problems
 - partial support for in-place problems (leetcode is arbitrary)
 - partial support for premium problems
+- partial support for javascript based problems
+- experimental support for javascript based premium problems
 - generate solutions and test files
 
 TODO:
 - verify vitest and jest compatibility
-- non algorithm problems
 - normalise default directory names
-- display warnings for non-function problems

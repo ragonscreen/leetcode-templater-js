@@ -8,6 +8,7 @@ const DEFAULTS = {
         DIR_PROBLEMS_WIP: '/wip',
         TEST_FRAMEWORK: 'bun:test',
         USE_ARROW_FUNCTIONS: true,
+        USE_ESM_SYNTAX: true,
 };
 
 export { DEFAULTS };

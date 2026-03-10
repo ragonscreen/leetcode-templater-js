@@ -50,16 +50,12 @@ const constructStrClassMethods = (methods) => {
         return str;
 };
 
-const constructStrClassExport = (className) => {
-        return `}\n\nexport { ${className} };`;
-};
-
 const constructStringSolutionClass = (metadata) => {
         const { classname, classConstructorParams, methods } = metadata;
         let str = constructStrClassMain(classname);
         str += constructStrClassConstructor(classConstructorParams);
         str += constructStrClassMethods(methods);
-        str += constructStrClassExport(classname);
+        str += '}';
 
         return str;
 };

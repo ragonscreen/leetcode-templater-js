@@ -21,8 +21,6 @@ const constructStringSolutionFunction = (metadata) => {
                 str += `function ${name}${strParams} {}`;
         }
 
-        str += `\n\nexport { ${name} };`;
-
         return str;
 };
 

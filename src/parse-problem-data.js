@@ -1,3 +1,5 @@
+import process from 'node:process';
+
 const parseSimilarQuestions = (similarQuestions) => {
         const questionsSortFn = (a, b) => {
                 const scores = {
@@ -120,6 +122,40 @@ const parseClassConstructor = (codeSnippets) => {
         });
 };
 
+const handleFatalErrors = (problemData) => {
+        const { categoryTitle } = problemData;
+        const isConcurrency = categoryTitle === 'Concurrency';
+        const isShell = categoryTitle === 'Shell';
+        const isDatabase = categoryTitle === 'Database';
+
+        if (isConcurrency || isShell || isDatabase) {
+                throw new Error(
+                        `${categoryTitle} based problems are not supported.`,
+                );
+        }
+};
+
+const displayWarnings = (problemData) => {
+        const { isPaidOnly, metadata } = problemData;
+        const { languages } = metadata;
+        const isJavaScript =
+                languages?.length === 2 && languages?.includes('javascript');
+
+        if (isPaidOnly && isJavaScript) {
+                console.warn(
+                        'JavaScript based premium problems are not fully supported. Solution template most likely contains errors. Outputs will be unavailable. User discretion advised.',
+                );
+        } else if (isPaidOnly) {
+                console.warn(
+                        'Premium problem detected. Outputs will be unavailable.',
+                );
+        } else if (isJavaScript) {
+                console.warn(
+                        'JavaScript based problem detected. Assertions will be unavailable. Please write your own in the respective test file.',
+                );
+        }
+};
+
 const parseProblemData = (problemData) => {
         const {
                 questionFrontendId,
@@ -138,12 +174,7 @@ const parseProblemData = (problemData) => {
                 isPaidOnly,
         } = problemData;
 
-        if (isPaidOnly) {
-                console.warn(
-                        `Premium problem encountered. Outputs will be unavailable.`,
-                );
-        }
-
+        handleFatalErrors(problemData);
         const id = Number(questionFrontendId);
         const statsParsed = JSON.parse(stats);
         const similarQuestionsParsed = parseSimilarQuestions(similarQuestions);
@@ -152,7 +183,7 @@ const parseProblemData = (problemData) => {
         const inputs = parseInputs(exampleTestcaseList);
         const classConstructorParams = parseClassConstructor(codeSnippets);
 
-        return {
+        const problemDataParsed = {
                 id,
                 title,
                 titleSlug,
@@ -169,7 +200,12 @@ const parseProblemData = (problemData) => {
                         outputs,
                 },
                 codeSnippets,
+                isPaidOnly,
         };
+
+        displayWarnings(problemDataParsed);
+
+        return problemDataParsed;
 };
 
 export { parseProblemData };

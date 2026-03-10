@@ -46,8 +46,24 @@ const constructStrTestFunctionTestcases = (metadata) => {
         return str;
 };
 
+const constructStrTestFunctionDescribeJavaScript = (metadata) => {
+        const { name, params } = metadata;
+        const paramNames = params.map((e) => e.name);
+        const strParamNames = paramNames.join(', ');
+
+        const str = `\n\ndescribe('${name}', () => {
+${GAP}test.each(testcases)('${name}($${paramNames.join(', $')}) -> $expected', ({ ${strParamNames}, expected }) => {
+${GAP + GAP}expect();
+${GAP}});
+});`;
+
+        return str;
+};
+
 const constructStrTestFunctionExpect = (name, strParamNames) => {
-        return `\n${GAP + GAP}expect(${name}(${strParamNames})).toStrictEqual(expected);\n${GAP}});\n});`;
+        return `\n${GAP + GAP}expect(${name}(${strParamNames})).toStrictEqual(expected);
+${GAP}});
+});`;
 };
 
 const constructStrTestFunctionExpectInPlace = (name, strParamNames) => {
@@ -81,8 +97,14 @@ ${GAP}test.each(testcases)('${name}($${paramNames.join(', $')}) -> $expected', (
 };
 
 const constructStringTestFunction = (metadata) => {
+        const { languages } = metadata;
         let str = constructStrTestFunctionTestcases(metadata);
-        str += constructStrTestFunctionDescribe(metadata);
+
+        if (languages?.length === 2 && languages?.includes('javascript')) {
+                str += constructStrTestFunctionDescribeJavaScript(metadata);
+        } else {
+                str += constructStrTestFunctionDescribe(metadata);
+        }
 
         return str;
 };
