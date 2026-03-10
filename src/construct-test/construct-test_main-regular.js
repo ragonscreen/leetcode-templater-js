@@ -1,7 +1,7 @@
 import { DEFAULTS } from '../defaults.js';
+import { gap } from '../utils.js';
 
-const { INDENT_WIDTH, TEST_FRAMEWORK } = DEFAULTS;
-const GAP = `${' '.repeat(INDENT_WIDTH)}`;
+const { TEST_FRAMEWORK } = DEFAULTS;
 
 const getTestcases = (metadata) => {
         const { inputs, outputs } = metadata;
@@ -28,7 +28,7 @@ const constructStringTestcases = (metadata) => {
         let str = '\n\nconst testcases = [\n';
 
         for (const testcase of testcases) {
-                str += `${GAP}{ `;
+                str += `${gap()}{ `;
 
                 for (const [key, val] of testcase) {
                         if (key === 'expected') {
@@ -52,17 +52,17 @@ const constructStringDescribeJavaScript = (metadata) => {
         const strParamNames = paramNames.join(', ');
 
         const str = `\n\ndescribe('${name}', () => {
-${GAP}test.each(testcases)('${name}($${paramNames.join(', $')}) -> $expected', ({ ${strParamNames}, expected }) => {
-${GAP + GAP}expect();
-${GAP}});
+${gap()}test.each(testcases)('${name}($${paramNames.join(', $')}) -> $expected', ({ ${strParamNames}, expected }) => {
+${gap(2)}expect();
+${gap()}});
 });`;
 
         return str;
 };
 
 const constructStringExpect = (name, strParamNames) => {
-        return `\n${GAP + GAP}expect(${name}(${strParamNames})).toStrictEqual(expected);
-${GAP}});
+        return `\n${gap(2)}expect(${name}(${strParamNames})).toStrictEqual(expected);
+${gap()}});
 });`;
 };
 
@@ -74,12 +74,12 @@ const constructStringExpectInPlace = (name, strParamNames) => {
                           ? 'toBeNullable'
                           : 'toBeUndefined';
 
-        return `\n${GAP + GAP}expect(${name}(${strParamNames})).${voidMatcher}();
+        return `\n${gap(2)}expect(${name}(${strParamNames})).${voidMatcher}();
 
-${GAP + GAP}for (let i = 0; i < expected.length; i++) {
-${GAP + GAP + GAP}expect(${strParamNames.split(',')[0]}[i]).toStrictEqual(expected[i]);
-${GAP + GAP}}
-${GAP}});
+${gap(2)}for (let i = 0; i < expected.length; i++) {
+${gap(3)}expect(${strParamNames.split(',')[0]}[i]).toStrictEqual(expected[i]);
+${gap(2)}}
+${gap()}});
 });`;
 };
 
@@ -89,7 +89,7 @@ const constructStringDescribe = (metadata) => {
         const strParamNames = paramNames.join(', ');
 
         let str = `\n\ndescribe('${name}', () => {
-${GAP}test.each(testcases)('${name}($${paramNames.join(', $')}) -> $expected', ({ ${strParamNames}, expected }) => {`;
+${gap()}test.each(testcases)('${name}($${paramNames.join(', $')}) -> $expected', ({ ${strParamNames}, expected }) => {`;
 
         if (metadata.return.type === 'void') {
                 str += constructStringExpectInPlace(name, strParamNames);

@@ -1,6 +1,7 @@
 const DEFAULTS = {
         SOLUTION_AUTHOR_NAME: 'ragonscreen',
         SOLUTION_AUTHOR_LINK: 'https://github.com/ragonscreen/',
+        INDENT_STYLE: 'spaces',
         INDENT_WIDTH: 8,
         DIR_SOLUTIONS: '/src/problems',
         DIR_TESTS: '/__tests__/problems',

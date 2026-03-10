@@ -1,7 +1,4 @@
-import { DEFAULTS } from '../defaults.js';
-
-const { INDENT_WIDTH } = DEFAULTS;
-const GAP = `${' '.repeat(INDENT_WIDTH)}`;
+import { gap } from '../utils.js';
 
 const constructStringMain = (className) => {
         return `\n\n/**
@@ -12,19 +9,19 @@ class ${className} {`;
 
 const constructStringMethod = (method) => {
         const { name, params, return: retval } = method;
-        let str = `\n${GAP}/**
-${GAP} * Time Complexity: O()
-${GAP} * Space Complexity: O()`;
+        let str = `\n${gap()}/**
+${gap()} * Time Complexity: O()
+${gap()} * Space Complexity: O()`;
 
         if (params.length) {
-                str += `\n${GAP} *${params.reduce((t, c) => `${t}\n${GAP} * @param {${c.type}} ${c.name}`, '')}`;
+                str += `\n${gap()} *${params.reduce((t, c) => `${t}\n${gap()} * @param {${c.type}} ${c.name}`, '')}`;
         }
 
         if (retval) {
-                str += `${params.length ? '' : `\n${GAP} *`}\n${GAP} * @return {${retval.type}}`;
+                str += `${params.length ? '' : `\n${gap()} *`}\n${gap()} * @return {${retval.type}}`;
         }
 
-        str += `\n${GAP} */\n${GAP}${name}(${params.map((e) => e.name).join(', ')}) {}\n`;
+        str += `\n${gap()} */\n${gap()}${name}(${params.map((e) => e.name).join(', ')}) {}\n`;
 
         return str;
 };

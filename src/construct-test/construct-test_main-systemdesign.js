@@ -1,7 +1,7 @@
 import { DEFAULTS } from '../defaults.js';
+import { gap } from '../utils.js';
 
-const { INDENT_WIDTH, TEST_FRAMEWORK } = DEFAULTS;
-const GAP = `${' '.repeat(INDENT_WIDTH)}`;
+const { TEST_FRAMEWORK } = DEFAULTS;
 
 const pascalToCamelCase = (str) => str[0].toLowerCase() + str.slice(1);
 
@@ -27,8 +27,8 @@ const constructStringDescribe = (className) => {
         const fnName = pascalToCamelCase(className);
 
         return `\n\ndescribe('${className}', () => {
-${GAP}test('default test 1', () => {
-${GAP + GAP}const ${fnName} = new ${className}(`;
+${gap()}test('default test 1', () => {
+${gap(2)}const ${fnName} = new ${className}(`;
 };
 
 const constructStringMethodParams = (params) => {
@@ -48,7 +48,7 @@ const constructStringExpects = (className, methodCalls) => {
 
         for (let i = 1; i < methodCalls.length; i++) {
                 const { method, params, output } = methodCalls[i];
-                str += `${GAP + GAP}expect(${fnName}.${method}(`;
+                str += `${gap(2)}expect(${fnName}.${method}(`;
                 str += constructStringMethodParams(params);
                 let matcher;
 
@@ -63,7 +63,7 @@ const constructStringExpects = (className, methodCalls) => {
                 str += `).${matcher};\n`;
         }
 
-        str += `${GAP}});\n});`;
+        str += `${gap()}});\n});`;
 
         return str;
 };

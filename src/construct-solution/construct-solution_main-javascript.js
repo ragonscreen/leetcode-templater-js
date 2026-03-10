@@ -1,7 +1,7 @@
 import { DEFAULTS } from '../defaults.js';
+import { gap } from '../utils.js';
 
-const { USE_ARROW_FUNCTIONS, INDENT_WIDTH } = DEFAULTS;
-const GAP = ' '.repeat(INDENT_WIDTH);
+const { USE_ARROW_FUNCTIONS } = DEFAULTS;
 
 const constructSolutionMainJavaScript = (codeSnippets) => {
         let str = codeSnippets.find((e) => e.lang === 'JavaScript').code;
@@ -15,7 +15,7 @@ const constructSolutionMainJavaScript = (codeSnippets) => {
  * Space Complexity: O()
  *`,
                 )
-                .replace(/^\s{4}(.+)/gm, `${GAP}$1`);
+                .replace(/^\s{4}(.+)/gm, `${gap()}$1`);
 
         if (USE_ARROW_FUNCTIONS) {
                 str = str
