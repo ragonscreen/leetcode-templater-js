@@ -20,14 +20,20 @@ const constructSolutionMainJavaScript = (codeSnippets) => {
         if (USE_ARROW_FUNCTIONS) {
                 str = str
                         .replace(
-                                /var (.+) = function\((.*)\)/i,
-                                'const $1 = ($2) =>',
+                                /var (.+) = (async )?function\((.*)\)/,
+                                'const $1 = $2($3) =>',
                         )
-                        .replace(/function (.+)\((.*)\)/, 'const $1 = ($2) =>')
+                        .replace(
+                                /(async )?function (.+)\((.*)\)/,
+                                'const $2 = $1($3) =>',
+                        )
                         .replace(/^};*$/m, '};');
         } else {
                 str = str
-                        .replace(/var (.+) = /i, 'function $1')
+                        .replace(
+                                /var (.+) = (async )?function/,
+                                '$2function $1',
+                        )
                         .replace(/^};$/m, '}');
         }
 

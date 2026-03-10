@@ -12,3 +12,4 @@ Features:
 
 TODO:
 - normalise default directory names
+- tabs vs spaces (getGap function)

@@ -69,8 +69,6 @@ const constructStringSimilarProblems = (similarQuestions) => {
                 str += `\n * - ${question.titleSlug} (${question.difficulty})`;
         }
 
-        str += '\n */';
-
         return str;
 };
 
@@ -80,6 +78,7 @@ const constructSolutionDescription = (problemData) => {
         str += constructStringTopics(topics);
         str += constructStringStats(stats);
         str += constructStringSimilarProblems(similarQuestions);
+        str += '\n */';
 
         return str;
 };

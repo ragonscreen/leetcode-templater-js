@@ -64,7 +64,12 @@ const parseOutputs = (htmlContent) => {
                                 ?.replace(re.escape, replaceEscape)
                                 ?.trim();
 
-                        outputs.push(JSON.parse(content));
+                        try {
+                                outputs.push(JSON.parse(content));
+                        } catch {
+                                outputs.push(content);
+                        }
+
                         break;
                 }
         }
