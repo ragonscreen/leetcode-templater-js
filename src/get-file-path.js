@@ -15,23 +15,25 @@ const getNumberBucket = (num, chunkSize = 200, startIndex = 1, padLen = 4) => {
 const getFilePathBase = (problemData) => {
         const { id, titleSlug } = problemData;
         const bucket = getNumberBucket(id);
-        const fileName = `${bucket}/${padNum(id, 4)}_${titleSlug}`;
+        const fileName = `/${bucket}/${padNum(id, 4)}_${titleSlug}`;
 
         return fileName;
 };
 
-const getFilePathSolution = (problemData) => {
-        const filePathBase = getFilePathBase(problemData);
-        const filePath = `${DIR_SOLUTIONS}${DIR_PROBLEMS_SOLVED}/${filePathBase}.js`;
-
-        return filePath;
+const getFilePathSolution = (filePathBase) => {
+        return `${DIR_SOLUTIONS}${DIR_PROBLEMS_SOLVED}${filePathBase}.js`;
 };
 
-const getFilePathTest = (problemData) => {
-        const filePathBase = getFilePathBase(problemData);
-        const filePath = `${DIR_TESTS}${DIR_PROBLEMS_SOLVED}/${filePathBase}.test.js`;
-
-        return filePath;
+const getFilePathTest = (filePathBase) => {
+        return `${DIR_TESTS}${DIR_PROBLEMS_SOLVED}${filePathBase}.test.js`;
 };
 
-export { getFilePathSolution, getFilePathTest };
+const getFilePaths = (problemData) => {
+        const filePathBase = getFilePathBase(problemData);
+        const filePathSolution = getFilePathSolution(filePathBase);
+        const filePathTest = getFilePathTest(filePathBase);
+
+        return { filePathSolution, filePathTest };
+};
+
+export { getFilePaths };

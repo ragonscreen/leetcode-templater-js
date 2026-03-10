@@ -32,16 +32,16 @@ const constructSolution = (problemData) => {
         return str;
 };
 
-const constructTest = (problemData, filePathSolution) => {
+const constructTest = (problemData, filePaths) => {
         const { metadata } = problemData;
         const { systemdesign, classname, name } = metadata;
         let testFile;
 
         if (systemdesign) {
-                testFile = constructTestImports(classname, filePathSolution);
+                testFile = constructTestImports(classname, filePaths);
                 testFile += constructTestMainSystemDesign(metadata);
         } else {
-                testFile = constructTestImports(name, filePathSolution);
+                testFile = constructTestImports(name, filePaths);
                 testFile += constructTestMainRegular(metadata);
         }
 

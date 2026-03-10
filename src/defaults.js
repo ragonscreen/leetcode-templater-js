@@ -10,6 +10,7 @@ const DEFAULTS = {
         TEST_FRAMEWORK: 'bun:test',
         USE_ARROW_FUNCTIONS: true,
         USE_ESM_SYNTAX: true,
+        USE_RELATIVE_IMPORTS: true,
 };
 
 export { DEFAULTS };

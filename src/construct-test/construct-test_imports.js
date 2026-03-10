@@ -1,8 +1,18 @@
 import { DEFAULTS } from '../defaults.js';
 
-const { TEST_FRAMEWORK, USE_ESM_SYNTAX } = DEFAULTS;
+const { TEST_FRAMEWORK, USE_ESM_SYNTAX, USE_RELATIVE_IMPORTS } = DEFAULTS;
 
-const constructTestImports = (fnName, filePathSolution) => {
+const constructTestImports = (fnName, filePaths) => {
+        console.log(filePaths);
+
+        const { filePathSolution, filePathTest } = filePaths;
+        const strRelative = '../'
+                .repeat(filePathTest.split('/').length - 2)
+                .slice(0, -1);
+        const _filePathSolution = USE_RELATIVE_IMPORTS
+                ? strRelative + filePathSolution
+                : filePathSolution;
+
         let str = '';
 
         if (TEST_FRAMEWORK !== 'jest') {
@@ -21,9 +31,9 @@ const constructTestImports = (fnName, filePathSolution) => {
         }
 
         if (USE_ESM_SYNTAX) {
-                str += `import { ${_fnName} } from '${filePathSolution}';`;
+                str += `import { ${_fnName} } from '${_filePathSolution}';`;
         } else {
-                str += `const { ${_fnName} } = require('${filePathSolution}');`;
+                str += `const { ${_fnName} } = require('${_filePathSolution}');`;
         }
 
         if (isInvalidFnName) {

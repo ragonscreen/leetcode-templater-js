@@ -12,4 +12,4 @@ Features:
 
 TODO:
 - normalise default directory names
-- tabs vs spaces (getGap function)
+- use arrays for directory names, join with path.join()
