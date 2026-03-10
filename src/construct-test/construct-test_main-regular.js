@@ -1,6 +1,6 @@
-import { DEFAULTS } from './defaults.js';
+import { DEFAULTS } from '../defaults.js';
 
-const { INDENT_WIDTH } = DEFAULTS;
+const { INDENT_WIDTH, TEST_FRAMEWORK } = DEFAULTS;
 const GAP = `${' '.repeat(INDENT_WIDTH)}`;
 
 const getTestcases = (metadata) => {
@@ -23,7 +23,7 @@ const getTestcases = (metadata) => {
         return testcases;
 };
 
-const constructStrTestFunctionTestcases = (metadata) => {
+const constructStringTestcases = (metadata) => {
         const testcases = getTestcases(metadata);
         let str = '\n\nconst testcases = [\n';
 
@@ -46,7 +46,7 @@ const constructStrTestFunctionTestcases = (metadata) => {
         return str;
 };
 
-const constructStrTestFunctionDescribeJavaScript = (metadata) => {
+const constructStringDescribeJavaScript = (metadata) => {
         const { name, params } = metadata;
         const paramNames = params.map((e) => e.name);
         const strParamNames = paramNames.join(', ');
@@ -60,14 +60,21 @@ ${GAP}});
         return str;
 };
 
-const constructStrTestFunctionExpect = (name, strParamNames) => {
+const constructStringExpect = (name, strParamNames) => {
         return `\n${GAP + GAP}expect(${name}(${strParamNames})).toStrictEqual(expected);
 ${GAP}});
 });`;
 };
 
-const constructStrTestFunctionExpectInPlace = (name, strParamNames) => {
-        return `\n${GAP + GAP}expect(${name}(${strParamNames})).toBeNil();
+const constructStringExpectInPlace = (name, strParamNames) => {
+        const voidMatcher =
+                TEST_FRAMEWORK === 'bun:test'
+                        ? 'toBeNil'
+                        : TEST_FRAMEWORK === 'vitest'
+                          ? 'toBeNullable'
+                          : 'toBeUndefined';
+
+        return `\n${GAP + GAP}expect(${name}(${strParamNames})).${voidMatcher}();
 
 ${GAP + GAP}for (let i = 0; i < expected.length; i++) {
 ${GAP + GAP + GAP}expect(${strParamNames.split(',')[0]}[i]).toStrictEqual(expected[i]);
@@ -76,7 +83,7 @@ ${GAP}});
 });`;
 };
 
-const constructStrTestFunctionDescribe = (metadata) => {
+const constructStringDescribe = (metadata) => {
         const { name, params } = metadata;
         const paramNames = params.map((e) => e.name);
         const strParamNames = paramNames.join(', ');
@@ -85,28 +92,25 @@ const constructStrTestFunctionDescribe = (metadata) => {
 ${GAP}test.each(testcases)('${name}($${paramNames.join(', $')}) -> $expected', ({ ${strParamNames}, expected }) => {`;
 
         if (metadata.return.type === 'void') {
-                str += constructStrTestFunctionExpectInPlace(
-                        name,
-                        strParamNames,
-                );
+                str += constructStringExpectInPlace(name, strParamNames);
         } else {
-                str += constructStrTestFunctionExpect(name, strParamNames);
+                str += constructStringExpect(name, strParamNames);
         }
 
         return str;
 };
 
-const constructStringTestFunction = (metadata) => {
+const constructTestMainRegular = (metadata) => {
         const { languages } = metadata;
-        let str = constructStrTestFunctionTestcases(metadata);
+        let str = constructStringTestcases(metadata);
 
         if (languages?.length === 2 && languages?.includes('javascript')) {
-                str += constructStrTestFunctionDescribeJavaScript(metadata);
+                str += constructStringDescribeJavaScript(metadata);
         } else {
-                str += constructStrTestFunctionDescribe(metadata);
+                str += constructStringDescribe(metadata);
         }
 
         return str;
 };
 
-export { constructStringTestFunction };
+export { constructTestMainRegular };

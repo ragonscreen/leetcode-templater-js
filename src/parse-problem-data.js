@@ -1,5 +1,3 @@
-import process from 'node:process';
-
 const parseSimilarQuestions = (similarQuestions) => {
         const questionsSortFn = (a, b) => {
                 const scores = {
@@ -137,7 +135,7 @@ const handleFatalErrors = (problemData) => {
 
 const displayWarnings = (problemData) => {
         const { isPaidOnly, metadata } = problemData;
-        const { languages } = metadata;
+        const { languages, systemdesign, return: retval } = metadata;
         const isJavaScript =
                 languages?.length === 2 && languages?.includes('javascript');
 
@@ -151,7 +149,13 @@ const displayWarnings = (problemData) => {
                 );
         } else if (isJavaScript) {
                 console.warn(
-                        'JavaScript based problem detected. Assertions will be unavailable. Please write your own in the respective test file.',
+                        'JavaScript based problem detected. Assertions will be unavailable. Please write your own in the appropriate test file.',
+                );
+        }
+
+        if (!systemdesign && retval.type === 'void') {
+                console.warn(
+                        'In-place problem detected. Please verify assertions in the appropriate test file.',
                 );
         }
 };

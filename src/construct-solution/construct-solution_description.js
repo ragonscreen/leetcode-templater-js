@@ -1,4 +1,4 @@
-import { DEFAULTS } from './defaults.js';
+import { DEFAULTS } from '../defaults.js';
 
 const { SOLUTION_AUTHOR_NAME, SOLUTION_AUTHOR_LINK } = DEFAULTS;
 
@@ -11,7 +11,7 @@ const getCurrentDate = () => {
         return `${y}-${m}-${d}`;
 };
 
-const constructStrBasicDetails = (problemData) => {
+const constructStringBasicDetails = (problemData) => {
         const { id, title, titleSlug, category, difficulty } = problemData;
         const idPadded = String(id).trim().padStart(4, '0');
         const date = getCurrentDate();
@@ -31,7 +31,7 @@ const constructStrBasicDetails = (problemData) => {
         return str;
 };
 
-const constructStrTopics = (topics) => {
+const constructStringTopics = (topics) => {
         if (!topics.length) {
                 return '';
         }
@@ -46,7 +46,7 @@ const constructStrTopics = (topics) => {
         return str;
 };
 
-const constructStrStats = (stats) => {
+const constructStringStats = (stats) => {
         const formatter = new Intl.NumberFormat('en-US');
         const totalAccepted = formatter.format(stats.totalAcceptedRaw);
         const totalSubmissions = formatter.format(stats.totalSubmissionRaw);
@@ -58,7 +58,7 @@ const constructStrStats = (stats) => {
  * - Acceptance Rate: ${stats.acRate}`;
 };
 
-const constructStrSimilarProblems = (similarQuestions) => {
+const constructStringSimilarProblems = (similarQuestions) => {
         if (!similarQuestions.length) {
                 return '';
         }
@@ -74,14 +74,14 @@ const constructStrSimilarProblems = (similarQuestions) => {
         return str;
 };
 
-const constructStringSolutionDescription = (problemData) => {
+const constructSolutionDescription = (problemData) => {
         const { topics, similarQuestions, stats } = problemData;
-        let str = constructStrBasicDetails(problemData);
-        str += constructStrTopics(topics);
-        str += constructStrStats(stats);
-        str += constructStrSimilarProblems(similarQuestions);
+        let str = constructStringBasicDetails(problemData);
+        str += constructStringTopics(topics);
+        str += constructStringStats(stats);
+        str += constructStringSimilarProblems(similarQuestions);
 
         return str;
 };
 
-export { constructStringSolutionDescription };
+export { constructSolutionDescription };

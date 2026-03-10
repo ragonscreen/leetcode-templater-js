@@ -1,8 +1,8 @@
-import { DEFAULTS } from './defaults.js';
+import { DEFAULTS } from '../defaults.js';
 
 const { USE_ESM_SYNTAX } = DEFAULTS;
 
-const constructStringSolutionExports = (fnName) => {
+const constructSolutionExports = (fnName) => {
         let str = '\n\n';
 
         if (USE_ESM_SYNTAX) {
@@ -16,4 +16,4 @@ const constructStringSolutionExports = (fnName) => {
         return str;
 };
 
-export { constructStringSolutionExports };
+export { constructSolutionExports };

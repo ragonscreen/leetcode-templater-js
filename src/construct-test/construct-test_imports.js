@@ -1,8 +1,8 @@
-import { DEFAULTS } from './defaults.js';
+import { DEFAULTS } from '../defaults.js';
 
 const { TEST_FRAMEWORK, USE_ESM_SYNTAX } = DEFAULTS;
 
-const constructStringTestImports = (fnName, filePathSolution) => {
+const constructTestImports = (fnName, filePathSolution) => {
         let str = '';
 
         if (TEST_FRAMEWORK !== 'jest') {
@@ -33,4 +33,4 @@ const constructStringTestImports = (fnName, filePathSolution) => {
         return str;
 };
 
-export { constructStringTestImports };
+export { constructTestImports };

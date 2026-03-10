@@ -7,7 +7,8 @@ Features:
 - partial support for javascript based problems
 - experimental support for javascript based premium problems
 - generate solutions and test files
+- cjs/esm syntax
+- bun, vitest, jest support
 
 TODO:
-- verify vitest and jest compatibility
 - normalise default directory names

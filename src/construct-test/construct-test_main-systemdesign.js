@@ -1,11 +1,11 @@
-import { DEFAULTS } from './defaults.js';
+import { DEFAULTS } from '../defaults.js';
 
-const { INDENT_WIDTH } = DEFAULTS;
+const { INDENT_WIDTH, TEST_FRAMEWORK } = DEFAULTS;
 const GAP = `${' '.repeat(INDENT_WIDTH)}`;
 
 const pascalToCamelCase = (str) => str[0].toLowerCase() + str.slice(1);
 
-const getClassMethodCalls = (metadata) => {
+const getMethodCalls = (metadata) => {
         const { inputs, outputs } = metadata;
         const [_inputs] = inputs;
         const [_outputs] = outputs;
@@ -23,7 +23,7 @@ const getClassMethodCalls = (metadata) => {
         return methodCalls;
 };
 
-const constructStrTestClassDescribe = (className) => {
+const constructStringDescribe = (className) => {
         const fnName = pascalToCamelCase(className);
 
         return `\n\ndescribe('${className}', () => {
@@ -31,22 +31,35 @@ ${GAP}test('default test 1', () => {
 ${GAP + GAP}const ${fnName} = new ${className}(`;
 };
 
-const constructStrTestMethodParams = (params) => {
+const constructStringMethodParams = (params) => {
         return `${params.map((e) => JSON.stringify(e)).join(', ')})`;
 };
 
-const constructStrTestClassExpects = (className, methodCalls) => {
+const constructStringExpects = (className, methodCalls) => {
+        const voidMatcher =
+                TEST_FRAMEWORK === 'bun:test'
+                        ? 'toBeNil'
+                        : TEST_FRAMEWORK === 'vitest'
+                          ? 'toBeNullable'
+                          : null;
+
         const fnName = pascalToCamelCase(className);
         let str = ';\n\n';
 
         for (let i = 1; i < methodCalls.length; i++) {
                 const { method, params, output } = methodCalls[i];
                 str += `${GAP + GAP}expect(${fnName}.${method}(`;
-                str += constructStrTestMethodParams(params);
-                const matcher =
-                        output === undefined || output === null
-                                ? 'toBeNil()'
-                                : `toStrictEqual(${JSON.stringify(output)})`;
+                str += constructStringMethodParams(params);
+                let matcher;
+
+                if (output === undefined) {
+                        matcher = `${voidMatcher ?? 'toBeUndefined'}()`;
+                } else if (output === null) {
+                        matcher = `${voidMatcher ?? 'toBeNull'}()`;
+                } else {
+                        matcher = `toStrictEqual(${JSON.stringify(output)})`;
+                }
+
                 str += `).${matcher};\n`;
         }
 
@@ -55,15 +68,15 @@ const constructStrTestClassExpects = (className, methodCalls) => {
         return str;
 };
 
-const constructStringTestClass = (metadata) => {
+const constructTestMainSystemDesign = (metadata) => {
         const { classname } = metadata;
-        let str = constructStrTestClassDescribe(classname);
-        const methodCalls = getClassMethodCalls(metadata);
+        let str = constructStringDescribe(classname);
+        const methodCalls = getMethodCalls(metadata);
         const constructorParams = methodCalls[0].params;
-        str += constructStrTestMethodParams(constructorParams);
-        str += constructStrTestClassExpects(classname, methodCalls);
+        str += constructStringMethodParams(constructorParams);
+        str += constructStringExpects(classname, methodCalls);
 
         return str;
 };
 
-export { constructStringTestClass };
+export { constructTestMainSystemDesign };

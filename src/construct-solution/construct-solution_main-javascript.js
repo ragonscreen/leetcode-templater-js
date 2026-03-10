@@ -1,9 +1,9 @@
-import { DEFAULTS } from './defaults.js';
+import { DEFAULTS } from '../defaults.js';
 
 const { USE_ARROW_FUNCTIONS, INDENT_WIDTH } = DEFAULTS;
 const GAP = ' '.repeat(INDENT_WIDTH);
 
-const constructStringSolutionJavaScript = (codeSnippets) => {
+const constructSolutionMainJavaScript = (codeSnippets) => {
         let str = codeSnippets.find((e) => e.lang === 'JavaScript').code;
 
         str = str
@@ -36,4 +36,4 @@ const constructStringSolutionJavaScript = (codeSnippets) => {
         return str;
 };
 
-export { constructStringSolutionJavaScript };
+export { constructSolutionMainJavaScript };

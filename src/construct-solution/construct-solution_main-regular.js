@@ -1,8 +1,8 @@
-import { DEFAULTS } from './defaults.js';
+import { DEFAULTS } from '../defaults.js';
 
 const { USE_ARROW_FUNCTIONS } = DEFAULTS;
 
-const constructStringSolutionFunction = (metadata) => {
+const constructSolutionMainRegular = (metadata) => {
         const { name, params, return: returnValue } = metadata;
 
         let str = `\n\n/**
@@ -24,4 +24,4 @@ const constructStringSolutionFunction = (metadata) => {
         return str;
 };
 
-export { constructStringSolutionFunction };
+export { constructSolutionMainRegular };

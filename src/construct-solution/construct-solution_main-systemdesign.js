@@ -1,16 +1,16 @@
-import { DEFAULTS } from './defaults.js';
+import { DEFAULTS } from '../defaults.js';
 
 const { INDENT_WIDTH } = DEFAULTS;
 const GAP = `${' '.repeat(INDENT_WIDTH)}`;
 
-const constructStrClassMain = (className) => {
+const constructStringMain = (className) => {
         return `\n\n/**
  * Approach:
  */
 class ${className} {`;
 };
 
-const constructStrClassMethod = (method) => {
+const constructStringMethod = (method) => {
         const { name, params, return: retval } = method;
         let str = `\n${GAP}/**
 ${GAP} * Time Complexity: O()
@@ -29,35 +29,35 @@ ${GAP} * Space Complexity: O()`;
         return str;
 };
 
-const constructStrClassConstructor = (classConstructorParams) => {
+const constructStringConstructor = (classConstructorParams) => {
         const method = {
                 name: 'constructor',
                 params: classConstructorParams,
         };
 
-        const str = constructStrClassMethod(method);
+        const str = constructStringMethod(method);
 
         return str;
 };
 
-const constructStrClassMethods = (methods) => {
+const constructStringMethods = (methods) => {
         let str = '';
 
         for (const method of methods) {
-                str += constructStrClassMethod(method);
+                str += constructStringMethod(method);
         }
 
         return str;
 };
 
-const constructStringSolutionClass = (metadata) => {
+const constructSolutionMainSystemDesign = (metadata) => {
         const { classname, classConstructorParams, methods } = metadata;
-        let str = constructStrClassMain(classname);
-        str += constructStrClassConstructor(classConstructorParams);
-        str += constructStrClassMethods(methods);
+        let str = constructStringMain(classname);
+        str += constructStringConstructor(classConstructorParams);
+        str += constructStringMethods(methods);
         str += '}';
 
         return str;
 };
 
-export { constructStringSolutionClass };
+export { constructSolutionMainSystemDesign };

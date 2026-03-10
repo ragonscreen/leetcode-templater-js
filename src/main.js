@@ -1,6 +1,6 @@
 import { readFile } from 'node:fs/promises';
 import { argv } from 'node:process';
-import { buildFileSolution, buildFileTest } from './build-problem-files.js';
+import { constructSolution, constructTest } from './construct-problem-files.js';
 import { getFilePathSolution, getFilePathTest } from './get-file-path.js';
 import { parseProblemData } from './parse-problem-data.js';
 
@@ -60,8 +60,8 @@ const main = async () => {
         const problemDataParsed = parseProblemData(problemData);
         const filePathSolution = getFilePathSolution(problemDataParsed);
         const filePathTest = getFilePathTest(problemDataParsed);
-        const solution = buildFileSolution(problemDataParsed);
-        const test = buildFileTest(problemDataParsed, filePathSolution);
+        const solution = constructSolution(problemDataParsed);
+        const test = constructTest(problemDataParsed, filePathSolution);
 
         // console.log(filePathSolution);
         console.log('');
