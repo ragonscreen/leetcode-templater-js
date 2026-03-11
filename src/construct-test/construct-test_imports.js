@@ -1,17 +1,21 @@
+import path from 'node:path/posix';
 import { DEFAULTS } from '../defaults.js';
 
 const { TEST_FRAMEWORK, USE_ESM_SYNTAX, USE_RELATIVE_IMPORTS } = DEFAULTS;
 
 const constructTestImports = (fnName, filePaths) => {
-        console.log(filePaths);
-
         const { filePathSolution, filePathTest } = filePaths;
-        const strRelative = '../'
-                .repeat(filePathTest.split('/').length - 2)
-                .slice(0, -1);
-        const _filePathSolution = USE_RELATIVE_IMPORTS
-                ? strRelative + filePathSolution
-                : filePathSolution;
+        const filePathSolutionRelative = [];
+        const levels = USE_RELATIVE_IMPORTS
+                ? filePathTest.split('/').length - 1
+                : 0;
+
+        for (let i = 0; i < levels; i++) {
+                filePathSolutionRelative.push('..');
+        }
+
+        filePathSolutionRelative.push(path.sep, filePathSolution);
+        const _filePathSolution = path.join(...filePathSolutionRelative);
 
         let str = '';
 

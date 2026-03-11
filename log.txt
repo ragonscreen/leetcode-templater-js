@@ -9,7 +9,3 @@ Features:
 - generate solutions and test files
 - cjs/esm syntax
 - bun, vitest, jest support
-
-TODO:
-- normalise default directory names
-- use arrays for directory names, join with path.join()

@@ -1,5 +1,5 @@
 {
-        "name": "lc-test",
+        "name": "leetcode-templater-js",
         "author": "ragonscreen",
         "main": "./src/main.js",
         "module": "index.js",
@@ -13,6 +13,7 @@
         "private": true,
         "scripts": {
                 "dev": "bun --watch run ./src/main.js",
+                "new": "bun run ./src/main.js",
                 "fmt": "bunx biome check --write"
         },
         "type": "module"

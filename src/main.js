@@ -1,4 +1,4 @@
-import { readFile } from 'node:fs/promises';
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { argv } from 'node:process';
 import { constructSolution, constructTest } from './construct-problem-files.js';
 import { getFilePaths } from './get-file-path.js';
@@ -43,6 +43,26 @@ problems/two-sum
 two-sum`);
 };
 
+const createFile = async (filePath, fileContents) => {
+        const dir = filePath.split('/').slice(0, -1).join('/');
+        await mkdir(dir, { recursive: true });
+
+        try {
+                await writeFile(filePath, fileContents, {
+                        flag: 'wx',
+                        encoding: 'utf-8',
+                });
+
+                console.log(`File '${filePath}' created.`);
+        } catch (error) {
+                if (error.code === 'EEXIST') {
+                        console.warn(`File '${filePath}' already exists.`);
+                } else {
+                        throw error;
+                }
+        }
+};
+
 const main = async () => {
         const titleSlug = parseProvidedIdentifier();
 
@@ -62,58 +82,8 @@ const main = async () => {
         const solution = constructSolution(problemDataParsed);
         const test = constructTest(problemDataParsed, filePaths);
 
-        // console.log(filePathSolution);
-        console.log('');
-        console.log(solution);
-        // console.log('');
-        // console.log(filePathTest);
-        console.log('');
-        console.log(test);
-
-        // console.dir(problemDataParsed, { depth: null });
+        await createFile(filePaths.filePathSolution, solution);
+        await createFile(filePaths.filePathTest, test);
 };
 
 await main();
-
-// Response (146 bytes) {
-//   ok: false,
-//   url: "https://leetcode.com/graphql",
-//   status: 404,
-//   statusText: "Not Found",
-//   headers: Headers {
-//     "date": "Tue, 10 Mar 2026 16:12:21 GMT",
-//     "content-type": "text/html",
-//     "transfer-encoding": "chunked",
-//     "connection": "keep-alive",
-//     "x-content-type-options": "nosniff",
-//     "strict-transport-security": "max-age=15552000; includeSubDomains; preload",
-//     "content-encoding": "br",
-//     "cf-cache-status": "DYNAMIC",
-//     "server": "cloudflare",
-//     "cf-ray": "9da3996c0b2c7e9e-MAA",
-//   },
-//   redirected: false,
-//   bodyUsed: false,
-//   Blob (146 bytes)
-// }
-
-// Response (6.41 KB) {
-//   ok: false,
-//   url: "https://leetcode.com/graphql",
-//   status: 504,
-//   statusText: "Gateway Timeout",
-//   headers: Headers {
-//     "date": "Tue, 10 Mar 2026 16:14:09 GMT",
-//     "content-type": "text/html; charset=UTF-8",
-//     "content-length": "6407",
-//     "connection": "keep-alive",
-//     "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
-//     "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
-//     "referrer-policy": "same-origin",
-//     "x-frame-options": "SAMEORIGIN",
-//     "server": "cloudflare",
-//     "cf-ray": "9da39c3978e6dcf0-MAA",
-//   },
-//   redirected: false,
-//   bodyUsed: false
-// }
