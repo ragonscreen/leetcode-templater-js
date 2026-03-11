@@ -20,11 +20,9 @@ const constructTestImports = (fnName, filePaths) => {
         let str = '';
 
         if (TEST_FRAMEWORK !== 'jest') {
-                if (USE_ESM_SYNTAX) {
-                        str += `import { describe, expect, test } from '${TEST_FRAMEWORK}';\n`;
-                } else {
-                        str += `const { describe, expect, test } = require('${TEST_FRAMEWORK}');\n`;
-                }
+                str += USE_ESM_SYNTAX
+                        ? `import { describe, expect, test } from '${TEST_FRAMEWORK}';\n`
+                        : `const { describe, expect, test } = require('${TEST_FRAMEWORK}');\n`;
         }
 
         const isInvalidFnName = ['describe', 'test', 'expect'].includes(fnName);
@@ -34,11 +32,9 @@ const constructTestImports = (fnName, filePaths) => {
                 _fnName = `${fnName} as fn${fnName[0].toUpperCase() + fnName.slice(1)}`;
         }
 
-        if (USE_ESM_SYNTAX) {
-                str += `import { ${_fnName} } from '${_filePathSolution}';`;
-        } else {
-                str += `const { ${_fnName} } = require('${_filePathSolution}');`;
-        }
+        str += USE_ESM_SYNTAX
+                ? `import { ${_fnName} } from '${_filePathSolution}';`
+                : `const { ${_fnName} } = require('${_filePathSolution}');`;
 
         if (isInvalidFnName) {
                 str += ' // imported with an alias to prevent name clash';

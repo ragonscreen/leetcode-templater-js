@@ -2,7 +2,7 @@
  * Default configuration
  *
  * @prop {string} SOLUTION_AUTHOR_NAME - name of the solution author
- * @prop {string} SOLUTION_AUTHOR_LINK - URL of the solution author
+ * @prop {string} SOLUTION_AUTHOR_URL - URL of the solution author
  * @prop {string} INDENT_STYLE - indent style - `tabs` or `spaces`
  * @prop {number} INDENT_WIDTH - indent width (minimum: 1)
  * @prop {string} TEST_FRAMEWORK - framework used for testing solutions ('bun:test', 'vitest', or 'jest')
@@ -35,12 +35,12 @@
  */
 const DEFAULTS = {
         SOLUTION_AUTHOR_NAME: 'ragonscreen',
-        SOLUTION_AUTHOR_LINK: 'https://github.com/ragonscreen/',
+        SOLUTION_AUTHOR_URL: 'https://github.com/ragonscreen/',
         INDENT_STYLE: 'spaces',
         INDENT_WIDTH: 8,
         TEST_FRAMEWORK: 'bun:test',
         DIR_TESTS: ['__tests__', 'problems'],
-        DIR_SOLUTIONS: ['src', 'problems'],
+        DIR_SOLUTIONS: ['tmpsrc', 'problems'],
         USE_DIR_BUCKET: true,
         BUCKET_CHUNK_SIZE: 200,
         USE_ARROW_FUNCTIONS: true,

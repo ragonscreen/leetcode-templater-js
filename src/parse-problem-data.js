@@ -1,3 +1,16 @@
+const handleFatalErrors = (problemData) => {
+        const { categoryTitle } = problemData;
+        const isConcurrency = categoryTitle === 'Concurrency';
+        const isShell = categoryTitle === 'Shell';
+        const isDatabase = categoryTitle === 'Database';
+
+        if (isConcurrency || isShell || isDatabase) {
+                throw new Error(
+                        `${categoryTitle} based problems are not supported.`,
+                );
+        }
+};
+
 const parseSimilarQuestions = (similarQuestions) => {
         const questionsSortFn = (a, b) => {
                 const scores = {
@@ -125,17 +138,25 @@ const parseClassConstructor = (codeSnippets) => {
         });
 };
 
-const handleFatalErrors = (problemData) => {
-        const { categoryTitle } = problemData;
-        const isConcurrency = categoryTitle === 'Concurrency';
-        const isShell = categoryTitle === 'Shell';
-        const isDatabase = categoryTitle === 'Database';
+const parseInPlaceParam = (metadata, codeSnippets) => {
+        const { systemdesign, return: retval } = metadata;
 
-        if (isConcurrency || isShell || isDatabase) {
-                throw new Error(
-                        `${categoryTitle} based problems are not supported.`,
-                );
+        if (systemdesign) {
+                return null;
         }
+
+        if (retval.type !== 'void') {
+                return null;
+        }
+
+        const snippet = codeSnippets.find((e) => e.lang === 'JavaScript').code;
+        const match = snippet.match(/modify (?<paramName>.+) in-place/);
+
+        if (!match) {
+                return null;
+        }
+
+        return match.groups.paramName;
 };
 
 const displayWarnings = (problemData) => {
@@ -191,6 +212,7 @@ const parseProblemData = (problemData) => {
         const outputs = parseOutputs(content);
         const inputs = parseInputs(exampleTestcaseList);
         const classConstructorParams = parseClassConstructor(codeSnippets);
+        const inPlaceParam = parseInPlaceParam(metadataParsed, codeSnippets);
 
         const problemDataParsed = {
                 id,
@@ -207,6 +229,7 @@ const parseProblemData = (problemData) => {
                         classConstructorParams,
                         inputs,
                         outputs,
+                        inPlaceParam,
                 },
                 codeSnippets,
                 isPaidOnly,

@@ -1,6 +1,6 @@
 import { DEFAULTS } from '../defaults.js';
 
-const { SOLUTION_AUTHOR_NAME, SOLUTION_AUTHOR_LINK } = DEFAULTS;
+const { SOLUTION_AUTHOR_NAME, SOLUTION_AUTHOR_URL } = DEFAULTS;
 
 const getCurrentDate = () => {
         const date = new Date();
@@ -25,7 +25,7 @@ const constructStringBasicDetails = (problemData) => {
  * Date: ${date}`;
 
         if (SOLUTION_AUTHOR_NAME) {
-                str += `\n * Author: ${SOLUTION_AUTHOR_NAME}${SOLUTION_AUTHOR_LINK ? ` (${SOLUTION_AUTHOR_LINK})` : ''}`;
+                str += `\n * Author: ${SOLUTION_AUTHOR_NAME}${SOLUTION_AUTHOR_URL ? ` (${SOLUTION_AUTHOR_URL})` : ''}`;
         }
 
         return str;

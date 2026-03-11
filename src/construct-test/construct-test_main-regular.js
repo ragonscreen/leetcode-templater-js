@@ -66,7 +66,7 @@ ${gap()}});
 });`;
 };
 
-const constructStringExpectInPlace = (name, strParamNames) => {
+const constructStringExpectInPlace = (name, strParamNames, inPlaceParam) => {
         const voidMatcher =
                 TEST_FRAMEWORK === 'bun:test'
                         ? 'toBeNil'
@@ -75,16 +75,13 @@ const constructStringExpectInPlace = (name, strParamNames) => {
                           : 'toBeUndefined';
 
         return `\n${gap(2)}expect(${name}(${strParamNames})).${voidMatcher}();
-
-${gap(2)}for (let i = 0; i < expected.length; i++) {
-${gap(3)}expect(${strParamNames.split(',')[0]}[i]).toStrictEqual(expected[i]);
-${gap(2)}}
+${gap(2)}expect(${inPlaceParam ?? strParamNames.split(', ')[0]}).toStrictEqual(expected);
 ${gap()}});
 });`;
 };
 
 const constructStringDescribe = (metadata) => {
-        const { name, params } = metadata;
+        const { name, params, inPlaceParam } = metadata;
         const paramNames = params.map((e) => e.name);
         const strParamNames = paramNames.join(', ');
 
@@ -92,7 +89,11 @@ const constructStringDescribe = (metadata) => {
 ${gap()}test.each(testcases)('${name}($${paramNames.join(', $')}) -> $expected', ({ ${strParamNames}, expected }) => {`;
 
         if (metadata.return.type === 'void') {
-                str += constructStringExpectInPlace(name, strParamNames);
+                str += constructStringExpectInPlace(
+                        name,
+                        strParamNames,
+                        inPlaceParam,
+                );
         } else {
                 str += constructStringExpect(name, strParamNames);
         }
