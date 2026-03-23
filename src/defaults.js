@@ -40,7 +40,7 @@ const DEFAULTS = {
         INDENT_WIDTH: 8,
         TEST_FRAMEWORK: 'bun:test',
         DIR_TESTS: ['__tests__', 'problems'],
-        DIR_SOLUTIONS: ['tmpsrc', 'problems'],
+        DIR_SOLUTIONS: ['src', 'problems'],
         USE_DIR_BUCKET: true,
         BUCKET_CHUNK_SIZE: 200,
         USE_ARROW_FUNCTIONS: true,

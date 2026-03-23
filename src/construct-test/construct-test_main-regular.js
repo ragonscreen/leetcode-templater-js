@@ -52,7 +52,7 @@ const constructStringDescribeJavaScript = (metadata) => {
         const strParamNames = paramNames.join(', ');
 
         const str = `\n\ndescribe('${name}', () => {
-${gap()}test.each(testcases)('${name}($${paramNames.join(', $')}) -> $expected', ({ ${strParamNames}, expected }) => {
+${gap()}test.each(structuredClone(testcases))('${name}($${paramNames.join(', $')}) -> $expected', ({ ${strParamNames}, expected }) => {
 ${gap(2)}expect();
 ${gap()}});
 });`;
@@ -86,7 +86,7 @@ const constructStringDescribe = (metadata) => {
         const strParamNames = paramNames.join(', ');
 
         let str = `\n\ndescribe('${name}', () => {
-${gap()}test.each(testcases)('${name}($${paramNames.join(', $')}) -> $expected', ({ ${strParamNames}, expected }) => {`;
+${gap()}test.each(structuredClone(testcases))('${name}($${paramNames.join(', $')}) -> $expected', ({ ${strParamNames}, expected }) => {`;
 
         if (metadata.return.type === 'void') {
                 str += constructStringExpectInPlace(

@@ -1,3 +1,4 @@
+/** biome-ignore-all lint/nursery/noExcessiveLinesPerFile: <explanation> */
 const handleFatalErrors = (problemData) => {
         const { categoryTitle } = problemData;
         const isConcurrency = categoryTitle === 'Concurrency';
@@ -44,12 +45,13 @@ const parseOutputs = (htmlContent) => {
                 '&gt;': '>',
                 '&quot;': `"`,
                 '&#39;': `'`,
+                '&nbsp;': ' ',
         };
 
         const re = {
                 testcases: /<pre>.+?<\/pre>|<div class="example-block">.+?<\/div>/gis,
-                tags: /<strong>|<\/strong>|<pre>|<\/pre>|<span class="example-io">|<\/span>/gi,
-                escape: /&amp;|&lt;|&gt;|&quot;|&#39;/gi,
+                tags: /<strong>|<\/strong>|<pre>|<\/pre>|<span class="example-io">|<\/span>|<p>|<\/p>/gi,
+                escape: /&amp;|&lt;|&gt;|&quot;|&#39;|&nbsp;/gi,
                 title: /<strong>.+?<\/strong>/gis,
                 content: /<\/strong>.+?(<strong>|<\/pre>)|<span class="example-io">.+?<\/span>/gis,
         };
@@ -112,11 +114,18 @@ const parseInputs = (exampleTestcaseList) => {
 };
 
 const parseMetadata = (metaData) => {
-        return JSON.parse(
-                metaData
-                        .replace(/integer|float|double/g, 'number')
-                        .replace(/list<(.+)>/g, '$1[]'),
+        let metaDataParsed = metaData;
+
+        while (metaDataParsed.includes('list<')) {
+                metaDataParsed = metaDataParsed.replace(/list<(.+)>/g, '$1[]');
+        }
+
+        metaDataParsed = metaDataParsed.replace(
+                /"type": "(integer|float|double|long)/g,
+                '"type": "number',
         );
+
+        return JSON.parse(metaDataParsed);
 };
 
 const parseClassConstructor = (codeSnippets) => {
