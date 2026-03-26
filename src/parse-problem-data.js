@@ -176,21 +176,21 @@ const displayWarnings = (problemData) => {
 
         if (isPaidOnly && isJavaScript) {
                 console.warn(
-                        'JavaScript based premium problems are not fully supported. Solution template most likely contains errors. Outputs will be unavailable. User discretion advised.',
+                        'JavaScript based premium problems are not fully supported. Solution template most likely contains errors. Outputs will be unavailable. User discretion advised.\n',
                 );
         } else if (isPaidOnly) {
                 console.warn(
-                        'Premium problem detected. Outputs will be unavailable.',
+                        'Premium problem detected. Outputs will be unavailable.\n',
                 );
         } else if (isJavaScript) {
                 console.warn(
-                        'JavaScript based problem detected. Assertions will be unavailable. Please write your own in the appropriate test file.',
+                        'JavaScript based problem detected. Assertions will be unavailable. Please write your own in the appropriate test file.\n',
                 );
         }
 
         if (!systemdesign && retval.type === 'void') {
                 console.warn(
-                        'In-place problem detected. Please verify assertions in the appropriate test file.',
+                        'In-place problem detected. Please verify assertions in the appropriate test file.\n',
                 );
         }
 };

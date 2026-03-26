@@ -10,3 +10,9 @@ Features:
 - highly configurable
 - cjs/esm syntax
 - bun, vitest, jest support
+
+TODO:
+- finish README
+
+FIXME:
+- fix `debounce`, quotes are being escaped

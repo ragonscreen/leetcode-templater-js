@@ -10,6 +10,7 @@
         },
         "scripts": {
                 "dev": "bun --watch run ./src/main.js",
+                "new": "bun run ./src/main.js",
                 "fmt": "bunx biome check --write"
         },
         "bin": {

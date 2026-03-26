@@ -10,7 +10,10 @@ import { parseProblemData } from './parse-problem-data.js';
 
 const parseProvidedIdentifier = () => {
         return argv[2]
-                ?.replace(/https:\/\/|problems\/|leetcode\.com\//gi, '')
+                ?.replace(
+                        /https:\/\/|problems\/|leetcode\.com\/|neetcode\.io\//gi,
+                        '',
+                )
                 ?.split('/')?.[0];
 };
 
@@ -58,7 +61,7 @@ const createFile = async (filePath, fileContents) => {
                         encoding: 'utf-8',
                 });
 
-                console.log(`File '${filePath}' created.`);
+                console.info(`File '${filePath}' created.`);
         } catch (error) {
                 if (error.code === 'EEXIST') {
                         console.warn(`File '${filePath}' already exists.`);
