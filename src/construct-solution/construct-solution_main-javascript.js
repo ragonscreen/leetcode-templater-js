@@ -1,7 +1,7 @@
-import { DEFAULTS } from '../defaults.js';
+import { CONFIG } from '../config.js';
 import { gap } from '../utils.js';
 
-const { USE_ARROW_FUNCTIONS } = DEFAULTS;
+const { USE_ARROW_FUNCTIONS } = CONFIG;
 
 const constructSolutionMainJavaScript = (codeSnippets) => {
         let str = codeSnippets.find((e) => e.lang === 'JavaScript').code;

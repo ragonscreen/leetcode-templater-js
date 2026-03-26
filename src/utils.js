@@ -1,6 +1,6 @@
-import { DEFAULTS } from './defaults.js';
+import { CONFIG } from './config.js';
 
-const { INDENT_WIDTH, INDENT_STYLE } = DEFAULTS;
+const { INDENT_WIDTH, INDENT_STYLE } = CONFIG;
 
 const gap = (count = 1) => {
         const _indentWidth = Math.max(INDENT_WIDTH, 1);

@@ -1,9 +1,6 @@
-import path from 'node:path/posix';
+import { join } from 'node:path';
 
-import { DEFAULTS } from './defaults.js';
-
-const { DIR_SOLUTIONS, DIR_TESTS, USE_DIR_BUCKET, BUCKET_CHUNK_SIZE } =
-        DEFAULTS;
+import { CONFIG } from './config.js';
 
 const padNum = (num, len) => String(num).padStart(len, '0');
 
@@ -24,6 +21,7 @@ const getNumberBucket = (num, chunkSize = 200, startIndex = 1, padLen = 4) => {
 
 const getFilePathBase = (problemData) => {
         const { id, titleSlug } = problemData;
+        const { USE_DIR_BUCKET, BUCKET_CHUNK_SIZE } = CONFIG;
         const filePath = [];
 
         if (USE_DIR_BUCKET) {
@@ -36,6 +34,7 @@ const getFilePathBase = (problemData) => {
 };
 
 const getFilePath = (filePathBase, isTestDir = false) => {
+        const { DIR_TESTS, DIR_SOLUTIONS } = CONFIG;
         const defaultDir = isTestDir ? '__tests__' : 'src';
         const userDir = isTestDir ? DIR_TESTS : DIR_SOLUTIONS;
         let dir = Array.isArray(userDir) ? userDir : [String(userDir)];
@@ -48,7 +47,7 @@ const getFilePath = (filePathBase, isTestDir = false) => {
                 dir = [defaultDir];
         }
 
-        return `${path.join(...dir, ...filePathBase)}${isTestDir ? '.test' : ''}.js`;
+        return `${join(...dir, ...filePathBase)}${isTestDir ? '.test' : ''}.js`;
 };
 
 const getFilePaths = (problemData) => {

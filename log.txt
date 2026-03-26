@@ -7,9 +7,6 @@ Features:
 - partial support for javascript based problems
 - experimental support for javascript based premium problems
 - generate solutions and test files
+- highly configurable
 - cjs/esm syntax
 - bun, vitest, jest support
-
-TODO:
-- Handle edge case where function parameter is named `expected`.
-- option in default config to show topics/stats/similar problems

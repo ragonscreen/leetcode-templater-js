@@ -1,7 +1,11 @@
+#!/usr/bin/env node
+
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
+import { dirname, resolve } from 'node:path';
 import { argv } from 'node:process';
+import { fileURLToPath } from 'node:url';
 import { constructSolution, constructTest } from './construct-problem-files.js';
-import { getFilePaths } from './get-file-path.js';
+import { getFilePaths } from './get-file-paths.js';
 import { parseProblemData } from './parse-problem-data.js';
 
 const parseProvidedIdentifier = () => {
@@ -11,17 +15,18 @@ const parseProvidedIdentifier = () => {
 };
 
 const getQuery = async () => {
-        return await readFile('src/graphql/get-problem-detail.gql', 'utf-8');
+        const queryPath = resolve(
+                dirname(fileURLToPath(import.meta.url)),
+                './graphql/get-problem-detail.gql',
+        );
+
+        return await readFile(queryPath, 'utf-8');
 };
 
 const getProblemData = async (query, titleSlug) => {
         const res = await fetch('https://leetcode.com/graphql', {
                 method: 'POST',
-                headers: {
-                        'Content-Type': 'application/json',
-                        // Cookie: 'LEETCODE_SESSION=x; csrftoken=x',
-                        // 'Referer': 'https://leetcode.com/problems/asteroid-collision/description/'
-                },
+                headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
                         query,
                         variables: { titleSlug },
@@ -71,6 +76,7 @@ const main = async () => {
         }
 
         const query = await getQuery();
+
         const problemData = await getProblemData(query, titleSlug);
 
         if (!problemData) {

@@ -1,21 +1,21 @@
-import path from 'node:path/posix';
-import { DEFAULTS } from '../defaults.js';
+import { join, sep } from 'node:path';
+import { CONFIG } from '../config.js';
 
-const { TEST_FRAMEWORK, USE_ESM_SYNTAX, USE_RELATIVE_IMPORTS } = DEFAULTS;
+const { TEST_FRAMEWORK, USE_ESM_SYNTAX, USE_RELATIVE_IMPORTS } = CONFIG;
 
 const constructTestImports = (fnName, filePaths) => {
         const { filePathSolution, filePathTest } = filePaths;
         const filePathSolutionRelative = [];
         const levels = USE_RELATIVE_IMPORTS
-                ? filePathTest.split('/').length - 1
+                ? filePathTest.split(sep).length - 1
                 : 0;
 
         for (let i = 0; i < levels; i++) {
                 filePathSolutionRelative.push('..');
         }
 
-        filePathSolutionRelative.push(path.sep, filePathSolution);
-        const _filePathSolution = path.join(...filePathSolutionRelative);
+        filePathSolutionRelative.push(sep, filePathSolution);
+        const _filePathSolution = join(...filePathSolutionRelative);
 
         let str = '';
 

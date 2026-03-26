@@ -1,6 +1,6 @@
-import { DEFAULTS } from '../defaults.js';
+import { CONFIG } from '../config.js';
 
-const { USE_ESM_SYNTAX } = DEFAULTS;
+const { USE_ESM_SYNTAX } = CONFIG;
 
 const constructSolutionExports = (fnName) => {
         let str = '\n\n';

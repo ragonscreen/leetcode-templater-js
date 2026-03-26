@@ -1,20 +1,19 @@
 {
         "name": "leetcode-templater-js",
+        "version": "1.0.0",
         "author": "ragonscreen",
+        "type": "module",
         "main": "./src/main.js",
-        "module": "index.js",
         "devDependencies": {
                 "@biomejs/biome": "2.4.2",
                 "@types/bun": "latest"
         },
-        "peerDependencies": {
-                "typescript": "^5"
-        },
-        "private": true,
         "scripts": {
                 "dev": "bun --watch run ./src/main.js",
-                "new": "bun run ./src/main.js",
                 "fmt": "bunx biome check --write"
         },
-        "type": "module"
+        "bin": {
+                "lct": "./src/main.js"
+        },
+        "files": ["src/"]
 }

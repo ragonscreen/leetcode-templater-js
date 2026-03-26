@@ -1,6 +1,6 @@
-import { DEFAULTS } from '../defaults.js';
+import { CONFIG } from '../config.js';
 
-const { USE_ARROW_FUNCTIONS } = DEFAULTS;
+const { USE_ARROW_FUNCTIONS } = CONFIG;
 
 const constructSolutionMainRegular = (metadata) => {
         const { name, params, return: returnValue } = metadata;

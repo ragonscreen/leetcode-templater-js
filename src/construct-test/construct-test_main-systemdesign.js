@@ -1,7 +1,7 @@
-import { DEFAULTS } from '../defaults.js';
+import { CONFIG } from '../config.js';
 import { gap } from '../utils.js';
 
-const { TEST_FRAMEWORK } = DEFAULTS;
+const { TEST_FRAMEWORK } = CONFIG;
 
 const pascalToCamelCase = (str) => str[0].toLowerCase() + str.slice(1);
 

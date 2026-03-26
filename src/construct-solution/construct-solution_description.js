@@ -1,6 +1,12 @@
-import { DEFAULTS } from '../defaults.js';
+import { CONFIG } from '../config.js';
 
-const { SOLUTION_AUTHOR_NAME, SOLUTION_AUTHOR_URL } = DEFAULTS;
+const {
+        SOLUTION_AUTHOR_NAME,
+        SOLUTION_AUTHOR_URL,
+        ADD_TOPICS,
+        ADD_STATS,
+        ADD_SIMILAR_PROBLEMS,
+} = CONFIG;
 
 const getCurrentDate = () => {
         const date = new Date();
@@ -32,7 +38,7 @@ const constructStringBasicDetails = (problemData) => {
 };
 
 const constructStringTopics = (topics) => {
-        if (!topics.length) {
+        if (!(topics.length && ADD_TOPICS)) {
                 return '';
         }
 
@@ -47,6 +53,10 @@ const constructStringTopics = (topics) => {
 };
 
 const constructStringStats = (stats) => {
+        if (!ADD_STATS) {
+                return '';
+        }
+
         const formatter = new Intl.NumberFormat('en-US');
         const totalAccepted = formatter.format(stats.totalAcceptedRaw);
         const totalSubmissions = formatter.format(stats.totalSubmissionRaw);
@@ -59,7 +69,7 @@ const constructStringStats = (stats) => {
 };
 
 const constructStringSimilarProblems = (similarQuestions) => {
-        if (!similarQuestions.length) {
+        if (!(similarQuestions.length && ADD_SIMILAR_PROBLEMS)) {
                 return '';
         }
 

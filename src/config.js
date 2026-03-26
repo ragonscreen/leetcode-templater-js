@@ -1,3 +1,7 @@
+import { readFile } from 'node:fs/promises';
+import { resolve } from 'node:path';
+import { cwd } from 'node:process';
+
 /**
  * Default configuration
  *
@@ -12,6 +16,8 @@
  * e.g. /0601-0800/0735_asteroid-collision.js
  *
  * @prop {number} BUCKET_CHUNK_SIZE - size of the bucket used (minimum: 1)
+ * e.g. with a size of 100, the file will be saved to /0701-0800/0735_asteroid-collision.js
+ *      with a size of 200, the file will be saved to /0601-0800/0735_asteroid-collision.js
  * irrelevant if `USE_DIR_BUCKET` is `false`
  *
  * @prop {boolean} USE_ARROW_FUNCTIONS - use arrow functions for solution functions
@@ -32,20 +38,53 @@
  *
  * - `true`  - import { asteroidCollision } from '../../../src/problems/0601-0800/0735_asteroid-collision.js';
  * - `false` - import { asteroidCollision } from '/src/problems/0601-0800/0735_asteroid-collision.js';
+ *
+ * @prop {boolean} ADD_TOPICS - whether to add problem topics to the solution description
+ * @prop {boolean} ADD_STATS - whether to add problem stats to the solution description
+ * @prop {boolean} ADD_SIMILAR_PROBLEMS - whether to add similar problems to the solution description
+ *
  */
 const DEFAULTS = {
         SOLUTION_AUTHOR_NAME: 'ragonscreen',
         SOLUTION_AUTHOR_URL: 'https://github.com/ragonscreen/',
+
         INDENT_STYLE: 'spaces',
-        INDENT_WIDTH: 8,
+        INDENT_WIDTH: 4,
+
         TEST_FRAMEWORK: 'bun:test',
+
         DIR_TESTS: ['__tests__', 'problems'],
         DIR_SOLUTIONS: ['src', 'problems'],
+
         USE_DIR_BUCKET: true,
-        BUCKET_CHUNK_SIZE: 200,
+        BUCKET_CHUNK_SIZE: 100,
+
         USE_ARROW_FUNCTIONS: true,
         USE_ESM_SYNTAX: true,
         USE_RELATIVE_IMPORTS: true,
+
+        ADD_TOPICS: true,
+        ADD_STATS: true,
+        ADD_SIMILAR_PROBLEMS: true,
 };
 
-export { DEFAULTS };
+const loadUserConfig = async () => {
+        try {
+                const pkgPath = resolve(cwd(), 'package.json');
+                const pkg = JSON.parse(await readFile(pkgPath, 'utf-8'));
+
+                return pkg.lct ?? {};
+        } catch {
+                return {};
+        }
+};
+
+const getConfig = async () => {
+        const userConfig = await loadUserConfig();
+
+        return { ...DEFAULTS, ...userConfig };
+};
+
+const CONFIG = await getConfig();
+
+export { CONFIG };
