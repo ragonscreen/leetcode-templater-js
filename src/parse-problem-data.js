@@ -13,23 +13,9 @@ const handleFatalErrors = (problemData) => {
 };
 
 const parseSimilarQuestions = (similarQuestions) => {
-        const questionsSortFn = (a, b) => {
-                const scores = {
-                        easy: 1,
-                        medium: 2,
-                        hard: 3,
-                };
-
-                return (
-                        scores[a.difficulty.toLowerCase()] -
-                                scores[b.difficulty.toLowerCase()] ||
-                        a.titleSlug.localeCompare(b.titleSlug)
-                );
-        };
-
-        return JSON.parse(similarQuestions)
-                .map(({ titleSlug, difficulty }) => ({ titleSlug, difficulty }))
-                .sort(questionsSortFn);
+        return JSON.parse(similarQuestions).map(
+                ({ titleSlug, difficulty }) => ({ titleSlug, difficulty }),
+        );
 };
 
 const parseOutputs = (htmlContent) => {

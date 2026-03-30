@@ -1,11 +1,19 @@
 import { CONFIG } from '../config.js';
 
 const {
+        ADD_DESCRIPTION,
         SOLUTION_AUTHOR_NAME,
         SOLUTION_AUTHOR_URL,
-        ADD_TOPICS,
-        ADD_STATS,
+        ADD_PROBLEM_URL,
+        ADD_PROBLEM_CATEGORY,
+        ADD_PROBLEM_DIFFICULTY,
+        ADD_DATE,
+        ADD_AUTHOR,
+        ADD_PROBLEM_TOPICS,
+        ADD_PROBLEM_STATS,
         ADD_SIMILAR_PROBLEMS,
+        MAX_SIMILAR_PROBLEMS,
+        SORT_SIMILAR_PROBLEMS,
 } = CONFIG;
 
 const getCurrentDate = () => {
@@ -23,14 +31,37 @@ const constructStringBasicDetails = (problemData) => {
         const date = getCurrentDate();
 
         let str = `/**
- * ${idPadded}. ${title}
- *
- * Link: https://leetcode.com/problems/${titleSlug}/
- * Category: ${category}
- * Difficulty: ${difficulty}
- * Date: ${date}`;
+ * ${idPadded}. ${title}`;
 
-        if (SOLUTION_AUTHOR_NAME) {
+        const addAuthor = ADD_AUTHOR && SOLUTION_AUTHOR_NAME;
+
+        if (
+                ADD_PROBLEM_URL ||
+                ADD_PROBLEM_CATEGORY ||
+                ADD_PROBLEM_DIFFICULTY ||
+                ADD_DATE ||
+                addAuthor
+        ) {
+                str += '\n *';
+        }
+
+        if (ADD_PROBLEM_URL) {
+                str += `\n * Link: https://leetcode.com/problems/${titleSlug}/`;
+        }
+
+        if (ADD_PROBLEM_CATEGORY) {
+                str += `\n * Category: ${category}`;
+        }
+
+        if (ADD_PROBLEM_DIFFICULTY) {
+                str += `\n * Difficulty: ${difficulty}`;
+        }
+
+        if (ADD_DATE) {
+                str += `\n * Date: ${date}`;
+        }
+
+        if (addAuthor) {
                 str += `\n * Author: ${SOLUTION_AUTHOR_NAME}${SOLUTION_AUTHOR_URL ? ` (${SOLUTION_AUTHOR_URL})` : ''}`;
         }
 
@@ -38,7 +69,7 @@ const constructStringBasicDetails = (problemData) => {
 };
 
 const constructStringTopics = (topics) => {
-        if (!(topics.length && ADD_TOPICS)) {
+        if (!(topics.length && ADD_PROBLEM_TOPICS)) {
                 return '';
         }
 
@@ -53,7 +84,7 @@ const constructStringTopics = (topics) => {
 };
 
 const constructStringStats = (stats) => {
-        if (!ADD_STATS) {
+        if (!ADD_PROBLEM_STATS) {
                 return '';
         }
 
@@ -69,26 +100,53 @@ const constructStringStats = (stats) => {
 };
 
 const constructStringSimilarProblems = (similarQuestions) => {
+        const problemsSortFn = (a, b) => {
+                const scores = {
+                        easy: 1,
+                        medium: 2,
+                        hard: 3,
+                };
+
+                return (
+                        scores[a.difficulty.toLowerCase()] -
+                                scores[b.difficulty.toLowerCase()] ||
+                        a.titleSlug.localeCompare(b.titleSlug)
+                );
+        };
+
         if (!(similarQuestions.length && ADD_SIMILAR_PROBLEMS)) {
                 return '';
         }
 
+        const similarProblems = similarQuestions.slice(
+                0,
+                Math.max(MAX_SIMILAR_PROBLEMS, 0) || undefined,
+        );
+
+        if (SORT_SIMILAR_PROBLEMS) {
+                similarProblems.sort(problemsSortFn);
+        }
+
         let str = '\n *\n * Similar Problems:';
 
-        for (const question of similarQuestions) {
-                str += `\n * - ${question.titleSlug} (${question.difficulty})`;
+        for (const problem of similarProblems) {
+                str += `\n * - ${problem.titleSlug} (${problem.difficulty})`;
         }
 
         return str;
 };
 
 const constructSolutionDescription = (problemData) => {
+        if (!ADD_DESCRIPTION) {
+                return '';
+        }
+
         const { topics, similarQuestions, stats } = problemData;
         let str = constructStringBasicDetails(problemData);
         str += constructStringTopics(topics);
         str += constructStringStats(stats);
         str += constructStringSimilarProblems(similarQuestions);
-        str += '\n */';
+        str += '\n */\n\n';
 
         return str;
 };

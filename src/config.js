@@ -63,9 +63,18 @@ const DEFAULTS = {
         USE_ESM_SYNTAX: true,
         USE_RELATIVE_IMPORTS: true,
 
-        ADD_TOPICS: true,
-        ADD_STATS: true,
+        ADD_COMMENTS: true,
+        ADD_DESCRIPTION: true,
+        ADD_PROBLEM_URL: true,
+        ADD_PROBLEM_CATEGORY: true,
+        ADD_PROBLEM_DIFFICULTY: true,
+        ADD_DATE: true,
+        ADD_AUTHOR: true,
+        ADD_PROBLEM_TOPICS: true,
+        ADD_PROBLEM_STATS: true,
         ADD_SIMILAR_PROBLEMS: true,
+        MAX_SIMILAR_PROBLEMS: 10,
+        SORT_SIMILAR_PROBLEMS: true,
 };
 
 const loadUserConfig = async () => {

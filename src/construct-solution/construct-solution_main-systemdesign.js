@@ -1,14 +1,25 @@
+import { CONFIG } from '../config.js';
 import { gap } from '../utils.js';
 
+const { ADD_COMMENTS } = CONFIG;
+
 const constructStringMain = (className) => {
-        return `\n\n/**
+        let str = '';
+
+        if (ADD_COMMENTS) {
+                str += `/**
  * Approach:
- */
-class ${className} {`;
+ */\n`;
+        }
+
+        str += `class ${className} {`;
+
+        return str;
 };
 
 const constructStringMethod = (method) => {
         const { name, params, return: retval } = method;
+
         let str = `\n${gap()}/**
 ${gap()} * Time Complexity: O()
 ${gap()} * Space Complexity: O()`;
@@ -21,7 +32,13 @@ ${gap()} * Space Complexity: O()`;
                 str += `${params.length ? '' : `\n${gap()} *`}\n${gap()} * @return {${retval.type}}`;
         }
 
-        str += `\n${gap()} */\n${gap()}${name}(${params.map((e) => e.name).join(', ')}) {}\n`;
+        str += `\n${gap()} */`;
+
+        if (!ADD_COMMENTS) {
+                str = '';
+        }
+
+        str += `\n${gap()}${name}(${params.map((e) => e.name).join(', ')}) {}\n`;
 
         return str;
 };

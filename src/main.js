@@ -91,8 +91,12 @@ const main = async () => {
         const solution = constructSolution(problemDataParsed);
         const test = constructTest(problemDataParsed, filePaths);
 
-        await createFile(filePaths.filePathSolution, solution);
-        await createFile(filePaths.filePathTest, test);
+        console.log(solution);
+        console.log();
+        console.log(test);
+
+        // await createFile(filePaths.filePathSolution, solution);
+        // await createFile(filePaths.filePathTest, test);
 };
 
 await main();

@@ -1,6 +1,6 @@
 # Leetcode Templater JS
 
-Automatically generate solution and test templates for a particular leetcode problem.
+Highly confgurable test and solution file template generator for LeetCode problems.
 
 ## Installation
 
@@ -108,7 +108,7 @@ describe('containsDuplicate', () => {
 });
 ```
 
-Adding your own testcases is easy, simply add more lines to the `testcases` array, containing your custom testcases.
+Adding your own testcases is easy. Simply add more lines to the `testcases` array, containing your custom testcases.
 
 ```javascript
 const testcases = [
@@ -121,7 +121,7 @@ const testcases = [
 ];
 ```
 
-If you would like to write multiple solutions, simply add another function below your current one and modify the exports object:
+If you would like to write multiple solutions, simply add more functions below your current one and modify the exports object:
 
 ```javascript
 /**
@@ -147,7 +147,7 @@ const containsDuplicate1 = (nums) => {};
 export { containsDuplicate, containsDuplicate1 };
 ```
 
-Then, import it in the test file and copy the `describe` function for each new solution.
+Then, import them in the test file and copy the `describe` function for each new solution.
 
 ```javascript
 import { describe, expect, test } from 'bun:test';
@@ -433,7 +433,7 @@ describe('sortTransformedArray', () => {
 
 ### 2. JavaScript Problems
 
-Partially supports JavaScript problems. As JavaScript problems usually have requirements unique to each problem, there is no one catch-all matcher for every JavaScript problem. Therefore, you have to write their own assertions in the appropriate test file.
+Partially supports JavaScript problems. As JavaScript problems usually have requirements unique to each problem, there is no one catch-all matcher for every JavaScript problem. Therefore, you must write your own assertions in the appropriate test file.
 
 ## Limitations
 

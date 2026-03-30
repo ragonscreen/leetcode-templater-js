@@ -1,7 +1,7 @@
 import { CONFIG } from '../config.js';
 import { gap } from '../utils.js';
 
-const { USE_ARROW_FUNCTIONS } = CONFIG;
+const { USE_ARROW_FUNCTIONS, ADD_COMMENTS } = CONFIG;
 
 const constructSolutionMainJavaScript = (codeSnippets) => {
         let str = codeSnippets.find((e) => e.lang === 'JavaScript').code;
@@ -9,7 +9,7 @@ const constructSolutionMainJavaScript = (codeSnippets) => {
         str = str
                 .replace(
                         /\/\*\*/,
-                        `\n\n/**
+                        `/**
  * Approach:
  * Time Complexity: O()
  * Space Complexity: O()
@@ -37,7 +37,18 @@ const constructSolutionMainJavaScript = (codeSnippets) => {
                         .replace(/^};$/m, '}');
         }
 
-        str = str.replace(/\t/, ' '.repeat(2)).replace(/\{\s+\}/g, '{}');
+        if (!ADD_COMMENTS) {
+                str = str.replace(/\/\*\*.+\*\/\nconst/s, 'const');
+        }
+
+        if (!ADD_COMMENTS) {
+                str = str.replace(/\/\*\*.+\*\//gs, '');
+        }
+
+        str = str
+                .replace(/\t/, ' '.repeat(2))
+                .replace(/\{\s+\}/g, '{}')
+                .trimEnd();
 
         return str;
 };

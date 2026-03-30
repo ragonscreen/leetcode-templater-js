@@ -13,6 +13,9 @@ Features:
 
 TODO:
 - finish README
+- update config comment
+- config for non-parameterised tests?
+- interactive problems (find-in-mountain-array)
 
 FIXME:
 - fix `debounce`, quotes are being escaped
