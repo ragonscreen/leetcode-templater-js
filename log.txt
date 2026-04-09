@@ -1,12 +1,13 @@
 Features:
-- identifiers
-- basic problems
-- system design (class based) problems
-- partial support for in-place problems (leetcode is arbitrary)
-- partial support for premium problems
-- partial support for javascript based problems
-- experimental support for javascript based premium problems
-- generate solutions and test files
+X - identifiers
+X - generate solutions and test files
+X - basic problems
+X - system design (class based) problems
+X - partial support for in-place problems (leetcode is arbitrary)
+X - partial support for premium problems
+X - partial support for javascript based problems
+X - experimental support for javascript based premium problems
+X - experimental support for interactive problems
 - highly configurable
 - cjs/esm syntax
 - bun, vitest, jest support
@@ -15,7 +16,4 @@ TODO:
 - finish README
 - update config comment
 - config for non-parameterised tests?
-- interactive problems (find-in-mountain-array)
-
-FIXME:
-- fix `debounce`, quotes are being escaped
+- no-tests

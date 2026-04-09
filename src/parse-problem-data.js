@@ -155,14 +155,15 @@ const parseInPlaceParam = (metadata, codeSnippets) => {
 };
 
 const displayWarnings = (problemData) => {
-        const { isPaidOnly, metadata } = problemData;
+        const { isPaidOnly, metadata, topics } = problemData;
         const { languages, systemdesign, return: retval } = metadata;
         const isJavaScript =
                 languages?.length === 2 && languages?.includes('javascript');
+        const isInteractive = topics?.find((e) => e.name === 'Interactive');
 
         if (isPaidOnly && isJavaScript) {
                 console.warn(
-                        'JavaScript based premium problems are not fully supported. Solution template most likely contains errors. Outputs will be unavailable. User discretion advised.\n',
+                        'JavaScript based premium problems are not fully supported. Solution template may contain errors. Outputs will be unavailable. User discretion advised.\n',
                 );
         } else if (isPaidOnly) {
                 console.warn(
@@ -177,6 +178,12 @@ const displayWarnings = (problemData) => {
         if (!systemdesign && retval.type === 'void') {
                 console.warn(
                         'In-place problem detected. Please verify assertions in the appropriate test file.\n',
+                );
+        }
+
+        if (isInteractive) {
+                console.warn(
+                        'Interactive problems are not fully supported. Solution template may contain errors. Please write your own interactive API interface according to the outputs.',
                 );
         }
 };

@@ -433,7 +433,208 @@ describe('sortTransformedArray', () => {
 
 ### 2. JavaScript Problems
 
-Partially supports JavaScript problems. As JavaScript problems usually have requirements unique to each problem, there is no one catch-all matcher for every JavaScript problem. Therefore, you must write your own assertions in the appropriate test file.
+Partially supports JavaScript problems. As JavaScript problems usually have requirements unique to each problem, there is no one catch-all matcher for every JavaScript problem. Therefore, you must write your own assertions in the appropriate test file. Examples include `2620_counter`, `2623_memoize`, `2667_create-hello-world-function`, etc.
+
+```sh
+bunx lct create-hello-world-function
+```
+
+Running the above command will generate the following files:
+
+File: `2667_create-hello-world-function.js`
+
+```javascript
+/**
+ * 2667. Create Hello World Function
+ *
+ * Link: https://leetcode.com/problems/create-hello-world-function/
+ * Category: JavaScript
+ * Difficulty: Easy
+ * Date: 2026-04-09
+ * Author: ragonscreen (https://github.com/ragonscreen/)
+ *
+ * Stats:
+ * - Total Accepted: 836,513
+ * - Total Submissions: 1,020,990
+ * - Acceptance Rate: 81.9%
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ *
+ * @return {Function}
+ */
+const createHelloWorld = () => {
+
+    return function(...args) {}
+};
+
+/**
+ * const f = createHelloWorld();
+ * f(); // "Hello World"
+ */
+
+export { createHelloWorld };
+```
+
+File: `2667_create-hello-world-function.test.js`
+
+```javascript
+import { describe, expect, test } from 'bun:test';
+import { createHelloWorld } from '2667_create-hello-world-function.js';
+
+const testcases = [
+    { args: [], expected: "Hello World" },
+    { args: [{},null,42], expected: "Hello World" },
+];
+
+describe('createHelloWorld', () => {
+    test.each(structuredClone(testcases))('createHelloWorld($args) -> $expected', ({ args, expected }) => {
+        expect();
+    });
+});
+```
+
+> Note that sometimes, the outputs are objects, and may not reflect the actual output correctly. It is **strongly recommended** to verify the outputs in the test file yourself before running tests.
+
+### 3. Premium JavaScript Problems
+
+Support for premium JavaScript problems is experimental. Just like regular premium problems and javascript problems, outputs and assertions are unavailable. The solution template might also contain errors. You must write your own outputs and assertions, and verify the solution template. Examples include `2632_curry`, `2676_throttle`, `2775_undefined-to-null`, etc.
+
+```sh
+bunx lct throttle
+```
+
+Running the above command will generate the following files:
+
+File: `2676_throttle.js`
+
+```javascript
+/**
+ * 2676. Throttle
+ *
+ * Link: https://leetcode.com/problems/throttle/
+ * Category: JavaScript
+ * Difficulty: Medium
+ * Date: 2026-04-09
+ * Author: ragonscreen (https://github.com/ragonscreen/)
+ *
+ * Stats:
+ * - Total Accepted: 11,589
+ * - Total Submissions: 13,897
+ * - Acceptance Rate: 83.4%
+ *
+ * Similar Problems:
+ * - debounce (Medium)
+ * - promise-pool (Medium)
+ * - promise-time-limit (Medium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ *
+ * @param {number} t
+ * @param {string} fn
+ * @return {number}
+ */
+const throttle = (t, fn) => {};
+
+export { throttle };
+```
+
+File: `2676_throttle.test.js`
+
+```javascript
+import { describe, expect, test } from 'bun:test';
+import { throttle } from '../../../src/problems/2601-2700/2676_throttle.js';
+
+const testcases = [
+    { t: 100, fn: [{"t":20,"inputs":[1]}], expected: undefined },
+    { t: 50, fn: [{"t":50,"inputs":[1]},{"t":75,"inputs":[2]}], expected: undefined },
+    { t: 70, fn: [{"t":50,"inputs":[1]},{"t":75,"inputs":[2]},{"t":90,"inputs":[8]},{"t":140,"inputs":[5,7]},{"t":300,"inputs":[9,4]}], expected: undefined },
+];
+
+describe('throttle', () => {
+    test.each(structuredClone(testcases))('throttle($t, $fn) -> $expected', ({ t, fn, expected }) => {
+        expect();
+    });
+});
+```
+
+### 4. Interactive Problems
+
+Support for interactive problems is experimental. Interactive problems involve calling an internal API, and said API is unavailable to the client. As a result, the solution template is not able to account for the API and might contain errors. You must write your own API that is then passed to the solution function in the tests, and edit the solution and test files appropriately. Examples include `0278_first-bad-version`, `0843_guess-the-word`, `1095_find-in-mountain-array`, etc.
+
+```sh
+bunx lct first-bad-version
+```
+
+Running the above command will generate the following files:
+
+File: `0278_first-bad-version.js`
+
+```javascript
+/**
+ * 0278. First Bad Version
+ *
+ * Link: https://leetcode.com/problems/first-bad-version/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-09
+ * Author: ragonscreen (https://github.com/ragonscreen/)
+ *
+ * Topics:
+ * - Binary Search (topic_11)
+ * - Interactive (topic_61059)
+ *
+ * Stats:
+ * - Total Accepted: 2,146,995
+ * - Total Submissions: 4,567,570
+ * - Acceptance Rate: 47.0%
+ *
+ * Similar Problems:
+ * - guess-number-higher-or-lower (Easy)
+ * - search-insert-position (Easy)
+ * - find-first-and-last-position-of-element-in-sorted-array (Medium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ *
+ * @param {number} n
+ * @param {number} bad
+ * @return {number}
+ */
+const firstBadVersion = (n, bad) => {};
+
+export { firstBadVersion };
+```
+
+File: `0278_first-bad-version.test.js`
+
+```javascript
+import { describe, expect, test } from 'bun:test';
+import { firstBadVersion } from '../../../src/problems/0201-0300/0278_first-bad-version.js';
+
+const testcases = [
+    { n: 5, bad: 4, expected: 4 },
+    { n: 1, bad: 1, expected: 1 },
+];
+
+describe('firstBadVersion', () => {
+    test.each(structuredClone(testcases))('firstBadVersion($n, $bad) -> $expected', ({ n, bad, expected }) => {
+        expect(firstBadVersion(n, bad)).toStrictEqual(expected);
+    });
+});
+```
+
+> Note that in the above example, the inputs and the solution function are completely inaccurate. The solution function should instead be getting the callable API passed in as a parameter, and returning a function instead.
 
 ## Limitations
 
