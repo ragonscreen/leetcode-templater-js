@@ -18,11 +18,16 @@ const constructTestImports = (fnName, filePaths) => {
         const _filePathSolution = join(...filePathSolutionRelative);
 
         let str = '';
+        let testFramework = TEST_FRAMEWORK;
 
-        if (TEST_FRAMEWORK !== 'jest') {
+        if (testFramework === 'bun') {
+                testFramework = 'bun:test';
+        }
+
+        if (testFramework !== 'jest') {
                 str += USE_ESM_SYNTAX
-                        ? `import { describe, expect, test } from '${TEST_FRAMEWORK}';\n`
-                        : `const { describe, expect, test } = require('${TEST_FRAMEWORK}');\n`;
+                        ? `import { describe, expect, test } from '${testFramework}';\n`
+                        : `const { describe, expect, test } = require('${testFramework}');\n`;
         }
 
         const isInvalidFnName = ['describe', 'test', 'expect'].includes(fnName);

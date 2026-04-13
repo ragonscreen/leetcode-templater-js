@@ -33,11 +33,11 @@ npx lct <problem_slug>
 
 ## Features
 
-### 1. Configuarion
+### Configuration
 
-The templater is highly configurable. It is **strongly recommended** to use your own custom configuration before getting started.
+The templater is highly configurable. It is **strongly recommended** to use your own custom configuration before getting started. Refer to the [Configuration](#configuration-1) section for more information.
 
-### 2. Generation
+### Template Generation
 
 Automatically generates a solution and a test file containing default tests, with all data sourced straight from leetcode.
 
@@ -172,7 +172,7 @@ describe('containsDuplicate1', () => {
 });
 ```
 
-### 3. Multiple Identifier Support
+### Multiple Identifier Support
 
 Supports the following forms of identifiers (with or without the trailing `description/`) as valid problem slugs:
 
@@ -191,11 +191,11 @@ https://neetcode.io/problems/two-sum/
 # identifiers from leetcode.com
 ```
 
-### 4. Regular Algorithm Problems
+### Regular Algorithm Problems
 
 Supports basic algorithm problems which involve returning a specific value and matching it with the expected value. These make up the vast majority of the problems available on LeetCode. Examples include `0020_valid-parentheses`, `0217_contains-duplicate`, `0735_asteroid-collision`, etc.
 
-### 5. In-Place Algorithm Problems
+### In-Place Algorithm Problems
 
 Supports algorithm problems which involve modifying the inputs in some way, which is then checked against the expected value. Examples include `0026_remove-duplicates-from-sorted-array`, `0189_rotate-array`, `0344_reverse-string`, etc.
 
@@ -271,7 +271,7 @@ describe('rotate', () => {
 >
 > Also note that the nullish matcher changes based on the configured test framework. `toBeNil()` for `bun:test`, `toBeNullable()` for `vitest`, and `toBeUndefined()` for `jest`.
 
-### 6. System Design Algorithm Problems
+### System Design Algorithm Problems
 
 Supports algorithm problems involving the creation of a custom class with a constructor and methods. Examples include `0155_min-stack`, `0304_range-sum-query-2d-immutable`, `0901_online-stock-span`, etc.
 
@@ -357,7 +357,7 @@ describe('NumMatrix', () => {
 
 ## Partial / Experimental Support
 
-### 1. Premium Problems
+### Premium Problems
 
 Partially supports premium regular and system design algorithm problems. Since LeetCode does not provide the HTML content of premium problems, outputs are not able to be parsed, and as such are unavailable in the test file. You must write your own outputs or copy them manually from LeetCode if you have access to a premium account. Examples include `0249_group-shifted-strings`, `0271_encode-and-decode-strings`, `0360_sort-transformed-array`, etc.
 
@@ -431,7 +431,7 @@ describe('sortTransformedArray', () => {
 
 > Note that `expected` is set to `undefined`, as outputs are unavailable for premium problems. This is not the expected return value, and as such, you must add the output yourself or copy it from some other source.
 
-### 2. JavaScript Problems
+### JavaScript Problems
 
 Partially supports JavaScript problems. As JavaScript problems usually have requirements unique to each problem, there is no one catch-all matcher for every JavaScript problem. Therefore, you must write your own assertions in the appropriate test file. Examples include `2620_counter`, `2623_memoize`, `2667_create-hello-world-function`, etc.
 
@@ -499,7 +499,7 @@ describe('createHelloWorld', () => {
 
 > Note that sometimes, the outputs are objects, and may not reflect the actual output correctly. It is **strongly recommended** to verify the outputs in the test file yourself before running tests.
 
-### 3. Premium JavaScript Problems
+### Premium JavaScript Problems
 
 Support for premium JavaScript problems is experimental. Just like regular premium problems and javascript problems, outputs and assertions are unavailable. The solution template might also contain errors. You must write your own outputs and assertions, and verify the solution template. Examples include `2632_curry`, `2676_throttle`, `2775_undefined-to-null`, etc.
 
@@ -565,7 +565,7 @@ describe('throttle', () => {
 });
 ```
 
-### 4. Interactive Problems
+### Interactive Problems
 
 Support for interactive problems is experimental. Interactive problems involve calling an internal API, and said API is unavailable to the client. As a result, the solution template is not able to account for the API and might contain errors. You must write your own API that is then passed to the solution function in the tests, and edit the solution and test files appropriately. Examples include `0278_first-bad-version`, `0843_guess-the-word`, `1095_find-in-mountain-array`, etc.
 
@@ -636,13 +636,310 @@ describe('firstBadVersion', () => {
 
 > Note that in the above example, the inputs and the solution function are completely inaccurate. The solution function should instead be getting the callable API passed in as a parameter, and returning a function instead.
 
-## Limitations
+## Configuration
 
-### Expected Return
+This templater is highly configurable, and it is **strongly recommended** to get it configured before getting started. Create an object with the key `lct` in your `package.json` file. This object will contain all the options you wish to configure.
 
-Some problems on LeetCode involve returning values which are not always exactly equal to the expected return value given in the problem source. An example of this is the problem `0001_two-sum`. The expected return value is an array which may contain the required elements in any order. As such, you must manually edit the matcher in the test file to `toContainAllValues()` or similar, instead of the default `toStrictEqual()`. LeetCode does not provide a way to filter this out straight from source.
+```json
+{
+        "lct": {}
+}
+```
+
+The following configuration options are available.
+
+### Solution Author
+
+Set your own personal information. This shows up in the description of each solution.
 
 ```javascript
+/**
+ * @prop {string} SOLUTION_AUTHOR_NAME - name of the solution author
+ * @prop {string} SOLUTION_AUTHOR_URL - URL of the solution author
+ */
+{
+        SOLUTION_AUTHOR_NAME: 'ragonscreen',
+        SOLUTION_AUTHOR_URL: 'https://github.com/ragonscreen/',
+}
+```
+
+```javascript
+// with SOLUTION_AUTHOR_NAME='Lorem Ipsum' and SOLUTION_AUTHOR_URL='https://leetcode.com/'
+/**
+ * 0001. Two Sum
+ *
+ * Author: Lorem Ipsum (https://leetcode.com/)
+ */
+```
+
+### Indentation
+
+Change the character used for indentation, and the width per indent, across all solution and test files.
+
+```javascript
+/**
+ * @prop {string} INDENT_STYLE - indent style - `tabs` or `spaces`
+ * @prop {number} INDENT_WIDTH - indent width (minimum: 1)
+ */
+{
+        INDENT_STYLE: 'spaces',
+        INDENT_WIDTH: 4,
+}
+```
+
+```js
+// with INDENT_STYLE='tabs'
+const testcases = [
+	{ nums: [2,7,11,15], target: 9, expected: [0,1] },
+];
+
+// with INDENT_STYLE='spaces'
+const testcases = [
+    { nums: [2,7,11,15], target: 9, expected: [0,1] },
+];
+
+// with INDENT_WIDTH=8 (and INDENT_STYLE='spaces')
+const testcases = [
+        { nums: [2,7,11,15], target: 9, expected: [0,1] },
+];
+```
+
+### Tests
+
+Enable or disable the creation of tests. With `ADD_TESTS` set to `false`, only solution files will be created.
+
+```js
+/**
+ * @prop {boolean} ADD_TESTS - whether or not to create test files
+ */
+{
+        ADD_TESTS: false,
+}
+```
+
+Select the test framework used for the test file template. This affects how test functions are imported.
+
+```js
+/**
+ * @prop {string} TEST_FRAMEWORK - framework used for testing solutions (one of 'bun:test', 'vitest', or 'jest')
+ */
+{
+        TEST_FRAMEWORK: 'bun:test',
+}
+```
+
+> Note that `bun` and `bun:test` are both accepted values for testing with `bun`.
+
+```js
+// with TEST_FRAMEWORK='bun:test'
+import { describe, expect, test } from 'bun:test';
+import { twoSum } from '0001_two-sum.js';
+
+// with TEST_FRAMEWORK='vitest'
+import { describe, expect, test } from 'vitest';
+import { twoSum } from '0001_two-sum.js';
+
+// with TEST_FRAMEWORK='jest'
+import { twoSum } from '0001_two-sum.js';
+```
+
+> Notice that the test function imports are missing in the jest version. This is because jest automatically makes available these functions in the global scope within each test file.
+
+Additionally, it also affects the nullish matcher.
+
+```js
+// with TEST_FRAMEWORK='bun:test'
+describe('MinStack', () => {
+    test('default test 1', () => {
+        const minStack = new MinStack();
+        expect(minStack.push(-2)).toBeNil();
+    });
+});
+
+// with TEST_FRAMEWORK='vitest'
+describe('MinStack', () => {
+    test('default test 1', () => {
+        const minStack = new MinStack();
+        expect(minStack.push(-2)).toBeNullable();
+    });
+});
+
+// with TEST_FRAMEWORK='jest'
+describe('MinStack', () => {
+    test('default test 1', () => {
+        const minStack = new MinStack();
+        expect(minStack.push(-2)).toBeUndefined();
+    });
+});
+```
+
+### Solution and Test Directories
+
+Change the base directory where solution and test files are saved.
+
+```js
+/**
+ * @prop {string[]} DIR_TESTS=['__tests__'] - base directory for test files
+ * @prop {string[]} DIR_SOLUTIONS=['src'] - base directory for solution files
+ */
+{
+        DIR_SOLUTIONS: ['src'],
+        DIR_TESTS: ['__tests__'],
+}
+```
+
+### Bucket Directories
+
+Use a bucket directory to sort solution and test files. `BUCKET_CHUNK_SIZE` sets the number of problems within each bucket directory.
+
+```js
+/**
+ * @prop {boolean} USE_DIR_BUCKET - use a bucket directory for sorting problems
+ * @prop {number} BUCKET_CHUNK_SIZE - size of the bucket used (minimum: 1)
+ * irrelevant if `USE_DIR_BUCKET` is `false`
+ */
+{
+        USE_DIR_BUCKET: true,
+        BUCKET_CHUNK_SIZE: 100,
+}
+```
+
+Consider the files for the problem `0001_two-sum`. With `USE_DIR_BUCKET` set to `true` and `BUCKET_CHUNK_SIZE` set to `100`, they will be saved within:
+
+```
+.
+├── src
+│   └── 0701-0800
+│      └── 0735_asteroid-collision.js
+│
+└── __tests__
+    └── 0701-0800
+       └── 0735_asteroid-collision.test.js
+```
+
+However, with `BUCKET_CHUNK_SIZE` set to `200`, they will be saved within:
+
+```
+.
+├── src
+│   └── 0601-0800
+│      └── 0735_asteroid-collision.js
+│
+└── __tests__
+    └── 0601-0800
+       └── 0735_asteroid-collision.test.js
+```
+
+Alternatively, with `USE_DIR_BUCKET` set to `false`, they will be saved within:
+
+```
+.
+├── src
+│   └── 0735_asteroid-collision.js
+│
+└── __tests__
+    └── 0735_asteroid-collision.test.js
+```
+
+> Note that if `USE_DIR_BUCKET` is set to `false`, the value of `BUCKET_CHUNK_SIZE` is ignored, and no bucket directories will be created.
+
+### Function Type
+
+Use arrow functions instead of function declarations for solutions.
+
+```js
+/**
+ * @prop {boolean} USE_ARROW_FUNCTIONS - use arrow functions for solution functions
+ * class methods always use non-arrow syntax
+ */
+{
+        USE_ARROW_FUNCTIONS: true,
+}
+```
+
+```js
+// with USE_ARROW_FUNCTIONS=true
+const twoSum = (nums, target) => {};
+
+// with USE_ARROW_FUNCTIONS=false
+function twoSum(nums, target) {}
+```
+
+> Note that class methods will always use non-arrow syntax.
+
+```js
+// with both USE_ARROW_FUNCTIONS=true and USE_ARROW_FUNCTIONS=false
+class MinStack {
+    constructor() {}
+
+    push(val) {}
+
+    pop() {}
+
+    top() {}
+
+    getMin() {}
+}
+```
+
+### ESM vs CJS syntax
+
+Use ESM syntax for imports and exports, as opposed to CJS. (recommended: `true`)
+
+```js
+{
+        USE_ESM_SYNTAX: true,
+}
+```
+
+```js
+// with USE_ESM_SYNTAX=true
+export { twoSum };
+
+import { describe, expect, test } from 'bun:test';
+import { twoSum } from '0001_two-sum.js';
+
+// with USE_ESM_SYNTAX=false
+module.exports = { twoSum };
+
+const { describe, expect, test } = require('bun:test');
+const { twoSum } = require('0001_two-sum.js');
+```
+
+### Import Structure
+
+Use relative imports when importing solutions into test files. (recommended: `true`)
+
+```js
+/**
+ * @prop {boolean} USE_RELATIVE_IMPORTS - use relative import paths when importing solutions into test files
+ */
+{
+        USE_RELATIVE_IMPORTS: true,
+}
+```
+
+```js
+// with USE_RELATIVE_IMPORTS=true
+import { twoSum } from '../../src/0001-0100/0001_two-sum.js';
+
+// with USE_RELATIVE_IMPORTS=false
+import { twoSum } from '/src/0001-0100/0001_two-sum.js';
+```
+
+## Limitations
+
+### Incorrect Expected Return
+
+A few problems on LeetCode involve returning values which are not always exactly equal to the expected return value given in the problem source. An example of this is the problem `0001_two-sum`. The expected return value is an array which may contain the required elements in any order. As such, you must manually edit the matcher in the test file to `toContainAllValues()` or similar, instead of the default `toStrictEqual()`. LeetCode does not provide a way to filter this out straight from source.
+
+```javascript
+const testcases = [
+    { nums: [2,7,11,15], target: 9, expected: [0,1] },
+    { nums: [3,2,4], target: 6, expected: [1,2] },
+    { nums: [3,3], target: 6, expected: [0,1] },
+];
+
 // INCORRECT - generated
 describe('twoSum', () => {
     test.each(structuredClone(testcases))('twoSum($nums, $target) -> $expected', ({ nums, target, expected }) => {
@@ -654,6 +951,36 @@ describe('twoSum', () => {
 describe('twoSum', () => {
     test.each(structuredClone(testcases))('twoSum($nums, $target) -> $expected', ({ nums, target, expected }) => {
         expect(twoSum(nums, target)).toContainAllValues(expected);
+    });
+});
+```
+
+A few problems instead involve returning one of several possible correct values. An example of this is the problem `1980_find-unique-binary-string`. The expected return value is one of several strings, not just the singular given return value. As such, in the test file, you must manually set the `expected` key of each testcase object to an array containing all possible correct return values, and edit the matcher to `toBeOneOf()` or similar, instead of the default `toStrictEqual()`. LeetCode does not provide a way to filter this out straight from source.
+
+```javascript
+// INCORRECT - generated
+const testcases = [
+    { nums: ["01","10"], expected: "11" },
+    { nums: ["00","01"], expected: "11" },
+    { nums: ["111","011","001"], expected: "101" },
+];
+
+describe('findDifferentBinaryString', () => {
+    test.each(structuredClone(testcases))('findDifferentBinaryString($nums) -> $expected', ({ nums, expected }) => {
+        expect(findDifferentBinaryString(nums)).toStrictEqual(expected);
+    });
+});
+
+// CORRECT - manually edited
+const testcases = [
+    { nums: ["01","10"], expected: ["00","11"] },
+    { nums: ["00","01"], expected: ["10","11"] },
+    { nums: ["111","011","001"], expected: ["000","010","100","101","110"] },
+];
+
+describe('findDifferentBinaryString', () => {
+    test.each(structuredClone(testcases))('findDifferentBinaryString($nums) -> $expected', ({ nums, expected }) => {
+        expect(findDifferentBinaryString(nums)).toBeOneOf(expected);
     });
 });
 ```

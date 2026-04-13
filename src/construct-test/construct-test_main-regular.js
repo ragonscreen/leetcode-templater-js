@@ -68,7 +68,7 @@ ${gap()}});
 
 const constructStringExpectInPlace = (name, strParamNames, inPlaceParam) => {
         const voidMatcher =
-                TEST_FRAMEWORK === 'bun:test'
+                TEST_FRAMEWORK === 'bun:test' || TEST_FRAMEWORK === 'bun'
                         ? 'toBeNil'
                         : TEST_FRAMEWORK === 'vitest'
                           ? 'toBeNullable'

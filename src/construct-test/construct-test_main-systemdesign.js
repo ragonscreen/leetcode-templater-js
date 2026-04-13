@@ -37,11 +37,11 @@ const constructStringMethodParams = (params) => {
 
 const constructStringExpects = (className, methodCalls) => {
         const voidMatcher =
-                TEST_FRAMEWORK === 'bun:test'
+                TEST_FRAMEWORK === 'bun:test' || TEST_FRAMEWORK === 'bun'
                         ? 'toBeNil'
                         : TEST_FRAMEWORK === 'vitest'
                           ? 'toBeNullable'
-                          : null;
+                          : 'toBeUndefined';
 
         const fnName = pascalToCamelCase(className);
         let str = ';\n\n';
@@ -52,10 +52,8 @@ const constructStringExpects = (className, methodCalls) => {
                 str += constructStringMethodParams(params);
                 let matcher;
 
-                if (output === undefined) {
-                        matcher = `${voidMatcher ?? 'toBeUndefined'}()`;
-                } else if (output === null) {
-                        matcher = `${voidMatcher ?? 'toBeNull'}()`;
+                if (output === undefined || output === null) {
+                        matcher = `${voidMatcher}()`;
                 } else {
                         matcher = `toStrictEqual(${JSON.stringify(output)})`;
                 }

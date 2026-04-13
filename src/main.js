@@ -4,9 +4,12 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { dirname, resolve } from 'node:path';
 import { argv } from 'node:process';
 import { fileURLToPath } from 'node:url';
+import { CONFIG } from './config.js';
 import { constructSolution, constructTest } from './construct-problem-files.js';
 import { getFilePaths } from './get-file-paths.js';
 import { parseProblemData } from './parse-problem-data.js';
+
+const { ADD_TESTS } = CONFIG;
 
 const parseProvidedIdentifier = () => {
         return argv[2]
@@ -89,14 +92,17 @@ const main = async () => {
         const problemDataParsed = parseProblemData(problemData);
         const filePaths = getFilePaths(problemDataParsed);
         const solution = constructSolution(problemDataParsed);
-        const test = constructTest(problemDataParsed, filePaths);
 
         console.log(solution);
         console.log();
-        console.log(test);
 
         // await createFile(filePaths.filePathSolution, solution);
-        // await createFile(filePaths.filePathTest, test);
+
+        if (ADD_TESTS) {
+                const test = constructTest(problemDataParsed, filePaths);
+                console.log(test);
+                // await createFile(filePaths.filePathTest, test);
+        }
 };
 
 await main();

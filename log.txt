@@ -13,7 +13,5 @@ X - experimental support for interactive problems
 - bun, vitest, jest support
 
 TODO:
-- finish README
+- finish README (config section)
 - update config comment
-- config for non-parameterised tests?
-- no-tests
