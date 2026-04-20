@@ -85,6 +85,8 @@ const main = async () => {
 
         const problemData = await getProblemData(query, titleSlug);
 
+        console.log(problemData);
+
         if (!problemData) {
                 throwIdentifierError();
         }
@@ -93,16 +95,16 @@ const main = async () => {
         const filePaths = getFilePaths(problemDataParsed);
         const solution = constructSolution(problemDataParsed);
 
-        console.log(solution);
-        console.log();
+        // console.log(solution);
+        // console.log();
 
-        // await createFile(filePaths.filePathSolution, solution);
+        // // await createFile(filePaths.filePathSolution, solution);
 
-        if (ADD_TESTS) {
-                const test = constructTest(problemDataParsed, filePaths);
-                console.log(test);
-                // await createFile(filePaths.filePathTest, test);
-        }
+        // if (ADD_TESTS) {
+        //         const test = constructTest(problemDataParsed, filePaths);
+        //         console.log(test);
+        //         // await createFile(filePaths.filePathTest, test);
+        // }
 };
 
 await main();

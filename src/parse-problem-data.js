@@ -1,11 +1,9 @@
 /** biome-ignore-all lint/nursery/noExcessiveLinesPerFile: <explanation> */
 const handleFatalErrors = (problemData) => {
         const { categoryTitle } = problemData;
-        const isConcurrency = categoryTitle === 'Concurrency';
-        const isShell = categoryTitle === 'Shell';
-        const isDatabase = categoryTitle === 'Database';
+        const invalidProblems = ['Concurrency', 'Shell', 'Database'];
 
-        if (isConcurrency || isShell || isDatabase) {
+        if (invalidProblems.includes(categoryTitle)) {
                 throw new Error(
                         `${categoryTitle} based problems are not supported.`,
                 );

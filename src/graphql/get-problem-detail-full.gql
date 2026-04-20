@@ -6,8 +6,10 @@ query getProblemDetail($titleSlug: String!) {
                 questionDetailUrl
                 questionTitle # or title
                 questionTitleSlug # or titleSlug
+                translatedTitle
                 questionType
                 content
+                translatedContent
                 difficulty
                 categoryTitle
                 metaData
@@ -21,14 +23,36 @@ query getProblemDetail($titleSlug: String!) {
                 stats
                 acRate
 
-                # ---TOPICS AND SIMILAR QUESTIONS---
+                # ---SIMILAR QUESTIONS---
                 similarQuestions
+                similarQuestionList {
+                        difficulty
+                        titleSlug
+                        title
+                        translatedTitle
+                        isPaidOnly
+                }
+
+                # ---TOPICS, POSITION, AND CONTEST---
                 topicTags {
                         name
+                        translatedName
                         slug
                         id
                 }
+                positionLevelTags {
+                        name
+                        nameTranslated
+                        slug
+                }
+                featuredContests {
+                        title
+                        titleSlug
+                }
+
+                # ---COMPANY TAGS---
                 companyTagStats
+                companyTagStatsV2
                 isPaidOnly
 
                 # ---USER STATUS---
@@ -48,6 +72,7 @@ query getProblemDetail($titleSlug: String!) {
                         questionFrontendId
                         title
                         titleSlug
+                        difficulty
                 }
                 nextChallengePairs
 
@@ -69,6 +94,7 @@ query getProblemDetail($titleSlug: String!) {
                 # ---CODE SNIPPETS---
                 codeSnippets {
                         lang
+                        langSlug
                         code
                 }
 
@@ -77,9 +103,11 @@ query getProblemDetail($titleSlug: String!) {
                 judgeType
 
                 # ---ENVIRONMENT---
+                canSeeQuestion
                 envInfo
-                enableRunCode
                 enableTestMode
+                enableRunCode
+                enableSubmit
                 enableDebugger
 
                 # ---CONTRIBUTORS---
@@ -90,5 +118,11 @@ query getProblemDetail($titleSlug: String!) {
 
                 # ---OTHER---
                 randomQuestionUrl
+                mysqlSchemas
+                dataSchemas
+                frontendPreviews
+                libraryUrl
+                adminUrl
+                hasFrontendPreview
         }
 }

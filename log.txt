@@ -17,3 +17,5 @@ TODO:
 - add contest and position identifiers to problems
 - fix html parsing for various problems
 - add "randomized" problems?
+- limitations: concurrency, shell, etc.
+- add hints
