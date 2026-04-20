@@ -10,11 +10,23 @@ query getProblemDetail($titleSlug: String!) {
                 metaData
                 exampleTestcaseList
                 stats
-                similarQuestions
+                similarQuestionList {
+                        difficulty
+                        titleSlug
+                        isPaidOnly
+                }
                 topicTags {
                         name
                         slug
                         id
+                }
+                positionLevelTags {
+                        name
+                        slug
+                }
+                featuredContests {
+                        title
+                        titleSlug
                 }
                 codeSnippets {
                         lang

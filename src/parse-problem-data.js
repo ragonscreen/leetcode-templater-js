@@ -1,4 +1,3 @@
-/** biome-ignore-all lint/nursery/noExcessiveLinesPerFile: <explanation> */
 const handleFatalErrors = (problemData) => {
         const { categoryTitle } = problemData;
         const invalidProblems = ['Concurrency', 'Shell', 'Database'];
@@ -8,12 +7,6 @@ const handleFatalErrors = (problemData) => {
                         `${categoryTitle} based problems are not supported.`,
                 );
         }
-};
-
-const parseSimilarQuestions = (similarQuestions) => {
-        return JSON.parse(similarQuestions).map(
-                ({ titleSlug, difficulty }) => ({ titleSlug, difficulty }),
-        );
 };
 
 const parseOutputs = (htmlContent) => {
@@ -186,6 +179,7 @@ const displayWarnings = (problemData) => {
         }
 };
 
+// biome-ignore lint/complexity/noExcessiveLinesPerFunction: /
 const parseProblemData = (problemData) => {
         const {
                 questionFrontendId,
@@ -194,9 +188,11 @@ const parseProblemData = (problemData) => {
                 questionType: type,
                 categoryTitle: category,
                 topicTags: topics,
+                positionLevelTags: positions,
+                featuredContests: contests,
                 difficulty,
                 stats,
-                similarQuestions,
+                similarQuestionList,
                 metaData,
                 content,
                 exampleTestcaseList,
@@ -207,7 +203,6 @@ const parseProblemData = (problemData) => {
         handleFatalErrors(problemData);
         const id = Number(questionFrontendId);
         const statsParsed = JSON.parse(stats);
-        const similarQuestionsParsed = parseSimilarQuestions(similarQuestions);
         const metadataParsed = parseMetadata(metaData);
         const outputs = parseOutputs(content);
         const inputs = parseInputs(exampleTestcaseList);
@@ -223,7 +218,9 @@ const parseProblemData = (problemData) => {
                 category,
                 stats: statsParsed,
                 topics,
-                similarQuestions: similarQuestionsParsed,
+                positions,
+                contests,
+                similarQuestions: similarQuestionList,
                 metadata: {
                         ...metadataParsed,
                         classConstructorParams,

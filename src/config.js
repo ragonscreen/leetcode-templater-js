@@ -39,6 +39,8 @@ import { cwd } from 'node:process';
  * @prop {boolean} ADD_DATE - add the current date to the solution description
  * @prop {boolean} ADD_AUTHOR - add author information to the solution description
  * @prop {boolean} ADD_PROBLEM_TOPICS - add the problem topics to the solution description
+ * @prop {boolean} ADD_PROBLEM_POSITIONS - add the problem position tags to the solution description
+ * @prop {boolean} ADD_PROBLEM_CONTESTS - add the problem contest tags to the solution description
  * @prop {boolean} ADD_PROBLEM_STATS - add the problem stats to the solution description
  * @prop {boolean} ADD_SIMILAR_PROBLEMS - add similar problems to the solution description
  * @prop {number} MAX_SIMILAR_PROBLEMS - maximum number of similar problems to add to the solution description (minimum: 1)
@@ -77,6 +79,8 @@ const DEFAULTS = {
         ADD_DATE: true,
         ADD_AUTHOR: true,
         ADD_PROBLEM_TOPICS: true,
+        ADD_PROBLEM_POSITIONS: true,
+        ADD_PROBLEM_CONTESTS: true,
         ADD_PROBLEM_STATS: true,
         ADD_SIMILAR_PROBLEMS: true,
         MAX_SIMILAR_PROBLEMS: 0,

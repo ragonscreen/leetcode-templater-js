@@ -10,6 +10,8 @@ const {
         ADD_DATE,
         ADD_AUTHOR,
         ADD_PROBLEM_TOPICS,
+        ADD_PROBLEM_POSITIONS,
+        ADD_PROBLEM_CONTESTS,
         ADD_PROBLEM_STATS,
         ADD_SIMILAR_PROBLEMS,
         MAX_SIMILAR_PROBLEMS,
@@ -68,16 +70,34 @@ const constructStringBasicDetails = (problemData) => {
         return str;
 };
 
-const constructStringTopics = (topics) => {
-        if (!(topics.length && ADD_PROBLEM_TOPICS)) {
+const constructStringTopics = ({ topics, positions, contests }) => {
+        const addTopics = topics.length && ADD_PROBLEM_TOPICS;
+        const addPositions = positions.length && ADD_PROBLEM_POSITIONS;
+        const addContests = contests.length && ADD_PROBLEM_CONTESTS;
+
+        if (!(addTopics || addPositions || addContests)) {
                 return '';
         }
 
         let str = '\n *\n * Topics:';
 
-        for (const topic of topics) {
-                const topicId = `topic_${atob(topic.id).match(/\d+/)[0]}`;
-                str += `\n * - ${topic.name} (${topicId})`;
+        if (addTopics) {
+                for (const topic of topics) {
+                        const topicId = `topic_${atob(topic.id).match(/\d+/)[0]}`;
+                        str += `\n * - ${topic.name} (${topicId})`;
+                }
+        }
+
+        if (addPositions) {
+                for (const position of positions) {
+                        str += `\n * - ${position.name} (position_${position.slug})`;
+                }
+        }
+
+        if (addContests) {
+                for (const contest of contests) {
+                        str += `\n * - ${contest.title} (contest_${contest.titleSlug})`;
+                }
         }
 
         return str;
@@ -129,8 +149,8 @@ const constructStringSimilarProblems = (similarQuestions) => {
 
         let str = '\n *\n * Similar Problems:';
 
-        for (const problem of similarProblems) {
-                str += `\n * - ${problem.titleSlug} (${problem.difficulty})`;
+        for (const { titleSlug, difficulty, isPaidOnly } of similarProblems) {
+                str += `\n * - ${titleSlug} (${difficulty})${isPaidOnly ? ' (Premium)' : ''}`;
         }
 
         return str;
@@ -141,9 +161,11 @@ const constructSolutionDescription = (problemData) => {
                 return '';
         }
 
-        const { topics, similarQuestions, stats } = problemData;
+        const { topics, positions, contests, similarQuestions, stats } =
+                problemData;
+
         let str = constructStringBasicDetails(problemData);
-        str += constructStringTopics(topics);
+        str += constructStringTopics({ topics, positions, contests });
         str += constructStringStats(stats);
         str += constructStringSimilarProblems(similarQuestions);
         str += '\n */\n\n';

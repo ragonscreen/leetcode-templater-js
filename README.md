@@ -1070,6 +1070,8 @@ Furthermore, there are many options to enable or disable only parts of the solut
  * @prop {boolean} ADD_DATE - add the current date to the solution description
  * @prop {boolean} ADD_AUTHOR - add author information to the solution description
  * @prop {boolean} ADD_PROBLEM_TOPICS - add the problem topics to the solution description
+ * @prop {boolean} ADD_PROBLEM_POSITIONS - add the problem position tags to the solution description
+ * @prop {boolean} ADD_PROBLEM_CONTESTS - add the problem contest tags to the solution description
  * @prop {boolean} ADD_PROBLEM_STATS - add the problem stats to the solution description
  * @prop {boolean} ADD_SIMILAR_PROBLEMS - add similar problems to the solution description
  * @prop {number} MAX_SIMILAR_PROBLEMS - maximum number of similar problems to add to the solution description (minimum: 1)
@@ -1084,6 +1086,8 @@ Furthermore, there are many options to enable or disable only parts of the solut
         ADD_DATE: true,
         ADD_AUTHOR: true,
         ADD_PROBLEM_TOPICS: true,
+        ADD_PROBLEM_POSITIONS: true,
+        ADD_PROBLEM_CONTESTS: true,
         ADD_PROBLEM_STATS: true,
         ADD_SIMILAR_PROBLEMS: true,
         MAX_SIMILAR_PROBLEMS: 10,
@@ -1092,8 +1096,8 @@ Furthermore, there are many options to enable or disable only parts of the solut
 ```
 
 ```js
-// with ADD_PROBLEM_URL=false, ADD_PROBLEM_CATEGORY=false, ADD_PROBLEM_DIFFICULTY=false,
-// ADD_DATE=false, ADD_AUTHOR=false, ADD_PROBLEM_STATS=false, ADD_SIMILAR_PROBLEMS=false, and
+// with ADD_PROBLEM_URL=false, ADD_PROBLEM_CATEGORY=false, ADD_PROBLEM_DIFFICULTY=false, ADD_DATE=false, ADD_AUTHOR=false,
+// ADD_PROBLEM_STATS=false, ADD_SIMILAR_PROBLEMS=false, ADD_PROBLEM_POSITIONS=false, ADD_PROBLEM_CONTESTS=false, and
 // ADD_PROBLEM_TOPICS=true
 /**
  * 0735. Asteroid Collision
@@ -1174,6 +1178,38 @@ Furthermore, there are many options to enable or disable only parts of the solut
  * - two-sum-ii-input-array-is-sorted (Medium)
  */
 ```
+
+For newer problems, position and contest tags might be available. They are added under the topics section if they are available and enabled.
+
+```js
+// with position and contest information available, ADD_PROBLEM_POSITIONS=true, and ADD_PROBLEM_CONTESTS=true
+/**
+ * 3858. Minimum Bitwise OR From Grid
+ *
+ * Link: https://leetcode.com/problems/minimum-bitwise-or-from-grid/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-20
+ * Author: ragonscreen (https://github.com/ragonscreen/)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Greedy (topic_17)
+ * - Bit Manipulation (topic_19)
+ * - Matrix (topic_61053)
+ * - Staff (position_staff)
+ * - Weekly Contest 491 (contest_weekly-contest-491)
+ *
+ * Stats:
+ * - Total Accepted: 13,880
+ * - Total Submissions: 51,961
+ * - Acceptance Rate: 26.7%
+ */
+```
+
+> Note that all topic, position, and contest tags are prefixed with their respective type for easy search across your project.
+
+> Also note that for some problems, topics and/or similar problems might be unavailable. In this case, their respective configuration options are ignored.
 
 ## Limitations
 
