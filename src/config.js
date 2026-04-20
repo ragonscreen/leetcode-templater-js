@@ -30,9 +30,21 @@ import { cwd } from 'node:process';
  * @prop {boolean} USE_RELATIVE_IMPORTS - use relative import paths when
  * importing solutions into test files
  *
- * @prop {boolean} ADD_TOPICS - whether to add problem topics to the solution description
- * @prop {boolean} ADD_STATS - whether to add problem stats to the solution description
- * @prop {boolean} ADD_SIMILAR_PROBLEMS - whether to add similar problems to the solution description
+ * @prop {boolean} ADD_COMMENTS - add comments in the solution file
+ *
+ * @prop {boolean} ADD_DESCRIPTION - add a description in the solution file
+ * @prop {boolean} ADD_PROBLEM_URL - add the problem url to the solution description
+ * @prop {boolean} ADD_PROBLEM_CATEGORY - add the problem category to the solution description
+ * @prop {boolean} ADD_PROBLEM_DIFFICULTY - add the problem difficulty to the solution description
+ * @prop {boolean} ADD_DATE - add the current date to the solution description
+ * @prop {boolean} ADD_AUTHOR - add author information to the solution description
+ * @prop {boolean} ADD_PROBLEM_TOPICS - add the problem topics to the solution description
+ * @prop {boolean} ADD_PROBLEM_STATS - add the problem stats to the solution description
+ * @prop {boolean} ADD_SIMILAR_PROBLEMS - add similar problems to the solution description
+ * @prop {number} MAX_SIMILAR_PROBLEMS - maximum number of similar problems to add to the solution description (minimum: 1)
+ * setting it to 0 will add all available similar problems
+ * @prop {boolean} SORT_SIMILAR_PROBLEMS - sort the similar problems added to the solution description
+ * problems are sorted by difficulty - easiest first, then by title
  */
 const DEFAULTS = {
         SOLUTION_AUTHOR_NAME: 'ragonscreen',
@@ -57,6 +69,7 @@ const DEFAULTS = {
         USE_RELATIVE_IMPORTS: false,
 
         ADD_COMMENTS: true,
+
         ADD_DESCRIPTION: true,
         ADD_PROBLEM_URL: true,
         ADD_PROBLEM_CATEGORY: true,
@@ -66,7 +79,7 @@ const DEFAULTS = {
         ADD_PROBLEM_TOPICS: true,
         ADD_PROBLEM_STATS: true,
         ADD_SIMILAR_PROBLEMS: true,
-        MAX_SIMILAR_PROBLEMS: 10,
+        MAX_SIMILAR_PROBLEMS: 0,
         SORT_SIMILAR_PROBLEMS: true,
 };
 

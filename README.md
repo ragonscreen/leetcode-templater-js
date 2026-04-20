@@ -927,6 +927,254 @@ import { twoSum } from '../../src/0001-0100/0001_two-sum.js';
 import { twoSum } from '/src/0001-0100/0001_two-sum.js';
 ```
 
+### Add Comments
+
+Enable or disable comments in solution files.
+
+```js
+/**
+ * @prop {boolean} ADD_COMMENTS - add comments in the solution file
+ */
+{
+        ADD_COMMENTS: true,
+}
+```
+
+```js
+// with ADD_COMMENTS=true
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ *
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number[]}
+ */
+const twoSum = (nums, target) => {};
+
+export { twoSum };
+
+// with ADD_COMMENTS=false
+const twoSum = (nums, target) => {};
+
+export { twoSum };
+```
+
+Note that this also affects code comments that are sometimes included in the solution template by default.
+
+```js
+// with ADD_COMMENTS=true
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ *
+ * @return {Function}
+ */
+const createHelloWorld = () => {
+
+    return function(...args) {}
+};
+
+/**
+ * const f = createHelloWorld();
+ * f(); // "Hello World"
+ */
+
+export { createHelloWorld };
+
+// with ADD_COMMENTS=false
+const createHelloWorld = () => {
+
+    return function(...args) {}
+};
+
+export { createHelloWorld };
+```
+
+### Solution Description
+
+Enable or disable the solution description.
+
+```js
+/**
+ * @prop {boolean} ADD_DESCRIPTION - add a description in the solution file
+ */
+{
+        ADD_DESCRIPTION: true,
+}
+```
+
+```js
+// with ADD_DESCRIPTION=true
+/**
+ * 0735. Asteroid Collision
+ *
+ * Link: https://leetcode.com/problems/asteroid-collision/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-20
+ * Author: ragonscreen (https://github.com/ragonscreen/)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Stack (topic_15)
+ * - Simulation (topic_61055)
+ *
+ * Stats:
+ * - Total Accepted: 1,013,312
+ * - Total Submissions: 2,126,431
+ * - Acceptance Rate: 47.7%
+ *
+ * Similar Problems:
+ * - can-place-flowers (Easy)
+ * - count-collisions-on-a-road (Medium)
+ * - destroying-asteroids (Medium)
+ * - robot-collisions (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ *
+ * @param {number[]} asteroids
+ * @return {number[]}
+ */
+const asteroidCollision = (asteroids) => {};
+
+export { asteroidCollision };
+
+// with ADD_DESCRIPTION=false
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ *
+ * @param {number[]} asteroids
+ * @return {number[]}
+ */
+const asteroidCollision = (asteroids) => {};
+
+export { asteroidCollision };
+```
+
+Furthermore, there are many options to enable or disable only parts of the solution description, without disabling the whole thing.
+
+```js
+/**
+ * @prop {boolean} ADD_PROBLEM_URL - add the problem url to the solution description
+ * @prop {boolean} ADD_PROBLEM_CATEGORY - add the problem category to the solution description
+ * @prop {boolean} ADD_PROBLEM_DIFFICULTY - add the problem difficulty to the solution description
+ * @prop {boolean} ADD_DATE - add the current date to the solution description
+ * @prop {boolean} ADD_AUTHOR - add author information to the solution description
+ * @prop {boolean} ADD_PROBLEM_TOPICS - add the problem topics to the solution description
+ * @prop {boolean} ADD_PROBLEM_STATS - add the problem stats to the solution description
+ * @prop {boolean} ADD_SIMILAR_PROBLEMS - add similar problems to the solution description
+ * @prop {number} MAX_SIMILAR_PROBLEMS - maximum number of similar problems to add to the solution description (minimum: 1)
+ * setting it to 0 will add all available similar problems
+ * @prop {boolean} SORT_SIMILAR_PROBLEMS - sort the similar problems added to the solution description
+ * problems are sorted by difficulty - easiest first, then by title
+ */
+{
+        ADD_PROBLEM_URL: true,
+        ADD_PROBLEM_CATEGORY: true,
+        ADD_PROBLEM_DIFFICULTY: true,
+        ADD_DATE: true,
+        ADD_AUTHOR: true,
+        ADD_PROBLEM_TOPICS: true,
+        ADD_PROBLEM_STATS: true,
+        ADD_SIMILAR_PROBLEMS: true,
+        MAX_SIMILAR_PROBLEMS: 10,
+        SORT_SIMILAR_PROBLEMS: true,
+}
+```
+
+```js
+// with ADD_PROBLEM_URL=false, ADD_PROBLEM_CATEGORY=false, ADD_PROBLEM_DIFFICULTY=false,
+// ADD_DATE=false, ADD_AUTHOR=false, ADD_PROBLEM_STATS=false, ADD_SIMILAR_PROBLEMS=false, and
+// ADD_PROBLEM_TOPICS=true
+/**
+ * 0735. Asteroid Collision
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Stack (topic_15)
+ * - Simulation (topic_61055)
+ */
+```
+
+```js
+// with MAX_SIMILAR_PROBLEMS=0
+/**
+ * 0001. Two Sum
+ *
+ * Link: https://leetcode.com/problems/two-sum/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-20
+ * Author: ragonscreen (https://github.com/ragonscreen/)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ *
+ * Stats:
+ * - Total Accepted: 21,458,267
+ * - Total Submissions: 37,407,629
+ * - Acceptance Rate: 57.4%
+ *
+ * Similar Problems:
+ * - check-distances-between-same-letters (Easy)
+ * - count-number-of-pairs-with-absolute-difference-k (Easy)
+ * - count-pairs-whose-sum-is-less-than-target (Easy)
+ * - find-all-k-distant-indices-in-an-array (Easy)
+ * - find-subarrays-with-equal-sum (Easy)
+ * - first-letter-to-appear-twice (Easy)
+ * - largest-positive-integer-that-exists-with-its-negative (Easy)
+ * - number-of-arithmetic-triplets (Easy)
+ * - number-of-distinct-averages (Easy)
+ * - two-sum-iii-data-structure-design (Easy)
+ * - two-sum-iv-input-is-a-bst (Easy)
+ * - two-sum-less-than-k (Easy)
+ * - 3sum (Medium)
+ * - 4sum (Medium)
+ * - count-good-meals (Medium)
+ * - max-number-of-k-sum-pairs (Medium)
+ * - node-with-highest-edge-score (Medium)
+ * - number-of-pairs-of-strings-with-concatenation-equal-to-target (Medium)
+ * - subarray-sum-equals-k (Medium)
+ * - two-sum-ii-input-array-is-sorted (Medium)
+ * - number-of-excellent-pairs (Hard)
+ */
+
+// with MAX_SIMILAR_PROBLEMS=3
+/**
+ * 0001. Two Sum
+ *
+ * Link: https://leetcode.com/problems/two-sum/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-20
+ * Author: ragonscreen (https://github.com/ragonscreen/)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ *
+ * Stats:
+ * - Total Accepted: 21,458,267
+ * - Total Submissions: 37,407,629
+ * - Acceptance Rate: 57.4%
+ *
+ * Similar Problems:
+ * - 3sum (Medium)
+ * - 4sum (Medium)
+ * - two-sum-ii-input-array-is-sorted (Medium)
+ */
+```
+
 ## Limitations
 
 ### Incorrect Expected Return

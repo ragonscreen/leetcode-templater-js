@@ -8,10 +8,12 @@ X - partial support for premium problems
 X - partial support for javascript based problems
 X - experimental support for javascript based premium problems
 X - experimental support for interactive problems
-- highly configurable
-- cjs/esm syntax
-- bun, vitest, jest support
+X - highly configurable
+X - cjs/esm syntax
+X - bun, vitest, jest support
 
 TODO:
-- finish README (config section)
-- update config comment
+- finish README
+- add contest and position identifiers to problems
+- fix html parsing for various problems
+- add "randomized" problems?
