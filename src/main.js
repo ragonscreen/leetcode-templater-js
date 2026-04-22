@@ -85,6 +85,8 @@ const main = async () => {
 
         const problemData = await getProblemData(query, titleSlug);
 
+        console.log(problemData);
+
         if (!problemData) {
                 throwIdentifierError();
         }

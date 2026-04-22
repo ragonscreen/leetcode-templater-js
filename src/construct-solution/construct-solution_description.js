@@ -16,6 +16,7 @@ const {
         ADD_SIMILAR_PROBLEMS,
         MAX_SIMILAR_PROBLEMS,
         SORT_SIMILAR_PROBLEMS,
+        ADD_HINTS,
 } = CONFIG;
 
 const getCurrentDate = () => {
@@ -156,18 +157,60 @@ const constructStringSimilarProblems = (similarQuestions) => {
         return str;
 };
 
+const constructStringHints = (hints) => {
+        if (!(hints.length && ADD_HINTS)) {
+                return '';
+        }
+
+        let str = '\n *\n * Hints:';
+
+        for (let i = 0; i < hints.length; i++) {
+                const hint = hints[i];
+                const m = hint.length;
+                const hintStrs = [];
+                let lastBreakIdx = 0;
+
+                for (let l = 0, r = 0; r < m; r++) {
+                        const c = hint[r];
+
+                        if (c === ' ') {
+                                lastBreakIdx = r;
+                        }
+
+                        if (r - l + 1 > 74) {
+                                hintStrs.push(hint.slice(l, lastBreakIdx));
+                                l = lastBreakIdx + 1;
+                                r = lastBreakIdx + 1;
+                        }
+
+                        if (r === m - 1) {
+                                hintStrs.push(hint.slice(l, r + 1));
+                        }
+                }
+
+                str += `${i ? '\n *' : ''}\n * ${i + 1}.`;
+
+                for (let j = 0; j < hintStrs.length; j++) {
+                        str += `${j ? '\n *' : ''} ${hintStrs[j]}`;
+                }
+        }
+
+        return str;
+};
+
 const constructSolutionDescription = (problemData) => {
         if (!ADD_DESCRIPTION) {
                 return '';
         }
 
-        const { topics, positions, contests, similarQuestions, stats } =
+        const { topics, positions, contests, similarQuestions, stats, hints } =
                 problemData;
 
         let str = constructStringBasicDetails(problemData);
         str += constructStringTopics({ topics, positions, contests });
         str += constructStringStats(stats);
         str += constructStringSimilarProblems(similarQuestions);
+        str += constructStringHints(hints);
         str += '\n */\n\n';
 
         return str;

@@ -105,6 +105,10 @@ const parseMetadata = (metaData) => {
         return JSON.parse(metaDataParsed);
 };
 
+const parseHints = (hints) => {
+        return hints.map((e) => e.replace(/<code>|<\/code>/g, '`'));
+};
+
 const parseClassConstructor = (codeSnippets) => {
         if (!codeSnippets) {
                 return [];
@@ -196,6 +200,7 @@ const parseProblemData = (problemData) => {
                 metaData,
                 content,
                 exampleTestcaseList,
+                hints,
                 codeSnippets,
                 isPaidOnly,
         } = problemData;
@@ -206,6 +211,7 @@ const parseProblemData = (problemData) => {
         const metadataParsed = parseMetadata(metaData);
         const outputs = parseOutputs(content);
         const inputs = parseInputs(exampleTestcaseList);
+        const hintsParsed = parseHints(hints);
         const classConstructorParams = parseClassConstructor(codeSnippets);
         const inPlaceParam = parseInPlaceParam(metadataParsed, codeSnippets);
 
@@ -228,6 +234,7 @@ const parseProblemData = (problemData) => {
                         outputs,
                         inPlaceParam,
                 },
+                hints: hintsParsed,
                 codeSnippets,
                 isPaidOnly,
         };

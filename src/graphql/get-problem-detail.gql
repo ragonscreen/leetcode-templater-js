@@ -28,6 +28,7 @@ query getProblemDetail($titleSlug: String!) {
                         title
                         titleSlug
                 }
+                hints
                 codeSnippets {
                         lang
                         code

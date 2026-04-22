@@ -11,12 +11,12 @@ import { cwd } from 'node:process';
  * @prop {string} INDENT_STYLE - indent style - `tabs` or `spaces`
  * @prop {number} INDENT_WIDTH - indent width (minimum: 1)
  *
- * @prop {boolean} ADD_TESTS - whether or not to create test files
+ * @prop {boolean} ADD_TESTS - create test files
  * @prop {string} TEST_FRAMEWORK - framework used for testing solutions
  * (one of 'bun:test', 'vitest', or 'jest')
  *
- * @prop {string[]} DIR_SOLUTIONS=['src'] - base directory for solution files
- * @prop {string[]} DIR_TESTS=['__tests__'] - base directory for test files
+ * @prop {string[]} DIR_SOLUTIONS - base directory for solution files
+ * @prop {string[]} DIR_TESTS - base directory for test files
  *
  * @prop {boolean} USE_DIR_BUCKET - use a bucket directory for sorting problems
  * @prop {number} BUCKET_CHUNK_SIZE - size of the bucket used (minimum: 1)
@@ -47,10 +47,11 @@ import { cwd } from 'node:process';
  * setting it to 0 will add all available similar problems
  * @prop {boolean} SORT_SIMILAR_PROBLEMS - sort the similar problems added to the solution description
  * problems are sorted by difficulty - easiest first, then by title
+ * @prop {boolean} ADD_HINTS - add the problem hints to the solution description
  */
 const DEFAULTS = {
-        SOLUTION_AUTHOR_NAME: 'ragonscreen',
-        SOLUTION_AUTHOR_URL: 'https://github.com/ragonscreen/',
+        SOLUTION_AUTHOR_NAME: '<SOLUTION_AUTHOR_NAME>',
+        SOLUTION_AUTHOR_URL: '<SOLUTION_AUTHOR_URL>',
 
         INDENT_STYLE: 'spaces',
         INDENT_WIDTH: 4,
@@ -58,8 +59,8 @@ const DEFAULTS = {
         ADD_TESTS: true,
         TEST_FRAMEWORK: 'bun:test',
 
-        DIR_TESTS: ['__tests__'],
         DIR_SOLUTIONS: ['src'],
+        DIR_TESTS: ['__tests__'],
 
         USE_DIR_BUCKET: true,
         BUCKET_CHUNK_SIZE: 100,
@@ -85,6 +86,7 @@ const DEFAULTS = {
         ADD_SIMILAR_PROBLEMS: true,
         MAX_SIMILAR_PROBLEMS: 0,
         SORT_SIMILAR_PROBLEMS: true,
+        ADD_HINTS: true,
 };
 
 const loadUserConfig = async () => {

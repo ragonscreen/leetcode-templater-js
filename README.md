@@ -42,38 +42,53 @@ The templater is highly configurable. It is **strongly recommended** to use your
 Automatically generates a solution and a test file containing default tests, with all data sourced straight from leetcode.
 
 ```sh
-bunx lct contains-duplicate
+bunx lct house-robber-iv
 ```
 
-Running the above command will generate a solution file `0217_contains-duplicate.js` and a test file `0217_contains-duplicate.test.js` with the following contents:
+Running the above command will generate a solution file `2560_house-robber-iv.js` and a test file `2560_house-robber-iv.test.js` with the following contents:
 
-File: `0217_contains-duplicate.js`
+File: `2560_house-robber-iv.js`
 
 ```javascript
 /**
- * 0217. Contains Duplicate
+ * 2560. House Robber IV
  *
- * Link: https://leetcode.com/problems/contains-duplicate/
+ * Link: https://leetcode.com/problems/house-robber-iv/
  * Category: Algorithms
- * Difficulty: Easy
- * Date: 2026-03-26
- * Author: ragonscreen (https://github.com/ragonscreen/)
+ * Difficulty: Medium
+ * Date: <CURRENT_DATE>
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
  *
  * Topics:
  * - Array (topic_5)
- * - Hash Table (topic_6)
- * - Sorting (topic_61049)
+ * - Binary Search (topic_11)
+ * - Dynamic Programming (topic_13)
+ * - Greedy (topic_17)
+ * - Staff (position_staff)
+ * - Weekly Contest 331 (contest_weekly-contest-331)
  *
  * Stats:
- * - Total Accepted: 6,255,235
- * - Total Submissions: 9,747,756
- * - Acceptance Rate: 64.2%
+ * - Total Accepted: 140,228
+ * - Total Submissions: 216,657
+ * - Acceptance Rate: 64.7%
  *
  * Similar Problems:
- * - contains-duplicate-ii (Easy)
- * - find-valid-pair-of-adjacent-digits-in-string (Easy)
- * - make-array-zero-by-subtracting-equal-amounts (Easy)
- * - contains-duplicate-iii (Hard)
+ * - container-with-most-water (Medium)
+ * - house-robber (Medium)
+ *
+ * Hints:
+ * 1. Can we use binary search to find the minimum value of a non-contiguous
+ * subsequence of a given size k?
+ *
+ * 2. Initialize the search range with the minimum and maximum elements of the
+ * input array.
+ *
+ * 3. Use a check function to determine if it is possible to select k
+ * non-consecutive elements that are less than or equal to the current
+ * "guess" value.
+ *
+ * 4. Adjust the search range based on the outcome of the check function, until
+ * the range converges and the minimum value is found.
  */
 
 /**
@@ -82,28 +97,28 @@ File: `0217_contains-duplicate.js`
  * Space Complexity: O()
  *
  * @param {number[]} nums
- * @return {boolean}
+ * @param {number} k
+ * @return {number}
  */
-const containsDuplicate = (nums) => {};
+const minCapability = (nums, k) => {};
 
-export { containsDuplicate };
+export { minCapability };
 ```
 
-File: `0217_contains-duplicate.test.js`
+File: `2560_house-robber-iv.test.js`
 
 ```javascript
 import { describe, expect, test } from 'bun:test';
-import { containsDuplicate } from '0217_contains-duplicate.js';
+import { minCapability } from '2560_house-robber-iv.js';
 
 const testcases = [
-    { nums: [1,2,3,1], expected: true },
-    { nums: [1,2,3,4], expected: false },
-    { nums: [1,1,1,3,3,4,3,2,4,2], expected: true },
+    { nums: [2,3,5,9], k: 2, expected: 5 },
+    { nums: [2,7,9,3,1], k: 2, expected: 2 },
 ];
 
-describe('containsDuplicate', () => {
-    test.each(structuredClone(testcases))('containsDuplicate($nums) -> $expected', ({ nums, expected }) => {
-        expect(containsDuplicate(nums)).toStrictEqual(expected);
+describe('minCapability', () => {
+    test.each(structuredClone(testcases))('minCapability($nums, $k) -> $expected', ({ nums, k, expected }) => {
+        expect(minCapability(nums, k)).toStrictEqual(expected);
     });
 });
 ```
@@ -112,12 +127,13 @@ Adding your own testcases is easy. Simply add more lines to the `testcases` arra
 
 ```javascript
 const testcases = [
-    { nums: [1,2,3,1], expected: true },
-    { nums: [1,2,3,4], expected: false },
-    { nums: [1,1,1,3,3,4,3,2,4,2], expected: true },
-    { nums: [1,1,1,1], expected: true },
-    { nums: [1,7,3,8], expected: false },
-    { nums: [-90, -45, 0, 45, 90], expected: false },
+    // default testcases
+    { nums: [2,3,5,9], k: 2, expected: 5 },
+    { nums: [2,7,9,3,1], k: 2, expected: 2 },
+
+    // custom testcases
+    { nums: [2, 3, 5, 9, 4], k: 3, expected: 5 },
+    { nums: [2, 1, 5, 1, 4, 2], k: 3, expected: 2 },
 ];
 ```
 
@@ -125,65 +141,72 @@ If you would like to write multiple solutions, simply add more functions below y
 
 ```javascript
 /**
- * Approach:
+ * Approach: Binary Search + Greedy
  * Time Complexity: O()
  * Space Complexity: O()
  *
  * @param {number[]} nums
- * @return {boolean}
+ * @param {number} k
+ * @return {number}
  */
-const containsDuplicate = (nums) => {};
+const minCapability = (nums, k) => {
+    // code
+};
 
 /**
- * Approach:
+ * Approach: Dynamic Programming
  * Time Complexity: O()
  * Space Complexity: O()
  *
  * @param {number[]} nums
- * @return {boolean}
+ * @param {number} k
+ * @return {number}
  */
-const containsDuplicate1 = (nums) => {};
+const minCapability1 = (nums, k) => {
+    // code
+};
 
-export { containsDuplicate, containsDuplicate1 };
+export { minCapability, minCapability1 };
 ```
 
 Then, import them in the test file and copy the `describe` function for each new solution.
 
 ```javascript
 import { describe, expect, test } from 'bun:test';
-import { containsDuplicate, containsDuplicate1 } from '0217_contains-duplicate.js';
+import { minCapability, minCapability1 } from '2560_house-robber-iv.js';
 
 const testcases = [
-    { nums: [1,2,3,1], expected: true },
-    { nums: [1,2,3,4], expected: false },
-    { nums: [1,1,1,3,3,4,3,2,4,2], expected: true },
+    { nums: [2,3,5,9], k: 2, expected: 5 },
+    { nums: [2,7,9,3,1], k: 2, expected: 2 },
 ];
 
-describe('containsDuplicate', () => {
-    test.each(structuredClone(testcases))('containsDuplicate($nums) -> $expected', ({ nums, expected }) => {
-        expect(containsDuplicate(nums)).toStrictEqual(expected);
+describe('minCapability', () => {
+    test.each(structuredClone(testcases))('minCapability($nums, $k) -> $expected', ({ nums, k, expected }) => {
+        expect(minCapability(nums, k)).toStrictEqual(expected);
     });
 });
 
-describe('containsDuplicate1', () => {
-    test.each(structuredClone(testcases))('containsDuplicate1($nums) -> $expected', ({ nums, expected }) => {
-        expect(containsDuplicate1(nums)).toStrictEqual(expected);
+describe('minCapability1', () => {
+    test.each(structuredClone(testcases))('minCapability1($nums, $k) -> $expected', ({ nums, k, expected }) => {
+        expect(minCapability1(nums, k)).toStrictEqual(expected);
     });
 });
 ```
 
+> Note that for every following template example, the description has been trimmed to only include the highlighted sections.
+
 ### Multiple Identifier Support
 
-Supports the following forms of identifiers (with or without the trailing `description/`) as valid problem slugs:
+Supports the following forms of identifiers (including sublinks such as `description/`, `submissions/`, `solutions/`, etc.) as valid problem slugs:
 
 ```sh
 two-sum
 
-problems/two-sum/description/
+problems/two-sum/
 
-leetcode.com/problems/two-sum/description/
+leetcode.com/problems/two-sum/
 
-https://leetcode.com/problems/two-sum/description/
+https://leetcode.com/problems/two-sum/
 
 https://neetcode.io/problems/two-sum/
 # NOTE: neetcode.io occasionally uses different problem slugs for their problems
@@ -210,28 +233,6 @@ File: `0189_rotate-array.js`
 ```javascript
 /**
  * 0189. Rotate Array
- *
- * Link: https://leetcode.com/problems/rotate-array/
- * Category: Algorithms
- * Difficulty: Medium
- * Date: 2026-03-26
- * Author: ragonscreen (https://github.com/ragonscreen/)
- *
- * Topics:
- * - Array (topic_5)
- * - Math (topic_8)
- * - Two Pointers (topic_9)
- *
- * Stats:
- * - Total Accepted: 3,852,120
- * - Total Submissions: 8,629,883
- * - Acceptance Rate: 44.6%
- *
- * Similar Problems:
- * - make-k-subarray-sums-equal (Medium)
- * - maximum-number-of-matching-indices-after-right-shifts (Medium)
- * - reverse-words-in-a-string-ii (Medium)
- * - rotate-list (Medium)
  */
 
 /**
@@ -269,7 +270,7 @@ describe('rotate', () => {
 
 > Please note that LeetCode is arbitrary with the parameter that is supposed to be mutated in place. As such, it is **strongly recommended** to verify the assertion in the test file yourself before running tests.
 >
-> Also note that the nullish matcher changes based on the configured test framework. `toBeNil()` for `bun:test`, `toBeNullable()` for `vitest`, and `toBeUndefined()` for `jest`.
+> Additionally, the nullish matcher changes based on the configured test framework. `toBeNil()` for `bun:test`, `toBeNullable()` for `vitest`, and `toBeUndefined()` for `jest`. For more information, refer to [Tests](#tests).
 
 ### System Design Algorithm Problems
 
@@ -286,28 +287,6 @@ File: `0304_range-sum-query-2d-immutable.js`
 ```javascript
 /**
  * 0304. Range Sum Query 2D - Immutable
- *
- * Link: https://leetcode.com/problems/range-sum-query-2d-immutable/
- * Category: Algorithms
- * Difficulty: Medium
- * Date: 2026-03-26
- * Author: ragonscreen (https://github.com/ragonscreen/)
- *
- * Topics:
- * - Array (topic_5)
- * - Design (topic_25)
- * - Matrix (topic_61053)
- * - Prefix Sum (topic_61068)
- *
- * Stats:
- * - Total Accepted: 475,231
- * - Total Submissions: 818,775
- * - Acceptance Rate: 58.0%
- *
- * Similar Problems:
- * - range-sum-query-immutable (Easy)
- * - find-the-grid-of-region-average (Medium)
- * - range-sum-query-2d-mutable (Medium)
  */
 
 /**
@@ -369,30 +348,9 @@ Running the above command will generate the following files:
 
 File: `0360_sort-transformed-array.js`
 
-```js
+```javascript
 /**
  * 0360. Sort Transformed Array
- *
- * Link: https://leetcode.com/problems/sort-transformed-array/
- * Category: Algorithms
- * Difficulty: Medium
- * Date: 2026-03-26
- * Author: ragonscreen (https://github.com/ragonscreen/)
- *
- * Topics:
- * - Array (topic_5)
- * - Math (topic_8)
- * - Two Pointers (topic_9)
- * - Sorting (topic_61049)
- *
- * Stats:
- * - Total Accepted: 76,505
- * - Total Submissions: 131,850
- * - Acceptance Rate: 58.0%
- *
- * Similar Problems:
- * - squares-of-a-sorted-array (Easy)
- * - minimum-time-to-repair-cars (Medium)
  */
 
 /**
@@ -413,7 +371,7 @@ export { sortTransformedArray };
 
 File: `0360_sort-transformed-array.test.js`
 
-```js
+```javascript
 import { describe, expect, test } from 'bun:test';
 import { sortTransformedArray } from '0360_sort-transformed-array.js';
 
@@ -429,7 +387,7 @@ describe('sortTransformedArray', () => {
 });
 ```
 
-> Note that `expected` is set to `undefined`, as outputs are unavailable for premium problems. This is not the expected return value, and as such, you must add the output yourself or copy it from some other source.
+> Notice that `expected` is set to `undefined` for each testcase, as outputs are unavailable for premium problems. This is not the expected return value, and as such, you must add the output yourself or copy it from some other source.
 
 ### JavaScript Problems
 
@@ -446,17 +404,6 @@ File: `2667_create-hello-world-function.js`
 ```javascript
 /**
  * 2667. Create Hello World Function
- *
- * Link: https://leetcode.com/problems/create-hello-world-function/
- * Category: JavaScript
- * Difficulty: Easy
- * Date: 2026-04-09
- * Author: ragonscreen (https://github.com/ragonscreen/)
- *
- * Stats:
- * - Total Accepted: 836,513
- * - Total Submissions: 1,020,990
- * - Acceptance Rate: 81.9%
  */
 
 /**
@@ -497,7 +444,7 @@ describe('createHelloWorld', () => {
 });
 ```
 
-> Note that sometimes, the outputs are objects, and may not reflect the actual output correctly. It is **strongly recommended** to verify the outputs in the test file yourself before running tests.
+> Sometimes the outputs are objects, and may not reflect the actual output correctly. It is **strongly recommended** to verify the outputs in the test file yourself before running tests.
 
 ### Premium JavaScript Problems
 
@@ -514,22 +461,6 @@ File: `2676_throttle.js`
 ```javascript
 /**
  * 2676. Throttle
- *
- * Link: https://leetcode.com/problems/throttle/
- * Category: JavaScript
- * Difficulty: Medium
- * Date: 2026-04-09
- * Author: ragonscreen (https://github.com/ragonscreen/)
- *
- * Stats:
- * - Total Accepted: 11,589
- * - Total Submissions: 13,897
- * - Acceptance Rate: 83.4%
- *
- * Similar Problems:
- * - debounce (Medium)
- * - promise-pool (Medium)
- * - promise-time-limit (Medium)
  */
 
 /**
@@ -580,26 +511,6 @@ File: `0278_first-bad-version.js`
 ```javascript
 /**
  * 0278. First Bad Version
- *
- * Link: https://leetcode.com/problems/first-bad-version/
- * Category: Algorithms
- * Difficulty: Easy
- * Date: 2026-04-09
- * Author: ragonscreen (https://github.com/ragonscreen/)
- *
- * Topics:
- * - Binary Search (topic_11)
- * - Interactive (topic_61059)
- *
- * Stats:
- * - Total Accepted: 2,146,995
- * - Total Submissions: 4,567,570
- * - Acceptance Rate: 47.0%
- *
- * Similar Problems:
- * - guess-number-higher-or-lower (Easy)
- * - search-insert-position (Easy)
- * - find-first-and-last-position-of-element-in-sorted-array (Medium)
  */
 
 /**
@@ -634,11 +545,13 @@ describe('firstBadVersion', () => {
 });
 ```
 
-> Note that in the above example, the inputs and the solution function are completely inaccurate. The solution function should instead be getting the callable API passed in as a parameter, and returning a function instead.
+> Notice that in the above example, the inputs and the solution function are completely inaccurate. The solution function should instead be getting the API with the appropriate methods passed in as a parameter, and returning a function instead.
 
 ## Configuration
 
 This templater is highly configurable, and it is **strongly recommended** to get it configured before getting started. Create an object with the key `lct` in your `package.json` file. This object will contain all the options you wish to configure.
+
+File: `package.json`
 
 ```json
 {
@@ -646,7 +559,27 @@ This templater is highly configurable, and it is **strongly recommended** to get
 }
 ```
 
-The following configuration options are available.
+Example configuration:
+
+```json
+{
+        "name": "leetcode-solutions",
+        "author": "ragonscreen",
+        "version": "1.0.0",
+        "type": "module",
+        "scripts": {
+                "dev": "bun --watch run main.js",
+        },
+        "lct": {
+                "SOLUTION_AUTHOR_NAME": "ragonscreen",
+                "SOLUTION_AUTHOR_URL": "https://github.com/ragonscreen/",
+                "MAX_SIMILAR_PROBLEMS": 5,
+                "ADD_HINTS": false,
+        }
+}
+```
+
+The following configuration options are available, with their default values set in the examples.
 
 ### Solution Author
 
@@ -658,13 +591,14 @@ Set your own personal information. This shows up in the description of each solu
  * @prop {string} SOLUTION_AUTHOR_URL - URL of the solution author
  */
 {
-        SOLUTION_AUTHOR_NAME: 'ragonscreen',
-        SOLUTION_AUTHOR_URL: 'https://github.com/ragonscreen/',
+        SOLUTION_AUTHOR_NAME: '<SOLUTION_AUTHOR_NAME>',
+        SOLUTION_AUTHOR_URL: '<SOLUTION_AUTHOR_URL>',
 }
 ```
 
+`SOLUTION_AUTHOR_NAME`=`Lorem Ipsum` and `SOLUTION_AUTHOR_URL`=`https://leetcode.com/`
+
 ```javascript
-// with SOLUTION_AUTHOR_NAME='Lorem Ipsum' and SOLUTION_AUTHOR_URL='https://leetcode.com/'
 /**
  * 0001. Two Sum
  *
@@ -687,18 +621,25 @@ Change the character used for indentation, and the width per indent, across all 
 }
 ```
 
-```js
-// with INDENT_STYLE='tabs'
+`INDENT_STYLE`=`tabs`
+
+```javascript
 const testcases = [
 	{ nums: [2,7,11,15], target: 9, expected: [0,1] },
 ];
+```
 
-// with INDENT_STYLE='spaces'
+`INDENT_STYLE`=`spaces`
+
+```javascript
 const testcases = [
     { nums: [2,7,11,15], target: 9, expected: [0,1] },
 ];
+```
 
-// with INDENT_WIDTH=8 (and INDENT_STYLE='spaces')
+`INDENT_WIDTH`=`8` (and `INDENT_STYLE`=`spaces`)
+
+```javascript
 const testcases = [
         { nums: [2,7,11,15], target: 9, expected: [0,1] },
 ];
@@ -708,9 +649,9 @@ const testcases = [
 
 Enable or disable the creation of tests. With `ADD_TESTS` set to `false`, only solution files will be created.
 
-```js
+```javascript
 /**
- * @prop {boolean} ADD_TESTS - whether or not to create test files
+ * @prop {boolean} ADD_TESTS - create test files
  */
 {
         ADD_TESTS: false,
@@ -719,7 +660,7 @@ Enable or disable the creation of tests. With `ADD_TESTS` set to `false`, only s
 
 Select the test framework used for the test file template. This affects how test functions are imported.
 
-```js
+```javascript
 /**
  * @prop {string} TEST_FRAMEWORK - framework used for testing solutions (one of 'bun:test', 'vitest', or 'jest')
  */
@@ -728,43 +669,57 @@ Select the test framework used for the test file template. This affects how test
 }
 ```
 
-> Note that `bun` and `bun:test` are both accepted values for testing with `bun`.
+`bun` and `bun:test` are both accepted values for testing with `bun`.
 
-```js
-// with TEST_FRAMEWORK='bun:test'
+`TEST_FRAMEWORK`=`bun:test` (or `bun`)
+
+```javascript
 import { describe, expect, test } from 'bun:test';
-import { twoSum } from '0001_two-sum.js';
-
-// with TEST_FRAMEWORK='vitest'
-import { describe, expect, test } from 'vitest';
-import { twoSum } from '0001_two-sum.js';
-
-// with TEST_FRAMEWORK='jest'
 import { twoSum } from '0001_two-sum.js';
 ```
 
-> Notice that the test function imports are missing in the jest version. This is because jest automatically makes available these functions in the global scope within each test file.
+`TEST_FRAMEWORK`=`vitest`
+
+```javascript
+import { describe, expect, test } from 'vitest';
+import { twoSum } from '0001_two-sum.js';
+```
+
+`TEST_FRAMEWORK`=`jest`
+
+```javascript
+import { twoSum } from '0001_two-sum.js';
+```
+
+> Notice that the test function imports are missing in the jest version. This is because jest automatically makes these functions available in the global scope within each test file.
 
 Additionally, it also affects the nullish matcher.
 
-```js
-// with TEST_FRAMEWORK='bun:test'
+`TEST_FRAMEWORK`=`bun:test`
+
+```javascript
 describe('MinStack', () => {
     test('default test 1', () => {
         const minStack = new MinStack();
         expect(minStack.push(-2)).toBeNil();
     });
 });
+```
 
-// with TEST_FRAMEWORK='vitest'
+`TEST_FRAMEWORK`=`vitest`
+
+```javascript
 describe('MinStack', () => {
     test('default test 1', () => {
         const minStack = new MinStack();
         expect(minStack.push(-2)).toBeNullable();
     });
 });
+```
 
-// with TEST_FRAMEWORK='jest'
+`TEST_FRAMEWORK`=`jest`
+
+```javascript
 describe('MinStack', () => {
     test('default test 1', () => {
         const minStack = new MinStack();
@@ -777,10 +732,10 @@ describe('MinStack', () => {
 
 Change the base directory where solution and test files are saved.
 
-```js
+```javascript
 /**
- * @prop {string[]} DIR_TESTS=['__tests__'] - base directory for test files
- * @prop {string[]} DIR_SOLUTIONS=['src'] - base directory for solution files
+ * @prop {string[]} DIR_SOLUTIONS - base directory for solution files
+ * @prop {string[]} DIR_TESTS - base directory for test files
  */
 {
         DIR_SOLUTIONS: ['src'],
@@ -792,7 +747,7 @@ Change the base directory where solution and test files are saved.
 
 Use a bucket directory to sort solution and test files. `BUCKET_CHUNK_SIZE` sets the number of problems within each bucket directory.
 
-```js
+```javascript
 /**
  * @prop {boolean} USE_DIR_BUCKET - use a bucket directory for sorting problems
  * @prop {number} BUCKET_CHUNK_SIZE - size of the bucket used (minimum: 1)
@@ -804,7 +759,7 @@ Use a bucket directory to sort solution and test files. `BUCKET_CHUNK_SIZE` sets
 }
 ```
 
-Consider the files for the problem `0001_two-sum`. With `USE_DIR_BUCKET` set to `true` and `BUCKET_CHUNK_SIZE` set to `100`, they will be saved within:
+Consider the files for the problem `0735_asteroid-collision`. With `USE_DIR_BUCKET`=`true` and `BUCKET_CHUNK_SIZE`=`100`, they will be saved within:
 
 ```
 .
@@ -817,7 +772,7 @@ Consider the files for the problem `0001_two-sum`. With `USE_DIR_BUCKET` set to 
        └── 0735_asteroid-collision.test.js
 ```
 
-However, with `BUCKET_CHUNK_SIZE` set to `200`, they will be saved within:
+However, with `BUCKET_CHUNK_SIZE`=`200`, they will be saved within:
 
 ```
 .
@@ -830,7 +785,7 @@ However, with `BUCKET_CHUNK_SIZE` set to `200`, they will be saved within:
        └── 0735_asteroid-collision.test.js
 ```
 
-Alternatively, with `USE_DIR_BUCKET` set to `false`, they will be saved within:
+If `USE_DIR_BUCKET` is `false`, the value of `BUCKET_CHUNK_SIZE` is ignored, and no bucket directories will be created. As such, the files are saved within:
 
 ```
 .
@@ -841,13 +796,11 @@ Alternatively, with `USE_DIR_BUCKET` set to `false`, they will be saved within:
     └── 0735_asteroid-collision.test.js
 ```
 
-> Note that if `USE_DIR_BUCKET` is set to `false`, the value of `BUCKET_CHUNK_SIZE` is ignored, and no bucket directories will be created.
-
 ### Function Type
 
 Use arrow functions instead of function declarations for solutions.
 
-```js
+```javascript
 /**
  * @prop {boolean} USE_ARROW_FUNCTIONS - use arrow functions for solution functions
  * class methods always use non-arrow syntax
@@ -857,18 +810,23 @@ Use arrow functions instead of function declarations for solutions.
 }
 ```
 
-```js
-// with USE_ARROW_FUNCTIONS=true
-const twoSum = (nums, target) => {};
+`USE_ARROW_FUNCTIONS`=`true`
 
-// with USE_ARROW_FUNCTIONS=false
+```javascript
+const twoSum = (nums, target) => {};
+```
+
+`USE_ARROW_FUNCTIONS`=`false`
+
+```javascript
 function twoSum(nums, target) {}
 ```
 
-> Note that class methods will always use non-arrow syntax.
+Class methods will always use non-arrow syntax.
 
-```js
-// with both USE_ARROW_FUNCTIONS=true and USE_ARROW_FUNCTIONS=false
+`USE_ARROW_FUNCTIONS`=`true` or `USE_ARROW_FUNCTIONS`=`false`
+
+```javascript
 class MinStack {
     constructor() {}
 
@@ -886,20 +844,28 @@ class MinStack {
 
 Use ESM syntax for imports and exports, as opposed to CJS. (recommended: `true`)
 
-```js
+```javascript
+/**
+ * @prop {boolean} USE_ESM_SYNTAX - use ESM syntax over CJS
+ * affects how modules are imported and exported
+ */
 {
         USE_ESM_SYNTAX: true,
 }
 ```
 
-```js
-// with USE_ESM_SYNTAX=true
+`USE_ESM_SYNTAX`=`true`
+
+```javascript
 export { twoSum };
 
 import { describe, expect, test } from 'bun:test';
 import { twoSum } from '0001_two-sum.js';
+```
 
-// with USE_ESM_SYNTAX=false
+`USE_ESM_SYNTAX`=`false`
+
+```javascript
 module.exports = { twoSum };
 
 const { describe, expect, test } = require('bun:test');
@@ -910,7 +876,7 @@ const { twoSum } = require('0001_two-sum.js');
 
 Use relative imports when importing solutions into test files. (recommended: `true`)
 
-```js
+```javascript
 /**
  * @prop {boolean} USE_RELATIVE_IMPORTS - use relative import paths when importing solutions into test files
  */
@@ -919,11 +885,15 @@ Use relative imports when importing solutions into test files. (recommended: `tr
 }
 ```
 
-```js
-// with USE_RELATIVE_IMPORTS=true
-import { twoSum } from '../../src/0001-0100/0001_two-sum.js';
+`USE_RELATIVE_IMPORTS`=`true`
 
-// with USE_RELATIVE_IMPORTS=false
+```javascript
+import { twoSum } from '../../src/0001-0100/0001_two-sum.js';
+```
+
+`USE_RELATIVE_IMPORTS`=`false`
+
+```javascript
 import { twoSum } from '/src/0001-0100/0001_two-sum.js';
 ```
 
@@ -931,7 +901,7 @@ import { twoSum } from '/src/0001-0100/0001_two-sum.js';
 
 Enable or disable comments in solution files.
 
-```js
+```javascript
 /**
  * @prop {boolean} ADD_COMMENTS - add comments in the solution file
  */
@@ -940,8 +910,9 @@ Enable or disable comments in solution files.
 }
 ```
 
-```js
-// with ADD_COMMENTS=true
+`ADD_COMMENTS`=`true`
+
+```javascript
 /**
  * Approach:
  * Time Complexity: O()
@@ -954,17 +925,21 @@ Enable or disable comments in solution files.
 const twoSum = (nums, target) => {};
 
 export { twoSum };
+```
 
-// with ADD_COMMENTS=false
+`ADD_COMMENTS`=`false`
+
+```javascript
 const twoSum = (nums, target) => {};
 
 export { twoSum };
 ```
 
-Note that this also affects code comments that are sometimes included in the solution template by default.
+This also affects code comments that are sometimes included in the solution template by default.
 
-```js
-// with ADD_COMMENTS=true
+`ADD_COMMENTS`=`true`
+
+```javascript
 /**
  * Approach:
  * Time Complexity: O()
@@ -983,8 +958,11 @@ const createHelloWorld = () => {
  */
 
 export { createHelloWorld };
+```
 
-// with ADD_COMMENTS=false
+`ADD_COMMENTS`=`false`
+
+```javascript
 const createHelloWorld = () => {
 
     return function(...args) {}
@@ -997,7 +975,7 @@ export { createHelloWorld };
 
 Enable or disable the solution description.
 
-```js
+```javascript
 /**
  * @prop {boolean} ADD_DESCRIPTION - add a description in the solution file
  */
@@ -1006,25 +984,28 @@ Enable or disable the solution description.
 }
 ```
 
-```js
-// with ADD_DESCRIPTION=true
+`ADD_DESCRIPTION`=`true`
+
+```javascript
 /**
  * 0735. Asteroid Collision
  *
  * Link: https://leetcode.com/problems/asteroid-collision/
  * Category: Algorithms
  * Difficulty: Medium
- * Date: 2026-04-20
- * Author: ragonscreen (https://github.com/ragonscreen/)
+ * Date: <CURRENT_DATE>
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
  *
  * Topics:
  * - Array (topic_5)
  * - Stack (topic_15)
  * - Simulation (topic_61055)
+ * - Staff (position_staff)
+ * - Weekly Contest 60 (contest_weekly-contest-60)
  *
  * Stats:
- * - Total Accepted: 1,013,312
- * - Total Submissions: 2,126,431
+ * - Total Accepted: 1,014,527
+ * - Total Submissions: 2,128,259
  * - Acceptance Rate: 47.7%
  *
  * Similar Problems:
@@ -1032,6 +1013,10 @@ Enable or disable the solution description.
  * - count-collisions-on-a-road (Medium)
  * - destroying-asteroids (Medium)
  * - robot-collisions (Hard)
+ *
+ * Hints:
+ * 1. Say a row of asteroids is stable.  What happens when a new asteroid is
+ * added on the right?
  */
 
 /**
@@ -1045,8 +1030,11 @@ Enable or disable the solution description.
 const asteroidCollision = (asteroids) => {};
 
 export { asteroidCollision };
+```
 
-// with ADD_DESCRIPTION=false
+`ADD_DESCRIPTION`=`false`
+
+```javascript
 /**
  * Approach:
  * Time Complexity: O()
@@ -1062,7 +1050,7 @@ export { asteroidCollision };
 
 Furthermore, there are many options to enable or disable only parts of the solution description, without disabling the whole thing.
 
-```js
+```javascript
 /**
  * @prop {boolean} ADD_PROBLEM_URL - add the problem url to the solution description
  * @prop {boolean} ADD_PROBLEM_CATEGORY - add the problem category to the solution description
@@ -1078,6 +1066,7 @@ Furthermore, there are many options to enable or disable only parts of the solut
  * setting it to 0 will add all available similar problems
  * @prop {boolean} SORT_SIMILAR_PROBLEMS - sort the similar problems added to the solution description
  * problems are sorted by difficulty - easiest first, then by title
+ * @prop {boolean} ADD_HINTS - add the problem hints to the solution description
  */
 {
         ADD_PROBLEM_URL: true,
@@ -1092,13 +1081,27 @@ Furthermore, there are many options to enable or disable only parts of the solut
         ADD_SIMILAR_PROBLEMS: true,
         MAX_SIMILAR_PROBLEMS: 10,
         SORT_SIMILAR_PROBLEMS: true,
+        ADD_HINTS: false,
 }
 ```
 
-```js
-// with ADD_PROBLEM_URL=false, ADD_PROBLEM_CATEGORY=false, ADD_PROBLEM_DIFFICULTY=false, ADD_DATE=false, ADD_AUTHOR=false,
-// ADD_PROBLEM_STATS=false, ADD_SIMILAR_PROBLEMS=false, ADD_PROBLEM_POSITIONS=false, ADD_PROBLEM_CONTESTS=false, and
-// ADD_PROBLEM_TOPICS=true
+`ADD_PROBLEM_URL`=`true`, `ADD_PROBLEM_CATEGORY`=`true`, `ADD_PROBLEM_DIFFICULTY`=`true`, `ADD_DATE`=`true`, `ADD_AUTHOR`=`true`, and all other boolean options set to `false`
+
+```javascript
+/**
+ * 0735. Asteroid Collision
+ *
+ * Link: https://leetcode.com/problems/asteroid-collision/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: <CURRENT_DATE>
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ */
+```
+
+`ADD_PROBLEM_TOPICS`=`true`
+
+```javascript
 /**
  * 0735. Asteroid Collision
  *
@@ -1109,25 +1112,31 @@ Furthermore, there are many options to enable or disable only parts of the solut
  */
 ```
 
-```js
-// with MAX_SIMILAR_PROBLEMS=0
+For newer problems, position and contest tags might be available. They are added under the topics section if they are available and enabled. All topic, position, and contest tags are prefixed with their respective type for easy search across your project.
+
+`ADD_PROBLEM_TOPICS`=`true`, `ADD_PROBLEM_POSITIONS`=`true`, and `ADD_PROBLEM_CONTESTS`=`true`
+
+```javascript
 /**
- * 0001. Two Sum
- *
- * Link: https://leetcode.com/problems/two-sum/
- * Category: Algorithms
- * Difficulty: Easy
- * Date: 2026-04-20
- * Author: ragonscreen (https://github.com/ragonscreen/)
+ * 3858. Minimum Bitwise OR From Grid
  *
  * Topics:
  * - Array (topic_5)
- * - Hash Table (topic_6)
- *
- * Stats:
- * - Total Accepted: 21,458,267
- * - Total Submissions: 37,407,629
- * - Acceptance Rate: 57.4%
+ * - Greedy (topic_17)
+ * - Bit Manipulation (topic_19)
+ * - Matrix (topic_61053)
+ * - Staff (position_staff)
+ * - Weekly Contest 491 (contest_weekly-contest-491)
+ */
+```
+
+Similar problems are added with their respective slugs so you can easily get started with them. Additionally, their difficulty and premium status is also added.
+
+`MAX_SIMILAR_PROBLEMS`=`0` (adds all available similar problems) and `SORT_SIMILAR_PROBLEMS`=`true`
+
+```javascript
+/**
+ * 0001. Two Sum
  *
  * Similar Problems:
  * - check-distances-between-same-letters (Easy)
@@ -1139,9 +1148,9 @@ Furthermore, there are many options to enable or disable only parts of the solut
  * - largest-positive-integer-that-exists-with-its-negative (Easy)
  * - number-of-arithmetic-triplets (Easy)
  * - number-of-distinct-averages (Easy)
- * - two-sum-iii-data-structure-design (Easy)
+ * - two-sum-iii-data-structure-design (Easy) (Premium)
  * - two-sum-iv-input-is-a-bst (Easy)
- * - two-sum-less-than-k (Easy)
+ * - two-sum-less-than-k (Easy) (Premium)
  * - 3sum (Medium)
  * - 4sum (Medium)
  * - count-good-meals (Medium)
@@ -1152,25 +1161,13 @@ Furthermore, there are many options to enable or disable only parts of the solut
  * - two-sum-ii-input-array-is-sorted (Medium)
  * - number-of-excellent-pairs (Hard)
  */
+```
 
-// with MAX_SIMILAR_PROBLEMS=3
+`MAX_SIMILAR_PROBLEMS`=`3` and `SORT_SIMILAR_PROBLEMS`=`false` (preserves original order and gets the first three)
+
+```javascript
 /**
  * 0001. Two Sum
- *
- * Link: https://leetcode.com/problems/two-sum/
- * Category: Algorithms
- * Difficulty: Easy
- * Date: 2026-04-20
- * Author: ragonscreen (https://github.com/ragonscreen/)
- *
- * Topics:
- * - Array (topic_5)
- * - Hash Table (topic_6)
- *
- * Stats:
- * - Total Accepted: 21,458,267
- * - Total Submissions: 37,407,629
- * - Acceptance Rate: 57.4%
  *
  * Similar Problems:
  * - 3sum (Medium)
@@ -1179,37 +1176,29 @@ Furthermore, there are many options to enable or disable only parts of the solut
  */
 ```
 
-For newer problems, position and contest tags might be available. They are added under the topics section if they are available and enabled.
+`ADD_HINTS`=`true` (each line of a hint is 80 characters long at maximum)
 
-```js
-// with position and contest information available, ADD_PROBLEM_POSITIONS=true, and ADD_PROBLEM_CONTESTS=true
+```javascript
 /**
- * 3858. Minimum Bitwise OR From Grid
+ * 0001. Two Sum
  *
- * Link: https://leetcode.com/problems/minimum-bitwise-or-from-grid/
- * Category: Algorithms
- * Difficulty: Medium
- * Date: 2026-04-20
- * Author: ragonscreen (https://github.com/ragonscreen/)
+ * Hints:
+ * 1. A really brute force way would be to search for all possible pairs of
+ * numbers but that would be too slow. Again, it's best to try out brute
+ * force solutions just for completeness. It is from these brute force
+ * solutions that you can come up with optimizations.
  *
- * Topics:
- * - Array (topic_5)
- * - Greedy (topic_17)
- * - Bit Manipulation (topic_19)
- * - Matrix (topic_61053)
- * - Staff (position_staff)
- * - Weekly Contest 491 (contest_weekly-contest-491)
+ * 2. So, if we fix one of the numbers, say `x`, we have to scan the entire
+ * array to find the next number `y` which is `value - x` where value is the
+ * input parameter. Can we change our array somehow so that this search
+ * becomes faster?
  *
- * Stats:
- * - Total Accepted: 13,880
- * - Total Submissions: 51,961
- * - Acceptance Rate: 26.7%
+ * 3. The second train of thought is, without changing the array, can we use
+ * additional space somehow? Like maybe a hash map to speed up the search?
  */
 ```
 
-> Note that all topic, position, and contest tags are prefixed with their respective type for easy search across your project.
-
-> Also note that for some problems, topics and/or similar problems might be unavailable. In this case, their respective configuration options are ignored.
+> Topics and/or similar problems might be unavailable for certain problems. if that is the case, their respective configuration options are ignored.
 
 ## Limitations
 
@@ -1268,3 +1257,7 @@ describe('findDifferentBinaryString', () => {
     });
 });
 ```
+
+### Unsupported Problem Types
+
+`Database`, `Shell`, and `Concurrency` based problems are obviously not supported.

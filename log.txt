@@ -14,8 +14,6 @@ X - bun, vitest, jest support
 
 TODO:
 - finish README
-- add contest and position identifiers to problems
+- add information about questions with problematic html
 - fix html parsing for various problems
 - add "randomized" problems?
-- limitations: concurrency, shell, etc.
-- add hints
