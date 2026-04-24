@@ -12,7 +12,7 @@ const constructSolution = (problemData) => {
         const { metadata, codeSnippets, isPaidOnly } = problemData;
         const { systemdesign, languages, classname, name } = metadata;
         const isJavaScript =
-                languages?.length && languages?.includes('javascript');
+                languages?.length <= 2 && languages?.includes('javascript');
         let str = constructSolutionDescription(problemData);
         let fnName;
 

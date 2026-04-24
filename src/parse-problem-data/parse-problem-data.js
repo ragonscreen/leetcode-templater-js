@@ -1,3 +1,7 @@
+/** biome-ignore-all lint/nursery/noExcessiveLinesPerFile: / */
+
+import { adjustCustomProblemData } from './adjust-custom-problem-data.js';
+
 const handleFatalErrors = (problemData) => {
         const { categoryTitle } = problemData;
         const invalidProblems = ['Concurrency', 'Shell', 'Database'];
@@ -153,7 +157,7 @@ const displayWarnings = (problemData) => {
         const { isPaidOnly, metadata, topics } = problemData;
         const { languages, systemdesign, return: retval } = metadata;
         const isJavaScript =
-                languages?.length === 2 && languages?.includes('javascript');
+                languages?.length <= 2 && languages?.includes('javascript');
         const isInteractive = topics?.find((e) => e.name === 'Interactive');
 
         if (isPaidOnly && isJavaScript) {
@@ -240,6 +244,7 @@ const parseProblemData = (problemData) => {
         };
 
         displayWarnings(problemDataParsed);
+        adjustCustomProblemData(problemDataParsed);
 
         return problemDataParsed;
 };

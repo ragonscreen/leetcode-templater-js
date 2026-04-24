@@ -1206,20 +1206,26 @@ Similar problems are added with their respective slugs so you can easily get sta
 
 A few problems on LeetCode involve returning values which are not always exactly equal to the expected return value given in the problem source. An example of this is the problem `0001_two-sum`. The expected return value is an array which may contain the required elements in any order. As such, you must manually edit the matcher in the test file to `toContainAllValues()` or similar, instead of the default `toStrictEqual()`. LeetCode does not provide a way to filter this out straight from source.
 
+File: `0001_two-sum.test.js`
+
 ```javascript
 const testcases = [
     { nums: [2,7,11,15], target: 9, expected: [0,1] },
     { nums: [3,2,4], target: 6, expected: [1,2] },
     { nums: [3,3], target: 6, expected: [0,1] },
 ];
+```
 
+```js
 // INCORRECT - generated
 describe('twoSum', () => {
     test.each(structuredClone(testcases))('twoSum($nums, $target) -> $expected', ({ nums, target, expected }) => {
         expect(twoSum(nums, target)).toStrictEqual(expected);
     });
 });
+```
 
+```js
 // CORRECT - manually edited
 describe('twoSum', () => {
     test.each(structuredClone(testcases))('twoSum($nums, $target) -> $expected', ({ nums, target, expected }) => {
@@ -1229,6 +1235,8 @@ describe('twoSum', () => {
 ```
 
 A few problems instead involve returning one of several possible correct values. An example of this is the problem `1980_find-unique-binary-string`. The expected return value is one of several strings, not just the singular given return value. As such, in the test file, you must manually set the `expected` key of each testcase object to an array containing all possible correct return values, and edit the matcher to `toBeOneOf()` or similar, instead of the default `toStrictEqual()`. LeetCode does not provide a way to filter this out straight from source.
+
+File: `1980_find-unique-binary-string.test.js`
 
 ```javascript
 // INCORRECT - generated
@@ -1243,7 +1251,9 @@ describe('findDifferentBinaryString', () => {
         expect(findDifferentBinaryString(nums)).toStrictEqual(expected);
     });
 });
+```
 
+```js
 // CORRECT - manually edited
 const testcases = [
     { nums: ["01","10"], expected: ["00","11"] },
@@ -1257,6 +1267,238 @@ describe('findDifferentBinaryString', () => {
     });
 });
 ```
+
+### Problems Involving Linked Lists, Trees, etc.
+
+As inputs are always given in the form of an array, you must manually convert them into the respective data structure with your custom util functions. Additionally, these problems often involve special properties on the data structure (such as cycles in a linked list) that are impossible to be automatically accounted for purely based on the data sourced from LeetCode. These properties must be manually added to your input.
+
+Consider the following custom utility functions that are required to solve `0141_linked-list-cycle`.
+
+File: `utils/linked-list.js`
+
+```js
+class ListNode {
+        constructor(val = 0, next = null) {
+                this.val = val;
+                this.next = next;
+        }
+}
+
+const arrayToList = (array) => {
+        return array.reduceRight((acc, cur) => new ListNode(cur, acc), null);
+};
+
+const createCycle = (list, pos) => {
+        if (pos === -1) {
+                return list;
+        }
+
+        let curr = list;
+        let anchor = null;
+        let p = 0;
+
+        while (curr.next) {
+                if (p === pos) {
+                        anchor = curr;
+                }
+
+                curr = curr.next;
+                p++;
+        }
+
+        curr.next = anchor;
+
+        return list;
+};
+
+export { arrayToList, createCycle };
+```
+
+These functions then must then be imported and executed appropriately in the respective test file.
+
+File: `0141_linked-list-cycle.test.js`
+
+```js
+import { describe, expect, test } from 'bun:test';
+import { hasCycle } from '0141_linked-list-cycle.js';
+import { arrayToList, createCycle } from 'utils/linked-list.js';
+
+const testcases = [
+        { head: [3, 2, 0, -4], pos: 1, expected: true },
+        { head: [1, 2], pos: 0, expected: true },
+        { head: [1], pos: -1, expected: false },
+];
+
+describe('hasCycle', () => {
+        test.each(
+                structuredClone(testcases),
+        )('hasCycle($head, $pos) -> $expected', ({ head, pos, expected }) => {
+                expect(
+                        hasCycle(createCycle(arrayToList(head), pos)),
+                ).toStrictEqual(expected);
+        });
+});
+```
+
+For most other Linked List based problems, the complementary `listToArray` function is required alongside `arrayToList` for the assertion.
+
+File: `utils/linked-list.js`
+
+```js
+const listToArray = (list) => {
+        const array = [];
+        let node = list;
+
+        while (node?.val !== null && typeof node?.val !== 'undefined') {
+                array.push(node.val);
+                node = node.next;
+        }
+
+        return array;
+};
+
+export { listToArray };
+```
+
+File: `0002_add-two-numbers.test.js`
+
+```js
+import { describe, expect, test } from 'bun:test';
+import { addTwoNumbers } from '0002_add-two-numbers.js';
+import { arrayToList, listToArray } from 'utils/linked-list.js';
+
+const testcases = [
+        { l1: [2, 4, 3], l2: [5, 6, 4], expected: [7, 0, 8] },
+        { l1: [0], l2: [0], expected: [0] },
+        {
+                l1: [9, 9, 9, 9, 9, 9, 9],
+                l2: [9, 9, 9, 9],
+                expected: [8, 9, 9, 9, 0, 0, 0, 1],
+        },
+];
+
+describe('addTwoNumbers', () => {
+        test.each(
+                structuredClone(testcases),
+        )('addTwoNumbers($l1, $l2) -> $expected', ({ l1, l2, expected }) => {
+                expect(
+                        listToArray(
+                                addTwoNumbers(arrayToList(l1), arrayToList(l2)),
+                        ),
+                ).toStrictEqual(expected);
+        });
+});
+```
+
+> Note that the examples provided above are my custom implementations of these utility functions. They are not provided by default.
+
+### Typed Array Returns
+
+Even though LeetCode supports returning a `TypedArray` when the expected return type is an `Array`, your function will throw an error if you return a `TypedArray`, as they are not strictly equal to an `Array` even if they contain the same values in the same indices. As such, you must wrap the received value in an `Array.from()` to convert it into an array before your assertion is performed.
+
+To better illustrate this, consider the following solution to the problem `3255_find-the-power-of-k-size-subarrays-ii`.
+
+File: `3255_find-the-power-of-k-size-subarrays-ii.js`
+
+```js
+/**
+ * Approach: Sliding Window
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
+ *
+ * @param {number[]} nums
+ * @param {number} k
+ * @return {number[]}
+ */
+const resultsArray = (nums, k) => {
+        const n = nums.length;
+        const res = new Int32Array(n - k + 1);
+        let lastInvalidIdx = -1;
+
+        for (let l = 0, r = 0; r < n; r++) {
+                if (r > 0 && nums[r] !== nums[r - 1] + 1) {
+                        lastInvalidIdx = r;
+                }
+
+                if (r - l + 1 < k) {
+                        continue;
+                }
+
+                res[r - k + 1] = lastInvalidIdx <= l++ ? nums[r] : -1;
+        }
+
+        return res;
+};
+```
+
+As is clearly apparent, the return type is an `Array` of numbers. However, the above code which returns an `Int32Array`, (which is a `TypedArray`) is valid and accepted on LeetCode. However, the generated testcases will not pass. The received value must be converted into an `Array` before performing the assertion.
+
+File: `3255_find-the-power-of-k-size-subarrays-ii.test.js`
+
+```js
+// ASSERTION FAILS - generated
+describe('resultsArray', () => {
+        test.each(
+                structuredClone(testcases),
+        )('resultsArray($nums, $k) -> $expected', ({ nums, k, expected }) => {
+                expect(resultsArray(nums, k)).toStrictEqual(expected);
+        });
+});
+```
+
+```js
+// ASSERTION PASSES - manually edited
+describe('resultsArray', () => {
+        test.each(
+                structuredClone(testcases),
+        )('resultsArray($nums, $k) -> $expected', ({ nums, k, expected }) => {
+                expect(Array.from(resultsArray(nums, k))).toStrictEqual(
+                        expected,
+                );
+        });
+});
+```
+
+### Internally Used Parameteres
+
+Consider the problem `0141_linked-list-cycle`. It uses an internal parameter `pos` which dictates where the cycle in the list is created. However, this parameter is also passed through to the client.
+
+File: `0141_linked-list-cycle.js`
+
+```js
+const hasCycle = (head, pos) => {};
+
+export { hasCycle };
+```
+
+File: `0141_linked-list-cycle.test.js`
+
+```js
+import { describe, expect, test } from 'bun:test';
+import { hasCycle } from '0141_linked-list-cycle.js';
+
+const testcases = [
+    { head: [3,2,0,-4], pos: 1, expected: true },
+    { head: [1,2], pos: 0, expected: true },
+    { head: [1], pos: -1, expected: false },
+];
+```
+
+Obviously this is not of any use in the solution, as even though you can "cheat" the solution here by just checking for `pos !== -1`, on LeetCode this solution does not work as `pos` is not passed to the client. In these cases you must manually remove the internal parameter, or simply ignore it.
+
+> In this case you need to use this internal parameter to create a valid cycle in the linked list yourself, as detailed in [Problems Involving Linked Lists, Trees, etc.](#problems-involving-linked-lists-trees-etc).
+
+### Manually Patched Problems
+
+There are certain problems with errors in their HTML description, or other issues that require custom parsing. The following problems have as such been manually patched.
+
+**38. Count and Say** - The two examples provided and the two default testcases are in the opposite order.
+
+**778. Swim in Rising Water** - The "Explanation" title of the first testcase is not wrapped inside `<strong>` tags.
+
+**2610. Convert an Array Into a 2D Array With Conditions** - The second example in the description of this problem and the second default testcase are different from each other.
+
+> The above list is by no means exhaustive. As more issues are discovered, problems will continue to get manually patched.
 
 ### Unsupported Problem Types
 

@@ -7,7 +7,7 @@ import { fileURLToPath } from 'node:url';
 import { CONFIG } from './config.js';
 import { constructSolution, constructTest } from './construct-problem-files.js';
 import { getFilePaths } from './get-file-paths.js';
-import { parseProblemData } from './parse-problem-data.js';
+import { parseProblemData } from './parse-problem-data/parse-problem-data.js';
 
 const { ADD_TESTS } = CONFIG;
 
@@ -85,13 +85,16 @@ const main = async () => {
 
         const problemData = await getProblemData(query, titleSlug);
 
-        console.log(problemData);
+        // console.log(problemData);
 
         if (!problemData) {
                 throwIdentifierError();
         }
 
         const problemDataParsed = parseProblemData(problemData);
+
+        console.dir(problemDataParsed, { depth: null });
+
         const filePaths = getFilePaths(problemDataParsed);
         const solution = constructSolution(problemDataParsed);
 
