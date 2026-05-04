@@ -5,16 +5,19 @@ Highly confgurable test and solution file template generator for LeetCode proble
 ## Installation
 
 bun
+
 ```sh
 bun add -D leetcode-templater-js
 ```
 
 node
+
 ```sh
 npm install -D leetcode-templater-js
 ```
 
 pnpm
+
 ```sh
 pnpm add -D leetcode-templater-js
 ```
@@ -22,12 +25,14 @@ pnpm add -D leetcode-templater-js
 ## Usage
 
 bun
-```
+
+```sh
 bunx lct <problem_slug>
 ```
 
 node
-```
+
+```sh
 npx lct <problem_slug>
 ```
 
@@ -35,7 +40,7 @@ npx lct <problem_slug>
 
 ### Configuration
 
-The templater is highly configurable. It is **strongly recommended** to use your own custom configuration before getting started. Refer to the [Configuration](#configuration-1) section for more information.
+The templater is highly configurable. It is **strongly recommended** to use your own custom configuration before getting started. Refer to the [Configuration Options](#configuration-options) section for more information.
 
 ### Template Generation
 
@@ -112,14 +117,17 @@ import { describe, expect, test } from 'bun:test';
 import { minCapability } from '2560_house-robber-iv.js';
 
 const testcases = [
-    { nums: [2,3,5,9], k: 2, expected: 5 },
-    { nums: [2,7,9,3,1], k: 2, expected: 2 },
+        { nums: [2, 3, 5, 9], k: 2, expected: 5 },
+        { nums: [2, 7, 9, 3, 1], k: 2, expected: 2 },
 ];
 
 describe('minCapability', () => {
-    test.each(structuredClone(testcases))('minCapability($nums, $k) -> $expected', ({ nums, k, expected }) => {
-        expect(minCapability(nums, k)).toStrictEqual(expected);
-    });
+        test.each(structuredClone(testcases))(
+                'minCapability($nums, $k) -> $expected',
+                ({ nums, k, expected }) => {
+                        expect(minCapability(nums, k)).toStrictEqual(expected);
+                },
+        );
 });
 ```
 
@@ -127,13 +135,13 @@ Adding your own testcases is easy. Simply add more lines to the `testcases` arra
 
 ```javascript
 const testcases = [
-    // default testcases
-    { nums: [2,3,5,9], k: 2, expected: 5 },
-    { nums: [2,7,9,3,1], k: 2, expected: 2 },
+        // default testcases
+        { nums: [2, 3, 5, 9], k: 2, expected: 5 },
+        { nums: [2, 7, 9, 3, 1], k: 2, expected: 2 },
 
-    // custom testcases
-    { nums: [2, 3, 5, 9, 4], k: 3, expected: 5 },
-    { nums: [2, 1, 5, 1, 4, 2], k: 3, expected: 2 },
+        // custom testcases
+        { nums: [2, 3, 5, 9, 4], k: 3, expected: 5 },
+        { nums: [2, 1, 5, 1, 4, 2], k: 3, expected: 2 },
 ];
 ```
 
@@ -150,7 +158,7 @@ If you would like to write multiple solutions, simply add more functions below y
  * @return {number}
  */
 const minCapability = (nums, k) => {
-    // code
+        // code
 };
 
 /**
@@ -163,7 +171,7 @@ const minCapability = (nums, k) => {
  * @return {number}
  */
 const minCapability1 = (nums, k) => {
-    // code
+        // code
 };
 
 export { minCapability, minCapability1 };
@@ -176,20 +184,26 @@ import { describe, expect, test } from 'bun:test';
 import { minCapability, minCapability1 } from '2560_house-robber-iv.js';
 
 const testcases = [
-    { nums: [2,3,5,9], k: 2, expected: 5 },
-    { nums: [2,7,9,3,1], k: 2, expected: 2 },
+        { nums: [2, 3, 5, 9], k: 2, expected: 5 },
+        { nums: [2, 7, 9, 3, 1], k: 2, expected: 2 },
 ];
 
 describe('minCapability', () => {
-    test.each(structuredClone(testcases))('minCapability($nums, $k) -> $expected', ({ nums, k, expected }) => {
-        expect(minCapability(nums, k)).toStrictEqual(expected);
-    });
+        test.each(structuredClone(testcases))(
+                'minCapability($nums, $k) -> $expected',
+                ({ nums, k, expected }) => {
+                        expect(minCapability(nums, k)).toStrictEqual(expected);
+                },
+        );
 });
 
 describe('minCapability1', () => {
-    test.each(structuredClone(testcases))('minCapability1($nums, $k) -> $expected', ({ nums, k, expected }) => {
-        expect(minCapability1(nums, k)).toStrictEqual(expected);
-    });
+        test.each(structuredClone(testcases))(
+                'minCapability1($nums, $k) -> $expected',
+                ({ nums, k, expected }) => {
+                        expect(minCapability1(nums, k)).toStrictEqual(expected);
+                },
+        );
 });
 ```
 
@@ -256,15 +270,18 @@ import { describe, expect, test } from 'bun:test';
 import { rotate } from '0189_rotate-array.js';
 
 const testcases = [
-    { nums: [1,2,3,4,5,6,7], k: 3, expected: [5,6,7,1,2,3,4] },
-    { nums: [-1,-100,3,99], k: 2, expected: [3,99,-1,-100] },
+        { nums: [1, 2, 3, 4, 5, 6, 7], k: 3, expected: [5, 6, 7, 1, 2, 3, 4] },
+        { nums: [-1, -100, 3, 99], k: 2, expected: [3, 99, -1, -100] },
 ];
 
 describe('rotate', () => {
-    test.each(structuredClone(testcases))('rotate($nums, $k) -> $expected', ({ nums, k, expected }) => {
-        expect(rotate(nums, k)).toBeNil();
-        expect(nums).toStrictEqual(expected);
-    });
+        test.each(structuredClone(testcases))(
+                'rotate($nums, $k) -> $expected',
+                ({ nums, k, expected }) => {
+                        expect(rotate(nums, k)).toBeNil();
+                        expect(nums).toStrictEqual(expected);
+                },
+        );
 });
 ```
 
@@ -293,25 +310,25 @@ File: `0304_range-sum-query-2d-immutable.js`
  * Approach:
  */
 class NumMatrix {
-    /**
-     * Time Complexity: O()
-     * Space Complexity: O()
-     *
-     * @param {number[][]} matrix
-     */
-    constructor(matrix) {}
+        /**
+         * Time Complexity: O()
+         * Space Complexity: O()
+         *
+         * @param {number[][]} matrix
+         */
+        constructor(matrix) {}
 
-    /**
-     * Time Complexity: O()
-     * Space Complexity: O()
-     *
-     * @param {number} row1
-     * @param {number} col1
-     * @param {number} row2
-     * @param {number} col2
-     * @return {number}
-     */
-    sumRegion(row1, col1, row2, col2) {}
+        /**
+         * Time Complexity: O()
+         * Space Complexity: O()
+         *
+         * @param {number} row1
+         * @param {number} col1
+         * @param {number} row2
+         * @param {number} col2
+         * @return {number}
+         */
+        sumRegion(row1, col1, row2, col2) {}
 }
 
 export { NumMatrix };
@@ -324,13 +341,19 @@ import { describe, expect, test } from 'bun:test';
 import { NumMatrix } from '0304_range-sum-query-2d-immutable.js';
 
 describe('NumMatrix', () => {
-    test('default test 1', () => {
-        const numMatrix = new NumMatrix([[3,0,1,4,2],[5,6,3,2,1],[1,2,0,1,5],[4,1,0,1,7],[1,0,3,0,5]]);
+        test('default test 1', () => {
+                const numMatrix = new NumMatrix([
+                        [3, 0, 1, 4, 2],
+                        [5, 6, 3, 2, 1],
+                        [1, 2, 0, 1, 5],
+                        [4, 1, 0, 1, 7],
+                        [1, 0, 3, 0, 5],
+                ]);
 
-        expect(numMatrix.sumRegion(2, 1, 4, 3)).toStrictEqual(8);
-        expect(numMatrix.sumRegion(1, 1, 2, 2)).toStrictEqual(11);
-        expect(numMatrix.sumRegion(1, 2, 2, 4)).toStrictEqual(12);
-    });
+                expect(numMatrix.sumRegion(2, 1, 4, 3)).toStrictEqual(8);
+                expect(numMatrix.sumRegion(1, 1, 2, 2)).toStrictEqual(11);
+                expect(numMatrix.sumRegion(1, 2, 2, 4)).toStrictEqual(12);
+        });
 });
 ```
 
@@ -376,14 +399,19 @@ import { describe, expect, test } from 'bun:test';
 import { sortTransformedArray } from '0360_sort-transformed-array.js';
 
 const testcases = [
-    { nums: [-4,-2,2,4], a: 1, b: 3, c: 5, expected: undefined },
-    { nums: [-4,-2,2,4], a: -1, b: 3, c: 5, expected: undefined },
+        { nums: [-4, -2, 2, 4], a: 1, b: 3, c: 5, expected: undefined },
+        { nums: [-4, -2, 2, 4], a: -1, b: 3, c: 5, expected: undefined },
 ];
 
 describe('sortTransformedArray', () => {
-    test.each(structuredClone(testcases))('sortTransformedArray($nums, $a, $b, $c) -> $expected', ({ nums, a, b, c, expected }) => {
-        expect(sortTransformedArray(nums, a, b, c)).toStrictEqual(expected);
-    });
+        test.each(structuredClone(testcases))(
+                'sortTransformedArray($nums, $a, $b, $c) -> $expected',
+                ({ nums, a, b, c, expected }) => {
+                        expect(
+                                sortTransformedArray(nums, a, b, c),
+                        ).toStrictEqual(expected);
+                },
+        );
 });
 ```
 
@@ -414,8 +442,7 @@ File: `2667_create-hello-world-function.js`
  * @return {Function}
  */
 const createHelloWorld = () => {
-
-    return function(...args) {}
+        return function (...args) {};
 };
 
 /**
@@ -433,14 +460,17 @@ import { describe, expect, test } from 'bun:test';
 import { createHelloWorld } from '2667_create-hello-world-function.js';
 
 const testcases = [
-    { args: [], expected: "Hello World" },
-    { args: [{},null,42], expected: "Hello World" },
+        { args: [], expected: 'Hello World' },
+        { args: [{}, null, 42], expected: 'Hello World' },
 ];
 
 describe('createHelloWorld', () => {
-    test.each(structuredClone(testcases))('createHelloWorld($args) -> $expected', ({ args, expected }) => {
-        expect();
-    });
+        test.each(structuredClone(testcases))(
+                'createHelloWorld($args) -> $expected',
+                ({ args, expected }) => {
+                        expect();
+                },
+        );
 });
 ```
 
@@ -484,15 +514,35 @@ import { describe, expect, test } from 'bun:test';
 import { throttle } from '../../../src/problems/2601-2700/2676_throttle.js';
 
 const testcases = [
-    { t: 100, fn: [{"t":20,"inputs":[1]}], expected: undefined },
-    { t: 50, fn: [{"t":50,"inputs":[1]},{"t":75,"inputs":[2]}], expected: undefined },
-    { t: 70, fn: [{"t":50,"inputs":[1]},{"t":75,"inputs":[2]},{"t":90,"inputs":[8]},{"t":140,"inputs":[5,7]},{"t":300,"inputs":[9,4]}], expected: undefined },
+        { t: 100, fn: [{ t: 20, inputs: [1] }], expected: undefined },
+        {
+                t: 50,
+                fn: [
+                        { t: 50, inputs: [1] },
+                        { t: 75, inputs: [2] },
+                ],
+                expected: undefined,
+        },
+        {
+                t: 70,
+                fn: [
+                        { t: 50, inputs: [1] },
+                        { t: 75, inputs: [2] },
+                        { t: 90, inputs: [8] },
+                        { t: 140, inputs: [5, 7] },
+                        { t: 300, inputs: [9, 4] },
+                ],
+                expected: undefined,
+        },
 ];
 
 describe('throttle', () => {
-    test.each(structuredClone(testcases))('throttle($t, $fn) -> $expected', ({ t, fn, expected }) => {
-        expect();
-    });
+        test.each(structuredClone(testcases))(
+                'throttle($t, $fn) -> $expected',
+                ({ t, fn, expected }) => {
+                        expect();
+                },
+        );
 });
 ```
 
@@ -534,20 +584,23 @@ import { describe, expect, test } from 'bun:test';
 import { firstBadVersion } from '../../../src/problems/0201-0300/0278_first-bad-version.js';
 
 const testcases = [
-    { n: 5, bad: 4, expected: 4 },
-    { n: 1, bad: 1, expected: 1 },
+        { n: 5, bad: 4, expected: 4 },
+        { n: 1, bad: 1, expected: 1 },
 ];
 
 describe('firstBadVersion', () => {
-    test.each(structuredClone(testcases))('firstBadVersion($n, $bad) -> $expected', ({ n, bad, expected }) => {
-        expect(firstBadVersion(n, bad)).toStrictEqual(expected);
-    });
+        test.each(structuredClone(testcases))(
+                'firstBadVersion($n, $bad) -> $expected',
+                ({ n, bad, expected }) => {
+                        expect(firstBadVersion(n, bad)).toStrictEqual(expected);
+                },
+        );
 });
 ```
 
 > Notice that in the above example, the inputs and the solution function are completely inaccurate. The solution function should instead be getting the API with the appropriate methods passed in as a parameter, and returning a function instead.
 
-## Configuration
+## Configuration Options
 
 This templater is highly configurable, and it is **strongly recommended** to get it configured before getting started. Create an object with the key `lct` in your `package.json` file. This object will contain all the options you wish to configure.
 
@@ -568,13 +621,13 @@ Example configuration:
         "version": "1.0.0",
         "type": "module",
         "scripts": {
-                "dev": "bun --watch run main.js",
+                "dev": "bun --watch run main.js"
         },
         "lct": {
                 "SOLUTION_AUTHOR_NAME": "ragonscreen",
                 "SOLUTION_AUTHOR_URL": "https://github.com/ragonscreen/",
                 "MAX_SIMILAR_PROBLEMS": 5,
-                "ADD_HINTS": false,
+                "ADD_HINTS": false
         }
 }
 ```
@@ -619,30 +672,6 @@ Change the character used for indentation, and the width per indent, across all 
         INDENT_STYLE: 'spaces',
         INDENT_WIDTH: 4,
 }
-```
-
-`INDENT_STYLE`=`tabs`
-
-```javascript
-const testcases = [
-	{ nums: [2,7,11,15], target: 9, expected: [0,1] },
-];
-```
-
-`INDENT_STYLE`=`spaces`
-
-```javascript
-const testcases = [
-    { nums: [2,7,11,15], target: 9, expected: [0,1] },
-];
-```
-
-`INDENT_WIDTH`=`8` (and `INDENT_STYLE`=`spaces`)
-
-```javascript
-const testcases = [
-        { nums: [2,7,11,15], target: 9, expected: [0,1] },
-];
 ```
 
 ### Tests
@@ -699,10 +728,10 @@ Additionally, it also affects the nullish matcher.
 
 ```javascript
 describe('MinStack', () => {
-    test('default test 1', () => {
-        const minStack = new MinStack();
-        expect(minStack.push(-2)).toBeNil();
-    });
+        test('default test 1', () => {
+                const minStack = new MinStack();
+                expect(minStack.push(-2)).toBeNil();
+        });
 });
 ```
 
@@ -710,10 +739,10 @@ describe('MinStack', () => {
 
 ```javascript
 describe('MinStack', () => {
-    test('default test 1', () => {
-        const minStack = new MinStack();
-        expect(minStack.push(-2)).toBeNullable();
-    });
+        test('default test 1', () => {
+                const minStack = new MinStack();
+                expect(minStack.push(-2)).toBeNullable();
+        });
 });
 ```
 
@@ -721,10 +750,10 @@ describe('MinStack', () => {
 
 ```javascript
 describe('MinStack', () => {
-    test('default test 1', () => {
-        const minStack = new MinStack();
-        expect(minStack.push(-2)).toBeUndefined();
-    });
+        test('default test 1', () => {
+                const minStack = new MinStack();
+                expect(minStack.push(-2)).toBeUndefined();
+        });
 });
 ```
 
@@ -828,15 +857,15 @@ Class methods will always use non-arrow syntax.
 
 ```javascript
 class MinStack {
-    constructor() {}
+        constructor() {}
 
-    push(val) {}
+        push(val) {}
 
-    pop() {}
+        pop() {}
 
-    top() {}
+        top() {}
 
-    getMin() {}
+        getMin() {}
 }
 ```
 
@@ -948,8 +977,7 @@ This also affects code comments that are sometimes included in the solution temp
  * @return {Function}
  */
 const createHelloWorld = () => {
-
-    return function(...args) {}
+        return function (...args) {};
 };
 
 /**
@@ -964,8 +992,7 @@ export { createHelloWorld };
 
 ```javascript
 const createHelloWorld = () => {
-
-    return function(...args) {}
+        return function (...args) {};
 };
 
 export { createHelloWorld };
@@ -1202,7 +1229,13 @@ Similar problems are added with their respective slugs so you can easily get sta
 
 ## Limitations
 
-### Incorrect Expected Return
+### Inappropriate Matcher
+
+> Note that some problems with the limitations listed below have been manually patched by me to include the proper testcases and matchers, however most of them are as of yet undiscovered. As I encounter more such problems, I will continue to manually patch them. In the meantime, you must follow the steps listed below to patch them yourself.
+>
+> For a complete list of these problems, refer to [Manually Patched Problems](#manually-patched-problems).
+
+#### `toContainAllValues`
 
 A few problems on LeetCode involve returning values which are not always exactly equal to the expected return value given in the problem source. An example of this is the problem `0001_two-sum`. The expected return value is an array which may contain the required elements in any order. As such, you must manually edit the matcher in the test file to `toContainAllValues()` or similar, instead of the default `toStrictEqual()`. LeetCode does not provide a way to filter this out straight from source.
 
@@ -1210,29 +1243,39 @@ File: `0001_two-sum.test.js`
 
 ```javascript
 const testcases = [
-    { nums: [2,7,11,15], target: 9, expected: [0,1] },
-    { nums: [3,2,4], target: 6, expected: [1,2] },
-    { nums: [3,3], target: 6, expected: [0,1] },
+        { nums: [2, 7, 11, 15], target: 9, expected: [0, 1] },
+        { nums: [3, 2, 4], target: 6, expected: [1, 2] },
+        { nums: [3, 3], target: 6, expected: [0, 1] },
 ];
 ```
 
-```js
+```javascript
 // INCORRECT - generated
 describe('twoSum', () => {
-    test.each(structuredClone(testcases))('twoSum($nums, $target) -> $expected', ({ nums, target, expected }) => {
-        expect(twoSum(nums, target)).toStrictEqual(expected);
-    });
+        test.each(structuredClone(testcases))(
+                'twoSum($nums, $target) -> $expected',
+                ({ nums, target, expected }) => {
+                        expect(twoSum(nums, target)).toStrictEqual(expected);
+                },
+        );
 });
 ```
 
-```js
+```javascript
 // CORRECT - manually edited
 describe('twoSum', () => {
-    test.each(structuredClone(testcases))('twoSum($nums, $target) -> $expected', ({ nums, target, expected }) => {
-        expect(twoSum(nums, target)).toContainAllValues(expected);
-    });
+        test.each(structuredClone(testcases))(
+                'twoSum($nums, $target) -> $expected',
+                ({ nums, target, expected }) => {
+                        expect(twoSum(nums, target)).toContainAllValues(
+                                expected,
+                        );
+                },
+        );
 });
 ```
+
+#### `toBeOneOf`
 
 A few problems instead involve returning one of several possible correct values. An example of this is the problem `1980_find-unique-binary-string`. The expected return value is one of several strings, not just the singular given return value. As such, in the test file, you must manually set the `expected` key of each testcase object to an array containing all possible correct return values, and edit the matcher to `toBeOneOf()` or similar, instead of the default `toStrictEqual()`. LeetCode does not provide a way to filter this out straight from source.
 
@@ -1241,34 +1284,81 @@ File: `1980_find-unique-binary-string.test.js`
 ```javascript
 // INCORRECT - generated
 const testcases = [
-    { nums: ["01","10"], expected: "11" },
-    { nums: ["00","01"], expected: "11" },
-    { nums: ["111","011","001"], expected: "101" },
+        { nums: ['01', '10'], expected: '11' },
+        { nums: ['00', '01'], expected: '11' },
+        { nums: ['111', '011', '001'], expected: '101' },
 ];
 
 describe('findDifferentBinaryString', () => {
-    test.each(structuredClone(testcases))('findDifferentBinaryString($nums) -> $expected', ({ nums, expected }) => {
-        expect(findDifferentBinaryString(nums)).toStrictEqual(expected);
-    });
+        test.each(structuredClone(testcases))(
+                'findDifferentBinaryString($nums) -> $expected',
+                ({ nums, expected }) => {
+                        expect(findDifferentBinaryString(nums)).toStrictEqual(
+                                expected,
+                        );
+                },
+        );
 });
 ```
 
-```js
+```javascript
 // CORRECT - manually edited
 const testcases = [
-    { nums: ["01","10"], expected: ["00","11"] },
-    { nums: ["00","01"], expected: ["10","11"] },
-    { nums: ["111","011","001"], expected: ["000","010","100","101","110"] },
+        { nums: ['01', '10'], expected: ['00', '11'] },
+        { nums: ['00', '01'], expected: ['10', '11'] },
+        {
+                nums: ['111', '011', '001'],
+                expected: ['000', '010', '100', '101', '110'],
+        },
 ];
 
 describe('findDifferentBinaryString', () => {
-    test.each(structuredClone(testcases))('findDifferentBinaryString($nums) -> $expected', ({ nums, expected }) => {
-        expect(findDifferentBinaryString(nums)).toBeOneOf(expected);
-    });
+        test.each(structuredClone(testcases))(
+                'findDifferentBinaryString($nums) -> $expected',
+                ({ nums, expected }) => {
+                        expect(findDifferentBinaryString(nums)).toBeOneOf(
+                                expected,
+                        );
+                },
+        );
 });
 ```
 
-### Problems Involving Linked Lists, Trees, etc.
+#### `toBeCloseTo`
+
+Very few problems, e.g. `1701_average-waiting-time`, involve returning a `float` or `double`. Since all number types are initially parsed to be just "`number`" for simplicity's sake, these problems require you to manually edit the matcher to `toBeCloseTo`, instead of `toStrictEqual`.
+
+File: `1701_average-waiting-time.test.js`
+
+```javascript
+// INCORRECT - generated
+describe('averageWaitingTime', () => {
+        test.each(structuredClone(testcases))(
+                'averageWaitingTime($customers) -> $expected',
+                ({ customers, expected }) => {
+                        expect(averageWaitingTime(customers)).toStrictEqual(
+                                expected,
+                        );
+                },
+        );
+});
+```
+
+```javascript
+// CORRECT - manually edited
+describe('averageWaitingTime', () => {
+        test.each(structuredClone(testcases))(
+                'averageWaitingTime($customers) -> $expected',
+                ({ customers, expected }) => {
+                        expect(averageWaitingTime(customers)).toBeCloseTo(
+                                expected,
+                        );
+                },
+        );
+});
+```
+
+### Problems Involving Linked Lists, Trees, etc
 
 As inputs are always given in the form of an array, you must manually convert them into the respective data structure with your custom util functions. Additionally, these problems often involve special properties on the data structure (such as cycles in a linked list) that are impossible to be automatically accounted for purely based on the data sourced from LeetCode. These properties must be manually added to your input.
 
@@ -1276,7 +1366,7 @@ Consider the following custom utility functions that are required to solve `0141
 
 File: `utils/linked-list.js`
 
-```js
+```javascript
 class ListNode {
         constructor(val = 0, next = null) {
                 this.val = val;
@@ -1318,7 +1408,7 @@ These functions then must then be imported and executed appropriately in the res
 
 File: `0141_linked-list-cycle.test.js`
 
-```js
+```javascript
 import { describe, expect, test } from 'bun:test';
 import { hasCycle } from '0141_linked-list-cycle.js';
 import { arrayToList, createCycle } from 'utils/linked-list.js';
@@ -1330,13 +1420,14 @@ const testcases = [
 ];
 
 describe('hasCycle', () => {
-        test.each(
-                structuredClone(testcases),
-        )('hasCycle($head, $pos) -> $expected', ({ head, pos, expected }) => {
-                expect(
-                        hasCycle(createCycle(arrayToList(head), pos)),
-                ).toStrictEqual(expected);
-        });
+        test.each(structuredClone(testcases))(
+                'hasCycle($head, $pos) -> $expected',
+                ({ head, pos, expected }) => {
+                        expect(
+                                hasCycle(createCycle(arrayToList(head), pos)),
+                        ).toStrictEqual(expected);
+                },
+        );
 });
 ```
 
@@ -1344,7 +1435,7 @@ For most other Linked List based problems, the complementary `listToArray` funct
 
 File: `utils/linked-list.js`
 
-```js
+```javascript
 const listToArray = (list) => {
         const array = [];
         let node = list;
@@ -1362,7 +1453,7 @@ export { listToArray };
 
 File: `0002_add-two-numbers.test.js`
 
-```js
+```javascript
 import { describe, expect, test } from 'bun:test';
 import { addTwoNumbers } from '0002_add-two-numbers.js';
 import { arrayToList, listToArray } from 'utils/linked-list.js';
@@ -1378,21 +1469,74 @@ const testcases = [
 ];
 
 describe('addTwoNumbers', () => {
-        test.each(
-                structuredClone(testcases),
-        )('addTwoNumbers($l1, $l2) -> $expected', ({ l1, l2, expected }) => {
-                expect(
-                        listToArray(
-                                addTwoNumbers(arrayToList(l1), arrayToList(l2)),
-                        ),
-                ).toStrictEqual(expected);
-        });
+        test.each(structuredClone(testcases))(
+                'addTwoNumbers($l1, $l2) -> $expected',
+                ({ l1, l2, expected }) => {
+                        expect(
+                                listToArray(
+                                        addTwoNumbers(
+                                                arrayToList(l1),
+                                                arrayToList(l2),
+                                        ),
+                                ),
+                        ).toStrictEqual(expected);
+                },
+        );
 });
 ```
 
 > Note that the examples provided above are my custom implementations of these utility functions. They are not provided by default.
 
-### Typed Array Returns
+### Incorrect Return Type
+
+#### Numbers as Booleans
+
+LeetCode supports returning a `number` instead of a `boolean`, as automatic type coercion is performed for most problems that require returning a `boolean`. However, your function will throw an error if you return a `number`. As such, you must either return a `boolean` in your solution, or wrap the received value in a `Boolean()` constructor.
+
+To better illustrate this, consider the following solution to the problem `0292_nim-game`.
+
+File: `0292_nim-game.js`
+
+```javascript
+/**
+ * Approach: Math
+ * Time Complexity: O(1)
+ * Space Complexity: O(1)
+ *
+ * @param {number} n
+ * @return {boolean}
+ */
+const canWinNim = (n) => n % 4;
+```
+
+LeetCode will support this solution, as the returned value is automatically coerced into a `boolean`. However, your function will throw an error and you must manually convert the value to a `boolean`.
+
+```javascript
+// CORRECT - option A
+/**
+ * Approach: Math
+ * Time Complexity: O(1)
+ * Space Complexity: O(1)
+ *
+ * @param {number} n
+ * @return {boolean}
+ */
+const canWinNim = (n) => n % 4 !== 0;
+```
+
+```javascript
+// CORRECT - option B
+describe('canWinNim', () => {
+        test.each(structuredClone(testcases))(
+                'canWinNim($n) -> $expected',
+                ({ n, expected }) => {
+                        expect(Boolean(canWinNim(n))).toStrictEqual(expected);
+                },
+        );
+});
+```
+
+#### Typed Arrays
 
 Even though LeetCode supports returning a `TypedArray` when the expected return type is an `Array`, your function will throw an error if you return a `TypedArray`, as they are not strictly equal to an `Array` even if they contain the same values in the same indices. As such, you must wrap the received value in an `Array.from()` to convert it into an array before your assertion is performed.
 
@@ -1400,7 +1544,7 @@ To better illustrate this, consider the following solution to the problem `3255_
 
 File: `3255_find-the-power-of-k-size-subarrays-ii.js`
 
-```js
+```javascript
 /**
  * Approach: Sliding Window
  * Time Complexity: O(n)
@@ -1435,27 +1579,29 @@ As is clearly apparent, the return type is an `Array` of numbers. However, the a
 
 File: `3255_find-the-power-of-k-size-subarrays-ii.test.js`
 
-```js
+```javascript
 // ASSERTION FAILS - generated
 describe('resultsArray', () => {
-        test.each(
-                structuredClone(testcases),
-        )('resultsArray($nums, $k) -> $expected', ({ nums, k, expected }) => {
-                expect(resultsArray(nums, k)).toStrictEqual(expected);
-        });
+        test.each(structuredClone(testcases))(
+                'resultsArray($nums, $k) -> $expected',
+                ({ nums, k, expected }) => {
+                        expect(resultsArray(nums, k)).toStrictEqual(expected);
+                },
+        );
 });
 ```
 
-```js
+```javascript
 // ASSERTION PASSES - manually edited
 describe('resultsArray', () => {
-        test.each(
-                structuredClone(testcases),
-        )('resultsArray($nums, $k) -> $expected', ({ nums, k, expected }) => {
-                expect(Array.from(resultsArray(nums, k))).toStrictEqual(
-                        expected,
-                );
-        });
+        test.each(structuredClone(testcases))(
+                'resultsArray($nums, $k) -> $expected',
+                ({ nums, k, expected }) => {
+                        expect(Array.from(resultsArray(nums, k))).toStrictEqual(
+                                expected,
+                        );
+                },
+        );
 });
 ```
 
@@ -1465,7 +1611,7 @@ Consider the problem `0141_linked-list-cycle`. It uses an internal parameter `po
 
 File: `0141_linked-list-cycle.js`
 
-```js
+```javascript
 const hasCycle = (head, pos) => {};
 
 export { hasCycle };
@@ -1473,14 +1619,14 @@ export { hasCycle };
 
 File: `0141_linked-list-cycle.test.js`
 
-```js
+```javascript
 import { describe, expect, test } from 'bun:test';
 import { hasCycle } from '0141_linked-list-cycle.js';
 
 const testcases = [
-    { head: [3,2,0,-4], pos: 1, expected: true },
-    { head: [1,2], pos: 0, expected: true },
-    { head: [1], pos: -1, expected: false },
+        { head: [3, 2, 0, -4], pos: 1, expected: true },
+        { head: [1, 2], pos: 0, expected: true },
+        { head: [1], pos: -1, expected: false },
 ];
 ```
 
@@ -1490,16 +1636,42 @@ Obviously this is not of any use in the solution, as even though you can "cheat"
 
 ### Manually Patched Problems
 
+The following problems have been manually patched to provide the correct matcher and appropriate outputs:
+
+`toContainAllValues`
+
+- `0001_two-sum`
+- `0017_letter-combinations-of-a-phone-number`
+- `0026_remove-duplicates-from-sorted-array`
+- `0347_top-k-frequent-elements`
+- `3289_the-two-sneaky-numbers-of-digitville`
+
+`toBeOneOf`
+
+- `0162_find-peak-element`
+- `0451_sort-characters-by-frequency`
+- `0791_custom-sort-string`
+- `1980_find-unique-binary-string`
+
+`toBeCloseTo`
+
+- `0004_median-of-two-sorted-arrays`
+- `1701_average-waiting-time`
+
+miscellaneous
+
+- `2610_convert-an-array-into-a-2d-array-with-conditions`
+
 There are certain problems with errors in their HTML description, or other issues that require custom parsing. The following problems have as such been manually patched.
 
-**38. Count and Say** - The two examples provided and the two default testcases are in the opposite order.
+- `0038_count-and-say` - The two examples provided and the two default testcases are in the opposite order.
+- `0778_swim-in-rising-water` - The "Explanation" title of the first testcase is not wrapped inside `<strong>` tags.
+- `2610_convert-an-array-into-a-2d-array-with-conditions` - The second example in the description of this problem and the second default testcase are different from each other.
 
-**778. Swim in Rising Water** - The "Explanation" title of the first testcase is not wrapped inside `<strong>` tags.
-
-**2610. Convert an Array Into a 2D Array With Conditions** - The second example in the description of this problem and the second default testcase are different from each other.
-
-> The above list is by no means exhaustive. As more issues are discovered, problems will continue to get manually patched.
+> The above lists are by no means exhaustive. As more issues are discovered, problems will continue to get manually patched.
 
 ### Unsupported Problem Types
 
 `Database`, `Shell`, and `Concurrency` based problems are obviously not supported.
+
+---

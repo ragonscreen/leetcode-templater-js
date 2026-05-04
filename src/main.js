@@ -5,7 +5,10 @@ import { dirname, resolve } from 'node:path';
 import { argv } from 'node:process';
 import { fileURLToPath } from 'node:url';
 import { CONFIG } from './config.js';
-import { constructSolution, constructTest } from './construct-problem-files.js';
+import {
+        constructSolution,
+        constructTest,
+} from './construct-problem-files/construct-problem-files.js';
 import { getFilePaths } from './get-file-paths.js';
 import { parseProblemData } from './parse-problem-data/parse-problem-data.js';
 
@@ -85,7 +88,7 @@ const main = async () => {
 
         const problemData = await getProblemData(query, titleSlug);
 
-        // console.log(problemData);
+        console.log(problemData);
 
         if (!problemData) {
                 throwIdentifierError();

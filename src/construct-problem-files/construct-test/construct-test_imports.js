@@ -1,5 +1,5 @@
 import { join, sep } from 'node:path';
-import { CONFIG } from '../config.js';
+import { CONFIG } from '../../config.js';
 
 const { TEST_FRAMEWORK, USE_ESM_SYNTAX, USE_RELATIVE_IMPORTS } = CONFIG;
 

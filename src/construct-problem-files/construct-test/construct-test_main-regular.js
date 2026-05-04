@@ -1,5 +1,7 @@
-import { CONFIG } from '../config.js';
-import { gap } from '../utils.js';
+import { CONFIG } from '../../config.js';
+import { gap } from '../../utils.js';
+import { adjustCustomMatchers } from './adjust-custom-matchers.js';
+import { constructCustomExpect } from './construct-custom-expects.js';
 
 const { TEST_FRAMEWORK } = CONFIG;
 
@@ -80,13 +82,20 @@ ${gap()}});
 });`;
 };
 
-const constructStringDescribe = (metadata) => {
+const constructStringDescribe = (problemData) => {
+        const { titleSlug, metadata } = problemData;
         const { name, params, inPlaceParam } = metadata;
         const paramNames = params.map((e) => e.name);
         const strParamNames = paramNames.join(', ');
 
         let str = `\n\ndescribe('${name}', () => {
 ${gap()}test.each(structuredClone(testcases))('${name}($${paramNames.join(', $')}) -> $expected', ({ ${strParamNames}, expected }) => {`;
+
+        const strCustom = constructCustomExpect(name, strParamNames, titleSlug);
+
+        if (strCustom) {
+                return `${str}${strCustom}`;
+        }
 
         if (metadata.return.type === 'void') {
                 str += constructStringExpectInPlace(
@@ -101,15 +110,18 @@ ${gap()}test.each(structuredClone(testcases))('${name}($${paramNames.join(', $')
         return str;
 };
 
-const constructTestMainRegular = (metadata) => {
+const constructTestMainRegular = (problemData) => {
+        const { metadata } = problemData;
         const { languages } = metadata;
         let str = constructStringTestcases(metadata);
 
         if (languages?.length === 2 && languages?.includes('javascript')) {
                 str += constructStringDescribeJavaScript(metadata);
         } else {
-                str += constructStringDescribe(metadata);
+                str += constructStringDescribe(problemData);
         }
+
+        str = adjustCustomMatchers(problemData, str);
 
         return str;
 };

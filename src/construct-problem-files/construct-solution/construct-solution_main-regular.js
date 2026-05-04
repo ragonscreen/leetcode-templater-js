@@ -1,4 +1,4 @@
-import { CONFIG } from '../config.js';
+import { CONFIG } from '../../config.js';
 
 const { USE_ARROW_FUNCTIONS, ADD_COMMENTS } = CONFIG;
 

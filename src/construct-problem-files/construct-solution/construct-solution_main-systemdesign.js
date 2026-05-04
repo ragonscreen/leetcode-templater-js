@@ -1,5 +1,5 @@
-import { CONFIG } from '../config.js';
-import { gap } from '../utils.js';
+import { CONFIG } from '../../config.js';
+import { gap } from '../../utils.js';
 
 const { ADD_COMMENTS } = CONFIG;
 
