@@ -14,8 +14,6 @@ X - bun, vitest, jest support
 
 TODO:
 - finish README
-- add information about questions with problematic html
-- fix html parsing for various problems
-- add "randomized" problems?
 - add no ai disclaimer to readme
-- manually patch all problems with issues / different returns
+- find vitest substitutes for new matchers
+- add "randomized" problems?

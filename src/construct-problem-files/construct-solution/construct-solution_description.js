@@ -165,22 +165,21 @@ const constructStringHints = (hints) => {
         let str = '\n *\n * Hints:';
 
         for (let i = 0; i < hints.length; i++) {
-                const hint = hints[i];
+                const hint = hints[i].replace(/\r\n|\n/g, '');
                 const m = hint.length;
                 const hintStrs = [];
                 let lastBreakIdx = 0;
 
                 for (let l = 0, r = 0; r < m; r++) {
-                        const c = hint[r];
+                        if (hint[r] === ' ') {
+                                if (r - l + 1 > 74) {
+                                        hintStrs.push(
+                                                hint.slice(l, lastBreakIdx),
+                                        );
+                                        l = lastBreakIdx + 1;
+                                }
 
-                        if (c === ' ') {
                                 lastBreakIdx = r;
-                        }
-
-                        if (r - l + 1 > 74) {
-                                hintStrs.push(hint.slice(l, lastBreakIdx));
-                                l = lastBreakIdx + 1;
-                                r = lastBreakIdx + 1;
                         }
 
                         if (r === m - 1) {

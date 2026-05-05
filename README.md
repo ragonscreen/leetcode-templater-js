@@ -1660,6 +1660,11 @@ The following problems have been manually patched to provide the correct matcher
 
 miscellaneous
 
+- `0026_remove-duplicates-from-sorted-array`
+- `0027_remove-element`
+- `0048_rotate-image`
+- `1249_minimum-remove-to-make-valid-parentheses`
+- `1374_generate-a-string-with-characters-that-have-odd-counts`
 - `2610_convert-an-array-into-a-2d-array-with-conditions`
 
 There are certain problems with errors in their HTML description, or other issues that require custom parsing. The following problems have as such been manually patched.

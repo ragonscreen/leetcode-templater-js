@@ -16,6 +16,27 @@ const adjConvertAnArrayIntoA2dArrayWithConditions = (problemData) => {
         problemData.metadata.outputs.push([[4, 3, 2, 1]]);
 };
 
+// 26 and 27 are just plain weird
+
+const adjRemoveElement = (problemData) => {
+        problemData.metadata.outputs = [
+                { len: 2, nums: [2, 2] },
+                { len: 5, nums: [0, 1, 3, 0, 4] },
+        ];
+};
+
+const adjRemoveDuplicatesFromSortedArray = (problemData) => {
+        problemData.metadata.outputs = [
+                { len: 2, nums: [1, 2] },
+                { len: 5, nums: [0, 1, 2, 3, 4] },
+        ];
+};
+
+// Expected values are implementation based for these problems
+const adjRemoveOutputs = (problemData) => {
+        problemData.metadata.outputs = [];
+};
+
 // `toStrictEqual` is invalid for these problems,
 // and they require `toBeOneOf`
 const adjTestMatcherToBeOneOf = (problemData) => {
@@ -49,24 +70,25 @@ const adjDefault = (problemData) => {
 };
 
 const adjustCustomProblemData = (problemData) => {
-        switch (problemData.titleSlug) {
-                case 'swim-in-rising-water':
-                        adjSwimInRisingWater(problemData);
-                        break;
+        const customDatas = {
+                'swim-in-rising-water': adjSwimInRisingWater,
+                'count-and-say': adjCountAndSay,
+                'convert-an-array-into-a-2d-array-with-conditions':
+                        adjConvertAnArrayIntoA2dArrayWithConditions,
+                'remove-element': adjRemoveElement,
+                'remove-duplicates-from-sorted-array':
+                        adjRemoveDuplicatesFromSortedArray,
+                'generate-a-string-with-characters-that-have-odd-counts':
+                        adjRemoveOutputs,
+                'minimum-remove-to-make-valid-parentheses': adjRemoveOutputs,
+        };
 
-                case 'count-and-say':
-                        adjCountAndSay(problemData);
-                        break;
+        const customData = customDatas[problemData.titleSlug];
 
-                case 'convert-an-array-into-a-2d-array-with-conditions':
-                        adjConvertAnArrayIntoA2dArrayWithConditions(
-                                problemData,
-                        );
-                        break;
-
-                default:
-                        adjDefault(problemData);
-                        break;
+        if (customData) {
+                customData(problemData);
+        } else {
+                adjDefault(problemData);
         }
 };
 
