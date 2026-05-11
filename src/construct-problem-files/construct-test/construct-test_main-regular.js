@@ -97,7 +97,7 @@ ${gap()}test.each(structuredClone(testcases))('${name}($${paramNames.join(', $')
                 return `${str}${strCustom}`;
         }
 
-        if (metadata.return.type === 'void') {
+        if (metadata.return?.type === 'void') {
                 str += constructStringExpectInPlace(
                         name,
                         strParamNames,

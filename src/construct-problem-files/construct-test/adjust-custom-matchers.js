@@ -19,6 +19,7 @@ const adjustCustomMatchers = (problemData, testStr) => {
                                 'remove-duplicates-from-sorted-array',
                                 'top-k-frequent-elements',
                                 'the-two-sneaky-numbers-of-digitville',
+                                'subdomain-visit-count',
                         ],
                 },
                 {

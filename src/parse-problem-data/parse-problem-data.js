@@ -139,7 +139,7 @@ const parseInPlaceParam = (metadata, codeSnippets) => {
                 return null;
         }
 
-        if (retval.type !== 'void') {
+        if (retval?.type !== 'void') {
                 return null;
         }
 
@@ -159,6 +159,7 @@ const displayWarnings = (problemData) => {
         const isJavaScript =
                 languages?.length <= 2 && languages?.includes('javascript');
         const isInteractive = topics?.find((e) => e.name === 'Interactive');
+        const isRandomized = topics?.find((e) => e.name === 'Randomized');
 
         if (isPaidOnly && isJavaScript) {
                 console.warn(
@@ -174,7 +175,7 @@ const displayWarnings = (problemData) => {
                 );
         }
 
-        if (!systemdesign && retval.type === 'void') {
+        if (!systemdesign && retval?.type === 'void') {
                 console.warn(
                         'In-place problem detected. Please verify assertions in the appropriate test file.\n',
                 );
@@ -183,6 +184,12 @@ const displayWarnings = (problemData) => {
         if (isInteractive) {
                 console.warn(
                         'Interactive problems are not fully supported. Solution template may contain errors. Please write your own interactive API interface according to the outputs.',
+                );
+        }
+
+        if (isRandomized) {
+                console.warn(
+                        'Randomized problems are not supported. Solution template may contain errors. Please write your own interactive API interface according to the outputs.',
                 );
         }
 };

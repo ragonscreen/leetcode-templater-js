@@ -13,8 +13,5 @@ X - cjs/esm syntax
 X - bun, vitest, jest support
 
 TODO:
-- finish README
-- add no ai disclaimer to readme
 - find vitest substitutes for new matchers
-- add "randomized" problems?
 - add parse tests for ALL PROBLEMS

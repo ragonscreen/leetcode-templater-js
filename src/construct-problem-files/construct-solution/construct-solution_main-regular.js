@@ -3,7 +3,7 @@ import { CONFIG } from '../../config.js';
 const { USE_ARROW_FUNCTIONS, ADD_COMMENTS } = CONFIG;
 
 const constructSolutionMainRegular = (metadata) => {
-        const { name, params, return: returnValue } = metadata;
+        const { name, params, return: retval } = metadata;
 
         let str = '';
 
@@ -12,8 +12,7 @@ const constructSolutionMainRegular = (metadata) => {
  * Approach:
  * Time Complexity: O()
  * Space Complexity: O()
- * ${params.reduce((t, c) => `${t}\n * @param {${c.type}} ${c.name}`, '')}
- * @return {${returnValue.type}}
+ * ${params.reduce((t, c) => `${t}\n * @param {${c.type}} ${c.name}`, '')}${retval ? `\n * @return {${retval.type}}` : ''}
  */\n`;
         }
 

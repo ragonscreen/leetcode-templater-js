@@ -81,6 +81,9 @@ const adjustCustomProblemData = (problemData) => {
                 'generate-a-string-with-characters-that-have-odd-counts':
                         adjRemoveOutputs,
                 'minimum-remove-to-make-valid-parentheses': adjRemoveOutputs,
+                'array-with-elements-not-equal-to-average-of-neighbors':
+                        adjRemoveOutputs,
+                'find-missing-observations': adjRemoveOutputs,
         };
 
         const customData = customDatas[problemData.titleSlug];

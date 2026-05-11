@@ -1,40 +1,82 @@
 # Leetcode Templater JS
 
-Highly confgurable test and solution file template generator for LeetCode problems.
+Highly confgurable solution and test file template generator for LeetCode problems.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Disclaimer](#disclaimer)
+- [Features](#features)
+  - [Configuration](#configuration)
+  - [Template Generation](#template-generation)
+  - [Multiple Identifier Support](#multiple-identifier-support)
+  - [Regular Algorithm Problems](#regular-algorithm-problems)
+  - [In-Place Algorithm Problems](#in-place-algorithm-problems)
+  - [System Design Algorithm Problems](#system-design-algorithm-problems)
+- [Partial / Experimental Support](#partial--experimental-support)
+  - [Premium Problems](#premium-problems)
+  - [JavaScript Problems](#javascript-problems)
+  - [Premium JavaScript Problems](#premium-javascript-problems)
+  - [Interactive Problems](#interactive-problems)
+- [Configuration Options](#configuration-options)
+  - [Solution Author](#solution-author)
+  - [Indentation](#indentation)
+  - [Tests](#tests)
+  - [Solution and Test Directories](#solution-and-test-directories)
+  - [Bucket Directories](#bucket-directories)
+  - [Function Type](#function-type)
+  - [ESM vs CJS syntax](#esm-vs-cjs-syntax)
+  - [Import Structure](#import-structure)
+  - [Add Comments](#add-comments)
+  - [Solution Description](#solution-description)
+- [Limitations](#limitations)
+  - [Inappropriate Matcher](#inappropriate-matcher)
+  - [Problems Involving Linked Lists, Trees, etc](#problems-involving-linked-lists-trees-etc)
+  - [Incorrect Return Type](#incorrect-return-type)
+  - [Internally Used Parameteres](#internally-used-parameteres)
+  - [Manually Patched Problems](#manually-patched-problems)
+  - [Unsupported Problem Types](#unsupported-problem-types)
 
 ## Installation
 
-bun
+Bun
 
-```sh
+```bash
 bun add -D leetcode-templater-js
 ```
 
-node
+npm
 
-```sh
+```bash
 npm install -D leetcode-templater-js
 ```
 
 pnpm
 
-```sh
+```bash
 pnpm add -D leetcode-templater-js
 ```
 
 ## Usage
 
-bun
+Bun
 
-```sh
+```bash
 bunx lct <problem_slug>
 ```
 
-node
+npm
 
-```sh
+```bash
 npx lct <problem_slug>
 ```
+
+## Disclaimer
+
+Every single line of code and documentation has been written, tested, and verified by a human being (me). **No generative AI was used in the process of creating this project.** As such, there may be inconsistencies, typos, and more general errors. This project is continuously updated as I continue to solve more LeetCode problems.
+
+As of 2026 May 11, this templater has been tested against **402 LeetCode problems** with no errors. However, there are many more problems available on LeetCode. As such, should you encounter an error, please create an issue and it will get fixed as soon as possible.
 
 ## Features
 
@@ -46,7 +88,7 @@ The templater is highly configurable. It is **strongly recommended** to use your
 
 Automatically generates a solution and a test file containing default tests, with all data sourced straight from leetcode.
 
-```sh
+```bash
 bunx lct house-robber-iv
 ```
 
@@ -213,7 +255,7 @@ describe('minCapability1', () => {
 
 Supports the following forms of identifiers (including sublinks such as `description/`, `submissions/`, `solutions/`, etc.) as valid problem slugs:
 
-```sh
+```bash
 two-sum
 
 problems/two-sum/
@@ -236,7 +278,7 @@ Supports basic algorithm problems which involve returning a specific value and m
 
 Supports algorithm problems which involve modifying the inputs in some way, which is then checked against the expected value. Examples include `0026_remove-duplicates-from-sorted-array`, `0189_rotate-array`, `0344_reverse-string`, etc.
 
-```sh
+```bash
 bunx lct rotate-array
 ```
 
@@ -293,7 +335,7 @@ describe('rotate', () => {
 
 Supports algorithm problems involving the creation of a custom class with a constructor and methods. Examples include `0155_min-stack`, `0304_range-sum-query-2d-immutable`, `0901_online-stock-span`, etc.
 
-```sh
+```bash
 bunx lct range-sum-query-2d-immutable
 ```
 
@@ -363,7 +405,7 @@ describe('NumMatrix', () => {
 
 Partially supports premium regular and system design algorithm problems. Since LeetCode does not provide the HTML content of premium problems, outputs are not able to be parsed, and as such are unavailable in the test file. You must write your own outputs or copy them manually from LeetCode if you have access to a premium account. Examples include `0249_group-shifted-strings`, `0271_encode-and-decode-strings`, `0360_sort-transformed-array`, etc.
 
-```sh
+```bash
 bunx lct sort-transformed-array
 ```
 
@@ -421,7 +463,7 @@ describe('sortTransformedArray', () => {
 
 Partially supports JavaScript problems. As JavaScript problems usually have requirements unique to each problem, there is no one catch-all matcher for every JavaScript problem. Therefore, you must write your own assertions in the appropriate test file. Examples include `2620_counter`, `2623_memoize`, `2667_create-hello-world-function`, etc.
 
-```sh
+```bash
 bunx lct create-hello-world-function
 ```
 
@@ -480,7 +522,7 @@ describe('createHelloWorld', () => {
 
 Support for premium JavaScript problems is experimental. Just like regular premium problems and javascript problems, outputs and assertions are unavailable. The solution template might also contain errors. You must write your own outputs and assertions, and verify the solution template. Examples include `2632_curry`, `2676_throttle`, `2775_undefined-to-null`, etc.
 
-```sh
+```bash
 bunx lct throttle
 ```
 
@@ -550,7 +592,7 @@ describe('throttle', () => {
 
 Support for interactive problems is experimental. Interactive problems involve calling an internal API, and said API is unavailable to the client. As a result, the solution template is not able to account for the API and might contain errors. You must write your own API that is then passed to the solution function in the tests, and edit the solution and test files appropriately. Examples include `0278_first-bad-version`, `0843_guess-the-word`, `1095_find-in-mountain-array`, etc.
 
-```sh
+```bash
 bunx lct first-bad-version
 ```
 
@@ -1644,6 +1686,7 @@ The following problems have been manually patched to provide the correct matcher
 - `0017_letter-combinations-of-a-phone-number`
 - `0026_remove-duplicates-from-sorted-array`
 - `0347_top-k-frequent-elements`
+- `0811_subdomain-visit-count`
 - `3289_the-two-sneaky-numbers-of-digitville`
 
 `toBeOneOf`
@@ -1665,6 +1708,8 @@ miscellaneous
 - `0048_rotate-image`
 - `1249_minimum-remove-to-make-valid-parentheses`
 - `1374_generate-a-string-with-characters-that-have-odd-counts`
+- `1968_array-with-elements-not-equal-to-average-of-neighbors`
+- `2028_find-missing-observations`
 - `2610_convert-an-array-into-a-2d-array-with-conditions`
 
 There are certain problems with errors in their HTML description, or other issues that require custom parsing. The following problems have as such been manually patched.
@@ -1676,6 +1721,8 @@ There are certain problems with errors in their HTML description, or other issue
 > The above lists are by no means exhaustive. As more issues are discovered, problems will continue to get manually patched.
 
 ### Unsupported Problem Types
+
+`Randomized` problems are not supported as of now.
 
 `Database`, `Shell`, and `Concurrency` based problems are obviously not supported.
 
