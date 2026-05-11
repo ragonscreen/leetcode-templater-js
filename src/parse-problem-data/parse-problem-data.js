@@ -31,10 +31,10 @@ const parseOutputs = (htmlContent) => {
 
         const re = {
                 testcases: /<pre>.+?<\/pre>|<div class="example-block".*?>.+?<\/div>/gis,
-                tags: /<strong>|<\/strong>|<pre>|<\/pre>|<span class="example-io".*?>|<\/span>|<p>|<\/p>/gi,
+                tags: /<strong>|<\/strong>|<pre>|<\/pre>|<span class="example-io".*?>|<\/span>|<p>|<\/p>|<div>|<\/div>/gis,
                 escape: /&amp;|&lt;|&gt;|&quot;|&#39;|&nbsp;/gi,
                 title: /<strong>.+?<\/strong>/gis,
-                content: /<\/strong>.+?(<strong>|<\/pre>)|<span class="example-io".*?>.+?<\/span>/gis,
+                content: /<\/strong>.+?(<strong>|<\/pre>|<\/div>)|<span class="example-io".*?>.+?<\/span>/gis,
         };
 
         const testcases = htmlContent.match(re.testcases);
