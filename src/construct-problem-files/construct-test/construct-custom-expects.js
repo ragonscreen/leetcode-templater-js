@@ -1,4 +1,7 @@
+import { CONFIG } from '../../config.js';
 import { gap } from '../../utils.js';
+
+const { TEST_FRAMEWORK } = CONFIG;
 
 const constructExpectConvertAnArrayIntoA2dArrayWithConditions = (
         name,
@@ -7,7 +10,11 @@ const constructExpectConvertAnArrayIntoA2dArrayWithConditions = (
         return `${gap(2)}const actual = ${name}(${strParamNames});
 
 ${gap(2)}for (let i = 0; i < expected.length; i++) {
-${gap(3)}expect(actual[i]).toContainAllValues(expected[i]);
+${
+        TEST_FRAMEWORK === 'bun' || TEST_FRAMEWORK === 'bun:test'
+                ? `${gap(3)}expect(actual[i]).toContainAllValues(expected[i]);`
+                : `${gap(3)}expect([...actual[i]].sort()).toStrictEqual([...expected[i]].sort())`
+}
 ${gap(2)}}`;
 };
 
@@ -61,19 +68,23 @@ ${gap(3)}expect(${strParamNames}[i]).toStrictEqual(expected[i]);
 ${gap(2)}}`;
 };
 
-const constructExpectRemoveElement = (name, strParamNames) => {
-        return `${gap(2)}const k = ${name}(${strParamNames});
-${gap(2)}expect(k).toStrictEqual(expected.len);
-${gap(2)}expect(nums.slice(0, k)).toStrictEqual(expected.nums);`;
-};
-
 const constructExpectRemoveDuplicatesFromSortedArray = (
         name,
         strParamNames,
 ) => {
         return `${gap(2)}const k = ${name}(${strParamNames});
 ${gap(2)}expect(k).toStrictEqual(expected.len);
-${gap(2)}expect(nums.slice(0, k)).toContainAllValues(expected.nums);`;
+${gap(2)}expect(nums.slice(0, k)).toStrictEqual(expected.nums);`;
+};
+
+const constructExpectRemoveElement = (name, strParamNames) => {
+        return `${gap(2)}const k = ${name}(${strParamNames});
+${gap(2)}expect(k).toStrictEqual(expected.len);
+${
+        TEST_FRAMEWORK === 'bun' || TEST_FRAMEWORK === 'bun:test'
+                ? `${gap(2)}expect(nums.slice(0, k)).toContainAllValues(expected.nums);`
+                : `${gap(2)}expect([...nums.slice(0, k)].sort()).toStrictEqual([...expected.nums].sort());`
+}`;
 };
 
 const constructExpectArrayWithElementsNotEqualToAverageOfNeighbors = (

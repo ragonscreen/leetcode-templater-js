@@ -18,17 +18,17 @@ const adjConvertAnArrayIntoA2dArrayWithConditions = (problemData) => {
 
 // 26 and 27 are just plain weird
 
-const adjRemoveElement = (problemData) => {
-        problemData.metadata.outputs = [
-                { len: 2, nums: [2, 2] },
-                { len: 5, nums: [0, 1, 3, 0, 4] },
-        ];
-};
-
 const adjRemoveDuplicatesFromSortedArray = (problemData) => {
         problemData.metadata.outputs = [
                 { len: 2, nums: [1, 2] },
                 { len: 5, nums: [0, 1, 2, 3, 4] },
+        ];
+};
+
+const adjRemoveElement = (problemData) => {
+        problemData.metadata.outputs = [
+                { len: 2, nums: [2, 2] },
+                { len: 5, nums: [0, 1, 3, 0, 4] },
         ];
 };
 

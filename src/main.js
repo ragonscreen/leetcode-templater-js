@@ -88,7 +88,7 @@ const main = async () => {
 
         const problemData = await getProblemData(query, titleSlug);
 
-        console.log(problemData);
+        // console.log(problemData);
 
         if (!problemData) {
                 throwIdentifierError();
@@ -96,13 +96,13 @@ const main = async () => {
 
         const problemDataParsed = parseProblemData(problemData);
 
-        console.dir(problemDataParsed, { depth: null });
+        // console.dir(problemDataParsed, { depth: null });
 
         const filePaths = getFilePaths(problemDataParsed);
         const solution = constructSolution(problemDataParsed);
 
-        console.log(solution);
-        console.log();
+        // console.log(solution);
+        // console.log();
 
         // await createFile(filePaths.filePathSolution, solution);
 

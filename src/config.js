@@ -69,7 +69,7 @@ const DEFAULTS = {
 
         USE_ESM_SYNTAX: true,
 
-        USE_RELATIVE_IMPORTS: false,
+        USE_RELATIVE_IMPORTS: true,
 
         ADD_COMMENTS: true,
 

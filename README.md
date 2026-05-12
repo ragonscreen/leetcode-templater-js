@@ -74,9 +74,11 @@ npx lct <problem_slug>
 
 ## Disclaimer
 
-Every single line of code and documentation has been written, tested, and verified by a human being (me). **No generative AI was used in the process of creating this project.** As such, there may be inconsistencies, typos, and more general errors. This project is continuously updated as I continue to solve more LeetCode problems.
+Every single line of code and documentation has been written, tested, and verified by a human being (me). **Absolutely no generative AI was used in the process of creating this project.** As such, there may be inconsistencies, typos, and more general human errors. This project is continuously updated as I continue to solve more LeetCode problems.
 
-As of 2026 May 11, this templater has been tested against **402 LeetCode problems** with no errors. However, there are many more problems available on LeetCode. As such, should you encounter an error, please create an issue and it will get fixed as soon as possible.
+One of the major pain points of this project is parsing outputs of the default testcases. LeetCode does not provide them in an object format, and they have to be parsed from the problem description HTML, which can be very inconsistent between problems. This may result in occasional parsing errors.
+
+As of 2026 May 11, this templater has been tested against **402 LeetCode problems** with no errors. However, there are many more problems available on LeetCode, and it is beyond my scope to test all of them. As such, should you encounter an error, please create an issue and it will get fixed as soon as possible.
 
 ## Features
 
@@ -276,7 +278,7 @@ Supports basic algorithm problems which involve returning a specific value and m
 
 ### In-Place Algorithm Problems
 
-Supports algorithm problems which involve modifying the inputs in some way, which is then checked against the expected value. Examples include `0026_remove-duplicates-from-sorted-array`, `0189_rotate-array`, `0344_reverse-string`, etc.
+Supports algorithm problems which involve modifying the inputs in some way, which is then checked against the expected value. Examples include `0073_set-matrix-zeroes`, `0189_rotate-array`, `0344_reverse-string`, etc.
 
 ```bash
 bunx lct rotate-array
@@ -1148,9 +1150,9 @@ Furthermore, there are many options to enable or disable only parts of the solut
         ADD_PROBLEM_CONTESTS: true,
         ADD_PROBLEM_STATS: true,
         ADD_SIMILAR_PROBLEMS: true,
-        MAX_SIMILAR_PROBLEMS: 10,
+        MAX_SIMILAR_PROBLEMS: 0,
         SORT_SIMILAR_PROBLEMS: true,
-        ADD_HINTS: false,
+        ADD_HINTS: true,
 }
 ```
 
@@ -1304,13 +1306,27 @@ describe('twoSum', () => {
 ```
 
 ```javascript
-// CORRECT - manually edited
+// CORRECT - manually edited (bun:test)
 describe('twoSum', () => {
         test.each(structuredClone(testcases))(
                 'twoSum($nums, $target) -> $expected',
                 ({ nums, target, expected }) => {
                         expect(twoSum(nums, target)).toContainAllValues(
                                 expected,
+                        );
+                },
+        );
+});
+```
+
+```javascript
+// CORRECT - manually edited (vitest)
+describe('twoSum', () => {
+        test.each(structuredClone(testcases))(
+                'twoSum($nums, $target) -> $expected',
+                ({ nums, target, expected }) => {
+                        expect([...twoSum(nums, target)].sort()).toStrictEqual(
+                                [...expected].sort(),
                         );
                 },
         );
@@ -1684,7 +1700,6 @@ The following problems have been manually patched to provide the correct matcher
 
 - `0001_two-sum`
 - `0017_letter-combinations-of-a-phone-number`
-- `0026_remove-duplicates-from-sorted-array`
 - `0347_top-k-frequent-elements`
 - `0811_subdomain-visit-count`
 - `3289_the-two-sneaky-numbers-of-digitville`
