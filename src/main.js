@@ -104,12 +104,12 @@ const main = async () => {
         // console.log(solution);
         // console.log();
 
-        // await createFile(filePaths.filePathSolution, solution);
+        await createFile(filePaths.filePathSolution, solution);
 
         if (ADD_TESTS) {
                 const test = constructTest(problemDataParsed, filePaths);
                 console.log(test);
-                // await createFile(filePaths.filePathTest, test);
+                await createFile(filePaths.filePathTest, test);
         }
 };
 

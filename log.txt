@@ -13,5 +13,4 @@ X - cjs/esm syntax
 X - bun, vitest, jest support
 
 TODO:
-- find vitest substitutes for new matchers
 - add parse tests for ALL PROBLEMS

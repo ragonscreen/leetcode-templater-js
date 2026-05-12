@@ -1320,7 +1320,7 @@ describe('twoSum', () => {
 ```
 
 ```javascript
-// CORRECT - manually edited (vitest)
+// CORRECT - manually edited (vitest and jest)
 describe('twoSum', () => {
         test.each(structuredClone(testcases))(
                 'twoSum($nums, $target) -> $expected',
@@ -1360,7 +1360,7 @@ describe('findDifferentBinaryString', () => {
 ```
 
 ```javascript
-// CORRECT - manually edited
+// CORRECT - manually edited (bun:test and vitest)
 const testcases = [
         { nums: ['01', '10'], expected: ['00', '11'] },
         { nums: ['00', '01'], expected: ['10', '11'] },
@@ -1379,6 +1379,31 @@ describe('findDifferentBinaryString', () => {
                         );
                 },
         );
+});
+```
+
+```javascript
+// CORRECT - manually edited (jest)
+const testcases = [
+        { nums: ['01', '10'], expected: ['00', '11'] },
+        { nums: ['00', '01'], expected: ['10', '11'] },
+        {
+                nums: ['111', '011', '001'],
+                expected: ['000', '010', '100', '101', '110'],
+        },
+];
+
+describe('findDifferentBinaryString', () => {
+        test.each(
+                structuredClone(testcases),
+        )('findDifferentBinaryString($nums) -> $expected', ({
+                nums,
+                expected,
+        }) => {
+                expect(
+                        expected.includes(findDifferentBinaryString(nums)),
+                ).toStrictEqual(true);
+        });
 });
 ```
 
