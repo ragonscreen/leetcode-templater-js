@@ -11,7 +11,9 @@
         "scripts": {
                 "dev": "bun --watch run ./src/main.js",
                 "new": "bun run ./src/main.js",
-                "fmt": "bunx biome check --write"
+                "fmt": "bunx biome check --write",
+                "add-tests": "bun run ./__tests__/utils/add-tests/add-tests.js",
+                "test": "bun test --watch"
         },
         "bin": {
                 "lct": "./src/main.js"
