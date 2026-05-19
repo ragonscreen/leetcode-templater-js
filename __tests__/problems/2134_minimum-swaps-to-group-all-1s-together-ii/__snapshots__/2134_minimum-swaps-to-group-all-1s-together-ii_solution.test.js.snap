@@ -1,0 +1,56 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2134_minimum-swaps-to-group-all-1s-together-ii solution template: 2134_minimum-swaps-to-group-all-1s-together-ii 1`] = `
+"/**
+ * 2134. Minimum Swaps to Group All 1's Together II
+ *
+ * Link: https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Sliding Window (topic_55821)
+ * - Senior (position_senior)
+ * - Weekly Contest 275 (contest_weekly-contest-275)
+ *
+ * Stats:
+ * - Total Accepted: 178,083
+ * - Total Submissions: 271,304
+ * - Acceptance Rate: 65.6%
+ *
+ * Similar Problems:
+ * - minimum-swaps-to-group-all-1s-together (Medium) (Premium)
+ * - time-needed-to-rearrange-a-binary-string (Medium)
+ *
+ * Hints:
+ * 1. Notice that the number of 1’s to be grouped together is fixed. It is the
+ * number of 1's the whole array has.
+ *
+ * 2. Call this number total. We should then check for every subarray of size
+ * total (possibly wrapped around), how many swaps are required to have the
+ * subarray be all 1’s.
+ *
+ * 3. The number of swaps required is the number of 0’s in the subarray.
+ *
+ * 4. To eliminate the circular property of the array, we can append the
+ * original array to itself. Then, we check each subarray of length total.
+ *
+ * 5. How do we avoid recounting the number of 0’s in the subarray each time?
+ * The Sliding Window technique can help.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number}
+ */
+const minSwaps = (nums) => {};
+
+export { minSwaps };"
+`;

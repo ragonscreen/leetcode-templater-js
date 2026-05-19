@@ -1,0 +1,46 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2483_minimum-penalty-for-a-shop solution template: 2483_minimum-penalty-for-a-shop 1`] = `
+"/**
+ * 2483. Minimum Penalty for a Shop
+ *
+ * Link: https://leetcode.com/problems/minimum-penalty-for-a-shop/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - String (topic_10)
+ * - Prefix Sum (topic_61068)
+ * - Senior (position_senior)
+ * - Biweekly Contest 92 (contest_biweekly-contest-92)
+ *
+ * Stats:
+ * - Total Accepted: 235,705
+ * - Total Submissions: 330,834
+ * - Acceptance Rate: 71.2%
+ *
+ * Similar Problems:
+ * - grid-game (Medium)
+ * - minimum-amount-of-damage-dealt-to-bob (Hard)
+ *
+ * Hints:
+ * 1. At any index, the penalty is the sum of prefix count of ‘N’ and suffix
+ * count of ‘Y’.
+ *
+ * 2. Enumerate all indices and find the minimum such value.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} customers
+ * @return {number}
+ */
+const bestClosingTime = (customers) => {};
+
+export { bestClosingTime };"
+`;

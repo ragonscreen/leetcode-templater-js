@@ -1,0 +1,50 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1962_remove-stones-to-minimize-the-total solution template: 1962_remove-stones-to-minimize-the-total 1`] = `
+"/**
+ * 1962. Remove Stones to Minimize the Total
+ *
+ * Link: https://leetcode.com/problems/remove-stones-to-minimize-the-total/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Greedy (topic_17)
+ * - Heap (Priority Queue) (topic_61050)
+ * - Senior (position_senior)
+ * - Weekly Contest 253 (contest_weekly-contest-253)
+ *
+ * Stats:
+ * - Total Accepted: 151,768
+ * - Total Submissions: 230,902
+ * - Acceptance Rate: 65.7%
+ *
+ * Similar Problems:
+ * - take-gifts-from-the-richest-pile (Easy)
+ * - maximal-score-after-applying-k-operations (Medium)
+ * - minimum-operations-to-halve-array-sum (Medium)
+ *
+ * Hints:
+ * 1. Choose the pile with the maximum number of stones each time.
+ *
+ * 2. Use a data structure that helps you find the mentioned pile each time efficiently.
+ *
+ * 3. One such data structure is a Priority Queue.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} piles
+ * @param {number} k
+ * @return {number}
+ */
+const minStoneSum = (piles, k) => {};
+
+export { minStoneSum };"
+`;

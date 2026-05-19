@@ -1,0 +1,40 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0034_find-first-and-last-position-of-element-in-sorted-array solution template: 0034_find-first-and-last-position-of-element-in-sorted-array 1`] = `
+"/**
+ * 0034. Find First and Last Position of Element in Sorted Array
+ *
+ * Link: https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Binary Search (topic_11)
+ *
+ * Stats:
+ * - Total Accepted: 3,331,450
+ * - Total Submissions: 6,816,662
+ * - Acceptance Rate: 48.9%
+ *
+ * Similar Problems:
+ * - find-target-indices-after-sorting-array (Easy)
+ * - first-bad-version (Easy)
+ * - plates-between-candles (Medium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number[]}
+ */
+const searchRange = (nums, target) => {};
+
+export { searchRange };"
+`;

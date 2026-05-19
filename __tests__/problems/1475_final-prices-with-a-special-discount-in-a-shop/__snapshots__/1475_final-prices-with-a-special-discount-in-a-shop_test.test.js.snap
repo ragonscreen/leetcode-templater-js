@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1475_final-prices-with-a-special-discount-in-a-shop test template: 1475_final-prices-with-a-special-discount-in-a-shop 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { finalPrices } from '../../src/1401-1500/1475_final-prices-with-a-special-discount-in-a-shop.js';
+
+const testcases = [
+    { prices: [8,4,6,2,3], expected: [4,2,4,2,3] },
+    { prices: [1,2,3,4,5], expected: [1,2,3,4,5] },
+    { prices: [10,1,1,6], expected: [9,0,1,6] },
+];
+
+describe('finalPrices', () => {
+    test.each(structuredClone(testcases))('finalPrices($prices) -> $expected', ({ prices, expected }) => {
+        expect(finalPrices(prices)).toStrictEqual(expected);
+    });
+});"
+`;

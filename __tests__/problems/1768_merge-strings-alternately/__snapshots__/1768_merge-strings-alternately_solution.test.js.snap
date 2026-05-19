@@ -1,0 +1,45 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1768_merge-strings-alternately solution template: 1768_merge-strings-alternately 1`] = `
+"/**
+ * 1768. Merge Strings Alternately
+ *
+ * Link: https://leetcode.com/problems/merge-strings-alternately/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Two Pointers (topic_9)
+ * - String (topic_10)
+ * - Mid Level (position_mid-level)
+ * - Weekly Contest 229 (contest_weekly-contest-229)
+ *
+ * Stats:
+ * - Total Accepted: 2,070,785
+ * - Total Submissions: 2,522,418
+ * - Acceptance Rate: 82.1%
+ *
+ * Similar Problems:
+ * - minimum-additions-to-make-valid-string (Medium)
+ * - zigzag-iterator (Medium) (Premium)
+ *
+ * Hints:
+ * 1. Use two pointers, one pointer for each string. Alternately choose the
+ * character from each pointer, and move the pointer upwards.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} word1
+ * @param {string} word2
+ * @return {string}
+ */
+const mergeAlternately = (word1, word2) => {};
+
+export { mergeAlternately };"
+`;

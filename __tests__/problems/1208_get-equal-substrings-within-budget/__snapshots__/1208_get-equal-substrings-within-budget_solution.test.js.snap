@@ -1,0 +1,48 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1208_get-equal-substrings-within-budget solution template: 1208_get-equal-substrings-within-budget 1`] = `
+"/**
+ * 1208. Get Equal Substrings Within Budget
+ *
+ * Link: https://leetcode.com/problems/get-equal-substrings-within-budget/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - String (topic_10)
+ * - Binary Search (topic_11)
+ * - Sliding Window (topic_55821)
+ * - Prefix Sum (topic_61068)
+ * - Senior (position_senior)
+ * - Weekly Contest 156 (contest_weekly-contest-156)
+ *
+ * Stats:
+ * - Total Accepted: 202,989
+ * - Total Submissions: 340,027
+ * - Acceptance Rate: 59.7%
+ *
+ * Similar Problems:
+ * - longest-nice-subarray (Medium)
+ *
+ * Hints:
+ * 1. Calculate the differences between s[i] and t[i].
+ *
+ * 2. Use a sliding window to track the longest valid substring.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @param {string} t
+ * @param {number} maxCost
+ * @return {number}
+ */
+const equalSubstring = (s, t, maxCost) => {};
+
+export { equalSubstring };"
+`;

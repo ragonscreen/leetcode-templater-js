@@ -1,0 +1,51 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2033_minimum-operations-to-make-a-uni-value-grid solution template: 2033_minimum-operations-to-make-a-uni-value-grid 1`] = `
+"/**
+ * 2033. Minimum Operations to Make a Uni-Value Grid
+ *
+ * Link: https://leetcode.com/problems/minimum-operations-to-make-a-uni-value-grid/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Math (topic_8)
+ * - Sorting (topic_61049)
+ * - Matrix (topic_61053)
+ * - Senior (position_senior)
+ * - Weekly Contest 262 (contest_weekly-contest-262)
+ *
+ * Stats:
+ * - Total Accepted: 222,253
+ * - Total Submissions: 314,156
+ * - Acceptance Rate: 70.7%
+ *
+ * Similar Problems:
+ * - minimum-moves-to-equal-array-elements-ii (Medium)
+ *
+ * Hints:
+ * 1. Is it possible to make two integers a and b equal if they have different
+ * remainders dividing by x?
+ *
+ * 2. If it is possible, which number should you select to minimize the number
+ * of operations?
+ *
+ * 3. What if the elements are sorted?
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[][]} grid
+ * @param {number} x
+ * @return {number}
+ */
+const minOperations = (grid, x) => {};
+
+export { minOperations };"
+`;

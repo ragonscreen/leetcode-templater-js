@@ -1,0 +1,46 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2525_categorize-box-according-to-criteria solution template: 2525_categorize-box-according-to-criteria 1`] = `
+"/**
+ * 2525. Categorize Box According to Criteria
+ *
+ * Link: https://leetcode.com/problems/categorize-box-according-to-criteria/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Math (topic_8)
+ * - Mid Level (position_mid-level)
+ * - Biweekly Contest 95 (contest_biweekly-contest-95)
+ *
+ * Stats:
+ * - Total Accepted: 51,492
+ * - Total Submissions: 131,839
+ * - Acceptance Rate: 39.1%
+ *
+ * Similar Problems:
+ * - best-poker-hand (Easy)
+ * - find-winner-on-a-tic-tac-toe-game (Easy)
+ * - fizz-buzz (Easy)
+ *
+ * Hints:
+ * 1. Use conditional statements to find the right category of the box.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number} length
+ * @param {number} width
+ * @param {number} height
+ * @param {number} mass
+ * @return {string}
+ */
+const categorizeBox = (length, width, height, mass) => {};
+
+export { categorizeBox };"
+`;

@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0287_find-the-duplicate-number test template: 0287_find-the-duplicate-number 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { findDuplicate } from '../../src/0201-0300/0287_find-the-duplicate-number.js';
+
+const testcases = [
+    { nums: [1,3,4,2,2], expected: 2 },
+    { nums: [3,1,3,4,2], expected: 3 },
+    { nums: [3,3,3,3,3], expected: 3 },
+];
+
+describe('findDuplicate', () => {
+    test.each(structuredClone(testcases))('findDuplicate($nums) -> $expected', ({ nums, expected }) => {
+        expect(findDuplicate(nums)).toStrictEqual(expected);
+    });
+});"
+`;

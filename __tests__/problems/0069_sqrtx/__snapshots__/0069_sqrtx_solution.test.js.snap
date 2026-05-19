@@ -1,0 +1,44 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0069_sqrtx solution template: 0069_sqrtx 1`] = `
+"/**
+ * 0069. Sqrt(x)
+ *
+ * Link: https://leetcode.com/problems/sqrtx/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Math (topic_8)
+ * - Binary Search (topic_11)
+ *
+ * Stats:
+ * - Total Accepted: 3,202,946
+ * - Total Submissions: 7,662,547
+ * - Acceptance Rate: 41.8%
+ *
+ * Similar Problems:
+ * - valid-perfect-square (Easy)
+ * - powx-n (Medium)
+ *
+ * Hints:
+ * 1. Try exploring all integers. (Credits: @annujoshi)
+ *
+ * 2. Use the sorted property of integers to reduced the search space.
+ * (Credits: @annujoshi)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number} x
+ * @return {number}
+ */
+const mySqrt = (x) => {};
+
+export { mySqrt };"
+`;

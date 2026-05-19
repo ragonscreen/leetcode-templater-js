@@ -1,0 +1,48 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1524_number-of-sub-arrays-with-odd-sum solution template: 1524_number-of-sub-arrays-with-odd-sum 1`] = `
+"/**
+ * 1524. Number of Sub-arrays With Odd Sum
+ *
+ * Link: https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Math (topic_8)
+ * - Dynamic Programming (topic_13)
+ * - Prefix Sum (topic_61068)
+ * - Senior (position_senior)
+ * - Biweekly Contest 31 (contest_biweekly-contest-31)
+ *
+ * Stats:
+ * - Total Accepted: 177,046
+ * - Total Submissions: 317,874
+ * - Acceptance Rate: 55.7%
+ *
+ * Similar Problems:
+ * - subsequence-of-size-k-with-the-largest-even-sum (Medium) (Premium)
+ *
+ * Hints:
+ * 1. Can we use the accumulative sum to keep track of all the odd-sum
+ * sub-arrays ?
+ *
+ * 2. if the current accu sum is odd, we care only about previous even accu
+ * sums and vice versa.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} arr
+ * @return {number}
+ */
+const numOfSubarrays = (arr) => {};
+
+export { numOfSubarrays };"
+`;

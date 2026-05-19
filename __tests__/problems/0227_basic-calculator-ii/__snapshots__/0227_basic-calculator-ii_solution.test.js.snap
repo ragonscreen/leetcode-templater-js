@@ -1,0 +1,41 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0227_basic-calculator-ii solution template: 0227_basic-calculator-ii 1`] = `
+"/**
+ * 0227. Basic Calculator II
+ *
+ * Link: https://leetcode.com/problems/basic-calculator-ii/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Math (topic_8)
+ * - String (topic_10)
+ * - Stack (topic_15)
+ *
+ * Stats:
+ * - Total Accepted: 953,106
+ * - Total Submissions: 2,032,876
+ * - Acceptance Rate: 46.9%
+ *
+ * Similar Problems:
+ * - basic-calculator (Hard)
+ * - basic-calculator-iii (Hard) (Premium)
+ * - evaluate-valid-expressions (Hard) (Premium)
+ * - expression-add-operators (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @return {number}
+ */
+const calculate = (s) => {};
+
+export { calculate };"
+`;

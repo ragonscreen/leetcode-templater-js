@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0844_backspace-string-compare test template: 0844_backspace-string-compare 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { backspaceCompare } from '../../src/0801-0900/0844_backspace-string-compare.js';
+
+const testcases = [
+    { s: "ab#c", t: "ad#c", expected: true },
+    { s: "ab##", t: "c#d#", expected: true },
+    { s: "a#c", t: "b", expected: false },
+];
+
+describe('backspaceCompare', () => {
+    test.each(structuredClone(testcases))('backspaceCompare($s, $t) -> $expected', ({ s, t, expected }) => {
+        expect(backspaceCompare(s, t)).toStrictEqual(expected);
+    });
+});"
+`;

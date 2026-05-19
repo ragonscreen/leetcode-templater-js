@@ -1,0 +1,49 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2078_two-furthest-houses-with-different-colors solution template: 2078_two-furthest-houses-with-different-colors 1`] = `
+"/**
+ * 2078. Two Furthest Houses With Different Colors
+ *
+ * Link: https://leetcode.com/problems/two-furthest-houses-with-different-colors/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Greedy (topic_17)
+ * - Mid Level (position_mid-level)
+ * - Weekly Contest 268 (contest_weekly-contest-268)
+ *
+ * Stats:
+ * - Total Accepted: 218,133
+ * - Total Submissions: 303,892
+ * - Acceptance Rate: 71.8%
+ *
+ * Similar Problems:
+ * - maximum-difference-between-increasing-elements (Easy)
+ * - replace-elements-with-greatest-element-on-right-side (Easy)
+ * - maximum-distance-between-a-pair-of-values (Medium)
+ *
+ * Hints:
+ * 1. The constraints are small. Can you try the combination of every two houses?
+ *
+ * 2. Greedily, the maximum distance will come from either the pair of the
+ * leftmost house and possibly some house on the right with a different
+ * color, or the pair of the rightmost house and possibly some house on the
+ * left with a different color.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} colors
+ * @return {number}
+ */
+const maxDistance = (colors) => {};
+
+export { maxDistance };"
+`;

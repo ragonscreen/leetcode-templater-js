@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0238_product-of-array-except-self test template: 0238_product-of-array-except-self 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { productExceptSelf } from '../../src/0201-0300/0238_product-of-array-except-self.js';
+
+const testcases = [
+    { nums: [1,2,3,4], expected: [24,12,8,6] },
+    { nums: [-1,1,0,-3,3], expected: [0,0,9,0,0] },
+];
+
+describe('productExceptSelf', () => {
+    test.each(structuredClone(testcases))('productExceptSelf($nums) -> $expected', ({ nums, expected }) => {
+        expect(productExceptSelf(nums)).toStrictEqual(expected);
+    });
+});"
+`;

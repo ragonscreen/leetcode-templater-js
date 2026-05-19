@@ -1,0 +1,38 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0916_word-subsets solution template: 0916_word-subsets 1`] = `
+"/**
+ * 0916. Word Subsets
+ *
+ * Link: https://leetcode.com/problems/word-subsets/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - String (topic_10)
+ * - Senior Staff (position_senior-staff)
+ * - Weekly Contest 104 (contest_weekly-contest-104)
+ *
+ * Stats:
+ * - Total Accepted: 266,176
+ * - Total Submissions: 475,940
+ * - Acceptance Rate: 55.9%
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string[]} words1
+ * @param {string[]} words2
+ * @return {string[]}
+ */
+const wordSubsets = (words1, words2) => {};
+
+export { wordSubsets };"
+`;

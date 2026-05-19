@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0224_basic-calculator test template: 0224_basic-calculator 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { calculate } from '../../src/0201-0300/0224_basic-calculator.js';
+
+const testcases = [
+    { s: "1 + 1", expected: 2 },
+    { s: " 2-1 + 2 ", expected: 3 },
+    { s: "(1+(4+5+2)-3)+(6+8)", expected: 23 },
+];
+
+describe('calculate', () => {
+    test.each(structuredClone(testcases))('calculate($s) -> $expected', ({ s, expected }) => {
+        expect(calculate(s)).toStrictEqual(expected);
+    });
+});"
+`;

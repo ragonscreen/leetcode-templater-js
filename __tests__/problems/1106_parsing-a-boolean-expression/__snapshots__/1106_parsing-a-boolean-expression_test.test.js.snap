@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1106_parsing-a-boolean-expression test template: 1106_parsing-a-boolean-expression 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { parseBoolExpr } from '../../src/1101-1200/1106_parsing-a-boolean-expression.js';
+
+const testcases = [
+    { expression: "&(|(f))", expected: false },
+    { expression: "|(f,f,f,t)", expected: true },
+    { expression: "!(&(f,t))", expected: true },
+];
+
+describe('parseBoolExpr', () => {
+    test.each(structuredClone(testcases))('parseBoolExpr($expression) -> $expected', ({ expression, expected }) => {
+        expect(parseBoolExpr(expression)).toStrictEqual(expected);
+    });
+});"
+`;

@@ -1,0 +1,46 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2594_minimum-time-to-repair-cars solution template: 2594_minimum-time-to-repair-cars 1`] = `
+"/**
+ * 2594. Minimum Time to Repair Cars
+ *
+ * Link: https://leetcode.com/problems/minimum-time-to-repair-cars/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Binary Search (topic_11)
+ * - Staff (position_staff)
+ * - Biweekly Contest 100 (contest_biweekly-contest-100)
+ *
+ * Stats:
+ * - Total Accepted: 155,946
+ * - Total Submissions: 261,912
+ * - Acceptance Rate: 59.5%
+ *
+ * Similar Problems:
+ * - koko-eating-bananas (Medium)
+ * - sort-transformed-array (Medium) (Premium)
+ *
+ * Hints:
+ * 1. For a predefined fixed time, can all the cars be repaired?
+ *
+ * 2. Try using binary search on the answer.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} ranks
+ * @param {number} cars
+ * @return {number}
+ */
+const repairCars = (ranks, cars) => {};
+
+export { repairCars };"
+`;

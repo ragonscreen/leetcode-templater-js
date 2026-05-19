@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0796_rotate-string test template: 0796_rotate-string 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { rotateString } from '../../src/0701-0800/0796_rotate-string.js';
+
+const testcases = [
+    { s: "abcde", goal: "cdeab", expected: true },
+    { s: "abcde", goal: "abced", expected: false },
+];
+
+describe('rotateString', () => {
+    test.each(structuredClone(testcases))('rotateString($s, $goal) -> $expected', ({ s, goal, expected }) => {
+        expect(rotateString(s, goal)).toStrictEqual(expected);
+    });
+});"
+`;

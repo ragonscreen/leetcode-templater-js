@@ -1,0 +1,49 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1366_rank-teams-by-votes solution template: 1366_rank-teams-by-votes 1`] = `
+"/**
+ * 1366. Rank Teams by Votes
+ *
+ * Link: https://leetcode.com/problems/rank-teams-by-votes/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - String (topic_10)
+ * - Sorting (topic_61049)
+ * - Counting (topic_61062)
+ * - Senior (position_senior)
+ * - Weekly Contest 178 (contest_weekly-contest-178)
+ *
+ * Stats:
+ * - Total Accepted: 103,453
+ * - Total Submissions: 172,110
+ * - Acceptance Rate: 60.1%
+ *
+ * Similar Problems:
+ * - online-election (Medium)
+ *
+ * Hints:
+ * 1. Build array rank where rank[i][j] is the number of votes for team i to be
+ * the j-th rank.
+ *
+ * 2. Sort the teams by rank array. if rank array is the same for two or more
+ * teams, sort them by the ID in ascending order.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string[]} votes
+ * @return {string}
+ */
+const rankTeams = (votes) => {};
+
+export { rankTeams };"
+`;

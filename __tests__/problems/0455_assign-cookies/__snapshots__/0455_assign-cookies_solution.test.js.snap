@@ -1,0 +1,38 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0455_assign-cookies solution template: 0455_assign-cookies 1`] = `
+"/**
+ * 0455. Assign Cookies
+ *
+ * Link: https://leetcode.com/problems/assign-cookies/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Two Pointers (topic_9)
+ * - Greedy (topic_17)
+ * - Sorting (topic_61049)
+ * - Staff (position_staff)
+ *
+ * Stats:
+ * - Total Accepted: 955,181
+ * - Total Submissions: 1,738,297
+ * - Acceptance Rate: 54.9%
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} g
+ * @param {number[]} s
+ * @return {number}
+ */
+const findContentChildren = (g, s) => {};
+
+export { findContentChildren };"
+`;

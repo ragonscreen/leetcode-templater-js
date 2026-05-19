@@ -1,0 +1,48 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2344_minimum-deletions-to-make-array-divisible solution template: 2344_minimum-deletions-to-make-array-divisible 1`] = `
+"/**
+ * 2344. Minimum Deletions to Make Array Divisible
+ *
+ * Link: https://leetcode.com/problems/minimum-deletions-to-make-array-divisible/
+ * Category: Algorithms
+ * Difficulty: Hard
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Math (topic_8)
+ * - Sorting (topic_61049)
+ * - Heap (Priority Queue) (topic_61050)
+ * - Number Theory (topic_61067)
+ * - Senior Staff (position_senior-staff)
+ * - Weekly Contest 302 (contest_weekly-contest-302)
+ *
+ * Stats:
+ * - Total Accepted: 48,727
+ * - Total Submissions: 79,425
+ * - Acceptance Rate: 61.3%
+ *
+ * Similar Problems:
+ * - check-if-array-pairs-are-divisible-by-k (Medium)
+ *
+ * Hints:
+ * 1. How can we find an integer x that divides all the elements of numsDivide?
+ *
+ * 2. Will finding GCD (Greatest Common Divisor) help here?
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number[]} numsDivide
+ * @return {number}
+ */
+const minOperations = (nums, numsDivide) => {};
+
+export { minOperations };"
+`;

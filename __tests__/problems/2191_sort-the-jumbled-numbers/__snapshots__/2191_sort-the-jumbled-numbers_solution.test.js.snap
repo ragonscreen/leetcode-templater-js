@@ -1,0 +1,47 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2191_sort-the-jumbled-numbers solution template: 2191_sort-the-jumbled-numbers 1`] = `
+"/**
+ * 2191. Sort the Jumbled Numbers
+ *
+ * Link: https://leetcode.com/problems/sort-the-jumbled-numbers/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Sorting (topic_61049)
+ * - Senior (position_senior)
+ * - Biweekly Contest 73 (contest_biweekly-contest-73)
+ *
+ * Stats:
+ * - Total Accepted: 155,818
+ * - Total Submissions: 259,885
+ * - Acceptance Rate: 60.0%
+ *
+ * Similar Problems:
+ * - map-sum-pairs (Medium)
+ *
+ * Hints:
+ * 1. Map the original numbers to new numbers by the mapping rule and sort the
+ * new numbers.
+ *
+ * 2. To maintain the same relative order for equal mapped values, use the
+ * index in the original input array as a tiebreaker.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} mapping
+ * @param {number[]} nums
+ * @return {number[]}
+ */
+const sortJumbled = (mapping, nums) => {};
+
+export { sortJumbled };"
+`;

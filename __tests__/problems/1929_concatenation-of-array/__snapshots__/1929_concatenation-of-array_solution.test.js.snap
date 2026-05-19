@@ -1,0 +1,39 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1929_concatenation-of-array solution template: 1929_concatenation-of-array 1`] = `
+"/**
+ * 1929. Concatenation of Array
+ *
+ * Link: https://leetcode.com/problems/concatenation-of-array/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Simulation (topic_61055)
+ * - Mid Level (position_mid-level)
+ * - Weekly Contest 249 (contest_weekly-contest-249)
+ *
+ * Stats:
+ * - Total Accepted: 1,466,360
+ * - Total Submissions: 1,623,375
+ * - Acceptance Rate: 90.3%
+ *
+ * Hints:
+ * 1. Build an array of size 2 * n and assign nums[i] to ans[i] and ans[i + n]
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number[]}
+ */
+const getConcatenation = (nums) => {};
+
+export { getConcatenation };"
+`;

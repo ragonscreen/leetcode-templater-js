@@ -1,0 +1,44 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0875_koko-eating-bananas solution template: 0875_koko-eating-bananas 1`] = `
+"/**
+ * 0875. Koko Eating Bananas
+ *
+ * Link: https://leetcode.com/problems/koko-eating-bananas/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Binary Search (topic_11)
+ * - Senior Staff (position_senior-staff)
+ * - Weekly Contest 94 (contest_weekly-contest-94)
+ *
+ * Stats:
+ * - Total Accepted: 1,594,697
+ * - Total Submissions: 3,188,183
+ * - Acceptance Rate: 50.0%
+ *
+ * Similar Problems:
+ * - frog-jump-ii (Medium)
+ * - maximum-candies-allocated-to-k-children (Medium)
+ * - minimized-maximum-of-products-distributed-to-any-store (Medium)
+ * - minimum-time-to-repair-cars (Medium)
+ * - minimize-max-distance-to-gas-station (Hard) (Premium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} piles
+ * @param {number} h
+ * @return {number}
+ */
+const minEatingSpeed = (piles, h) => {};
+
+export { minEatingSpeed };"
+`;

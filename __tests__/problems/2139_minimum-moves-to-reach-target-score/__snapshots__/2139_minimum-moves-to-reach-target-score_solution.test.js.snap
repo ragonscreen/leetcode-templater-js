@@ -1,0 +1,47 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2139_minimum-moves-to-reach-target-score solution template: 2139_minimum-moves-to-reach-target-score 1`] = `
+"/**
+ * 2139. Minimum Moves to Reach Target Score
+ *
+ * Link: https://leetcode.com/problems/minimum-moves-to-reach-target-score/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Math (topic_8)
+ * - Greedy (topic_17)
+ * - Senior (position_senior)
+ * - Weekly Contest 276 (contest_weekly-contest-276)
+ *
+ * Stats:
+ * - Total Accepted: 62,159
+ * - Total Submissions: 118,615
+ * - Acceptance Rate: 52.4%
+ *
+ * Similar Problems:
+ * - number-of-steps-to-reduce-a-number-to-zero (Easy)
+ * - number-of-steps-to-reduce-a-number-in-binary-representation-to-one (Medium)
+ *
+ * Hints:
+ * 1. Solve the opposite problem: start at the given score and move to 1.
+ *
+ * 2. It is better to use the move of the second type once we can to lose more
+ * scores fast.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number} target
+ * @param {number} maxDoubles
+ * @return {number}
+ */
+const minMoves = (target, maxDoubles) => {};
+
+export { minMoves };"
+`;

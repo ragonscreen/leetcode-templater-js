@@ -1,0 +1,48 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2491_divide-players-into-teams-of-equal-skill solution template: 2491_divide-players-into-teams-of-equal-skill 1`] = `
+"/**
+ * 2491. Divide Players Into Teams of Equal Skill
+ *
+ * Link: https://leetcode.com/problems/divide-players-into-teams-of-equal-skill/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Two Pointers (topic_9)
+ * - Sorting (topic_61049)
+ * - Senior (position_senior)
+ * - Weekly Contest 322 (contest_weekly-contest-322)
+ *
+ * Stats:
+ * - Total Accepted: 204,118
+ * - Total Submissions: 296,103
+ * - Acceptance Rate: 68.9%
+ *
+ * Similar Problems:
+ * - max-number-of-k-sum-pairs (Medium)
+ * - minimum-moves-to-equal-array-elements (Medium)
+ *
+ * Hints:
+ * 1. Try sorting the skill array.
+ *
+ * 2. It is always optimal to pair the weakest available player with the
+ * strongest available player.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} skill
+ * @return {number}
+ */
+const dividePlayers = (skill) => {};
+
+export { dividePlayers };"
+`;

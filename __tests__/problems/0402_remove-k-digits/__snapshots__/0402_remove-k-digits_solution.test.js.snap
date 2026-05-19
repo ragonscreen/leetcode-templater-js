@@ -1,0 +1,46 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0402_remove-k-digits solution template: 0402_remove-k-digits 1`] = `
+"/**
+ * 0402. Remove K Digits
+ *
+ * Link: https://leetcode.com/problems/remove-k-digits/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - String (topic_10)
+ * - Stack (topic_15)
+ * - Greedy (topic_17)
+ * - Monotonic Stack (topic_61054)
+ * - Junior (position_junior)
+ *
+ * Stats:
+ * - Total Accepted: 739,365
+ * - Total Submissions: 2,007,386
+ * - Acceptance Rate: 36.8%
+ *
+ * Similar Problems:
+ * - remove-digit-from-number-to-maximize-result (Easy)
+ * - append-k-integers-with-minimal-sum (Medium)
+ * - find-the-most-competitive-subsequence (Medium)
+ * - minimum-operations-to-make-a-special-number (Medium)
+ * - monotone-increasing-digits (Medium)
+ * - create-maximum-number (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} num
+ * @param {number} k
+ * @return {string}
+ */
+const removeKdigits = (num, k) => {};
+
+export { removeKdigits };"
+`;

@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3931_check-adjacent-digit-differences test template: 3931_check-adjacent-digit-differences 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { isAdjacentDiffAtMostTwo } from '../../src/3901-4000/3931_check-adjacent-digit-differences.js';
+
+const testcases = [
+    { s: "132", expected: true },
+    { s: "129", expected: false },
+];
+
+describe('isAdjacentDiffAtMostTwo', () => {
+    test.each(structuredClone(testcases))('isAdjacentDiffAtMostTwo($s) -> $expected', ({ s, expected }) => {
+        expect(isAdjacentDiffAtMostTwo(s)).toStrictEqual(expected);
+    });
+});"
+`;

@@ -1,0 +1,54 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2364_count-number-of-bad-pairs solution template: 2364_count-number-of-bad-pairs 1`] = `
+"/**
+ * 2364. Count Number of Bad Pairs
+ *
+ * Link: https://leetcode.com/problems/count-number-of-bad-pairs/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Math (topic_8)
+ * - Counting (topic_61062)
+ * - Staff (position_staff)
+ * - Biweekly Contest 84 (contest_biweekly-contest-84)
+ *
+ * Stats:
+ * - Total Accepted: 187,140
+ * - Total Submissions: 345,343
+ * - Acceptance Rate: 54.2%
+ *
+ * Similar Problems:
+ * - count-equal-and-divisible-pairs-in-an-array (Easy)
+ * - count-number-of-pairs-with-absolute-difference-k (Easy)
+ * - count-nice-pairs-in-an-array (Medium)
+ * - k-diff-pairs-in-an-array (Medium)
+ * - subarray-sums-divisible-by-k (Medium)
+ * - number-of-pairs-satisfying-inequality (Hard)
+ *
+ * Hints:
+ * 1. Would it be easier to count the number of pairs that are not bad pairs?
+ *
+ * 2. Notice that (j - i != nums[j] - nums[i]) is the same as (nums[i] - i !=
+ * nums[j] - j).
+ *
+ * 3. Keep a counter of nums[i] - i. To be efficient, use a HashMap.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number}
+ */
+const countBadPairs = (nums) => {};
+
+export { countBadPairs };"
+`;

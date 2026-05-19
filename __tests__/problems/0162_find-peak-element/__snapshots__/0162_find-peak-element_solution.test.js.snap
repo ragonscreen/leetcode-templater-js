@@ -1,0 +1,41 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0162_find-peak-element solution template: 0162_find-peak-element 1`] = `
+"/**
+ * 0162. Find Peak Element
+ *
+ * Link: https://leetcode.com/problems/find-peak-element/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Binary Search (topic_11)
+ *
+ * Stats:
+ * - Total Accepted: 2,426,759
+ * - Total Submissions: 5,167,666
+ * - Acceptance Rate: 47.0%
+ *
+ * Similar Problems:
+ * - count-hills-and-valleys-in-an-array (Easy)
+ * - find-the-peaks (Easy)
+ * - find-a-peak-element-ii (Medium)
+ * - peak-index-in-a-mountain-array (Medium)
+ * - pour-water-between-buckets-to-make-water-levels-equal (Medium) (Premium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number}
+ */
+const findPeakElement = (nums) => {};
+
+export { findPeakElement };"
+`;

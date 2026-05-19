@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1041_robot-bounded-in-circle test template: 1041_robot-bounded-in-circle 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { isRobotBounded } from '../../src/1001-1100/1041_robot-bounded-in-circle.js';
+
+const testcases = [
+    { instructions: "GGLLGG", expected: true },
+    { instructions: "GG", expected: false },
+    { instructions: "GL", expected: true },
+];
+
+describe('isRobotBounded', () => {
+    test.each(structuredClone(testcases))('isRobotBounded($instructions) -> $expected', ({ instructions, expected }) => {
+        expect(isRobotBounded(instructions)).toStrictEqual(expected);
+    });
+});"
+`;

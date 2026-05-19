@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1498_number-of-subsequences-that-satisfy-the-given-sum-condition test template: 1498_number-of-subsequences-that-satisfy-the-given-sum-condition 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { numSubseq } from '../../src/1401-1500/1498_number-of-subsequences-that-satisfy-the-given-sum-condition.js';
+
+const testcases = [
+    { nums: [3,5,6,7], target: 9, expected: 4 },
+    { nums: [3,3,6,8], target: 10, expected: 6 },
+    { nums: [2,3,3,4,6,7], target: 12, expected: 61 },
+];
+
+describe('numSubseq', () => {
+    test.each(structuredClone(testcases))('numSubseq($nums, $target) -> $expected', ({ nums, target, expected }) => {
+        expect(numSubseq(nums, target)).toStrictEqual(expected);
+    });
+});"
+`;

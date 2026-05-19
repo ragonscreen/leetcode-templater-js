@@ -1,0 +1,38 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0008_string-to-integer-atoi solution template: 0008_string-to-integer-atoi 1`] = `
+"/**
+ * 0008. String to Integer (atoi)
+ *
+ * Link: https://leetcode.com/problems/string-to-integer-atoi/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - String (topic_10)
+ *
+ * Stats:
+ * - Total Accepted: 2,449,420
+ * - Total Submissions: 11,667,597
+ * - Acceptance Rate: 21.0%
+ *
+ * Similar Problems:
+ * - check-if-numbers-are-ascending-in-a-sentence (Easy)
+ * - reverse-integer (Medium)
+ * - valid-number (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @return {number}
+ */
+const myAtoi = (s) => {};
+
+export { myAtoi };"
+`;

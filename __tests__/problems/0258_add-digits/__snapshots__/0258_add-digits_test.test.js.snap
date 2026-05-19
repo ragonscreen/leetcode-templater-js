@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0258_add-digits test template: 0258_add-digits 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { addDigits } from '../../src/0201-0300/0258_add-digits.js';
+
+const testcases = [
+    { num: 38, expected: 2 },
+    { num: 0, expected: 0 },
+];
+
+describe('addDigits', () => {
+    test.each(structuredClone(testcases))('addDigits($num) -> $expected', ({ num, expected }) => {
+        expect(addDigits(num)).toStrictEqual(expected);
+    });
+});"
+`;

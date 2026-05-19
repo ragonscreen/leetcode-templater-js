@@ -1,0 +1,53 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0088_merge-sorted-array solution template: 0088_merge-sorted-array 1`] = `
+"/**
+ * 0088. Merge Sorted Array
+ *
+ * Link: https://leetcode.com/problems/merge-sorted-array/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Two Pointers (topic_9)
+ * - Sorting (topic_61049)
+ *
+ * Stats:
+ * - Total Accepted: 5,703,367
+ * - Total Submissions: 10,401,689
+ * - Acceptance Rate: 54.8%
+ *
+ * Similar Problems:
+ * - merge-two-sorted-lists (Easy)
+ * - squares-of-a-sorted-array (Easy)
+ * - interval-list-intersections (Medium)
+ * - take-k-of-each-character-from-left-and-right (Medium)
+ *
+ * Hints:
+ * 1. You can easily solve this problem if you simply think about two elements
+ * at a time rather than two arrays. We know that each of the individual
+ * arrays is sorted. What we don't know is how they will intertwine. Can we
+ * take a local decision and arrive at an optimal solution?
+ *
+ * 2. If you simply consider one element each at a time from the two arrays and
+ * make a decision and proceed accordingly, you will arrive at the optimal solution.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums1
+ * @param {number} m
+ * @param {number[]} nums2
+ * @param {number} n
+ * @return {void}
+ */
+const merge = (nums1, m, nums2, n) => {};
+
+export { merge };"
+`;

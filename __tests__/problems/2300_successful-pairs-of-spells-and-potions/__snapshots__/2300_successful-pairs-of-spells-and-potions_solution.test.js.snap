@@ -1,0 +1,55 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2300_successful-pairs-of-spells-and-potions solution template: 2300_successful-pairs-of-spells-and-potions 1`] = `
+"/**
+ * 2300. Successful Pairs of Spells and Potions
+ *
+ * Link: https://leetcode.com/problems/successful-pairs-of-spells-and-potions/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Two Pointers (topic_9)
+ * - Binary Search (topic_11)
+ * - Sorting (topic_61049)
+ * - Senior (position_senior)
+ * - Biweekly Contest 80 (contest_biweekly-contest-80)
+ *
+ * Stats:
+ * - Total Accepted: 387,619
+ * - Total Submissions: 781,339
+ * - Acceptance Rate: 49.6%
+ *
+ * Similar Problems:
+ * - longest-subsequence-with-limited-sum (Easy)
+ * - maximum-matching-of-players-with-trainers (Medium)
+ * - most-profit-assigning-work (Medium)
+ *
+ * Hints:
+ * 1. Notice that if a spell and potion pair is successful, then the spell and
+ * all stronger potions will be successful too.
+ *
+ * 2. Thus, for each spell, we need to find the potion with the least strength
+ * that will form a successful pair.
+ *
+ * 3. We can efficiently do this by sorting the potions based on strength and
+ * using binary search.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} spells
+ * @param {number[]} potions
+ * @param {number} success
+ * @return {number[]}
+ */
+const successfulPairs = (spells, potions, success) => {};
+
+export { successfulPairs };"
+`;

@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2540_minimum-common-value test template: 2540_minimum-common-value 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { getCommon } from '../../src/2501-2600/2540_minimum-common-value.js';
+
+const testcases = [
+    { nums1: [1,2,3], nums2: [2,4], expected: 2 },
+    { nums1: [1,2,3,6], nums2: [2,3,4,5], expected: 2 },
+];
+
+describe('getCommon', () => {
+    test.each(structuredClone(testcases))('getCommon($nums1, $nums2) -> $expected', ({ nums1, nums2, expected }) => {
+        expect(getCommon(nums1, nums2)).toStrictEqual(expected);
+    });
+});"
+`;

@@ -1,0 +1,38 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0946_validate-stack-sequences solution template: 0946_validate-stack-sequences 1`] = `
+"/**
+ * 0946. Validate Stack Sequences
+ *
+ * Link: https://leetcode.com/problems/validate-stack-sequences/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Stack (topic_15)
+ * - Simulation (topic_61055)
+ * - Senior Staff (position_senior-staff)
+ * - Weekly Contest 112 (contest_weekly-contest-112)
+ *
+ * Stats:
+ * - Total Accepted: 375,517
+ * - Total Submissions: 533,255
+ * - Acceptance Rate: 70.4%
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} pushed
+ * @param {number[]} popped
+ * @return {boolean}
+ */
+const validateStackSequences = (pushed, popped) => {};
+
+export { validateStackSequences };"
+`;

@@ -1,0 +1,54 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2745_construct-the-longest-new-string solution template: 2745_construct-the-longest-new-string 1`] = `
+"/**
+ * 2745. Construct the Longest New String
+ *
+ * Link: https://leetcode.com/problems/construct-the-longest-new-string/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Math (topic_8)
+ * - Dynamic Programming (topic_13)
+ * - Greedy (topic_17)
+ * - Brainteaser (topic_32)
+ * - Senior (position_senior)
+ * - Biweekly Contest 107 (contest_biweekly-contest-107)
+ *
+ * Stats:
+ * - Total Accepted: 27,078
+ * - Total Submissions: 49,402
+ * - Acceptance Rate: 54.8%
+ *
+ * Hints:
+ * 1. It can be proved that ALL “AB”s can be used in the optimal solution.(1)
+ * If the final string starts with 'A', we can put all unused “AB”s at the
+ * very beginning.(2) If the final string starts with 'B' (meaning) it
+ * starts with “BB”, we can put all unused “AB”s after the 2nd 'B'.
+ *
+ * 2. Using “AB” doesn’t increase the number of “AA”s or “BB”s we can use.If we
+ * put an “AB” after “BB”, then we still need to append “AA” as before, so
+ * it doesn’t change the state.
+ *
+ * 3. We only need to consider strings “AA” and “BB”; we can either use the
+ * pattern “AABBAABB…” or the pattern “BBAABBAA…”, depending on which one of
+ * x and y is larger.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number} x
+ * @param {number} y
+ * @param {number} z
+ * @return {number}
+ */
+const longestString = (x, y, z) => {};
+
+export { longestString };"
+`;

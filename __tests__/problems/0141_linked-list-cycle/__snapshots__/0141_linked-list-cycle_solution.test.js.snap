@@ -1,0 +1,40 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0141_linked-list-cycle solution template: 0141_linked-list-cycle 1`] = `
+"/**
+ * 0141. Linked List Cycle
+ *
+ * Link: https://leetcode.com/problems/linked-list-cycle/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Hash Table (topic_6)
+ * - Linked List (topic_7)
+ * - Two Pointers (topic_9)
+ *
+ * Stats:
+ * - Total Accepted: 4,914,952
+ * - Total Submissions: 9,049,259
+ * - Acceptance Rate: 54.3%
+ *
+ * Similar Problems:
+ * - happy-number (Easy)
+ * - linked-list-cycle-ii (Medium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {ListNode} head
+ * @param {number} pos
+ * @return {boolean}
+ */
+const hasCycle = (head, pos) => {};
+
+export { hasCycle };"
+`;

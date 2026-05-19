@@ -1,0 +1,41 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0217_contains-duplicate solution template: 0217_contains-duplicate 1`] = `
+"/**
+ * 0217. Contains Duplicate
+ *
+ * Link: https://leetcode.com/problems/contains-duplicate/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Sorting (topic_61049)
+ *
+ * Stats:
+ * - Total Accepted: 6,422,911
+ * - Total Submissions: 9,981,973
+ * - Acceptance Rate: 64.3%
+ *
+ * Similar Problems:
+ * - contains-duplicate-ii (Easy)
+ * - find-valid-pair-of-adjacent-digits-in-string (Easy)
+ * - make-array-zero-by-subtracting-equal-amounts (Easy)
+ * - contains-duplicate-iii (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {boolean}
+ */
+const containsDuplicate = (nums) => {};
+
+export { containsDuplicate };"
+`;

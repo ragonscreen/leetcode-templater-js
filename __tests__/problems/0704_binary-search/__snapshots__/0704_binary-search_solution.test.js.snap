@@ -1,0 +1,39 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0704_binary-search solution template: 0704_binary-search 1`] = `
+"/**
+ * 0704. Binary Search
+ *
+ * Link: https://leetcode.com/problems/binary-search/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Binary Search (topic_11)
+ *
+ * Stats:
+ * - Total Accepted: 3,930,747
+ * - Total Submissions: 6,460,344
+ * - Acceptance Rate: 60.8%
+ *
+ * Similar Problems:
+ * - maximum-count-of-positive-integer-and-negative-integer (Easy)
+ * - search-in-a-sorted-array-of-unknown-size (Medium) (Premium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number}
+ */
+const search = (nums, target) => {};
+
+export { search };"
+`;

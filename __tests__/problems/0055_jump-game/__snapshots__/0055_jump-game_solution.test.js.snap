@@ -1,0 +1,43 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0055_jump-game solution template: 0055_jump-game 1`] = `
+"/**
+ * 0055. Jump Game
+ *
+ * Link: https://leetcode.com/problems/jump-game/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Dynamic Programming (topic_13)
+ * - Greedy (topic_17)
+ *
+ * Stats:
+ * - Total Accepted: 3,210,835
+ * - Total Submissions: 7,853,776
+ * - Acceptance Rate: 40.9%
+ *
+ * Similar Problems:
+ * - jump-game-ii (Medium)
+ * - jump-game-iii (Medium)
+ * - jump-game-vii (Medium)
+ * - jump-game-viii (Medium) (Premium)
+ * - largest-element-in-an-array-after-merge-operations (Medium)
+ * - minimum-number-of-visited-cells-in-a-grid (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {boolean}
+ */
+const canJump = (nums) => {};
+
+export { canJump };"
+`;

@@ -1,0 +1,42 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0125_valid-palindrome solution template: 0125_valid-palindrome 1`] = `
+"/**
+ * 0125. Valid Palindrome
+ *
+ * Link: https://leetcode.com/problems/valid-palindrome/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Two Pointers (topic_9)
+ * - String (topic_10)
+ *
+ * Stats:
+ * - Total Accepted: 5,457,343
+ * - Total Submissions: 10,238,927
+ * - Acceptance Rate: 53.3%
+ *
+ * Similar Problems:
+ * - find-first-palindromic-string-in-the-array (Easy)
+ * - palindrome-linked-list (Easy)
+ * - valid-palindrome-ii (Easy)
+ * - maximum-palindromes-after-operations (Medium)
+ * - maximum-product-of-the-length-of-two-palindromic-subsequences (Medium)
+ * - valid-palindrome-iv (Medium) (Premium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @return {boolean}
+ */
+const isPalindrome = (s) => {};
+
+export { isPalindrome };"
+`;

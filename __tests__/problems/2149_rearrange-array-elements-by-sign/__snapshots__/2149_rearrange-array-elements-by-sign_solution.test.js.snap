@@ -1,0 +1,49 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2149_rearrange-array-elements-by-sign solution template: 2149_rearrange-array-elements-by-sign 1`] = `
+"/**
+ * 2149. Rearrange Array Elements by Sign
+ *
+ * Link: https://leetcode.com/problems/rearrange-array-elements-by-sign/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Two Pointers (topic_9)
+ * - Simulation (topic_61055)
+ * - Senior (position_senior)
+ * - Weekly Contest 277 (contest_weekly-contest-277)
+ *
+ * Stats:
+ * - Total Accepted: 862,495
+ * - Total Submissions: 1,019,059
+ * - Acceptance Rate: 84.6%
+ *
+ * Similar Problems:
+ * - largest-number-after-digit-swaps-by-parity (Easy)
+ * - sort-array-by-parity-ii (Easy)
+ * - partition-array-according-to-given-pivot (Medium)
+ * - wiggle-subsequence (Medium)
+ *
+ * Hints:
+ * 1. Divide the array into two parts- one comprising of only positive integers
+ * and the other of negative integers.
+ *
+ * 2. Merge the two parts to get the resultant array.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number[]}
+ */
+const rearrangeArray = (nums) => {};
+
+export { rearrangeArray };"
+`;

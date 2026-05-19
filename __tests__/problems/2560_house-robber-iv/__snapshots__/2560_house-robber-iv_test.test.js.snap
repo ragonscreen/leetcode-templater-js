@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2560_house-robber-iv test template: 2560_house-robber-iv 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { minCapability } from '../../src/2501-2600/2560_house-robber-iv.js';
+
+const testcases = [
+    { nums: [2,3,5,9], k: 2, expected: 5 },
+    { nums: [2,7,9,3,1], k: 2, expected: 2 },
+];
+
+describe('minCapability', () => {
+    test.each(structuredClone(testcases))('minCapability($nums, $k) -> $expected', ({ nums, k, expected }) => {
+        expect(minCapability(nums, k)).toStrictEqual(expected);
+    });
+});"
+`;

@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0668_kth-smallest-number-in-multiplication-table test template: 0668_kth-smallest-number-in-multiplication-table 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { findKthNumber } from '../../src/0601-0700/0668_kth-smallest-number-in-multiplication-table.js';
+
+const testcases = [
+    { m: 3, n: 3, k: 5, expected: 3 },
+    { m: 2, n: 3, k: 6, expected: 6 },
+];
+
+describe('findKthNumber', () => {
+    test.each(structuredClone(testcases))('findKthNumber($m, $n, $k) -> $expected', ({ m, n, k, expected }) => {
+        expect(findKthNumber(m, n, k)).toStrictEqual(expected);
+    });
+});"
+`;

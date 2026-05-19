@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0962_maximum-width-ramp test template: 0962_maximum-width-ramp 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { maxWidthRamp } from '../../src/0901-1000/0962_maximum-width-ramp.js';
+
+const testcases = [
+    { nums: [6,0,8,2,1,5], expected: 4 },
+    { nums: [9,8,1,0,1,9,4,0,4,1], expected: 7 },
+];
+
+describe('maxWidthRamp', () => {
+    test.each(structuredClone(testcases))('maxWidthRamp($nums) -> $expected', ({ nums, expected }) => {
+        expect(maxWidthRamp(nums)).toStrictEqual(expected);
+    });
+});"
+`;

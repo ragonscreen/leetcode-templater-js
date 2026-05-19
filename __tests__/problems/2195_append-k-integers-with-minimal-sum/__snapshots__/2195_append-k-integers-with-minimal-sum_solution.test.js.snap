@@ -1,0 +1,56 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2195_append-k-integers-with-minimal-sum solution template: 2195_append-k-integers-with-minimal-sum 1`] = `
+"/**
+ * 2195. Append K Integers With Minimal Sum
+ *
+ * Link: https://leetcode.com/problems/append-k-integers-with-minimal-sum/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Math (topic_8)
+ * - Greedy (topic_17)
+ * - Sorting (topic_61049)
+ * - Senior (position_senior)
+ * - Weekly Contest 283 (contest_weekly-contest-283)
+ *
+ * Stats:
+ * - Total Accepted: 42,563
+ * - Total Submissions: 157,651
+ * - Acceptance Rate: 27.0%
+ *
+ * Similar Problems:
+ * - find-all-numbers-disappeared-in-an-array (Easy)
+ * - kth-missing-positive-number (Easy)
+ * - maximum-number-of-integers-to-choose-from-a-range-i (Medium)
+ * - maximum-number-of-integers-to-choose-from-a-range-ii (Medium) (Premium)
+ * - remove-k-digits (Medium)
+ *
+ * Hints:
+ * 1. The k smallest numbers that do not appear in nums will result in the
+ * minimum sum.
+ *
+ * 2. Recall that the sum of the first n positive numbers is equal to n * (n+1)
+ * / 2.
+ *
+ * 3. Initialize the answer as the sum of 1 to k. Then, adjust the answer
+ * depending on the values in nums.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number} k
+ * @return {number}
+ */
+const minimalKSum = (nums, k) => {};
+
+export { minimalKSum };"
+`;

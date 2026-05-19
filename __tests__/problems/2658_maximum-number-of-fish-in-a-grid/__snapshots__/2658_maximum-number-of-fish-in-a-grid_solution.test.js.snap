@@ -1,0 +1,49 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2658_maximum-number-of-fish-in-a-grid solution template: 2658_maximum-number-of-fish-in-a-grid 1`] = `
+"/**
+ * 2658. Maximum Number of Fish in a Grid
+ *
+ * Link: https://leetcode.com/problems/maximum-number-of-fish-in-a-grid/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Depth-First Search (topic_21)
+ * - Breadth-First Search (topic_22)
+ * - Union-Find (topic_23)
+ * - Matrix (topic_61053)
+ * - Staff (position_staff)
+ * - Biweekly Contest 103 (contest_biweekly-contest-103)
+ *
+ * Stats:
+ * - Total Accepted: 164,114
+ * - Total Submissions: 232,557
+ * - Acceptance Rate: 70.6%
+ *
+ * Similar Problems:
+ * - max-area-of-island (Medium)
+ * - number-of-islands (Medium)
+ *
+ * Hints:
+ * 1. Run DFS from each non-zero cell.
+ *
+ * 2. Each time you pick a cell to start from, add up the number of fish
+ * contained in the cells you visit.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[][]} grid
+ * @return {number}
+ */
+const findMaxFish = (grid) => {};
+
+export { findMaxFish };"
+`;

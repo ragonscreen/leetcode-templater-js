@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3212_count-submatrices-with-equal-frequency-of-x-and-y test template: 3212_count-submatrices-with-equal-frequency-of-x-and-y 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { numberOfSubmatrices } from '../../src/3201-3300/3212_count-submatrices-with-equal-frequency-of-x-and-y.js';
+
+const testcases = [
+    { grid: [["X","Y","."],["Y",".","."]], expected: 3 },
+    { grid: [["X","X"],["X","Y"]], expected: 0 },
+    { grid: [[".","."],[".","."]], expected: 0 },
+];
+
+describe('numberOfSubmatrices', () => {
+    test.each(structuredClone(testcases))('numberOfSubmatrices($grid) -> $expected', ({ grid, expected }) => {
+        expect(numberOfSubmatrices(grid)).toStrictEqual(expected);
+    });
+});"
+`;

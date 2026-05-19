@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0451_sort-characters-by-frequency test template: 0451_sort-characters-by-frequency 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { frequencySort } from '../../src/0401-0500/0451_sort-characters-by-frequency.js';
+
+const testcases = [
+    { s: "tree", expected: ["eert","eetr"] },
+    { s: "cccaaa", expected: ["aaaccc","cccaaa"] },
+    { s: "Aabb", expected: ["bbAa","bbaA"] },
+];
+
+describe('frequencySort', () => {
+    test.each(structuredClone(testcases))('frequencySort($s) -> $expected', ({ s, expected }) => {
+        expect(frequencySort(s)).toBeOneOf(expected);
+    });
+});"
+`;

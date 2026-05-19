@@ -1,0 +1,50 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3273_minimum-amount-of-damage-dealt-to-bob solution template: 3273_minimum-amount-of-damage-dealt-to-bob 1`] = `
+"/**
+ * 3273. Minimum Amount of Damage Dealt to Bob
+ *
+ * Link: https://leetcode.com/problems/minimum-amount-of-damage-dealt-to-bob/
+ * Category: Algorithms
+ * Difficulty: Hard
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Greedy (topic_17)
+ * - Sorting (topic_61049)
+ * - Principal (position_principal)
+ * - Biweekly Contest 138 (contest_biweekly-contest-138)
+ *
+ * Stats:
+ * - Total Accepted: 14,541
+ * - Total Submissions: 36,545
+ * - Acceptance Rate: 39.8%
+ *
+ * Similar Problems:
+ * - minimum-penalty-for-a-shop (Medium)
+ * - minimum-time-to-complete-trips (Medium)
+ *
+ * Hints:
+ * 1. Can we use sorting here along with a custom comparator?
+ *
+ * 2. For any two enemies \`i\` and \`j\` with damages \`damage[i]\` and \`damage[j]\`,
+ * and time to take each of them down \`t<sub>i</sub>\` and \`t<sub>j</sub>\`,
+ * when is it better to choose enemy \`i\` over enemy \`j\` first?
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number} power
+ * @param {number[]} damage
+ * @param {number[]} health
+ * @return {number}
+ */
+const minDamage = (power, damage, health) => {};
+
+export { minDamage };"
+`;

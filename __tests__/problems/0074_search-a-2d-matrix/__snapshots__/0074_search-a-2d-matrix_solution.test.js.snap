@@ -1,0 +1,40 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0074_search-a-2d-matrix solution template: 0074_search-a-2d-matrix 1`] = `
+"/**
+ * 0074. Search a 2D Matrix
+ *
+ * Link: https://leetcode.com/problems/search-a-2d-matrix/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Binary Search (topic_11)
+ * - Matrix (topic_61053)
+ *
+ * Stats:
+ * - Total Accepted: 2,898,594
+ * - Total Submissions: 5,375,368
+ * - Acceptance Rate: 53.9%
+ *
+ * Similar Problems:
+ * - search-a-2d-matrix-ii (Medium)
+ * - split-message-based-on-limit (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[][]} matrix
+ * @param {number} target
+ * @return {boolean}
+ */
+const searchMatrix = (matrix, target) => {};
+
+export { searchMatrix };"
+`;

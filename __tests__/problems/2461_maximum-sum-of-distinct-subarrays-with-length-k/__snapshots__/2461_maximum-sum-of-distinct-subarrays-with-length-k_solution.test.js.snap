@@ -1,0 +1,57 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2461_maximum-sum-of-distinct-subarrays-with-length-k solution template: 2461_maximum-sum-of-distinct-subarrays-with-length-k 1`] = `
+"/**
+ * 2461. Maximum Sum of Distinct Subarrays With Length K
+ *
+ * Link: https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Sliding Window (topic_55821)
+ * - Senior (position_senior)
+ * - Weekly Contest 318 (contest_weekly-contest-318)
+ *
+ * Stats:
+ * - Total Accepted: 273,884
+ * - Total Submissions: 636,670
+ * - Acceptance Rate: 43.0%
+ *
+ * Similar Problems:
+ * - count-the-number-of-good-subarrays (Medium)
+ * - find-the-power-of-k-size-subarrays-i (Medium)
+ * - find-the-power-of-k-size-subarrays-ii (Medium)
+ * - longest-nice-subarray (Medium)
+ * - max-consecutive-ones-iii (Medium)
+ * - maximum-good-subarray-sum (Medium)
+ * - optimal-partition-of-string (Medium)
+ *
+ * Hints:
+ * 1. Which elements change when moving from the subarray of size k that ends
+ * at index i to the subarray of size k that ends at index i + 1?
+ *
+ * 2. Only two elements change, the element at i + 1 is added into the
+ * subarray, and the element at i - k + 1 gets removed from the subarray.
+ *
+ * 3. Iterate through each subarray of size k and keep track of the sum of the
+ * subarray and the frequency of each element.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number} k
+ * @return {number}
+ */
+const maximumSubarraySum = (nums, k) => {};
+
+export { maximumSubarraySum };"
+`;

@@ -1,0 +1,47 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2958_length-of-longest-subarray-with-at-most-k-frequency solution template: 2958_length-of-longest-subarray-with-at-most-k-frequency 1`] = `
+"/**
+ * 2958. Length of Longest Subarray With at Most K Frequency
+ *
+ * Link: https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Sliding Window (topic_55821)
+ * - Staff (position_staff)
+ * - Biweekly Contest 119 (contest_biweekly-contest-119)
+ *
+ * Stats:
+ * - Total Accepted: 193,575
+ * - Total Submissions: 342,170
+ * - Acceptance Rate: 56.6%
+ *
+ * Similar Problems:
+ * - longest-substring-with-at-least-k-repeating-characters (Medium)
+ *
+ * Hints:
+ * 1. For each index \`i\`, find the rightmost index \`j >= i\` such that the
+ * frequency of each element in the subarray \`[i, j]\` is at most \`k\`.
+ *
+ * 2. We can use 2 pointers / sliding window to achieve it.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number} k
+ * @return {number}
+ */
+const maxSubarrayLength = (nums, k) => {};
+
+export { maxSubarrayLength };"
+`;

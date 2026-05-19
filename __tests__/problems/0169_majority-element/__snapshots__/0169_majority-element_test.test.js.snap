@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0169_majority-element test template: 0169_majority-element 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { majorityElement } from '../../src/0101-0200/0169_majority-element.js';
+
+const testcases = [
+    { nums: [3,2,3], expected: 3 },
+    { nums: [2,2,1,1,1,2,2], expected: 2 },
+];
+
+describe('majorityElement', () => {
+    test.each(structuredClone(testcases))('majorityElement($nums) -> $expected', ({ nums, expected }) => {
+        expect(majorityElement(nums)).toStrictEqual(expected);
+    });
+});"
+`;

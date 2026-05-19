@@ -1,0 +1,19 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0981_time-based-key-value-store test template: 0981_time-based-key-value-store 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { TimeMap } from '../../src/0901-1000/0981_time-based-key-value-store.js';
+
+describe('TimeMap', () => {
+    test('default test 1', () => {
+        const timeMap = new TimeMap();
+
+        expect(timeMap.set("foo", "bar", 1)).toBeNil();
+        expect(timeMap.get("foo", 1)).toStrictEqual("bar");
+        expect(timeMap.get("foo", 3)).toStrictEqual("bar");
+        expect(timeMap.set("foo", "bar2", 4)).toBeNil();
+        expect(timeMap.get("foo", 4)).toStrictEqual("bar2");
+        expect(timeMap.get("foo", 5)).toStrictEqual("bar2");
+    });
+});"
+`;

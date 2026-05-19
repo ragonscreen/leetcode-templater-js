@@ -1,0 +1,53 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2125_number-of-laser-beams-in-a-bank solution template: 2125_number-of-laser-beams-in-a-bank 1`] = `
+"/**
+ * 2125. Number of Laser Beams in a Bank
+ *
+ * Link: https://leetcode.com/problems/number-of-laser-beams-in-a-bank/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Math (topic_8)
+ * - String (topic_10)
+ * - Matrix (topic_61053)
+ * - Senior (position_senior)
+ * - Weekly Contest 274 (contest_weekly-contest-274)
+ *
+ * Stats:
+ * - Total Accepted: 350,649
+ * - Total Submissions: 403,001
+ * - Acceptance Rate: 87.0%
+ *
+ * Similar Problems:
+ * - set-matrix-zeroes (Medium)
+ *
+ * Hints:
+ * 1. What is the commonality between security devices on the same row?
+ *
+ * 2. Each device on the same row has the same number of beams pointing towards
+ * the devices on the next row with devices.
+ *
+ * 3. If you were given an integer array where each element is the number of
+ * security devices on each row, can you solve it?
+ *
+ * 4. Convert the input to such an array, skip any row with no security device,
+ * then find the sum of the product between adjacent elements.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string[]} bank
+ * @return {number}
+ */
+const numberOfBeams = (bank) => {};
+
+export { numberOfBeams };"
+`;

@@ -1,0 +1,49 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2616_minimize-the-maximum-difference-of-pairs solution template: 2616_minimize-the-maximum-difference-of-pairs 1`] = `
+"/**
+ * 2616. Minimize the Maximum Difference of Pairs
+ *
+ * Link: https://leetcode.com/problems/minimize-the-maximum-difference-of-pairs/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Binary Search (topic_11)
+ * - Dynamic Programming (topic_13)
+ * - Greedy (topic_17)
+ * - Sorting (topic_61049)
+ * - Staff (position_staff)
+ * - Weekly Contest 340 (contest_weekly-contest-340)
+ *
+ * Stats:
+ * - Total Accepted: 170,951
+ * - Total Submissions: 335,359
+ * - Acceptance Rate: 51.0%
+ *
+ * Similar Problems:
+ * - minimum-absolute-difference (Easy)
+ * - minimum-difference-between-largest-and-smallest-value-in-three-moves (Medium)
+ *
+ * Hints:
+ * 1. To minimize the answer, the array should be sorted first.
+ *
+ * 2. Can we use binary search here?
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number} p
+ * @return {number}
+ */
+const minimizeMax = (nums, p) => {};
+
+export { minimizeMax };"
+`;

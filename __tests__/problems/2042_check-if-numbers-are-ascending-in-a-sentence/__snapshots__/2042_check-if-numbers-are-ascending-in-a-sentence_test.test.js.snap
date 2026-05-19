@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2042_check-if-numbers-are-ascending-in-a-sentence test template: 2042_check-if-numbers-are-ascending-in-a-sentence 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { areNumbersAscending } from '../../src/2001-2100/2042_check-if-numbers-are-ascending-in-a-sentence.js';
+
+const testcases = [
+    { s: "1 box has 3 blue 4 red 6 green and 12 yellow marbles", expected: true },
+    { s: "hello world 5 x 5", expected: false },
+    { s: "sunset is at 7 51 pm overnight lows will be in the low 50 and 60 s", expected: false },
+];
+
+describe('areNumbersAscending', () => {
+    test.each(structuredClone(testcases))('areNumbersAscending($s) -> $expected', ({ s, expected }) => {
+        expect(areNumbersAscending(s)).toStrictEqual(expected);
+    });
+});"
+`;

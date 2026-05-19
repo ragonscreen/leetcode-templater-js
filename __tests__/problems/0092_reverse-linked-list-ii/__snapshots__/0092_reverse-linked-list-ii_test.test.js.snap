@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0092_reverse-linked-list-ii test template: 0092_reverse-linked-list-ii 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { reverseBetween } from '../../src/0001-0100/0092_reverse-linked-list-ii.js';
+
+const testcases = [
+    { head: [1,2,3,4,5], left: 2, right: 4, expected: [1,4,3,2,5] },
+    { head: [5], left: 1, right: 1, expected: [5] },
+];
+
+describe('reverseBetween', () => {
+    test.each(structuredClone(testcases))('reverseBetween($head, $left, $right) -> $expected', ({ head, left, right, expected }) => {
+        expect(reverseBetween(head, left, right)).toStrictEqual(expected);
+    });
+});"
+`;

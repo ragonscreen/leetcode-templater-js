@@ -1,0 +1,43 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0206_reverse-linked-list solution template: 0206_reverse-linked-list 1`] = `
+"/**
+ * 0206. Reverse Linked List
+ *
+ * Link: https://leetcode.com/problems/reverse-linked-list/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Linked List (topic_7)
+ * - Recursion (topic_31)
+ *
+ * Stats:
+ * - Total Accepted: 6,315,526
+ * - Total Submissions: 7,841,249
+ * - Acceptance Rate: 80.5%
+ *
+ * Similar Problems:
+ * - palindrome-linked-list (Easy)
+ * - binary-tree-upside-down (Medium) (Premium)
+ * - insert-greatest-common-divisors-in-linked-list (Medium)
+ * - maximum-twin-sum-of-a-linked-list (Medium)
+ * - remove-nodes-from-linked-list (Medium)
+ * - reverse-linked-list-ii (Medium)
+ * - reverse-nodes-in-even-length-groups (Medium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {ListNode} head
+ * @return {ListNode}
+ */
+const reverseList = (head) => {};
+
+export { reverseList };"
+`;

@@ -1,0 +1,38 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0048_rotate-image solution template: 0048_rotate-image 1`] = `
+"/**
+ * 0048. Rotate Image
+ *
+ * Link: https://leetcode.com/problems/rotate-image/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Math (topic_8)
+ * - Matrix (topic_61053)
+ *
+ * Stats:
+ * - Total Accepted: 2,923,625
+ * - Total Submissions: 3,651,027
+ * - Acceptance Rate: 80.1%
+ *
+ * Similar Problems:
+ * - determine-whether-matrix-can-be-obtained-by-rotation (Easy)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[][]} matrix
+ * @return {void}
+ */
+const rotate = (matrix) => {};
+
+export { rotate };"
+`;

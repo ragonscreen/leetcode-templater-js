@@ -1,0 +1,45 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3746_minimum-string-length-after-balanced-removals solution template: 3746_minimum-string-length-after-balanced-removals 1`] = `
+"/**
+ * 3746. Minimum String Length After Balanced Removals
+ *
+ * Link: https://leetcode.com/problems/minimum-string-length-after-balanced-removals/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - String (topic_10)
+ * - Stack (topic_15)
+ * - Counting (topic_61062)
+ * - Senior (position_senior)
+ * - Weekly Contest 476 (contest_weekly-contest-476)
+ *
+ * Stats:
+ * - Total Accepted: 40,817
+ * - Total Submissions: 52,071
+ * - Acceptance Rate: 78.4%
+ *
+ * Hints:
+ * 1. Remove the longest possible balanced substring initially
+ *
+ * 2. Let the count of a's be \`count_a\` and the count of b's be \`count_b\`. Can
+ * we derive the final length from these?
+ *
+ * 3. The answer is \`abs(count_a - count_b)\`
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @return {number}
+ */
+const minLengthAfterRemovals = (s) => {};
+
+export { minLengthAfterRemovals };"
+`;

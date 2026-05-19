@@ -1,0 +1,39 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0084_largest-rectangle-in-histogram solution template: 0084_largest-rectangle-in-histogram 1`] = `
+"/**
+ * 0084. Largest Rectangle in Histogram
+ *
+ * Link: https://leetcode.com/problems/largest-rectangle-in-histogram/
+ * Category: Algorithms
+ * Difficulty: Hard
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Stack (topic_15)
+ * - Monotonic Stack (topic_61054)
+ *
+ * Stats:
+ * - Total Accepted: 1,571,320
+ * - Total Submissions: 3,150,164
+ * - Acceptance Rate: 49.9%
+ *
+ * Similar Problems:
+ * - maximal-rectangle (Hard)
+ * - maximum-score-of-a-good-subarray (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} heights
+ * @return {number}
+ */
+const largestRectangleArea = (heights) => {};
+
+export { largestRectangleArea };"
+`;

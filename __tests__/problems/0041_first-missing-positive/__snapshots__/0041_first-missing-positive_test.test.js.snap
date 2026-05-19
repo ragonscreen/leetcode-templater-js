@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0041_first-missing-positive test template: 0041_first-missing-positive 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { firstMissingPositive } from '../../src/0001-0100/0041_first-missing-positive.js';
+
+const testcases = [
+    { nums: [1,2,0], expected: 3 },
+    { nums: [3,4,-1,1], expected: 2 },
+    { nums: [7,8,9,11,12], expected: 1 },
+];
+
+describe('firstMissingPositive', () => {
+    test.each(structuredClone(testcases))('firstMissingPositive($nums) -> $expected', ({ nums, expected }) => {
+        expect(firstMissingPositive(nums)).toStrictEqual(expected);
+    });
+});"
+`;

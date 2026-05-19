@@ -1,0 +1,37 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3913_sort-vowels-by-frequency solution template: 3913_sort-vowels-by-frequency 1`] = `
+"/**
+ * 3913. Sort Vowels by Frequency
+ *
+ * Link: https://leetcode.com/problems/sort-vowels-by-frequency/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Senior (position_senior)
+ * - Weekly Contest 499 (contest_weekly-contest-499)
+ *
+ * Stats:
+ * - Total Accepted: 25,227
+ * - Total Submissions: 40,150
+ * - Acceptance Rate: 62.8%
+ *
+ * Hints:
+ * 1. Simulate as described
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @return {string}
+ */
+const sortVowels = (s) => {};
+
+export { sortVowels };"
+`;

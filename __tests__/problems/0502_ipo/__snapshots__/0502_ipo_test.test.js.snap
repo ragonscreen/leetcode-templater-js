@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0502_ipo test template: 0502_ipo 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { findMaximizedCapital } from '../../src/0501-0600/0502_ipo.js';
+
+const testcases = [
+    { k: 2, w: 0, profits: [1,2,3], capital: [0,1,1], expected: 4 },
+    { k: 3, w: 0, profits: [1,2,3], capital: [0,1,2], expected: 6 },
+];
+
+describe('findMaximizedCapital', () => {
+    test.each(structuredClone(testcases))('findMaximizedCapital($k, $w, $profits, $capital) -> $expected', ({ k, w, profits, capital, expected }) => {
+        expect(findMaximizedCapital(k, w, profits, capital)).toStrictEqual(expected);
+    });
+});"
+`;

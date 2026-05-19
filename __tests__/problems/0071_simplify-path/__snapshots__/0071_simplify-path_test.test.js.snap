@@ -1,0 +1,20 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0071_simplify-path test template: 0071_simplify-path 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { simplifyPath } from '../../src/0001-0100/0071_simplify-path.js';
+
+const testcases = [
+    { path: "/home/", expected: "/home" },
+    { path: "/home//foo/", expected: "/home/foo" },
+    { path: "/home/user/Documents/../Pictures", expected: "/home/user/Pictures" },
+    { path: "/../", expected: "/" },
+    { path: "/.../a/../b/c/../d/./", expected: "/.../b/d" },
+];
+
+describe('simplifyPath', () => {
+    test.each(structuredClone(testcases))('simplifyPath($path) -> $expected', ({ path, expected }) => {
+        expect(simplifyPath(path)).toStrictEqual(expected);
+    });
+});"
+`;

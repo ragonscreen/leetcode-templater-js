@@ -1,0 +1,45 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2716_minimize-string-length solution template: 2716_minimize-string-length 1`] = `
+"/**
+ * 2716. Minimize String Length
+ *
+ * Link: https://leetcode.com/problems/minimize-string-length/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Hash Table (topic_6)
+ * - String (topic_10)
+ * - Mid Level (position_mid-level)
+ * - Weekly Contest 348 (contest_weekly-contest-348)
+ *
+ * Stats:
+ * - Total Accepted: 80,836
+ * - Total Submissions: 102,067
+ * - Acceptance Rate: 79.2%
+ *
+ * Similar Problems:
+ * - remove-all-adjacent-duplicates-in-string (Easy)
+ * - remove-all-adjacent-duplicates-in-string-ii (Medium)
+ *
+ * Hints:
+ * 1. The minimized string will not contain duplicate characters.
+ *
+ * 2. The minimized string will contain all distinct characters of the original string.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @return {number}
+ */
+const minimizedStringLength = (s) => {};
+
+export { minimizedStringLength };"
+`;

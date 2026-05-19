@@ -1,0 +1,44 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3152_special-array-ii solution template: 3152_special-array-ii 1`] = `
+"/**
+ * 3152. Special Array II
+ *
+ * Link: https://leetcode.com/problems/special-array-ii/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Binary Search (topic_11)
+ * - Prefix Sum (topic_61068)
+ * - Senior (position_senior)
+ * - Weekly Contest 398 (contest_weekly-contest-398)
+ *
+ * Stats:
+ * - Total Accepted: 138,584
+ * - Total Submissions: 302,678
+ * - Acceptance Rate: 45.8%
+ *
+ * Hints:
+ * 1. Try to split the array into some non-intersected continuous special subarrays.
+ *
+ * 2. For each query check that the first and the last elements of that query
+ * are in the same subarray or not.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number[][]} queries
+ * @return {boolean[]}
+ */
+const isArraySpecial = (nums, queries) => {};
+
+export { isArraySpecial };"
+`;

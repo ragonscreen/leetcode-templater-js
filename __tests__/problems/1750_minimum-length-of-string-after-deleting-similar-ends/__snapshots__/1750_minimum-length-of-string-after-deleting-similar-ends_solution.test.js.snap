@@ -1,0 +1,43 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1750_minimum-length-of-string-after-deleting-similar-ends solution template: 1750_minimum-length-of-string-after-deleting-similar-ends 1`] = `
+"/**
+ * 1750. Minimum Length of String After Deleting Similar Ends
+ *
+ * Link: https://leetcode.com/problems/minimum-length-of-string-after-deleting-similar-ends/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Two Pointers (topic_9)
+ * - String (topic_10)
+ * - Senior (position_senior)
+ * - Biweekly Contest 45 (contest_biweekly-contest-45)
+ *
+ * Stats:
+ * - Total Accepted: 188,683
+ * - Total Submissions: 336,401
+ * - Acceptance Rate: 56.1%
+ *
+ * Hints:
+ * 1. If both ends have distinct characters, no more operations can be made.
+ * Otherwise, the only operation is to remove all of the same characters
+ * from both ends. We will do this as many times as we can.
+ *
+ * 2. Note that if the length is equal 1 the answer is 1
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @return {number}
+ */
+const minimumLength = (s) => {};
+
+export { minimumLength };"
+`;

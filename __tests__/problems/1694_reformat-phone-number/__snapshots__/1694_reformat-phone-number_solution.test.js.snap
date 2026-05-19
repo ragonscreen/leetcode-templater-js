@@ -1,0 +1,41 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1694_reformat-phone-number solution template: 1694_reformat-phone-number 1`] = `
+"/**
+ * 1694. Reformat Phone Number
+ *
+ * Link: https://leetcode.com/problems/reformat-phone-number/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - String (topic_10)
+ * - Mid Level (position_mid-level)
+ * - Weekly Contest 220 (contest_weekly-contest-220)
+ *
+ * Stats:
+ * - Total Accepted: 50,122
+ * - Total Submissions: 74,057
+ * - Acceptance Rate: 67.7%
+ *
+ * Hints:
+ * 1. Discard all the spaces and dashes.
+ *
+ * 2. Use a while loop. While the string still has digits, check its length and
+ * see which rule to apply.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} number
+ * @return {string}
+ */
+const reformatNumber = (number) => {};
+
+export { reformatNumber };"
+`;

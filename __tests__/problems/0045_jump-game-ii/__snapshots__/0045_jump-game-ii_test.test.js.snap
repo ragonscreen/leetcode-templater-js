@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0045_jump-game-ii test template: 0045_jump-game-ii 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { jump } from '../../src/0001-0100/0045_jump-game-ii.js';
+
+const testcases = [
+    { nums: [2,3,1,1,4], expected: 2 },
+    { nums: [2,3,0,1,4], expected: 2 },
+];
+
+describe('jump', () => {
+    test.each(structuredClone(testcases))('jump($nums) -> $expected', ({ nums, expected }) => {
+        expect(jump(nums)).toStrictEqual(expected);
+    });
+});"
+`;

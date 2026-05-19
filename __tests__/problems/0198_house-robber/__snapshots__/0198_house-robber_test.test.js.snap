@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0198_house-robber test template: 0198_house-robber 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { rob } from '../../src/0101-0200/0198_house-robber.js';
+
+const testcases = [
+    { nums: [1,2,3,1], expected: 4 },
+    { nums: [2,7,9,3,1], expected: 12 },
+];
+
+describe('rob', () => {
+    test.each(structuredClone(testcases))('rob($nums) -> $expected', ({ nums, expected }) => {
+        expect(rob(nums)).toStrictEqual(expected);
+    });
+});"
+`;

@@ -1,0 +1,43 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1351_count-negative-numbers-in-a-sorted-matrix solution template: 1351_count-negative-numbers-in-a-sorted-matrix 1`] = `
+"/**
+ * 1351. Count Negative Numbers in a Sorted Matrix
+ *
+ * Link: https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Binary Search (topic_11)
+ * - Matrix (topic_61053)
+ * - Mid Level (position_mid-level)
+ * - Weekly Contest 176 (contest_weekly-contest-176)
+ *
+ * Stats:
+ * - Total Accepted: 667,916
+ * - Total Submissions: 839,096
+ * - Acceptance Rate: 79.6%
+ *
+ * Similar Problems:
+ * - maximum-count-of-positive-integer-and-negative-integer (Easy)
+ *
+ * Hints:
+ * 1. Use binary search for optimization or simply brute force.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[][]} grid
+ * @return {number}
+ */
+const countNegatives = (grid) => {};
+
+export { countNegatives };"
+`;

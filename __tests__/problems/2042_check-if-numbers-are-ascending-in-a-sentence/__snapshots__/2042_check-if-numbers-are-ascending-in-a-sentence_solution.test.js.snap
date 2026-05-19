@@ -1,0 +1,50 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2042_check-if-numbers-are-ascending-in-a-sentence solution template: 2042_check-if-numbers-are-ascending-in-a-sentence 1`] = `
+"/**
+ * 2042. Check if Numbers Are Ascending in a Sentence
+ *
+ * Link: https://leetcode.com/problems/check-if-numbers-are-ascending-in-a-sentence/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - String (topic_10)
+ * - Mid Level (position_mid-level)
+ * - Weekly Contest 263 (contest_weekly-contest-263)
+ *
+ * Stats:
+ * - Total Accepted: 87,019
+ * - Total Submissions: 119,008
+ * - Acceptance Rate: 73.1%
+ *
+ * Similar Problems:
+ * - check-if-all-as-appears-before-all-bs (Easy)
+ * - sorting-the-sentence (Easy)
+ * - string-to-integer-atoi (Medium)
+ *
+ * Hints:
+ * 1. Use string tokenization of your language to extract all the tokens of the
+ * string easily.
+ *
+ * 2. For each token extracted, how can you tell if it is a number? Does the
+ * first letter being a digit mean something?
+ *
+ * 3. Compare the number with the previously occurring number to check if
+ * ascending order is maintained.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @return {boolean}
+ */
+const areNumbersAscending = (s) => {};
+
+export { areNumbersAscending };"
+`;

@@ -1,0 +1,57 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0448_find-all-numbers-disappeared-in-an-array solution template: 0448_find-all-numbers-disappeared-in-an-array 1`] = `
+"/**
+ * 0448. Find All Numbers Disappeared in an Array
+ *
+ * Link: https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ *
+ * Stats:
+ * - Total Accepted: 1,395,858
+ * - Total Submissions: 2,176,971
+ * - Acceptance Rate: 64.1%
+ *
+ * Similar Problems:
+ * - append-k-integers-with-minimal-sum (Medium)
+ * - find-all-duplicates-in-an-array (Medium)
+ * - find-unique-binary-string (Medium)
+ * - maximum-number-of-integers-to-choose-from-a-range-i (Medium)
+ * - maximum-number-of-integers-to-choose-from-a-range-ii (Medium) (Premium)
+ * - replace-elements-in-an-array (Medium)
+ * - first-missing-positive (Hard)
+ *
+ * Hints:
+ * 1. This is a really easy problem if you decide to use additional memory. For
+ * those trying to write an initial solution using additional memory, think <b>counters!</b>
+ *
+ * 2. However, the trick really is to not use any additional space than what is
+ * already available to use. Sometimes, multiple passes over the input array
+ * help find the solution. However, there's an interesting piece of
+ * information in this problem that makes it easy to re-use the input array
+ * itself for the solution.
+ *
+ * 3. The problem specifies that the numbers in the array will be in the range
+ * [1, n] where n is the number of elements in the array. Can we use this
+ * information and modify the array in-place somehow to find what we need?
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number[]}
+ */
+const findDisappearedNumbers = (nums) => {};
+
+export { findDisappearedNumbers };"
+`;

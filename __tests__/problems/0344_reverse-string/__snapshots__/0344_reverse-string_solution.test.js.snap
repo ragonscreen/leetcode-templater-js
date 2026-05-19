@@ -1,0 +1,42 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0344_reverse-string solution template: 0344_reverse-string 1`] = `
+"/**
+ * 0344. Reverse String
+ *
+ * Link: https://leetcode.com/problems/reverse-string/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Two Pointers (topic_9)
+ * - String (topic_10)
+ *
+ * Stats:
+ * - Total Accepted: 3,841,540
+ * - Total Submissions: 4,755,166
+ * - Acceptance Rate: 80.8%
+ *
+ * Similar Problems:
+ * - reverse-string-ii (Easy)
+ * - reverse-vowels-of-a-string (Easy)
+ *
+ * Hints:
+ * 1. The entire logic for reversing a string is based on using the opposite
+ * directional two-pointer approach!
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {character[]} s
+ * @return {void}
+ */
+const reverseString = (s) => {};
+
+export { reverseString };"
+`;

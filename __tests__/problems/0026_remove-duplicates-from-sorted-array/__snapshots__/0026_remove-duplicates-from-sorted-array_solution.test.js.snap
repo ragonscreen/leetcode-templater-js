@@ -1,0 +1,58 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0026_remove-duplicates-from-sorted-array solution template: 0026_remove-duplicates-from-sorted-array 1`] = `
+"/**
+ * 0026. Remove Duplicates from Sorted Array
+ *
+ * Link: https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Two Pointers (topic_9)
+ *
+ * Stats:
+ * - Total Accepted: 7,878,055
+ * - Total Submissions: 12,544,522
+ * - Acceptance Rate: 62.8%
+ *
+ * Similar Problems:
+ * - apply-operations-to-an-array (Easy)
+ * - remove-element (Easy)
+ * - remove-duplicates-from-sorted-array-ii (Medium)
+ * - sum-of-distances (Medium)
+ *
+ * Hints:
+ * 1. In this problem, the key point to focus on is the input array being
+ * sorted. As far as duplicate elements are concerned, what is their
+ * positioning in the array when the given array is sorted? Look at the
+ * image below for the answer. If we know the position of one of the
+ * elements, do we also know the positioning of all the duplicate
+ * elements?<br><img
+ * src="https://assets.leetcode.com/uploads/2019/10/20/hint_rem_dup.png" width="500"/>
+ *
+ * 2. We need to modify the array in-place and the size of the final array
+ * would potentially be smaller than the size of the input array. So, we
+ * ought to use a two-pointer approach here. One, that would keep track of
+ * the current element in the original array and another one for just the
+ * unique elements.
+ *
+ * 3. Essentially, once an element is encountered, you simply need to
+ * <b>bypass</b> its duplicates and move on to the next unique element.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number}
+ */
+const removeDuplicates = (nums) => {};
+
+export { removeDuplicates };"
+`;

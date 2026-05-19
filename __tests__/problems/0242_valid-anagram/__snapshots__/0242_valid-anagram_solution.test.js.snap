@@ -1,0 +1,42 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0242_valid-anagram solution template: 0242_valid-anagram 1`] = `
+"/**
+ * 0242. Valid Anagram
+ *
+ * Link: https://leetcode.com/problems/valid-anagram/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Hash Table (topic_6)
+ * - String (topic_10)
+ * - Sorting (topic_61049)
+ *
+ * Stats:
+ * - Total Accepted: 6,170,323
+ * - Total Submissions: 9,061,882
+ * - Acceptance Rate: 68.1%
+ *
+ * Similar Problems:
+ * - find-resultant-array-after-removing-anagrams (Easy)
+ * - palindrome-permutation (Easy) (Premium)
+ * - find-all-anagrams-in-a-string (Medium)
+ * - group-anagrams (Medium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @param {string} t
+ * @return {boolean}
+ */
+const isAnagram = (s, t) => {};
+
+export { isAnagram };"
+`;

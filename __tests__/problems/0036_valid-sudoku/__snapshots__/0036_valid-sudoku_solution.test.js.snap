@@ -1,0 +1,39 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0036_valid-sudoku solution template: 0036_valid-sudoku 1`] = `
+"/**
+ * 0036. Valid Sudoku
+ *
+ * Link: https://leetcode.com/problems/valid-sudoku/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Matrix (topic_61053)
+ *
+ * Stats:
+ * - Total Accepted: 2,501,448
+ * - Total Submissions: 3,877,445
+ * - Acceptance Rate: 64.5%
+ *
+ * Similar Problems:
+ * - check-if-every-row-and-column-contains-all-numbers (Easy)
+ * - sudoku-solver (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {character[][]} board
+ * @return {boolean}
+ */
+const isValidSudoku = (board) => {};
+
+export { isValidSudoku };"
+`;

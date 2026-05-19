@@ -1,0 +1,48 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2279_maximum-bags-with-full-capacity-of-rocks solution template: 2279_maximum-bags-with-full-capacity-of-rocks 1`] = `
+"/**
+ * 2279. Maximum Bags With Full Capacity of Rocks
+ *
+ * Link: https://leetcode.com/problems/maximum-bags-with-full-capacity-of-rocks/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Greedy (topic_17)
+ * - Sorting (topic_61049)
+ * - Senior (position_senior)
+ * - Weekly Contest 294 (contest_weekly-contest-294)
+ *
+ * Stats:
+ * - Total Accepted: 113,823
+ * - Total Submissions: 167,182
+ * - Acceptance Rate: 68.1%
+ *
+ * Similar Problems:
+ * - maximum-units-on-a-truck (Easy)
+ * - capacity-to-ship-packages-within-d-days (Medium)
+ *
+ * Hints:
+ * 1. Which bag should you fill completely first?
+ *
+ * 2. Can you think of a greedy solution?
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} capacity
+ * @param {number[]} rocks
+ * @param {number} additionalRocks
+ * @return {number}
+ */
+const maximumBags = (capacity, rocks, additionalRocks) => {};
+
+export { maximumBags };"
+`;

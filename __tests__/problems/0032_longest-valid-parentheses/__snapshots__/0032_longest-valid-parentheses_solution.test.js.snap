@@ -1,0 +1,38 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0032_longest-valid-parentheses solution template: 0032_longest-valid-parentheses 1`] = `
+"/**
+ * 0032. Longest Valid Parentheses
+ *
+ * Link: https://leetcode.com/problems/longest-valid-parentheses/
+ * Category: Algorithms
+ * Difficulty: Hard
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - String (topic_10)
+ * - Dynamic Programming (topic_13)
+ * - Stack (topic_15)
+ *
+ * Stats:
+ * - Total Accepted: 1,111,693
+ * - Total Submissions: 2,866,148
+ * - Acceptance Rate: 38.8%
+ *
+ * Similar Problems:
+ * - valid-parentheses (Easy)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @return {number}
+ */
+const longestValidParentheses = (s) => {};
+
+export { longestValidParentheses };"
+`;

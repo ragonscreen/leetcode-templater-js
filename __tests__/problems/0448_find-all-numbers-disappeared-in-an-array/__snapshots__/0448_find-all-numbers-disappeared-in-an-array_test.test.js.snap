@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0448_find-all-numbers-disappeared-in-an-array test template: 0448_find-all-numbers-disappeared-in-an-array 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { findDisappearedNumbers } from '../../src/0401-0500/0448_find-all-numbers-disappeared-in-an-array.js';
+
+const testcases = [
+    { nums: [4,3,2,7,8,2,3,1], expected: [5,6] },
+    { nums: [1,1], expected: [2] },
+];
+
+describe('findDisappearedNumbers', () => {
+    test.each(structuredClone(testcases))('findDisappearedNumbers($nums) -> $expected', ({ nums, expected }) => {
+        expect(findDisappearedNumbers(nums)).toStrictEqual(expected);
+    });
+});"
+`;

@@ -1,0 +1,52 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2244_minimum-rounds-to-complete-all-tasks solution template: 2244_minimum-rounds-to-complete-all-tasks 1`] = `
+"/**
+ * 2244. Minimum Rounds to Complete All Tasks
+ *
+ * Link: https://leetcode.com/problems/minimum-rounds-to-complete-all-tasks/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Greedy (topic_17)
+ * - Counting (topic_61062)
+ * - Senior (position_senior)
+ * - Weekly Contest 289 (contest_weekly-contest-289)
+ *
+ * Stats:
+ * - Total Accepted: 174,199
+ * - Total Submissions: 275,173
+ * - Acceptance Rate: 63.3%
+ *
+ * Similar Problems:
+ * - climbing-stairs (Easy)
+ * - odd-string-difference (Easy)
+ * - minimum-levels-to-gain-more-points (Medium)
+ *
+ * Hints:
+ * 1. Which data structure can you use to store the number of tasks of each
+ * difficulty level?
+ *
+ * 2. For any particular difficulty level, what can be the optimal strategy to
+ * complete the tasks using minimum rounds?
+ *
+ * 3. When can we not complete all tasks of a difficulty level?
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} tasks
+ * @return {number}
+ */
+const minimumRounds = (tasks) => {};
+
+export { minimumRounds };"
+`;

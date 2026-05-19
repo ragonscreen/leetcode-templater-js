@@ -1,0 +1,47 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0658_find-k-closest-elements solution template: 0658_find-k-closest-elements 1`] = `
+"/**
+ * 0658. Find K Closest Elements
+ *
+ * Link: https://leetcode.com/problems/find-k-closest-elements/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Two Pointers (topic_9)
+ * - Binary Search (topic_11)
+ * - Sliding Window (topic_55821)
+ * - Sorting (topic_61049)
+ * - Heap (Priority Queue) (topic_61050)
+ * - Senior Staff (position_senior-staff)
+ *
+ * Stats:
+ * - Total Accepted: 822,636
+ * - Total Submissions: 1,656,153
+ * - Acceptance Rate: 49.7%
+ *
+ * Similar Problems:
+ * - find-closest-number-to-zero (Easy)
+ * - guess-number-higher-or-lower (Easy)
+ * - guess-number-higher-or-lower-ii (Medium)
+ * - find-k-th-smallest-pair-distance (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} arr
+ * @param {number} k
+ * @param {number} x
+ * @return {number[]}
+ */
+const findClosestElements = (arr, k, x) => {};
+
+export { findClosestElements };"
+`;

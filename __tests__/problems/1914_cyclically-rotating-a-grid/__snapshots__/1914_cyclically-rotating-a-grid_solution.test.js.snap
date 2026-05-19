@@ -1,0 +1,43 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1914_cyclically-rotating-a-grid solution template: 1914_cyclically-rotating-a-grid 1`] = `
+"/**
+ * 1914. Cyclically Rotating a Grid
+ *
+ * Link: https://leetcode.com/problems/cyclically-rotating-a-grid/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Matrix (topic_61053)
+ * - Simulation (topic_61055)
+ * - Senior (position_senior)
+ * - Weekly Contest 247 (contest_weekly-contest-247)
+ *
+ * Stats:
+ * - Total Accepted: 81,976
+ * - Total Submissions: 110,574
+ * - Acceptance Rate: 74.1%
+ *
+ * Hints:
+ * 1. First, you need to consider each layer separately as an array.
+ *
+ * 2. Just cycle this array and then re-assign it.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[][]} grid
+ * @param {number} k
+ * @return {number[][]}
+ */
+const rotateGrid = (grid, k) => {};
+
+export { rotateGrid };"
+`;

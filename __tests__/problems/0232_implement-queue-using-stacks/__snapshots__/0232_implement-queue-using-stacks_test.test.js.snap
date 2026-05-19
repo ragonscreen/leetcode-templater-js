@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0232_implement-queue-using-stacks test template: 0232_implement-queue-using-stacks 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { MyQueue } from '../../src/0201-0300/0232_implement-queue-using-stacks.js';
+
+describe('MyQueue', () => {
+    test('default test 1', () => {
+        const myQueue = new MyQueue();
+
+        expect(myQueue.push(1)).toBeNil();
+        expect(myQueue.push(2)).toBeNil();
+        expect(myQueue.peek()).toStrictEqual(1);
+        expect(myQueue.pop()).toStrictEqual(1);
+        expect(myQueue.empty()).toStrictEqual(false);
+    });
+});"
+`;

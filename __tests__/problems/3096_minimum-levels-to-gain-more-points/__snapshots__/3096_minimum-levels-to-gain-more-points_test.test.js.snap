@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3096_minimum-levels-to-gain-more-points test template: 3096_minimum-levels-to-gain-more-points 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { minimumLevels } from '../../src/3001-3100/3096_minimum-levels-to-gain-more-points.js';
+
+const testcases = [
+    { possible: [1,0,1,0], expected: 1 },
+    { possible: [1,1,1,1,1], expected: 3 },
+    { possible: [0,0], expected: -1 },
+];
+
+describe('minimumLevels', () => {
+    test.each(structuredClone(testcases))('minimumLevels($possible) -> $expected', ({ possible, expected }) => {
+        expect(minimumLevels(possible)).toStrictEqual(expected);
+    });
+});"
+`;

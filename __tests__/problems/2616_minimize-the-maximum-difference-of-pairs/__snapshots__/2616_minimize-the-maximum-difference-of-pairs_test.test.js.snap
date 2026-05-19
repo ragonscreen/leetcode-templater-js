@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2616_minimize-the-maximum-difference-of-pairs test template: 2616_minimize-the-maximum-difference-of-pairs 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { minimizeMax } from '../../src/2601-2700/2616_minimize-the-maximum-difference-of-pairs.js';
+
+const testcases = [
+    { nums: [10,1,2,7,1,3], p: 2, expected: 1 },
+    { nums: [4,2,1,2], p: 1, expected: 0 },
+];
+
+describe('minimizeMax', () => {
+    test.each(structuredClone(testcases))('minimizeMax($nums, $p) -> $expected', ({ nums, p, expected }) => {
+        expect(minimizeMax(nums, p)).toStrictEqual(expected);
+    });
+});"
+`;

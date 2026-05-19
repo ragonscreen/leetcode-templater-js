@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0383_ransom-note test template: 0383_ransom-note 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { canConstruct } from '../../src/0301-0400/0383_ransom-note.js';
+
+const testcases = [
+    { ransomNote: "a", magazine: "b", expected: false },
+    { ransomNote: "aa", magazine: "ab", expected: false },
+    { ransomNote: "aa", magazine: "aab", expected: true },
+];
+
+describe('canConstruct', () => {
+    test.each(structuredClone(testcases))('canConstruct($ransomNote, $magazine) -> $expected', ({ ransomNote, magazine, expected }) => {
+        expect(canConstruct(ransomNote, magazine)).toStrictEqual(expected);
+    });
+});"
+`;

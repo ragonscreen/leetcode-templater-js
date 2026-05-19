@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2064_minimized-maximum-of-products-distributed-to-any-store test template: 2064_minimized-maximum-of-products-distributed-to-any-store 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { minimizedMaximum } from '../../src/2001-2100/2064_minimized-maximum-of-products-distributed-to-any-store.js';
+
+const testcases = [
+    { n: 6, quantities: [11,6], expected: 3 },
+    { n: 7, quantities: [15,10,10], expected: 5 },
+    { n: 1, quantities: [100000], expected: 100000 },
+];
+
+describe('minimizedMaximum', () => {
+    test.each(structuredClone(testcases))('minimizedMaximum($n, $quantities) -> $expected', ({ n, quantities, expected }) => {
+        expect(minimizedMaximum(n, quantities)).toStrictEqual(expected);
+    });
+});"
+`;

@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2379_minimum-recolors-to-get-k-consecutive-black-blocks test template: 2379_minimum-recolors-to-get-k-consecutive-black-blocks 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { minimumRecolors } from '../../src/2301-2400/2379_minimum-recolors-to-get-k-consecutive-black-blocks.js';
+
+const testcases = [
+    { blocks: "WBBWWBBWBW", k: 7, expected: 3 },
+    { blocks: "WBWBBBW", k: 2, expected: 0 },
+];
+
+describe('minimumRecolors', () => {
+    test.each(structuredClone(testcases))('minimumRecolors($blocks, $k) -> $expected', ({ blocks, k, expected }) => {
+        expect(minimumRecolors(blocks, k)).toStrictEqual(expected);
+    });
+});"
+`;

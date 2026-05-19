@@ -1,0 +1,43 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0067_add-binary solution template: 0067_add-binary 1`] = `
+"/**
+ * 0067. Add Binary
+ *
+ * Link: https://leetcode.com/problems/add-binary/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Math (topic_8)
+ * - String (topic_10)
+ * - Bit Manipulation (topic_19)
+ * - Simulation (topic_61055)
+ *
+ * Stats:
+ * - Total Accepted: 2,351,996
+ * - Total Submissions: 4,052,251
+ * - Acceptance Rate: 58.0%
+ *
+ * Similar Problems:
+ * - add-to-array-form-of-integer (Easy)
+ * - plus-one (Easy)
+ * - add-two-numbers (Medium)
+ * - multiply-strings (Medium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} a
+ * @param {string} b
+ * @return {string}
+ */
+const addBinary = (a, b) => {};
+
+export { addBinary };"
+`;

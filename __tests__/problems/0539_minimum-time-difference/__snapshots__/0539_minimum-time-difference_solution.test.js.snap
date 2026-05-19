@@ -1,0 +1,40 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0539_minimum-time-difference solution template: 0539_minimum-time-difference 1`] = `
+"/**
+ * 0539. Minimum Time Difference
+ *
+ * Link: https://leetcode.com/problems/minimum-time-difference/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Math (topic_8)
+ * - String (topic_10)
+ * - Sorting (topic_61049)
+ * - Staff (position_staff)
+ *
+ * Stats:
+ * - Total Accepted: 349,583
+ * - Total Submissions: 558,425
+ * - Acceptance Rate: 62.6%
+ *
+ * Similar Problems:
+ * - minimum-cost-to-set-cooking-time (Medium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string[]} timePoints
+ * @return {number}
+ */
+const findMinDifference = (timePoints) => {};
+
+export { findMinDifference };"
+`;

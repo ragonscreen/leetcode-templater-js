@@ -1,0 +1,49 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2452_words-within-two-edits-of-dictionary solution template: 2452_words-within-two-edits-of-dictionary 1`] = `
+"/**
+ * 2452. Words Within Two Edits of Dictionary
+ *
+ * Link: https://leetcode.com/problems/words-within-two-edits-of-dictionary/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - String (topic_10)
+ * - Trie (topic_27)
+ * - Senior (position_senior)
+ * - Biweekly Contest 90 (contest_biweekly-contest-90)
+ *
+ * Stats:
+ * - Total Accepted: 122,342
+ * - Total Submissions: 166,494
+ * - Acceptance Rate: 73.5%
+ *
+ * Similar Problems:
+ * - word-ladder (Hard)
+ *
+ * Hints:
+ * 1. Try brute-forcing the problem.
+ *
+ * 2. For each word in queries, try comparing to each word in dictionary.
+ *
+ * 3. If there is a maximum of two edit differences, the word should be present
+ * in answer.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string[]} queries
+ * @param {string[]} dictionary
+ * @return {string[]}
+ */
+const twoEditWords = (queries, dictionary) => {};
+
+export { twoEditWords };"
+`;

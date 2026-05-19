@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2487_remove-nodes-from-linked-list test template: 2487_remove-nodes-from-linked-list 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { removeNodes } from '../../src/2401-2500/2487_remove-nodes-from-linked-list.js';
+
+const testcases = [
+    { head: [5,2,13,3,8], expected: [13,8] },
+    { head: [1,1,1,1], expected: [1,1,1,1] },
+];
+
+describe('removeNodes', () => {
+    test.each(structuredClone(testcases))('removeNodes($head) -> $expected', ({ head, expected }) => {
+        expect(removeNodes(head)).toStrictEqual(expected);
+    });
+});"
+`;

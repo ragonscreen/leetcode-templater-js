@@ -1,0 +1,47 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1717_maximum-score-from-removing-substrings solution template: 1717_maximum-score-from-removing-substrings 1`] = `
+"/**
+ * 1717. Maximum Score From Removing Substrings
+ *
+ * Link: https://leetcode.com/problems/maximum-score-from-removing-substrings/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - String (topic_10)
+ * - Stack (topic_15)
+ * - Greedy (topic_17)
+ * - Senior (position_senior)
+ * - Biweekly Contest 43 (contest_biweekly-contest-43)
+ *
+ * Stats:
+ * - Total Accepted: 243,642
+ * - Total Submissions: 366,568
+ * - Acceptance Rate: 66.5%
+ *
+ * Similar Problems:
+ * - count-words-obtained-after-adding-a-letter (Medium)
+ *
+ * Hints:
+ * 1. Note that it is always more optimal to take one type of substring before another
+ *
+ * 2. You can use a stack to handle erasures
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @param {number} x
+ * @param {number} y
+ * @return {number}
+ */
+const maximumGain = (s, x, y) => {};
+
+export { maximumGain };"
+`;

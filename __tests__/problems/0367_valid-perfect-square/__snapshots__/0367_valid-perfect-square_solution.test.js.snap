@@ -1,0 +1,38 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0367_valid-perfect-square solution template: 0367_valid-perfect-square 1`] = `
+"/**
+ * 0367. Valid Perfect Square
+ *
+ * Link: https://leetcode.com/problems/valid-perfect-square/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Math (topic_8)
+ * - Binary Search (topic_11)
+ *
+ * Stats:
+ * - Total Accepted: 931,033
+ * - Total Submissions: 2,073,003
+ * - Acceptance Rate: 44.9%
+ *
+ * Similar Problems:
+ * - sqrtx (Easy)
+ * - sum-of-square-numbers (Medium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number} num
+ * @return {boolean}
+ */
+const isPerfectSquare = (num) => {};
+
+export { isPerfectSquare };"
+`;

@@ -1,0 +1,55 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1631_path-with-minimum-effort solution template: 1631_path-with-minimum-effort 1`] = `
+"/**
+ * 1631. Path With Minimum Effort
+ *
+ * Link: https://leetcode.com/problems/path-with-minimum-effort/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Binary Search (topic_11)
+ * - Depth-First Search (topic_21)
+ * - Breadth-First Search (topic_22)
+ * - Union-Find (topic_23)
+ * - Heap (Priority Queue) (topic_61050)
+ * - Matrix (topic_61053)
+ * - Staff (position_staff)
+ * - Weekly Contest 212 (contest_weekly-contest-212)
+ *
+ * Stats:
+ * - Total Accepted: 464,018
+ * - Total Submissions: 734,374
+ * - Acceptance Rate: 63.2%
+ *
+ * Similar Problems:
+ * - find-the-safest-path-in-a-grid (Medium)
+ * - path-with-maximum-minimum-value (Medium) (Premium)
+ * - swim-in-rising-water (Hard)
+ *
+ * Hints:
+ * 1. Consider the grid as a graph, where adjacent cells have an edge with cost
+ * of the difference between the cells.
+ *
+ * 2. If you are given threshold k, check if it is possible to go from (0, 0)
+ * to (n-1, m-1) using only edges of ≤ k cost.
+ *
+ * 3. Binary search the k value.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[][]} heights
+ * @return {number}
+ */
+const minimumEffortPath = (heights) => {};
+
+export { minimumEffortPath };"
+`;

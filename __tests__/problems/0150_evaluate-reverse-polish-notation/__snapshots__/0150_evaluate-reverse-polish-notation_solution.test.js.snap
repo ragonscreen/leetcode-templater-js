@@ -1,0 +1,39 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0150_evaluate-reverse-polish-notation solution template: 0150_evaluate-reverse-polish-notation 1`] = `
+"/**
+ * 0150. Evaluate Reverse Polish Notation
+ *
+ * Link: https://leetcode.com/problems/evaluate-reverse-polish-notation/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Math (topic_8)
+ * - Stack (topic_15)
+ *
+ * Stats:
+ * - Total Accepted: 1,764,341
+ * - Total Submissions: 3,055,805
+ * - Acceptance Rate: 57.7%
+ *
+ * Similar Problems:
+ * - basic-calculator (Hard)
+ * - expression-add-operators (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string[]} tokens
+ * @return {number}
+ */
+const evalRPN = (tokens) => {};
+
+export { evalRPN };"
+`;

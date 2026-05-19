@@ -1,0 +1,42 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0815_bus-routes solution template: 0815_bus-routes 1`] = `
+"/**
+ * 0815. Bus Routes
+ *
+ * Link: https://leetcode.com/problems/bus-routes/
+ * Category: Algorithms
+ * Difficulty: Hard
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Breadth-First Search (topic_22)
+ * - Principal (position_principal)
+ * - Weekly Contest 79 (contest_weekly-contest-79)
+ *
+ * Stats:
+ * - Total Accepted: 291,985
+ * - Total Submissions: 617,119
+ * - Acceptance Rate: 47.3%
+ *
+ * Similar Problems:
+ * - minimum-costs-using-the-train-line (Hard) (Premium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[][]} routes
+ * @param {number} source
+ * @param {number} target
+ * @return {number}
+ */
+const numBusesToDestination = (routes, source, target) => {};
+
+export { numBusesToDestination };"
+`;

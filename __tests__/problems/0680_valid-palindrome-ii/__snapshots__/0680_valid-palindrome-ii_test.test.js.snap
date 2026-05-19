@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0680_valid-palindrome-ii test template: 0680_valid-palindrome-ii 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { validPalindrome } from '../../src/0601-0700/0680_valid-palindrome-ii.js';
+
+const testcases = [
+    { s: "aba", expected: true },
+    { s: "abca", expected: true },
+    { s: "abc", expected: false },
+];
+
+describe('validPalindrome', () => {
+    test.each(structuredClone(testcases))('validPalindrome($s) -> $expected', ({ s, expected }) => {
+        expect(validPalindrome(s)).toStrictEqual(expected);
+    });
+});"
+`;

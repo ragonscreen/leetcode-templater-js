@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0424_longest-repeating-character-replacement test template: 0424_longest-repeating-character-replacement 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { characterReplacement } from '../../src/0401-0500/0424_longest-repeating-character-replacement.js';
+
+const testcases = [
+    { s: "ABAB", k: 2, expected: 4 },
+    { s: "AABABBA", k: 1, expected: 4 },
+];
+
+describe('characterReplacement', () => {
+    test.each(structuredClone(testcases))('characterReplacement($s, $k) -> $expected', ({ s, k, expected }) => {
+        expect(characterReplacement(s, k)).toStrictEqual(expected);
+    });
+});"
+`;

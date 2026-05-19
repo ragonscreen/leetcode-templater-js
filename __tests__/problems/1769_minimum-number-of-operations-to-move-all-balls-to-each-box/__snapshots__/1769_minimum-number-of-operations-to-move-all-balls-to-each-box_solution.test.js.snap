@@ -1,0 +1,48 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1769_minimum-number-of-operations-to-move-all-balls-to-each-box solution template: 1769_minimum-number-of-operations-to-move-all-balls-to-each-box 1`] = `
+"/**
+ * 1769. Minimum Number of Operations to Move All Balls to Each Box
+ *
+ * Link: https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - String (topic_10)
+ * - Prefix Sum (topic_61068)
+ * - Senior (position_senior)
+ * - Weekly Contest 229 (contest_weekly-contest-229)
+ *
+ * Stats:
+ * - Total Accepted: 340,413
+ * - Total Submissions: 377,719
+ * - Acceptance Rate: 90.1%
+ *
+ * Similar Problems:
+ * - minimum-cost-to-move-chips-to-the-same-position (Easy)
+ * - minimum-moves-to-spread-stones-over-grid (Medium)
+ *
+ * Hints:
+ * 1. If you want to move a ball from box i to box j, you'll need abs(i-j) moves.
+ *
+ * 2. To move all balls to some box, you can move them one by one.
+ *
+ * 3. For each box i, iterate on each ball in a box j, and add abs(i-j) to answers[i].
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} boxes
+ * @return {number[]}
+ */
+const minOperations = (boxes) => {};
+
+export { minOperations };"
+`;

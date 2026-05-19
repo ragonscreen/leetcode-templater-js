@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3914_minimum-operations-to-make-array-non-decreasing test template: 3914_minimum-operations-to-make-array-non-decreasing 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { minOperations } from '../../src/3901-4000/3914_minimum-operations-to-make-array-non-decreasing.js';
+
+const testcases = [
+    { nums: [3,3,2,1], expected: 2 },
+    { nums: [5,1,2,3], expected: 4 },
+];
+
+describe('minOperations', () => {
+    test.each(structuredClone(testcases))('minOperations($nums) -> $expected', ({ nums, expected }) => {
+        expect(minOperations(nums)).toStrictEqual(expected);
+    });
+});"
+`;

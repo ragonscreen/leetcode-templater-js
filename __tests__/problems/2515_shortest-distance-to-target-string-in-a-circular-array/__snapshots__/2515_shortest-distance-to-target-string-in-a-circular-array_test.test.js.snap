@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2515_shortest-distance-to-target-string-in-a-circular-array test template: 2515_shortest-distance-to-target-string-in-a-circular-array 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { closestTarget } from '../../src/2501-2600/2515_shortest-distance-to-target-string-in-a-circular-array.js';
+
+const testcases = [
+    { words: ["hello","i","am","leetcode","hello"], target: "hello", startIndex: 1, expected: 1 },
+    { words: ["a","b","leetcode"], target: "leetcode", startIndex: 0, expected: 1 },
+    { words: ["i","eat","leetcode"], target: "ate", startIndex: 0, expected: -1 },
+];
+
+describe('closestTarget', () => {
+    test.each(structuredClone(testcases))('closestTarget($words, $target, $startIndex) -> $expected', ({ words, target, startIndex, expected }) => {
+        expect(closestTarget(words, target, startIndex)).toStrictEqual(expected);
+    });
+});"
+`;

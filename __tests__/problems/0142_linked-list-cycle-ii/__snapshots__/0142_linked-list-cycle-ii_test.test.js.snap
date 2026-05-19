@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0142_linked-list-cycle-ii test template: 0142_linked-list-cycle-ii 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { detectCycle } from '../../src/0101-0200/0142_linked-list-cycle-ii.js';
+
+const testcases = [
+    { head: [3,2,0,-4], pos: 1, expected: "tail connects to node index 1" },
+    { head: [1,2], pos: 0, expected: "tail connects to node index 0" },
+    { head: [1], pos: -1, expected: "no cycle" },
+];
+
+describe('detectCycle', () => {
+    test.each(structuredClone(testcases))('detectCycle($head, $pos) -> $expected', ({ head, pos, expected }) => {
+        expect(detectCycle(head, pos)).toStrictEqual(expected);
+    });
+});"
+`;

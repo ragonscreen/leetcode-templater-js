@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2121_intervals-between-identical-elements test template: 2121_intervals-between-identical-elements 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { getDistances } from '../../src/2101-2200/2121_intervals-between-identical-elements.js';
+
+const testcases = [
+    { arr: [2,1,3,1,2,3,3], expected: [4,2,7,2,4,4,5] },
+    { arr: [10,5,10,10], expected: [5,0,3,4] },
+];
+
+describe('getDistances', () => {
+    test.each(structuredClone(testcases))('getDistances($arr) -> $expected', ({ arr, expected }) => {
+        expect(getDistances(arr)).toStrictEqual(expected);
+    });
+});"
+`;

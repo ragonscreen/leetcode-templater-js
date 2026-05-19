@@ -1,0 +1,38 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0864_shortest-path-to-get-all-keys solution template: 0864_shortest-path-to-get-all-keys 1`] = `
+"/**
+ * 0864. Shortest Path to Get All Keys
+ *
+ * Link: https://leetcode.com/problems/shortest-path-to-get-all-keys/
+ * Category: Algorithms
+ * Difficulty: Hard
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Bit Manipulation (topic_19)
+ * - Breadth-First Search (topic_22)
+ * - Matrix (topic_61053)
+ * - Principal (position_principal)
+ * - Weekly Contest 92 (contest_weekly-contest-92)
+ *
+ * Stats:
+ * - Total Accepted: 96,569
+ * - Total Submissions: 176,868
+ * - Acceptance Rate: 54.6%
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string[]} grid
+ * @return {number}
+ */
+const shortestPathAllKeys = (grid) => {};
+
+export { shortestPathAllKeys };"
+`;

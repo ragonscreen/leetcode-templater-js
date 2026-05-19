@@ -1,0 +1,39 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3110_score-of-a-string solution template: 3110_score-of-a-string 1`] = `
+"/**
+ * 3110. Score of a String
+ *
+ * Link: https://leetcode.com/problems/score-of-a-string/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - String (topic_10)
+ * - Mid Level (position_mid-level)
+ * - Biweekly Contest 128 (contest_biweekly-contest-128)
+ *
+ * Stats:
+ * - Total Accepted: 448,682
+ * - Total Submissions: 491,166
+ * - Acceptance Rate: 91.4%
+ *
+ * Hints:
+ * 1. Sum the difference between all the adjacent characters by just taking the
+ * absolute difference of their ASCII values.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @return {number}
+ */
+const scoreOfString = (s) => {};
+
+export { scoreOfString };"
+`;

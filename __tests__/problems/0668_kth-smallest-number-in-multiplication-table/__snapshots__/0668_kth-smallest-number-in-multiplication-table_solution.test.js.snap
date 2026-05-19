@@ -1,0 +1,44 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0668_kth-smallest-number-in-multiplication-table solution template: 0668_kth-smallest-number-in-multiplication-table 1`] = `
+"/**
+ * 0668. Kth Smallest Number in Multiplication Table
+ *
+ * Link: https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/
+ * Category: Algorithms
+ * Difficulty: Hard
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Math (topic_8)
+ * - Binary Search (topic_11)
+ * - Principal (position_principal)
+ *
+ * Stats:
+ * - Total Accepted: 85,753
+ * - Total Submissions: 158,413
+ * - Acceptance Rate: 54.1%
+ *
+ * Similar Problems:
+ * - k-th-smallest-prime-fraction (Medium)
+ * - kth-smallest-element-in-a-sorted-matrix (Medium)
+ * - find-k-th-smallest-pair-distance (Hard)
+ * - kth-smallest-amount-with-single-denomination-combination (Hard)
+ * - minimum-time-to-eat-all-grains (Hard) (Premium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number} m
+ * @param {number} n
+ * @param {number} k
+ * @return {number}
+ */
+const findKthNumber = (m, n, k) => {};
+
+export { findKthNumber };"
+`;

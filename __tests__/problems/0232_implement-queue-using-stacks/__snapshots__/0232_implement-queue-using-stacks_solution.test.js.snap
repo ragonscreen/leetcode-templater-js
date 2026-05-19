@@ -1,0 +1,72 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0232_implement-queue-using-stacks solution template: 0232_implement-queue-using-stacks 1`] = `
+"/**
+ * 0232. Implement Queue using Stacks
+ *
+ * Link: https://leetcode.com/problems/implement-queue-using-stacks/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Stack (topic_15)
+ * - Design (topic_25)
+ * - Queue (topic_34)
+ *
+ * Stats:
+ * - Total Accepted: 1,499,602
+ * - Total Submissions: 2,148,957
+ * - Acceptance Rate: 69.8%
+ *
+ * Similar Problems:
+ * - implement-stack-using-queues (Easy)
+ */
+
+/**
+ * Approach:
+ */
+class MyQueue {
+    /**
+     * Time Complexity: O()
+     * Space Complexity: O()
+     */
+    constructor() {}
+
+    /**
+     * Time Complexity: O()
+     * Space Complexity: O()
+     *
+     * @param {number} x
+     * @return {void}
+     */
+    push(x) {}
+
+    /**
+     * Time Complexity: O()
+     * Space Complexity: O()
+     *
+     * @return {number}
+     */
+    pop() {}
+
+    /**
+     * Time Complexity: O()
+     * Space Complexity: O()
+     *
+     * @return {number}
+     */
+    peek() {}
+
+    /**
+     * Time Complexity: O()
+     * Space Complexity: O()
+     *
+     * @return {boolean}
+     */
+    empty() {}
+}
+
+export { MyQueue };"
+`;

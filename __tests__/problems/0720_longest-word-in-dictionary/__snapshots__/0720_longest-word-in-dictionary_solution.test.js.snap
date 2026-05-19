@@ -1,0 +1,47 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0720_longest-word-in-dictionary solution template: 0720_longest-word-in-dictionary 1`] = `
+"/**
+ * 0720. Longest Word in Dictionary
+ *
+ * Link: https://leetcode.com/problems/longest-word-in-dictionary/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - String (topic_10)
+ * - Trie (topic_27)
+ * - Sorting (topic_61049)
+ * - Senior (position_senior)
+ *
+ * Stats:
+ * - Total Accepted: 193,455
+ * - Total Submissions: 353,006
+ * - Acceptance Rate: 54.8%
+ *
+ * Similar Problems:
+ * - implement-magic-dictionary (Medium)
+ * - longest-word-in-dictionary-through-deleting (Medium)
+ * - longest-word-with-all-prefixes (Medium) (Premium)
+ *
+ * Hints:
+ * 1. For every word in the input list, we can check whether all prefixes of
+ * that word are in the input list by using a Set.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string[]} words
+ * @return {string}
+ */
+const longestWord = (words) => {};
+
+export { longestWord };"
+`;

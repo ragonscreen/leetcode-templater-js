@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0693_binary-number-with-alternating-bits test template: 0693_binary-number-with-alternating-bits 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { hasAlternatingBits } from '../../src/0601-0700/0693_binary-number-with-alternating-bits.js';
+
+const testcases = [
+    { n: 5, expected: true },
+    { n: 7, expected: false },
+    { n: 11, expected: false },
+];
+
+describe('hasAlternatingBits', () => {
+    test.each(structuredClone(testcases))('hasAlternatingBits($n) -> $expected', ({ n, expected }) => {
+        expect(hasAlternatingBits(n)).toStrictEqual(expected);
+    });
+});"
+`;

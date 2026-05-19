@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2428_maximum-sum-of-an-hourglass test template: 2428_maximum-sum-of-an-hourglass 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { maxSum } from '../../src/2401-2500/2428_maximum-sum-of-an-hourglass.js';
+
+const testcases = [
+    { grid: [[6,2,1,3],[4,2,1,5],[9,2,8,7],[4,1,2,9]], expected: 30 },
+    { grid: [[1,2,3],[4,5,6],[7,8,9]], expected: 35 },
+];
+
+describe('maxSum', () => {
+    test.each(structuredClone(testcases))('maxSum($grid) -> $expected', ({ grid, expected }) => {
+        expect(maxSum(grid)).toStrictEqual(expected);
+    });
+});"
+`;

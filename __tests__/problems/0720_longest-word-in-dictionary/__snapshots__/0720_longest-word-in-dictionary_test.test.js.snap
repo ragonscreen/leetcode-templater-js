@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0720_longest-word-in-dictionary test template: 0720_longest-word-in-dictionary 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { longestWord } from '../../src/0701-0800/0720_longest-word-in-dictionary.js';
+
+const testcases = [
+    { words: ["w","wo","wor","worl","world"], expected: "world" },
+    { words: ["a","banana","app","appl","ap","apply","apple"], expected: "apple" },
+];
+
+describe('longestWord', () => {
+    test.each(structuredClone(testcases))('longestWord($words) -> $expected', ({ words, expected }) => {
+        expect(longestWord(words)).toStrictEqual(expected);
+    });
+});"
+`;

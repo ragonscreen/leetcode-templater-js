@@ -1,0 +1,40 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0921_minimum-add-to-make-parentheses-valid solution template: 0921_minimum-add-to-make-parentheses-valid 1`] = `
+"/**
+ * 0921. Minimum Add to Make Parentheses Valid
+ *
+ * Link: https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - String (topic_10)
+ * - Stack (topic_15)
+ * - Greedy (topic_17)
+ * - Senior (position_senior)
+ * - Weekly Contest 106 (contest_weekly-contest-106)
+ *
+ * Stats:
+ * - Total Accepted: 706,649
+ * - Total Submissions: 949,748
+ * - Acceptance Rate: 74.4%
+ *
+ * Similar Problems:
+ * - minimum-number-of-swaps-to-make-the-string-balanced (Medium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @return {number}
+ */
+const minAddToMakeValid = (s) => {};
+
+export { minAddToMakeValid };"
+`;

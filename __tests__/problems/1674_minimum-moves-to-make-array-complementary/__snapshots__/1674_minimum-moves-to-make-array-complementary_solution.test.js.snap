@@ -1,0 +1,51 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1674_minimum-moves-to-make-array-complementary solution template: 1674_minimum-moves-to-make-array-complementary 1`] = `
+"/**
+ * 1674. Minimum Moves to Make Array Complementary
+ *
+ * Link: https://leetcode.com/problems/minimum-moves-to-make-array-complementary/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Prefix Sum (topic_61068)
+ * - Senior Staff (position_senior-staff)
+ * - Weekly Contest 217 (contest_weekly-contest-217)
+ *
+ * Stats:
+ * - Total Accepted: 73,254
+ * - Total Submissions: 112,418
+ * - Acceptance Rate: 65.2%
+ *
+ * Similar Problems:
+ * - zero-array-transformation-ii (Medium)
+ * - zero-array-transformation-iii (Medium)
+ *
+ * Hints:
+ * 1. Given a target sum x, each pair of nums[i] and nums[n-1-i] would either
+ * need 0, 1, or 2 modifications.
+ *
+ * 2. Can you find the optimal target sum x value such that the sum of
+ * modifications is minimized?
+ *
+ * 3. Create a difference array to efficiently sum all the modifications.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number} limit
+ * @return {number}
+ */
+const minMoves = (nums, limit) => {};
+
+export { minMoves };"
+`;

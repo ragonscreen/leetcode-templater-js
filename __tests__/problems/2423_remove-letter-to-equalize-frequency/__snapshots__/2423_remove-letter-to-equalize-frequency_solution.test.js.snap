@@ -1,0 +1,46 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2423_remove-letter-to-equalize-frequency solution template: 2423_remove-letter-to-equalize-frequency 1`] = `
+"/**
+ * 2423. Remove Letter To Equalize Frequency
+ *
+ * Link: https://leetcode.com/problems/remove-letter-to-equalize-frequency/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Hash Table (topic_6)
+ * - String (topic_10)
+ * - Counting (topic_61062)
+ * - Mid Level (position_mid-level)
+ * - Biweekly Contest 88 (contest_biweekly-contest-88)
+ *
+ * Stats:
+ * - Total Accepted: 77,251
+ * - Total Submissions: 398,977
+ * - Acceptance Rate: 19.4%
+ *
+ * Similar Problems:
+ * - minimum-deletions-to-make-character-frequencies-unique (Medium)
+ * - maximum-equal-frequency (Hard)
+ *
+ * Hints:
+ * 1. Brute force all letters that could be removed.
+ *
+ * 2. Use a frequency array of size 26.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} word
+ * @return {boolean}
+ */
+const equalFrequency = (word) => {};
+
+export { equalFrequency };"
+`;

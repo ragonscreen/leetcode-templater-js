@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2001_number-of-pairs-of-interchangeable-rectangles test template: 2001_number-of-pairs-of-interchangeable-rectangles 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { interchangeableRectangles } from '../../src/2001-2100/2001_number-of-pairs-of-interchangeable-rectangles.js';
+
+const testcases = [
+    { rectangles: [[4,8],[3,6],[10,20],[15,30]], expected: 6 },
+    { rectangles: [[4,5],[7,8]], expected: 0 },
+];
+
+describe('interchangeableRectangles', () => {
+    test.each(structuredClone(testcases))('interchangeableRectangles($rectangles) -> $expected', ({ rectangles, expected }) => {
+        expect(interchangeableRectangles(rectangles)).toStrictEqual(expected);
+    });
+});"
+`;

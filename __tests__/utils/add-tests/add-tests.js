@@ -5,7 +5,7 @@ import { padNum } from '../../../src/utils/pad-num.js';
 const constructTestStr = (problemTitle, fileNameBase, type = 'solution') => {
         const typeNormalised = `${type[0].toUpperCase()}${type.slice(1)}`;
 
-        return `import { beforeAll, describe, expect, test } from 'bun:test';
+        return `import { beforeAll, describe, expect, mock, test } from 'bun:test';
 import { readFile } from 'node:fs/promises';
 
 mock.module('../../../src/utils/get-current-date.js', () => {
@@ -30,7 +30,7 @@ beforeAll(async () => {
 });
 
 describe('${problemTitle}', () => {
-        test('${type} file', () => {
+        test('${type} template', () => {
                 const problemDataParsed = parseProblemData(SOURCE);
                 const filePaths = getFilePaths(problemDataParsed);
                 const ${type} = construct${typeNormalised}(problemDataParsed, filePaths);
@@ -51,11 +51,11 @@ const addTests = async () => {
         await createFile(filePathResponse, JSON.stringify(problemData));
 
         const strSol = constructTestStr(problemId, fileNameBase, 'solution');
-        const filePathSolution = `${fileNameBase}_solution-file.test.js`;
+        const filePathSolution = `${fileNameBase}_solution.test.js`;
         await createFile(filePathSolution, strSol);
 
         const strTest = constructTestStr(problemId, fileNameBase, 'test');
-        const filePathTest = `${fileNameBase}_test-file.test.js`;
+        const filePathTest = `${fileNameBase}_test.test.js`;
         await createFile(filePathTest, strTest);
 };
 

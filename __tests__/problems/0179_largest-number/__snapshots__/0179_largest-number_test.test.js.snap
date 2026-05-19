@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0179_largest-number test template: 0179_largest-number 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { largestNumber } from '../../src/0101-0200/0179_largest-number.js';
+
+const testcases = [
+    { nums: [10,2], expected: "210" },
+    { nums: [3,30,34,5,9], expected: "9534330" },
+];
+
+describe('largestNumber', () => {
+    test.each(structuredClone(testcases))('largestNumber($nums) -> $expected', ({ nums, expected }) => {
+        expect(largestNumber(nums)).toStrictEqual(expected);
+    });
+});"
+`;

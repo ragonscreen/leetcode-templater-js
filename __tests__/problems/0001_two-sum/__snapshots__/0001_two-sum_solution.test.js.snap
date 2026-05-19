@@ -1,0 +1,73 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0001_two-sum solution template: 0001_two-sum 1`] = `
+"/**
+ * 0001. Two Sum
+ *
+ * Link: https://leetcode.com/problems/two-sum/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Junior (position_junior)
+ *
+ * Stats:
+ * - Total Accepted: 21,772,424
+ * - Total Submissions: 37,873,408
+ * - Acceptance Rate: 57.5%
+ *
+ * Similar Problems:
+ * - check-distances-between-same-letters (Easy)
+ * - count-number-of-pairs-with-absolute-difference-k (Easy)
+ * - count-pairs-whose-sum-is-less-than-target (Easy)
+ * - find-all-k-distant-indices-in-an-array (Easy)
+ * - find-subarrays-with-equal-sum (Easy)
+ * - first-letter-to-appear-twice (Easy)
+ * - largest-positive-integer-that-exists-with-its-negative (Easy)
+ * - number-of-arithmetic-triplets (Easy)
+ * - number-of-distinct-averages (Easy)
+ * - two-sum-iii-data-structure-design (Easy) (Premium)
+ * - two-sum-iv-input-is-a-bst (Easy)
+ * - two-sum-less-than-k (Easy) (Premium)
+ * - 3sum (Medium)
+ * - 4sum (Medium)
+ * - count-good-meals (Medium)
+ * - max-number-of-k-sum-pairs (Medium)
+ * - node-with-highest-edge-score (Medium)
+ * - number-of-pairs-of-strings-with-concatenation-equal-to-target (Medium)
+ * - subarray-sum-equals-k (Medium)
+ * - two-sum-ii-input-array-is-sorted (Medium)
+ * - number-of-excellent-pairs (Hard)
+ *
+ * Hints:
+ * 1. A really brute force way would be to search for all possible pairs of
+ * numbers but that would be too slow. Again, it's best to try out brute
+ * force solutions just for completeness. It is from these brute force
+ * solutions that you can come up with optimizations.
+ *
+ * 2. So, if we fix one of the numbers, say \`x\`, we have to scan the entire
+ * array to find the next number \`y\` which is \`value - x\` where value is the
+ * input parameter. Can we change our array somehow so that this search
+ * becomes faster?
+ *
+ * 3. The second train of thought is, without changing the array, can we use
+ * additional space somehow? Like maybe a hash map to speed up the search?
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number[]}
+ */
+const twoSum = (nums, target) => {};
+
+export { twoSum };"
+`;

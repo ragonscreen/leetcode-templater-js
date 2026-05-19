@@ -1,0 +1,44 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1813_sentence-similarity-iii solution template: 1813_sentence-similarity-iii 1`] = `
+"/**
+ * 1813. Sentence Similarity III
+ *
+ * Link: https://leetcode.com/problems/sentence-similarity-iii/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Two Pointers (topic_9)
+ * - String (topic_10)
+ * - Senior (position_senior)
+ * - Biweekly Contest 49 (contest_biweekly-contest-49)
+ *
+ * Stats:
+ * - Total Accepted: 133,004
+ * - Total Submissions: 274,722
+ * - Acceptance Rate: 48.4%
+ *
+ * Hints:
+ * 1. One way to look at it is to find one sentence as a concatenation of a
+ * prefix and suffix from the other sentence.
+ *
+ * 2. Get the longest common prefix between them and the longest common suffix.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} sentence1
+ * @param {string} sentence2
+ * @return {boolean}
+ */
+const areSentencesSimilar = (sentence1, sentence2) => {};
+
+export { areSentencesSimilar };"
+`;

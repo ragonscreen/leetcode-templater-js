@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0058_length-of-last-word test template: 0058_length-of-last-word 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { lengthOfLastWord } from '../../src/0001-0100/0058_length-of-last-word.js';
+
+const testcases = [
+    { s: "Hello World", expected: 5 },
+    { s: "   fly me   to   the moon  ", expected: 4 },
+    { s: "luffy is still joyboy", expected: 6 },
+];
+
+describe('lengthOfLastWord', () => {
+    test.each(structuredClone(testcases))('lengthOfLastWord($s) -> $expected', ({ s, expected }) => {
+        expect(lengthOfLastWord(s)).toStrictEqual(expected);
+    });
+});"
+`;

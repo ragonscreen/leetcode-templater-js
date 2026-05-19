@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3918_sum-of-primes-between-number-and-its-reverse test template: 3918_sum-of-primes-between-number-and-its-reverse 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { sumOfPrimesInRange } from '../../src/3901-4000/3918_sum-of-primes-between-number-and-its-reverse.js';
+
+const testcases = [
+    { n: 13, expected: 132 },
+    { n: 10, expected: 17 },
+    { n: 8, expected: 0 },
+];
+
+describe('sumOfPrimesInRange', () => {
+    test.each(structuredClone(testcases))('sumOfPrimesInRange($n) -> $expected', ({ n, expected }) => {
+        expect(sumOfPrimesInRange(n)).toStrictEqual(expected);
+    });
+});"
+`;

@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0015_3sum test template: 0015_3sum 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { threeSum } from '../../src/0001-0100/0015_3sum.js';
+
+const testcases = [
+    { nums: [-1,0,1,2,-1,-4], expected: [[-1,-1,2],[-1,0,1]] },
+    { nums: [0,1,1], expected: [] },
+    { nums: [0,0,0], expected: [[0,0,0]] },
+];
+
+describe('threeSum', () => {
+    test.each(structuredClone(testcases))('threeSum($nums) -> $expected', ({ nums, expected }) => {
+        expect(threeSum(nums)).toStrictEqual(expected);
+    });
+});"
+`;

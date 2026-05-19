@@ -1,0 +1,43 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1665_minimum-initial-energy-to-finish-tasks solution template: 1665_minimum-initial-energy-to-finish-tasks 1`] = `
+"/**
+ * 1665. Minimum Initial Energy to Finish Tasks
+ *
+ * Link: https://leetcode.com/problems/minimum-initial-energy-to-finish-tasks/
+ * Category: Algorithms
+ * Difficulty: Hard
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Greedy (topic_17)
+ * - Sorting (topic_61049)
+ * - Senior Staff (position_senior-staff)
+ * - Weekly Contest 216 (contest_weekly-contest-216)
+ *
+ * Stats:
+ * - Total Accepted: 99,012
+ * - Total Submissions: 129,536
+ * - Acceptance Rate: 76.4%
+ *
+ * Hints:
+ * 1. We can easily figure that the f(x) : does x solve this array is monotonic
+ * so binary Search is doable
+ *
+ * 2. Figure a sorting pattern
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[][]} tasks
+ * @return {number}
+ */
+const minimumEffort = (tasks) => {};
+
+export { minimumEffort };"
+`;

@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0076_minimum-window-substring test template: 0076_minimum-window-substring 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { minWindow } from '../../src/0001-0100/0076_minimum-window-substring.js';
+
+const testcases = [
+    { s: "ADOBECODEBANC", t: "ABC", expected: "BANC" },
+    { s: "a", t: "a", expected: "a" },
+    { s: "a", t: "aa", expected: "" },
+];
+
+describe('minWindow', () => {
+    test.each(structuredClone(testcases))('minWindow($s, $t) -> $expected', ({ s, t, expected }) => {
+        expect(minWindow(s, t)).toStrictEqual(expected);
+    });
+});"
+`;

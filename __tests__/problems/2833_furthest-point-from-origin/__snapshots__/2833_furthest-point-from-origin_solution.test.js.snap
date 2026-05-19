@@ -1,0 +1,46 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2833_furthest-point-from-origin solution template: 2833_furthest-point-from-origin 1`] = `
+"/**
+ * 2833. Furthest Point From Origin
+ *
+ * Link: https://leetcode.com/problems/furthest-point-from-origin/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - String (topic_10)
+ * - Counting (topic_61062)
+ * - Mid Level (position_mid-level)
+ * - Weekly Contest 360 (contest_weekly-contest-360)
+ *
+ * Stats:
+ * - Total Accepted: 171,980
+ * - Total Submissions: 223,231
+ * - Acceptance Rate: 77.0%
+ *
+ * Similar Problems:
+ * - robot-return-to-origin (Easy)
+ *
+ * Hints:
+ * 1. <div class="_1l1MA">In an optimal answer, all occurrences of \`'_’\` will
+ * be replaced with the <strong>same</strong> character.</div>
+ *
+ * 2. <div class="_1l1MA">Replace all characters of \`'_’\` with the character
+ * that occurs the most. </div>
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} moves
+ * @return {number}
+ */
+const furthestDistanceFromOrigin = (moves) => {};
+
+export { furthestDistanceFromOrigin };"
+`;

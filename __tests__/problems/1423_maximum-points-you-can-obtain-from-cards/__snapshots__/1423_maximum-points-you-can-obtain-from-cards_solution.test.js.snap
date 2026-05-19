@@ -1,0 +1,51 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1423_maximum-points-you-can-obtain-from-cards solution template: 1423_maximum-points-you-can-obtain-from-cards 1`] = `
+"/**
+ * 1423. Maximum Points You Can Obtain from Cards
+ *
+ * Link: https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Sliding Window (topic_55821)
+ * - Prefix Sum (topic_61068)
+ * - Senior (position_senior)
+ * - Weekly Contest 186 (contest_weekly-contest-186)
+ *
+ * Stats:
+ * - Total Accepted: 524,900
+ * - Total Submissions: 910,654
+ * - Acceptance Rate: 57.6%
+ *
+ * Similar Problems:
+ * - minimum-recolors-to-get-k-consecutive-black-blocks (Easy)
+ * - removing-minimum-and-maximum-from-array (Medium)
+ * - maximum-score-from-performing-multiplication-operations (Hard)
+ * - maximum-spending-after-buying-items (Hard)
+ *
+ * Hints:
+ * 1. Let the sum of all points be total_pts. You need to remove a sub-array
+ * from cardPoints with length n - k.
+ *
+ * 2. Keep a window of size n - k over the array. The answer is max(answer,
+ * total_pts - sumOfCurrentWindow)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} cardPoints
+ * @param {number} k
+ * @return {number}
+ */
+const maxScore = (cardPoints, k) => {};
+
+export { maxScore };"
+`;

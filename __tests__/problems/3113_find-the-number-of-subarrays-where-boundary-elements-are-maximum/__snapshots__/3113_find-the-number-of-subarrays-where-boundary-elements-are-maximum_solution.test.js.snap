@@ -1,0 +1,58 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3113_find-the-number-of-subarrays-where-boundary-elements-are-maximum solution template: 3113_find-the-number-of-subarrays-where-boundary-elements-are-maximum 1`] = `
+"/**
+ * 3113. Find the Number of Subarrays Where Boundary Elements Are Maximum
+ *
+ * Link: https://leetcode.com/problems/find-the-number-of-subarrays-where-boundary-elements-are-maximum/
+ * Category: Algorithms
+ * Difficulty: Hard
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Binary Search (topic_11)
+ * - Stack (topic_15)
+ * - Monotonic Stack (topic_61054)
+ * - Senior Staff (position_senior-staff)
+ * - Biweekly Contest 128 (contest_biweekly-contest-128)
+ *
+ * Stats:
+ * - Total Accepted: 14,886
+ * - Total Submissions: 44,734
+ * - Acceptance Rate: 33.3%
+ *
+ * Similar Problems:
+ * - count-subarrays-where-max-element-appears-at-least-k-times (Medium)
+ * - number-of-subarrays-with-bounded-maximum (Medium)
+ * - count-subarrays-with-fixed-bounds (Hard)
+ *
+ * Hints:
+ * 1. For each element \`nums[i]\`, we can count the number of valid subarrays
+ * ending with it.
+ *
+ * 2. For each index \`i\`, find the nearest index \`j\` on its left \`(j < i)\` such
+ * that \`nums[j] < nums[i]\`. This can be done via a monotonic stack.
+ *
+ * 3. For each index \`i\`, find the number of indices \`k\` in the window \`[j + 1,
+ * i]\` such that \`nums[k] == nums[i]\`, this is the number of the valid
+ * subarrays ending with \`nums[i]\`. This can be done by sliding window.
+ *
+ * 4. Sum the answer of all the indices \`i\` to get the final result.
+ *
+ * 5. Is it possible to use DSU as an alternate solution?
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number}
+ */
+const numberOfSubarrays = (nums) => {};
+
+export { numberOfSubarrays };"
+`;

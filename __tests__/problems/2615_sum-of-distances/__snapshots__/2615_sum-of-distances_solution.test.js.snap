@@ -1,0 +1,51 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2615_sum-of-distances solution template: 2615_sum-of-distances 1`] = `
+"/**
+ * 2615. Sum of Distances
+ *
+ * Link: https://leetcode.com/problems/sum-of-distances/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Prefix Sum (topic_61068)
+ * - Senior (position_senior)
+ * - Weekly Contest 340 (contest_weekly-contest-340)
+ *
+ * Stats:
+ * - Total Accepted: 111,914
+ * - Total Submissions: 222,220
+ * - Acceptance Rate: 50.4%
+ *
+ * Similar Problems:
+ * - remove-duplicates-from-sorted-array (Easy)
+ * - find-all-duplicates-in-an-array (Medium)
+ * - minimum-operations-to-make-all-array-elements-equal (Medium)
+ *
+ * Hints:
+ * 1. Can we use the prefix sum here?
+ *
+ * 2. For each number x, collect all the indices where x occurs, and calculate
+ * the prefix sum of the array.
+ *
+ * 3. For each occurrence of x, the indices to the right will be regular
+ * subtraction while the indices to the left will be reversed subtraction.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number[]}
+ */
+const distance = (nums) => {};
+
+export { distance };"
+`;

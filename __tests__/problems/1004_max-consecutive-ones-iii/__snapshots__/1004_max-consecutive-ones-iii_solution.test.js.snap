@@ -1,0 +1,67 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1004_max-consecutive-ones-iii solution template: 1004_max-consecutive-ones-iii 1`] = `
+"/**
+ * 1004. Max Consecutive Ones III
+ *
+ * Link: https://leetcode.com/problems/max-consecutive-ones-iii/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Binary Search (topic_11)
+ * - Sliding Window (topic_55821)
+ * - Prefix Sum (topic_61068)
+ * - Senior Staff (position_senior-staff)
+ * - Weekly Contest 126 (contest_weekly-contest-126)
+ *
+ * Stats:
+ * - Total Accepted: 1,408,357
+ * - Total Submissions: 2,080,916
+ * - Acceptance Rate: 67.7%
+ *
+ * Similar Problems:
+ * - max-consecutive-ones (Easy)
+ * - maximum-enemy-forts-that-can-be-captured (Easy)
+ * - minimum-recolors-to-get-k-consecutive-black-blocks (Easy)
+ * - longest-nice-subarray (Medium)
+ * - longest-repeating-character-replacement (Medium)
+ * - longest-subarray-of-1s-after-deleting-one-element (Medium)
+ * - longest-substring-with-at-most-k-distinct-characters (Medium) (Premium)
+ * - max-consecutive-ones-ii (Medium) (Premium)
+ * - maximize-the-confusion-of-an-exam (Medium)
+ * - maximum-sum-of-distinct-subarrays-with-length-k (Medium)
+ *
+ * Hints:
+ * 1. One thing's for sure, we will only flip a zero if it extends an existing
+ * window of 1s. Otherwise, there's no point in doing it, right? Think
+ * Sliding Window!
+ *
+ * 2. Since we know this problem can be solved using the sliding window
+ * construct, we might as well focus in that direction for hints. Basically,
+ * in a given window, we can never have > K zeros, right?
+ *
+ * 3. We don't have a fixed size window in this case. The window size can grow
+ * and shrink depending upon the number of zeros we have (we don't actually
+ * have to flip the zeros here!).
+ *
+ * 4. The way to shrink or expand a window would be based on the number of
+ * zeros that can still be flipped and so on.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number} k
+ * @return {number}
+ */
+const longestOnes = (nums, k) => {};
+
+export { longestOnes };"
+`;

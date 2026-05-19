@@ -1,0 +1,57 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1871_jump-game-vii solution template: 1871_jump-game-vii 1`] = `
+"/**
+ * 1871. Jump Game VII
+ *
+ * Link: https://leetcode.com/problems/jump-game-vii/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - String (topic_10)
+ * - Dynamic Programming (topic_13)
+ * - Sliding Window (topic_55821)
+ * - Prefix Sum (topic_61068)
+ * - Staff (position_staff)
+ * - Weekly Contest 242 (contest_weekly-contest-242)
+ *
+ * Stats:
+ * - Total Accepted: 68,940
+ * - Total Submissions: 258,666
+ * - Acceptance Rate: 26.7%
+ *
+ * Similar Problems:
+ * - count-vowel-strings-in-ranges (Medium)
+ * - jump-game (Medium)
+ * - jump-game-ii (Medium)
+ * - jump-game-iii (Medium)
+ * - jump-game-vi (Medium)
+ * - jump-game-vii (Medium)
+ * - jump-game-viii (Medium) (Premium)
+ * - maximum-number-of-jumps-to-reach-the-last-index (Medium)
+ * - jump-game-iv (Hard)
+ * - jump-game-v (Hard)
+ *
+ * Hints:
+ * 1. Consider for each reachable index i the interval [i + a, i + b].
+ *
+ * 2. Use partial sums to mark the intervals as reachable.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @param {number} minJump
+ * @param {number} maxJump
+ * @return {boolean}
+ */
+const canReach = (s, minJump, maxJump) => {};
+
+export { canReach };"
+`;

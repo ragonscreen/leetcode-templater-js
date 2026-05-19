@@ -1,0 +1,46 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1537_get-the-maximum-score solution template: 1537_get-the-maximum-score 1`] = `
+"/**
+ * 1537. Get the Maximum Score
+ *
+ * Link: https://leetcode.com/problems/get-the-maximum-score/
+ * Category: Algorithms
+ * Difficulty: Hard
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Two Pointers (topic_9)
+ * - Dynamic Programming (topic_13)
+ * - Greedy (topic_17)
+ * - Senior Staff (position_senior-staff)
+ * - Weekly Contest 200 (contest_weekly-contest-200)
+ *
+ * Stats:
+ * - Total Accepted: 36,707
+ * - Total Submissions: 89,312
+ * - Acceptance Rate: 41.1%
+ *
+ * Similar Problems:
+ * - maximum-score-of-a-node-sequence (Hard)
+ *
+ * Hints:
+ * 1. Partition the array by common integers, and choose the path with larger
+ * sum with a DP technique.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums1
+ * @param {number[]} nums2
+ * @return {number}
+ */
+const maxSum = (nums1, nums2) => {};
+
+export { maxSum };"
+`;

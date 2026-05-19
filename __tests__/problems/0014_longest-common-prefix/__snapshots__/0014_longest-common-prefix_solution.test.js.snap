@@ -1,0 +1,41 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0014_longest-common-prefix solution template: 0014_longest-common-prefix 1`] = `
+"/**
+ * 0014. Longest Common Prefix
+ *
+ * Link: https://leetcode.com/problems/longest-common-prefix/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - String (topic_10)
+ * - Trie (topic_27)
+ *
+ * Stats:
+ * - Total Accepted: 5,785,477
+ * - Total Submissions: 12,165,879
+ * - Acceptance Rate: 47.6%
+ *
+ * Similar Problems:
+ * - smallest-missing-integer-greater-than-sequential-prefix-sum (Easy)
+ * - find-the-length-of-the-longest-common-prefix (Medium)
+ * - longest-common-prefix-after-at-most-one-removal (Medium) (Premium)
+ * - longest-common-suffix-queries (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string[]} strs
+ * @return {string}
+ */
+const longestCommonPrefix = (strs) => {};
+
+export { longestCommonPrefix };"
+`;

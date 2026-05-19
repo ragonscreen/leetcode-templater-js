@@ -1,0 +1,54 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2183_count-array-pairs-divisible-by-k solution template: 2183_count-array-pairs-divisible-by-k 1`] = `
+"/**
+ * 2183. Count Array Pairs Divisible by K
+ *
+ * Link: https://leetcode.com/problems/count-array-pairs-divisible-by-k/
+ * Category: Algorithms
+ * Difficulty: Hard
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Math (topic_8)
+ * - Counting (topic_61062)
+ * - Number Theory (topic_61067)
+ * - Senior Staff (position_senior-staff)
+ * - Weekly Contest 281 (contest_weekly-contest-281)
+ *
+ * Stats:
+ * - Total Accepted: 23,580
+ * - Total Submissions: 76,815
+ * - Acceptance Rate: 30.7%
+ *
+ * Similar Problems:
+ * - find-the-number-of-good-pairs-i (Easy)
+ * - check-if-array-pairs-are-divisible-by-k (Medium)
+ * - find-the-number-of-good-pairs-ii (Medium)
+ * - number-of-single-divisor-triplets (Medium) (Premium)
+ *
+ * Hints:
+ * 1. For any element in the array, what is the smallest number it should be
+ * multiplied with such that the product is divisible by k?
+ *
+ * 2. The smallest number which should be multiplied with nums[i] so that the
+ * product is divisible by k is k / gcd(k, nums[i]). Now think about how you
+ * can store and update the count of such numbers present in the array efficiently.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number} k
+ * @return {number}
+ */
+const countPairs = (nums, k) => {};
+
+export { countPairs };"
+`;

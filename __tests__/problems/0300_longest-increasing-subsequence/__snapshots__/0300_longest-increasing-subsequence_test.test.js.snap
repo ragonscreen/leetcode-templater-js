@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0300_longest-increasing-subsequence test template: 0300_longest-increasing-subsequence 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { lengthOfLIS } from '../../src/0301-0400/0300_longest-increasing-subsequence.js';
+
+const testcases = [
+    { nums: [10,9,2,5,3,7,101,18], expected: 4 },
+    { nums: [0,1,0,3,2,3], expected: 4 },
+    { nums: [7,7,7,7,7,7,7], expected: 1 },
+];
+
+describe('lengthOfLIS', () => {
+    test.each(structuredClone(testcases))('lengthOfLIS($nums) -> $expected', ({ nums, expected }) => {
+        expect(lengthOfLIS(nums)).toStrictEqual(expected);
+    });
+});"
+`;

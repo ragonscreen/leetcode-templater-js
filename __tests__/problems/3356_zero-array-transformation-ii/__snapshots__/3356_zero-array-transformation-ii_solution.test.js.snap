@@ -1,0 +1,49 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3356_zero-array-transformation-ii solution template: 3356_zero-array-transformation-ii 1`] = `
+"/**
+ * 3356. Zero Array Transformation II
+ *
+ * Link: https://leetcode.com/problems/zero-array-transformation-ii/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Two Pointers (topic_9)
+ * - Binary Search (topic_11)
+ * - Prefix Sum (topic_61068)
+ * - Staff (position_staff)
+ * - Weekly Contest 424 (contest_weekly-contest-424)
+ *
+ * Stats:
+ * - Total Accepted: 134,474
+ * - Total Submissions: 308,462
+ * - Acceptance Rate: 43.6%
+ *
+ * Similar Problems:
+ * - corporate-flight-bookings (Medium)
+ * - minimum-moves-to-make-array-complementary (Medium)
+ * - zero-array-transformation-iv (Medium)
+ *
+ * Hints:
+ * 1. Can we apply binary search here?
+ *
+ * 2. Utilize a difference array to optimize the processing of queries.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number[][]} queries
+ * @return {number}
+ */
+const minZeroArray = (nums, queries) => {};
+
+export { minZeroArray };"
+`;

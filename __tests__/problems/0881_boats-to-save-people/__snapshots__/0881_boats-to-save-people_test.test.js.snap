@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0881_boats-to-save-people test template: 0881_boats-to-save-people 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { numRescueBoats } from '../../src/0801-0900/0881_boats-to-save-people.js';
+
+const testcases = [
+    { people: [1,2], limit: 3, expected: 1 },
+    { people: [3,2,2,1], limit: 3, expected: 3 },
+    { people: [3,5,3,4], limit: 5, expected: 4 },
+];
+
+describe('numRescueBoats', () => {
+    test.each(structuredClone(testcases))('numRescueBoats($people, $limit) -> $expected', ({ people, limit, expected }) => {
+        expect(numRescueBoats(people, limit)).toStrictEqual(expected);
+    });
+});"
+`;

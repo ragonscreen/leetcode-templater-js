@@ -1,0 +1,56 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0992_subarrays-with-k-different-integers solution template: 0992_subarrays-with-k-different-integers 1`] = `
+"/**
+ * 0992. Subarrays with K Different Integers
+ *
+ * Link: https://leetcode.com/problems/subarrays-with-k-different-integers/
+ * Category: Algorithms
+ * Difficulty: Hard
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Sliding Window (topic_55821)
+ * - Counting (topic_61062)
+ * - Principal (position_principal)
+ * - Weekly Contest 123 (contest_weekly-contest-123)
+ *
+ * Stats:
+ * - Total Accepted: 402,550
+ * - Total Submissions: 591,188
+ * - Acceptance Rate: 68.1%
+ *
+ * Similar Problems:
+ * - count-vowel-substrings-of-a-string (Easy)
+ * - count-complete-subarrays-in-an-array (Medium)
+ * - k-divisible-elements-subarrays (Medium)
+ * - longest-substring-with-at-most-k-distinct-characters (Medium) (Premium)
+ * - longest-substring-with-at-most-two-distinct-characters (Medium) (Premium)
+ * - longest-substring-without-repeating-characters (Medium)
+ * - number-of-unique-flavors-after-sharing-k-candies (Medium) (Premium)
+ *
+ * Hints:
+ * 1. Try generating all possible subarrays and check for the number of unique
+ * integers. Increment the count accordingly.
+ *
+ * 2. How about using a map to store the count of integers?
+ *
+ * 3. Think about the Sliding Window and 2-pointer approach.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number} k
+ * @return {number}
+ */
+const subarraysWithKDistinct = (nums, k) => {};
+
+export { subarraysWithKDistinct };"
+`;

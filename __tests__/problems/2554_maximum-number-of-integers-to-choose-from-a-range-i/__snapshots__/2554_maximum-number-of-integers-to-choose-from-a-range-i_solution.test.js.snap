@@ -1,0 +1,56 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2554_maximum-number-of-integers-to-choose-from-a-range-i solution template: 2554_maximum-number-of-integers-to-choose-from-a-range-i 1`] = `
+"/**
+ * 2554. Maximum Number of Integers to Choose From a Range I
+ *
+ * Link: https://leetcode.com/problems/maximum-number-of-integers-to-choose-from-a-range-i/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Binary Search (topic_11)
+ * - Greedy (topic_17)
+ * - Sorting (topic_61049)
+ * - Senior (position_senior)
+ * - Biweekly Contest 97 (contest_biweekly-contest-97)
+ *
+ * Stats:
+ * - Total Accepted: 170,043
+ * - Total Submissions: 250,101
+ * - Acceptance Rate: 68.0%
+ *
+ * Similar Problems:
+ * - find-all-numbers-disappeared-in-an-array (Easy)
+ * - append-k-integers-with-minimal-sum (Medium)
+ * - maximum-number-of-integers-to-choose-from-a-range-ii (Medium) (Premium)
+ * - replace-elements-in-an-array (Medium)
+ * - first-missing-positive (Hard)
+ *
+ * Hints:
+ * 1. Keep the banned numbers that are less than or equal to n in a set.
+ *
+ * 2. Loop over the numbers from 1 to n and if the number is not banned, use it.
+ *
+ * 3. Keep adding numbers while they are not banned, and their sum is less than
+ * or equal to k.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} banned
+ * @param {number} n
+ * @param {number} maxSum
+ * @return {number}
+ */
+const maxCount = (banned, n, maxSum) => {};
+
+export { maxCount };"
+`;

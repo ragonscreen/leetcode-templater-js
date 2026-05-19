@@ -1,0 +1,43 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0019_remove-nth-node-from-end-of-list solution template: 0019_remove-nth-node-from-end-of-list 1`] = `
+"/**
+ * 0019. Remove Nth Node From End of List
+ *
+ * Link: https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Linked List (topic_7)
+ * - Two Pointers (topic_9)
+ *
+ * Stats:
+ * - Total Accepted: 4,218,780
+ * - Total Submissions: 8,181,353
+ * - Acceptance Rate: 51.6%
+ *
+ * Similar Problems:
+ * - delete-n-nodes-after-m-nodes-of-a-linked-list (Easy) (Premium)
+ * - delete-the-middle-node-of-a-linked-list (Medium)
+ * - swapping-nodes-in-a-linked-list (Medium)
+ *
+ * Hints:
+ * 1. Maintain two pointers and update one with a delay of n steps.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {ListNode} head
+ * @param {number} n
+ * @return {ListNode}
+ */
+const removeNthFromEnd = (head, n) => {};
+
+export { removeNthFromEnd };"
+`;

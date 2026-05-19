@@ -1,0 +1,48 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1760_minimum-limit-of-balls-in-a-bag solution template: 1760_minimum-limit-of-balls-in-a-bag 1`] = `
+"/**
+ * 1760. Minimum Limit of Balls in a Bag
+ *
+ * Link: https://leetcode.com/problems/minimum-limit-of-balls-in-a-bag/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Binary Search (topic_11)
+ * - Staff (position_staff)
+ * - Weekly Contest 228 (contest_weekly-contest-228)
+ *
+ * Stats:
+ * - Total Accepted: 155,179
+ * - Total Submissions: 234,068
+ * - Acceptance Rate: 66.3%
+ *
+ * Similar Problems:
+ * - maximum-candies-allocated-to-k-children (Medium)
+ * - minimized-maximum-of-products-distributed-to-any-store (Medium)
+ *
+ * Hints:
+ * 1. Let's change the question if we know the maximum size of a bag what is
+ * the minimum number of bags you can make
+ *
+ * 2. note that as the maximum size increases the minimum number of bags
+ * decreases so we can binary search the maximum size
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number} maxOperations
+ * @return {number}
+ */
+const minimumSize = (nums, maxOperations) => {};
+
+export { minimumSize };"
+`;

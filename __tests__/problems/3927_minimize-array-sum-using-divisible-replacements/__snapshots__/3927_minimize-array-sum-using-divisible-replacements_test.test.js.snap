@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3927_minimize-array-sum-using-divisible-replacements test template: 3927_minimize-array-sum-using-divisible-replacements 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { minArraySum } from '../../src/3901-4000/3927_minimize-array-sum-using-divisible-replacements.js';
+
+const testcases = [
+    { nums: [3,6,2], expected: 7 },
+    { nums: [4,2,8,3], expected: 9 },
+    { nums: [7,5,9], expected: 21 },
+];
+
+describe('minArraySum', () => {
+    test.each(structuredClone(testcases))('minArraySum($nums) -> $expected', ({ nums, expected }) => {
+        expect(minArraySum(nums)).toStrictEqual(expected);
+    });
+});"
+`;

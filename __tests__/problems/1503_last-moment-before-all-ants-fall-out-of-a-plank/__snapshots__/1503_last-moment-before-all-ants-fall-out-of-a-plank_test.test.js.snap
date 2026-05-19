@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1503_last-moment-before-all-ants-fall-out-of-a-plank test template: 1503_last-moment-before-all-ants-fall-out-of-a-plank 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { getLastMoment } from '../../src/1501-1600/1503_last-moment-before-all-ants-fall-out-of-a-plank.js';
+
+const testcases = [
+    { n: 4, left: [4,3], right: [0,1], expected: 4 },
+    { n: 7, left: [], right: [0,1,2,3,4,5,6,7], expected: 7 },
+    { n: 7, left: [0,1,2,3,4,5,6,7], right: [], expected: 7 },
+];
+
+describe('getLastMoment', () => {
+    test.each(structuredClone(testcases))('getLastMoment($n, $left, $right) -> $expected', ({ n, left, right, expected }) => {
+        expect(getLastMoment(n, left, right)).toStrictEqual(expected);
+    });
+});"
+`;

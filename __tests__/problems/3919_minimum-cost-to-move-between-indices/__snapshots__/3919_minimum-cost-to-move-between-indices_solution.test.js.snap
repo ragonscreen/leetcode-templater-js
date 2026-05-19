@@ -1,0 +1,44 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3919_minimum-cost-to-move-between-indices solution template: 3919_minimum-cost-to-move-between-indices 1`] = `
+"/**
+ * 3919. Minimum Cost to Move Between Indices
+ *
+ * Link: https://leetcode.com/problems/minimum-cost-to-move-between-indices/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Staff (position_staff)
+ * - Weekly Contest 500 (contest_weekly-contest-500)
+ *
+ * Stats:
+ * - Total Accepted: 14,422
+ * - Total Submissions: 28,700
+ * - Acceptance Rate: 50.3%
+ *
+ * Hints:
+ * 1. Following \`closest(x)\` forms directed chains. If the chain moves toward
+ * the target index, you can consider walking along it with cost 1 per step.
+ *
+ * 2. Precompute prefix sums of these costs in both directions.
+ *
+ * 3. For each query, compare the cost of walking along closest edges vs making
+ * a direct jump.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number[][]} queries
+ * @return {number[]}
+ */
+const minCost = (nums, queries) => {};
+
+export { minCost };"
+`;

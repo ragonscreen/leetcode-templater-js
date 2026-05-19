@@ -1,0 +1,37 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3931_check-adjacent-digit-differences solution template: 3931_check-adjacent-digit-differences 1`] = `
+"/**
+ * 3931. Check Adjacent Digit Differences
+ *
+ * Link: https://leetcode.com/problems/check-adjacent-digit-differences/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Mid Level (position_mid-level)
+ * - Weekly Contest 502 (contest_weekly-contest-502)
+ *
+ * Stats:
+ * - Total Accepted: 35,922
+ * - Total Submissions: 46,137
+ * - Acceptance Rate: 77.9%
+ *
+ * Hints:
+ * 1. Do as told
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @return {boolean}
+ */
+const isAdjacentDiffAtMostTwo = (s) => {};
+
+export { isAdjacentDiffAtMostTwo };"
+`;

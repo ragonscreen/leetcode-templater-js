@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3703_remove-k-balanced-substrings test template: 3703_remove-k-balanced-substrings 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { removeSubstring } from '../../src/3701-3800/3703_remove-k-balanced-substrings.js';
+
+const testcases = [
+    { s: "(())", k: 1, expected: "" },
+    { s: "(()(", k: 1, expected: "((" },
+    { s: "((()))()()()", k: 3, expected: "()()()" },
+];
+
+describe('removeSubstring', () => {
+    test.each(structuredClone(testcases))('removeSubstring($s, $k) -> $expected', ({ s, k, expected }) => {
+        expect(removeSubstring(s, k)).toStrictEqual(expected);
+    });
+});"
+`;

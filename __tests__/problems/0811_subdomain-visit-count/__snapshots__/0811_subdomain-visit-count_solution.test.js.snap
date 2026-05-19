@@ -1,0 +1,38 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0811_subdomain-visit-count solution template: 0811_subdomain-visit-count 1`] = `
+"/**
+ * 0811. Subdomain Visit Count
+ *
+ * Link: https://leetcode.com/problems/subdomain-visit-count/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - String (topic_10)
+ * - Counting (topic_61062)
+ * - Staff (position_staff)
+ * - Weekly Contest 78 (contest_weekly-contest-78)
+ *
+ * Stats:
+ * - Total Accepted: 263,739
+ * - Total Submissions: 341,544
+ * - Acceptance Rate: 77.2%
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string[]} cpdomains
+ * @return {string[]}
+ */
+const subdomainVisits = (cpdomains) => {};
+
+export { subdomainVisits };"
+`;

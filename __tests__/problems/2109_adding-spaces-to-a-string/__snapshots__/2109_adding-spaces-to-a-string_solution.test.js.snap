@@ -1,0 +1,51 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2109_adding-spaces-to-a-string solution template: 2109_adding-spaces-to-a-string 1`] = `
+"/**
+ * 2109. Adding Spaces to a String
+ *
+ * Link: https://leetcode.com/problems/adding-spaces-to-a-string/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Two Pointers (topic_9)
+ * - String (topic_10)
+ * - Simulation (topic_61055)
+ * - Senior (position_senior)
+ * - Weekly Contest 272 (contest_weekly-contest-272)
+ *
+ * Stats:
+ * - Total Accepted: 225,889
+ * - Total Submissions: 314,543
+ * - Acceptance Rate: 71.8%
+ *
+ * Hints:
+ * 1. Create a new string, initially empty, as the modified string. Iterate
+ * through the original string and append each character of the original
+ * string to the new string. However, each time you reach a character that
+ * requires a space before it, append a space before appending the character.
+ *
+ * 2. Since the array of indices for the space locations is sorted, use a
+ * pointer to keep track of the next index to place a space. Only increment
+ * the pointer once a space has been appended.
+ *
+ * 3. Ensure that your append operation can be done in O(1).
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @param {number[]} spaces
+ * @return {string}
+ */
+const addSpaces = (s, spaces) => {};
+
+export { addSpaces };"
+`;

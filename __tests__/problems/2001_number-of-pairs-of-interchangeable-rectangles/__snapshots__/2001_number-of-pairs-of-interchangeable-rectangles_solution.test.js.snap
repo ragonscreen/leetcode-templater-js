@@ -1,0 +1,50 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2001_number-of-pairs-of-interchangeable-rectangles solution template: 2001_number-of-pairs-of-interchangeable-rectangles 1`] = `
+"/**
+ * 2001. Number of Pairs of Interchangeable Rectangles
+ *
+ * Link: https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Math (topic_8)
+ * - Counting (topic_61062)
+ * - Number Theory (topic_61067)
+ * - Senior (position_senior)
+ * - Weekly Contest 258 (contest_weekly-contest-258)
+ *
+ * Stats:
+ * - Total Accepted: 59,703
+ * - Total Submissions: 113,553
+ * - Acceptance Rate: 52.6%
+ *
+ * Similar Problems:
+ * - number-of-good-pairs (Easy)
+ * - count-nice-pairs-in-an-array (Medium)
+ * - replace-non-coprime-numbers-in-array (Hard)
+ *
+ * Hints:
+ * 1. Store the rectangle height and width ratio in a hashmap.
+ *
+ * 2. Traverse the ratios, and for each ratio, use the frequency of the ratio
+ * to add to the total pair count.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[][]} rectangles
+ * @return {number}
+ */
+const interchangeableRectangles = (rectangles) => {};
+
+export { interchangeableRectangles };"
+`;

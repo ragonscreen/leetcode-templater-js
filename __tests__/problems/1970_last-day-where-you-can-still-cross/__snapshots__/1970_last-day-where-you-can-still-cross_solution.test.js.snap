@@ -1,0 +1,51 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1970_last-day-where-you-can-still-cross solution template: 1970_last-day-where-you-can-still-cross 1`] = `
+"/**
+ * 1970. Last Day Where You Can Still Cross
+ *
+ * Link: https://leetcode.com/problems/last-day-where-you-can-still-cross/
+ * Category: Algorithms
+ * Difficulty: Hard
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Binary Search (topic_11)
+ * - Depth-First Search (topic_21)
+ * - Breadth-First Search (topic_22)
+ * - Union-Find (topic_23)
+ * - Matrix (topic_61053)
+ * - Senior Staff (position_senior-staff)
+ * - Weekly Contest 254 (contest_weekly-contest-254)
+ *
+ * Stats:
+ * - Total Accepted: 131,415
+ * - Total Submissions: 191,309
+ * - Acceptance Rate: 68.7%
+ *
+ * Similar Problems:
+ * - bricks-falling-when-hit (Hard)
+ * - escape-the-spreading-fire (Hard)
+ *
+ * Hints:
+ * 1. What graph algorithm allows us to find whether a path exists?
+ *
+ * 2. Can we use binary search to help us solve the problem?
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number} row
+ * @param {number} col
+ * @param {number[][]} cells
+ * @return {number}
+ */
+const latestDayToCross = (row, col, cells) => {};
+
+export { latestDayToCross };"
+`;

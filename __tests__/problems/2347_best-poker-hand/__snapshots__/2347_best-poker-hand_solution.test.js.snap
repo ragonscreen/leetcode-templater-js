@@ -1,0 +1,45 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2347_best-poker-hand solution template: 2347_best-poker-hand 1`] = `
+"/**
+ * 2347. Best Poker Hand
+ *
+ * Link: https://leetcode.com/problems/best-poker-hand/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Counting (topic_61062)
+ * - Mid Level (position_mid-level)
+ * - Biweekly Contest 83 (contest_biweekly-contest-83)
+ *
+ * Stats:
+ * - Total Accepted: 54,633
+ * - Total Submissions: 88,437
+ * - Acceptance Rate: 61.8%
+ *
+ * Similar Problems:
+ * - categorize-box-according-to-criteria (Easy)
+ *
+ * Hints:
+ * 1. Sequentially check the conditions 1 through 4, and return the outcome
+ * corresponding to the first met condition.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} ranks
+ * @param {character[]} suits
+ * @return {string}
+ */
+const bestHand = (ranks, suits) => {};
+
+export { bestHand };"
+`;

@@ -1,0 +1,47 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1652_defuse-the-bomb solution template: 1652_defuse-the-bomb 1`] = `
+"/**
+ * 1652. Defuse the Bomb
+ *
+ * Link: https://leetcode.com/problems/defuse-the-bomb/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Sliding Window (topic_55821)
+ * - Mid Level (position_mid-level)
+ * - Biweekly Contest 39 (contest_biweekly-contest-39)
+ *
+ * Stats:
+ * - Total Accepted: 225,789
+ * - Total Submissions: 284,602
+ * - Acceptance Rate: 79.3%
+ *
+ * Similar Problems:
+ * - circular-sentence (Easy)
+ * - shortest-distance-to-target-string-in-a-circular-array (Easy)
+ * - take-k-of-each-character-from-left-and-right (Medium)
+ *
+ * Hints:
+ * 1. As the array is circular, use modulo to find the correct index.
+ *
+ * 2. The constraints are low enough for a brute-force solution.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} code
+ * @param {number} k
+ * @return {number[]}
+ */
+const decrypt = (code, k) => {};
+
+export { decrypt };"
+`;

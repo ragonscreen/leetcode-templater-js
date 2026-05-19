@@ -1,0 +1,44 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3024_type-of-triangle solution template: 3024_type-of-triangle 1`] = `
+"/**
+ * 3024. Type of Triangle
+ *
+ * Link: https://leetcode.com/problems/type-of-triangle/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Math (topic_8)
+ * - Sorting (topic_61049)
+ * - Mid Level (position_mid-level)
+ * - Biweekly Contest 123 (contest_biweekly-contest-123)
+ *
+ * Stats:
+ * - Total Accepted: 219,397
+ * - Total Submissions: 497,734
+ * - Acceptance Rate: 44.1%
+ *
+ * Hints:
+ * 1. The condition for a valid triangle is that for any two sides, the sum of
+ * their lengths must be greater than the third side.
+ *
+ * 2. Simply count the number of unique edge lengths after checking it’s a
+ * valid triangle.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {string}
+ */
+const triangleType = (nums) => {};
+
+export { triangleType };"
+`;

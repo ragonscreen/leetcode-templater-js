@@ -1,0 +1,41 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1106_parsing-a-boolean-expression solution template: 1106_parsing-a-boolean-expression 1`] = `
+"/**
+ * 1106. Parsing A Boolean Expression
+ *
+ * Link: https://leetcode.com/problems/parsing-a-boolean-expression/
+ * Category: Algorithms
+ * Difficulty: Hard
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - String (topic_10)
+ * - Stack (topic_15)
+ * - Recursion (topic_31)
+ * - Senior Staff (position_senior-staff)
+ * - Weekly Contest 143 (contest_weekly-contest-143)
+ *
+ * Stats:
+ * - Total Accepted: 149,476
+ * - Total Submissions: 214,275
+ * - Acceptance Rate: 69.8%
+ *
+ * Hints:
+ * 1. Write a function "parse" which calls helper functions "parse_or",
+ * "parse_and", "parse_not".
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} expression
+ * @return {boolean}
+ */
+const parseBoolExpr = (expression) => {};
+
+export { parseBoolExpr };"
+`;

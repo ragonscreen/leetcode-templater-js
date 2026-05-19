@@ -1,0 +1,41 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0394_decode-string solution template: 0394_decode-string 1`] = `
+"/**
+ * 0394. Decode String
+ *
+ * Link: https://leetcode.com/problems/decode-string/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - String (topic_10)
+ * - Stack (topic_15)
+ * - Recursion (topic_31)
+ * - Junior (position_junior)
+ *
+ * Stats:
+ * - Total Accepted: 1,205,838
+ * - Total Submissions: 1,925,900
+ * - Acceptance Rate: 62.6%
+ *
+ * Similar Problems:
+ * - brace-expansion (Medium) (Premium)
+ * - encode-string-with-shortest-length (Hard) (Premium)
+ * - number-of-atoms (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @return {string}
+ */
+const decodeString = (s) => {};
+
+export { decodeString };"
+`;

@@ -1,0 +1,47 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0075_sort-colors solution template: 0075_sort-colors 1`] = `
+"/**
+ * 0075. Sort Colors
+ *
+ * Link: https://leetcode.com/problems/sort-colors/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Two Pointers (topic_9)
+ * - Sorting (topic_61049)
+ *
+ * Stats:
+ * - Total Accepted: 3,756,696
+ * - Total Submissions: 5,396,779
+ * - Acceptance Rate: 69.6%
+ *
+ * Similar Problems:
+ * - sort-list (Medium)
+ * - wiggle-sort (Medium) (Premium)
+ * - wiggle-sort-ii (Medium)
+ *
+ * Hints:
+ * 1. A rather straight forward solution is a two-pass algorithm using counting sort.
+ *
+ * 2. Iterate the array counting number of 0's, 1's, and 2's.
+ *
+ * 3. Overwrite array with the total number of 0's, then 1's and followed by 2's.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {void}
+ */
+const sortColors = (nums) => {};
+
+export { sortColors };"
+`;

@@ -1,0 +1,52 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3255_find-the-power-of-k-size-subarrays-ii solution template: 3255_find-the-power-of-k-size-subarrays-ii 1`] = `
+"/**
+ * 3255. Find the Power of K-Size Subarrays II
+ *
+ * Link: https://leetcode.com/problems/find-the-power-of-k-size-subarrays-ii/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Sliding Window (topic_55821)
+ * - Staff (position_staff)
+ * - Biweekly Contest 137 (contest_biweekly-contest-137)
+ *
+ * Stats:
+ * - Total Accepted: 35,374
+ * - Total Submissions: 111,908
+ * - Acceptance Rate: 31.6%
+ *
+ * Similar Problems:
+ * - maximum-sum-of-distinct-subarrays-with-length-k (Medium)
+ *
+ * Hints:
+ * 1. Let \`dp[i]\` denote the length of the longest subarray ending at index \`i\`
+ * that has consecutive and sorted elements.
+ *
+ * 2. Use a TreeMap with a sliding window to check if there are \`k\` elements in
+ * the subarray ending at index \`i\`.
+ *
+ * 3. If TreeMap has less than \`k\` elements and \`dp[i] < k\`, the subarray has
+ * power equal to -1.
+ *
+ * 4. Is it possible to achieve \`O(nums.length)\` using a Stack?
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number} k
+ * @return {number[]}
+ */
+const resultsArray = (nums, k) => {};
+
+export { resultsArray };"
+`;

@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2810_faulty-keyboard test template: 2810_faulty-keyboard 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { finalString } from '../../src/2801-2900/2810_faulty-keyboard.js';
+
+const testcases = [
+    { s: "string", expected: "rtsng" },
+    { s: "poiinter", expected: "ponter" },
+];
+
+describe('finalString', () => {
+    test.each(structuredClone(testcases))('finalString($s) -> $expected', ({ s, expected }) => {
+        expect(finalString(s)).toStrictEqual(expected);
+    });
+});"
+`;

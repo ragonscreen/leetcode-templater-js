@@ -1,0 +1,51 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2257_count-unguarded-cells-in-the-grid solution template: 2257_count-unguarded-cells-in-the-grid 1`] = `
+"/**
+ * 2257. Count Unguarded Cells in the Grid
+ *
+ * Link: https://leetcode.com/problems/count-unguarded-cells-in-the-grid/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Matrix (topic_61053)
+ * - Simulation (topic_61055)
+ * - Staff (position_staff)
+ * - Biweekly Contest 77 (contest_biweekly-contest-77)
+ *
+ * Stats:
+ * - Total Accepted: 206,775
+ * - Total Submissions: 299,808
+ * - Acceptance Rate: 69.0%
+ *
+ * Similar Problems:
+ * - available-captures-for-rook (Easy)
+ * - bomb-enemy (Medium) (Premium)
+ *
+ * Hints:
+ * 1. Create a 2D array to represent the grid. Can you mark the tiles that can
+ * be seen by a guard?
+ *
+ * 2. Iterate over the guards, and for each of the 4 directions, advance the
+ * current tile and mark the tile. When should you stop advancing?
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number} m
+ * @param {number} n
+ * @param {number[][]} guards
+ * @param {number[][]} walls
+ * @return {number}
+ */
+const countUnguarded = (m, n, guards, walls) => {};
+
+export { countUnguarded };"
+`;

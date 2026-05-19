@@ -1,0 +1,48 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2379_minimum-recolors-to-get-k-consecutive-black-blocks solution template: 2379_minimum-recolors-to-get-k-consecutive-black-blocks 1`] = `
+"/**
+ * 2379. Minimum Recolors to Get K Consecutive Black Blocks
+ *
+ * Link: https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - String (topic_10)
+ * - Sliding Window (topic_55821)
+ * - Mid Level (position_mid-level)
+ * - Biweekly Contest 85 (contest_biweekly-contest-85)
+ *
+ * Stats:
+ * - Total Accepted: 233,827
+ * - Total Submissions: 340,559
+ * - Acceptance Rate: 68.7%
+ *
+ * Similar Problems:
+ * - max-consecutive-ones-iii (Medium)
+ * - maximum-number-of-vowels-in-a-substring-of-given-length (Medium)
+ * - maximum-points-you-can-obtain-from-cards (Medium)
+ *
+ * Hints:
+ * 1. Iterate through all possible consecutive substrings of k characters.
+ *
+ * 2. Find the number of changes for each substring to make all blocks black,
+ * and return the minimum of these.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} blocks
+ * @param {number} k
+ * @return {number}
+ */
+const minimumRecolors = (blocks, k) => {};
+
+export { minimumRecolors };"
+`;

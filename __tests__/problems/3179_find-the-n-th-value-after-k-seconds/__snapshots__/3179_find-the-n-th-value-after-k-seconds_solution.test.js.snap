@@ -1,0 +1,46 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3179_find-the-n-th-value-after-k-seconds solution template: 3179_find-the-n-th-value-after-k-seconds 1`] = `
+"/**
+ * 3179. Find the N-th Value After K Seconds
+ *
+ * Link: https://leetcode.com/problems/find-the-n-th-value-after-k-seconds/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Math (topic_8)
+ * - Simulation (topic_61055)
+ * - Combinatorics (topic_61056)
+ * - Prefix Sum (topic_61068)
+ * - Senior (position_senior)
+ * - Weekly Contest 401 (contest_weekly-contest-401)
+ *
+ * Stats:
+ * - Total Accepted: 45,670
+ * - Total Submissions: 84,743
+ * - Acceptance Rate: 53.9%
+ *
+ * Similar Problems:
+ * - left-and-right-sum-differences (Easy)
+ *
+ * Hints:
+ * 1. Calculate the prefix sum array of \`nums\`, \`k\` times.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number} n
+ * @param {number} k
+ * @return {number}
+ */
+const valueAfterKSeconds = (n, k) => {};
+
+export { valueAfterKSeconds };"
+`;

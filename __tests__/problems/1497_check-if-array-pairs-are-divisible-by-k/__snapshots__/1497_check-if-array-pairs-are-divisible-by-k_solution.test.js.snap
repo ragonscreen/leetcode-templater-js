@@ -1,0 +1,51 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1497_check-if-array-pairs-are-divisible-by-k solution template: 1497_check-if-array-pairs-are-divisible-by-k 1`] = `
+"/**
+ * 1497. Check If Array Pairs Are Divisible by k
+ *
+ * Link: https://leetcode.com/problems/check-if-array-pairs-are-divisible-by-k/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Counting (topic_61062)
+ * - Senior (position_senior)
+ * - Weekly Contest 195 (contest_weekly-contest-195)
+ *
+ * Stats:
+ * - Total Accepted: 209,079
+ * - Total Submissions: 452,825
+ * - Acceptance Rate: 46.2%
+ *
+ * Similar Problems:
+ * - count-pairs-that-form-a-complete-day-i (Easy)
+ * - count-pairs-that-form-a-complete-day-ii (Medium)
+ * - count-array-pairs-divisible-by-k (Hard)
+ * - minimum-deletions-to-make-array-divisible (Hard)
+ *
+ * Hints:
+ * 1. Keep an array of the frequencies of ((x % k) + k) % k for each x in arr.
+ *
+ * 2. for each i in [0, k - 1] we need to check if freq[i] == freq[k - i]
+ *
+ * 3. Take care of the case when i == k - i and when i == 0
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} arr
+ * @param {number} k
+ * @return {boolean}
+ */
+const canArrange = (arr, k) => {};
+
+export { canArrange };"
+`;

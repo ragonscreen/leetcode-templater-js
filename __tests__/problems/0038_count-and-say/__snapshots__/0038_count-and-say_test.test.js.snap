@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0038_count-and-say test template: 0038_count-and-say 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { countAndSay } from '../../src/0001-0100/0038_count-and-say.js';
+
+const testcases = [
+    { n: 1, expected: "1" },
+    { n: 4, expected: "1211" },
+];
+
+describe('countAndSay', () => {
+    test.each(structuredClone(testcases))('countAndSay($n) -> $expected', ({ n, expected }) => {
+        expect(countAndSay(n)).toStrictEqual(expected);
+    });
+});"
+`;

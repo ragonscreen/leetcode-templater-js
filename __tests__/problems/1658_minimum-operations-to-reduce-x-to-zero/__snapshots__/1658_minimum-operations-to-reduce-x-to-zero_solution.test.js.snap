@@ -1,0 +1,53 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1658_minimum-operations-to-reduce-x-to-zero solution template: 1658_minimum-operations-to-reduce-x-to-zero 1`] = `
+"/**
+ * 1658. Minimum Operations to Reduce X to Zero
+ *
+ * Link: https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Binary Search (topic_11)
+ * - Sliding Window (topic_55821)
+ * - Prefix Sum (topic_61068)
+ * - Staff (position_staff)
+ * - Weekly Contest 215 (contest_weekly-contest-215)
+ *
+ * Stats:
+ * - Total Accepted: 234,690
+ * - Total Submissions: 578,727
+ * - Acceptance Rate: 40.6%
+ *
+ * Similar Problems:
+ * - minimum-operations-to-convert-number (Medium)
+ * - minimum-operations-to-make-the-integer-zero (Medium)
+ * - minimum-size-subarray-sum (Medium)
+ * - removing-minimum-number-of-magic-beans (Medium)
+ * - subarray-sum-equals-k (Medium)
+ *
+ * Hints:
+ * 1. Think in reverse; instead of finding the minimum prefix + suffix, find
+ * the maximum subarray.
+ *
+ * 2. Finding the maximum subarray is standard and can be done greedily.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number} x
+ * @return {number}
+ */
+const minOperations = (nums, x) => {};
+
+export { minOperations };"
+`;

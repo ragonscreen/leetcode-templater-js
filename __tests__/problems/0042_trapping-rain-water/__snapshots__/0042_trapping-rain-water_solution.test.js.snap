@@ -1,0 +1,44 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0042_trapping-rain-water solution template: 0042_trapping-rain-water 1`] = `
+"/**
+ * 0042. Trapping Rain Water
+ *
+ * Link: https://leetcode.com/problems/trapping-rain-water/
+ * Category: Algorithms
+ * Difficulty: Hard
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Two Pointers (topic_9)
+ * - Dynamic Programming (topic_13)
+ * - Stack (topic_15)
+ * - Monotonic Stack (topic_61054)
+ *
+ * Stats:
+ * - Total Accepted: 3,567,079
+ * - Total Submissions: 5,297,044
+ * - Acceptance Rate: 67.3%
+ *
+ * Similar Problems:
+ * - container-with-most-water (Medium)
+ * - maximum-value-of-an-ordered-triplet-ii (Medium)
+ * - pour-water (Medium) (Premium)
+ * - product-of-array-except-self (Medium)
+ * - trapping-rain-water-ii (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} height
+ * @return {number}
+ */
+const trap = (height) => {};
+
+export { trap };"
+`;

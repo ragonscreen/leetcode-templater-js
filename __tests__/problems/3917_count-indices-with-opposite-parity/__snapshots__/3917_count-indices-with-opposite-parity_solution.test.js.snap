@@ -1,0 +1,37 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3917_count-indices-with-opposite-parity solution template: 3917_count-indices-with-opposite-parity 1`] = `
+"/**
+ * 3917. Count Indices With Opposite Parity
+ *
+ * Link: https://leetcode.com/problems/count-indices-with-opposite-parity/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Mid Level (position_mid-level)
+ * - Weekly Contest 500 (contest_weekly-contest-500)
+ *
+ * Stats:
+ * - Total Accepted: 37,630
+ * - Total Submissions: 46,087
+ * - Acceptance Rate: 81.6%
+ *
+ * Hints:
+ * 1. Naive bruteforce works
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number[]}
+ */
+const countOppositeParity = (nums) => {};
+
+export { countOppositeParity };"
+`;

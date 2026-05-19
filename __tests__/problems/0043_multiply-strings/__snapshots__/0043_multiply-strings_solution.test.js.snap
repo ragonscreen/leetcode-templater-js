@@ -1,0 +1,43 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0043_multiply-strings solution template: 0043_multiply-strings 1`] = `
+"/**
+ * 0043. Multiply Strings
+ *
+ * Link: https://leetcode.com/problems/multiply-strings/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Math (topic_8)
+ * - String (topic_10)
+ * - Simulation (topic_61055)
+ *
+ * Stats:
+ * - Total Accepted: 1,168,598
+ * - Total Submissions: 2,646,652
+ * - Acceptance Rate: 44.2%
+ *
+ * Similar Problems:
+ * - add-binary (Easy)
+ * - add-strings (Easy)
+ * - plus-one (Easy)
+ * - add-two-numbers (Medium)
+ * - apply-discount-to-prices (Medium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} num1
+ * @param {string} num2
+ * @return {string}
+ */
+const multiply = (num1, num2) => {};
+
+export { multiply };"
+`;

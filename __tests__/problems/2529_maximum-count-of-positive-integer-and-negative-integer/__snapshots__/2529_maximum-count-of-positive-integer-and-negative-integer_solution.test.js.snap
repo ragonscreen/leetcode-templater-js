@@ -1,0 +1,46 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2529_maximum-count-of-positive-integer-and-negative-integer solution template: 2529_maximum-count-of-positive-integer-and-negative-integer 1`] = `
+"/**
+ * 2529. Maximum Count of Positive Integer and Negative Integer
+ *
+ * Link: https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Binary Search (topic_11)
+ * - Counting (topic_61062)
+ * - Mid Level (position_mid-level)
+ * - Weekly Contest 327 (contest_weekly-contest-327)
+ *
+ * Stats:
+ * - Total Accepted: 366,462
+ * - Total Submissions: 493,320
+ * - Acceptance Rate: 74.3%
+ *
+ * Similar Problems:
+ * - binary-search (Easy)
+ * - count-negative-numbers-in-a-sorted-matrix (Easy)
+ *
+ * Hints:
+ * 1. Count how many positive integers and negative integers are in the array.
+ *
+ * 2. Since the array is sorted, can we use the binary search?
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number}
+ */
+const maximumCount = (nums) => {};
+
+export { maximumCount };"
+`;

@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0065_valid-number test template: 0065_valid-number 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { isNumber } from '../../src/0001-0100/0065_valid-number.js';
+
+const testcases = [
+    { s: "0", expected: true },
+    { s: "e", expected: false },
+    { s: ".", expected: false },
+];
+
+describe('isNumber', () => {
+    test.each(structuredClone(testcases))('isNumber($s) -> $expected', ({ s, expected }) => {
+        expect(isNumber(s)).toStrictEqual(expected);
+    });
+});"
+`;

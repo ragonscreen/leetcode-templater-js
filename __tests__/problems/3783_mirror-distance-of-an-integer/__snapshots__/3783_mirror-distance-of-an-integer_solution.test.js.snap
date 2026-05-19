@@ -1,0 +1,38 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3783_mirror-distance-of-an-integer solution template: 3783_mirror-distance-of-an-integer 1`] = `
+"/**
+ * 3783. Mirror Distance of an Integer
+ *
+ * Link: https://leetcode.com/problems/mirror-distance-of-an-integer/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Math (topic_8)
+ * - Mid Level (position_mid-level)
+ * - Weekly Contest 481 (contest_weekly-contest-481)
+ *
+ * Stats:
+ * - Total Accepted: 168,219
+ * - Total Submissions: 183,823
+ * - Acceptance Rate: 91.5%
+ *
+ * Hints:
+ * 1. Simulate as described
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number} n
+ * @return {number}
+ */
+const mirrorDistance = (n) => {};
+
+export { mirrorDistance };"
+`;

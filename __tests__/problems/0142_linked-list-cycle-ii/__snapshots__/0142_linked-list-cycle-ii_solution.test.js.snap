@@ -1,0 +1,40 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0142_linked-list-cycle-ii solution template: 0142_linked-list-cycle-ii 1`] = `
+"/**
+ * 0142. Linked List Cycle II
+ *
+ * Link: https://leetcode.com/problems/linked-list-cycle-ii/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Hash Table (topic_6)
+ * - Linked List (topic_7)
+ * - Two Pointers (topic_9)
+ *
+ * Stats:
+ * - Total Accepted: 2,026,481
+ * - Total Submissions: 3,500,129
+ * - Acceptance Rate: 57.9%
+ *
+ * Similar Problems:
+ * - linked-list-cycle (Easy)
+ * - find-the-duplicate-number (Medium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {ListNode} head
+ * @param {number} pos
+ * @return {ListNode}
+ */
+const detectCycle = (head, pos) => {};
+
+export { detectCycle };"
+`;

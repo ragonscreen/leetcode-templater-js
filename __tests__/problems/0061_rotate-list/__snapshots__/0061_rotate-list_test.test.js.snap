@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0061_rotate-list test template: 0061_rotate-list 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { rotateRight } from '../../src/0001-0100/0061_rotate-list.js';
+
+const testcases = [
+    { head: [1,2,3,4,5], k: 2, expected: [4,5,1,2,3] },
+    { head: [0,1,2], k: 4, expected: [2,0,1] },
+];
+
+describe('rotateRight', () => {
+    test.each(structuredClone(testcases))('rotateRight($head, $k) -> $expected', ({ head, k, expected }) => {
+        expect(rotateRight(head, k)).toStrictEqual(expected);
+    });
+});"
+`;

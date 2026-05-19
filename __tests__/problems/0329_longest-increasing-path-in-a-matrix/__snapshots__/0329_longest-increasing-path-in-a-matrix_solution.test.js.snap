@@ -1,0 +1,43 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0329_longest-increasing-path-in-a-matrix solution template: 0329_longest-increasing-path-in-a-matrix 1`] = `
+"/**
+ * 0329. Longest Increasing Path in a Matrix
+ *
+ * Link: https://leetcode.com/problems/longest-increasing-path-in-a-matrix/
+ * Category: Algorithms
+ * Difficulty: Hard
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Dynamic Programming (topic_13)
+ * - Depth-First Search (topic_21)
+ * - Breadth-First Search (topic_22)
+ * - Graph Theory (topic_24)
+ * - Topological Sort (topic_26)
+ * - Memoization (topic_33)
+ * - Matrix (topic_61053)
+ *
+ * Stats:
+ * - Total Accepted: 719,862
+ * - Total Submissions: 1,271,482
+ * - Acceptance Rate: 56.6%
+ *
+ * Similar Problems:
+ * - number-of-increasing-paths-in-a-grid (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[][]} matrix
+ * @return {number}
+ */
+const longestIncreasingPath = (matrix) => {};
+
+export { longestIncreasingPath };"
+`;

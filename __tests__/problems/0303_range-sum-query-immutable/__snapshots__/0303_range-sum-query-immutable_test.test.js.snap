@@ -1,0 +1,16 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0303_range-sum-query-immutable test template: 0303_range-sum-query-immutable 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { NumArray } from '../../src/0301-0400/0303_range-sum-query-immutable.js';
+
+describe('NumArray', () => {
+    test('default test 1', () => {
+        const numArray = new NumArray([-2,0,3,-5,2,-1]);
+
+        expect(numArray.sumRange(0, 2)).toStrictEqual(1);
+        expect(numArray.sumRange(2, 5)).toStrictEqual(-1);
+        expect(numArray.sumRange(0, 5)).toStrictEqual(-3);
+    });
+});"
+`;

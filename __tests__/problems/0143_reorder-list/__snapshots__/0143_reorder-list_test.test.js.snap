@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0143_reorder-list test template: 0143_reorder-list 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { reorderList } from '../../src/0101-0200/0143_reorder-list.js';
+
+const testcases = [
+    { head: [1,2,3,4], expected: [1,4,2,3] },
+    { head: [1,2,3,4,5], expected: [1,5,2,4,3] },
+];
+
+describe('reorderList', () => {
+    test.each(structuredClone(testcases))('reorderList($head) -> $expected', ({ head, expected }) => {
+        expect(reorderList(head)).toBeNil();
+        expect(head).toStrictEqual(expected);
+    });
+});"
+`;

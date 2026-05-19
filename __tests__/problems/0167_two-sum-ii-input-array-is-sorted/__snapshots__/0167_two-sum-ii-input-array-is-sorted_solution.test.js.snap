@@ -1,0 +1,41 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0167_two-sum-ii-input-array-is-sorted solution template: 0167_two-sum-ii-input-array-is-sorted 1`] = `
+"/**
+ * 0167. Two Sum II - Input Array Is Sorted
+ *
+ * Link: https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Two Pointers (topic_9)
+ * - Binary Search (topic_11)
+ *
+ * Stats:
+ * - Total Accepted: 3,411,447
+ * - Total Submissions: 5,243,944
+ * - Acceptance Rate: 65.1%
+ *
+ * Similar Problems:
+ * - two-sum (Easy)
+ * - two-sum-iv-input-is-a-bst (Easy)
+ * - two-sum-less-than-k (Easy) (Premium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} numbers
+ * @param {number} target
+ * @return {number[]}
+ */
+const twoSum = (numbers, target) => {};
+
+export { twoSum };"
+`;

@@ -1,0 +1,39 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3912_valid-elements-in-an-array solution template: 3912_valid-elements-in-an-array 1`] = `
+"/**
+ * 3912. Valid Elements in an Array
+ *
+ * Link: https://leetcode.com/problems/valid-elements-in-an-array/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Mid Level (position_mid-level)
+ * - Weekly Contest 499 (contest_weekly-contest-499)
+ *
+ * Stats:
+ * - Total Accepted: 36,140
+ * - Total Submissions: 63,265
+ * - Acceptance Rate: 57.1%
+ *
+ * Hints:
+ * 1. Precompute the maximum left and right for each index.
+ *
+ * 2. The first and last are always valid.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number[]}
+ */
+const findValidElements = (nums) => {};
+
+export { findValidElements };"
+`;

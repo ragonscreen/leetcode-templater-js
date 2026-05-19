@@ -1,0 +1,63 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0189_rotate-array solution template: 0189_rotate-array 1`] = `
+"/**
+ * 0189. Rotate Array
+ *
+ * Link: https://leetcode.com/problems/rotate-array/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Math (topic_8)
+ * - Two Pointers (topic_9)
+ *
+ * Stats:
+ * - Total Accepted: 3,953,512
+ * - Total Submissions: 8,807,799
+ * - Acceptance Rate: 44.9%
+ *
+ * Similar Problems:
+ * - make-k-subarray-sums-equal (Medium)
+ * - maximum-number-of-matching-indices-after-right-shifts (Medium) (Premium)
+ * - reverse-words-in-a-string-ii (Medium) (Premium)
+ * - rotate-list (Medium)
+ *
+ * Hints:
+ * 1. The easiest solution would use additional memory and that is perfectly fine.
+ *
+ * 2. The actual trick comes when trying to solve this problem without using
+ * any additional memory. This means you need to use the original array
+ * somehow to move the elements around. Now, we can place each element in
+ * its original location and shift all the elements around it to adjust as
+ * that would be too costly and most likely will time out on larger input arrays.
+ *
+ * 3. One line of thought is based on reversing the array (or parts of it) to
+ * obtain the desired result. Think about how reversal might potentially
+ * help us out by using an example.
+ *
+ * 4. The other line of thought is a tad bit complicated but essentially it
+ * builds on the idea of placing each element in its original position while
+ * keeping track of the element originally in that position. Basically, at
+ * every step, we place an element in its rightful position and keep track
+ * of the element already there or the one being overwritten in an
+ * additional variable. We can't do this in one linear pass and the idea
+ * here is based on <b>cyclic-dependencies</b> between elements.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number} k
+ * @return {void}
+ */
+const rotate = (nums, k) => {};
+
+export { rotate };"
+`;

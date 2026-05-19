@@ -1,0 +1,48 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1391_check-if-there-is-a-valid-path-in-a-grid solution template: 1391_check-if-there-is-a-valid-path-in-a-grid 1`] = `
+"/**
+ * 1391. Check if There is a Valid Path in a Grid
+ *
+ * Link: https://leetcode.com/problems/check-if-there-is-a-valid-path-in-a-grid/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Depth-First Search (topic_21)
+ * - Breadth-First Search (topic_22)
+ * - Union-Find (topic_23)
+ * - Matrix (topic_61053)
+ * - Staff (position_staff)
+ * - Weekly Contest 181 (contest_weekly-contest-181)
+ *
+ * Stats:
+ * - Total Accepted: 106,601
+ * - Total Submissions: 165,375
+ * - Acceptance Rate: 64.5%
+ *
+ * Similar Problems:
+ * - check-if-there-is-a-valid-parentheses-string-path (Hard)
+ *
+ * Hints:
+ * 1. Start DFS from the node (0, 0) and follow the path till you stop.
+ *
+ * 2. When you reach a cell and cannot move anymore check that this cell is (m
+ * - 1, n - 1) or not.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[][]} grid
+ * @return {boolean}
+ */
+const hasValidPath = (grid) => {};
+
+export { hasValidPath };"
+`;

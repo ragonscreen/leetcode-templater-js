@@ -1,0 +1,41 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0852_peak-index-in-a-mountain-array solution template: 0852_peak-index-in-a-mountain-array 1`] = `
+"/**
+ * 0852. Peak Index in a Mountain Array
+ *
+ * Link: https://leetcode.com/problems/peak-index-in-a-mountain-array/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Binary Search (topic_11)
+ * - Junior (position_junior)
+ * - Weekly Contest 89 (contest_weekly-contest-89)
+ *
+ * Stats:
+ * - Total Accepted: 1,204,661
+ * - Total Submissions: 1,802,155
+ * - Acceptance Rate: 66.8%
+ *
+ * Similar Problems:
+ * - find-peak-element (Medium)
+ * - find-in-mountain-array (Hard)
+ * - minimum-number-of-removals-to-make-mountain-array (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} arr
+ * @return {number}
+ */
+const peakIndexInMountainArray = (arr) => {};
+
+export { peakIndexInMountainArray };"
+`;

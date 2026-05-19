@@ -1,0 +1,45 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3488_closest-equal-element-queries solution template: 3488_closest-equal-element-queries 1`] = `
+"/**
+ * 3488. Closest Equal Element Queries
+ *
+ * Link: https://leetcode.com/problems/closest-equal-element-queries/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Binary Search (topic_11)
+ * - Senior (position_senior)
+ * - Weekly Contest 441 (contest_weekly-contest-441)
+ *
+ * Stats:
+ * - Total Accepted: 102,520
+ * - Total Submissions: 199,373
+ * - Acceptance Rate: 51.4%
+ *
+ * Hints:
+ * 1. Use a dictionary that maps each unique value in the array to a sorted
+ * list of its indices.
+ *
+ * 2. For each query, use binary search on the sorted indices list to find the
+ * nearest occurrences of the target value.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number[]} queries
+ * @return {number[]}
+ */
+const solveQueries = (nums, queries) => {};
+
+export { solveQueries };"
+`;

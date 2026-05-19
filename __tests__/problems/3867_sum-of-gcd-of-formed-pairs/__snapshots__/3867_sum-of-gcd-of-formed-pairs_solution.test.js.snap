@@ -1,0 +1,49 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3867_sum-of-gcd-of-formed-pairs solution template: 3867_sum-of-gcd-of-formed-pairs 1`] = `
+"/**
+ * 3867. Sum of GCD of Formed Pairs
+ *
+ * Link: https://leetcode.com/problems/sum-of-gcd-of-formed-pairs/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Math (topic_8)
+ * - Two Pointers (topic_9)
+ * - Simulation (topic_61055)
+ * - Number Theory (topic_61067)
+ * - Senior (position_senior)
+ * - Biweekly Contest 178 (contest_biweekly-contest-178)
+ *
+ * Stats:
+ * - Total Accepted: 31,129
+ * - Total Submissions: 47,326
+ * - Acceptance Rate: 65.8%
+ *
+ * Hints:
+ * 1. Maintain a running prefix maximum \`mx<sub>i</sub>\` while iterating nums
+ * to compute \`prefixGcd[i] = gcd(nums[i], mx<sub>i</sub>)\`.
+ *
+ * 2. Sort \`prefixGcd\` in non-decreasing order.
+ *
+ * 3. Form pairs by combining smallest unpaired and largest unpaired elements.
+ *
+ * 4. Compute gcd for each pair and sum them; ignore middle element if \`n\` is odd.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number}
+ */
+const gcdSum = (nums) => {};
+
+export { gcdSum };"
+`;

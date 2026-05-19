@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0946_validate-stack-sequences test template: 0946_validate-stack-sequences 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { validateStackSequences } from '../../src/0901-1000/0946_validate-stack-sequences.js';
+
+const testcases = [
+    { pushed: [1,2,3,4,5], popped: [4,5,3,2,1], expected: true },
+    { pushed: [1,2,3,4,5], popped: [4,3,5,1,2], expected: false },
+];
+
+describe('validateStackSequences', () => {
+    test.each(structuredClone(testcases))('validateStackSequences($pushed, $popped) -> $expected', ({ pushed, popped, expected }) => {
+        expect(validateStackSequences(pushed, popped)).toStrictEqual(expected);
+    });
+});"
+`;

@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0345_reverse-vowels-of-a-string test template: 0345_reverse-vowels-of-a-string 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { reverseVowels } from '../../src/0301-0400/0345_reverse-vowels-of-a-string.js';
+
+const testcases = [
+    { s: "IceCreAm", expected: "AceCreIm" },
+    { s: "leetcode", expected: "leotcede" },
+];
+
+describe('reverseVowels', () => {
+    test.each(structuredClone(testcases))('reverseVowels($s) -> $expected', ({ s, expected }) => {
+        expect(reverseVowels(s)).toStrictEqual(expected);
+    });
+});"
+`;

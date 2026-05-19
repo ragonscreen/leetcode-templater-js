@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0791_custom-sort-string test template: 0791_custom-sort-string 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { customSortString } from '../../src/0701-0800/0791_custom-sort-string.js';
+
+const testcases = [
+    { order: "cba", s: "abcd", expected: ["cbad","cbda","cdba","dcba"] },
+    { order: "bcafg", s: "abcd", expected: ["bcad","bcda","bdca","dbca"] },
+];
+
+describe('customSortString', () => {
+    test.each(structuredClone(testcases))('customSortString($order, $s) -> $expected', ({ order, s, expected }) => {
+        expect(customSortString(order, s)).toBeOneOf(expected);
+    });
+});"
+`;

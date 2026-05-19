@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0912_sort-an-array test template: 0912_sort-an-array 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { sortArray } from '../../src/0901-1000/0912_sort-an-array.js';
+
+const testcases = [
+    { nums: [5,2,3,1], expected: [1,2,3,5] },
+    { nums: [5,1,1,2,0,0], expected: [0,0,1,1,2,5] },
+];
+
+describe('sortArray', () => {
+    test.each(structuredClone(testcases))('sortArray($nums) -> $expected', ({ nums, expected }) => {
+        expect(sortArray(nums)).toStrictEqual(expected);
+    });
+});"
+`;

@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0012_integer-to-roman test template: 0012_integer-to-roman 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { intToRoman } from '../../src/0001-0100/0012_integer-to-roman.js';
+
+const testcases = [
+    { num: 3749, expected: "MMMDCCXLIX" },
+    { num: 58, expected: "LVIII" },
+    { num: 1994, expected: "MCMXCIV" },
+];
+
+describe('intToRoman', () => {
+    test.each(structuredClone(testcases))('intToRoman($num) -> $expected', ({ num, expected }) => {
+        expect(intToRoman(num)).toStrictEqual(expected);
+    });
+});"
+`;

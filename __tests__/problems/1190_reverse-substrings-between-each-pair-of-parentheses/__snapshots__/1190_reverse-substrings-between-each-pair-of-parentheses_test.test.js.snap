@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1190_reverse-substrings-between-each-pair-of-parentheses test template: 1190_reverse-substrings-between-each-pair-of-parentheses 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { reverseParentheses } from '../../src/1101-1200/1190_reverse-substrings-between-each-pair-of-parentheses.js';
+
+const testcases = [
+    { s: "(abcd)", expected: "dcba" },
+    { s: "(u(love)i)", expected: "iloveu" },
+    { s: "(ed(et(oc))el)", expected: "leetcode" },
+];
+
+describe('reverseParentheses', () => {
+    test.each(structuredClone(testcases))('reverseParentheses($s) -> $expected', ({ s, expected }) => {
+        expect(reverseParentheses(s)).toStrictEqual(expected);
+    });
+});"
+`;

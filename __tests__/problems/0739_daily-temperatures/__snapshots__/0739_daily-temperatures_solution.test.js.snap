@@ -1,0 +1,46 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0739_daily-temperatures solution template: 0739_daily-temperatures 1`] = `
+"/**
+ * 0739. Daily Temperatures
+ *
+ * Link: https://leetcode.com/problems/daily-temperatures/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Stack (topic_15)
+ * - Monotonic Stack (topic_61054)
+ * - Staff (position_staff)
+ * - Weekly Contest 61 (contest_weekly-contest-61)
+ *
+ * Stats:
+ * - Total Accepted: 1,730,624
+ * - Total Submissions: 2,519,925
+ * - Acceptance Rate: 68.7%
+ *
+ * Similar Problems:
+ * - next-greater-element-i (Easy)
+ * - online-stock-span (Medium)
+ *
+ * Hints:
+ * 1. If the temperature is say, 70 today, then in the future a warmer
+ * temperature must be either 71, 72, 73, ..., 99, or 100.  We could
+ * remember when all of them occur next.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} temperatures
+ * @return {number[]}
+ */
+const dailyTemperatures = (temperatures) => {};
+
+export { dailyTemperatures };"
+`;

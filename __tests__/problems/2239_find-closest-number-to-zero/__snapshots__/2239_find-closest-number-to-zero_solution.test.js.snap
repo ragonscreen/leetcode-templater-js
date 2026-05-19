@@ -1,0 +1,44 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2239_find-closest-number-to-zero solution template: 2239_find-closest-number-to-zero 1`] = `
+"/**
+ * 2239. Find Closest Number to Zero
+ *
+ * Link: https://leetcode.com/problems/find-closest-number-to-zero/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Mid Level (position_mid-level)
+ * - Biweekly Contest 76 (contest_biweekly-contest-76)
+ *
+ * Stats:
+ * - Total Accepted: 212,849
+ * - Total Submissions: 443,854
+ * - Acceptance Rate: 48.0%
+ *
+ * Similar Problems:
+ * - find-k-closest-elements (Medium)
+ *
+ * Hints:
+ * 1. Keep track of the number closest to 0 as you iterate through the array.
+ *
+ * 2. Ensure that if multiple numbers are closest to 0, you store the one with
+ * the largest value.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number}
+ */
+const findClosestNumber = (nums) => {};
+
+export { findClosestNumber };"
+`;

@@ -1,0 +1,49 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2487_remove-nodes-from-linked-list solution template: 2487_remove-nodes-from-linked-list 1`] = `
+"/**
+ * 2487. Remove Nodes From Linked List
+ *
+ * Link: https://leetcode.com/problems/remove-nodes-from-linked-list/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Linked List (topic_7)
+ * - Stack (topic_15)
+ * - Recursion (topic_31)
+ * - Monotonic Stack (topic_61054)
+ * - Staff (position_staff)
+ * - Weekly Contest 321 (contest_weekly-contest-321)
+ *
+ * Stats:
+ * - Total Accepted: 273,268
+ * - Total Submissions: 364,701
+ * - Acceptance Rate: 74.9%
+ *
+ * Similar Problems:
+ * - next-greater-element-i (Easy)
+ * - reverse-linked-list (Easy)
+ * - delete-node-in-a-linked-list (Medium)
+ * - delete-nodes-from-linked-list-present-in-array (Medium)
+ *
+ * Hints:
+ * 1. Iterate on nodes in reversed order.
+ *
+ * 2. When iterating in reversed order, save the maximum value that was passed before.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {ListNode} head
+ * @return {ListNode}
+ */
+const removeNodes = (head) => {};
+
+export { removeNodes };"
+`;

@@ -1,0 +1,53 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2708_maximum-strength-of-a-group solution template: 2708_maximum-strength-of-a-group 1`] = `
+"/**
+ * 2708. Maximum Strength of a Group
+ *
+ * Link: https://leetcode.com/problems/maximum-strength-of-a-group/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Dynamic Programming (topic_13)
+ * - Backtracking (topic_14)
+ * - Greedy (topic_17)
+ * - Bit Manipulation (topic_19)
+ * - Sorting (topic_61049)
+ * - Enumeration (topic_61066)
+ * - Staff (position_staff)
+ * - Biweekly Contest 105 (contest_biweekly-contest-105)
+ *
+ * Stats:
+ * - Total Accepted: 38,728
+ * - Total Submissions: 150,490
+ * - Acceptance Rate: 25.7%
+ *
+ * Similar Problems:
+ * - maximum-strength-of-k-disjoint-subarrays (Hard)
+ *
+ * Hints:
+ * 1. Try to generate all pairs of subsets and check which group provides
+ * maximal strength.
+ *
+ * 2. It can also be solved in O(NlogN) by sorting the array and using all
+ * positive integers.
+ *
+ * 3. Use negative integers only in pairs such that their product becomes positive.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number}
+ */
+const maxStrength = (nums) => {};
+
+export { maxStrength };"
+`;

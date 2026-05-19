@@ -1,0 +1,54 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0303_range-sum-query-immutable solution template: 0303_range-sum-query-immutable 1`] = `
+"/**
+ * 0303. Range Sum Query - Immutable
+ *
+ * Link: https://leetcode.com/problems/range-sum-query-immutable/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Design (topic_25)
+ * - Prefix Sum (topic_61068)
+ *
+ * Stats:
+ * - Total Accepted: 931,834
+ * - Total Submissions: 1,291,623
+ * - Acceptance Rate: 72.1%
+ *
+ * Similar Problems:
+ * - sum-of-variable-length-subarrays (Easy)
+ * - maximum-size-subarray-sum-equals-k (Medium) (Premium)
+ * - range-sum-query-2d-immutable (Medium)
+ * - range-sum-query-mutable (Medium)
+ */
+
+/**
+ * Approach:
+ */
+class NumArray {
+    /**
+     * Time Complexity: O()
+     * Space Complexity: O()
+     *
+     * @param {number[]} nums
+     */
+    constructor(nums) {}
+
+    /**
+     * Time Complexity: O()
+     * Space Complexity: O()
+     *
+     * @param {number} left
+     * @param {number} right
+     * @return {number}
+     */
+    sumRange(left, right) {}
+}
+
+export { NumArray };"
+`;

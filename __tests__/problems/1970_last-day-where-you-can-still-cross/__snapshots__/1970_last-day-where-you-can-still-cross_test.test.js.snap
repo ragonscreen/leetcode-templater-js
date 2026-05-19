@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1970_last-day-where-you-can-still-cross test template: 1970_last-day-where-you-can-still-cross 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { latestDayToCross } from '../../src/1901-2000/1970_last-day-where-you-can-still-cross.js';
+
+const testcases = [
+    { row: 2, col: 2, cells: [[1,1],[2,1],[1,2],[2,2]], expected: 2 },
+    { row: 2, col: 2, cells: [[1,1],[1,2],[2,1],[2,2]], expected: 1 },
+    { row: 3, col: 3, cells: [[1,2],[2,1],[3,3],[2,2],[1,1],[1,3],[2,3],[3,2],[3,1]], expected: 3 },
+];
+
+describe('latestDayToCross', () => {
+    test.each(structuredClone(testcases))('latestDayToCross($row, $col, $cells) -> $expected', ({ row, col, cells, expected }) => {
+        expect(latestDayToCross(row, col, cells)).toStrictEqual(expected);
+    });
+});"
+`;

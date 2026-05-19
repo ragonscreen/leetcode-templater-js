@@ -1,0 +1,44 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0174_dungeon-game solution template: 0174_dungeon-game 1`] = `
+"/**
+ * 0174. Dungeon Game
+ *
+ * Link: https://leetcode.com/problems/dungeon-game/
+ * Category: Algorithms
+ * Difficulty: Hard
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Dynamic Programming (topic_13)
+ * - Matrix (topic_61053)
+ *
+ * Stats:
+ * - Total Accepted: 303,226
+ * - Total Submissions: 733,482
+ * - Acceptance Rate: 41.3%
+ *
+ * Similar Problems:
+ * - check-if-there-is-a-path-with-equal-number-of-0s-and-1s (Medium) (Premium)
+ * - minimum-health-to-beat-game (Medium) (Premium)
+ * - minimum-path-cost-in-a-grid (Medium)
+ * - minimum-path-sum (Medium)
+ * - unique-paths (Medium)
+ * - cherry-pickup (Hard)
+ * - paths-in-matrix-whose-sum-is-divisible-by-k (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[][]} dungeon
+ * @return {number}
+ */
+const calculateMinimumHP = (dungeon) => {};
+
+export { calculateMinimumHP };"
+`;

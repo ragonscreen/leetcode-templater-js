@@ -1,0 +1,53 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0347_top-k-frequent-elements solution template: 0347_top-k-frequent-elements 1`] = `
+"/**
+ * 0347. Top K Frequent Elements
+ *
+ * Link: https://leetcode.com/problems/top-k-frequent-elements/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Divide and Conquer (topic_12)
+ * - Sorting (topic_61049)
+ * - Heap (Priority Queue) (topic_61050)
+ * - Bucket Sort (topic_61060)
+ * - Counting (topic_61062)
+ * - Quickselect (topic_61069)
+ *
+ * Stats:
+ * - Total Accepted: 3,593,379
+ * - Total Submissions: 5,410,031
+ * - Acceptance Rate: 66.4%
+ *
+ * Similar Problems:
+ * - linked-list-frequency (Easy) (Premium)
+ * - most-frequent-even-element (Easy)
+ * - k-closest-points-to-origin (Medium)
+ * - kth-largest-element-in-an-array (Medium)
+ * - sender-with-largest-word-count (Medium)
+ * - sort-characters-by-frequency (Medium)
+ * - sort-features-by-popularity (Medium) (Premium)
+ * - split-array-into-consecutive-subsequences (Medium)
+ * - top-k-frequent-words (Medium)
+ * - word-frequency (Medium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number} k
+ * @return {number[]}
+ */
+const topKFrequent = (nums, k) => {};
+
+export { topKFrequent };"
+`;

@@ -1,0 +1,44 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0523_continuous-subarray-sum solution template: 0523_continuous-subarray-sum 1`] = `
+"/**
+ * 0523. Continuous Subarray Sum
+ *
+ * Link: https://leetcode.com/problems/continuous-subarray-sum/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Math (topic_8)
+ * - Prefix Sum (topic_61068)
+ * - Senior Staff (position_senior-staff)
+ *
+ * Stats:
+ * - Total Accepted: 778,663
+ * - Total Submissions: 2,482,562
+ * - Acceptance Rate: 31.4%
+ *
+ * Similar Problems:
+ * - apply-operations-to-make-all-array-elements-equal-to-zero (Medium)
+ * - intervals-between-identical-elements (Medium)
+ * - subarray-sum-equals-k (Medium)
+ * - minimum-number-of-operations-to-make-array-continuous (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number} k
+ * @return {boolean}
+ */
+const checkSubarraySum = (nums, k) => {};
+
+export { checkSubarraySum };"
+`;

@@ -1,0 +1,50 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1855_maximum-distance-between-a-pair-of-values solution template: 1855_maximum-distance-between-a-pair-of-values 1`] = `
+"/**
+ * 1855. Maximum Distance Between a Pair of Values
+ *
+ * Link: https://leetcode.com/problems/maximum-distance-between-a-pair-of-values/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Two Pointers (topic_9)
+ * - Binary Search (topic_11)
+ * - Senior (position_senior)
+ * - Weekly Contest 240 (contest_weekly-contest-240)
+ *
+ * Stats:
+ * - Total Accepted: 164,704
+ * - Total Submissions: 268,377
+ * - Acceptance Rate: 61.4%
+ *
+ * Similar Problems:
+ * - two-furthest-houses-with-different-colors (Easy)
+ *
+ * Hints:
+ * 1. Since both arrays are sorted in a non-increasing way this means that for
+ * each value in the first array. We can find the farthest value smaller
+ * than it using binary search.
+ *
+ * 2. There is another solution using a two pointers approach since the first
+ * array is non-increasing the farthest j such that nums2[j] ≥ nums1[i] is
+ * at least as far as the farthest j such that nums2[j] ≥ nums1[i-1]
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums1
+ * @param {number[]} nums2
+ * @return {number}
+ */
+const maxDistance = (nums1, nums2) => {};
+
+export { maxDistance };"
+`;

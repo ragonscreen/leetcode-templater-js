@@ -1,0 +1,55 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2087_minimum-cost-homecoming-of-a-robot-in-a-grid solution template: 2087_minimum-cost-homecoming-of-a-robot-in-a-grid 1`] = `
+"/**
+ * 2087. Minimum Cost Homecoming of a Robot in a Grid
+ *
+ * Link: https://leetcode.com/problems/minimum-cost-homecoming-of-a-robot-in-a-grid/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Greedy (topic_17)
+ * - Staff (position_staff)
+ * - Biweekly Contest 66 (contest_biweekly-contest-66)
+ *
+ * Stats:
+ * - Total Accepted: 27,492
+ * - Total Submissions: 53,091
+ * - Acceptance Rate: 51.8%
+ *
+ * Similar Problems:
+ * - bomb-enemy (Medium) (Premium)
+ * - check-if-there-is-a-path-with-equal-number-of-0s-and-1s (Medium) (Premium)
+ * - count-square-submatrices-with-all-ones (Medium)
+ * - minimum-path-sum (Medium)
+ * - unique-paths (Medium)
+ * - paths-in-matrix-whose-sum-is-divisible-by-k (Hard)
+ *
+ * Hints:
+ * 1. Irrespective of what path the robot takes, it will have to traverse all
+ * the rows between startRow and homeRow and all the columns between
+ * startCol and homeCol.
+ *
+ * 2. Hence, making any other move other than traversing the required rows and
+ * columns will potentially incur more cost which can be avoided.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} startPos
+ * @param {number[]} homePos
+ * @param {number[]} rowCosts
+ * @param {number[]} colCosts
+ * @return {number}
+ */
+const minCost = (startPos, homePos, rowCosts, colCosts) => {};
+
+export { minCost };"
+`;

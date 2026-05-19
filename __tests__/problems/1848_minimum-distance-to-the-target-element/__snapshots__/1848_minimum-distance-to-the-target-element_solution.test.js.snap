@@ -1,0 +1,42 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1848_minimum-distance-to-the-target-element solution template: 1848_minimum-distance-to-the-target-element 1`] = `
+"/**
+ * 1848. Minimum Distance to the Target Element
+ *
+ * Link: https://leetcode.com/problems/minimum-distance-to-the-target-element/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Mid Level (position_mid-level)
+ * - Weekly Contest 239 (contest_weekly-contest-239)
+ *
+ * Stats:
+ * - Total Accepted: 174,957
+ * - Total Submissions: 271,002
+ * - Acceptance Rate: 64.6%
+ *
+ * Hints:
+ * 1. Loop in both directions until you find the target element.
+ *
+ * 2. For each index i such that nums[i] == target calculate abs(i - start).
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number} target
+ * @param {number} start
+ * @return {number}
+ */
+const getMinDistance = (nums, target, start) => {};
+
+export { getMinDistance };"
+`;

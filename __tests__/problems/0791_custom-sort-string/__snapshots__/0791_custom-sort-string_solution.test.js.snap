@@ -1,0 +1,41 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0791_custom-sort-string solution template: 0791_custom-sort-string 1`] = `
+"/**
+ * 0791. Custom Sort String
+ *
+ * Link: https://leetcode.com/problems/custom-sort-string/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Hash Table (topic_6)
+ * - String (topic_10)
+ * - Sorting (topic_61049)
+ * - Staff (position_staff)
+ * - Weekly Contest 73 (contest_weekly-contest-73)
+ *
+ * Stats:
+ * - Total Accepted: 580,432
+ * - Total Submissions: 802,851
+ * - Acceptance Rate: 72.3%
+ *
+ * Similar Problems:
+ * - sort-the-students-by-their-kth-score (Medium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} order
+ * @param {string} s
+ * @return {string}
+ */
+const customSortString = (order, s) => {};
+
+export { customSortString };"
+`;

@@ -1,0 +1,49 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3043_find-the-length-of-the-longest-common-prefix solution template: 3043_find-the-length-of-the-longest-common-prefix 1`] = `
+"/**
+ * 3043. Find the Length of the Longest Common Prefix
+ *
+ * Link: https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - String (topic_10)
+ * - Trie (topic_27)
+ * - Senior (position_senior)
+ * - Weekly Contest 385 (contest_weekly-contest-385)
+ *
+ * Stats:
+ * - Total Accepted: 178,337
+ * - Total Submissions: 312,265
+ * - Acceptance Rate: 57.1%
+ *
+ * Similar Problems:
+ * - longest-common-prefix (Easy)
+ * - longest-common-suffix-queries (Hard)
+ *
+ * Hints:
+ * 1. Put all the possible prefixes of each element in \`arr1\` into a HashSet.
+ *
+ * 2. For all the possible prefixes of each element in \`arr2\`, check if it
+ * exists in the HashSet.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} arr1
+ * @param {number[]} arr2
+ * @return {number}
+ */
+const longestCommonPrefix = (arr1, arr2) => {};
+
+export { longestCommonPrefix };"
+`;

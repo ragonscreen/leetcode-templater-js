@@ -1,0 +1,47 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0002_add-two-numbers solution template: 0002_add-two-numbers 1`] = `
+"/**
+ * 0002. Add Two Numbers
+ *
+ * Link: https://leetcode.com/problems/add-two-numbers/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Linked List (topic_7)
+ * - Math (topic_8)
+ * - Recursion (topic_31)
+ * - Principal (position_principal)
+ *
+ * Stats:
+ * - Total Accepted: 7,041,497
+ * - Total Submissions: 14,530,680
+ * - Acceptance Rate: 48.5%
+ *
+ * Similar Problems:
+ * - add-binary (Easy)
+ * - add-strings (Easy)
+ * - add-to-array-form-of-integer (Easy)
+ * - add-two-numbers-ii (Medium)
+ * - add-two-polynomials-represented-as-linked-lists (Medium) (Premium)
+ * - double-a-number-represented-as-a-linked-list (Medium)
+ * - multiply-strings (Medium)
+ * - sum-of-two-integers (Medium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {ListNode} l1
+ * @param {ListNode} l2
+ * @return {ListNode}
+ */
+const addTwoNumbers = (l1, l2) => {};
+
+export { addTwoNumbers };"
+`;

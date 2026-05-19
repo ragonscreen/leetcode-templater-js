@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0852_peak-index-in-a-mountain-array test template: 0852_peak-index-in-a-mountain-array 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { peakIndexInMountainArray } from '../../src/0801-0900/0852_peak-index-in-a-mountain-array.js';
+
+const testcases = [
+    { arr: [0,1,0], expected: 1 },
+    { arr: [0,2,1,0], expected: 1 },
+    { arr: [0,10,5,2], expected: 1 },
+];
+
+describe('peakIndexInMountainArray', () => {
+    test.each(structuredClone(testcases))('peakIndexInMountainArray($arr) -> $expected', ({ arr, expected }) => {
+        expect(peakIndexInMountainArray(arr)).toStrictEqual(expected);
+    });
+});"
+`;

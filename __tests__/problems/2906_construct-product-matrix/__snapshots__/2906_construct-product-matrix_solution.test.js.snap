@@ -1,0 +1,46 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2906_construct-product-matrix solution template: 2906_construct-product-matrix 1`] = `
+"/**
+ * 2906. Construct Product Matrix
+ *
+ * Link: https://leetcode.com/problems/construct-product-matrix/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Matrix (topic_61053)
+ * - Prefix Sum (topic_61068)
+ * - Staff (position_staff)
+ * - Weekly Contest 367 (contest_weekly-contest-367)
+ *
+ * Stats:
+ * - Total Accepted: 104,496
+ * - Total Submissions: 201,943
+ * - Acceptance Rate: 51.7%
+ *
+ * Similar Problems:
+ * - product-of-array-except-self (Medium)
+ *
+ * Hints:
+ * 1. Try to solve this without using the \`'/'\` (division operation).
+ *
+ * 2. Create two 2D arrays for <b>suffix</b> and <b>prefix</b> product, and use
+ * them to find the product for each position.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[][]} grid
+ * @return {number[][]}
+ */
+const constructProductMatrix = (grid) => {};
+
+export { constructProductMatrix };"
+`;

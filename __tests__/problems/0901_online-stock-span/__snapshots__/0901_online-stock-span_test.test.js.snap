@@ -1,0 +1,20 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0901_online-stock-span test template: 0901_online-stock-span 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { StockSpanner } from '../../src/0901-1000/0901_online-stock-span.js';
+
+describe('StockSpanner', () => {
+    test('default test 1', () => {
+        const stockSpanner = new StockSpanner();
+
+        expect(stockSpanner.next(100)).toStrictEqual(1);
+        expect(stockSpanner.next(80)).toStrictEqual(1);
+        expect(stockSpanner.next(60)).toStrictEqual(1);
+        expect(stockSpanner.next(70)).toStrictEqual(2);
+        expect(stockSpanner.next(60)).toStrictEqual(1);
+        expect(stockSpanner.next(75)).toStrictEqual(4);
+        expect(stockSpanner.next(85)).toStrictEqual(6);
+    });
+});"
+`;

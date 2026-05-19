@@ -1,0 +1,40 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0319_bulb-switcher solution template: 0319_bulb-switcher 1`] = `
+"/**
+ * 0319. Bulb Switcher
+ *
+ * Link: https://leetcode.com/problems/bulb-switcher/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Math (topic_8)
+ * - Brainteaser (topic_32)
+ *
+ * Stats:
+ * - Total Accepted: 309,159
+ * - Total Submissions: 553,213
+ * - Acceptance Rate: 55.9%
+ *
+ * Similar Problems:
+ * - find-the-pivot-integer (Easy)
+ * - bulb-switcher-ii (Medium)
+ * - number-of-times-binary-string-is-prefix-aligned (Medium)
+ * - minimum-number-of-k-consecutive-bit-flips (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number} n
+ * @return {number}
+ */
+const bulbSwitch = (n) => {};
+
+export { bulbSwitch };"
+`;

@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0658_find-k-closest-elements test template: 0658_find-k-closest-elements 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { findClosestElements } from '../../src/0601-0700/0658_find-k-closest-elements.js';
+
+const testcases = [
+    { arr: [1,2,3,4,5], k: 4, x: 3, expected: [1,2,3,4] },
+    { arr: [1,1,2,3,4,5], k: 4, x: -1, expected: [1,1,2,3] },
+];
+
+describe('findClosestElements', () => {
+    test.each(structuredClone(testcases))('findClosestElements($arr, $k, $x) -> $expected', ({ arr, k, x, expected }) => {
+        expect(findClosestElements(arr, k, x)).toStrictEqual(expected);
+    });
+});"
+`;

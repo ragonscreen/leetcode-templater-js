@@ -1,0 +1,48 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2404_most-frequent-even-element solution template: 2404_most-frequent-even-element 1`] = `
+"/**
+ * 2404. Most Frequent Even Element
+ *
+ * Link: https://leetcode.com/problems/most-frequent-even-element/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Counting (topic_61062)
+ * - Mid Level (position_mid-level)
+ * - Weekly Contest 310 (contest_weekly-contest-310)
+ *
+ * Stats:
+ * - Total Accepted: 138,737
+ * - Total Submissions: 258,664
+ * - Acceptance Rate: 53.6%
+ *
+ * Similar Problems:
+ * - majority-element (Easy)
+ * - majority-element-ii (Medium)
+ * - sort-characters-by-frequency (Medium)
+ * - top-k-frequent-elements (Medium)
+ *
+ * Hints:
+ * 1. Could you count the frequency of each even element in the array?
+ *
+ * 2. Would a hashmap help?
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number}
+ */
+const mostFrequentEven = (nums) => {};
+
+export { mostFrequentEven };"
+`;

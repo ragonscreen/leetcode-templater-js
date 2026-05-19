@@ -1,0 +1,40 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0004_median-of-two-sorted-arrays solution template: 0004_median-of-two-sorted-arrays 1`] = `
+"/**
+ * 0004. Median of Two Sorted Arrays
+ *
+ * Link: https://leetcode.com/problems/median-of-two-sorted-arrays/
+ * Category: Algorithms
+ * Difficulty: Hard
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Binary Search (topic_11)
+ * - Divide and Conquer (topic_12)
+ * - Mid Level (position_mid-level)
+ *
+ * Stats:
+ * - Total Accepted: 4,262,027
+ * - Total Submissions: 9,157,942
+ * - Acceptance Rate: 46.5%
+ *
+ * Similar Problems:
+ * - median-of-a-row-wise-sorted-matrix (Medium) (Premium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums1
+ * @param {number[]} nums2
+ * @return {number}
+ */
+const findMedianSortedArrays = (nums1, nums2) => {};
+
+export { findMedianSortedArrays };"
+`;

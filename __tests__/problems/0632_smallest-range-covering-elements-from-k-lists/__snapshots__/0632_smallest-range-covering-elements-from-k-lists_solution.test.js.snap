@@ -1,0 +1,42 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0632_smallest-range-covering-elements-from-k-lists solution template: 0632_smallest-range-covering-elements-from-k-lists 1`] = `
+"/**
+ * 0632. Smallest Range Covering Elements from K Lists
+ *
+ * Link: https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/
+ * Category: Algorithms
+ * Difficulty: Hard
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Greedy (topic_17)
+ * - Sliding Window (topic_55821)
+ * - Sorting (topic_61049)
+ * - Heap (Priority Queue) (topic_61050)
+ * - Principal (position_principal)
+ *
+ * Stats:
+ * - Total Accepted: 244,944
+ * - Total Submissions: 349,261
+ * - Acceptance Rate: 70.1%
+ *
+ * Similar Problems:
+ * - minimum-window-substring (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[][]} nums
+ * @return {number[]}
+ */
+const smallestRange = (nums) => {};
+
+export { smallestRange };"
+`;

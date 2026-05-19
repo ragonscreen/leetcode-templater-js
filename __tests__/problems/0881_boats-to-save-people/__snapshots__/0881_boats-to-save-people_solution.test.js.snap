@@ -1,0 +1,39 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0881_boats-to-save-people solution template: 0881_boats-to-save-people 1`] = `
+"/**
+ * 0881. Boats to Save People
+ *
+ * Link: https://leetcode.com/problems/boats-to-save-people/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Two Pointers (topic_9)
+ * - Greedy (topic_17)
+ * - Sorting (topic_61049)
+ * - Staff (position_staff)
+ * - Weekly Contest 96 (contest_weekly-contest-96)
+ *
+ * Stats:
+ * - Total Accepted: 572,062
+ * - Total Submissions: 926,111
+ * - Acceptance Rate: 61.8%
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} people
+ * @param {number} limit
+ * @return {number}
+ */
+const numRescueBoats = (people, limit) => {};
+
+export { numRescueBoats };"
+`;

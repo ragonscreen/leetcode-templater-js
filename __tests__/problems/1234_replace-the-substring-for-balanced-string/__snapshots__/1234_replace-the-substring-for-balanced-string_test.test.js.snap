@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1234_replace-the-substring-for-balanced-string test template: 1234_replace-the-substring-for-balanced-string 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { balancedString } from '../../src/1201-1300/1234_replace-the-substring-for-balanced-string.js';
+
+const testcases = [
+    { s: "QWER", expected: 0 },
+    { s: "QQWE", expected: 1 },
+    { s: "QQQW", expected: 2 },
+];
+
+describe('balancedString', () => {
+    test.each(structuredClone(testcases))('balancedString($s) -> $expected', ({ s, expected }) => {
+        expect(balancedString(s)).toStrictEqual(expected);
+    });
+});"
+`;

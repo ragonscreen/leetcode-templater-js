@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3179_find-the-n-th-value-after-k-seconds test template: 3179_find-the-n-th-value-after-k-seconds 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { valueAfterKSeconds } from '../../src/3101-3200/3179_find-the-n-th-value-after-k-seconds.js';
+
+const testcases = [
+    { n: 4, k: 5, expected: 56 },
+    { n: 5, k: 3, expected: 35 },
+];
+
+describe('valueAfterKSeconds', () => {
+    test.each(structuredClone(testcases))('valueAfterKSeconds($n, $k) -> $expected', ({ n, k, expected }) => {
+        expect(valueAfterKSeconds(n, k)).toStrictEqual(expected);
+    });
+});"
+`;

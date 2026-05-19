@@ -1,0 +1,36 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0065_valid-number solution template: 0065_valid-number 1`] = `
+"/**
+ * 0065. Valid Number
+ *
+ * Link: https://leetcode.com/problems/valid-number/
+ * Category: Algorithms
+ * Difficulty: Hard
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - String (topic_10)
+ *
+ * Stats:
+ * - Total Accepted: 522,379
+ * - Total Submissions: 2,272,203
+ * - Acceptance Rate: 23.0%
+ *
+ * Similar Problems:
+ * - string-to-integer-atoi (Medium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @return {boolean}
+ */
+const isNumber = (s) => {};
+
+export { isNumber };"
+`;

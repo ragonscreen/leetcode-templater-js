@@ -1,0 +1,44 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3301_maximize-the-total-height-of-unique-towers solution template: 3301_maximize-the-total-height-of-unique-towers 1`] = `
+"/**
+ * 3301. Maximize the Total Height of Unique Towers
+ *
+ * Link: https://leetcode.com/problems/maximize-the-total-height-of-unique-towers/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Greedy (topic_17)
+ * - Sorting (topic_61049)
+ * - Staff (position_staff)
+ * - Biweekly Contest 140 (contest_biweekly-contest-140)
+ *
+ * Stats:
+ * - Total Accepted: 35,035
+ * - Total Submissions: 93,493
+ * - Acceptance Rate: 37.5%
+ *
+ * Hints:
+ * 1. Sort the array \`maximumHeight\` in descending order.
+ *
+ * 2. After sorting, it can be seen that the maximum height that we can assign
+ * to the \`i<sup>th</sup>\` element is \`min(maximumHeight[i], maximumHeight[i
+ * - 1] - 1)\`.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} maximumHeight
+ * @return {number}
+ */
+const maximumTotalSum = (maximumHeight) => {};
+
+export { maximumTotalSum };"
+`;

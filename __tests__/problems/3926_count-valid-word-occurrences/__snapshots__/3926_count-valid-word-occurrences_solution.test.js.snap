@@ -1,0 +1,35 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3926_count-valid-word-occurrences solution template: 3926_count-valid-word-occurrences 1`] = `
+"/**
+ * 3926. Count Valid Word Occurrences
+ *
+ * Link: https://leetcode.com/problems/count-valid-word-occurrences/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Staff (position_staff)
+ * - Weekly Contest 501 (contest_weekly-contest-501)
+ *
+ * Stats:
+ * - Total Accepted: 20,119
+ * - Total Submissions: 43,101
+ * - Acceptance Rate: 46.7%
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string[]} chunks
+ * @param {string[]} queries
+ * @return {number[]}
+ */
+const countWordOccurrences = (chunks, queries) => {};
+
+export { countWordOccurrences };"
+`;

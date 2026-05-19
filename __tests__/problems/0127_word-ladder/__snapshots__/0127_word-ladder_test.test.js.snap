@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0127_word-ladder test template: 0127_word-ladder 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { ladderLength } from '../../src/0101-0200/0127_word-ladder.js';
+
+const testcases = [
+    { beginWord: "hit", endWord: "cog", wordList: ["hot","dot","dog","lot","log","cog"], expected: 5 },
+    { beginWord: "hit", endWord: "cog", wordList: ["hot","dot","dog","lot","log"], expected: 0 },
+];
+
+describe('ladderLength', () => {
+    test.each(structuredClone(testcases))('ladderLength($beginWord, $endWord, $wordList) -> $expected', ({ beginWord, endWord, wordList, expected }) => {
+        expect(ladderLength(beginWord, endWord, wordList)).toStrictEqual(expected);
+    });
+});"
+`;

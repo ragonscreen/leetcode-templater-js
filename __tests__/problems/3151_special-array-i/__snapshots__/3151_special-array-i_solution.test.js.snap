@@ -1,0 +1,38 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3151_special-array-i solution template: 3151_special-array-i 1`] = `
+"/**
+ * 3151. Special Array I
+ *
+ * Link: https://leetcode.com/problems/special-array-i/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Mid Level (position_mid-level)
+ * - Weekly Contest 398 (contest_weekly-contest-398)
+ *
+ * Stats:
+ * - Total Accepted: 263,060
+ * - Total Submissions: 322,263
+ * - Acceptance Rate: 81.6%
+ *
+ * Hints:
+ * 1. Try to check the parity of each element and its previous element.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {boolean}
+ */
+const isArraySpecial = (nums) => {};
+
+export { isArraySpecial };"
+`;

@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2390_removing-stars-from-a-string test template: 2390_removing-stars-from-a-string 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { removeStars } from '../../src/2301-2400/2390_removing-stars-from-a-string.js';
+
+const testcases = [
+    { s: "leet**cod*e", expected: "lecoe" },
+    { s: "erase*****", expected: "" },
+];
+
+describe('removeStars', () => {
+    test.each(structuredClone(testcases))('removeStars($s) -> $expected', ({ s, expected }) => {
+        expect(removeStars(s)).toStrictEqual(expected);
+    });
+});"
+`;

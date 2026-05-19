@@ -1,0 +1,49 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2515_shortest-distance-to-target-string-in-a-circular-array solution template: 2515_shortest-distance-to-target-string-in-a-circular-array 1`] = `
+"/**
+ * 2515. Shortest Distance to Target String in a Circular Array
+ *
+ * Link: https://leetcode.com/problems/shortest-distance-to-target-string-in-a-circular-array/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - String (topic_10)
+ * - Mid Level (position_mid-level)
+ * - Weekly Contest 325 (contest_weekly-contest-325)
+ *
+ * Stats:
+ * - Total Accepted: 138,076
+ * - Total Submissions: 211,703
+ * - Acceptance Rate: 65.2%
+ *
+ * Similar Problems:
+ * - defuse-the-bomb (Easy)
+ *
+ * Hints:
+ * 1. You have two options, either move straight to the left or move straight
+ * to the right.
+ *
+ * 2. Find the first target word and record the distance.
+ *
+ * 3. Choose the one with the minimum distance.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string[]} words
+ * @param {string} target
+ * @param {number} startIndex
+ * @return {number}
+ */
+const closestTarget = (words, target, startIndex) => {};
+
+export { closestTarget };"
+`;

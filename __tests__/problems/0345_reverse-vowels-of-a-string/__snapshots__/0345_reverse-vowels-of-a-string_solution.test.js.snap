@@ -1,0 +1,40 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0345_reverse-vowels-of-a-string solution template: 0345_reverse-vowels-of-a-string 1`] = `
+"/**
+ * 0345. Reverse Vowels of a String
+ *
+ * Link: https://leetcode.com/problems/reverse-vowels-of-a-string/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Two Pointers (topic_9)
+ * - String (topic_10)
+ *
+ * Stats:
+ * - Total Accepted: 1,604,909
+ * - Total Submissions: 2,619,593
+ * - Acceptance Rate: 61.3%
+ *
+ * Similar Problems:
+ * - faulty-keyboard (Easy)
+ * - remove-vowels-from-a-string (Easy) (Premium)
+ * - reverse-string (Easy)
+ * - sort-vowels-in-a-string (Medium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @return {string}
+ */
+const reverseVowels = (s) => {};
+
+export { reverseVowels };"
+`;

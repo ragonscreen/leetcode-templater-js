@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0121_best-time-to-buy-and-sell-stock test template: 0121_best-time-to-buy-and-sell-stock 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { maxProfit } from '../../src/0101-0200/0121_best-time-to-buy-and-sell-stock.js';
+
+const testcases = [
+    { prices: [7,1,5,3,6,4], expected: 5 },
+    { prices: [7,6,4,3,1], expected: 0 },
+];
+
+describe('maxProfit', () => {
+    test.each(structuredClone(testcases))('maxProfit($prices) -> $expected', ({ prices, expected }) => {
+        expect(maxProfit(prices)).toStrictEqual(expected);
+    });
+});"
+`;

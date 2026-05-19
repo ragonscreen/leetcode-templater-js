@@ -1,0 +1,49 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2028_find-missing-observations solution template: 2028_find-missing-observations 1`] = `
+"/**
+ * 2028. Find Missing Observations
+ *
+ * Link: https://leetcode.com/problems/find-missing-observations/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Math (topic_8)
+ * - Simulation (topic_61055)
+ * - Senior (position_senior)
+ * - Weekly Contest 261 (contest_weekly-contest-261)
+ *
+ * Stats:
+ * - Total Accepted: 175,094
+ * - Total Submissions: 305,234
+ * - Acceptance Rate: 57.4%
+ *
+ * Similar Problems:
+ * - number-of-dice-rolls-with-target-sum (Medium)
+ * - dice-roll-simulation (Hard)
+ *
+ * Hints:
+ * 1. What should the sum of the n rolls be?
+ *
+ * 2. Could you generate an array of size n such that each element is between 1
+ * and 6?
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} rolls
+ * @param {number} mean
+ * @param {number} n
+ * @return {number[]}
+ */
+const missingRolls = (rolls, mean, n) => {};
+
+export { missingRolls };"
+`;

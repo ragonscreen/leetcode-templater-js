@@ -1,0 +1,53 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1679_max-number-of-k-sum-pairs solution template: 1679_max-number-of-k-sum-pairs 1`] = `
+"/**
+ * 1679. Max Number of K-Sum Pairs
+ *
+ * Link: https://leetcode.com/problems/max-number-of-k-sum-pairs/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Two Pointers (topic_9)
+ * - Sorting (topic_61049)
+ * - Senior (position_senior)
+ * - Weekly Contest 218 (contest_weekly-contest-218)
+ *
+ * Stats:
+ * - Total Accepted: 606,484
+ * - Total Submissions: 1,063,052
+ * - Acceptance Rate: 57.1%
+ *
+ * Similar Problems:
+ * - two-sum (Easy)
+ * - count-good-meals (Medium)
+ * - divide-players-into-teams-of-equal-skill (Medium)
+ *
+ * Hints:
+ * 1. The abstract problem asks to count the number of disjoint pairs with a
+ * given sum k.
+ *
+ * 2. For each possible value x, it can be paired up with k - x.
+ *
+ * 3. The number of such pairs equals to  min(count(x), count(k-x)), unless
+ * that x = k / 2, where the number of such pairs will be floor(count(x) / 2).
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number} k
+ * @return {number}
+ */
+const maxOperations = (nums, k) => {};
+
+export { maxOperations };"
+`;

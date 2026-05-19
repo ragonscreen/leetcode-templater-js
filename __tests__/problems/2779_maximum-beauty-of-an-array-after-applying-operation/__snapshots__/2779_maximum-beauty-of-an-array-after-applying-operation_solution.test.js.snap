@@ -1,0 +1,49 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2779_maximum-beauty-of-an-array-after-applying-operation solution template: 2779_maximum-beauty-of-an-array-after-applying-operation 1`] = `
+"/**
+ * 2779. Maximum Beauty of an Array After Applying Operation
+ *
+ * Link: https://leetcode.com/problems/maximum-beauty-of-an-array-after-applying-operation/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Binary Search (topic_11)
+ * - Sliding Window (topic_55821)
+ * - Sorting (topic_61049)
+ * - Senior (position_senior)
+ * - Weekly Contest 354 (contest_weekly-contest-354)
+ *
+ * Stats:
+ * - Total Accepted: 133,071
+ * - Total Submissions: 227,836
+ * - Acceptance Rate: 58.4%
+ *
+ * Similar Problems:
+ * - maximum-size-subarray-sum-equals-k (Medium) (Premium)
+ * - partition-array-such-that-maximum-difference-is-k (Medium)
+ *
+ * Hints:
+ * 1. Sort the array.
+ *
+ * 2. The problem becomes the following: find maximum subarray A[i … j] such
+ * that A[j] - A[i] ≤ 2 * k.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number} k
+ * @return {number}
+ */
+const maximumBeauty = (nums, k) => {};
+
+export { maximumBeauty };"
+`;

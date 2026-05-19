@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0268_missing-number test template: 0268_missing-number 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { missingNumber } from '../../src/0201-0300/0268_missing-number.js';
+
+const testcases = [
+    { nums: [3,0,1], expected: 2 },
+    { nums: [0,1], expected: 2 },
+    { nums: [9,6,4,2,3,5,7,0,1], expected: 8 },
+];
+
+describe('missingNumber', () => {
+    test.each(structuredClone(testcases))('missingNumber($nums) -> $expected', ({ nums, expected }) => {
+        expect(missingNumber(nums)).toStrictEqual(expected);
+    });
+});"
+`;

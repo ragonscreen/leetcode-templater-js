@@ -1,0 +1,53 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2751_robot-collisions solution template: 2751_robot-collisions 1`] = `
+"/**
+ * 2751. Robot Collisions
+ *
+ * Link: https://leetcode.com/problems/robot-collisions/
+ * Category: Algorithms
+ * Difficulty: Hard
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Stack (topic_15)
+ * - Sorting (topic_61049)
+ * - Simulation (topic_61055)
+ * - Senior Staff (position_senior-staff)
+ * - Weekly Contest 351 (contest_weekly-contest-351)
+ *
+ * Stats:
+ * - Total Accepted: 192,378
+ * - Total Submissions: 312,281
+ * - Acceptance Rate: 61.6%
+ *
+ * Similar Problems:
+ * - asteroid-collision (Medium)
+ *
+ * Hints:
+ * 1. Process the robots in the order of their positions to ensure that we
+ * process the collisions correctly.
+ *
+ * 2. To optimize the solution, use a stack to keep track of the surviving
+ * robots as we iterate through the positions.
+ *
+ * 3. Instead of simulating each collision, check the current robot against the
+ * top of the stack (if it exists) to determine if a collision occurs.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} positions
+ * @param {number[]} healths
+ * @param {string} directions
+ * @return {number[]}
+ */
+const survivedRobotsHealths = (positions, healths, directions) => {};
+
+export { survivedRobotsHealths };"
+`;

@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1456_maximum-number-of-vowels-in-a-substring-of-given-length test template: 1456_maximum-number-of-vowels-in-a-substring-of-given-length 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { maxVowels } from '../../src/1401-1500/1456_maximum-number-of-vowels-in-a-substring-of-given-length.js';
+
+const testcases = [
+    { s: "abciiidef", k: 3, expected: 3 },
+    { s: "aeiou", k: 2, expected: 2 },
+    { s: "leetcode", k: 3, expected: 2 },
+];
+
+describe('maxVowels', () => {
+    test.each(structuredClone(testcases))('maxVowels($s, $k) -> $expected', ({ s, k, expected }) => {
+        expect(maxVowels(s, k)).toStrictEqual(expected);
+    });
+});"
+`;

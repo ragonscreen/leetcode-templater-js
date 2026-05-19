@@ -1,0 +1,43 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2938_separate-black-and-white-balls solution template: 2938_separate-black-and-white-balls 1`] = `
+"/**
+ * 2938. Separate Black and White Balls
+ *
+ * Link: https://leetcode.com/problems/separate-black-and-white-balls/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Two Pointers (topic_9)
+ * - String (topic_10)
+ * - Greedy (topic_17)
+ * - Senior (position_senior)
+ * - Weekly Contest 372 (contest_weekly-contest-372)
+ *
+ * Stats:
+ * - Total Accepted: 182,640
+ * - Total Submissions: 285,780
+ * - Acceptance Rate: 63.9%
+ *
+ * Hints:
+ * 1. Every \`1\` in the string \`s\` should be swapped with every \`0\` on its right side.
+ *
+ * 2. Iterate right to left and count the number of \`0\` that have already
+ * occurred, whenever you iterate on \`1\` add that counter to the answer.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @return {number}
+ */
+const minimumSteps = (s) => {};
+
+export { minimumSteps };"
+`;

@@ -1,0 +1,49 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1011_capacity-to-ship-packages-within-d-days solution template: 1011_capacity-to-ship-packages-within-d-days 1`] = `
+"/**
+ * 1011. Capacity To Ship Packages Within D Days
+ *
+ * Link: https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Binary Search (topic_11)
+ * - Senior Staff (position_senior-staff)
+ * - Weekly Contest 128 (contest_weekly-contest-128)
+ *
+ * Stats:
+ * - Total Accepted: 779,217
+ * - Total Submissions: 1,054,159
+ * - Acceptance Rate: 73.9%
+ *
+ * Similar Problems:
+ * - cutting-ribbons (Medium) (Premium)
+ * - maximum-bags-with-full-capacity-of-rocks (Medium)
+ * - minimized-maximum-of-products-distributed-to-any-store (Medium)
+ * - divide-chocolate (Hard) (Premium)
+ * - minimum-total-distance-traveled (Hard)
+ * - split-array-largest-sum (Hard)
+ *
+ * Hints:
+ * 1. Binary search on the answer.  We need a function possible(capacity) which
+ * returns true if and only if we can do the task in D days.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} weights
+ * @param {number} days
+ * @return {number}
+ */
+const shipWithinDays = (weights, days) => {};
+
+export { shipWithinDays };"
+`;

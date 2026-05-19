@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3228_maximum-number-of-operations-to-move-ones-to-the-end test template: 3228_maximum-number-of-operations-to-move-ones-to-the-end 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { maxOperations } from '../../src/3201-3300/3228_maximum-number-of-operations-to-move-ones-to-the-end.js';
+
+const testcases = [
+    { s: "1001101", expected: 4 },
+    { s: "00111", expected: 0 },
+];
+
+describe('maxOperations', () => {
+    test.each(structuredClone(testcases))('maxOperations($s) -> $expected', ({ s, expected }) => {
+        expect(maxOperations(s)).toStrictEqual(expected);
+    });
+});"
+`;

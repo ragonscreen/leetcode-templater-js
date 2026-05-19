@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0206_reverse-linked-list test template: 0206_reverse-linked-list 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { reverseList } from '../../src/0201-0300/0206_reverse-linked-list.js';
+
+const testcases = [
+    { head: [1,2,3,4,5], expected: [5,4,3,2,1] },
+    { head: [1,2], expected: [2,1] },
+    { head: [], expected: [] },
+];
+
+describe('reverseList', () => {
+    test.each(structuredClone(testcases))('reverseList($head) -> $expected', ({ head, expected }) => {
+        expect(reverseList(head)).toStrictEqual(expected);
+    });
+});"
+`;

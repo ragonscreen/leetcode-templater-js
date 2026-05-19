@@ -1,0 +1,46 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3703_remove-k-balanced-substrings solution template: 3703_remove-k-balanced-substrings 1`] = `
+"/**
+ * 3703. Remove K-Balanced Substrings
+ *
+ * Link: https://leetcode.com/problems/remove-k-balanced-substrings/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - String (topic_10)
+ * - Stack (topic_15)
+ * - Simulation (topic_61055)
+ * - Staff (position_staff)
+ * - Weekly Contest 470 (contest_weekly-contest-470)
+ *
+ * Stats:
+ * - Total Accepted: 20,010
+ * - Total Submissions: 61,162
+ * - Acceptance Rate: 32.7%
+ *
+ * Hints:
+ * 1. Use a stack
+ *
+ * 2. Try run-length encoding; operations only happen at boundaries of '(' and
+ * ')' runs
+ *
+ * 3. When adjacent runs are '(' then ')', you can cancel in blocks of k
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @param {number} k
+ * @return {string}
+ */
+const removeSubstring = (s, k) => {};
+
+export { removeSubstring };"
+`;

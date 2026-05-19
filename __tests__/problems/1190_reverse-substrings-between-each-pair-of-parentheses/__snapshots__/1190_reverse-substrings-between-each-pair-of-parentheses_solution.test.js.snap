@@ -1,0 +1,43 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1190_reverse-substrings-between-each-pair-of-parentheses solution template: 1190_reverse-substrings-between-each-pair-of-parentheses 1`] = `
+"/**
+ * 1190. Reverse Substrings Between Each Pair of Parentheses
+ *
+ * Link: https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - String (topic_10)
+ * - Stack (topic_15)
+ * - Senior (position_senior)
+ * - Weekly Contest 154 (contest_weekly-contest-154)
+ *
+ * Stats:
+ * - Total Accepted: 245,647
+ * - Total Submissions: 341,280
+ * - Acceptance Rate: 72.0%
+ *
+ * Hints:
+ * 1. Find all brackets in the string.
+ *
+ * 2. Does the order of the reverse matter ?
+ *
+ * 3. The order does not matter.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @return {string}
+ */
+const reverseParentheses = (s) => {};
+
+export { reverseParentheses };"
+`;

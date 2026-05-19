@@ -1,0 +1,55 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2121_intervals-between-identical-elements solution template: 2121_intervals-between-identical-elements 1`] = `
+"/**
+ * 2121. Intervals Between Identical Elements
+ *
+ * Link: https://leetcode.com/problems/intervals-between-identical-elements/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Prefix Sum (topic_61068)
+ * - Staff (position_staff)
+ * - Weekly Contest 273 (contest_weekly-contest-273)
+ *
+ * Stats:
+ * - Total Accepted: 31,068
+ * - Total Submissions: 64,710
+ * - Acceptance Rate: 48.0%
+ *
+ * Similar Problems:
+ * - continuous-subarray-sum (Medium)
+ *
+ * Hints:
+ * 1. For each unique value found in the array, store a sorted list of indices
+ * of elements that have this value in the array.
+ *
+ * 2. One way of doing this is to use a HashMap that maps the values to their
+ * list of indices. Update this mapping as you iterate through the array.
+ *
+ * 3. Process each list of indices separately and get the sum of intervals for
+ * the elements of that value by utilizing prefix sums.
+ *
+ * 4. For each element, keep track of the sum of indices of the identical
+ * elements that have come before and that will come after respectively. Use
+ * this to calculate the sum of intervals for that element to the rest of
+ * the elements with identical values.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} arr
+ * @return {number[]}
+ */
+const getDistances = (arr) => {};
+
+export { getDistances };"
+`;

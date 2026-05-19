@@ -1,0 +1,39 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0007_reverse-integer solution template: 0007_reverse-integer 1`] = `
+"/**
+ * 0007. Reverse Integer
+ *
+ * Link: https://leetcode.com/problems/reverse-integer/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Math (topic_8)
+ *
+ * Stats:
+ * - Total Accepted: 5,005,451
+ * - Total Submissions: 15,697,370
+ * - Acceptance Rate: 31.9%
+ *
+ * Similar Problems:
+ * - a-number-after-a-double-reversal (Easy)
+ * - reverse-bits (Easy)
+ * - count-number-of-distinct-integers-after-reverse-operations (Medium)
+ * - string-to-integer-atoi (Medium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number} x
+ * @return {number}
+ */
+const reverse = (x) => {};
+
+export { reverse };"
+`;

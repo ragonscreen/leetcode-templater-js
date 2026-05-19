@@ -1,0 +1,39 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0682_baseball-game solution template: 0682_baseball-game 1`] = `
+"/**
+ * 0682. Baseball Game
+ *
+ * Link: https://leetcode.com/problems/baseball-game/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Stack (topic_15)
+ * - Simulation (topic_61055)
+ * - Mid Level (position_mid-level)
+ *
+ * Stats:
+ * - Total Accepted: 600,755
+ * - Total Submissions: 747,176
+ * - Acceptance Rate: 80.4%
+ *
+ * Similar Problems:
+ * - crawler-log-folder (Easy)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string[]} operations
+ * @return {number}
+ */
+const calPoints = (operations) => {};
+
+export { calPoints };"
+`;

@@ -1,0 +1,50 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1306_jump-game-iii solution template: 1306_jump-game-iii 1`] = `
+"/**
+ * 1306. Jump Game III
+ *
+ * Link: https://leetcode.com/problems/jump-game-iii/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Depth-First Search (topic_21)
+ * - Breadth-First Search (topic_22)
+ * - Staff (position_staff)
+ * - Weekly Contest 169 (contest_weekly-contest-169)
+ *
+ * Stats:
+ * - Total Accepted: 387,916
+ * - Total Submissions: 553,061
+ * - Acceptance Rate: 70.1%
+ *
+ * Similar Problems:
+ * - jump-game (Medium)
+ * - jump-game-ii (Medium)
+ * - jump-game-vii (Medium)
+ * - jump-game-viii (Medium) (Premium)
+ * - maximum-number-of-jumps-to-reach-the-last-index (Medium)
+ *
+ * Hints:
+ * 1. Think of BFS to solve the problem.
+ *
+ * 2. When you reach a position with a value = 0 then return true.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} arr
+ * @param {number} start
+ * @return {boolean}
+ */
+const canReach = (arr, start) => {};
+
+export { canReach };"
+`;

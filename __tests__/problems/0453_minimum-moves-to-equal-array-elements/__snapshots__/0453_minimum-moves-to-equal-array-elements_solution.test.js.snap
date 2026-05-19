@@ -1,0 +1,42 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0453_minimum-moves-to-equal-array-elements solution template: 0453_minimum-moves-to-equal-array-elements 1`] = `
+"/**
+ * 0453. Minimum Moves to Equal Array Elements
+ *
+ * Link: https://leetcode.com/problems/minimum-moves-to-equal-array-elements/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Math (topic_8)
+ * - Junior (position_junior)
+ *
+ * Stats:
+ * - Total Accepted: 220,753
+ * - Total Submissions: 375,816
+ * - Acceptance Rate: 58.7%
+ *
+ * Similar Problems:
+ * - find-minimum-operations-to-make-all-elements-divisible-by-three (Easy)
+ * - divide-players-into-teams-of-equal-skill (Medium)
+ * - minimum-moves-to-equal-array-elements-ii (Medium)
+ * - pour-water-between-buckets-to-make-water-levels-equal (Medium) (Premium)
+ * - maximum-running-time-of-n-computers (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number}
+ */
+const minMoves = (nums) => {};
+
+export { minMoves };"
+`;

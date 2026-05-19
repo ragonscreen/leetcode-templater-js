@@ -1,0 +1,44 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3412_find-mirror-score-of-a-string solution template: 3412_find-mirror-score-of-a-string 1`] = `
+"/**
+ * 3412. Find Mirror Score of a String
+ *
+ * Link: https://leetcode.com/problems/find-mirror-score-of-a-string/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Hash Table (topic_6)
+ * - String (topic_10)
+ * - Stack (topic_15)
+ * - Simulation (topic_61055)
+ * - Senior (position_senior)
+ * - Weekly Contest 431 (contest_weekly-contest-431)
+ *
+ * Stats:
+ * - Total Accepted: 25,431
+ * - Total Submissions: 71,150
+ * - Acceptance Rate: 35.7%
+ *
+ * Hints:
+ * 1. Create a stack for every character.
+ *
+ * 2. For each index, check if the stack for mirror of the letter at that index
+ * is empty.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @return {number}
+ */
+const calculateScore = (s) => {};
+
+export { calculateScore };"
+`;

@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3925_concatenate-array-with-reverse test template: 3925_concatenate-array-with-reverse 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { concatWithReverse } from '../../src/3901-4000/3925_concatenate-array-with-reverse.js';
+
+const testcases = [
+    { nums: [1,2,3], expected: [1,2,3,3,2,1] },
+    { nums: [1], expected: [1,1] },
+];
+
+describe('concatWithReverse', () => {
+    test.each(structuredClone(testcases))('concatWithReverse($nums) -> $expected', ({ nums, expected }) => {
+        expect(concatWithReverse(nums)).toStrictEqual(expected);
+    });
+});"
+`;

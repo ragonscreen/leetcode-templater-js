@@ -1,0 +1,47 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1249_minimum-remove-to-make-valid-parentheses solution template: 1249_minimum-remove-to-make-valid-parentheses 1`] = `
+"/**
+ * 1249. Minimum Remove to Make Valid Parentheses
+ *
+ * Link: https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - String (topic_10)
+ * - Stack (topic_15)
+ * - Staff (position_staff)
+ * - Weekly Contest 161 (contest_weekly-contest-161)
+ *
+ * Stats:
+ * - Total Accepted: 1,059,176
+ * - Total Submissions: 1,482,293
+ * - Acceptance Rate: 71.5%
+ *
+ * Similar Problems:
+ * - check-if-a-parentheses-string-can-be-valid (Medium)
+ * - minimum-number-of-swaps-to-make-the-string-balanced (Medium)
+ *
+ * Hints:
+ * 1. Each prefix of a balanced parentheses has a number of open parentheses
+ * greater or equal than closed parentheses, similar idea with each suffix.
+ *
+ * 2. Check the array from left to right, remove characters that do not meet
+ * the property mentioned above, same idea in backward way.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @return {string}
+ */
+const minRemoveToMakeValid = (s) => {};
+
+export { minRemoveToMakeValid };"
+`;

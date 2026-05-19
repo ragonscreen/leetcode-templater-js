@@ -1,0 +1,45 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1041_robot-bounded-in-circle solution template: 1041_robot-bounded-in-circle 1`] = `
+"/**
+ * 1041. Robot Bounded In Circle
+ *
+ * Link: https://leetcode.com/problems/robot-bounded-in-circle/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Math (topic_8)
+ * - String (topic_10)
+ * - Simulation (topic_61055)
+ * - Senior (position_senior)
+ * - Weekly Contest 136 (contest_weekly-contest-136)
+ *
+ * Stats:
+ * - Total Accepted: 274,420
+ * - Total Submissions: 485,352
+ * - Acceptance Rate: 56.5%
+ *
+ * Hints:
+ * 1. Calculate the final vector of how the robot travels after executing all
+ * instructions once - it consists of a change in position plus a change in direction.
+ *
+ * 2. The robot stays in the circle if and only if (looking at the final
+ * vector) it changes direction (ie. doesn't stay pointing north), or it
+ * moves 0.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} instructions
+ * @return {boolean}
+ */
+const isRobotBounded = (instructions) => {};
+
+export { isRobotBounded };"
+`;

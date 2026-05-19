@@ -1,0 +1,40 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0275_h-index-ii solution template: 0275_h-index-ii 1`] = `
+"/**
+ * 0275. H-Index II
+ *
+ * Link: https://leetcode.com/problems/h-index-ii/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Binary Search (topic_11)
+ *
+ * Stats:
+ * - Total Accepted: 269,101
+ * - Total Submissions: 679,631
+ * - Acceptance Rate: 39.6%
+ *
+ * Similar Problems:
+ * - h-index (Medium)
+ *
+ * Hints:
+ * 1. Expected runtime complexity is in <i>O</i>(log <i>n</i>) and the input is sorted.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} citations
+ * @return {number}
+ */
+const hIndex = (citations) => {};
+
+export { hIndex };"
+`;

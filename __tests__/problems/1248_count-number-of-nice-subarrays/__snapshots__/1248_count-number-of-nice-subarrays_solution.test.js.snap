@@ -1,0 +1,55 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1248_count-number-of-nice-subarrays solution template: 1248_count-number-of-nice-subarrays 1`] = `
+"/**
+ * 1248. Count Number of Nice Subarrays
+ *
+ * Link: https://leetcode.com/problems/count-number-of-nice-subarrays/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Math (topic_8)
+ * - Sliding Window (topic_55821)
+ * - Prefix Sum (topic_61068)
+ * - Senior (position_senior)
+ * - Weekly Contest 161 (contest_weekly-contest-161)
+ *
+ * Stats:
+ * - Total Accepted: 496,147
+ * - Total Submissions: 660,719
+ * - Acceptance Rate: 75.1%
+ *
+ * Similar Problems:
+ * - count-of-interesting-subarrays (Medium)
+ * - k-divisible-elements-subarrays (Medium)
+ * - ways-to-split-array-into-good-subarrays (Medium)
+ * - count-subarrays-with-fixed-bounds (Hard)
+ *
+ * Hints:
+ * 1. After replacing each even by zero and every odd by one can we use prefix
+ * sum to find answer ?
+ *
+ * 2. Can we use two pointers to count number of sub-arrays ?
+ *
+ * 3. Can we store the indices of odd numbers and for each k indices count the
+ * number of sub-arrays that contains them ?
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number} k
+ * @return {number}
+ */
+const numberOfSubarrays = (nums, k) => {};
+
+export { numberOfSubarrays };"
+`;

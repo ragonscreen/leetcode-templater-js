@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3629_minimum-jumps-to-reach-end-via-prime-teleportation test template: 3629_minimum-jumps-to-reach-end-via-prime-teleportation 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { minJumps } from '../../src/3601-3700/3629_minimum-jumps-to-reach-end-via-prime-teleportation.js';
+
+const testcases = [
+    { nums: [1,2,4,6], expected: 2 },
+    { nums: [2,3,4,7,9], expected: 2 },
+    { nums: [4,6,5,8], expected: 3 },
+];
+
+describe('minJumps', () => {
+    test.each(structuredClone(testcases))('minJumps($nums) -> $expected', ({ nums, expected }) => {
+        expect(minJumps(nums)).toStrictEqual(expected);
+    });
+});"
+`;

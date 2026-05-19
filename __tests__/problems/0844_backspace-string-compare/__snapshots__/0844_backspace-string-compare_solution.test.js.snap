@@ -1,0 +1,43 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0844_backspace-string-compare solution template: 0844_backspace-string-compare 1`] = `
+"/**
+ * 0844. Backspace String Compare
+ *
+ * Link: https://leetcode.com/problems/backspace-string-compare/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Two Pointers (topic_9)
+ * - String (topic_10)
+ * - Stack (topic_15)
+ * - Simulation (topic_61055)
+ * - Mid Level (position_mid-level)
+ * - Weekly Contest 87 (contest_weekly-contest-87)
+ *
+ * Stats:
+ * - Total Accepted: 1,056,371
+ * - Total Submissions: 2,117,187
+ * - Acceptance Rate: 49.9%
+ *
+ * Similar Problems:
+ * - crawler-log-folder (Easy)
+ * - removing-stars-from-a-string (Medium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @param {string} t
+ * @return {boolean}
+ */
+const backspaceCompare = (s, t) => {};
+
+export { backspaceCompare };"
+`;

@@ -1,0 +1,53 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0041_first-missing-positive solution template: 0041_first-missing-positive 1`] = `
+"/**
+ * 0041. First Missing Positive
+ *
+ * Link: https://leetcode.com/problems/first-missing-positive/
+ * Category: Algorithms
+ * Difficulty: Hard
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ *
+ * Stats:
+ * - Total Accepted: 1,763,657
+ * - Total Submissions: 4,110,584
+ * - Acceptance Rate: 42.9%
+ *
+ * Similar Problems:
+ * - find-all-numbers-disappeared-in-an-array (Easy)
+ * - missing-number (Easy)
+ * - smallest-missing-integer-greater-than-sequential-prefix-sum (Easy)
+ * - find-the-duplicate-number (Medium)
+ * - maximum-number-of-integers-to-choose-from-a-range-i (Medium)
+ * - maximum-number-of-integers-to-choose-from-a-range-ii (Medium) (Premium)
+ * - smallest-missing-non-negative-integer-after-operations (Medium)
+ * - smallest-number-in-infinite-set (Medium)
+ * - couples-holding-hands (Hard)
+ *
+ * Hints:
+ * 1. Think about how you would solve the problem in non-constant space.  Can
+ * you apply that logic to the existing space?
+ *
+ * 2. We don't care about duplicates or non-positive integers
+ *
+ * 3. Remember that O(2n) = O(n)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number}
+ */
+const firstMissingPositive = (nums) => {};
+
+export { firstMissingPositive };"
+`;

@@ -1,0 +1,55 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0258_add-digits solution template: 0258_add-digits 1`] = `
+"/**
+ * 0258. Add Digits
+ *
+ * Link: https://leetcode.com/problems/add-digits/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Math (topic_8)
+ * - Simulation (topic_61055)
+ * - Number Theory (topic_61067)
+ *
+ * Stats:
+ * - Total Accepted: 1,234,464
+ * - Total Submissions: 1,791,145
+ * - Acceptance Rate: 68.9%
+ *
+ * Similar Problems:
+ * - alternating-digit-sum (Easy)
+ * - calculate-digit-sum-of-a-string (Easy)
+ * - difference-between-element-sum-and-digit-sum-of-an-array (Easy)
+ * - happy-number (Easy)
+ * - minimum-sum-of-four-digit-number-after-splitting-digits (Easy)
+ * - sum-of-digits-in-the-minimum-number (Easy) (Premium)
+ * - sum-of-digits-of-string-after-convert (Easy)
+ *
+ * Hints:
+ * 1. A naive implementation of the above process is trivial. Could you come up
+ * with other methods?
+ *
+ * 2. What are all the possible results?
+ *
+ * 3. How do they occur, periodically or randomly?
+ *
+ * 4. You may find this <a href="https://en.wikipedia.org/wiki/Digital_root"
+ * target="_blank">Wikipedia article</a> useful.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number} num
+ * @return {number}
+ */
+const addDigits = (num) => {};
+
+export { addDigits };"
+`;

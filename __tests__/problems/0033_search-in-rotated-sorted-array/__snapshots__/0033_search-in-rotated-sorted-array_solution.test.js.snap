@@ -1,0 +1,40 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0033_search-in-rotated-sorted-array solution template: 0033_search-in-rotated-sorted-array 1`] = `
+"/**
+ * 0033. Search in Rotated Sorted Array
+ *
+ * Link: https://leetcode.com/problems/search-in-rotated-sorted-array/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Binary Search (topic_11)
+ *
+ * Stats:
+ * - Total Accepted: 4,465,009
+ * - Total Submissions: 10,024,923
+ * - Acceptance Rate: 44.5%
+ *
+ * Similar Problems:
+ * - find-minimum-in-rotated-sorted-array (Medium)
+ * - pour-water-between-buckets-to-make-water-levels-equal (Medium) (Premium)
+ * - search-in-rotated-sorted-array-ii (Medium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number}
+ */
+const search = (nums, target) => {};
+
+export { search };"
+`;

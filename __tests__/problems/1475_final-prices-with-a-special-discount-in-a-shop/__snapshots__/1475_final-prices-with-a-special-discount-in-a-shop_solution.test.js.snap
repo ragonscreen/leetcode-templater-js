@@ -1,0 +1,42 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1475_final-prices-with-a-special-discount-in-a-shop solution template: 1475_final-prices-with-a-special-discount-in-a-shop 1`] = `
+"/**
+ * 1475. Final Prices With a Special Discount in a Shop
+ *
+ * Link: https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Stack (topic_15)
+ * - Monotonic Stack (topic_61054)
+ * - Mid Level (position_mid-level)
+ * - Biweekly Contest 28 (contest_biweekly-contest-28)
+ *
+ * Stats:
+ * - Total Accepted: 416,218
+ * - Total Submissions: 494,702
+ * - Acceptance Rate: 84.1%
+ *
+ * Hints:
+ * 1. Use brute force: For the ith item in the shop with a loop find the first
+ * position j satisfying the conditions and apply the discount, otherwise,
+ * the discount is 0.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} prices
+ * @return {number[]}
+ */
+const finalPrices = (prices) => {};
+
+export { finalPrices };"
+`;

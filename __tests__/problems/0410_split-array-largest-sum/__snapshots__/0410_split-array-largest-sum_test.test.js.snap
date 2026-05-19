@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0410_split-array-largest-sum test template: 0410_split-array-largest-sum 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { splitArray } from '../../src/0401-0500/0410_split-array-largest-sum.js';
+
+const testcases = [
+    { nums: [7,2,5,10,8], k: 2, expected: 18 },
+    { nums: [1,2,3,4,5], k: 2, expected: 9 },
+];
+
+describe('splitArray', () => {
+    test.each(structuredClone(testcases))('splitArray($nums, $k) -> $expected', ({ nums, k, expected }) => {
+        expect(splitArray(nums, k)).toStrictEqual(expected);
+    });
+});"
+`;

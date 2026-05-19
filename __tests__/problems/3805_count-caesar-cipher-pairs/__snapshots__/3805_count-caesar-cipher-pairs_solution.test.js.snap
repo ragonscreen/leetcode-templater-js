@@ -1,0 +1,49 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3805_count-caesar-cipher-pairs solution template: 3805_count-caesar-cipher-pairs 1`] = `
+"/**
+ * 3805. Count Caesar Cipher Pairs
+ *
+ * Link: https://leetcode.com/problems/count-caesar-cipher-pairs/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Math (topic_8)
+ * - String (topic_10)
+ * - Counting (topic_61062)
+ * - Senior (position_senior)
+ * - Weekly Contest 484 (contest_weekly-contest-484)
+ *
+ * Stats:
+ * - Total Accepted: 26,586
+ * - Total Submissions: 51,901
+ * - Acceptance Rate: 51.2%
+ *
+ * Hints:
+ * 1. Two strings are similar if the differences between consecutive characters
+ * (mod 26) are the same; normalize each string by shifting its first
+ * character to \`'a'\`.
+ *
+ * 2. Compute a hashable key for each normalized string representing its
+ * relative character differences.
+ *
+ * 3. Use a map to count how many strings share the same normalized key.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string[]} words
+ * @return {number}
+ */
+const countPairs = (words) => {};
+
+export { countPairs };"
+`;

@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0049_group-anagrams test template: 0049_group-anagrams 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { groupAnagrams } from '../../src/0001-0100/0049_group-anagrams.js';
+
+const testcases = [
+    { strs: ["eat","tea","tan","ate","nat","bat"], expected: [["bat"],["nat","tan"],["ate","eat","tea"]] },
+    { strs: [""], expected: [[""]] },
+    { strs: ["a"], expected: [["a"]] },
+];
+
+describe('groupAnagrams', () => {
+    test.each(structuredClone(testcases))('groupAnagrams($strs) -> $expected', ({ strs, expected }) => {
+        expect(groupAnagrams(strs)).toStrictEqual(expected);
+    });
+});"
+`;

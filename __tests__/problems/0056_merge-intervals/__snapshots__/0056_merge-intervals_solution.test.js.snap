@@ -1,0 +1,54 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0056_merge-intervals solution template: 0056_merge-intervals 1`] = `
+"/**
+ * 0056. Merge Intervals
+ *
+ * Link: https://leetcode.com/problems/merge-intervals/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Sorting (topic_61049)
+ *
+ * Stats:
+ * - Total Accepted: 4,015,970
+ * - Total Submissions: 7,752,515
+ * - Acceptance Rate: 51.8%
+ *
+ * Similar Problems:
+ * - determine-if-two-events-have-conflict (Easy)
+ * - meeting-rooms (Easy) (Premium)
+ * - points-that-intersect-with-cars (Easy)
+ * - teemo-attacking (Easy)
+ * - add-bold-tag-in-string (Medium) (Premium)
+ * - count-days-without-meetings (Medium)
+ * - count-ways-to-group-overlapping-ranges (Medium)
+ * - divide-intervals-into-minimum-number-of-groups (Medium)
+ * - insert-interval (Medium)
+ * - interval-list-intersections (Medium)
+ * - meeting-rooms-ii (Medium) (Premium)
+ * - minimize-connected-groups-by-inserting-interval (Medium) (Premium)
+ * - partition-labels (Medium)
+ * - amount-of-new-area-painted-each-day (Hard) (Premium)
+ * - count-integers-in-intervals (Hard)
+ * - employee-free-time (Hard) (Premium)
+ * - longest-substring-of-one-repeating-character (Hard)
+ * - range-module (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[][]} intervals
+ * @return {number[][]}
+ */
+const merge = (intervals) => {};
+
+export { merge };"
+`;

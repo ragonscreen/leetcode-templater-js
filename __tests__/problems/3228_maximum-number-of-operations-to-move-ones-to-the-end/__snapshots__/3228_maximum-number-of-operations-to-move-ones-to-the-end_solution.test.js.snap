@@ -1,0 +1,43 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3228_maximum-number-of-operations-to-move-ones-to-the-end solution template: 3228_maximum-number-of-operations-to-move-ones-to-the-end 1`] = `
+"/**
+ * 3228. Maximum Number of Operations to Move Ones to the End
+ *
+ * Link: https://leetcode.com/problems/maximum-number-of-operations-to-move-ones-to-the-end/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - String (topic_10)
+ * - Greedy (topic_17)
+ * - Counting (topic_61062)
+ * - Staff (position_staff)
+ * - Weekly Contest 407 (contest_weekly-contest-407)
+ *
+ * Stats:
+ * - Total Accepted: 125,366
+ * - Total Submissions: 186,793
+ * - Acceptance Rate: 67.1%
+ *
+ * Hints:
+ * 1. It is optimal to perform the operation on the lowest index possible each time.
+ *
+ * 2. Traverse the string from left to right and perform the operation every
+ * time it is possible.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @return {number}
+ */
+const maxOperations = (s) => {};
+
+export { maxOperations };"
+`;

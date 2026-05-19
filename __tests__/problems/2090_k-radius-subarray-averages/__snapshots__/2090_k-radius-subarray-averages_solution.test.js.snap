@@ -1,0 +1,54 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2090_k-radius-subarray-averages solution template: 2090_k-radius-subarray-averages 1`] = `
+"/**
+ * 2090. K Radius Subarray Averages
+ *
+ * Link: https://leetcode.com/problems/k-radius-subarray-averages/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Sliding Window (topic_55821)
+ * - Senior (position_senior)
+ * - Weekly Contest 269 (contest_weekly-contest-269)
+ *
+ * Stats:
+ * - Total Accepted: 201,241
+ * - Total Submissions: 435,579
+ * - Acceptance Rate: 46.2%
+ *
+ * Similar Problems:
+ * - maximum-average-subarray-i (Easy)
+ * - moving-average-from-data-stream (Easy) (Premium)
+ * - find-the-grid-of-region-average (Medium)
+ * - minimum-size-subarray-sum (Medium)
+ * - number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold (Medium)
+ * - subarray-sum-equals-k (Medium)
+ *
+ * Hints:
+ * 1. To calculate the average of a subarray, you need the sum and the K. K is
+ * already given. How could you quickly calculate the sum of a subarray?
+ *
+ * 2. Use the Prefix Sums method to calculate the subarray sums.
+ *
+ * 3. It is possible that the sum of all the elements does not fit in a 32-bit
+ * integer type. Be sure to use a 64-bit integer type for the prefix sum array.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number} k
+ * @return {number[]}
+ */
+const getAverages = (nums, k) => {};
+
+export { getAverages };"
+`;

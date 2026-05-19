@@ -1,0 +1,41 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0438_find-all-anagrams-in-a-string solution template: 0438_find-all-anagrams-in-a-string 1`] = `
+"/**
+ * 0438. Find All Anagrams in a String
+ *
+ * Link: https://leetcode.com/problems/find-all-anagrams-in-a-string/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Hash Table (topic_6)
+ * - String (topic_10)
+ * - Sliding Window (topic_55821)
+ * - Junior (position_junior)
+ *
+ * Stats:
+ * - Total Accepted: 1,210,761
+ * - Total Submissions: 2,252,723
+ * - Acceptance Rate: 53.7%
+ *
+ * Similar Problems:
+ * - valid-anagram (Easy)
+ * - permutation-in-string (Medium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @param {string} p
+ * @return {number[]}
+ */
+const findAnagrams = (s, p) => {};
+
+export { findAnagrams };"
+`;

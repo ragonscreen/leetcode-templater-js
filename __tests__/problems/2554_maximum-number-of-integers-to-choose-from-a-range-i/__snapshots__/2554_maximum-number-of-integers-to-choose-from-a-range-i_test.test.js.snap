@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2554_maximum-number-of-integers-to-choose-from-a-range-i test template: 2554_maximum-number-of-integers-to-choose-from-a-range-i 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { maxCount } from '../../src/2501-2600/2554_maximum-number-of-integers-to-choose-from-a-range-i.js';
+
+const testcases = [
+    { banned: [1,6,5], n: 5, maxSum: 6, expected: 2 },
+    { banned: [1,2,3,4,5,6,7], n: 8, maxSum: 1, expected: 0 },
+    { banned: [11], n: 7, maxSum: 50, expected: 7 },
+];
+
+describe('maxCount', () => {
+    test.each(structuredClone(testcases))('maxCount($banned, $n, $maxSum) -> $expected', ({ banned, n, maxSum, expected }) => {
+        expect(maxCount(banned, n, maxSum)).toStrictEqual(expected);
+    });
+});"
+`;

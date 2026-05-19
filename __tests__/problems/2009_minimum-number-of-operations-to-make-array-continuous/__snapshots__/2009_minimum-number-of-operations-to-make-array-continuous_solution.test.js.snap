@@ -1,0 +1,51 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2009_minimum-number-of-operations-to-make-array-continuous solution template: 2009_minimum-number-of-operations-to-make-array-continuous 1`] = `
+"/**
+ * 2009. Minimum Number of Operations to Make Array Continuous
+ *
+ * Link: https://leetcode.com/problems/minimum-number-of-operations-to-make-array-continuous/
+ * Category: Algorithms
+ * Difficulty: Hard
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Binary Search (topic_11)
+ * - Sliding Window (topic_55821)
+ * - Senior Staff (position_senior-staff)
+ * - Biweekly Contest 61 (contest_biweekly-contest-61)
+ *
+ * Stats:
+ * - Total Accepted: 87,525
+ * - Total Submissions: 169,031
+ * - Acceptance Rate: 51.8%
+ *
+ * Similar Problems:
+ * - continuous-subarray-sum (Medium)
+ * - longest-repeating-character-replacement (Medium)
+ * - moving-stones-until-consecutive-ii (Medium)
+ * - minimum-adjacent-swaps-for-k-consecutive-ones (Hard)
+ * - minimum-one-bit-operations-to-make-integers-zero (Hard)
+ *
+ * Hints:
+ * 1. Sort the array.
+ *
+ * 2. For every index do a binary search to get the possible right end of the
+ * window and calculate the possible answer.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number}
+ */
+const minOperations = (nums) => {};
+
+export { minOperations };"
+`;

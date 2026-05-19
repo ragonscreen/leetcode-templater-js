@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0075_sort-colors test template: 0075_sort-colors 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { sortColors } from '../../src/0001-0100/0075_sort-colors.js';
+
+const testcases = [
+    { nums: [2,0,2,1,1,0], expected: [0,0,1,1,2,2] },
+    { nums: [2,0,1], expected: [0,1,2] },
+];
+
+describe('sortColors', () => {
+    test.each(structuredClone(testcases))('sortColors($nums) -> $expected', ({ nums, expected }) => {
+        expect(sortColors(nums)).toBeNil();
+        expect(nums).toStrictEqual(expected);
+    });
+});"
+`;

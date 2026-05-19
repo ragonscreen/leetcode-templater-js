@@ -1,0 +1,45 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1283_find-the-smallest-divisor-given-a-threshold solution template: 1283_find-the-smallest-divisor-given-a-threshold 1`] = `
+"/**
+ * 1283. Find the Smallest Divisor Given a Threshold
+ *
+ * Link: https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Binary Search (topic_11)
+ * - Staff (position_staff)
+ * - Weekly Contest 166 (contest_weekly-contest-166)
+ *
+ * Stats:
+ * - Total Accepted: 457,496
+ * - Total Submissions: 694,149
+ * - Acceptance Rate: 65.9%
+ *
+ * Similar Problems:
+ * - minimized-maximum-of-products-distributed-to-any-store (Medium)
+ *
+ * Hints:
+ * 1. Examine every possible number for solution. Choose the largest of them.
+ *
+ * 2. Use binary search to reduce the time complexity.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number} threshold
+ * @return {number}
+ */
+const smallestDivisor = (nums, threshold) => {};
+
+export { smallestDivisor };"
+`;

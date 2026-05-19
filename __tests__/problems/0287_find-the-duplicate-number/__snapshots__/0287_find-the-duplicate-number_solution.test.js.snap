@@ -1,0 +1,43 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0287_find-the-duplicate-number solution template: 0287_find-the-duplicate-number 1`] = `
+"/**
+ * 0287. Find the Duplicate Number
+ *
+ * Link: https://leetcode.com/problems/find-the-duplicate-number/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Two Pointers (topic_9)
+ * - Binary Search (topic_11)
+ * - Bit Manipulation (topic_19)
+ *
+ * Stats:
+ * - Total Accepted: 2,571,728
+ * - Total Submissions: 3,998,497
+ * - Acceptance Rate: 64.3%
+ *
+ * Similar Problems:
+ * - missing-number (Easy)
+ * - set-mismatch (Easy)
+ * - single-number (Easy)
+ * - linked-list-cycle-ii (Medium)
+ * - first-missing-positive (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number}
+ */
+const findDuplicate = (nums) => {};
+
+export { findDuplicate };"
+`;

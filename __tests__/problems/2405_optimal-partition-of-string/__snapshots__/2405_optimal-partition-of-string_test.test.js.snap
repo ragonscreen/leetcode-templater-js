@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2405_optimal-partition-of-string test template: 2405_optimal-partition-of-string 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { partitionString } from '../../src/2401-2500/2405_optimal-partition-of-string.js';
+
+const testcases = [
+    { s: "abacaba", expected: 4 },
+    { s: "ssssss", expected: 6 },
+];
+
+describe('partitionString', () => {
+    test.each(structuredClone(testcases))('partitionString($s) -> $expected', ({ s, expected }) => {
+        expect(partitionString(s)).toStrictEqual(expected);
+    });
+});"
+`;

@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0219_contains-duplicate-ii test template: 0219_contains-duplicate-ii 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { containsNearbyDuplicate } from '../../src/0201-0300/0219_contains-duplicate-ii.js';
+
+const testcases = [
+    { nums: [1,2,3,1], k: 3, expected: true },
+    { nums: [1,0,1,1], k: 1, expected: true },
+    { nums: [1,2,3,1,2,3], k: 2, expected: false },
+];
+
+describe('containsNearbyDuplicate', () => {
+    test.each(structuredClone(testcases))('containsNearbyDuplicate($nums, $k) -> $expected', ({ nums, k, expected }) => {
+        expect(containsNearbyDuplicate(nums, k)).toStrictEqual(expected);
+    });
+});"
+`;

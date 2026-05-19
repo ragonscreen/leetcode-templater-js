@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3024_type-of-triangle test template: 3024_type-of-triangle 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { triangleType } from '../../src/3001-3100/3024_type-of-triangle.js';
+
+const testcases = [
+    { nums: [3,3,3], expected: "equilateral" },
+    { nums: [3,4,5], expected: "scalene" },
+];
+
+describe('triangleType', () => {
+    test.each(structuredClone(testcases))('triangleType($nums) -> $expected', ({ nums, expected }) => {
+        expect(triangleType(nums)).toStrictEqual(expected);
+    });
+});"
+`;

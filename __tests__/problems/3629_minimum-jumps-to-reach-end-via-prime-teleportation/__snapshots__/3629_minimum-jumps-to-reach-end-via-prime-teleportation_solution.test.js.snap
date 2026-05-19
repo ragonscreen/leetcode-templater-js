@@ -1,0 +1,50 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3629_minimum-jumps-to-reach-end-via-prime-teleportation solution template: 3629_minimum-jumps-to-reach-end-via-prime-teleportation 1`] = `
+"/**
+ * 3629. Minimum Jumps to Reach End via Prime Teleportation
+ *
+ * Link: https://leetcode.com/problems/minimum-jumps-to-reach-end-via-prime-teleportation/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Math (topic_8)
+ * - Breadth-First Search (topic_22)
+ * - Number Theory (topic_61067)
+ * - Staff (position_staff)
+ * - Weekly Contest 460 (contest_weekly-contest-460)
+ *
+ * Stats:
+ * - Total Accepted: 87,611
+ * - Total Submissions: 195,280
+ * - Acceptance Rate: 44.9%
+ *
+ * Hints:
+ * 1. Use a breadth-first search.
+ *
+ * 2. Precompute prime factors of each \`nums[i]\` via a sieve, and build a
+ * bucket \`bucket[p]\` mapping each prime \`p\` to all indices \`j\` with
+ * \`nums[j] % p == 0\`.
+ *
+ * 3. During the BFS, when at index \`i\`, enqueue its adjacent steps (\`i+1\` and
+ * \`i-1\`) and all indices in \`bucket[p]\` for each prime \`p\` dividing
+ * \`nums[i]\`, then clear \`bucket[p]\` so each prime's bucket is visited only once.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number}
+ */
+const minJumps = (nums) => {};
+
+export { minJumps };"
+`;

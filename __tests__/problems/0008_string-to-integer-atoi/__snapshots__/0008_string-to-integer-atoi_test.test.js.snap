@@ -1,0 +1,20 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0008_string-to-integer-atoi test template: 0008_string-to-integer-atoi 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { myAtoi } from '../../src/0001-0100/0008_string-to-integer-atoi.js';
+
+const testcases = [
+    { s: "42", expected: 42 },
+    { s: "   -042", expected: -42 },
+    { s: "1337c0d3", expected: 1337 },
+    { s: "0-1", expected: 0 },
+    { s: "words and 987", expected: 0 },
+];
+
+describe('myAtoi', () => {
+    test.each(structuredClone(testcases))('myAtoi($s) -> $expected', ({ s, expected }) => {
+        expect(myAtoi(s)).toStrictEqual(expected);
+    });
+});"
+`;

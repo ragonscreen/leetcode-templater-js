@@ -1,0 +1,38 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3637_trionic-array-i solution template: 3637_trionic-array-i 1`] = `
+"/**
+ * 3637. Trionic Array I
+ *
+ * Link: https://leetcode.com/problems/trionic-array-i/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Mid Level (position_mid-level)
+ * - Weekly Contest 461 (contest_weekly-contest-461)
+ *
+ * Stats:
+ * - Total Accepted: 196,239
+ * - Total Submissions: 396,247
+ * - Acceptance Rate: 49.5%
+ *
+ * Hints:
+ * 1. Use brute force
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {boolean}
+ */
+const isTrionic = (nums) => {};
+
+export { isTrionic };"
+`;

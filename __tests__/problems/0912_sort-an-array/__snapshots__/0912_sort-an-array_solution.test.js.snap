@@ -1,0 +1,40 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0912_sort-an-array solution template: 0912_sort-an-array 1`] = `
+"/**
+ * 0912. Sort an Array
+ *
+ * Link: https://leetcode.com/problems/sort-an-array/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Divide and Conquer (topic_12)
+ * - Sorting (topic_61049)
+ * - Heap (Priority Queue) (topic_61050)
+ * - Merge Sort (topic_61051)
+ * - Bucket Sort (topic_61060)
+ * - Radix Sort (topic_61061)
+ * - Counting Sort (topic_61072)
+ *
+ * Stats:
+ * - Total Accepted: 1,134,207
+ * - Total Submissions: 2,028,196
+ * - Acceptance Rate: 55.9%
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number[]}
+ */
+const sortArray = (nums) => {};
+
+export { sortArray };"
+`;

@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2269_find-the-k-beauty-of-a-number test template: 2269_find-the-k-beauty-of-a-number 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { divisorSubstrings } from '../../src/2201-2300/2269_find-the-k-beauty-of-a-number.js';
+
+const testcases = [
+    { num: 240, k: 2, expected: 2 },
+    { num: 430043, k: 2, expected: 2 },
+];
+
+describe('divisorSubstrings', () => {
+    test.each(structuredClone(testcases))('divisorSubstrings($num, $k) -> $expected', ({ num, k, expected }) => {
+        expect(divisorSubstrings(num, k)).toStrictEqual(expected);
+    });
+});"
+`;

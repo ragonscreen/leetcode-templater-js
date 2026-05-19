@@ -1,0 +1,47 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0209_minimum-size-subarray-sum solution template: 0209_minimum-size-subarray-sum 1`] = `
+"/**
+ * 0209. Minimum Size Subarray Sum
+ *
+ * Link: https://leetcode.com/problems/minimum-size-subarray-sum/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Binary Search (topic_11)
+ * - Sliding Window (topic_55821)
+ * - Prefix Sum (topic_61068)
+ *
+ * Stats:
+ * - Total Accepted: 1,894,422
+ * - Total Submissions: 3,666,839
+ * - Acceptance Rate: 51.7%
+ *
+ * Similar Problems:
+ * - minimum-positive-sum-subarray (Easy)
+ * - shortest-subarray-with-or-at-least-k-i (Easy)
+ * - k-radius-subarray-averages (Medium)
+ * - maximum-length-of-repeated-subarray (Medium)
+ * - maximum-product-after-k-increments (Medium)
+ * - maximum-size-subarray-sum-equals-k (Medium) (Premium)
+ * - minimum-operations-to-reduce-x-to-zero (Medium)
+ * - minimum-window-substring (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number} target
+ * @param {number[]} nums
+ * @return {number}
+ */
+const minSubArrayLen = (target, nums) => {};
+
+export { minSubArrayLen };"
+`;

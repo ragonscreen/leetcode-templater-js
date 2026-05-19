@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2075_decode-the-slanted-ciphertext test template: 2075_decode-the-slanted-ciphertext 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { decodeCiphertext } from '../../src/2001-2100/2075_decode-the-slanted-ciphertext.js';
+
+const testcases = [
+    { encodedText: "ch   ie   pr", rows: 3, expected: "cipher" },
+    { encodedText: "iveo    eed   l te   olc", rows: 4, expected: "i love leetcode" },
+    { encodedText: "coding", rows: 1, expected: "coding" },
+];
+
+describe('decodeCiphertext', () => {
+    test.each(structuredClone(testcases))('decodeCiphertext($encodedText, $rows) -> $expected', ({ encodedText, rows, expected }) => {
+        expect(decodeCiphertext(encodedText, rows)).toStrictEqual(expected);
+    });
+});"
+`;

@@ -1,0 +1,44 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3355_zero-array-transformation-i solution template: 3355_zero-array-transformation-i 1`] = `
+"/**
+ * 3355. Zero Array Transformation I
+ *
+ * Link: https://leetcode.com/problems/zero-array-transformation-i/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Prefix Sum (topic_61068)
+ * - Senior (position_senior)
+ * - Weekly Contest 424 (contest_weekly-contest-424)
+ *
+ * Stats:
+ * - Total Accepted: 156,902
+ * - Total Submissions: 287,767
+ * - Acceptance Rate: 54.5%
+ *
+ * Similar Problems:
+ * - zero-array-transformation-iv (Medium)
+ *
+ * Hints:
+ * 1. Can we use difference array and prefix sum to check if an index can be
+ * made zero?
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number[][]} queries
+ * @return {boolean}
+ */
+const isZeroArray = (nums, queries) => {};
+
+export { isZeroArray };"
+`;

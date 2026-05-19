@@ -1,0 +1,41 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0023_merge-k-sorted-lists solution template: 0023_merge-k-sorted-lists 1`] = `
+"/**
+ * 0023. Merge k Sorted Lists
+ *
+ * Link: https://leetcode.com/problems/merge-k-sorted-lists/
+ * Category: Algorithms
+ * Difficulty: Hard
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Linked List (topic_7)
+ * - Divide and Conquer (topic_12)
+ * - Heap (Priority Queue) (topic_61050)
+ * - Merge Sort (topic_61051)
+ *
+ * Stats:
+ * - Total Accepted: 3,002,190
+ * - Total Submissions: 5,041,912
+ * - Acceptance Rate: 59.5%
+ *
+ * Similar Problems:
+ * - merge-two-sorted-lists (Easy)
+ * - smallest-subarrays-with-maximum-bitwise-or (Medium)
+ * - ugly-number-ii (Medium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {ListNode[]} lists
+ * @return {ListNode}
+ */
+const mergeKLists = (lists) => {};
+
+export { mergeKLists };"
+`;

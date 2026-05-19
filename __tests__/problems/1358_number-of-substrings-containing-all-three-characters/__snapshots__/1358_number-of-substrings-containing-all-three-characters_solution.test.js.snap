@@ -1,0 +1,47 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1358_number-of-substrings-containing-all-three-characters solution template: 1358_number-of-substrings-containing-all-three-characters 1`] = `
+"/**
+ * 1358. Number of Substrings Containing All Three Characters
+ *
+ * Link: https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Hash Table (topic_6)
+ * - String (topic_10)
+ * - Sliding Window (topic_55821)
+ * - Staff (position_staff)
+ * - Biweekly Contest 20 (contest_biweekly-contest-20)
+ *
+ * Stats:
+ * - Total Accepted: 459,992
+ * - Total Submissions: 623,898
+ * - Acceptance Rate: 73.7%
+ *
+ * Similar Problems:
+ * - vowels-of-all-substrings (Medium)
+ * - count-complete-substrings (Hard)
+ *
+ * Hints:
+ * 1. For each position we simply need to find the first occurrence of a/b/c on
+ * or after this position.
+ *
+ * 2. So we can pre-compute three link-list of indices of each a, b, and c.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @return {number}
+ */
+const numberOfSubstrings = (s) => {};
+
+export { numberOfSubstrings };"
+`;

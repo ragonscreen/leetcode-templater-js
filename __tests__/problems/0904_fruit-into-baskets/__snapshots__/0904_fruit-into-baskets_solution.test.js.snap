@@ -1,0 +1,41 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0904_fruit-into-baskets solution template: 0904_fruit-into-baskets 1`] = `
+"/**
+ * 0904. Fruit Into Baskets
+ *
+ * Link: https://leetcode.com/problems/fruit-into-baskets/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Sliding Window (topic_55821)
+ * - Staff (position_staff)
+ * - Weekly Contest 102 (contest_weekly-contest-102)
+ *
+ * Stats:
+ * - Total Accepted: 837,606
+ * - Total Submissions: 1,639,003
+ * - Acceptance Rate: 51.1%
+ *
+ * Similar Problems:
+ * - fruits-into-baskets-ii (Easy)
+ * - longest-nice-subarray (Medium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} fruits
+ * @return {number}
+ */
+const totalFruit = (fruits) => {};
+
+export { totalFruit };"
+`;

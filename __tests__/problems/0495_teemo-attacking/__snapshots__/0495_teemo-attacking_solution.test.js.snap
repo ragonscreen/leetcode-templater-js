@@ -1,0 +1,41 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0495_teemo-attacking solution template: 0495_teemo-attacking 1`] = `
+"/**
+ * 0495. Teemo Attacking
+ *
+ * Link: https://leetcode.com/problems/teemo-attacking/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Simulation (topic_61055)
+ * - Senior Staff (position_senior-staff)
+ *
+ * Stats:
+ * - Total Accepted: 223,837
+ * - Total Submissions: 387,908
+ * - Acceptance Rate: 57.7%
+ *
+ * Similar Problems:
+ * - can-place-flowers (Easy)
+ * - dota2-senate (Medium)
+ * - merge-intervals (Medium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} timeSeries
+ * @param {number} duration
+ * @return {number}
+ */
+const findPoisonedDuration = (timeSeries, duration) => {};
+
+export { findPoisonedDuration };"
+`;

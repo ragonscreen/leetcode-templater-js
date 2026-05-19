@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0067_add-binary test template: 0067_add-binary 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { addBinary } from '../../src/0001-0100/0067_add-binary.js';
+
+const testcases = [
+    { a: "11", b: "1", expected: "100" },
+    { a: "1010", b: "1011", expected: "10101" },
+];
+
+describe('addBinary', () => {
+    test.each(structuredClone(testcases))('addBinary($a, $b) -> $expected', ({ a, b, expected }) => {
+        expect(addBinary(a, b)).toStrictEqual(expected);
+    });
+});"
+`;

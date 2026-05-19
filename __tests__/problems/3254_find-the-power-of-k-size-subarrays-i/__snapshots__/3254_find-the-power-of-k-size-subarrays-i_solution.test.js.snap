@@ -1,0 +1,43 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3254_find-the-power-of-k-size-subarrays-i solution template: 3254_find-the-power-of-k-size-subarrays-i 1`] = `
+"/**
+ * 3254. Find the Power of K-Size Subarrays I
+ *
+ * Link: https://leetcode.com/problems/find-the-power-of-k-size-subarrays-i/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Sliding Window (topic_55821)
+ * - Senior (position_senior)
+ * - Biweekly Contest 137 (contest_biweekly-contest-137)
+ *
+ * Stats:
+ * - Total Accepted: 154,778
+ * - Total Submissions: 249,309
+ * - Acceptance Rate: 62.1%
+ *
+ * Similar Problems:
+ * - maximum-sum-of-distinct-subarrays-with-length-k (Medium)
+ *
+ * Hints:
+ * 1. Can we use a brute force solution with nested loops and HashSet?
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number} k
+ * @return {number[]}
+ */
+const resultsArray = (nums, k) => {};
+
+export { resultsArray };"
+`;

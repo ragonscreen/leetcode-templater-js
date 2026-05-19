@@ -1,0 +1,19 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2784_check-if-array-is-good test template: 2784_check-if-array-is-good 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { isGood } from '../../src/2701-2800/2784_check-if-array-is-good.js';
+
+const testcases = [
+    { nums: [2,1,3], expected: false },
+    { nums: [1,3,3,2], expected: true },
+    { nums: [1,1], expected: true },
+    { nums: [3,4,4,1,2,1], expected: false },
+];
+
+describe('isGood', () => {
+    test.each(structuredClone(testcases))('isGood($nums) -> $expected', ({ nums, expected }) => {
+        expect(isGood(nums)).toStrictEqual(expected);
+    });
+});"
+`;

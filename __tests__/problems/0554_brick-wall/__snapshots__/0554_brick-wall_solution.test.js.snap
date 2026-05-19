@@ -1,0 +1,38 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0554_brick-wall solution template: 0554_brick-wall 1`] = `
+"/**
+ * 0554. Brick Wall
+ *
+ * Link: https://leetcode.com/problems/brick-wall/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Senior Staff (position_senior-staff)
+ *
+ * Stats:
+ * - Total Accepted: 172,322
+ * - Total Submissions: 307,520
+ * - Acceptance Rate: 56.0%
+ *
+ * Similar Problems:
+ * - number-of-ways-to-build-sturdy-brick-wall (Medium) (Premium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[][]} wall
+ * @return {number}
+ */
+const leastBricks = (wall) => {};
+
+export { leastBricks };"
+`;

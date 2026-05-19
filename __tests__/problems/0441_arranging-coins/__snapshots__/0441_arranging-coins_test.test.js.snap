@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0441_arranging-coins test template: 0441_arranging-coins 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { arrangeCoins } from '../../src/0401-0500/0441_arranging-coins.js';
+
+const testcases = [
+    { n: 5, expected: 2 },
+    { n: 8, expected: 3 },
+];
+
+describe('arrangeCoins', () => {
+    test.each(structuredClone(testcases))('arrangeCoins($n) -> $expected', ({ n, expected }) => {
+        expect(arrangeCoins(n)).toStrictEqual(expected);
+    });
+});"
+`;

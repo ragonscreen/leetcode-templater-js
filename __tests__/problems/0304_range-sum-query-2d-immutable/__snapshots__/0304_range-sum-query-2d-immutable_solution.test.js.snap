@@ -1,0 +1,56 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0304_range-sum-query-2d-immutable solution template: 0304_range-sum-query-2d-immutable 1`] = `
+"/**
+ * 0304. Range Sum Query 2D - Immutable
+ *
+ * Link: https://leetcode.com/problems/range-sum-query-2d-immutable/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Design (topic_25)
+ * - Matrix (topic_61053)
+ * - Prefix Sum (topic_61068)
+ *
+ * Stats:
+ * - Total Accepted: 483,694
+ * - Total Submissions: 829,988
+ * - Acceptance Rate: 58.3%
+ *
+ * Similar Problems:
+ * - range-sum-query-immutable (Easy)
+ * - find-the-grid-of-region-average (Medium)
+ * - range-sum-query-2d-mutable (Medium) (Premium)
+ */
+
+/**
+ * Approach:
+ */
+class NumMatrix {
+    /**
+     * Time Complexity: O()
+     * Space Complexity: O()
+     *
+     * @param {number[][]} matrix
+     */
+    constructor(matrix) {}
+
+    /**
+     * Time Complexity: O()
+     * Space Complexity: O()
+     *
+     * @param {number} row1
+     * @param {number} col1
+     * @param {number} row2
+     * @param {number} col2
+     * @return {number}
+     */
+    sumRegion(row1, col1, row2, col2) {}
+}
+
+export { NumMatrix };"
+`;

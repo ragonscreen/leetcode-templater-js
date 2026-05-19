@@ -1,0 +1,22 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0146_lru-cache test template: 0146_lru-cache 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { LRUCache } from '../../src/0101-0200/0146_lru-cache.js';
+
+describe('LRUCache', () => {
+    test('default test 1', () => {
+        const lRUCache = new LRUCache(2);
+
+        expect(lRUCache.put(1, 1)).toBeNil();
+        expect(lRUCache.put(2, 2)).toBeNil();
+        expect(lRUCache.get(1)).toStrictEqual(1);
+        expect(lRUCache.put(3, 3)).toBeNil();
+        expect(lRUCache.get(2)).toStrictEqual(-1);
+        expect(lRUCache.put(4, 4)).toBeNil();
+        expect(lRUCache.get(1)).toStrictEqual(-1);
+        expect(lRUCache.get(3)).toStrictEqual(3);
+        expect(lRUCache.get(4)).toStrictEqual(4);
+    });
+});"
+`;

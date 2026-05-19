@@ -1,0 +1,45 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0930_binary-subarrays-with-sum solution template: 0930_binary-subarrays-with-sum 1`] = `
+"/**
+ * 0930. Binary Subarrays With Sum
+ *
+ * Link: https://leetcode.com/problems/binary-subarrays-with-sum/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Sliding Window (topic_55821)
+ * - Prefix Sum (topic_61068)
+ * - Staff (position_staff)
+ * - Weekly Contest 108 (contest_weekly-contest-108)
+ *
+ * Stats:
+ * - Total Accepted: 524,279
+ * - Total Submissions: 761,898
+ * - Acceptance Rate: 68.8%
+ *
+ * Similar Problems:
+ * - find-all-possible-stable-binary-arrays-i (Medium)
+ * - ways-to-split-array-into-good-subarrays (Medium)
+ * - count-subarrays-with-score-less-than-k (Hard)
+ * - find-all-possible-stable-binary-arrays-ii (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number} goal
+ * @return {number}
+ */
+const numSubarraysWithSum = (nums, goal) => {};
+
+export { numSubarraysWithSum };"
+`;

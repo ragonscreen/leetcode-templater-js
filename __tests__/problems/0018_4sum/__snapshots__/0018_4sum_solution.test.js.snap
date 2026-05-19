@@ -1,0 +1,42 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0018_4sum solution template: 0018_4sum 1`] = `
+"/**
+ * 0018. 4Sum
+ *
+ * Link: https://leetcode.com/problems/4sum/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Two Pointers (topic_9)
+ * - Sorting (topic_61049)
+ *
+ * Stats:
+ * - Total Accepted: 1,700,195
+ * - Total Submissions: 4,185,187
+ * - Acceptance Rate: 40.6%
+ *
+ * Similar Problems:
+ * - count-special-quadruplets (Easy)
+ * - two-sum (Easy)
+ * - 3sum (Medium)
+ * - 4sum-ii (Medium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number[][]}
+ */
+const fourSum = (nums, target) => {};
+
+export { fourSum };"
+`;

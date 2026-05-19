@@ -13,7 +13,7 @@
                 "new": "bun run ./src/main.js",
                 "fmt": "bunx biome check --write",
                 "add-tests": "bun run ./__tests__/utils/add-tests/add-tests.js",
-                "test": "bun test --watch"
+                "test": "bun test --only-failures"
         },
         "bin": {
                 "lct": "./src/main.js"

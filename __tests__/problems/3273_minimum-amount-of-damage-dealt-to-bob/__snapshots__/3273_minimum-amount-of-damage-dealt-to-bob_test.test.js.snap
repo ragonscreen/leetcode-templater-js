@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3273_minimum-amount-of-damage-dealt-to-bob test template: 3273_minimum-amount-of-damage-dealt-to-bob 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { minDamage } from '../../src/3201-3300/3273_minimum-amount-of-damage-dealt-to-bob.js';
+
+const testcases = [
+    { power: 4, damage: [1,2,3,4], health: [4,5,6,8], expected: 39 },
+    { power: 1, damage: [1,1,1,1], health: [1,2,3,4], expected: 20 },
+    { power: 8, damage: [40], health: [59], expected: 320 },
+];
+
+describe('minDamage', () => {
+    test.each(structuredClone(testcases))('minDamage($power, $damage, $health) -> $expected', ({ power, damage, health, expected }) => {
+        expect(minDamage(power, damage, health)).toStrictEqual(expected);
+    });
+});"
+`;

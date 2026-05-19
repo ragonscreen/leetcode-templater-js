@@ -1,0 +1,45 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0136_single-number solution template: 0136_single-number 1`] = `
+"/**
+ * 0136. Single Number
+ *
+ * Link: https://leetcode.com/problems/single-number/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Bit Manipulation (topic_19)
+ *
+ * Stats:
+ * - Total Accepted: 4,579,317
+ * - Total Submissions: 5,895,319
+ * - Acceptance Rate: 77.7%
+ *
+ * Similar Problems:
+ * - find-the-difference (Easy)
+ * - find-the-xor-of-numbers-which-appear-twice (Easy)
+ * - missing-number (Easy)
+ * - find-the-duplicate-number (Medium)
+ * - single-number-ii (Medium)
+ * - single-number-iii (Medium)
+ *
+ * Hints:
+ * 1. Think about the XOR (^) operator's property.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number}
+ */
+const singleNumber = (nums) => {};
+
+export { singleNumber };"
+`;

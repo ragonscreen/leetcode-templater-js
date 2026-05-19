@@ -1,0 +1,50 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0713_subarray-product-less-than-k solution template: 0713_subarray-product-less-than-k 1`] = `
+"/**
+ * 0713. Subarray Product Less Than K
+ *
+ * Link: https://leetcode.com/problems/subarray-product-less-than-k/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Binary Search (topic_11)
+ * - Sliding Window (topic_55821)
+ * - Prefix Sum (topic_61068)
+ * - Principal (position_principal)
+ *
+ * Stats:
+ * - Total Accepted: 617,648
+ * - Total Submissions: 1,137,439
+ * - Acceptance Rate: 54.3%
+ *
+ * Similar Problems:
+ * - two-sum-less-than-k (Easy) (Premium)
+ * - maximum-product-subarray (Medium)
+ * - maximum-size-subarray-sum-equals-k (Medium) (Premium)
+ * - number-of-smooth-descent-periods-of-a-stock (Medium)
+ * - subarray-sum-equals-k (Medium)
+ * - count-subarrays-with-score-less-than-k (Hard)
+ *
+ * Hints:
+ * 1. For each j, let opt(j) be the smallest i so that nums[i] * nums[i+1] *
+ * ... * nums[j] is less than k.  opt is an increasing function.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number} k
+ * @return {number}
+ */
+const numSubarrayProductLessThanK = (nums, k) => {};
+
+export { numSubarrayProductLessThanK };"
+`;

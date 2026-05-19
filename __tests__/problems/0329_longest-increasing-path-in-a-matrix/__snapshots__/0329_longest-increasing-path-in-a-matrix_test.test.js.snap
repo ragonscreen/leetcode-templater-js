@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0329_longest-increasing-path-in-a-matrix test template: 0329_longest-increasing-path-in-a-matrix 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { longestIncreasingPath } from '../../src/0301-0400/0329_longest-increasing-path-in-a-matrix.js';
+
+const testcases = [
+    { matrix: [[9,9,4],[6,6,8],[2,1,1]], expected: 4 },
+    { matrix: [[3,4,5],[3,2,6],[2,2,1]], expected: 4 },
+    { matrix: [[1]], expected: 1 },
+];
+
+describe('longestIncreasingPath', () => {
+    test.each(structuredClone(testcases))('longestIncreasingPath($matrix) -> $expected', ({ matrix, expected }) => {
+        expect(longestIncreasingPath(matrix)).toStrictEqual(expected);
+    });
+});"
+`;

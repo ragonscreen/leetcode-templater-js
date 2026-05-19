@@ -1,0 +1,54 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2563_count-the-number-of-fair-pairs solution template: 2563_count-the-number-of-fair-pairs 1`] = `
+"/**
+ * 2563. Count the Number of Fair Pairs
+ *
+ * Link: https://leetcode.com/problems/count-the-number-of-fair-pairs/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Two Pointers (topic_9)
+ * - Binary Search (topic_11)
+ * - Sorting (topic_61049)
+ * - Senior (position_senior)
+ * - Weekly Contest 332 (contest_weekly-contest-332)
+ *
+ * Stats:
+ * - Total Accepted: 239,601
+ * - Total Submissions: 454,997
+ * - Acceptance Rate: 52.7%
+ *
+ * Similar Problems:
+ * - count-number-of-pairs-with-absolute-difference-k (Easy)
+ * - count-pairs-whose-sum-is-less-than-target (Easy)
+ * - finding-pairs-with-a-certain-sum (Medium)
+ * - count-of-range-sum (Hard)
+ *
+ * Hints:
+ * 1. Sort the array in ascending order.
+ *
+ * 2. For each number in the array, keep track of the smallest and largest
+ * numbers in the array that can form a fair pair with this number.
+ *
+ * 3. As you move to larger number, both boundaries move down.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number} lower
+ * @param {number} upper
+ * @return {number}
+ */
+const countFairPairs = (nums, lower, upper) => {};
+
+export { countFairPairs };"
+`;

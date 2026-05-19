@@ -1,0 +1,57 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0054_spiral-matrix solution template: 0054_spiral-matrix 1`] = `
+"/**
+ * 0054. Spiral Matrix
+ *
+ * Link: https://leetcode.com/problems/spiral-matrix/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Matrix (topic_61053)
+ * - Simulation (topic_61055)
+ *
+ * Stats:
+ * - Total Accepted: 2,401,738
+ * - Total Submissions: 4,231,178
+ * - Acceptance Rate: 56.8%
+ *
+ * Similar Problems:
+ * - spiral-matrix-ii (Medium)
+ * - spiral-matrix-iii (Medium)
+ * - spiral-matrix-iv (Medium)
+ *
+ * Hints:
+ * 1. Well for some problems, the best way really is to come up with some
+ * algorithms for simulation. Basically, you need to simulate what the
+ * problem asks us to do.
+ *
+ * 2. We go boundary by boundary and move inwards. That is the essential
+ * operation. First row, last column, last row, first column, and then we
+ * move inwards by 1 and repeat. That's all. That is all the simulation that
+ * we need.
+ *
+ * 3. Think about when you want to switch the progress on one of the indexes.
+ * If you progress on i out of [i, j], you'll shift in the same column.
+ * Similarly, by changing values for j, you'd be shifting in the same
+ * row.Also, keep track of the end of a boundary so that you can move
+ * inwards and then keep repeating. It's always best to simulate edge cases
+ * like a single column or a single row to see if anything breaks or not.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[][]} matrix
+ * @return {number[]}
+ */
+const spiralOrder = (matrix) => {};
+
+export { spiralOrder };"
+`;

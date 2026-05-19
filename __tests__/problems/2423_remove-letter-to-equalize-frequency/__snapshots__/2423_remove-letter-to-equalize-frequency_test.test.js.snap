@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2423_remove-letter-to-equalize-frequency test template: 2423_remove-letter-to-equalize-frequency 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { equalFrequency } from '../../src/2401-2500/2423_remove-letter-to-equalize-frequency.js';
+
+const testcases = [
+    { word: "abcc", expected: true },
+    { word: "aazz", expected: false },
+];
+
+describe('equalFrequency', () => {
+    test.each(structuredClone(testcases))('equalFrequency($word) -> $expected', ({ word, expected }) => {
+        expect(equalFrequency(word)).toStrictEqual(expected);
+    });
+});"
+`;

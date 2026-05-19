@@ -1,0 +1,41 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0977_squares-of-a-sorted-array solution template: 0977_squares-of-a-sorted-array 1`] = `
+"/**
+ * 0977. Squares of a Sorted Array
+ *
+ * Link: https://leetcode.com/problems/squares-of-a-sorted-array/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Two Pointers (topic_9)
+ * - Sorting (topic_61049)
+ * - Junior (position_junior)
+ * - Weekly Contest 120 (contest_weekly-contest-120)
+ *
+ * Stats:
+ * - Total Accepted: 2,643,393
+ * - Total Submissions: 3,584,576
+ * - Acceptance Rate: 73.7%
+ *
+ * Similar Problems:
+ * - merge-sorted-array (Easy)
+ * - sort-transformed-array (Medium) (Premium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number[]}
+ */
+const sortedSquares = (nums) => {};
+
+export { sortedSquares };"
+`;

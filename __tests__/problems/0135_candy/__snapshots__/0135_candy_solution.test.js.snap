@@ -1,0 +1,39 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0135_candy solution template: 0135_candy 1`] = `
+"/**
+ * 0135. Candy
+ *
+ * Link: https://leetcode.com/problems/candy/
+ * Category: Algorithms
+ * Difficulty: Hard
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Greedy (topic_17)
+ *
+ * Stats:
+ * - Total Accepted: 1,050,236
+ * - Total Submissions: 2,167,916
+ * - Acceptance Rate: 48.4%
+ *
+ * Similar Problems:
+ * - check-if-grid-satisfies-conditions (Easy)
+ * - minimum-number-of-operations-to-satisfy-conditions (Medium)
+ * - minimize-maximum-value-in-a-grid (Hard) (Premium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} ratings
+ * @return {number}
+ */
+const candy = (ratings) => {};
+
+export { candy };"
+`;

@@ -1,0 +1,36 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0788_rotated-digits solution template: 0788_rotated-digits 1`] = `
+"/**
+ * 0788. Rotated Digits
+ *
+ * Link: https://leetcode.com/problems/rotated-digits/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Math (topic_8)
+ * - Dynamic Programming (topic_13)
+ * - Senior (position_senior)
+ * - Weekly Contest 73 (contest_weekly-contest-73)
+ *
+ * Stats:
+ * - Total Accepted: 218,748
+ * - Total Submissions: 342,048
+ * - Acceptance Rate: 64.0%
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number} n
+ * @return {number}
+ */
+const rotatedDigits = (n) => {};
+
+export { rotatedDigits };"
+`;

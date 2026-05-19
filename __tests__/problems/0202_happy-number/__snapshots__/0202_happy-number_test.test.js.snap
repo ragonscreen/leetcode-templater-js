@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0202_happy-number test template: 0202_happy-number 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { isHappy } from '../../src/0201-0300/0202_happy-number.js';
+
+const testcases = [
+    { n: 19, expected: true },
+    { n: 2, expected: false },
+];
+
+describe('isHappy', () => {
+    test.each(structuredClone(testcases))('isHappy($n) -> $expected', ({ n, expected }) => {
+        expect(isHappy(n)).toStrictEqual(expected);
+    });
+});"
+`;

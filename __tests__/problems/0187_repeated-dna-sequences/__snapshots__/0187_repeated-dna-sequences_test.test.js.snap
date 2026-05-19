@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0187_repeated-dna-sequences test template: 0187_repeated-dna-sequences 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { findRepeatedDnaSequences } from '../../src/0101-0200/0187_repeated-dna-sequences.js';
+
+const testcases = [
+    { s: "AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT", expected: ["AAAAACCCCC","CCCCCAAAAA"] },
+    { s: "AAAAAAAAAAAAA", expected: ["AAAAAAAAAA"] },
+];
+
+describe('findRepeatedDnaSequences', () => {
+    test.each(structuredClone(testcases))('findRepeatedDnaSequences($s) -> $expected', ({ s, expected }) => {
+        expect(findRepeatedDnaSequences(s)).toStrictEqual(expected);
+    });
+});"
+`;

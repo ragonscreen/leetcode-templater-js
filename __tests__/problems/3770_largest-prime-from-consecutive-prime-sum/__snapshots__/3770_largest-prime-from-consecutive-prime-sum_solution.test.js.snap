@@ -1,0 +1,44 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3770_largest-prime-from-consecutive-prime-sum solution template: 3770_largest-prime-from-consecutive-prime-sum 1`] = `
+"/**
+ * 3770. Largest Prime from Consecutive Prime Sum
+ *
+ * Link: https://leetcode.com/problems/largest-prime-from-consecutive-prime-sum/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Math (topic_8)
+ * - Number Theory (topic_61067)
+ * - Senior (position_senior)
+ * - Weekly Contest 479 (contest_weekly-contest-479)
+ *
+ * Stats:
+ * - Total Accepted: 25,215
+ * - Total Submissions: 64,387
+ * - Acceptance Rate: 39.2%
+ *
+ * Hints:
+ * 1. Generate all prime numbers up to \`n\` (use sieve or trial division).
+ *
+ * 2. Compute consecutive sums starting from 2 until the sum exceeds \`n\`.
+ *
+ * 3. Find the largest sum that is also a prime.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number} n
+ * @return {number}
+ */
+const largestPrime = (n) => {};
+
+export { largestPrime };"
+`;

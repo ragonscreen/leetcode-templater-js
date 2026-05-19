@@ -1,0 +1,50 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0229_majority-element-ii solution template: 0229_majority-element-ii 1`] = `
+"/**
+ * 0229. Majority Element II
+ *
+ * Link: https://leetcode.com/problems/majority-element-ii/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Sorting (topic_61049)
+ * - Counting (topic_61062)
+ *
+ * Stats:
+ * - Total Accepted: 1,268,821
+ * - Total Submissions: 2,260,226
+ * - Acceptance Rate: 56.1%
+ *
+ * Similar Problems:
+ * - check-if-a-number-is-majority-element-in-a-sorted-array (Easy) (Premium)
+ * - majority-element (Easy)
+ * - most-frequent-even-element (Easy)
+ *
+ * Hints:
+ * 1. Think about the possible number of elements that can appear more than ⌊
+ * n/3 ⌋ times in the array.
+ *
+ * 2. It can be at most two. Why?
+ *
+ * 3. Consider using Boyer-Moore Voting Algorithm, which is efficient for
+ * finding elements that appear more than a certain threshold.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number[]}
+ */
+const majorityElement = (nums) => {};
+
+export { majorityElement };"
+`;

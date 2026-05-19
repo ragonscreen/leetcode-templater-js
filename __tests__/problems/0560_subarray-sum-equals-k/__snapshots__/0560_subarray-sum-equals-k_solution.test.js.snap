@@ -1,0 +1,57 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0560_subarray-sum-equals-k solution template: 0560_subarray-sum-equals-k 1`] = `
+"/**
+ * 0560. Subarray Sum Equals K
+ *
+ * Link: https://leetcode.com/problems/subarray-sum-equals-k/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Prefix Sum (topic_61068)
+ * - Senior Staff (position_senior-staff)
+ *
+ * Stats:
+ * - Total Accepted: 2,454,756
+ * - Total Submissions: 5,188,436
+ * - Acceptance Rate: 47.3%
+ *
+ * Similar Problems:
+ * - find-pivot-index (Easy)
+ * - two-sum (Easy)
+ * - continuous-subarray-sum (Medium)
+ * - k-radius-subarray-averages (Medium)
+ * - maximum-sum-score-of-array (Medium) (Premium)
+ * - minimum-operations-to-reduce-x-to-zero (Medium)
+ * - subarray-product-less-than-k (Medium)
+ * - subarray-sums-divisible-by-k (Medium)
+ *
+ * Hints:
+ * 1. Will Brute force work here? Try to optimize it.
+ *
+ * 2. Can we optimize it by using some extra space?
+ *
+ * 3. What about storing sum frequencies in a hash table? Will it be useful?
+ *
+ * 4. sum(i,j)=sum(0,j)-sum(0,i), where sum(i,j) represents the sum of all the
+ * elements from index i to j-1.Can we use this property to optimize it.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number} k
+ * @return {number}
+ */
+const subarraySum = (nums, k) => {};
+
+export { subarraySum };"
+`;

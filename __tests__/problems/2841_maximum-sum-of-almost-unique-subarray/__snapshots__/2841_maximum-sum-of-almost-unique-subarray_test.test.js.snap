@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2841_maximum-sum-of-almost-unique-subarray test template: 2841_maximum-sum-of-almost-unique-subarray 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { maxSum } from '../../src/2801-2900/2841_maximum-sum-of-almost-unique-subarray.js';
+
+const testcases = [
+    { nums: [2,6,7,3,1,7], m: 3, k: 4, expected: 18 },
+    { nums: [5,9,9,2,4,5,4], m: 1, k: 3, expected: 23 },
+    { nums: [1,2,1,2,1,2,1], m: 3, k: 3, expected: 0 },
+];
+
+describe('maxSum', () => {
+    test.each(structuredClone(testcases))('maxSum($nums, $m, $k) -> $expected', ({ nums, m, k, expected }) => {
+        expect(maxSum(nums, m, k)).toStrictEqual(expected);
+    });
+});"
+`;

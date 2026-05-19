@@ -1,0 +1,48 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0011_container-with-most-water solution template: 0011_container-with-most-water 1`] = `
+"/**
+ * 0011. Container With Most Water
+ *
+ * Link: https://leetcode.com/problems/container-with-most-water/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Two Pointers (topic_9)
+ * - Greedy (topic_17)
+ *
+ * Stats:
+ * - Total Accepted: 5,376,392
+ * - Total Submissions: 8,957,598
+ * - Acceptance Rate: 60.0%
+ *
+ * Similar Problems:
+ * - house-robber-iv (Medium)
+ * - maximum-tastiness-of-candy-basket (Medium)
+ * - trapping-rain-water (Hard)
+ *
+ * Hints:
+ * 1. If you simulate the problem, it will be O(n^2) which is not efficient.
+ *
+ * 2. Try to use two-pointers. Set one pointer to the left and one to the right
+ * of the array. Always move the pointer that points to the lower line.
+ *
+ * 3. How can you calculate the amount of water at each step?
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} height
+ * @return {number}
+ */
+const maxArea = (height) => {};
+
+export { maxArea };"
+`;

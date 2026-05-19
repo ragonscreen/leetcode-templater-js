@@ -1,0 +1,45 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0224_basic-calculator solution template: 0224_basic-calculator 1`] = `
+"/**
+ * 0224. Basic Calculator
+ *
+ * Link: https://leetcode.com/problems/basic-calculator/
+ * Category: Algorithms
+ * Difficulty: Hard
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Math (topic_8)
+ * - String (topic_10)
+ * - Stack (topic_15)
+ * - Recursion (topic_31)
+ *
+ * Stats:
+ * - Total Accepted: 709,446
+ * - Total Submissions: 1,513,358
+ * - Acceptance Rate: 46.9%
+ *
+ * Similar Problems:
+ * - basic-calculator-ii (Medium)
+ * - different-ways-to-add-parentheses (Medium)
+ * - evaluate-reverse-polish-notation (Medium)
+ * - minimize-result-by-adding-parentheses-to-expression (Medium)
+ * - basic-calculator-iii (Hard) (Premium)
+ * - expression-add-operators (Hard)
+ * - the-score-of-students-solving-math-expression (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @return {number}
+ */
+const calculate = (s) => {};
+
+export { calculate };"
+`;

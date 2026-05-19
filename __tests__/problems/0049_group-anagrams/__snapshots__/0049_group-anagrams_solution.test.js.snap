@@ -1,0 +1,42 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0049_group-anagrams solution template: 0049_group-anagrams 1`] = `
+"/**
+ * 0049. Group Anagrams
+ *
+ * Link: https://leetcode.com/problems/group-anagrams/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - String (topic_10)
+ * - Sorting (topic_61049)
+ *
+ * Stats:
+ * - Total Accepted: 4,765,158
+ * - Total Submissions: 6,563,982
+ * - Acceptance Rate: 72.6%
+ *
+ * Similar Problems:
+ * - find-resultant-array-after-removing-anagrams (Easy)
+ * - valid-anagram (Easy)
+ * - group-shifted-strings (Medium) (Premium)
+ * - count-anagrams (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string[]} strs
+ * @return {string[][]}
+ */
+const groupAnagrams = (strs) => {};
+
+export { groupAnagrams };"
+`;

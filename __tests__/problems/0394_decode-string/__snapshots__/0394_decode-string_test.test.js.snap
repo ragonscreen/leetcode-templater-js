@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0394_decode-string test template: 0394_decode-string 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { decodeString } from '../../src/0301-0400/0394_decode-string.js';
+
+const testcases = [
+    { s: "3[a]2[bc]", expected: "aaabcbc" },
+    { s: "3[a2[c]]", expected: "accaccacc" },
+    { s: "2[abc]3[cd]ef", expected: "abcabccdcdcdef" },
+];
+
+describe('decodeString', () => {
+    test.each(structuredClone(testcases))('decodeString($s) -> $expected', ({ s, expected }) => {
+        expect(decodeString(s)).toStrictEqual(expected);
+    });
+});"
+`;

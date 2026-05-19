@@ -1,0 +1,47 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3932_count-k-th-roots-in-a-range solution template: 3932_count-k-th-roots-in-a-range 1`] = `
+"/**
+ * 3932. Count K-th Roots in a Range
+ *
+ * Link: https://leetcode.com/problems/count-k-th-roots-in-a-range/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Senior (position_senior)
+ * - Weekly Contest 502 (contest_weekly-contest-502)
+ *
+ * Stats:
+ * - Total Accepted: 24,512
+ * - Total Submissions: 106,522
+ * - Acceptance Rate: 23.0%
+ *
+ * Hints:
+ * 1. Count how many perfect \`k<sup>th</sup>\` powers are at most \`r\`, then
+ * subtract how many are less than \`l\`.
+ *
+ * 2. For \`k >= 2\`, we can bruteforce the largest \`x\` such that \`x<sup>k</sup>
+ * <= r\` .
+ *
+ * 3. Be careful of edge case: \`k == 1\`.
+ *
+ * 4. Be careful of this edge case: \`l == 0\`.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number} l
+ * @param {number} r
+ * @param {number} k
+ * @return {number}
+ */
+const countKthRoots = (l, r, k) => {};
+
+export { countKthRoots };"
+`;

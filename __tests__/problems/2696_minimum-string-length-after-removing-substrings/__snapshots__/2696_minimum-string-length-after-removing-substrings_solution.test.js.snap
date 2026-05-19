@@ -1,0 +1,45 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2696_minimum-string-length-after-removing-substrings solution template: 2696_minimum-string-length-after-removing-substrings 1`] = `
+"/**
+ * 2696. Minimum String Length After Removing Substrings
+ *
+ * Link: https://leetcode.com/problems/minimum-string-length-after-removing-substrings/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - String (topic_10)
+ * - Stack (topic_15)
+ * - Simulation (topic_61055)
+ * - Mid Level (position_mid-level)
+ * - Weekly Contest 346 (contest_weekly-contest-346)
+ *
+ * Stats:
+ * - Total Accepted: 250,624
+ * - Total Submissions: 324,653
+ * - Acceptance Rate: 77.2%
+ *
+ * Hints:
+ * 1. Can we use brute force to solve the problem?
+ *
+ * 2. Repeatedly traverse the string to find and remove the substrings “AB” and
+ * “CD” until no more occurrences exist.
+ *
+ * 3. Can the solution be optimized using a stack?
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @return {number}
+ */
+const minLength = (s) => {};
+
+export { minLength };"
+`;

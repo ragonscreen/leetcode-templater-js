@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0605_can-place-flowers test template: 0605_can-place-flowers 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { canPlaceFlowers } from '../../src/0601-0700/0605_can-place-flowers.js';
+
+const testcases = [
+    { flowerbed: [1,0,0,0,1], n: 1, expected: true },
+    { flowerbed: [1,0,0,0,1], n: 2, expected: false },
+];
+
+describe('canPlaceFlowers', () => {
+    test.each(structuredClone(testcases))('canPlaceFlowers($flowerbed, $n) -> $expected', ({ flowerbed, n, expected }) => {
+        expect(canPlaceFlowers(flowerbed, n)).toStrictEqual(expected);
+    });
+});"
+`;

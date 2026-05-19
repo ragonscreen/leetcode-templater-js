@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1033_moving-stones-until-consecutive test template: 1033_moving-stones-until-consecutive 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { numMovesStones } from '../../src/1001-1100/1033_moving-stones-until-consecutive.js';
+
+const testcases = [
+    { a: 1, b: 2, c: 5, expected: [1,2] },
+    { a: 4, b: 3, c: 2, expected: [0,0] },
+    { a: 3, b: 5, c: 1, expected: [1,2] },
+];
+
+describe('numMovesStones', () => {
+    test.each(structuredClone(testcases))('numMovesStones($a, $b, $c) -> $expected', ({ a, b, c, expected }) => {
+        expect(numMovesStones(a, b, c)).toStrictEqual(expected);
+    });
+});"
+`;

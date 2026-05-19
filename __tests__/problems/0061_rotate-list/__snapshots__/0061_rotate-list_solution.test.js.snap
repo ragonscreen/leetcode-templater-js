@@ -1,0 +1,39 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0061_rotate-list solution template: 0061_rotate-list 1`] = `
+"/**
+ * 0061. Rotate List
+ *
+ * Link: https://leetcode.com/problems/rotate-list/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Linked List (topic_7)
+ * - Two Pointers (topic_9)
+ *
+ * Stats:
+ * - Total Accepted: 1,715,998
+ * - Total Submissions: 4,031,325
+ * - Acceptance Rate: 42.6%
+ *
+ * Similar Problems:
+ * - rotate-array (Medium)
+ * - split-linked-list-in-parts (Medium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {ListNode} head
+ * @param {number} k
+ * @return {ListNode}
+ */
+const rotateRight = (head, k) => {};
+
+export { rotateRight };"
+`;

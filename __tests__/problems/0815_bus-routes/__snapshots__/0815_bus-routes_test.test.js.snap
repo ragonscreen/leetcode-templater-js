@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0815_bus-routes test template: 0815_bus-routes 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { numBusesToDestination } from '../../src/0801-0900/0815_bus-routes.js';
+
+const testcases = [
+    { routes: [[1,2,7],[3,6,7]], source: 1, target: 6, expected: 2 },
+    { routes: [[7,12],[4,5,15],[6],[15,19],[9,12,13]], source: 15, target: 12, expected: -1 },
+];
+
+describe('numBusesToDestination', () => {
+    test.each(structuredClone(testcases))('numBusesToDestination($routes, $source, $target) -> $expected', ({ routes, source, target, expected }) => {
+        expect(numBusesToDestination(routes, source, target)).toStrictEqual(expected);
+    });
+});"
+`;

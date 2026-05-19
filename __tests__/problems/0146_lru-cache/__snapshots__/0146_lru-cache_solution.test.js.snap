@@ -1,0 +1,64 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0146_lru-cache solution template: 0146_lru-cache 1`] = `
+"/**
+ * 0146. LRU Cache
+ *
+ * Link: https://leetcode.com/problems/lru-cache/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Hash Table (topic_6)
+ * - Linked List (topic_7)
+ * - Design (topic_25)
+ * - Doubly-Linked List (topic_61058)
+ *
+ * Stats:
+ * - Total Accepted: 2,604,566
+ * - Total Submissions: 5,502,144
+ * - Acceptance Rate: 47.3%
+ *
+ * Similar Problems:
+ * - design-compressed-string-iterator (Easy) (Premium)
+ * - design-most-recently-used-queue (Medium) (Premium)
+ * - design-in-memory-file-system (Hard) (Premium)
+ * - lfu-cache (Hard)
+ */
+
+/**
+ * Approach:
+ */
+class LRUCache {
+    /**
+     * Time Complexity: O()
+     * Space Complexity: O()
+     *
+     * @param {number} capacity
+     */
+    constructor(capacity) {}
+
+    /**
+     * Time Complexity: O()
+     * Space Complexity: O()
+     *
+     * @param {number} key
+     * @return {number}
+     */
+    get(key) {}
+
+    /**
+     * Time Complexity: O()
+     * Space Complexity: O()
+     *
+     * @param {number} key
+     * @param {number} value
+     * @return {void}
+     */
+    put(key, value) {}
+}
+
+export { LRUCache };"
+`;

@@ -1,0 +1,44 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0045_jump-game-ii solution template: 0045_jump-game-ii 1`] = `
+"/**
+ * 0045. Jump Game II
+ *
+ * Link: https://leetcode.com/problems/jump-game-ii/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Dynamic Programming (topic_13)
+ * - Greedy (topic_17)
+ *
+ * Stats:
+ * - Total Accepted: 2,154,225
+ * - Total Submissions: 5,025,875
+ * - Acceptance Rate: 42.9%
+ *
+ * Similar Problems:
+ * - jump-game (Medium)
+ * - jump-game-iii (Medium)
+ * - jump-game-vii (Medium)
+ * - jump-game-viii (Medium) (Premium)
+ * - maximum-number-of-jumps-to-reach-the-last-index (Medium)
+ * - visit-array-positions-to-maximize-score (Medium)
+ * - minimum-number-of-visited-cells-in-a-grid (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number}
+ */
+const jump = (nums) => {};
+
+export { jump };"
+`;

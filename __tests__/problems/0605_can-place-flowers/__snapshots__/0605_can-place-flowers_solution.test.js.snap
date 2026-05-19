@@ -1,0 +1,40 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0605_can-place-flowers solution template: 0605_can-place-flowers 1`] = `
+"/**
+ * 0605. Can Place Flowers
+ *
+ * Link: https://leetcode.com/problems/can-place-flowers/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Greedy (topic_17)
+ * - Senior (position_senior)
+ *
+ * Stats:
+ * - Total Accepted: 1,402,752
+ * - Total Submissions: 4,814,509
+ * - Acceptance Rate: 29.1%
+ *
+ * Similar Problems:
+ * - teemo-attacking (Easy)
+ * - asteroid-collision (Medium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} flowerbed
+ * @param {number} n
+ * @return {boolean}
+ */
+const canPlaceFlowers = (flowerbed, n) => {};
+
+export { canPlaceFlowers };"
+`;

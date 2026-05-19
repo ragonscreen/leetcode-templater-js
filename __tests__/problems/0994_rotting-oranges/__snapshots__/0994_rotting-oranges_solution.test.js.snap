@@ -1,0 +1,43 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0994_rotting-oranges solution template: 0994_rotting-oranges 1`] = `
+"/**
+ * 0994. Rotting Oranges
+ *
+ * Link: https://leetcode.com/problems/rotting-oranges/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Breadth-First Search (topic_22)
+ * - Matrix (topic_61053)
+ * - Staff (position_staff)
+ * - Weekly Contest 124 (contest_weekly-contest-124)
+ *
+ * Stats:
+ * - Total Accepted: 1,661,352
+ * - Total Submissions: 2,833,365
+ * - Acceptance Rate: 58.6%
+ *
+ * Similar Problems:
+ * - battleships-in-a-board (Medium)
+ * - detonate-the-maximum-bombs (Medium)
+ * - walls-and-gates (Medium) (Premium)
+ * - escape-the-spreading-fire (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[][]} grid
+ * @return {number}
+ */
+const orangesRotting = (grid) => {};
+
+export { orangesRotting };"
+`;

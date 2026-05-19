@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0495_teemo-attacking test template: 0495_teemo-attacking 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { findPoisonedDuration } from '../../src/0401-0500/0495_teemo-attacking.js';
+
+const testcases = [
+    { timeSeries: [1,4], duration: 2, expected: 4 },
+    { timeSeries: [1,2], duration: 2, expected: 3 },
+];
+
+describe('findPoisonedDuration', () => {
+    test.each(structuredClone(testcases))('findPoisonedDuration($timeSeries, $duration) -> $expected', ({ timeSeries, duration, expected }) => {
+        expect(findPoisonedDuration(timeSeries, duration)).toStrictEqual(expected);
+    });
+});"
+`;

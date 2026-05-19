@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2716_minimize-string-length test template: 2716_minimize-string-length 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { minimizedStringLength } from '../../src/2701-2800/2716_minimize-string-length.js';
+
+const testcases = [
+    { s: "aaabc", expected: 3 },
+    { s: "cbbd", expected: 3 },
+    { s: "baadccab", expected: 4 },
+];
+
+describe('minimizedStringLength', () => {
+    test.each(structuredClone(testcases))('minimizedStringLength($s) -> $expected', ({ s, expected }) => {
+        expect(minimizedStringLength(s)).toStrictEqual(expected);
+    });
+});"
+`;

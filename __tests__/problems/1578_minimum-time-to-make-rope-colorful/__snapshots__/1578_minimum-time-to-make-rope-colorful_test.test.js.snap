@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1578_minimum-time-to-make-rope-colorful test template: 1578_minimum-time-to-make-rope-colorful 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { minCost } from '../../src/1501-1600/1578_minimum-time-to-make-rope-colorful.js';
+
+const testcases = [
+    { colors: "abaac", neededTime: [1,2,3,4,5], expected: 3 },
+    { colors: "abc", neededTime: [1,2,3], expected: 0 },
+    { colors: "aabaa", neededTime: [1,2,3,4,1], expected: 2 },
+];
+
+describe('minCost', () => {
+    test.each(structuredClone(testcases))('minCost($colors, $neededTime) -> $expected', ({ colors, neededTime, expected }) => {
+        expect(minCost(colors, neededTime)).toStrictEqual(expected);
+    });
+});"
+`;

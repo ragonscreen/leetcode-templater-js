@@ -1,0 +1,44 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1572_matrix-diagonal-sum solution template: 1572_matrix-diagonal-sum 1`] = `
+"/**
+ * 1572. Matrix Diagonal Sum
+ *
+ * Link: https://leetcode.com/problems/matrix-diagonal-sum/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Matrix (topic_61053)
+ * - Mid Level (position_mid-level)
+ * - Biweekly Contest 34 (contest_biweekly-contest-34)
+ *
+ * Stats:
+ * - Total Accepted: 526,391
+ * - Total Submissions: 624,772
+ * - Acceptance Rate: 84.3%
+ *
+ * Similar Problems:
+ * - check-if-every-row-and-column-contains-all-numbers (Easy)
+ * - check-if-matrix-is-x-matrix (Easy)
+ *
+ * Hints:
+ * 1. There will be overlap of elements in the primary and secondary diagonals
+ * if and only if the length of the matrix is odd, which is at the center.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[][]} mat
+ * @return {number}
+ */
+const diagonalSum = (mat) => {};
+
+export { diagonalSum };"
+`;

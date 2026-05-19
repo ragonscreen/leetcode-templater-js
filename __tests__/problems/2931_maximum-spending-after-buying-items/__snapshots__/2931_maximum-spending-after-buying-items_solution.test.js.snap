@@ -1,0 +1,49 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2931_maximum-spending-after-buying-items solution template: 2931_maximum-spending-after-buying-items 1`] = `
+"/**
+ * 2931. Maximum Spending After Buying Items
+ *
+ * Link: https://leetcode.com/problems/maximum-spending-after-buying-items/
+ * Category: Algorithms
+ * Difficulty: Hard
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Greedy (topic_17)
+ * - Sorting (topic_61049)
+ * - Heap (Priority Queue) (topic_61050)
+ * - Matrix (topic_61053)
+ * - Senior Staff (position_senior-staff)
+ * - Biweekly Contest 117 (contest_biweekly-contest-117)
+ *
+ * Stats:
+ * - Total Accepted: 15,997
+ * - Total Submissions: 26,174
+ * - Acceptance Rate: 61.1%
+ *
+ * Similar Problems:
+ * - maximum-points-you-can-obtain-from-cards (Medium)
+ * - maximum-score-from-performing-multiplication-operations (Hard)
+ *
+ * Hints:
+ * 1. Iterate on days \`1\` to \`m * n\`.
+ *
+ * 2. On each day, buy the product that minimizes \`values[i][values[i].length -
+ * 1]\`, and pop it from \`values[i]\`.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[][]} values
+ * @return {number}
+ */
+const maxSpending = (values) => {};
+
+export { maxSpending };"
+`;

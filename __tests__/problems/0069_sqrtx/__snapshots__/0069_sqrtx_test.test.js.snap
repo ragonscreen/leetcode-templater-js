@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0069_sqrtx test template: 0069_sqrtx 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { mySqrt } from '../../src/0001-0100/0069_sqrtx.js';
+
+const testcases = [
+    { x: 4, expected: 2 },
+    { x: 8, expected: 2 },
+];
+
+describe('mySqrt', () => {
+    test.each(structuredClone(testcases))('mySqrt($x) -> $expected', ({ x, expected }) => {
+        expect(mySqrt(x)).toStrictEqual(expected);
+    });
+});"
+`;

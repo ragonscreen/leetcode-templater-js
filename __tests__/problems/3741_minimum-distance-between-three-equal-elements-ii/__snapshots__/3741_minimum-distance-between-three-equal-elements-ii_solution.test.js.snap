@@ -1,0 +1,47 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3741_minimum-distance-between-three-equal-elements-ii solution template: 3741_minimum-distance-between-three-equal-elements-ii 1`] = `
+"/**
+ * 3741. Minimum Distance Between Three Equal Elements II
+ *
+ * Link: https://leetcode.com/problems/minimum-distance-between-three-equal-elements-ii/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Senior (position_senior)
+ * - Weekly Contest 475 (contest_weekly-contest-475)
+ *
+ * Stats:
+ * - Total Accepted: 129,098
+ * - Total Submissions: 172,513
+ * - Acceptance Rate: 74.8%
+ *
+ * Hints:
+ * 1. The distance formula \`abs(i - j) + abs(j - k) + abs(k - i)\` simplifies to
+ * \`2 * (max(i, j, k) - min(i, j, k))\`.
+ *
+ * 2. Group the indices for each unique number. For a number to form a good
+ * tuple, it must appear at least 3 times.
+ *
+ * 3. For each number that appears at least 3 times, we want to find three of
+ * its indices \`p < q < r\` that minimize \`r - p\`. This is achieved by
+ * considering every three consecutive indices in the sorted list of indices.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number}
+ */
+const minimumDistance = (nums) => {};
+
+export { minimumDistance };"
+`;

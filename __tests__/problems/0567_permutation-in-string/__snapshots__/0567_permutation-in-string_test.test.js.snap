@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0567_permutation-in-string test template: 0567_permutation-in-string 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { checkInclusion } from '../../src/0501-0600/0567_permutation-in-string.js';
+
+const testcases = [
+    { s1: "ab", s2: "eidbaooo", expected: true },
+    { s1: "ab", s2: "eidboaoo", expected: false },
+];
+
+describe('checkInclusion', () => {
+    test.each(structuredClone(testcases))('checkInclusion($s1, $s2) -> $expected', ({ s1, s2, expected }) => {
+        expect(checkInclusion(s1, s2)).toStrictEqual(expected);
+    });
+});"
+`;

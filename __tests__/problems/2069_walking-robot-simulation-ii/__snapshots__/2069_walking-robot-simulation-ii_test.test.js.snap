@@ -1,0 +1,22 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2069_walking-robot-simulation-ii test template: 2069_walking-robot-simulation-ii 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { Robot } from '../../src/2001-2100/2069_walking-robot-simulation-ii.js';
+
+describe('Robot', () => {
+    test('default test 1', () => {
+        const robot = new Robot(6, 3);
+
+        expect(robot.step(2)).toBeNil();
+        expect(robot.step(2)).toBeNil();
+        expect(robot.getPos()).toStrictEqual([4,0]);
+        expect(robot.getDir()).toStrictEqual("East");
+        expect(robot.step(2)).toBeNil();
+        expect(robot.step(1)).toBeNil();
+        expect(robot.step(4)).toBeNil();
+        expect(robot.getPos()).toStrictEqual([1,2]);
+        expect(robot.getDir()).toStrictEqual("West");
+    });
+});"
+`;

@@ -1,0 +1,22 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1968_array-with-elements-not-equal-to-average-of-neighbors test template: 1968_array-with-elements-not-equal-to-average-of-neighbors 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { rearrangeArray } from '../../src/1901-2000/1968_array-with-elements-not-equal-to-average-of-neighbors.js';
+
+const testcases = [
+    { nums: [1,2,3,4,5], expected: undefined },
+    { nums: [6,2,0,9,7], expected: undefined },
+];
+
+describe('rearrangeArray', () => {
+    test.each(structuredClone(testcases))('rearrangeArray($nums) -> $expected', ({ nums, expected }) => {
+        const received = rearrangeArray(nums);
+
+        for (let i = 1; i < received.length - 1; i++) {
+            const avg = (received[i - 1] + received[i + 1]) / 2;
+            expect(avg).not.toBeCloseTo(received[i]);
+        }
+    });
+});"
+`;

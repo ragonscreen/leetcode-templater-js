@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0929_unique-email-addresses test template: 0929_unique-email-addresses 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { numUniqueEmails } from '../../src/0901-1000/0929_unique-email-addresses.js';
+
+const testcases = [
+    { emails: ["test.email+alex@leetcode.com","test.e.mail+bob.cathy@leetcode.com","testemail+david@lee.tcode.com"], expected: 2 },
+    { emails: ["a@leetcode.com","b@leetcode.com","c@leetcode.com"], expected: 3 },
+];
+
+describe('numUniqueEmails', () => {
+    test.each(structuredClone(testcases))('numUniqueEmails($emails) -> $expected', ({ emails, expected }) => {
+        expect(numUniqueEmails(emails)).toStrictEqual(expected);
+    });
+});"
+`;

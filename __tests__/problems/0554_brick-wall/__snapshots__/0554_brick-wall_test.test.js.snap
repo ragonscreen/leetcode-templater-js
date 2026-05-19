@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0554_brick-wall test template: 0554_brick-wall 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { leastBricks } from '../../src/0501-0600/0554_brick-wall.js';
+
+const testcases = [
+    { wall: [[1,2,2,1],[3,1,2],[1,3,2],[2,4],[3,1,2],[1,3,1,1]], expected: 2 },
+    { wall: [[1],[1],[1]], expected: 3 },
+];
+
+describe('leastBricks', () => {
+    test.each(structuredClone(testcases))('leastBricks($wall) -> $expected', ({ wall, expected }) => {
+        expect(leastBricks(wall)).toStrictEqual(expected);
+    });
+});"
+`;

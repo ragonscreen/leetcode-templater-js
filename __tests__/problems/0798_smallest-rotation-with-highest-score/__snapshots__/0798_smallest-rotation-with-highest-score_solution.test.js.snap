@@ -1,0 +1,36 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0798_smallest-rotation-with-highest-score solution template: 0798_smallest-rotation-with-highest-score 1`] = `
+"/**
+ * 0798. Smallest Rotation with Highest Score
+ *
+ * Link: https://leetcode.com/problems/smallest-rotation-with-highest-score/
+ * Category: Algorithms
+ * Difficulty: Hard
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Prefix Sum (topic_61068)
+ * - Principal (position_principal)
+ * - Weekly Contest 75 (contest_weekly-contest-75)
+ *
+ * Stats:
+ * - Total Accepted: 18,651
+ * - Total Submissions: 34,732
+ * - Acceptance Rate: 53.7%
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number}
+ */
+const bestRotation = (nums) => {};
+
+export { bestRotation };"
+`;

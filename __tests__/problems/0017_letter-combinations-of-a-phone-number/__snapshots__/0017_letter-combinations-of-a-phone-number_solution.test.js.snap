@@ -1,0 +1,43 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0017_letter-combinations-of-a-phone-number solution template: 0017_letter-combinations-of-a-phone-number 1`] = `
+"/**
+ * 0017. Letter Combinations of a Phone Number
+ *
+ * Link: https://leetcode.com/problems/letter-combinations-of-a-phone-number/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Hash Table (topic_6)
+ * - String (topic_10)
+ * - Backtracking (topic_14)
+ *
+ * Stats:
+ * - Total Accepted: 3,031,872
+ * - Total Submissions: 4,590,755
+ * - Acceptance Rate: 66.0%
+ *
+ * Similar Problems:
+ * - binary-watch (Easy)
+ * - minimum-number-of-pushes-to-type-word-i (Easy)
+ * - combination-sum (Medium)
+ * - count-number-of-texts (Medium)
+ * - generate-parentheses (Medium)
+ * - minimum-number-of-pushes-to-type-word-ii (Medium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} digits
+ * @return {string[]}
+ */
+const letterCombinations = (digits) => {};
+
+export { letterCombinations };"
+`;

@@ -1,0 +1,45 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3862_find-the-smallest-balanced-index solution template: 3862_find-the-smallest-balanced-index 1`] = `
+"/**
+ * 3862. Find the Smallest Balanced Index
+ *
+ * Link: https://leetcode.com/problems/find-the-smallest-balanced-index/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Prefix Sum (topic_61068)
+ * - Senior (position_senior)
+ * - Weekly Contest 492 (contest_weekly-contest-492)
+ *
+ * Stats:
+ * - Total Accepted: 37,017
+ * - Total Submissions: 191,877
+ * - Acceptance Rate: 19.3%
+ *
+ * Hints:
+ * 1. Compute prefix sums for elements to the left of each index.
+ *
+ * 2. Compute suffix products for elements to the right with overflow checks.
+ *
+ * 3. Check each index \`i\` where left sum == right product.
+ *
+ * 4. Return the smallest such index, or \`-1\` if none exists.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number}
+ */
+const smallestBalancedIndex = (nums) => {};
+
+export { smallestBalancedIndex };"
+`;

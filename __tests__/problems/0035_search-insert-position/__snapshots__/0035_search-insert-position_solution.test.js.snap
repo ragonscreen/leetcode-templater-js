@@ -1,0 +1,39 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0035_search-insert-position solution template: 0035_search-insert-position 1`] = `
+"/**
+ * 0035. Search Insert Position
+ *
+ * Link: https://leetcode.com/problems/search-insert-position/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Binary Search (topic_11)
+ *
+ * Stats:
+ * - Total Accepted: 4,763,233
+ * - Total Submissions: 9,294,639
+ * - Acceptance Rate: 51.2%
+ *
+ * Similar Problems:
+ * - first-bad-version (Easy)
+ * - minimum-operations-to-exceed-threshold-value-i (Easy)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number}
+ */
+const searchInsert = (nums, target) => {};
+
+export { searchInsert };"
+`;

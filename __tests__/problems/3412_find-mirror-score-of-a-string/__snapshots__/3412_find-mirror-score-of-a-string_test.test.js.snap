@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3412_find-mirror-score-of-a-string test template: 3412_find-mirror-score-of-a-string 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { calculateScore } from '../../src/3401-3500/3412_find-mirror-score-of-a-string.js';
+
+const testcases = [
+    { s: "aczzx", expected: 5 },
+    { s: "abcdef", expected: 0 },
+];
+
+describe('calculateScore', () => {
+    test.each(structuredClone(testcases))('calculateScore($s) -> $expected', ({ s, expected }) => {
+        expect(calculateScore(s)).toStrictEqual(expected);
+    });
+});"
+`;

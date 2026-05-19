@@ -1,0 +1,34 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3921_score-validator solution template: 3921_score-validator 1`] = `
+"/**
+ * 3921. Score Validator
+ *
+ * Link: https://leetcode.com/problems/score-validator/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Mid Level (position_mid-level)
+ * - Biweekly Contest 182 (contest_biweekly-contest-182)
+ *
+ * Stats:
+ * - Total Accepted: 30,807
+ * - Total Submissions: 42,073
+ * - Acceptance Rate: 73.2%
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string[]} events
+ * @return {number[]}
+ */
+const scoreValidator = (events) => {};
+
+export { scoreValidator };"
+`;

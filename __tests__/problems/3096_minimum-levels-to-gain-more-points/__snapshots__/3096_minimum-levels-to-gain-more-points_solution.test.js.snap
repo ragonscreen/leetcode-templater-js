@@ -1,0 +1,45 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3096_minimum-levels-to-gain-more-points solution template: 3096_minimum-levels-to-gain-more-points 1`] = `
+"/**
+ * 3096. Minimum Levels to Gain More Points
+ *
+ * Link: https://leetcode.com/problems/minimum-levels-to-gain-more-points/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Prefix Sum (topic_61068)
+ * - Senior (position_senior)
+ * - Biweekly Contest 127 (contest_biweekly-contest-127)
+ *
+ * Stats:
+ * - Total Accepted: 27,808
+ * - Total Submissions: 68,929
+ * - Acceptance Rate: 40.3%
+ *
+ * Similar Problems:
+ * - minimum-rounds-to-complete-all-tasks (Medium)
+ *
+ * Hints:
+ * 1. Change all \`0\` in possible array into \`-1\`.
+ *
+ * 2. We need to find the shortest non-empty prefix of the new possible array
+ * such that the sum of elements in it is strictly larger than the remaining part.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} possible
+ * @return {number}
+ */
+const minimumLevels = (possible) => {};
+
+export { minimumLevels };"
+`;

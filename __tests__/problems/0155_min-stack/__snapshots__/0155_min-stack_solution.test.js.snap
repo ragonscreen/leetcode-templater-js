@@ -1,0 +1,75 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0155_min-stack solution template: 0155_min-stack 1`] = `
+"/**
+ * 0155. Min Stack
+ *
+ * Link: https://leetcode.com/problems/min-stack/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Stack (topic_15)
+ * - Design (topic_25)
+ *
+ * Stats:
+ * - Total Accepted: 2,729,112
+ * - Total Submissions: 4,694,203
+ * - Acceptance Rate: 58.1%
+ *
+ * Similar Problems:
+ * - max-stack (Hard) (Premium)
+ * - sliding-window-maximum (Hard)
+ *
+ * Hints:
+ * 1. Consider each node in the stack having a minimum value. (Credits to @aakarshmadhavan)
+ */
+
+/**
+ * Approach:
+ */
+class MinStack {
+    /**
+     * Time Complexity: O()
+     * Space Complexity: O()
+     */
+    constructor() {}
+
+    /**
+     * Time Complexity: O()
+     * Space Complexity: O()
+     *
+     * @param {number} val
+     * @return {void}
+     */
+    push(val) {}
+
+    /**
+     * Time Complexity: O()
+     * Space Complexity: O()
+     *
+     * @return {void}
+     */
+    pop() {}
+
+    /**
+     * Time Complexity: O()
+     * Space Complexity: O()
+     *
+     * @return {number}
+     */
+    top() {}
+
+    /**
+     * Time Complexity: O()
+     * Space Complexity: O()
+     *
+     * @return {number}
+     */
+    getMin() {}
+}
+
+export { MinStack };"
+`;

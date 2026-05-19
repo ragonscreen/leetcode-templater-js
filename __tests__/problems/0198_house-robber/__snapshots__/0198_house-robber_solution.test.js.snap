@@ -1,0 +1,50 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0198_house-robber solution template: 0198_house-robber 1`] = `
+"/**
+ * 0198. House Robber
+ *
+ * Link: https://leetcode.com/problems/house-robber/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Dynamic Programming (topic_13)
+ *
+ * Stats:
+ * - Total Accepted: 3,572,329
+ * - Total Submissions: 6,713,917
+ * - Acceptance Rate: 53.2%
+ *
+ * Similar Problems:
+ * - count-number-of-ways-to-place-houses (Medium)
+ * - delete-and-earn (Medium)
+ * - house-robber-ii (Medium)
+ * - house-robber-iii (Medium)
+ * - house-robber-iv (Medium)
+ * - house-robber-v (Medium)
+ * - largest-element-in-an-array-after-merge-operations (Medium)
+ * - maximum-product-subarray (Medium)
+ * - mice-and-cheese (Medium)
+ * - paint-fence (Medium) (Premium)
+ * - paint-house (Medium) (Premium)
+ * - solving-questions-with-brainpower (Medium)
+ * - coin-path (Hard) (Premium)
+ * - non-negative-integers-without-consecutive-ones (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number}
+ */
+const rob = (nums) => {};
+
+export { rob };"
+`;

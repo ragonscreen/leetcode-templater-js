@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2183_count-array-pairs-divisible-by-k test template: 2183_count-array-pairs-divisible-by-k 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { countPairs } from '../../src/2101-2200/2183_count-array-pairs-divisible-by-k.js';
+
+const testcases = [
+    { nums: [1,2,3,4,5], k: 2, expected: 7 },
+    { nums: [1,2,3,4], k: 5, expected: 0 },
+];
+
+describe('countPairs', () => {
+    test.each(structuredClone(testcases))('countPairs($nums, $k) -> $expected', ({ nums, k, expected }) => {
+        expect(countPairs(nums, k)).toStrictEqual(expected);
+    });
+});"
+`;

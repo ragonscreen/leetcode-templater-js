@@ -1,0 +1,37 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0796_rotate-string solution template: 0796_rotate-string 1`] = `
+"/**
+ * 0796. Rotate String
+ *
+ * Link: https://leetcode.com/problems/rotate-string/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - String (topic_10)
+ * - String Matching (topic_61052)
+ * - Mid Level (position_mid-level)
+ * - Weekly Contest 75 (contest_weekly-contest-75)
+ *
+ * Stats:
+ * - Total Accepted: 924,415
+ * - Total Submissions: 1,387,230
+ * - Acceptance Rate: 66.6%
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @param {string} goal
+ * @return {boolean}
+ */
+const rotateString = (s, goal) => {};
+
+export { rotateString };"
+`;

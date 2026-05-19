@@ -1,0 +1,42 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0127_word-ladder solution template: 0127_word-ladder 1`] = `
+"/**
+ * 0127. Word Ladder
+ *
+ * Link: https://leetcode.com/problems/word-ladder/
+ * Category: Algorithms
+ * Difficulty: Hard
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Hash Table (topic_6)
+ * - String (topic_10)
+ * - Breadth-First Search (topic_22)
+ *
+ * Stats:
+ * - Total Accepted: 1,629,096
+ * - Total Submissions: 3,577,840
+ * - Acceptance Rate: 45.5%
+ *
+ * Similar Problems:
+ * - minimum-genetic-mutation (Medium)
+ * - words-within-two-edits-of-dictionary (Medium)
+ * - word-ladder-ii (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} beginWord
+ * @param {string} endWord
+ * @param {string[]} wordList
+ * @return {number}
+ */
+const ladderLength = (beginWord, endWord, wordList) => {};
+
+export { ladderLength };"
+`;

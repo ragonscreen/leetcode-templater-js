@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0240_search-a-2d-matrix-ii test template: 0240_search-a-2d-matrix-ii 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { searchMatrix } from '../../src/0201-0300/0240_search-a-2d-matrix-ii.js';
+
+const testcases = [
+    { matrix: [[1,4,7,11,15],[2,5,8,12,19],[3,6,9,16,22],[10,13,14,17,24],[18,21,23,26,30]], target: 5, expected: true },
+    { matrix: [[1,4,7,11,15],[2,5,8,12,19],[3,6,9,16,22],[10,13,14,17,24],[18,21,23,26,30]], target: 20, expected: false },
+];
+
+describe('searchMatrix', () => {
+    test.each(structuredClone(testcases))('searchMatrix($matrix, $target) -> $expected', ({ matrix, target, expected }) => {
+        expect(searchMatrix(matrix, target)).toStrictEqual(expected);
+    });
+});"
+`;

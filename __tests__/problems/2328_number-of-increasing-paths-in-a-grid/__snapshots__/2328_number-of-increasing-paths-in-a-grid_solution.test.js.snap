@@ -1,0 +1,55 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2328_number-of-increasing-paths-in-a-grid solution template: 2328_number-of-increasing-paths-in-a-grid 1`] = `
+"/**
+ * 2328. Number of Increasing Paths in a Grid
+ *
+ * Link: https://leetcode.com/problems/number-of-increasing-paths-in-a-grid/
+ * Category: Algorithms
+ * Difficulty: Hard
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Dynamic Programming (topic_13)
+ * - Depth-First Search (topic_21)
+ * - Breadth-First Search (topic_22)
+ * - Graph Theory (topic_24)
+ * - Topological Sort (topic_26)
+ * - Memoization (topic_33)
+ * - Matrix (topic_61053)
+ * - Senior Staff (position_senior-staff)
+ * - Weekly Contest 300 (contest_weekly-contest-300)
+ *
+ * Stats:
+ * - Total Accepted: 83,381
+ * - Total Submissions: 145,365
+ * - Acceptance Rate: 57.4%
+ *
+ * Similar Problems:
+ * - all-paths-from-source-to-target (Medium)
+ * - longest-increasing-path-in-a-matrix (Hard)
+ * - maximum-strictly-increasing-cells-in-a-matrix (Hard)
+ *
+ * Hints:
+ * 1. How can you calculate the number of increasing paths that start from a
+ * cell (i, j)? Think about dynamic programming.
+ *
+ * 2. Define f(i, j) as the number of increasing paths starting from cell (i,
+ * j). Try to find how f(i, j) is related to each of f(i, j+1), f(i, j-1),
+ * f(i+1, j) and f(i-1, j).
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[][]} grid
+ * @return {number}
+ */
+const countPaths = (grid) => {};
+
+export { countPaths };"
+`;

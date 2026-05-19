@@ -1,0 +1,49 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3904_smallest-stable-index-ii solution template: 3904_smallest-stable-index-ii 1`] = `
+"/**
+ * 3904. Smallest Stable Index II
+ *
+ * Link: https://leetcode.com/problems/smallest-stable-index-ii/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Prefix Sum (topic_61068)
+ * - Senior (position_senior)
+ * - Weekly Contest 498 (contest_weekly-contest-498)
+ *
+ * Stats:
+ * - Total Accepted: 37,321
+ * - Total Submissions: 50,629
+ * - Acceptance Rate: 73.7%
+ *
+ * Hints:
+ * 1. Precompute prefix maximums in an array \`prefMax\`, where \`prefMax[i]\` is
+ * the maximum of \`nums[0..i]\`
+ *
+ * 2. Precompute suffix minimums in an array \`suffMin\`, where \`suffMin[i]\` is
+ * the minimum of \`nums[i..n-1]\`
+ *
+ * 3. For each index \`i\`, compute the instability score as \`prefMax[i] - suffMin[i]\`
+ *
+ * 4. Return the smallest index where the instability score is \`<= k\`. If no
+ * such index exists, return \`-1\`
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number} k
+ * @return {number}
+ */
+const firstStableIndex = (nums, k) => {};
+
+export { firstStableIndex };"
+`;

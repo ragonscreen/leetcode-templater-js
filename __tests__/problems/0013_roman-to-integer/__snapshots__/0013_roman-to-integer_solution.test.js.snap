@@ -1,0 +1,42 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0013_roman-to-integer solution template: 0013_roman-to-integer 1`] = `
+"/**
+ * 0013. Roman to Integer
+ *
+ * Link: https://leetcode.com/problems/roman-to-integer/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Hash Table (topic_6)
+ * - Math (topic_8)
+ * - String (topic_10)
+ *
+ * Stats:
+ * - Total Accepted: 5,891,313
+ * - Total Submissions: 8,842,561
+ * - Acceptance Rate: 66.6%
+ *
+ * Similar Problems:
+ * - integer-to-roman (Medium)
+ *
+ * Hints:
+ * 1. Problem is simpler to solve by working the string from back to front and
+ * using a map.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @return {number}
+ */
+const romanToInt = (s) => {};
+
+export { romanToInt };"
+`;

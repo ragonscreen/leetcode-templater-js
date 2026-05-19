@@ -1,0 +1,44 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3761_minimum-absolute-distance-between-mirror-pairs solution template: 3761_minimum-absolute-distance-between-mirror-pairs 1`] = `
+"/**
+ * 3761. Minimum Absolute Distance Between Mirror Pairs
+ *
+ * Link: https://leetcode.com/problems/minimum-absolute-distance-between-mirror-pairs/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Math (topic_8)
+ * - Staff (position_staff)
+ * - Weekly Contest 478 (contest_weekly-contest-478)
+ *
+ * Stats:
+ * - Total Accepted: 114,644
+ * - Total Submissions: 193,528
+ * - Acceptance Rate: 59.2%
+ *
+ * Hints:
+ * 1. Scan left to right with a hash map: for each \`nums[i]\`, if the map
+ * contains key \`nums[i]\` then set \`ans = min(ans, i - map[nums[i]])\`.
+ *
+ * 2. Store/update the current index under key \`reverse(nums[i])\`, so future
+ * matches use the most recent index.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number}
+ */
+const minMirrorPairDistance = (nums) => {};
+
+export { minMirrorPairDistance };"
+`;

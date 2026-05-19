@@ -1,0 +1,47 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2810_faulty-keyboard solution template: 2810_faulty-keyboard 1`] = `
+"/**
+ * 2810. Faulty Keyboard
+ *
+ * Link: https://leetcode.com/problems/faulty-keyboard/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - String (topic_10)
+ * - Simulation (topic_61055)
+ * - Mid Level (position_mid-level)
+ * - Weekly Contest 357 (contest_weekly-contest-357)
+ *
+ * Stats:
+ * - Total Accepted: 120,748
+ * - Total Submissions: 150,538
+ * - Acceptance Rate: 80.2%
+ *
+ * Similar Problems:
+ * - find-the-original-typed-string-i (Easy)
+ * - reverse-only-letters (Easy)
+ * - reverse-string-ii (Easy)
+ * - reverse-vowels-of-a-string (Easy)
+ * - find-the-original-typed-string-ii (Hard)
+ *
+ * Hints:
+ * 1. Try to build a new string by traversing the given string and reversing
+ * whenever you get the character ‘i’.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @return {string}
+ */
+const finalString = (s) => {};
+
+export { finalString };"
+`;

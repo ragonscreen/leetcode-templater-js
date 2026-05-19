@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0135_candy test template: 0135_candy 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { candy } from '../../src/0101-0200/0135_candy.js';
+
+const testcases = [
+    { ratings: [1,0,2], expected: 5 },
+    { ratings: [1,2,2], expected: 4 },
+];
+
+describe('candy', () => {
+    test.each(structuredClone(testcases))('candy($ratings) -> $expected', ({ ratings, expected }) => {
+        expect(candy(ratings)).toStrictEqual(expected);
+    });
+});"
+`;

@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0423_reconstruct-original-digits-from-english test template: 0423_reconstruct-original-digits-from-english 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { originalDigits } from '../../src/0401-0500/0423_reconstruct-original-digits-from-english.js';
+
+const testcases = [
+    { s: "owoztneoer", expected: "012" },
+    { s: "fviefuro", expected: "45" },
+];
+
+describe('originalDigits', () => {
+    test.each(structuredClone(testcases))('originalDigits($s) -> $expected', ({ s, expected }) => {
+        expect(originalDigits(s)).toStrictEqual(expected);
+    });
+});"
+`;

@@ -1,0 +1,57 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0567_permutation-in-string solution template: 0567_permutation-in-string 1`] = `
+"/**
+ * 0567. Permutation in String
+ *
+ * Link: https://leetcode.com/problems/permutation-in-string/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Hash Table (topic_6)
+ * - Two Pointers (topic_9)
+ * - String (topic_10)
+ * - Sliding Window (topic_55821)
+ * - Principal (position_principal)
+ *
+ * Stats:
+ * - Total Accepted: 1,501,956
+ * - Total Submissions: 3,074,205
+ * - Acceptance Rate: 48.9%
+ *
+ * Similar Problems:
+ * - find-all-anagrams-in-a-string (Medium)
+ * - minimum-window-substring (Hard)
+ *
+ * Hints:
+ * 1. Obviously, brute force will result in TLE. Think of something else.
+ *
+ * 2. How will you check whether one string is a permutation of another string?
+ *
+ * 3. One way is to sort the string and then compare. But, Is there a better way?
+ *
+ * 4. If one string is a permutation of another string then they must have one
+ * common metric. What is that?
+ *
+ * 5. Both strings must have same character frequencies, if  one is permutation
+ * of another. Which data structure should be used to store frequencies?
+ *
+ * 6. What about hash table?  An array of size 26?
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s1
+ * @param {string} s2
+ * @return {boolean}
+ */
+const checkInclusion = (s1, s2) => {};
+
+export { checkInclusion };"
+`;

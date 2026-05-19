@@ -1,0 +1,47 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0735_asteroid-collision solution template: 0735_asteroid-collision 1`] = `
+"/**
+ * 0735. Asteroid Collision
+ *
+ * Link: https://leetcode.com/problems/asteroid-collision/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Stack (topic_15)
+ * - Simulation (topic_61055)
+ * - Staff (position_staff)
+ * - Weekly Contest 60 (contest_weekly-contest-60)
+ *
+ * Stats:
+ * - Total Accepted: 1,028,938
+ * - Total Submissions: 2,150,548
+ * - Acceptance Rate: 47.8%
+ *
+ * Similar Problems:
+ * - can-place-flowers (Easy)
+ * - count-collisions-on-a-road (Medium)
+ * - destroying-asteroids (Medium)
+ * - robot-collisions (Hard)
+ *
+ * Hints:
+ * 1. Say a row of asteroids is stable.  What happens when a new asteroid is
+ * added on the right?
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} asteroids
+ * @return {number[]}
+ */
+const asteroidCollision = (asteroids) => {};
+
+export { asteroidCollision };"
+`;

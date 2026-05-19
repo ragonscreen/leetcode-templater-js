@@ -1,0 +1,53 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0724_find-pivot-index solution template: 0724_find-pivot-index 1`] = `
+"/**
+ * 0724. Find Pivot Index
+ *
+ * Link: https://leetcode.com/problems/find-pivot-index/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Prefix Sum (topic_61068)
+ * - Mid Level (position_mid-level)
+ * - Weekly Contest 58 (contest_weekly-contest-58)
+ *
+ * Stats:
+ * - Total Accepted: 1,681,662
+ * - Total Submissions: 2,683,641
+ * - Acceptance Rate: 62.7%
+ *
+ * Similar Problems:
+ * - find-the-middle-index-in-array (Easy)
+ * - left-and-right-sum-differences (Easy)
+ * - maximum-sum-score-of-array (Medium) (Premium)
+ * - number-of-ways-to-split-array (Medium)
+ * - subarray-sum-equals-k (Medium)
+ *
+ * Hints:
+ * 1. Create an array sumLeft where sumLeft[i] is the sum of all the numbers to
+ * the left of index i.
+ *
+ * 2. Create an array sumRight where sumRight[i] is the sum of all the numbers
+ * to the right of index i.
+ *
+ * 3. For each index i, check if sumLeft[i] equals sumRight[i]. If so, return
+ * i. If no such i is found, return -1.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number}
+ */
+const pivotIndex = (nums) => {};
+
+export { pivotIndex };"
+`;

@@ -1,0 +1,46 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3341_find-minimum-time-to-reach-last-room-i solution template: 3341_find-minimum-time-to-reach-last-room-i 1`] = `
+"/**
+ * 3341. Find Minimum Time to Reach Last Room I
+ *
+ * Link: https://leetcode.com/problems/find-minimum-time-to-reach-last-room-i/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Graph Theory (topic_24)
+ * - Heap (Priority Queue) (topic_61050)
+ * - Matrix (topic_61053)
+ * - Shortest Path (topic_61076)
+ * - Senior (position_senior)
+ * - Weekly Contest 422 (contest_weekly-contest-422)
+ *
+ * Stats:
+ * - Total Accepted: 116,566
+ * - Total Submissions: 210,252
+ * - Acceptance Rate: 55.4%
+ *
+ * Similar Problems:
+ * - minimum-cost-to-reach-destination-in-time (Hard)
+ * - minimum-time-to-visit-a-cell-in-a-grid (Hard)
+ *
+ * Hints:
+ * 1. Use shortest path algorithms.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[][]} moveTime
+ * @return {number}
+ */
+const minTimeToReach = (moveTime) => {};
+
+export { minTimeToReach };"
+`;

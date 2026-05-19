@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1366_rank-teams-by-votes test template: 1366_rank-teams-by-votes 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { rankTeams } from '../../src/1301-1400/1366_rank-teams-by-votes.js';
+
+const testcases = [
+    { votes: ["ABC","ACB","ABC","ACB","ACB"], expected: "ACB" },
+    { votes: ["WXYZ","XYZW"], expected: "XWYZ" },
+    { votes: ["ZMNAGUEDSJYLBOPHRQICWFXTVK"], expected: "ZMNAGUEDSJYLBOPHRQICWFXTVK" },
+];
+
+describe('rankTeams', () => {
+    test.each(structuredClone(testcases))('rankTeams($votes) -> $expected', ({ votes, expected }) => {
+        expect(rankTeams(votes)).toStrictEqual(expected);
+    });
+});"
+`;

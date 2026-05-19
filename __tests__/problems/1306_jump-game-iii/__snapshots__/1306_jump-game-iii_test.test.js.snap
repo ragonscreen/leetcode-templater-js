@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1306_jump-game-iii test template: 1306_jump-game-iii 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { canReach } from '../../src/1301-1400/1306_jump-game-iii.js';
+
+const testcases = [
+    { arr: [4,2,3,0,3,1,2], start: 5, expected: true },
+    { arr: [4,2,3,0,3,1,2], start: 0, expected: true },
+    { arr: [3,0,2,1,2], start: 2, expected: false },
+];
+
+describe('canReach', () => {
+    test.each(structuredClone(testcases))('canReach($arr, $start) -> $expected', ({ arr, start, expected }) => {
+        expect(canReach(arr, start)).toStrictEqual(expected);
+    });
+});"
+`;

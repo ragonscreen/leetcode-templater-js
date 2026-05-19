@@ -1,0 +1,46 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1888_minimum-number-of-flips-to-make-the-binary-string-alternating solution template: 1888_minimum-number-of-flips-to-make-the-binary-string-alternating 1`] = `
+"/**
+ * 1888. Minimum Number of Flips to Make the Binary String Alternating
+ *
+ * Link: https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - String (topic_10)
+ * - Dynamic Programming (topic_13)
+ * - Sliding Window (topic_55821)
+ * - Staff (position_staff)
+ * - Weekly Contest 244 (contest_weekly-contest-244)
+ *
+ * Stats:
+ * - Total Accepted: 126,854
+ * - Total Submissions: 237,007
+ * - Acceptance Rate: 53.5%
+ *
+ * Similar Problems:
+ * - minimum-operations-to-make-the-array-alternating (Medium)
+ *
+ * Hints:
+ * 1. Note what actually matters is how many 0s and 1s are in odd and even positions
+ *
+ * 2. For every cyclic shift we need to count how many 0s and 1s are at each
+ * parity and convert the minimum between them for each parity
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @return {number}
+ */
+const minFlips = (s) => {};
+
+export { minFlips };"
+`;

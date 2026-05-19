@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1888_minimum-number-of-flips-to-make-the-binary-string-alternating test template: 1888_minimum-number-of-flips-to-make-the-binary-string-alternating 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { minFlips } from '../../src/1801-1900/1888_minimum-number-of-flips-to-make-the-binary-string-alternating.js';
+
+const testcases = [
+    { s: "111000", expected: 2 },
+    { s: "010", expected: 0 },
+    { s: "1110", expected: 1 },
+];
+
+describe('minFlips', () => {
+    test.each(structuredClone(testcases))('minFlips($s) -> $expected', ({ s, expected }) => {
+        expect(minFlips(s)).toStrictEqual(expected);
+    });
+});"
+`;

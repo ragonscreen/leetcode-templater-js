@@ -1,0 +1,49 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1968_array-with-elements-not-equal-to-average-of-neighbors solution template: 1968_array-with-elements-not-equal-to-average-of-neighbors 1`] = `
+"/**
+ * 1968. Array With Elements Not Equal to Average of Neighbors
+ *
+ * Link: https://leetcode.com/problems/array-with-elements-not-equal-to-average-of-neighbors/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Greedy (topic_17)
+ * - Sorting (topic_61049)
+ * - Senior (position_senior)
+ * - Weekly Contest 254 (contest_weekly-contest-254)
+ *
+ * Stats:
+ * - Total Accepted: 50,168
+ * - Total Submissions: 98,838
+ * - Acceptance Rate: 50.8%
+ *
+ * Similar Problems:
+ * - design-neighbor-sum-service (Easy)
+ * - wiggle-sort (Medium) (Premium)
+ * - wiggle-sort-ii (Medium)
+ *
+ * Hints:
+ * 1. A number can be the average of its neighbors if one neighbor is smaller
+ * than the number and the other is greater than the number.
+ *
+ * 2. We can put numbers smaller than the median on odd indices and the rest on
+ * even indices.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number[]}
+ */
+const rearrangeArray = (nums) => {};
+
+export { rearrangeArray };"
+`;

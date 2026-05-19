@@ -1,0 +1,37 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0154_find-minimum-in-rotated-sorted-array-ii solution template: 0154_find-minimum-in-rotated-sorted-array-ii 1`] = `
+"/**
+ * 0154. Find Minimum in Rotated Sorted Array II
+ *
+ * Link: https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/
+ * Category: Algorithms
+ * Difficulty: Hard
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Binary Search (topic_11)
+ *
+ * Stats:
+ * - Total Accepted: 707,279
+ * - Total Submissions: 1,518,173
+ * - Acceptance Rate: 46.6%
+ *
+ * Similar Problems:
+ * - find-minimum-in-rotated-sorted-array (Medium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number}
+ */
+const findMin = (nums) => {};
+
+export { findMin };"
+`;

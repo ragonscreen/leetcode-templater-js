@@ -1,0 +1,47 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2672_number-of-adjacent-elements-with-the-same-color solution template: 2672_number-of-adjacent-elements-with-the-same-color 1`] = `
+"/**
+ * 2672. Number of Adjacent Elements With the Same Color
+ *
+ * Link: https://leetcode.com/problems/number-of-adjacent-elements-with-the-same-color/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Staff (position_staff)
+ * - Weekly Contest 344 (contest_weekly-contest-344)
+ *
+ * Stats:
+ * - Total Accepted: 34,045
+ * - Total Submissions: 57,112
+ * - Acceptance Rate: 59.6%
+ *
+ * Hints:
+ * 1. Since at each query, only one element is being recolored, we just need to
+ * focus on its neighbors.
+ *
+ * 2. If an element that is changed on the i-th query had the same color as its
+ * right element answer decreases by 1. Similarly contributes its left
+ * element too.
+ *
+ * 3. After changing the color, if the element has the same color as its right
+ * element answer increases by 1. Similarly contributes its left element too.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number} n
+ * @param {number[][]} queries
+ * @return {number[]}
+ */
+const colorTheArray = (n, queries) => {};
+
+export { colorTheArray };"
+`;

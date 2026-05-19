@@ -1,0 +1,53 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2226_maximum-candies-allocated-to-k-children solution template: 2226_maximum-candies-allocated-to-k-children 1`] = `
+"/**
+ * 2226. Maximum Candies Allocated to K Children
+ *
+ * Link: https://leetcode.com/problems/maximum-candies-allocated-to-k-children/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Binary Search (topic_11)
+ * - Staff (position_staff)
+ * - Weekly Contest 287 (contest_weekly-contest-287)
+ *
+ * Stats:
+ * - Total Accepted: 207,570
+ * - Total Submissions: 416,119
+ * - Acceptance Rate: 49.9%
+ *
+ * Similar Problems:
+ * - koko-eating-bananas (Medium)
+ * - maximize-happiness-of-selected-children (Medium)
+ * - maximum-number-of-removable-characters (Medium)
+ * - minimize-maximum-of-array (Medium)
+ * - minimized-maximum-of-products-distributed-to-any-store (Medium)
+ * - minimum-limit-of-balls-in-a-bag (Medium)
+ * - minimum-speed-to-arrive-on-time (Medium)
+ * - minimum-time-to-complete-trips (Medium)
+ *
+ * Hints:
+ * 1. For a fixed number of candies c, how can you check if each child can get
+ * c candies?
+ *
+ * 2. Use binary search to find the maximum c as the answer.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} candies
+ * @param {number} k
+ * @return {number}
+ */
+const maximumCandies = (candies, k) => {};
+
+export { maximumCandies };"
+`;

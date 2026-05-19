@@ -1,0 +1,49 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2295_replace-elements-in-an-array solution template: 2295_replace-elements-in-an-array 1`] = `
+"/**
+ * 2295. Replace Elements in an Array
+ *
+ * Link: https://leetcode.com/problems/replace-elements-in-an-array/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Simulation (topic_61055)
+ * - Staff (position_staff)
+ * - Weekly Contest 296 (contest_weekly-contest-296)
+ *
+ * Stats:
+ * - Total Accepted: 48,293
+ * - Total Submissions: 80,758
+ * - Acceptance Rate: 59.8%
+ *
+ * Similar Problems:
+ * - find-all-numbers-disappeared-in-an-array (Easy)
+ * - maximum-number-of-integers-to-choose-from-a-range-i (Medium)
+ * - maximum-number-of-integers-to-choose-from-a-range-ii (Medium) (Premium)
+ *
+ * Hints:
+ * 1. Can you think of a data structure that will allow you to store the
+ * position of each number?
+ *
+ * 2. Use that data structure to instantly replace a number with its new value.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number[][]} operations
+ * @return {number[]}
+ */
+const arrayChange = (nums, operations) => {};
+
+export { arrayChange };"
+`;

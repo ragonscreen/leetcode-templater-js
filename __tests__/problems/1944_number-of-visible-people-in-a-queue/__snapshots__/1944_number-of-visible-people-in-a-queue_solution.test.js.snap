@@ -1,0 +1,58 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1944_number-of-visible-people-in-a-queue solution template: 1944_number-of-visible-people-in-a-queue 1`] = `
+"/**
+ * 1944. Number of Visible People in a Queue
+ *
+ * Link: https://leetcode.com/problems/number-of-visible-people-in-a-queue/
+ * Category: Algorithms
+ * Difficulty: Hard
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Stack (topic_15)
+ * - Monotonic Stack (topic_61054)
+ * - Senior Staff (position_senior-staff)
+ * - Biweekly Contest 57 (contest_biweekly-contest-57)
+ *
+ * Stats:
+ * - Total Accepted: 129,863
+ * - Total Submissions: 177,753
+ * - Acceptance Rate: 73.1%
+ *
+ * Similar Problems:
+ * - buildings-with-an-ocean-view (Medium) (Premium)
+ * - number-of-people-that-can-be-seen-in-a-grid (Medium) (Premium)
+ * - sum-of-subarray-ranges (Medium)
+ * - find-building-where-alice-and-bob-can-meet (Hard)
+ * - sum-of-total-strength-of-wizards (Hard)
+ *
+ * Hints:
+ * 1. How to solve this problem in quadratic complexity ?
+ *
+ * 2. For every subarray start at index i, keep finding new maximum values
+ * until a value larger than arr[i] is found.
+ *
+ * 3. Since the limits are high, you need a linear solution.
+ *
+ * 4. Use a stack to keep the values of the array sorted as you iterate the
+ * array from the end to the start.
+ *
+ * 5. Keep popping from the stack the elements in sorted order until a value
+ * larger than arr[i] is found, these are the ones that person i can see.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} heights
+ * @return {number[]}
+ */
+const canSeePersonsCount = (heights) => {};
+
+export { canSeePersonsCount };"
+`;

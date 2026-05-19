@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1423_maximum-points-you-can-obtain-from-cards test template: 1423_maximum-points-you-can-obtain-from-cards 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { maxScore } from '../../src/1401-1500/1423_maximum-points-you-can-obtain-from-cards.js';
+
+const testcases = [
+    { cardPoints: [1,2,3,4,5,6,1], k: 3, expected: 12 },
+    { cardPoints: [2,2,2], k: 2, expected: 4 },
+    { cardPoints: [9,7,7,9,7,7,9], k: 7, expected: 55 },
+];
+
+describe('maxScore', () => {
+    test.each(structuredClone(testcases))('maxScore($cardPoints, $k) -> $expected', ({ cardPoints, k, expected }) => {
+        expect(maxScore(cardPoints, k)).toStrictEqual(expected);
+    });
+});"
+`;

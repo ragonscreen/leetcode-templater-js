@@ -1,0 +1,42 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1822_sign-of-the-product-of-an-array solution template: 1822_sign-of-the-product-of-an-array 1`] = `
+"/**
+ * 1822. Sign of the Product of an Array
+ *
+ * Link: https://leetcode.com/problems/sign-of-the-product-of-an-array/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Math (topic_8)
+ * - Mid Level (position_mid-level)
+ * - Weekly Contest 236 (contest_weekly-contest-236)
+ *
+ * Stats:
+ * - Total Accepted: 444,494
+ * - Total Submissions: 685,859
+ * - Acceptance Rate: 64.8%
+ *
+ * Hints:
+ * 1. If there is a 0 in the array the answer is 0
+ *
+ * 2. To avoid overflow make all the negative numbers -1 and all positive
+ * numbers 1 and calculate the prod
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number}
+ */
+const arraySign = (nums) => {};
+
+export { arraySign };"
+`;

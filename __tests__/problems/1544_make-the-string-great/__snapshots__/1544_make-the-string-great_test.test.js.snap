@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1544_make-the-string-great test template: 1544_make-the-string-great 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { makeGood } from '../../src/1501-1600/1544_make-the-string-great.js';
+
+const testcases = [
+    { s: "leEeetcode", expected: "leetcode" },
+    { s: "abBAcC", expected: "" },
+    { s: "s", expected: "s" },
+];
+
+describe('makeGood', () => {
+    test.each(structuredClone(testcases))('makeGood($s) -> $expected', ({ s, expected }) => {
+        expect(makeGood(s)).toStrictEqual(expected);
+    });
+});"
+`;

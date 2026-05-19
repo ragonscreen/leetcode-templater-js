@@ -1,0 +1,36 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0423_reconstruct-original-digits-from-english solution template: 0423_reconstruct-original-digits-from-english 1`] = `
+"/**
+ * 0423. Reconstruct Original Digits from English
+ *
+ * Link: https://leetcode.com/problems/reconstruct-original-digits-from-english/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Hash Table (topic_6)
+ * - Math (topic_8)
+ * - String (topic_10)
+ * - Junior (position_junior)
+ *
+ * Stats:
+ * - Total Accepted: 100,443
+ * - Total Submissions: 189,899
+ * - Acceptance Rate: 52.9%
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @return {string}
+ */
+const originalDigits = (s) => {};
+
+export { originalDigits };"
+`;

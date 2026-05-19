@@ -1,0 +1,44 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1784_check-if-binary-string-has-at-most-one-segment-of-ones solution template: 1784_check-if-binary-string-has-at-most-one-segment-of-ones 1`] = `
+"/**
+ * 1784. Check if Binary String Has at Most One Segment of Ones
+ *
+ * Link: https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - String (topic_10)
+ * - Mid Level (position_mid-level)
+ * - Weekly Contest 231 (contest_weekly-contest-231)
+ *
+ * Stats:
+ * - Total Accepted: 191,713
+ * - Total Submissions: 390,237
+ * - Acceptance Rate: 49.1%
+ *
+ * Similar Problems:
+ * - longer-contiguous-segments-of-ones-than-zeros (Easy)
+ *
+ * Hints:
+ * 1. It's guaranteed to have at least one segment
+ *
+ * 2. The string size is small so you can count all segments of ones with no
+ * that have no adjacent ones.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @return {boolean}
+ */
+const checkOnesSegment = (s) => {};
+
+export { checkOnesSegment };"
+`;

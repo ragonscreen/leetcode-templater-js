@@ -1,0 +1,51 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0719_find-k-th-smallest-pair-distance solution template: 0719_find-k-th-smallest-pair-distance 1`] = `
+"/**
+ * 0719. Find K-th Smallest Pair Distance
+ *
+ * Link: https://leetcode.com/problems/find-k-th-smallest-pair-distance/
+ * Category: Algorithms
+ * Difficulty: Hard
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Two Pointers (topic_9)
+ * - Binary Search (topic_11)
+ * - Sorting (topic_61049)
+ * - Principal (position_principal)
+ *
+ * Stats:
+ * - Total Accepted: 213,632
+ * - Total Submissions: 459,069
+ * - Acceptance Rate: 46.5%
+ *
+ * Similar Problems:
+ * - find-k-closest-elements (Medium)
+ * - find-k-pairs-with-smallest-sums (Medium)
+ * - k-th-smallest-prime-fraction (Medium)
+ * - kth-smallest-element-in-a-sorted-matrix (Medium)
+ * - maximize-score-of-numbers-in-ranges (Medium)
+ * - find-the-median-of-the-uniqueness-array (Hard)
+ * - kth-smallest-number-in-multiplication-table (Hard)
+ *
+ * Hints:
+ * 1. Binary search for the answer.  How can you check how many pairs have
+ * distance <= X?
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number} k
+ * @return {number}
+ */
+const smallestDistancePair = (nums, k) => {};
+
+export { smallestDistancePair };"
+`;

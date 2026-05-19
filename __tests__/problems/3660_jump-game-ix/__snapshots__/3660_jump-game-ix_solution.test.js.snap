@@ -1,0 +1,49 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3660_jump-game-ix solution template: 3660_jump-game-ix 1`] = `
+"/**
+ * 3660. Jump Game IX
+ *
+ * Link: https://leetcode.com/problems/jump-game-ix/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Dynamic Programming (topic_13)
+ * - Staff (position_staff)
+ * - Weekly Contest 464 (contest_weekly-contest-464)
+ *
+ * Stats:
+ * - Total Accepted: 82,981
+ * - Total Submissions: 179,625
+ * - Acceptance Rate: 46.2%
+ *
+ * Hints:
+ * 1. Think of the array as a directed graph where edges represent valid jumps.
+ *
+ * 2. From index \`i\`, forward jumps go only to smaller values; backward jumps
+ * go only to larger values.
+ *
+ * 3. The maximum reachable value from \`i\` is the maximum value in the
+ * connected component reachable under these jump rules.
+ *
+ * 4. You can find connected ranges by looking at prefix maximums and suffix
+ * minimums, a cut happens where all values to the left are <= all values to
+ * the right.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number[]}
+ */
+const maxValue = (nums) => {};
+
+export { maxValue };"
+`;

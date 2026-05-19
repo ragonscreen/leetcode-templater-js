@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2906_construct-product-matrix test template: 2906_construct-product-matrix 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { constructProductMatrix } from '../../src/2901-3000/2906_construct-product-matrix.js';
+
+const testcases = [
+    { grid: [[1,2],[3,4]], expected: [[24,12],[8,6]] },
+    { grid: [[12345],[2],[1]], expected: [[2],[0],[0]] },
+];
+
+describe('constructProductMatrix', () => {
+    test.each(structuredClone(testcases))('constructProductMatrix($grid) -> $expected', ({ grid, expected }) => {
+        expect(constructProductMatrix(grid)).toStrictEqual(expected);
+    });
+});"
+`;

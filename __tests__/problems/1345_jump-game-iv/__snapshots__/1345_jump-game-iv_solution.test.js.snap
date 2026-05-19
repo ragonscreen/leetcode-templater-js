@@ -1,0 +1,49 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1345_jump-game-iv solution template: 1345_jump-game-iv 1`] = `
+"/**
+ * 1345. Jump Game IV
+ *
+ * Link: https://leetcode.com/problems/jump-game-iv/
+ * Category: Algorithms
+ * Difficulty: Hard
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Breadth-First Search (topic_22)
+ * - Senior Staff (position_senior-staff)
+ * - Biweekly Contest 19 (contest_biweekly-contest-19)
+ *
+ * Stats:
+ * - Total Accepted: 233,876
+ * - Total Submissions: 459,082
+ * - Acceptance Rate: 50.9%
+ *
+ * Similar Problems:
+ * - jump-game-vii (Medium)
+ * - jump-game-viii (Medium) (Premium)
+ * - maximum-number-of-jumps-to-reach-the-last-index (Medium)
+ *
+ * Hints:
+ * 1. Build a graph of n nodes where nodes are the indices of the array and
+ * edges for node i are nodes i+1, i-1, j where arr[i] == arr[j].
+ *
+ * 2. Start bfs from node 0 and keep distance. The answer is the distance when
+ * you reach node n-1.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} arr
+ * @return {number}
+ */
+const minJumps = (arr) => {};
+
+export { minJumps };"
+`;

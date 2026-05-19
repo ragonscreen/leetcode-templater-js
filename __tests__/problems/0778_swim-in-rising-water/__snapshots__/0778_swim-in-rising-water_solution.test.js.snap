@@ -1,0 +1,48 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0778_swim-in-rising-water solution template: 0778_swim-in-rising-water 1`] = `
+"/**
+ * 0778. Swim in Rising Water
+ *
+ * Link: https://leetcode.com/problems/swim-in-rising-water/
+ * Category: Algorithms
+ * Difficulty: Hard
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Binary Search (topic_11)
+ * - Depth-First Search (topic_21)
+ * - Breadth-First Search (topic_22)
+ * - Union-Find (topic_23)
+ * - Heap (Priority Queue) (topic_61050)
+ * - Matrix (topic_61053)
+ * - Principal (position_principal)
+ * - Weekly Contest 70 (contest_weekly-contest-70)
+ *
+ * Stats:
+ * - Total Accepted: 380,696
+ * - Total Submissions: 561,487
+ * - Acceptance Rate: 67.8%
+ *
+ * Similar Problems:
+ * - path-with-minimum-effort (Medium)
+ *
+ * Hints:
+ * 1. Use either Dijkstra's, or binary search for the best time T for which you
+ * can reach the end if you only step on squares at most T.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[][]} grid
+ * @return {number}
+ */
+const swimInWater = (grid) => {};
+
+export { swimInWater };"
+`;

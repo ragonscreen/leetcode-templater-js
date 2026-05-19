@@ -1,0 +1,48 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2161_partition-array-according-to-given-pivot solution template: 2161_partition-array-according-to-given-pivot 1`] = `
+"/**
+ * 2161. Partition Array According to Given Pivot
+ *
+ * Link: https://leetcode.com/problems/partition-array-according-to-given-pivot/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Two Pointers (topic_9)
+ * - Simulation (topic_61055)
+ * - Senior (position_senior)
+ * - Biweekly Contest 71 (contest_biweekly-contest-71)
+ *
+ * Stats:
+ * - Total Accepted: 314,657
+ * - Total Submissions: 350,532
+ * - Acceptance Rate: 89.8%
+ *
+ * Similar Problems:
+ * - partition-list (Medium)
+ * - rearrange-array-elements-by-sign (Medium)
+ *
+ * Hints:
+ * 1. Could you put the elements smaller than the pivot and greater than the
+ * pivot in a separate list as in the sequence that they occur?
+ *
+ * 2. With the separate lists generated, could you then generate the result?
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number} pivot
+ * @return {number[]}
+ */
+const pivotArray = (nums, pivot) => {};
+
+export { pivotArray };"
+`;

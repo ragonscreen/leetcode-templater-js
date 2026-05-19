@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1807_evaluate-the-bracket-pairs-of-a-string test template: 1807_evaluate-the-bracket-pairs-of-a-string 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { evaluate } from '../../src/1801-1900/1807_evaluate-the-bracket-pairs-of-a-string.js';
+
+const testcases = [
+    { s: "(name)is(age)yearsold", knowledge: [["name","bob"],["age","two"]], expected: "bobistwoyearsold" },
+    { s: "hi(name)", knowledge: [["a","b"]], expected: "hi?" },
+    { s: "(a)(a)(a)aaa", knowledge: [["a","yes"]], expected: "yesyesyesaaa" },
+];
+
+describe('evaluate', () => {
+    test.each(structuredClone(testcases))('evaluate($s, $knowledge) -> $expected', ({ s, knowledge, expected }) => {
+        expect(evaluate(s, knowledge)).toStrictEqual(expected);
+    });
+});"
+`;

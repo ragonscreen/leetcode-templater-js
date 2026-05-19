@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2452_words-within-two-edits-of-dictionary test template: 2452_words-within-two-edits-of-dictionary 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { twoEditWords } from '../../src/2401-2500/2452_words-within-two-edits-of-dictionary.js';
+
+const testcases = [
+    { queries: ["word","note","ants","wood"], dictionary: ["wood","joke","moat"], expected: ["word","note","wood"] },
+    { queries: ["yes"], dictionary: ["not"], expected: [] },
+];
+
+describe('twoEditWords', () => {
+    test.each(structuredClone(testcases))('twoEditWords($queries, $dictionary) -> $expected', ({ queries, dictionary, expected }) => {
+        expect(twoEditWords(queries, dictionary)).toStrictEqual(expected);
+    });
+});"
+`;

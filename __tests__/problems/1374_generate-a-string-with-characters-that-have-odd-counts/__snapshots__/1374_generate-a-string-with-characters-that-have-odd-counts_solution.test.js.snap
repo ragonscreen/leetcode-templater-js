@@ -1,0 +1,39 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1374_generate-a-string-with-characters-that-have-odd-counts solution template: 1374_generate-a-string-with-characters-that-have-odd-counts 1`] = `
+"/**
+ * 1374. Generate a String With Characters That Have Odd Counts
+ *
+ * Link: https://leetcode.com/problems/generate-a-string-with-characters-that-have-odd-counts/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - String (topic_10)
+ * - Mid Level (position_mid-level)
+ * - Weekly Contest 179 (contest_weekly-contest-179)
+ *
+ * Stats:
+ * - Total Accepted: 114,958
+ * - Total Submissions: 146,475
+ * - Acceptance Rate: 78.5%
+ *
+ * Hints:
+ * 1. If n is odd, return a string of size n formed only by 'a', else return
+ * string formed with n-1 'a' and 1 'b''.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number} n
+ * @return {string}
+ */
+const generateTheString = (n) => {};
+
+export { generateTheString };"
+`;

@@ -1,0 +1,22 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0622_design-circular-queue test template: 0622_design-circular-queue 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { MyCircularQueue } from '../../src/0601-0700/0622_design-circular-queue.js';
+
+describe('MyCircularQueue', () => {
+    test('default test 1', () => {
+        const myCircularQueue = new MyCircularQueue(3);
+
+        expect(myCircularQueue.enQueue(1)).toStrictEqual(true);
+        expect(myCircularQueue.enQueue(2)).toStrictEqual(true);
+        expect(myCircularQueue.enQueue(3)).toStrictEqual(true);
+        expect(myCircularQueue.enQueue(4)).toStrictEqual(false);
+        expect(myCircularQueue.Rear()).toStrictEqual(3);
+        expect(myCircularQueue.isFull()).toStrictEqual(true);
+        expect(myCircularQueue.deQueue()).toStrictEqual(true);
+        expect(myCircularQueue.enQueue(4)).toStrictEqual(true);
+        expect(myCircularQueue.Rear()).toStrictEqual(4);
+    });
+});"
+`;

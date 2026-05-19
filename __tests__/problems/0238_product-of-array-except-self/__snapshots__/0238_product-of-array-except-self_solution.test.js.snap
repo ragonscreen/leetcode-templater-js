@@ -1,0 +1,51 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0238_product-of-array-except-self solution template: 0238_product-of-array-except-self 1`] = `
+"/**
+ * 0238. Product of Array Except Self
+ *
+ * Link: https://leetcode.com/problems/product-of-array-except-self/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Prefix Sum (topic_61068)
+ *
+ * Stats:
+ * - Total Accepted: 4,556,925
+ * - Total Submissions: 6,615,109
+ * - Acceptance Rate: 68.9%
+ *
+ * Similar Problems:
+ * - construct-product-matrix (Medium)
+ * - maximum-product-subarray (Medium)
+ * - find-sum-of-array-product-of-magical-sequences (Hard)
+ * - minimum-difference-in-sums-after-removal-of-elements (Hard)
+ * - paint-house-ii (Hard) (Premium)
+ * - trapping-rain-water (Hard)
+ *
+ * Hints:
+ * 1. Think how you can efficiently utilize prefix and suffix products to
+ * calculate the product of all elements except self for each index. Can you
+ * pre-compute the prefix and suffix products in linear time to avoid
+ * redundant calculations?
+ *
+ * 2. Can you minimize additional space usage by reusing memory or modifying
+ * the input array to store intermediate results?
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number[]}
+ */
+const productExceptSelf = (nums) => {};
+
+export { productExceptSelf };"
+`;

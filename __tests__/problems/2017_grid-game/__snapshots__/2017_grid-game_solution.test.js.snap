@@ -1,0 +1,45 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2017_grid-game solution template: 2017_grid-game 1`] = `
+"/**
+ * 2017. Grid Game
+ *
+ * Link: https://leetcode.com/problems/grid-game/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Matrix (topic_61053)
+ * - Prefix Sum (topic_61068)
+ * - Senior (position_senior)
+ * - Weekly Contest 260 (contest_weekly-contest-260)
+ *
+ * Stats:
+ * - Total Accepted: 139,464
+ * - Total Submissions: 229,153
+ * - Acceptance Rate: 60.9%
+ *
+ * Similar Problems:
+ * - minimum-penalty-for-a-shop (Medium)
+ *
+ * Hints:
+ * 1. There are n choices for when the first robot moves to the second row.
+ *
+ * 2. Can we use prefix sums to help solve this problem?
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[][]} grid
+ * @return {number}
+ */
+const gridGame = (grid) => {};
+
+export { gridGame };"
+`;

@@ -1,0 +1,45 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0274_h-index solution template: 0274_h-index 1`] = `
+"/**
+ * 0274. H-Index
+ *
+ * Link: https://leetcode.com/problems/h-index/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Sorting (topic_61049)
+ * - Counting Sort (topic_61072)
+ *
+ * Stats:
+ * - Total Accepted: 874,369
+ * - Total Submissions: 2,111,017
+ * - Acceptance Rate: 41.4%
+ *
+ * Similar Problems:
+ * - h-index-ii (Medium)
+ *
+ * Hints:
+ * 1. An easy approach is to sort the array first.
+ *
+ * 2. What are the possible values of h-index?
+ *
+ * 3. A faster approach is to use extra space.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} citations
+ * @return {number}
+ */
+const hIndex = (citations) => {};
+
+export { hIndex };"
+`;

@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0019_remove-nth-node-from-end-of-list test template: 0019_remove-nth-node-from-end-of-list 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { removeNthFromEnd } from '../../src/0001-0100/0019_remove-nth-node-from-end-of-list.js';
+
+const testcases = [
+    { head: [1,2,3,4,5], n: 2, expected: [1,2,3,5] },
+    { head: [1], n: 1, expected: [] },
+    { head: [1,2], n: 1, expected: [1] },
+];
+
+describe('removeNthFromEnd', () => {
+    test.each(structuredClone(testcases))('removeNthFromEnd($head, $n) -> $expected', ({ head, n, expected }) => {
+        expect(removeNthFromEnd(head, n)).toStrictEqual(expected);
+    });
+});"
+`;

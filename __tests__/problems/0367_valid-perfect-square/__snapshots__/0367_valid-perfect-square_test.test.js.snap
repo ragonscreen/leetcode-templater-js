@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0367_valid-perfect-square test template: 0367_valid-perfect-square 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { isPerfectSquare } from '../../src/0301-0400/0367_valid-perfect-square.js';
+
+const testcases = [
+    { num: 16, expected: true },
+    { num: 14, expected: false },
+];
+
+describe('isPerfectSquare', () => {
+    test.each(structuredClone(testcases))('isPerfectSquare($num) -> $expected', ({ num, expected }) => {
+        expect(isPerfectSquare(num)).toStrictEqual(expected);
+    });
+});"
+`;

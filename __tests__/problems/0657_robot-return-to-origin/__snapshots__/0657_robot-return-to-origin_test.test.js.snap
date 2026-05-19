@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0657_robot-return-to-origin test template: 0657_robot-return-to-origin 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { judgeCircle } from '../../src/0601-0700/0657_robot-return-to-origin.js';
+
+const testcases = [
+    { moves: "UD", expected: true },
+    { moves: "LL", expected: false },
+];
+
+describe('judgeCircle', () => {
+    test.each(structuredClone(testcases))('judgeCircle($moves) -> $expected', ({ moves, expected }) => {
+        expect(judgeCircle(moves)).toStrictEqual(expected);
+    });
+});"
+`;

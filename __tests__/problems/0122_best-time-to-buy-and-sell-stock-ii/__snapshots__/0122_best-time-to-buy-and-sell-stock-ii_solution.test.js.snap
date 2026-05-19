@@ -1,0 +1,43 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0122_best-time-to-buy-and-sell-stock-ii solution template: 0122_best-time-to-buy-and-sell-stock-ii 1`] = `
+"/**
+ * 0122. Best Time to Buy and Sell Stock II
+ *
+ * Link: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Dynamic Programming (topic_13)
+ * - Greedy (topic_17)
+ *
+ * Stats:
+ * - Total Accepted: 3,036,036
+ * - Total Submissions: 4,271,589
+ * - Acceptance Rate: 71.1%
+ *
+ * Similar Problems:
+ * - best-time-to-buy-and-sell-stock (Easy)
+ * - best-time-to-buy-and-sell-stock-with-cooldown (Medium)
+ * - best-time-to-buy-and-sell-stock-with-transaction-fee (Medium)
+ * - maximum-profit-from-trading-stocks (Medium) (Premium)
+ * - best-time-to-buy-and-sell-stock-iii (Hard)
+ * - best-time-to-buy-and-sell-stock-iv (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} prices
+ * @return {number}
+ */
+const maxProfit = (prices) => {};
+
+export { maxProfit };"
+`;

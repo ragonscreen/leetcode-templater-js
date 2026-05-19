@@ -1,0 +1,55 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0027_remove-element solution template: 0027_remove-element 1`] = `
+"/**
+ * 0027. Remove Element
+ *
+ * Link: https://leetcode.com/problems/remove-element/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Two Pointers (topic_9)
+ *
+ * Stats:
+ * - Total Accepted: 5,252,247
+ * - Total Submissions: 8,500,887
+ * - Acceptance Rate: 61.8%
+ *
+ * Similar Problems:
+ * - move-zeroes (Easy)
+ * - remove-duplicates-from-sorted-array (Easy)
+ * - remove-linked-list-elements (Easy)
+ *
+ * Hints:
+ * 1. The problem statement clearly asks us to modify the array in-place and it
+ * also says that the element beyond the new length of the array can be
+ * anything. Given an element, we need to remove all the occurrences of it
+ * from the array. We don't technically need to <b>remove</b> that element
+ * per se, right?
+ *
+ * 2. We can move all the occurrences of this element to the end of the array.
+ * Use two pointers!<br><img
+ * src="https://assets.leetcode.com/uploads/2019/10/20/hint_remove_element.png" width="500"/>
+ *
+ * 3. Yet another direction of thought is to consider the elements to be
+ * removed as non-existent. In a single pass, if we keep copying the visible
+ * elements in-place, that should also solve this problem for us.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number} val
+ * @return {number}
+ */
+const removeElement = (nums, val) => {};
+
+export { removeElement };"
+`;

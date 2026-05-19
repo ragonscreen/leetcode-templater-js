@@ -1,0 +1,39 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3740_minimum-distance-between-three-equal-elements-i solution template: 3740_minimum-distance-between-three-equal-elements-i 1`] = `
+"/**
+ * 3740. Minimum Distance Between Three Equal Elements I
+ *
+ * Link: https://leetcode.com/problems/minimum-distance-between-three-equal-elements-i/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Mid Level (position_mid-level)
+ * - Weekly Contest 475 (contest_weekly-contest-475)
+ *
+ * Stats:
+ * - Total Accepted: 143,954
+ * - Total Submissions: 195,880
+ * - Acceptance Rate: 73.5%
+ *
+ * Hints:
+ * 1. Use bruteforce
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number}
+ */
+const minimumDistance = (nums) => {};
+
+export { minimumDistance };"
+`;

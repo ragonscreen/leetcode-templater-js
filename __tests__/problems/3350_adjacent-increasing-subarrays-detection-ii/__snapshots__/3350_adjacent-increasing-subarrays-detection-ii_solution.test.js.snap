@@ -1,0 +1,41 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3350_adjacent-increasing-subarrays-detection-ii solution template: 3350_adjacent-increasing-subarrays-detection-ii 1`] = `
+"/**
+ * 3350. Adjacent Increasing Subarrays Detection II
+ *
+ * Link: https://leetcode.com/problems/adjacent-increasing-subarrays-detection-ii/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Binary Search (topic_11)
+ * - Staff (position_staff)
+ * - Weekly Contest 423 (contest_weekly-contest-423)
+ *
+ * Stats:
+ * - Total Accepted: 120,788
+ * - Total Submissions: 205,171
+ * - Acceptance Rate: 58.9%
+ *
+ * Hints:
+ * 1. Find the boundaries between strictly increasing subarrays.
+ *
+ * 2. Can we use binary search?
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number}
+ */
+const maxIncreasingSubarrays = (nums) => {};
+
+export { maxIncreasingSubarrays };"
+`;

@@ -1,0 +1,44 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0502_ipo solution template: 0502_ipo 1`] = `
+"/**
+ * 0502. IPO
+ *
+ * Link: https://leetcode.com/problems/ipo/
+ * Category: Algorithms
+ * Difficulty: Hard
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Greedy (topic_17)
+ * - Sorting (topic_61049)
+ * - Heap (Priority Queue) (topic_61050)
+ * - Principal (position_principal)
+ *
+ * Stats:
+ * - Total Accepted: 318,907
+ * - Total Submissions: 596,066
+ * - Acceptance Rate: 53.5%
+ *
+ * Similar Problems:
+ * - maximum-subsequence-score (Medium)
+ * - maximum-elegance-of-a-k-length-subsequence (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number} k
+ * @param {number} w
+ * @param {number[]} profits
+ * @param {number[]} capital
+ * @return {number}
+ */
+const findMaximizedCapital = (k, w, profits, capital) => {};
+
+export { findMaximizedCapital };"
+`;

@@ -1,0 +1,45 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2553_separate-the-digits-in-an-array solution template: 2553_separate-the-digits-in-an-array 1`] = `
+"/**
+ * 2553. Separate the Digits in an Array
+ *
+ * Link: https://leetcode.com/problems/separate-the-digits-in-an-array/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Simulation (topic_61055)
+ * - Mid Level (position_mid-level)
+ * - Biweekly Contest 97 (contest_biweekly-contest-97)
+ *
+ * Stats:
+ * - Total Accepted: 222,956
+ * - Total Submissions: 259,866
+ * - Acceptance Rate: 85.8%
+ *
+ * Similar Problems:
+ * - alternating-digit-sum (Easy)
+ * - count-integers-with-even-digit-sum (Easy)
+ *
+ * Hints:
+ * 1. Convert each number into a list and append that list to the answer.
+ *
+ * 2. You can convert the integer into a string to do that easily.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number[]}
+ */
+const separateDigits = (nums) => {};
+
+export { separateDigits };"
+`;

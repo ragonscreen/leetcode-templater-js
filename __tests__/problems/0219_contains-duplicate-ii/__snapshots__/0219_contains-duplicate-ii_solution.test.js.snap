@@ -1,0 +1,40 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0219_contains-duplicate-ii solution template: 0219_contains-duplicate-ii 1`] = `
+"/**
+ * 0219. Contains Duplicate II
+ *
+ * Link: https://leetcode.com/problems/contains-duplicate-ii/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Sliding Window (topic_55821)
+ *
+ * Stats:
+ * - Total Accepted: 1,786,246
+ * - Total Submissions: 3,484,570
+ * - Acceptance Rate: 51.3%
+ *
+ * Similar Problems:
+ * - contains-duplicate (Easy)
+ * - contains-duplicate-iii (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number} k
+ * @return {boolean}
+ */
+const containsNearbyDuplicate = (nums, k) => {};
+
+export { containsNearbyDuplicate };"
+`;

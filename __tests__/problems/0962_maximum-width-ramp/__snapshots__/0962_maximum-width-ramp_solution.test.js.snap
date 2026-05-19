@@ -1,0 +1,38 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0962_maximum-width-ramp solution template: 0962_maximum-width-ramp 1`] = `
+"/**
+ * 0962. Maximum Width Ramp
+ *
+ * Link: https://leetcode.com/problems/maximum-width-ramp/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Two Pointers (topic_9)
+ * - Stack (topic_15)
+ * - Monotonic Stack (topic_61054)
+ * - Staff (position_staff)
+ * - Weekly Contest 116 (contest_weekly-contest-116)
+ *
+ * Stats:
+ * - Total Accepted: 208,572
+ * - Total Submissions: 373,206
+ * - Acceptance Rate: 55.9%
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number}
+ */
+const maxWidthRamp = (nums) => {};
+
+export { maxWidthRamp };"
+`;

@@ -1,0 +1,41 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0066_plus-one solution template: 0066_plus-one 1`] = `
+"/**
+ * 0066. Plus One
+ *
+ * Link: https://leetcode.com/problems/plus-one/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Math (topic_8)
+ *
+ * Stats:
+ * - Total Accepted: 3,747,361
+ * - Total Submissions: 7,502,158
+ * - Acceptance Rate: 50.0%
+ *
+ * Similar Problems:
+ * - add-binary (Easy)
+ * - add-to-array-form-of-integer (Easy)
+ * - minimum-operations-to-reduce-an-integer-to-0 (Medium)
+ * - multiply-strings (Medium)
+ * - plus-one-linked-list (Medium) (Premium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} digits
+ * @return {number[]}
+ */
+const plusOne = (digits) => {};
+
+export { plusOne };"
+`;

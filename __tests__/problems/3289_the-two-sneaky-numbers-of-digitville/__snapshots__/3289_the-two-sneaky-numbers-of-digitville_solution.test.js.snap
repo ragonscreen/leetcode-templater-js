@@ -1,0 +1,44 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3289_the-two-sneaky-numbers-of-digitville solution template: 3289_the-two-sneaky-numbers-of-digitville 1`] = `
+"/**
+ * 3289. The Two Sneaky Numbers of Digitville
+ *
+ * Link: https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Math (topic_8)
+ * - Mid Level (position_mid-level)
+ * - Weekly Contest 415 (contest_weekly-contest-415)
+ *
+ * Stats:
+ * - Total Accepted: 256,358
+ * - Total Submissions: 285,576
+ * - Acceptance Rate: 89.8%
+ *
+ * Similar Problems:
+ * - find-all-duplicates-in-an-array (Medium)
+ *
+ * Hints:
+ * 1. To solve the problem without the extra space, we need to think about how
+ * many times each number occurs in relation to the index.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number[]}
+ */
+const getSneakyNumbers = (nums) => {};
+
+export { getSneakyNumbers };"
+`;

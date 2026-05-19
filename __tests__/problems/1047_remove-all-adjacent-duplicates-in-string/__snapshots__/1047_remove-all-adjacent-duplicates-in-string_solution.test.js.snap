@@ -1,0 +1,44 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1047_remove-all-adjacent-duplicates-in-string solution template: 1047_remove-all-adjacent-duplicates-in-string 1`] = `
+"/**
+ * 1047. Remove All Adjacent Duplicates In String
+ *
+ * Link: https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - String (topic_10)
+ * - Stack (topic_15)
+ * - Senior (position_senior)
+ * - Weekly Contest 137 (contest_weekly-contest-137)
+ *
+ * Stats:
+ * - Total Accepted: 879,450
+ * - Total Submissions: 1,200,995
+ * - Acceptance Rate: 73.2%
+ *
+ * Similar Problems:
+ * - minimize-string-length (Easy)
+ * - remove-all-adjacent-duplicates-in-string-ii (Medium)
+ * - removing-stars-from-a-string (Medium)
+ *
+ * Hints:
+ * 1. Use a stack to process everything greedily.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @return {string}
+ */
+const removeDuplicates = (s) => {};
+
+export { removeDuplicates };"
+`;

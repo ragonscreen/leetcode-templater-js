@@ -1,0 +1,54 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2197_replace-non-coprime-numbers-in-array solution template: 2197_replace-non-coprime-numbers-in-array 1`] = `
+"/**
+ * 2197. Replace Non-Coprime Numbers in Array
+ *
+ * Link: https://leetcode.com/problems/replace-non-coprime-numbers-in-array/
+ * Category: Algorithms
+ * Difficulty: Hard
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Math (topic_8)
+ * - Stack (topic_15)
+ * - Number Theory (topic_61067)
+ * - Senior Staff (position_senior-staff)
+ * - Weekly Contest 283 (contest_weekly-contest-283)
+ *
+ * Stats:
+ * - Total Accepted: 114,931
+ * - Total Submissions: 199,271
+ * - Acceptance Rate: 57.7%
+ *
+ * Similar Problems:
+ * - number-of-pairs-of-interchangeable-rectangles (Medium)
+ * - remove-all-adjacent-duplicates-in-string-ii (Medium)
+ * - split-the-array-to-make-coprime-products (Hard)
+ *
+ * Hints:
+ * 1. Notice that the order of merging two numbers into their LCM does not
+ * matter so we can greedily merge elements to its left if possible.
+ *
+ * 2. If a new value is formed, we should recursively check if it can be merged
+ * with the value to its left.
+ *
+ * 3. To simulate the merge efficiently, we can maintain a stack that stores
+ * processed elements. When we iterate through the array, we only compare
+ * with the top of the stack (which is the value to its left).
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number[]}
+ */
+const replaceNonCoprimes = (nums) => {};
+
+export { replaceNonCoprimes };"
+`;

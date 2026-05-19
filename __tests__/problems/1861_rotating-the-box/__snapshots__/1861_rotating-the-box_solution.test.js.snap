@@ -1,0 +1,43 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1861_rotating-the-box solution template: 1861_rotating-the-box 1`] = `
+"/**
+ * 1861. Rotating the Box
+ *
+ * Link: https://leetcode.com/problems/rotating-the-box/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Two Pointers (topic_9)
+ * - Matrix (topic_61053)
+ * - Staff (position_staff)
+ * - Biweekly Contest 52 (contest_biweekly-contest-52)
+ *
+ * Stats:
+ * - Total Accepted: 265,206
+ * - Total Submissions: 321,631
+ * - Acceptance Rate: 82.5%
+ *
+ * Hints:
+ * 1. Rotate the box using the relation rotatedBox[i][j] = box[m - 1 - j][i].
+ *
+ * 2. Start iterating from the bottom of the box and for each empty cell check
+ * if there is any stone above it with no obstacles between them.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {character[][]} boxGrid
+ * @return {character[][]}
+ */
+const rotateTheBox = (boxGrid) => {};
+
+export { rotateTheBox };"
+`;

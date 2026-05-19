@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0864_shortest-path-to-get-all-keys test template: 0864_shortest-path-to-get-all-keys 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { shortestPathAllKeys } from '../../src/0801-0900/0864_shortest-path-to-get-all-keys.js';
+
+const testcases = [
+    { grid: ["@.a..","###.#","b.A.B"], expected: 8 },
+    { grid: ["@..aA","..B#.","....b"], expected: 6 },
+    { grid: ["@Aa"], expected: -1 },
+];
+
+describe('shortestPathAllKeys', () => {
+    test.each(structuredClone(testcases))('shortestPathAllKeys($grid) -> $expected', ({ grid, expected }) => {
+        expect(shortestPathAllKeys(grid)).toStrictEqual(expected);
+    });
+});"
+`;

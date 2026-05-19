@@ -1,0 +1,53 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0204_count-primes solution template: 0204_count-primes 1`] = `
+"/**
+ * 0204. Count Primes
+ *
+ * Link: https://leetcode.com/problems/count-primes/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Math (topic_8)
+ * - Enumeration (topic_61066)
+ * - Number Theory (topic_61067)
+ *
+ * Stats:
+ * - Total Accepted: 1,274,712
+ * - Total Submissions: 3,536,850
+ * - Acceptance Rate: 36.0%
+ *
+ * Similar Problems:
+ * - number-of-common-factors (Easy)
+ * - ugly-number (Easy)
+ * - find-the-count-of-numbers-which-are-not-special (Medium)
+ * - perfect-squares (Medium)
+ * - prime-pairs-with-target-sum (Medium)
+ * - ugly-number-ii (Medium)
+ *
+ * Hints:
+ * 1. Checking all the integers in the range [1, n - 1] is not efficient. Think
+ * about a better approach.
+ *
+ * 2. Since most of the numbers are not primes, we need a fast approach to
+ * exclude the non-prime integers.
+ *
+ * 3. Use Sieve of Eratosthenes.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number} n
+ * @return {number}
+ */
+const countPrimes = (n) => {};
+
+export { countPrimes };"
+`;

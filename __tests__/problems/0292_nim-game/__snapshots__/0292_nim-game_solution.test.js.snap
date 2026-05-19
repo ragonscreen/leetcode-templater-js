@@ -1,0 +1,42 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0292_nim-game solution template: 0292_nim-game 1`] = `
+"/**
+ * 0292. Nim Game
+ *
+ * Link: https://leetcode.com/problems/nim-game/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Math (topic_8)
+ * - Brainteaser (topic_32)
+ * - Game Theory (topic_61073)
+ *
+ * Stats:
+ * - Total Accepted: 551,863
+ * - Total Submissions: 922,830
+ * - Acceptance Rate: 59.8%
+ *
+ * Similar Problems:
+ * - flip-game-ii (Medium) (Premium)
+ *
+ * Hints:
+ * 1. If there are 5 stones in the heap, could you figure out a way to remove
+ * the stones such that you will always be the winner?
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number} n
+ * @return {boolean}
+ */
+const canWinNim = (n) => {};
+
+export { canWinNim };"
+`;

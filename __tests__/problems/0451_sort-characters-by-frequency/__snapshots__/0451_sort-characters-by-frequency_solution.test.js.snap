@@ -1,0 +1,48 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0451_sort-characters-by-frequency solution template: 0451_sort-characters-by-frequency 1`] = `
+"/**
+ * 0451. Sort Characters By Frequency
+ *
+ * Link: https://leetcode.com/problems/sort-characters-by-frequency/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Hash Table (topic_6)
+ * - String (topic_10)
+ * - Sorting (topic_61049)
+ * - Heap (Priority Queue) (topic_61050)
+ * - Bucket Sort (topic_61060)
+ * - Counting (topic_61062)
+ *
+ * Stats:
+ * - Total Accepted: 1,119,204
+ * - Total Submissions: 1,485,902
+ * - Acceptance Rate: 75.3%
+ *
+ * Similar Problems:
+ * - count-pairs-of-similar-strings (Easy)
+ * - first-unique-character-in-a-string (Easy)
+ * - maximum-number-of-pairs-in-array (Easy)
+ * - most-frequent-even-element (Easy)
+ * - percentage-of-letter-in-string (Easy)
+ * - sort-array-by-increasing-frequency (Easy)
+ * - node-with-highest-edge-score (Medium)
+ * - top-k-frequent-elements (Medium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @return {string}
+ */
+const frequencySort = (s) => {};
+
+export { frequencySort };"
+`;

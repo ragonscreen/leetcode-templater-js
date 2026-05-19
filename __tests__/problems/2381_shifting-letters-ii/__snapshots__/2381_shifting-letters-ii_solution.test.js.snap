@@ -1,0 +1,54 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2381_shifting-letters-ii solution template: 2381_shifting-letters-ii 1`] = `
+"/**
+ * 2381. Shifting Letters II
+ *
+ * Link: https://leetcode.com/problems/shifting-letters-ii/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - String (topic_10)
+ * - Prefix Sum (topic_61068)
+ * - Staff (position_staff)
+ * - Biweekly Contest 85 (contest_biweekly-contest-85)
+ *
+ * Stats:
+ * - Total Accepted: 162,245
+ * - Total Submissions: 302,339
+ * - Acceptance Rate: 53.7%
+ *
+ * Similar Problems:
+ * - maximum-population-year (Easy)
+ * - describe-the-painting (Medium)
+ * - range-addition (Medium) (Premium)
+ * - range-sum-query-mutable (Medium)
+ * - shift-distance-between-two-strings (Medium)
+ * - shifting-letters (Medium)
+ * - the-skyline-problem (Hard)
+ *
+ * Hints:
+ * 1. Instead of shifting every character in each shift, could you keep track
+ * of which characters are shifted and by how much across all shifts?
+ *
+ * 2. Try marking the start and ends of each shift, then perform a prefix sum
+ * of the shifts.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @param {number[][]} shifts
+ * @return {string}
+ */
+const shiftingLetters = (s, shifts) => {};
+
+export { shiftingLetters };"
+`;

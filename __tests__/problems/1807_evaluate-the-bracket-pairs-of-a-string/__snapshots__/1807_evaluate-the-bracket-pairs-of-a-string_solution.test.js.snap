@@ -1,0 +1,46 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1807_evaluate-the-bracket-pairs-of-a-string solution template: 1807_evaluate-the-bracket-pairs-of-a-string 1`] = `
+"/**
+ * 1807. Evaluate the Bracket Pairs of a String
+ *
+ * Link: https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - String (topic_10)
+ * - Staff (position_staff)
+ * - Weekly Contest 234 (contest_weekly-contest-234)
+ *
+ * Stats:
+ * - Total Accepted: 42,494
+ * - Total Submissions: 61,118
+ * - Acceptance Rate: 69.5%
+ *
+ * Similar Problems:
+ * - apply-substitutions (Medium) (Premium)
+ *
+ * Hints:
+ * 1. Process pairs from right to left to handle repeats
+ *
+ * 2. Keep track of the current enclosed string using another string
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @param {string[][]} knowledge
+ * @return {string}
+ */
+const evaluate = (s, knowledge) => {};
+
+export { evaluate };"
+`;

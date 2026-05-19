@@ -1,0 +1,44 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0424_longest-repeating-character-replacement solution template: 0424_longest-repeating-character-replacement 1`] = `
+"/**
+ * 0424. Longest Repeating Character Replacement
+ *
+ * Link: https://leetcode.com/problems/longest-repeating-character-replacement/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Hash Table (topic_6)
+ * - String (topic_10)
+ * - Sliding Window (topic_55821)
+ * - Junior (position_junior)
+ *
+ * Stats:
+ * - Total Accepted: 1,570,612
+ * - Total Submissions: 2,634,422
+ * - Acceptance Rate: 59.6%
+ *
+ * Similar Problems:
+ * - longest-substring-with-at-most-k-distinct-characters (Medium) (Premium)
+ * - max-consecutive-ones-iii (Medium)
+ * - maximize-the-confusion-of-an-exam (Medium)
+ * - longest-substring-of-one-repeating-character (Hard)
+ * - minimum-number-of-operations-to-make-array-continuous (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @param {number} k
+ * @return {number}
+ */
+const characterReplacement = (s, k) => {};
+
+export { characterReplacement };"
+`;

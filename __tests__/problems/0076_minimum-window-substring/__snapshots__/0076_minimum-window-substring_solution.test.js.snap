@@ -1,0 +1,57 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0076_minimum-window-substring solution template: 0076_minimum-window-substring 1`] = `
+"/**
+ * 0076. Minimum Window Substring
+ *
+ * Link: https://leetcode.com/problems/minimum-window-substring/
+ * Category: Algorithms
+ * Difficulty: Hard
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Hash Table (topic_6)
+ * - String (topic_10)
+ * - Sliding Window (topic_55821)
+ *
+ * Stats:
+ * - Total Accepted: 2,174,665
+ * - Total Submissions: 4,576,708
+ * - Acceptance Rate: 47.5%
+ *
+ * Similar Problems:
+ * - count-substrings-that-can-be-rearranged-to-contain-a-string-i (Medium)
+ * - minimum-size-subarray-sum (Medium)
+ * - permutation-in-string (Medium)
+ * - count-substrings-that-can-be-rearranged-to-contain-a-string-ii (Hard)
+ * - minimum-window-subsequence (Hard) (Premium)
+ * - sliding-window-maximum (Hard)
+ * - smallest-range-covering-elements-from-k-lists (Hard)
+ * - substring-with-concatenation-of-all-words (Hard)
+ *
+ * Hints:
+ * 1. Use two pointers to create a window of letters in s, which would have all
+ * the characters from t.
+ *
+ * 2. Expand the right pointer until all the characters of t are covered.
+ *
+ * 3. Once all the characters are covered, move the left pointer and ensure
+ * that all the characters are still covered to minimize the subarray size.
+ *
+ * 4. Continue expanding the right and left pointers until you reach the end of s.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @param {string} t
+ * @return {string}
+ */
+const minWindow = (s, t) => {};
+
+export { minWindow };"
+`;

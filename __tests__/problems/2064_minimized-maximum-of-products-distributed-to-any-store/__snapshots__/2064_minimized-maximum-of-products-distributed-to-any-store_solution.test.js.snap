@@ -1,0 +1,61 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2064_minimized-maximum-of-products-distributed-to-any-store solution template: 2064_minimized-maximum-of-products-distributed-to-any-store 1`] = `
+"/**
+ * 2064. Minimized Maximum of Products Distributed to Any Store
+ *
+ * Link: https://leetcode.com/problems/minimized-maximum-of-products-distributed-to-any-store/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Binary Search (topic_11)
+ * - Greedy (topic_17)
+ * - Staff (position_staff)
+ * - Weekly Contest 266 (contest_weekly-contest-266)
+ *
+ * Stats:
+ * - Total Accepted: 152,494
+ * - Total Submissions: 241,727
+ * - Acceptance Rate: 63.1%
+ *
+ * Similar Problems:
+ * - capacity-to-ship-packages-within-d-days (Medium)
+ * - find-the-smallest-divisor-given-a-threshold (Medium)
+ * - koko-eating-bananas (Medium)
+ * - magnetic-force-between-two-balls (Medium)
+ * - maximum-candies-allocated-to-k-children (Medium)
+ * - minimum-limit-of-balls-in-a-bag (Medium)
+ * - minimum-time-to-complete-trips (Medium)
+ * - maximum-number-of-robots-within-budget (Hard)
+ *
+ * Hints:
+ * 1. There exists a monotonic nature such that when x is smaller than some
+ * number, there will be no way to distribute, and when x is not smaller
+ * than that number, there will always be a way to distribute.
+ *
+ * 2. If you are given a number k, where the number of products given to any
+ * store does not exceed k, could you determine if all products can be distributed?
+ *
+ * 3. Implement a function canDistribute(k), which returns true if you can
+ * distribute all products such that any store will not be given more than k
+ * products, and returns false if you cannot. Use this function to binary
+ * search for the smallest possible k.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number} n
+ * @param {number[]} quantities
+ * @return {number}
+ */
+const minimizedMaximum = (n, quantities) => {};
+
+export { minimizedMaximum };"
+`;

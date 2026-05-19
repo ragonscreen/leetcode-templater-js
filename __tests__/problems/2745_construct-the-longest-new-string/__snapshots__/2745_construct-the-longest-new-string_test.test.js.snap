@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2745_construct-the-longest-new-string test template: 2745_construct-the-longest-new-string 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { longestString } from '../../src/2701-2800/2745_construct-the-longest-new-string.js';
+
+const testcases = [
+    { x: 2, y: 5, z: 1, expected: 12 },
+    { x: 3, y: 2, z: 2, expected: 14 },
+];
+
+describe('longestString', () => {
+    test.each(structuredClone(testcases))('longestString($x, $y, $z) -> $expected', ({ x, y, z, expected }) => {
+        expect(longestString(x, y, z)).toStrictEqual(expected);
+    });
+});"
+`;

@@ -1,0 +1,34 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0540_single-element-in-a-sorted-array solution template: 0540_single-element-in-a-sorted-array 1`] = `
+"/**
+ * 0540. Single Element in a Sorted Array
+ *
+ * Link: https://leetcode.com/problems/single-element-in-a-sorted-array/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Binary Search (topic_11)
+ *
+ * Stats:
+ * - Total Accepted: 1,220,366
+ * - Total Submissions: 2,058,651
+ * - Acceptance Rate: 59.3%
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number}
+ */
+const singleNonDuplicate = (nums) => {};
+
+export { singleNonDuplicate };"
+`;

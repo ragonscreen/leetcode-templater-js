@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3043_find-the-length-of-the-longest-common-prefix test template: 3043_find-the-length-of-the-longest-common-prefix 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { longestCommonPrefix } from '../../src/3001-3100/3043_find-the-length-of-the-longest-common-prefix.js';
+
+const testcases = [
+    { arr1: [1,10,100], arr2: [1000], expected: 3 },
+    { arr1: [1,2,3], arr2: [4,4,4], expected: 0 },
+];
+
+describe('longestCommonPrefix', () => {
+    test.each(structuredClone(testcases))('longestCommonPrefix($arr1, $arr2) -> $expected', ({ arr1, arr2, expected }) => {
+        expect(longestCommonPrefix(arr1, arr2)).toStrictEqual(expected);
+    });
+});"
+`;

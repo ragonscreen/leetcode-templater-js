@@ -1,0 +1,40 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0383_ransom-note solution template: 0383_ransom-note 1`] = `
+"/**
+ * 0383. Ransom Note
+ *
+ * Link: https://leetcode.com/problems/ransom-note/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Hash Table (topic_6)
+ * - String (topic_10)
+ * - Counting (topic_61062)
+ *
+ * Stats:
+ * - Total Accepted: 1,966,773
+ * - Total Submissions: 2,982,036
+ * - Acceptance Rate: 66.0%
+ *
+ * Similar Problems:
+ * - find-words-that-can-be-formed-by-characters (Easy)
+ * - stickers-to-spell-word (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} ransomNote
+ * @param {string} magazine
+ * @return {boolean}
+ */
+const canConstruct = (ransomNote, magazine) => {};
+
+export { canConstruct };"
+`;

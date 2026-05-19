@@ -1,0 +1,44 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1598_crawler-log-folder solution template: 1598_crawler-log-folder 1`] = `
+"/**
+ * 1598. Crawler Log Folder
+ *
+ * Link: https://leetcode.com/problems/crawler-log-folder/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - String (topic_10)
+ * - Stack (topic_15)
+ * - Mid Level (position_mid-level)
+ * - Weekly Contest 208 (contest_weekly-contest-208)
+ *
+ * Stats:
+ * - Total Accepted: 293,119
+ * - Total Submissions: 409,024
+ * - Acceptance Rate: 71.7%
+ *
+ * Similar Problems:
+ * - backspace-string-compare (Easy)
+ * - baseball-game (Easy)
+ *
+ * Hints:
+ * 1. Simulate the process but don’t move the pointer beyond the main folder.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string[]} logs
+ * @return {number}
+ */
+const minOperations = (logs) => {};
+
+export { minOperations };"
+`;

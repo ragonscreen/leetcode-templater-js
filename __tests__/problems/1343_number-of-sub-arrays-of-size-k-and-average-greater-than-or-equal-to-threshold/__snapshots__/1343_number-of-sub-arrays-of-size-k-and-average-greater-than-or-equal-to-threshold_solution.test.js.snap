@@ -1,0 +1,50 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1343_number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold solution template: 1343_number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold 1`] = `
+"/**
+ * 1343. Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold
+ *
+ * Link: https://leetcode.com/problems/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Sliding Window (topic_55821)
+ * - Senior (position_senior)
+ * - Biweekly Contest 19 (contest_biweekly-contest-19)
+ *
+ * Stats:
+ * - Total Accepted: 197,904
+ * - Total Submissions: 271,695
+ * - Acceptance Rate: 72.8%
+ *
+ * Similar Problems:
+ * - apply-operations-to-make-all-array-elements-equal-to-zero (Medium)
+ * - k-radius-subarray-averages (Medium)
+ * - count-subarrays-with-median-k (Hard)
+ *
+ * Hints:
+ * 1. Start with a window of size K and test its average against the threshold.
+ *
+ * 2. Keep moving the window by one element maintaining its size k until you
+ * cover the whole array. Count the number of windows that have an average
+ * greater than or equal to the threshold.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} arr
+ * @param {number} k
+ * @param {number} threshold
+ * @return {number}
+ */
+const numOfSubarrays = (arr, k, threshold) => {};
+
+export { numOfSubarrays };"
+`;

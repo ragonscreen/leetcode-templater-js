@@ -1,0 +1,49 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1898_maximum-number-of-removable-characters solution template: 1898_maximum-number-of-removable-characters 1`] = `
+"/**
+ * 1898. Maximum Number of Removable Characters
+ *
+ * Link: https://leetcode.com/problems/maximum-number-of-removable-characters/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Two Pointers (topic_9)
+ * - String (topic_10)
+ * - Binary Search (topic_11)
+ * - Senior (position_senior)
+ * - Weekly Contest 245 (contest_weekly-contest-245)
+ *
+ * Stats:
+ * - Total Accepted: 43,455
+ * - Total Submissions: 92,155
+ * - Acceptance Rate: 47.2%
+ *
+ * Similar Problems:
+ * - maximum-candies-allocated-to-k-children (Medium)
+ *
+ * Hints:
+ * 1. First, we need to think about solving an easier problem, If we remove a
+ * set of indices from the string does P exist in S as a subsequence
+ *
+ * 2. We can binary search the K and check by solving the above problem.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @param {string} p
+ * @param {number[]} removable
+ * @return {number}
+ */
+const maximumRemovals = (s, p, removable) => {};
+
+export { maximumRemovals };"
+`;

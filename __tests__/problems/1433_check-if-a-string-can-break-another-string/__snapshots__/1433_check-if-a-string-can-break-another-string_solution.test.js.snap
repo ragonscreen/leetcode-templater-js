@@ -1,0 +1,41 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1433_check-if-a-string-can-break-another-string solution template: 1433_check-if-a-string-can-break-another-string 1`] = `
+"/**
+ * 1433. Check If a String Can Break Another String
+ *
+ * Link: https://leetcode.com/problems/check-if-a-string-can-break-another-string/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - String (topic_10)
+ * - Greedy (topic_17)
+ * - Sorting (topic_61049)
+ * - Staff (position_staff)
+ * - Biweekly Contest 25 (contest_biweekly-contest-25)
+ *
+ * Stats:
+ * - Total Accepted: 54,112
+ * - Total Submissions: 76,230
+ * - Acceptance Rate: 71.0%
+ *
+ * Hints:
+ * 1. Sort both strings and then check if one of them can break the other.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s1
+ * @param {string} s2
+ * @return {boolean}
+ */
+const checkIfCanBreak = (s1, s2) => {};
+
+export { checkIfCanBreak };"
+`;

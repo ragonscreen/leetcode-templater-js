@@ -1,0 +1,43 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1234_replace-the-substring-for-balanced-string solution template: 1234_replace-the-substring-for-balanced-string 1`] = `
+"/**
+ * 1234. Replace the Substring for Balanced String
+ *
+ * Link: https://leetcode.com/problems/replace-the-substring-for-balanced-string/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - String (topic_10)
+ * - Sliding Window (topic_55821)
+ * - Staff (position_staff)
+ * - Weekly Contest 159 (contest_weekly-contest-159)
+ *
+ * Stats:
+ * - Total Accepted: 48,400
+ * - Total Submissions: 118,297
+ * - Acceptance Rate: 40.9%
+ *
+ * Hints:
+ * 1. Use 2-pointers algorithm to make sure all amount of characters outside
+ * the 2 pointers are smaller or equal to n/4.
+ *
+ * 2. That means you need to count the amount of each letter and make sure the
+ * amount is enough.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @return {number}
+ */
+const balancedString = (s) => {};
+
+export { balancedString };"
+`;

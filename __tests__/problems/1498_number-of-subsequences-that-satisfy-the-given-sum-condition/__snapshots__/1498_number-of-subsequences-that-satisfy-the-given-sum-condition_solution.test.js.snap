@@ -1,0 +1,52 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1498_number-of-subsequences-that-satisfy-the-given-sum-condition solution template: 1498_number-of-subsequences-that-satisfy-the-given-sum-condition 1`] = `
+"/**
+ * 1498. Number of Subsequences That Satisfy the Given Sum Condition
+ *
+ * Link: https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Two Pointers (topic_9)
+ * - Binary Search (topic_11)
+ * - Sorting (topic_61049)
+ * - Senior Staff (position_senior-staff)
+ * - Weekly Contest 195 (contest_weekly-contest-195)
+ *
+ * Stats:
+ * - Total Accepted: 251,773
+ * - Total Submissions: 512,035
+ * - Acceptance Rate: 49.2%
+ *
+ * Similar Problems:
+ * - find-the-sum-of-subsequence-powers (Hard)
+ * - find-the-sum-of-the-power-of-all-subsequences (Hard)
+ * - minimum-operations-to-form-subsequence-with-target-sum (Hard)
+ *
+ * Hints:
+ * 1. Sort the array nums.
+ *
+ * 2. Use two pointers approach: Given an index i (choose it as the minimum in
+ * a subsequence) find the maximum j where j ≥ i and nums[i] +nums[j] ≤ target.
+ *
+ * 3. Count the number of subsequences.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number}
+ */
+const numSubseq = (nums, target) => {};
+
+export { numSubseq };"
+`;

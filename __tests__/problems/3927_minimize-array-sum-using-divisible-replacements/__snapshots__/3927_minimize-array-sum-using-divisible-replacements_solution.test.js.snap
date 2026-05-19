@@ -1,0 +1,34 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3927_minimize-array-sum-using-divisible-replacements solution template: 3927_minimize-array-sum-using-divisible-replacements 1`] = `
+"/**
+ * 3927. Minimize Array Sum Using Divisible Replacements
+ *
+ * Link: https://leetcode.com/problems/minimize-array-sum-using-divisible-replacements/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Staff (position_staff)
+ * - Weekly Contest 501 (contest_weekly-contest-501)
+ *
+ * Stats:
+ * - Total Accepted: 20,143
+ * - Total Submissions: 63,790
+ * - Acceptance Rate: 31.6%
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number}
+ */
+const minArraySum = (nums) => {};
+
+export { minArraySum };"
+`;

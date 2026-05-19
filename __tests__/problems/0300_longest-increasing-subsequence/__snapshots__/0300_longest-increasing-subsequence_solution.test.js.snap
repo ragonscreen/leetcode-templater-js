@@ -1,0 +1,53 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0300_longest-increasing-subsequence solution template: 0300_longest-increasing-subsequence 1`] = `
+"/**
+ * 0300. Longest Increasing Subsequence
+ *
+ * Link: https://leetcode.com/problems/longest-increasing-subsequence/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Binary Search (topic_11)
+ * - Dynamic Programming (topic_13)
+ *
+ * Stats:
+ * - Total Accepted: 2,634,952
+ * - Total Submissions: 4,436,341
+ * - Acceptance Rate: 59.4%
+ *
+ * Similar Problems:
+ * - find-the-maximum-length-of-a-good-subsequence-i (Medium)
+ * - find-the-maximum-length-of-valid-subsequence-i (Medium)
+ * - find-the-maximum-length-of-valid-subsequence-ii (Medium)
+ * - increasing-triplet-subsequence (Medium)
+ * - longest-ideal-subsequence (Medium)
+ * - longest-subsequence-with-decreasing-adjacent-difference (Medium)
+ * - maximum-length-of-pair-chain (Medium)
+ * - minimum-ascii-delete-sum-for-two-strings (Medium)
+ * - number-of-longest-increasing-subsequence (Medium)
+ * - find-the-longest-valid-obstacle-course-at-each-position (Hard)
+ * - find-the-maximum-length-of-a-good-subsequence-ii (Hard)
+ * - longest-increasing-subsequence-ii (Hard)
+ * - maximum-number-of-books-you-can-take (Hard) (Premium)
+ * - minimum-number-of-removals-to-make-mountain-array (Hard)
+ * - minimum-operations-to-make-the-array-k-increasing (Hard)
+ * - russian-doll-envelopes (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number}
+ */
+const lengthOfLIS = (nums) => {};
+
+export { lengthOfLIS };"
+`;

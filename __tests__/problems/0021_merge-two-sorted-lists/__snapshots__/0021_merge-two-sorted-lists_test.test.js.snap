@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0021_merge-two-sorted-lists test template: 0021_merge-two-sorted-lists 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { mergeTwoLists } from '../../src/0001-0100/0021_merge-two-sorted-lists.js';
+
+const testcases = [
+    { list1: [1,2,4], list2: [1,3,4], expected: [1,1,2,3,4,4] },
+    { list1: [], list2: [], expected: [] },
+    { list1: [], list2: [0], expected: [0] },
+];
+
+describe('mergeTwoLists', () => {
+    test.each(structuredClone(testcases))('mergeTwoLists($list1, $list2) -> $expected', ({ list1, list2, expected }) => {
+        expect(mergeTwoLists(list1, list2)).toStrictEqual(expected);
+    });
+});"
+`;

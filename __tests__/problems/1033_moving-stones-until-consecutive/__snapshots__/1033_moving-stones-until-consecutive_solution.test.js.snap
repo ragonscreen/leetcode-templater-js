@@ -1,0 +1,44 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1033_moving-stones-until-consecutive solution template: 1033_moving-stones-until-consecutive 1`] = `
+"/**
+ * 1033. Moving Stones Until Consecutive
+ *
+ * Link: https://leetcode.com/problems/moving-stones-until-consecutive/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Math (topic_8)
+ * - Brainteaser (topic_32)
+ * - Senior (position_senior)
+ * - Weekly Contest 134 (contest_weekly-contest-134)
+ *
+ * Stats:
+ * - Total Accepted: 34,715
+ * - Total Submissions: 66,370
+ * - Acceptance Rate: 52.3%
+ *
+ * Hints:
+ * 1. For the minimum:  We can always do it in at most 2 moves, by moving one
+ * stone next to another, then the third stone next to the other two.  When
+ * can we do it in 1 move?  0 moves?For the maximum:  Every move, the
+ * maximum position minus the minimum position must decrease by at least 1.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number} a
+ * @param {number} b
+ * @param {number} c
+ * @return {number[]}
+ */
+const numMovesStones = (a, b, c) => {};
+
+export { numMovesStones };"
+`;

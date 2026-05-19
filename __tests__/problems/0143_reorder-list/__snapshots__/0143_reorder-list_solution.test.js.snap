@@ -1,0 +1,40 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0143_reorder-list solution template: 0143_reorder-list 1`] = `
+"/**
+ * 0143. Reorder List
+ *
+ * Link: https://leetcode.com/problems/reorder-list/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Linked List (topic_7)
+ * - Two Pointers (topic_9)
+ * - Stack (topic_15)
+ * - Recursion (topic_31)
+ *
+ * Stats:
+ * - Total Accepted: 1,522,001
+ * - Total Submissions: 2,332,356
+ * - Acceptance Rate: 65.3%
+ *
+ * Similar Problems:
+ * - delete-the-middle-node-of-a-linked-list (Medium)
+ * - take-k-of-each-character-from-left-and-right (Medium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {ListNode} head
+ * @return {void}
+ */
+const reorderList = (head) => {};
+
+export { reorderList };"
+`;

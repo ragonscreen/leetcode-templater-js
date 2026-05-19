@@ -1,0 +1,48 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2540_minimum-common-value solution template: 2540_minimum-common-value 1`] = `
+"/**
+ * 2540. Minimum Common Value
+ *
+ * Link: https://leetcode.com/problems/minimum-common-value/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Two Pointers (topic_9)
+ * - Binary Search (topic_11)
+ * - Mid Level (position_mid-level)
+ * - Biweekly Contest 96 (contest_biweekly-contest-96)
+ *
+ * Stats:
+ * - Total Accepted: 365,317
+ * - Total Submissions: 614,037
+ * - Acceptance Rate: 59.5%
+ *
+ * Similar Problems:
+ * - intersection-of-two-arrays (Easy)
+ * - intersection-of-two-arrays-ii (Easy)
+ *
+ * Hints:
+ * 1. Try to use a set.
+ *
+ * 2. Otherwise, try to use a two-pointer approach.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums1
+ * @param {number[]} nums2
+ * @return {number}
+ */
+const getCommon = (nums1, nums2) => {};
+
+export { getCommon };"
+`;

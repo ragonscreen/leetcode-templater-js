@@ -1,0 +1,38 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0171_excel-sheet-column-number solution template: 0171_excel-sheet-column-number 1`] = `
+"/**
+ * 0171. Excel Sheet Column Number
+ *
+ * Link: https://leetcode.com/problems/excel-sheet-column-number/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Math (topic_8)
+ * - String (topic_10)
+ *
+ * Stats:
+ * - Total Accepted: 911,869
+ * - Total Submissions: 1,346,001
+ * - Acceptance Rate: 67.7%
+ *
+ * Similar Problems:
+ * - cells-in-a-range-on-an-excel-sheet (Easy)
+ * - excel-sheet-column-title (Easy)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} columnTitle
+ * @return {number}
+ */
+const titleToNumber = (columnTitle) => {};
+
+export { titleToNumber };"
+`;

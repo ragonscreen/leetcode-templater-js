@@ -1,0 +1,38 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1249_minimum-remove-to-make-valid-parentheses test template: 1249_minimum-remove-to-make-valid-parentheses 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { minRemoveToMakeValid } from '../../src/1201-1300/1249_minimum-remove-to-make-valid-parentheses.js';
+
+const testcases = [
+    { s: "lee(t(c)o)de)", expected: undefined },
+    { s: "a)b(c)d", expected: undefined },
+    { s: "))((", expected: undefined },
+];
+
+describe('minRemoveToMakeValid', () => {
+    test.each(structuredClone(testcases))('minRemoveToMakeValid($s) -> $expected', ({ s, expected }) => {
+        const actual = minRemoveToMakeValid(s);
+        let countOpen = 0;
+        let countClose = 0;
+        let countCloseBeforeOpen = 0;
+
+        for (const c of actual) {
+            if (c === '(') {
+                countOpen++;
+            }
+
+            if (c === ')') {
+                countClose++;
+
+                if (countOpen < countClose) {
+                    countCloseBeforeOpen++;
+                }
+            }
+        }
+
+        expect(countOpen).toStrictEqual(countClose);
+        expect(countCloseBeforeOpen).toStrictEqual(0);
+    });
+});"
+`;

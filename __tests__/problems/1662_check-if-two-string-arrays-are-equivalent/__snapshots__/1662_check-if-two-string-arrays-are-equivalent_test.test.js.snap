@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1662_check-if-two-string-arrays-are-equivalent test template: 1662_check-if-two-string-arrays-are-equivalent 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { arrayStringsAreEqual } from '../../src/1601-1700/1662_check-if-two-string-arrays-are-equivalent.js';
+
+const testcases = [
+    { word1: ["ab","c"], word2: ["a","bc"], expected: true },
+    { word1: ["a","cb"], word2: ["ab","c"], expected: false },
+    { word1: ["abc","d","defg"], word2: ["abcddefg"], expected: true },
+];
+
+describe('arrayStringsAreEqual', () => {
+    test.each(structuredClone(testcases))('arrayStringsAreEqual($word1, $word2) -> $expected', ({ word1, word2, expected }) => {
+        expect(arrayStringsAreEqual(word1, word2)).toStrictEqual(expected);
+    });
+});"
+`;

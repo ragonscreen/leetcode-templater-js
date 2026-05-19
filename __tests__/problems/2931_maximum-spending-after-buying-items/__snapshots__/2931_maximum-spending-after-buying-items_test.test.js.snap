@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2931_maximum-spending-after-buying-items test template: 2931_maximum-spending-after-buying-items 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { maxSpending } from '../../src/2901-3000/2931_maximum-spending-after-buying-items.js';
+
+const testcases = [
+    { values: [[8,5,2],[6,4,1],[9,7,3]], expected: 285 },
+    { values: [[10,8,6,4,2],[9,7,5,3,2]], expected: 386 },
+];
+
+describe('maxSpending', () => {
+    test.each(structuredClone(testcases))('maxSpending($values) -> $expected', ({ values, expected }) => {
+        expect(maxSpending(values)).toStrictEqual(expected);
+    });
+});"
+`;

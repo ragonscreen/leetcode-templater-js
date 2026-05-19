@@ -1,0 +1,44 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0202_happy-number solution template: 0202_happy-number 1`] = `
+"/**
+ * 0202. Happy Number
+ *
+ * Link: https://leetcode.com/problems/happy-number/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Hash Table (topic_6)
+ * - Math (topic_8)
+ * - Two Pointers (topic_9)
+ *
+ * Stats:
+ * - Total Accepted: 2,281,967
+ * - Total Submissions: 3,825,736
+ * - Acceptance Rate: 59.6%
+ *
+ * Similar Problems:
+ * - add-digits (Easy)
+ * - count-the-digits-that-divide-a-number (Easy)
+ * - linked-list-cycle (Easy)
+ * - sum-of-digits-of-string-after-convert (Easy)
+ * - ugly-number (Easy)
+ * - minimum-addition-to-make-integer-beautiful (Medium)
+ * - smallest-value-after-replacing-with-sum-of-prime-factors (Medium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number} n
+ * @return {boolean}
+ */
+const isHappy = (n) => {};
+
+export { isHappy };"
+`;

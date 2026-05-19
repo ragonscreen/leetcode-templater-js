@@ -1,0 +1,53 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0003_longest-substring-without-repeating-characters solution template: 0003_longest-substring-without-repeating-characters 1`] = `
+"/**
+ * 0003. Longest Substring Without Repeating Characters
+ *
+ * Link: https://leetcode.com/problems/longest-substring-without-repeating-characters/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Hash Table (topic_6)
+ * - String (topic_10)
+ * - Sliding Window (topic_55821)
+ * - Staff (position_staff)
+ *
+ * Stats:
+ * - Total Accepted: 9,493,215
+ * - Total Submissions: 24,315,590
+ * - Acceptance Rate: 39.0%
+ *
+ * Similar Problems:
+ * - count-complete-subarrays-in-an-array (Medium)
+ * - find-longest-special-substring-that-occurs-thrice-i (Medium)
+ * - find-longest-special-substring-that-occurs-thrice-ii (Medium)
+ * - longest-nice-subarray (Medium)
+ * - longest-substring-with-at-most-k-distinct-characters (Medium) (Premium)
+ * - longest-substring-with-at-most-two-distinct-characters (Medium) (Premium)
+ * - maximum-erasure-value (Medium)
+ * - minimum-consecutive-cards-to-pick-up (Medium)
+ * - number-of-equal-count-substrings (Medium) (Premium)
+ * - optimal-partition-of-string (Medium)
+ * - subarrays-with-k-different-integers (Hard)
+ *
+ * Hints:
+ * 1. Since maximum string size is at most 26, generate and check all possible
+ * substrings with length at most 26.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @return {number}
+ */
+const lengthOfLongestSubstring = (s) => {};
+
+export { lengthOfLongestSubstring };"
+`;

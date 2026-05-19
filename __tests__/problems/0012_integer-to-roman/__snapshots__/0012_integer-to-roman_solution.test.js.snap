@@ -1,0 +1,39 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0012_integer-to-roman solution template: 0012_integer-to-roman 1`] = `
+"/**
+ * 0012. Integer to Roman
+ *
+ * Link: https://leetcode.com/problems/integer-to-roman/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Hash Table (topic_6)
+ * - Math (topic_8)
+ * - String (topic_10)
+ *
+ * Stats:
+ * - Total Accepted: 2,148,764
+ * - Total Submissions: 3,028,155
+ * - Acceptance Rate: 71.0%
+ *
+ * Similar Problems:
+ * - roman-to-integer (Easy)
+ * - integer-to-english-words (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number} num
+ * @return {string}
+ */
+const intToRoman = (num) => {};
+
+export { intToRoman };"
+`;

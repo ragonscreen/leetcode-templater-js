@@ -1,0 +1,50 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1701_average-waiting-time solution template: 1701_average-waiting-time 1`] = `
+"/**
+ * 1701. Average Waiting Time
+ *
+ * Link: https://leetcode.com/problems/average-waiting-time/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Simulation (topic_61055)
+ * - Senior (position_senior)
+ * - Biweekly Contest 42 (contest_biweekly-contest-42)
+ *
+ * Stats:
+ * - Total Accepted: 221,316
+ * - Total Submissions: 302,873
+ * - Acceptance Rate: 73.1%
+ *
+ * Similar Problems:
+ * - average-height-of-buildings-in-each-segment (Medium) (Premium)
+ *
+ * Hints:
+ * 1. Iterate on the customers, maintaining the time the chef will finish the
+ * previous orders.
+ *
+ * 2. If that time is before the current arrival time, the chef starts
+ * immediately. Else, the current customer waits till the chef finishes, and
+ * then the chef starts.
+ *
+ * 3. Update the running time by the time when the chef starts preparing +
+ * preparation time.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[][]} customers
+ * @return {number}
+ */
+const averageWaitingTime = (customers) => {};
+
+export { averageWaitingTime };"
+`;

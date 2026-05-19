@@ -1,0 +1,50 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0213_house-robber-ii solution template: 0213_house-robber-ii 1`] = `
+"/**
+ * 0213. House Robber II
+ *
+ * Link: https://leetcode.com/problems/house-robber-ii/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Dynamic Programming (topic_13)
+ *
+ * Stats:
+ * - Total Accepted: 1,262,162
+ * - Total Submissions: 2,810,475
+ * - Acceptance Rate: 44.9%
+ *
+ * Similar Problems:
+ * - house-robber (Medium)
+ * - house-robber-iii (Medium)
+ * - paint-fence (Medium) (Premium)
+ * - paint-house (Medium) (Premium)
+ * - coin-path (Hard) (Premium)
+ * - non-negative-integers-without-consecutive-ones (Hard)
+ *
+ * Hints:
+ * 1. Since House[1] and House[n] are adjacent, they cannot be robbed together.
+ * Therefore, the problem becomes to rob either House[1]-House[n-1] or
+ * House[2]-House[n], depending on which choice offers more money. Now the
+ * problem has degenerated to the <a href
+ * ="https://leetcode.com/problems/house-robber/description/">House
+ * Robber</a>, which is already been solved.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number}
+ */
+const rob = (nums) => {};
+
+export { rob };"
+`;

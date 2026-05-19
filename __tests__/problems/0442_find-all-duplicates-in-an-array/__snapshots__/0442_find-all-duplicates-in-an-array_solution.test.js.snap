@@ -1,0 +1,40 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0442_find-all-duplicates-in-an-array solution template: 0442_find-all-duplicates-in-an-array 1`] = `
+"/**
+ * 0442. Find All Duplicates in an Array
+ *
+ * Link: https://leetcode.com/problems/find-all-duplicates-in-an-array/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Sorting (topic_61049)
+ *
+ * Stats:
+ * - Total Accepted: 1,043,029
+ * - Total Submissions: 1,355,502
+ * - Acceptance Rate: 76.9%
+ *
+ * Similar Problems:
+ * - find-all-numbers-disappeared-in-an-array (Easy)
+ * - the-two-sneaky-numbers-of-digitville (Easy)
+ * - sum-of-distances (Medium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number[]}
+ */
+const findDuplicates = (nums) => {};
+
+export { findDuplicates };"
+`;

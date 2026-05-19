@@ -1,0 +1,45 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2269_find-the-k-beauty-of-a-number solution template: 2269_find-the-k-beauty-of-a-number 1`] = `
+"/**
+ * 2269. Find the K-Beauty of a Number
+ *
+ * Link: https://leetcode.com/problems/find-the-k-beauty-of-a-number/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Math (topic_8)
+ * - String (topic_10)
+ * - Sliding Window (topic_55821)
+ * - Mid Level (position_mid-level)
+ * - Biweekly Contest 78 (contest_biweekly-contest-78)
+ *
+ * Stats:
+ * - Total Accepted: 93,084
+ * - Total Submissions: 146,879
+ * - Acceptance Rate: 63.4%
+ *
+ * Hints:
+ * 1. We should check all the substrings of num with a length of k and see if
+ * it is a divisor of num.
+ *
+ * 2. We can more easily obtain the substrings by converting num into a string
+ * and converting back to an integer to check for divisibility.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number} num
+ * @param {number} k
+ * @return {number}
+ */
+const divisorSubstrings = (num, k) => {};
+
+export { divisorSubstrings };"
+`;

@@ -1,0 +1,48 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1456_maximum-number-of-vowels-in-a-substring-of-given-length solution template: 1456_maximum-number-of-vowels-in-a-substring-of-given-length 1`] = `
+"/**
+ * 1456. Maximum Number of Vowels in a Substring of Given Length
+ *
+ * Link: https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - String (topic_10)
+ * - Sliding Window (topic_55821)
+ * - Senior (position_senior)
+ * - Weekly Contest 190 (contest_weekly-contest-190)
+ *
+ * Stats:
+ * - Total Accepted: 695,239
+ * - Total Submissions: 1,122,925
+ * - Acceptance Rate: 61.9%
+ *
+ * Similar Problems:
+ * - minimum-recolors-to-get-k-consecutive-black-blocks (Easy)
+ * - length-of-the-longest-alphabetical-continuous-substring (Medium)
+ * - maximum-white-tiles-covered-by-a-carpet (Medium)
+ *
+ * Hints:
+ * 1. Keep a window of size k and maintain the number of vowels in it.
+ *
+ * 2. Keep moving the window and update the number of vowels while moving.
+ * Answer is max number of vowels of any window.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @param {number} k
+ * @return {number}
+ */
+const maxVowels = (s, k) => {};
+
+export { maxVowels };"
+`;

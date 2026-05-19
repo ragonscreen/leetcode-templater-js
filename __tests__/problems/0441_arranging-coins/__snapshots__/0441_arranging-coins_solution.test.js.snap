@@ -1,0 +1,35 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0441_arranging-coins solution template: 0441_arranging-coins 1`] = `
+"/**
+ * 0441. Arranging Coins
+ *
+ * Link: https://leetcode.com/problems/arranging-coins/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Math (topic_8)
+ * - Binary Search (topic_11)
+ * - Junior (position_junior)
+ *
+ * Stats:
+ * - Total Accepted: 627,661
+ * - Total Submissions: 1,300,991
+ * - Acceptance Rate: 48.2%
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number} n
+ * @return {number}
+ */
+const arrangeCoins = (n) => {};
+
+export { arrangeCoins };"
+`;

@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3660_jump-game-ix test template: 3660_jump-game-ix 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { maxValue } from '../../src/3601-3700/3660_jump-game-ix.js';
+
+const testcases = [
+    { nums: [2,1,3], expected: [2,2,3] },
+    { nums: [2,3,1], expected: [3,3,3] },
+];
+
+describe('maxValue', () => {
+    test.each(structuredClone(testcases))('maxValue($nums) -> $expected', ({ nums, expected }) => {
+        expect(maxValue(nums)).toStrictEqual(expected);
+    });
+});"
+`;

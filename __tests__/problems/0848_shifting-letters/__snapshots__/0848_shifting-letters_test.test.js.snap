@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0848_shifting-letters test template: 0848_shifting-letters 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { shiftingLetters } from '../../src/0801-0900/0848_shifting-letters.js';
+
+const testcases = [
+    { s: "abc", shifts: [3,5,9], expected: "rpl" },
+    { s: "aaa", shifts: [1,2,3], expected: "gfd" },
+];
+
+describe('shiftingLetters', () => {
+    test.each(structuredClone(testcases))('shiftingLetters($s, $shifts) -> $expected', ({ s, shifts, expected }) => {
+        expect(shiftingLetters(s, shifts)).toStrictEqual(expected);
+    });
+});"
+`;

@@ -1,0 +1,50 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2780_minimum-index-of-a-valid-split solution template: 2780_minimum-index-of-a-valid-split 1`] = `
+"/**
+ * 2780. Minimum Index of a Valid Split
+ *
+ * Link: https://leetcode.com/problems/minimum-index-of-a-valid-split/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Sorting (topic_61049)
+ * - Senior (position_senior)
+ * - Weekly Contest 354 (contest_weekly-contest-354)
+ *
+ * Stats:
+ * - Total Accepted: 149,544
+ * - Total Submissions: 198,103
+ * - Acceptance Rate: 75.5%
+ *
+ * Similar Problems:
+ * - majority-element (Easy)
+ * - partition-array-into-disjoint-intervals (Medium)
+ *
+ * Hints:
+ * 1. Find the dominant element of nums by using a hashmap to maintain element
+ * frequency, we denote the dominant element as x and its frequency as f.
+ *
+ * 2. For each index in [0, n - 2], calculate f1, x’s frequency in the subarray
+ * [0, i] when looping the index. And f2, x’s frequency in the subarray [i +
+ * 1, n - 1] which is equal to f - f1. Then we can check whether x is
+ * dominant in both subarrays.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number}
+ */
+const minimumIndex = (nums) => {};
+
+export { minimumIndex };"
+`;

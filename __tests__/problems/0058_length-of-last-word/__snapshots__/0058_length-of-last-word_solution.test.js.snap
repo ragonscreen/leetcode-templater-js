@@ -1,0 +1,33 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0058_length-of-last-word solution template: 0058_length-of-last-word 1`] = `
+"/**
+ * 0058. Length of Last Word
+ *
+ * Link: https://leetcode.com/problems/length-of-last-word/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - String (topic_10)
+ *
+ * Stats:
+ * - Total Accepted: 3,430,184
+ * - Total Submissions: 5,832,797
+ * - Acceptance Rate: 58.8%
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @return {number}
+ */
+const lengthOfLastWord = (s) => {};
+
+export { lengthOfLastWord };"
+`;

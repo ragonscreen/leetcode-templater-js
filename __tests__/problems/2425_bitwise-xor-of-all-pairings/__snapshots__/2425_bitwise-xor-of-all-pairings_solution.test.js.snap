@@ -1,0 +1,45 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2425_bitwise-xor-of-all-pairings solution template: 2425_bitwise-xor-of-all-pairings 1`] = `
+"/**
+ * 2425. Bitwise XOR of All Pairings
+ *
+ * Link: https://leetcode.com/problems/bitwise-xor-of-all-pairings/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Bit Manipulation (topic_19)
+ * - Brainteaser (topic_32)
+ * - Staff (position_staff)
+ * - Biweekly Contest 88 (contest_biweekly-contest-88)
+ *
+ * Stats:
+ * - Total Accepted: 153,386
+ * - Total Submissions: 229,319
+ * - Acceptance Rate: 66.9%
+ *
+ * Hints:
+ * 1. Think how the count of each individual integer affects the final answer.
+ *
+ * 2. If the length of nums1 is m and the length of nums2 is n, then each
+ * number in nums1 is repeated n times and each number in nums2 is repeated
+ * m times.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums1
+ * @param {number[]} nums2
+ * @return {number}
+ */
+const xorAllNums = (nums1, nums2) => {};
+
+export { xorAllNums };"
+`;

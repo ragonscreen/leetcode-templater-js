@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3932_count-k-th-roots-in-a-range test template: 3932_count-k-th-roots-in-a-range 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { countKthRoots } from '../../src/3901-4000/3932_count-k-th-roots-in-a-range.js';
+
+const testcases = [
+    { l: 1, r: 9, k: 3, expected: 2 },
+    { l: 8, r: 30, k: 2, expected: 3 },
+];
+
+describe('countKthRoots', () => {
+    test.each(structuredClone(testcases))('countKthRoots($l, $r, $k) -> $expected', ({ l, r, k, expected }) => {
+        expect(countKthRoots(l, r, k)).toStrictEqual(expected);
+    });
+});"
+`;

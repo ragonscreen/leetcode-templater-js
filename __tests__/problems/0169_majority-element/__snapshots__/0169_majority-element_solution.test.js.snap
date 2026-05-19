@@ -1,0 +1,46 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0169_majority-element solution template: 0169_majority-element 1`] = `
+"/**
+ * 0169. Majority Element
+ *
+ * Link: https://leetcode.com/problems/majority-element/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Divide and Conquer (topic_12)
+ * - Sorting (topic_61049)
+ * - Counting (topic_61062)
+ *
+ * Stats:
+ * - Total Accepted: 5,503,752
+ * - Total Submissions: 8,302,908
+ * - Acceptance Rate: 66.3%
+ *
+ * Similar Problems:
+ * - check-if-a-number-is-majority-element-in-a-sorted-array (Easy) (Premium)
+ * - find-valid-pair-of-adjacent-digits-in-string (Easy)
+ * - minimum-operations-to-exceed-threshold-value-i (Easy)
+ * - most-frequent-even-element (Easy)
+ * - find-the-most-common-response (Medium)
+ * - majority-element-ii (Medium)
+ * - minimum-index-of-a-valid-split (Medium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number}
+ */
+const majorityElement = (nums) => {};
+
+export { majorityElement };"
+`;

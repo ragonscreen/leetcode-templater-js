@@ -1,0 +1,42 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0779_k-th-symbol-in-grammar solution template: 0779_k-th-symbol-in-grammar 1`] = `
+"/**
+ * 0779. K-th Symbol in Grammar
+ *
+ * Link: https://leetcode.com/problems/k-th-symbol-in-grammar/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Math (topic_8)
+ * - Bit Manipulation (topic_19)
+ * - Recursion (topic_31)
+ * - Staff (position_staff)
+ * - Weekly Contest 70 (contest_weekly-contest-70)
+ *
+ * Stats:
+ * - Total Accepted: 259,862
+ * - Total Submissions: 538,282
+ * - Acceptance Rate: 48.3%
+ *
+ * Hints:
+ * 1. Try to represent the current (N, K) in terms of some (N-1, prevK).  What
+ * is prevK ?
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number} n
+ * @param {number} k
+ * @return {number}
+ */
+const kthGrammar = (n, k) => {};
+
+export { kthGrammar };"
+`;

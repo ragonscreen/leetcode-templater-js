@@ -1,0 +1,46 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2428_maximum-sum-of-an-hourglass solution template: 2428_maximum-sum-of-an-hourglass 1`] = `
+"/**
+ * 2428. Maximum Sum of an Hourglass
+ *
+ * Link: https://leetcode.com/problems/maximum-sum-of-an-hourglass/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Matrix (topic_61053)
+ * - Prefix Sum (topic_61068)
+ * - Senior (position_senior)
+ * - Weekly Contest 313 (contest_weekly-contest-313)
+ *
+ * Stats:
+ * - Total Accepted: 54,398
+ * - Total Submissions: 71,284
+ * - Acceptance Rate: 76.3%
+ *
+ * Similar Problems:
+ * - matrix-block-sum (Medium)
+ *
+ * Hints:
+ * 1. Each 3x3 submatrix has exactly one hourglass.
+ *
+ * 2. Find the sum of each hourglass in the matrix and return the largest of
+ * these values.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[][]} grid
+ * @return {number}
+ */
+const maxSum = (grid) => {};
+
+export { maxSum };"
+`;

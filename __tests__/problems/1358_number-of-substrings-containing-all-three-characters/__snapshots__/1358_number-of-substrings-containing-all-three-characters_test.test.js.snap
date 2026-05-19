@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1358_number-of-substrings-containing-all-three-characters test template: 1358_number-of-substrings-containing-all-three-characters 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { numberOfSubstrings } from '../../src/1301-1400/1358_number-of-substrings-containing-all-three-characters.js';
+
+const testcases = [
+    { s: "abcabc", expected: 10 },
+    { s: "aaacb", expected: 3 },
+    { s: "abc", expected: 1 },
+];
+
+describe('numberOfSubstrings', () => {
+    test.each(structuredClone(testcases))('numberOfSubstrings($s) -> $expected', ({ s, expected }) => {
+        expect(numberOfSubstrings(s)).toStrictEqual(expected);
+    });
+});"
+`;

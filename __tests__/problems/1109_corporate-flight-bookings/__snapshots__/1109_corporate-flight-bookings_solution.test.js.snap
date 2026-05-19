@@ -1,0 +1,41 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1109_corporate-flight-bookings solution template: 1109_corporate-flight-bookings 1`] = `
+"/**
+ * 1109. Corporate Flight Bookings
+ *
+ * Link: https://leetcode.com/problems/corporate-flight-bookings/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Prefix Sum (topic_61068)
+ * - Senior (position_senior)
+ * - Weekly Contest 144 (contest_weekly-contest-144)
+ *
+ * Stats:
+ * - Total Accepted: 107,152
+ * - Total Submissions: 159,245
+ * - Acceptance Rate: 67.3%
+ *
+ * Similar Problems:
+ * - zero-array-transformation-ii (Medium)
+ * - zero-array-transformation-iii (Medium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[][]} bookings
+ * @param {number} n
+ * @return {number[]}
+ */
+const corpFlightBookings = (bookings, n) => {};
+
+export { corpFlightBookings };"
+`;

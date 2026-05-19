@@ -1,0 +1,58 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0015_3sum solution template: 0015_3sum 1`] = `
+"/**
+ * 0015. 3Sum
+ *
+ * Link: https://leetcode.com/problems/3sum/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Two Pointers (topic_9)
+ * - Sorting (topic_61049)
+ *
+ * Stats:
+ * - Total Accepted: 5,972,425
+ * - Total Submissions: 15,286,429
+ * - Acceptance Rate: 39.1%
+ *
+ * Similar Problems:
+ * - minimum-sum-of-mountain-triplets-i (Easy)
+ * - number-of-arithmetic-triplets (Easy)
+ * - two-sum (Easy)
+ * - 3sum-closest (Medium)
+ * - 3sum-smaller (Medium) (Premium)
+ * - 4sum (Medium)
+ * - minimum-sum-of-mountain-triplets-ii (Medium)
+ *
+ * Hints:
+ * 1. So, we essentially need to find three numbers x, y, and z such that they
+ * add up to the given value. If we fix one of the numbers say x, we are
+ * left with the two-sum problem at hand!
+ *
+ * 2. For the two-sum problem, if we fix one of the numbers, say x, we have to
+ * scan the entire array to find the next number y, which is value - x where
+ * value is the input parameter. Can we change our array somehow so that
+ * this search becomes faster?
+ *
+ * 3. The second train of thought for two-sum is, without changing the array,
+ * can we use additional space somehow? Like maybe a hash map to speed up
+ * the search?
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number[][]}
+ */
+const threeSum = (nums) => {};
+
+export { threeSum };"
+`;

@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3862_find-the-smallest-balanced-index test template: 3862_find-the-smallest-balanced-index 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { smallestBalancedIndex } from '../../src/3801-3900/3862_find-the-smallest-balanced-index.js';
+
+const testcases = [
+    { nums: [2,1,2], expected: 1 },
+    { nums: [2,8,2,2,5], expected: 2 },
+    { nums: [1], expected: "-1\\nFor index <code>i = 0</code>:\\n\\n<ul>\\n\\t<li>The left side is empty, so the left sum is 0.</li>\\n\\t<li>The right side is empty, so the right product is 1.</li>\\n\\t<li>Since the left sum does not equal the right product, index 0 is not balanced.</li>\\n</ul>\\nTherefore, no balanced index exists and the answer is -1." },
+];
+
+describe('smallestBalancedIndex', () => {
+    test.each(structuredClone(testcases))('smallestBalancedIndex($nums) -> $expected', ({ nums, expected }) => {
+        expect(smallestBalancedIndex(nums)).toStrictEqual(expected);
+    });
+});"
+`;

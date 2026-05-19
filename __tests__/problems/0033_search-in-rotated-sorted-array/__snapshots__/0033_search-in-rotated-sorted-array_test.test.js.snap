@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0033_search-in-rotated-sorted-array test template: 0033_search-in-rotated-sorted-array 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { search } from '../../src/0001-0100/0033_search-in-rotated-sorted-array.js';
+
+const testcases = [
+    { nums: [4,5,6,7,0,1,2], target: 0, expected: 4 },
+    { nums: [4,5,6,7,0,1,2], target: 3, expected: -1 },
+    { nums: [1], target: 0, expected: -1 },
+];
+
+describe('search', () => {
+    test.each(structuredClone(testcases))('search($nums, $target) -> $expected', ({ nums, target, expected }) => {
+        expect(search(nums, target)).toStrictEqual(expected);
+    });
+});"
+`;

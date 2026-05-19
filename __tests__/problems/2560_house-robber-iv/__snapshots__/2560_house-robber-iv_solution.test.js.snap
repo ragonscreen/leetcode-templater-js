@@ -1,0 +1,57 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2560_house-robber-iv solution template: 2560_house-robber-iv 1`] = `
+"/**
+ * 2560. House Robber IV
+ *
+ * Link: https://leetcode.com/problems/house-robber-iv/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Binary Search (topic_11)
+ * - Dynamic Programming (topic_13)
+ * - Greedy (topic_17)
+ * - Staff (position_staff)
+ * - Weekly Contest 331 (contest_weekly-contest-331)
+ *
+ * Stats:
+ * - Total Accepted: 140,839
+ * - Total Submissions: 217,684
+ * - Acceptance Rate: 64.7%
+ *
+ * Similar Problems:
+ * - container-with-most-water (Medium)
+ * - house-robber (Medium)
+ *
+ * Hints:
+ * 1. Can we use binary search to find the minimum value of a non-contiguous
+ * subsequence of a given size k?
+ *
+ * 2. Initialize the search range with the minimum and maximum elements of the
+ * input array.
+ *
+ * 3. Use a check function to determine if it is possible to select k
+ * non-consecutive elements that are less than or equal to the current
+ * "guess" value.
+ *
+ * 4. Adjust the search range based on the outcome of the check function, until
+ * the range converges and the minimum value is found.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number} k
+ * @return {number}
+ */
+const minCapability = (nums, k) => {};
+
+export { minCapability };"
+`;

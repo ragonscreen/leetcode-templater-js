@@ -1,0 +1,53 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1984_minimum-difference-between-highest-and-lowest-of-k-scores solution template: 1984_minimum-difference-between-highest-and-lowest-of-k-scores 1`] = `
+"/**
+ * 1984. Minimum Difference Between Highest and Lowest of K Scores
+ *
+ * Link: https://leetcode.com/problems/minimum-difference-between-highest-and-lowest-of-k-scores/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Sliding Window (topic_55821)
+ * - Sorting (topic_61049)
+ * - Mid Level (position_mid-level)
+ * - Weekly Contest 256 (contest_weekly-contest-256)
+ *
+ * Stats:
+ * - Total Accepted: 254,753
+ * - Total Submissions: 384,403
+ * - Acceptance Rate: 66.3%
+ *
+ * Similar Problems:
+ * - array-partition (Easy)
+ *
+ * Hints:
+ * 1. For the difference between the highest and lowest element to be
+ * minimized, the k chosen scores need to be as close to each other as possible.
+ *
+ * 2. What if the array was sorted?
+ *
+ * 3. After sorting the scores, any contiguous k scores are as close to each
+ * other as possible.
+ *
+ * 4. Apply a sliding window solution to iterate over each contiguous k scores,
+ * and find the minimum of the differences of all windows.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number} k
+ * @return {number}
+ */
+const minimumDifference = (nums, k) => {};
+
+export { minimumDifference };"
+`;

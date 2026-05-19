@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1004_max-consecutive-ones-iii test template: 1004_max-consecutive-ones-iii 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { longestOnes } from '../../src/1001-1100/1004_max-consecutive-ones-iii.js';
+
+const testcases = [
+    { nums: [1,1,1,0,0,0,1,1,1,1,0], k: 2, expected: 6 },
+    { nums: [0,0,1,1,0,0,1,1,1,0,1,1,0,0,0,1,1,1,1], k: 3, expected: 10 },
+];
+
+describe('longestOnes', () => {
+    test.each(structuredClone(testcases))('longestOnes($nums, $k) -> $expected', ({ nums, k, expected }) => {
+        expect(longestOnes(nums, k)).toStrictEqual(expected);
+    });
+});"
+`;

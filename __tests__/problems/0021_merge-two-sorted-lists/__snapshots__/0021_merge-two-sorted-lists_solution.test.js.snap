@@ -1,0 +1,44 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0021_merge-two-sorted-lists solution template: 0021_merge-two-sorted-lists 1`] = `
+"/**
+ * 0021. Merge Two Sorted Lists
+ *
+ * Link: https://leetcode.com/problems/merge-two-sorted-lists/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Linked List (topic_7)
+ * - Recursion (topic_31)
+ *
+ * Stats:
+ * - Total Accepted: 6,279,856
+ * - Total Submissions: 9,197,083
+ * - Acceptance Rate: 68.3%
+ *
+ * Similar Problems:
+ * - merge-sorted-array (Easy)
+ * - merge-two-2d-arrays-by-summing-values (Easy)
+ * - add-two-polynomials-represented-as-linked-lists (Medium) (Premium)
+ * - longest-common-subsequence-between-sorted-arrays (Medium) (Premium)
+ * - shortest-word-distance-ii (Medium) (Premium)
+ * - sort-list (Medium)
+ * - merge-k-sorted-lists (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {ListNode} list1
+ * @param {ListNode} list2
+ * @return {ListNode}
+ */
+const mergeTwoLists = (list1, list2) => {};
+
+export { mergeTwoLists };"
+`;

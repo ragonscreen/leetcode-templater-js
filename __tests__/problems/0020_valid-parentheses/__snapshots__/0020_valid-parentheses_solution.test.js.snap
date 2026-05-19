@@ -1,0 +1,50 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0020_valid-parentheses solution template: 0020_valid-parentheses 1`] = `
+"/**
+ * 0020. Valid Parentheses
+ *
+ * Link: https://leetcode.com/problems/valid-parentheses/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - String (topic_10)
+ * - Stack (topic_15)
+ *
+ * Stats:
+ * - Total Accepted: 7,581,976
+ * - Total Submissions: 17,166,876
+ * - Acceptance Rate: 44.2%
+ *
+ * Similar Problems:
+ * - check-if-a-parentheses-string-can-be-valid (Medium)
+ * - check-if-word-is-valid-after-substitutions (Medium)
+ * - generate-parentheses (Medium)
+ * - move-pieces-to-obtain-a-string (Medium)
+ * - longest-valid-parentheses (Hard)
+ * - remove-invalid-parentheses (Hard)
+ *
+ * Hints:
+ * 1. Use a stack of characters.
+ *
+ * 2. When you encounter an opening bracket, push it to the top of the stack.
+ *
+ * 3. When you encounter a closing bracket, check if the top of the stack was
+ * the opening for it. If yes, pop it from the stack. Otherwise, return false.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @return {boolean}
+ */
+const isValid = (s) => {};
+
+export { isValid };"
+`;

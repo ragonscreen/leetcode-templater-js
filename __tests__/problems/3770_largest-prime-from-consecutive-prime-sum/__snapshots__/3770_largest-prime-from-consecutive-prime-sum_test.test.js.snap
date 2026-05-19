@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3770_largest-prime-from-consecutive-prime-sum test template: 3770_largest-prime-from-consecutive-prime-sum 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { largestPrime } from '../../src/3701-3800/3770_largest-prime-from-consecutive-prime-sum.js';
+
+const testcases = [
+    { n: 20, expected: 17 },
+    { n: 2, expected: 2 },
+];
+
+describe('largestPrime', () => {
+    test.each(structuredClone(testcases))('largestPrime($n) -> $expected', ({ n, expected }) => {
+        expect(largestPrime(n)).toStrictEqual(expected);
+    });
+});"
+`;

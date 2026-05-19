@@ -1,0 +1,51 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2211_count-collisions-on-a-road solution template: 2211_count-collisions-on-a-road 1`] = `
+"/**
+ * 2211. Count Collisions on a Road
+ *
+ * Link: https://leetcode.com/problems/count-collisions-on-a-road/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - String (topic_10)
+ * - Stack (topic_15)
+ * - Simulation (topic_61055)
+ * - Senior (position_senior)
+ * - Weekly Contest 285 (contest_weekly-contest-285)
+ *
+ * Stats:
+ * - Total Accepted: 129,139
+ * - Total Submissions: 222,284
+ * - Acceptance Rate: 58.1%
+ *
+ * Similar Problems:
+ * - asteroid-collision (Medium)
+ * - car-fleet (Medium)
+ * - last-moment-before-all-ants-fall-out-of-a-plank (Medium)
+ * - car-fleet-ii (Hard)
+ *
+ * Hints:
+ * 1. In what circumstances does a moving car not collide with another car?
+ *
+ * 2. If we disregard the moving cars that do not collide with another car,
+ * what does each moving car contribute to the answer?
+ *
+ * 3. Will stationary cars contribute towards the answer?
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} directions
+ * @return {number}
+ */
+const countCollisions = (directions) => {};
+
+export { countCollisions };"
+`;

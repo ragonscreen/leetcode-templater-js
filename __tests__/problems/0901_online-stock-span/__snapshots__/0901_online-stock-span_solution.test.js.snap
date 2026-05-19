@@ -1,0 +1,51 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0901_online-stock-span solution template: 0901_online-stock-span 1`] = `
+"/**
+ * 0901. Online Stock Span
+ *
+ * Link: https://leetcode.com/problems/online-stock-span/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Stack (topic_15)
+ * - Design (topic_25)
+ * - Monotonic Stack (topic_61054)
+ * - Data Stream (topic_61063)
+ * - Senior (position_senior)
+ * - Weekly Contest 101 (contest_weekly-contest-101)
+ *
+ * Stats:
+ * - Total Accepted: 608,223
+ * - Total Submissions: 880,878
+ * - Acceptance Rate: 69.0%
+ *
+ * Similar Problems:
+ * - daily-temperatures (Medium)
+ */
+
+/**
+ * Approach:
+ */
+class StockSpanner {
+    /**
+     * Time Complexity: O()
+     * Space Complexity: O()
+     */
+    constructor() {}
+
+    /**
+     * Time Complexity: O()
+     * Space Complexity: O()
+     *
+     * @param {number} price
+     * @return {number}
+     */
+    next(price) {}
+}
+
+export { StockSpanner };"
+`;

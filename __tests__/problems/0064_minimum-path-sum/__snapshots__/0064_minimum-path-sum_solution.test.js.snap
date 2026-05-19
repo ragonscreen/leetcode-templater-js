@@ -1,0 +1,46 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0064_minimum-path-sum solution template: 0064_minimum-path-sum 1`] = `
+"/**
+ * 0064. Minimum Path Sum
+ *
+ * Link: https://leetcode.com/problems/minimum-path-sum/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Dynamic Programming (topic_13)
+ * - Matrix (topic_61053)
+ *
+ * Stats:
+ * - Total Accepted: 1,860,888
+ * - Total Submissions: 2,727,870
+ * - Acceptance Rate: 68.2%
+ *
+ * Similar Problems:
+ * - check-if-there-is-a-path-with-equal-number-of-0s-and-1s (Medium) (Premium)
+ * - maximum-number-of-points-with-cost (Medium)
+ * - minimum-cost-homecoming-of-a-robot-in-a-grid (Medium)
+ * - minimum-cost-of-a-path-with-special-roads (Medium)
+ * - minimum-path-cost-in-a-grid (Medium)
+ * - unique-paths (Medium)
+ * - cherry-pickup (Hard)
+ * - dungeon-game (Hard)
+ * - paths-in-matrix-whose-sum-is-divisible-by-k (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[][]} grid
+ * @return {number}
+ */
+const minPathSum = (grid) => {};
+
+export { minPathSum };"
+`;

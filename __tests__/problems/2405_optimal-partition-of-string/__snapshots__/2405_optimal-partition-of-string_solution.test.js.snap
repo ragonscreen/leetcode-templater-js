@@ -1,0 +1,49 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2405_optimal-partition-of-string solution template: 2405_optimal-partition-of-string 1`] = `
+"/**
+ * 2405. Optimal Partition of String
+ *
+ * Link: https://leetcode.com/problems/optimal-partition-of-string/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Hash Table (topic_6)
+ * - String (topic_10)
+ * - Greedy (topic_17)
+ * - Senior (position_senior)
+ * - Weekly Contest 310 (contest_weekly-contest-310)
+ *
+ * Stats:
+ * - Total Accepted: 277,821
+ * - Total Submissions: 354,282
+ * - Acceptance Rate: 78.4%
+ *
+ * Similar Problems:
+ * - longest-substring-with-at-least-k-repeating-characters (Medium)
+ * - longest-substring-without-repeating-characters (Medium)
+ * - maximum-sum-of-distinct-subarrays-with-length-k (Medium)
+ * - partition-array-into-disjoint-intervals (Medium)
+ * - partition-labels (Medium)
+ *
+ * Hints:
+ * 1. Try to come up with a greedy approach.
+ *
+ * 2. From left to right, extend every substring in the partition as much as possible.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @return {number}
+ */
+const partitionString = (s) => {};
+
+export { partitionString };"
+`;

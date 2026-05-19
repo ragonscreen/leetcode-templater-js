@@ -1,0 +1,43 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3174_clear-digits solution template: 3174_clear-digits 1`] = `
+"/**
+ * 3174. Clear Digits
+ *
+ * Link: https://leetcode.com/problems/clear-digits/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - String (topic_10)
+ * - Stack (topic_15)
+ * - Simulation (topic_61055)
+ * - Mid Level (position_mid-level)
+ * - Biweekly Contest 132 (contest_biweekly-contest-132)
+ *
+ * Stats:
+ * - Total Accepted: 282,568
+ * - Total Submissions: 341,641
+ * - Acceptance Rate: 82.7%
+ *
+ * Hints:
+ * 1. Process string \`s\` from left to right, if \`s[i]\` is a digit, mark the
+ * nearest unmarked non-digit index to its left.
+ *
+ * 2. Delete all digits and all marked characters.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @return {string}
+ */
+const clearDigits = (s) => {};
+
+export { clearDigits };"
+`;

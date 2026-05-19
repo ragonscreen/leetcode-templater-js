@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0014_longest-common-prefix test template: 0014_longest-common-prefix 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { longestCommonPrefix } from '../../src/0001-0100/0014_longest-common-prefix.js';
+
+const testcases = [
+    { strs: ["flower","flow","flight"], expected: "fl" },
+    { strs: ["dog","racecar","car"], expected: "" },
+];
+
+describe('longestCommonPrefix', () => {
+    test.each(structuredClone(testcases))('longestCommonPrefix($strs) -> $expected', ({ strs, expected }) => {
+        expect(longestCommonPrefix(strs)).toStrictEqual(expected);
+    });
+});"
+`;

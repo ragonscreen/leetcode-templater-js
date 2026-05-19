@@ -1,0 +1,38 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2870_minimum-number-of-operations-to-make-array-empty solution template: 2870_minimum-number-of-operations-to-make-array-empty 1`] = `
+"/**
+ * 2870. Minimum Number of Operations to Make Array Empty
+ *
+ * Link: https://leetcode.com/problems/minimum-number-of-operations-to-make-array-empty/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Greedy (topic_17)
+ * - Counting (topic_61062)
+ * - Senior (position_senior)
+ * - Biweekly Contest 114 (contest_biweekly-contest-114)
+ *
+ * Stats:
+ * - Total Accepted: 199,318
+ * - Total Submissions: 320,877
+ * - Acceptance Rate: 62.1%
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number}
+ */
+const minOperations = (nums) => {};
+
+export { minOperations };"
+`;

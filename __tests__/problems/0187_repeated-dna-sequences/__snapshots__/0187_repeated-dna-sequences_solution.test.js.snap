@@ -1,0 +1,38 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0187_repeated-dna-sequences solution template: 0187_repeated-dna-sequences 1`] = `
+"/**
+ * 0187. Repeated DNA Sequences
+ *
+ * Link: https://leetcode.com/problems/repeated-dna-sequences/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Hash Table (topic_6)
+ * - String (topic_10)
+ * - Bit Manipulation (topic_19)
+ * - Sliding Window (topic_55821)
+ * - Rolling Hash (topic_56598)
+ * - Hash Function (topic_61065)
+ *
+ * Stats:
+ * - Total Accepted: 534,432
+ * - Total Submissions: 1,002,524
+ * - Acceptance Rate: 53.3%
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @return {string[]}
+ */
+const findRepeatedDnaSequences = (s) => {};
+
+export { findRepeatedDnaSequences };"
+`;

@@ -1,0 +1,39 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0060_permutation-sequence solution template: 0060_permutation-sequence 1`] = `
+"/**
+ * 0060. Permutation Sequence
+ *
+ * Link: https://leetcode.com/problems/permutation-sequence/
+ * Category: Algorithms
+ * Difficulty: Hard
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Math (topic_8)
+ * - Recursion (topic_31)
+ *
+ * Stats:
+ * - Total Accepted: 581,552
+ * - Total Submissions: 1,095,821
+ * - Acceptance Rate: 53.1%
+ *
+ * Similar Problems:
+ * - next-permutation (Medium)
+ * - permutations (Medium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number} n
+ * @param {number} k
+ * @return {string}
+ */
+const getPermutation = (n, k) => {};
+
+export { getPermutation };"
+`;

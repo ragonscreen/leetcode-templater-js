@@ -1,0 +1,44 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1299_replace-elements-with-greatest-element-on-right-side solution template: 1299_replace-elements-with-greatest-element-on-right-side 1`] = `
+"/**
+ * 1299. Replace Elements with Greatest Element on Right Side
+ *
+ * Link: https://leetcode.com/problems/replace-elements-with-greatest-element-on-right-side/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Mid Level (position_mid-level)
+ * - Biweekly Contest 16 (contest_biweekly-contest-16)
+ *
+ * Stats:
+ * - Total Accepted: 545,408
+ * - Total Submissions: 755,694
+ * - Acceptance Rate: 72.2%
+ *
+ * Similar Problems:
+ * - two-furthest-houses-with-different-colors (Easy)
+ * - next-greater-element-iv (Hard)
+ *
+ * Hints:
+ * 1. Loop through the array starting from the end.
+ *
+ * 2. Keep the maximum value seen so far.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} arr
+ * @return {number[]}
+ */
+const replaceElements = (arr) => {};
+
+export { replaceElements };"
+`;

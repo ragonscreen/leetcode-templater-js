@@ -1,0 +1,92 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0622_design-circular-queue solution template: 0622_design-circular-queue 1`] = `
+"/**
+ * 0622. Design Circular Queue
+ *
+ * Link: https://leetcode.com/problems/design-circular-queue/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Linked List (topic_7)
+ * - Design (topic_25)
+ * - Queue (topic_34)
+ *
+ * Stats:
+ * - Total Accepted: 482,002
+ * - Total Submissions: 881,711
+ * - Acceptance Rate: 54.7%
+ *
+ * Similar Problems:
+ * - design-circular-deque (Medium)
+ * - design-front-middle-back-queue (Medium)
+ */
+
+/**
+ * Approach:
+ */
+class MyCircularQueue {
+    /**
+     * Time Complexity: O()
+     * Space Complexity: O()
+     *
+     * @param {number} k
+     */
+    constructor(k) {}
+
+    /**
+     * Time Complexity: O()
+     * Space Complexity: O()
+     *
+     * @param {number} value
+     * @return {boolean}
+     */
+    enQueue(value) {}
+
+    /**
+     * Time Complexity: O()
+     * Space Complexity: O()
+     *
+     * @return {boolean}
+     */
+    deQueue() {}
+
+    /**
+     * Time Complexity: O()
+     * Space Complexity: O()
+     *
+     * @return {number}
+     */
+    Front() {}
+
+    /**
+     * Time Complexity: O()
+     * Space Complexity: O()
+     *
+     * @return {number}
+     */
+    Rear() {}
+
+    /**
+     * Time Complexity: O()
+     * Space Complexity: O()
+     *
+     * @return {boolean}
+     */
+    isEmpty() {}
+
+    /**
+     * Time Complexity: O()
+     * Space Complexity: O()
+     *
+     * @return {boolean}
+     */
+    isFull() {}
+}
+
+export { MyCircularQueue };"
+`;

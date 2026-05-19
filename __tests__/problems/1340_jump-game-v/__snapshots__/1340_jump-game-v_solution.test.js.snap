@@ -1,0 +1,48 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1340_jump-game-v solution template: 1340_jump-game-v 1`] = `
+"/**
+ * 1340. Jump Game V
+ *
+ * Link: https://leetcode.com/problems/jump-game-v/
+ * Category: Algorithms
+ * Difficulty: Hard
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Dynamic Programming (topic_13)
+ * - Sorting (topic_61049)
+ * - Senior Staff (position_senior-staff)
+ * - Weekly Contest 174 (contest_weekly-contest-174)
+ *
+ * Stats:
+ * - Total Accepted: 43,539
+ * - Total Submissions: 66,879
+ * - Acceptance Rate: 65.1%
+ *
+ * Similar Problems:
+ * - jump-game-vii (Medium)
+ * - jump-game-viii (Medium) (Premium)
+ *
+ * Hints:
+ * 1. Use dynamic programming. dp[i] is max jumps you can do starting from
+ * index i. Answer is max(dp[i]).
+ *
+ * 2. dp[i] = 1 + max (dp[j]) where j is all indices you can reach from i.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} arr
+ * @param {number} d
+ * @return {number}
+ */
+const maxJumps = (arr, d) => {};
+
+export { maxJumps };"
+`;

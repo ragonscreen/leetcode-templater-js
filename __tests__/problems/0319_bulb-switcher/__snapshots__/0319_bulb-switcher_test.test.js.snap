@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0319_bulb-switcher test template: 0319_bulb-switcher 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { bulbSwitch } from '../../src/0301-0400/0319_bulb-switcher.js';
+
+const testcases = [
+    { n: 3, expected: 1 },
+    { n: 0, expected: 0 },
+    { n: 1, expected: 1 },
+];
+
+describe('bulbSwitch', () => {
+    test.each(structuredClone(testcases))('bulbSwitch($n) -> $expected', ({ n, expected }) => {
+        expect(bulbSwitch(n)).toStrictEqual(expected);
+    });
+});"
+`;

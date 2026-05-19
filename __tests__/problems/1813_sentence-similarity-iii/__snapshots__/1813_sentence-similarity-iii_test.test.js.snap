@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1813_sentence-similarity-iii test template: 1813_sentence-similarity-iii 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { areSentencesSimilar } from '../../src/1801-1900/1813_sentence-similarity-iii.js';
+
+const testcases = [
+    { sentence1: "My name is Haley", sentence2: "My Haley", expected: true },
+    { sentence1: "of", sentence2: "A lot of words", expected: false },
+    { sentence1: "Eating right now", sentence2: "Eating", expected: true },
+];
+
+describe('areSentencesSimilar', () => {
+    test.each(structuredClone(testcases))('areSentencesSimilar($sentence1, $sentence2) -> $expected', ({ sentence1, sentence2, expected }) => {
+        expect(areSentencesSimilar(sentence1, sentence2)).toStrictEqual(expected);
+    });
+});"
+`;

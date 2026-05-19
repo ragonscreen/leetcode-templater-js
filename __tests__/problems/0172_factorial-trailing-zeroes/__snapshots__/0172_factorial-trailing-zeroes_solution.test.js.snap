@@ -1,0 +1,39 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0172_factorial-trailing-zeroes solution template: 0172_factorial-trailing-zeroes 1`] = `
+"/**
+ * 0172. Factorial Trailing Zeroes
+ *
+ * Link: https://leetcode.com/problems/factorial-trailing-zeroes/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Math (topic_8)
+ *
+ * Stats:
+ * - Total Accepted: 672,286
+ * - Total Submissions: 1,439,413
+ * - Acceptance Rate: 46.7%
+ *
+ * Similar Problems:
+ * - maximum-trailing-zeros-in-a-cornered-path (Medium)
+ * - abbreviating-the-product-of-a-range (Hard)
+ * - number-of-digit-one (Hard)
+ * - preimage-size-of-factorial-zeroes-function (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number} n
+ * @return {number}
+ */
+const trailingZeroes = (n) => {};
+
+export { trailingZeroes };"
+`;

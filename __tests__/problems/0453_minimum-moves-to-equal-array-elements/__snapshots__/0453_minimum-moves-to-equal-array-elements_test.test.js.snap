@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0453_minimum-moves-to-equal-array-elements test template: 0453_minimum-moves-to-equal-array-elements 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { minMoves } from '../../src/0401-0500/0453_minimum-moves-to-equal-array-elements.js';
+
+const testcases = [
+    { nums: [1,2,3], expected: 3 },
+    { nums: [1,1,1], expected: 0 },
+];
+
+describe('minMoves', () => {
+    test.each(structuredClone(testcases))('minMoves($nums) -> $expected', ({ nums, expected }) => {
+        expect(minMoves(nums)).toStrictEqual(expected);
+    });
+});"
+`;

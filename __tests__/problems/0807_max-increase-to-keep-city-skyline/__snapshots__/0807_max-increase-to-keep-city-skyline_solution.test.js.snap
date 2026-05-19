@@ -1,0 +1,37 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0807_max-increase-to-keep-city-skyline solution template: 0807_max-increase-to-keep-city-skyline 1`] = `
+"/**
+ * 0807. Max Increase to Keep City Skyline
+ *
+ * Link: https://leetcode.com/problems/max-increase-to-keep-city-skyline/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Greedy (topic_17)
+ * - Matrix (topic_61053)
+ * - Staff (position_staff)
+ * - Weekly Contest 77 (contest_weekly-contest-77)
+ *
+ * Stats:
+ * - Total Accepted: 189,583
+ * - Total Submissions: 219,382
+ * - Acceptance Rate: 86.4%
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[][]} grid
+ * @return {number}
+ */
+const maxIncreaseKeepingSkyline = (grid) => {};
+
+export { maxIncreaseKeepingSkyline };"
+`;

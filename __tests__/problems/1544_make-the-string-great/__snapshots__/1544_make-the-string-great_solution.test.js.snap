@@ -1,0 +1,42 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1544_make-the-string-great solution template: 1544_make-the-string-great 1`] = `
+"/**
+ * 1544. Make The String Great
+ *
+ * Link: https://leetcode.com/problems/make-the-string-great/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - String (topic_10)
+ * - Stack (topic_15)
+ * - Mid Level (position_mid-level)
+ * - Weekly Contest 201 (contest_weekly-contest-201)
+ *
+ * Stats:
+ * - Total Accepted: 411,651
+ * - Total Submissions: 600,545
+ * - Acceptance Rate: 68.5%
+ *
+ * Hints:
+ * 1. The order you choose 2 characters to remove doesn't matter.
+ *
+ * 2. Keep applying the mentioned step to s till the length of the string is
+ * not changed.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @return {string}
+ */
+const makeGood = (s) => {};
+
+export { makeGood };"
+`;

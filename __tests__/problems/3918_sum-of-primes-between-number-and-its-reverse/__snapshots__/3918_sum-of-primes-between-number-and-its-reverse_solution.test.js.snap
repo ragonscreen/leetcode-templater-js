@@ -1,0 +1,37 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3918_sum-of-primes-between-number-and-its-reverse solution template: 3918_sum-of-primes-between-number-and-its-reverse 1`] = `
+"/**
+ * 3918. Sum of Primes Between Number and Its Reverse
+ *
+ * Link: https://leetcode.com/problems/sum-of-primes-between-number-and-its-reverse/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Senior (position_senior)
+ * - Weekly Contest 500 (contest_weekly-contest-500)
+ *
+ * Stats:
+ * - Total Accepted: 35,482
+ * - Total Submissions: 46,841
+ * - Acceptance Rate: 75.7%
+ *
+ * Hints:
+ * 1. Simulate as described
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number} n
+ * @return {number}
+ */
+const sumOfPrimesInRange = (n) => {};
+
+export { sumOfPrimesInRange };"
+`;

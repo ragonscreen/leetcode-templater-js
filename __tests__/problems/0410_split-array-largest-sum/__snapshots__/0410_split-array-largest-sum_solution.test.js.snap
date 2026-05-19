@@ -1,0 +1,50 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0410_split-array-largest-sum solution template: 0410_split-array-largest-sum 1`] = `
+"/**
+ * 0410. Split Array Largest Sum
+ *
+ * Link: https://leetcode.com/problems/split-array-largest-sum/
+ * Category: Algorithms
+ * Difficulty: Hard
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Binary Search (topic_11)
+ * - Dynamic Programming (topic_13)
+ * - Greedy (topic_17)
+ * - Prefix Sum (topic_61068)
+ * - Junior (position_junior)
+ *
+ * Stats:
+ * - Total Accepted: 640,338
+ * - Total Submissions: 1,059,877
+ * - Acceptance Rate: 60.4%
+ *
+ * Similar Problems:
+ * - distribute-elements-into-two-arrays-i (Easy)
+ * - capacity-to-ship-packages-within-d-days (Medium)
+ * - fair-distribution-of-cookies (Medium)
+ * - number-of-ways-to-split-array (Medium)
+ * - subsequence-of-size-k-with-the-largest-even-sum (Medium) (Premium)
+ * - distribute-elements-into-two-arrays-ii (Hard)
+ * - divide-chocolate (Hard) (Premium)
+ * - maximum-total-beauty-of-the-gardens (Hard)
+ * - minimum-cost-to-split-an-array (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number} k
+ * @return {number}
+ */
+const splitArray = (nums, k) => {};
+
+export { splitArray };"
+`;

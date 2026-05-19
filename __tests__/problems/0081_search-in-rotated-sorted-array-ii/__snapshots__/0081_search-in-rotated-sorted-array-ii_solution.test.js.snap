@@ -1,0 +1,38 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0081_search-in-rotated-sorted-array-ii solution template: 0081_search-in-rotated-sorted-array-ii 1`] = `
+"/**
+ * 0081. Search in Rotated Sorted Array II
+ *
+ * Link: https://leetcode.com/problems/search-in-rotated-sorted-array-ii/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Binary Search (topic_11)
+ *
+ * Stats:
+ * - Total Accepted: 1,246,864
+ * - Total Submissions: 3,113,958
+ * - Acceptance Rate: 40.0%
+ *
+ * Similar Problems:
+ * - search-in-rotated-sorted-array (Medium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {boolean}
+ */
+const search = (nums, target) => {};
+
+export { search };"
+`;

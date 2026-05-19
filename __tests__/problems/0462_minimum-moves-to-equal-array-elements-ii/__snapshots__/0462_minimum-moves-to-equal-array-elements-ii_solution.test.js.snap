@@ -1,0 +1,47 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0462_minimum-moves-to-equal-array-elements-ii solution template: 0462_minimum-moves-to-equal-array-elements-ii 1`] = `
+"/**
+ * 0462. Minimum Moves to Equal Array Elements II
+ *
+ * Link: https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Math (topic_8)
+ * - Sorting (topic_61049)
+ * - Principal (position_principal)
+ *
+ * Stats:
+ * - Total Accepted: 228,444
+ * - Total Submissions: 369,047
+ * - Acceptance Rate: 61.9%
+ *
+ * Similar Problems:
+ * - minimum-cost-to-make-array-equalindromic (Medium)
+ * - minimum-moves-to-equal-array-elements (Medium)
+ * - minimum-operations-to-make-a-uni-value-grid (Medium)
+ * - minimum-operations-to-make-all-array-elements-equal (Medium)
+ * - minimum-operations-to-make-subarray-elements-equal (Medium) (Premium)
+ * - removing-minimum-number-of-magic-beans (Medium)
+ * - best-meeting-point (Hard) (Premium)
+ * - minimum-cost-to-make-array-equal (Hard)
+ * - minimum-operations-to-make-elements-within-k-subarrays-equal (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number}
+ */
+const minMoves2 = (nums) => {};
+
+export { minMoves2 };"
+`;

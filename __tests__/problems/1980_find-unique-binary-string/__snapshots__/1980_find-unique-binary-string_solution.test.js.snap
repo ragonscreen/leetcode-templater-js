@@ -1,0 +1,48 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1980_find-unique-binary-string solution template: 1980_find-unique-binary-string 1`] = `
+"/**
+ * 1980. Find Unique Binary String
+ *
+ * Link: https://leetcode.com/problems/find-unique-binary-string/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - String (topic_10)
+ * - Backtracking (topic_14)
+ * - Senior (position_senior)
+ * - Weekly Contest 255 (contest_weekly-contest-255)
+ *
+ * Stats:
+ * - Total Accepted: 414,263
+ * - Total Submissions: 509,994
+ * - Acceptance Rate: 81.2%
+ *
+ * Similar Problems:
+ * - find-all-numbers-disappeared-in-an-array (Easy)
+ * - missing-number (Easy)
+ * - random-pick-with-blacklist (Hard)
+ *
+ * Hints:
+ * 1. We can convert the given strings into base 10 integers.
+ *
+ * 2. Can we use recursion to generate all possible strings?
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string[]} nums
+ * @return {string}
+ */
+const findDifferentBinaryString = (nums) => {};
+
+export { findDifferentBinaryString };"
+`;

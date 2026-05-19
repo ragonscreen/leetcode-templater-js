@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2870_minimum-number-of-operations-to-make-array-empty test template: 2870_minimum-number-of-operations-to-make-array-empty 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { minOperations } from '../../src/2801-2900/2870_minimum-number-of-operations-to-make-array-empty.js';
+
+const testcases = [
+    { nums: [2,3,3,2,2,4,2,3,4], expected: 4 },
+    { nums: [2,1,2,2,3,3], expected: -1 },
+];
+
+describe('minOperations', () => {
+    test.each(structuredClone(testcases))('minOperations($nums) -> $expected', ({ nums, expected }) => {
+        expect(minOperations(nums)).toStrictEqual(expected);
+    });
+});"
+`;

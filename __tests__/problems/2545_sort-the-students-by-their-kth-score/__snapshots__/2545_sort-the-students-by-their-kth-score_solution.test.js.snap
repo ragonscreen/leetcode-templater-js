@@ -1,0 +1,51 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2545_sort-the-students-by-their-kth-score solution template: 2545_sort-the-students-by-their-kth-score 1`] = `
+"/**
+ * 2545. Sort the Students by Their Kth Score
+ *
+ * Link: https://leetcode.com/problems/sort-the-students-by-their-kth-score/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Sorting (topic_61049)
+ * - Matrix (topic_61053)
+ * - Senior (position_senior)
+ * - Weekly Contest 329 (contest_weekly-contest-329)
+ *
+ * Stats:
+ * - Total Accepted: 90,832
+ * - Total Submissions: 105,626
+ * - Acceptance Rate: 86.0%
+ *
+ * Similar Problems:
+ * - sort-the-people (Easy)
+ * - custom-sort-string (Medium)
+ * - sort-threats-by-severity-and-exploitability (Medium) (Premium)
+ * - erect-the-fence (Hard)
+ *
+ * Hints:
+ * 1. Find the row with the highest score in the kth exam and swap it with the
+ * first row.
+ *
+ * 2. After fixing the first row, perform the same operation for the rest of
+ * the rows, and the matrix's rows will get sorted one by one.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[][]} score
+ * @param {number} k
+ * @return {number[][]}
+ */
+const sortTheStudents = (score, k) => {};
+
+export { sortTheStudents };"
+`;

@@ -1,0 +1,48 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3306_count-of-substrings-containing-every-vowel-and-k-consonants-ii solution template: 3306_count-of-substrings-containing-every-vowel-and-k-consonants-ii 1`] = `
+"/**
+ * 3306. Count of Substrings Containing Every Vowel and K Consonants II
+ *
+ * Link: https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Hash Table (topic_6)
+ * - String (topic_10)
+ * - Sliding Window (topic_55821)
+ * - Staff (position_staff)
+ * - Weekly Contest 417 (contest_weekly-contest-417)
+ *
+ * Stats:
+ * - Total Accepted: 114,881
+ * - Total Submissions: 282,682
+ * - Acceptance Rate: 40.6%
+ *
+ * Similar Problems:
+ * - count-vowel-substrings-of-a-string (Easy)
+ * - longest-substring-of-all-vowels-in-order (Medium)
+ *
+ * Hints:
+ * 1. We can use sliding window and binary search.
+ *
+ * 2. For each index \`r\`, find the maximum \`l\` such that both conditions are
+ * satisfied using binary search.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} word
+ * @param {number} k
+ * @return {number}
+ */
+const countOfSubstrings = (word, k) => {};
+
+export { countOfSubstrings };"
+`;

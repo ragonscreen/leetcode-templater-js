@@ -1,0 +1,41 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3653_xor-after-range-multiplication-queries-i solution template: 3653_xor-after-range-multiplication-queries-i 1`] = `
+"/**
+ * 3653. XOR After Range Multiplication Queries I
+ *
+ * Link: https://leetcode.com/problems/xor-after-range-multiplication-queries-i/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Divide and Conquer (topic_12)
+ * - Simulation (topic_61055)
+ * - Senior (position_senior)
+ * - Weekly Contest 463 (contest_weekly-contest-463)
+ *
+ * Stats:
+ * - Total Accepted: 134,670
+ * - Total Submissions: 183,663
+ * - Acceptance Rate: 73.3%
+ *
+ * Hints:
+ * 1. Use bruteforce
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number[][]} queries
+ * @return {number}
+ */
+const xorAfterQueries = (nums, queries) => {};
+
+export { xorAfterQueries };"
+`;

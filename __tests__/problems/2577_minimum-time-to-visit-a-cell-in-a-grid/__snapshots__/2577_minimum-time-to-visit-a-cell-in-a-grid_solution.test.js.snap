@@ -1,0 +1,50 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2577_minimum-time-to-visit-a-cell-in-a-grid solution template: 2577_minimum-time-to-visit-a-cell-in-a-grid 1`] = `
+"/**
+ * 2577. Minimum Time to Visit a Cell In a Grid
+ *
+ * Link: https://leetcode.com/problems/minimum-time-to-visit-a-cell-in-a-grid/
+ * Category: Algorithms
+ * Difficulty: Hard
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Breadth-First Search (topic_22)
+ * - Graph Theory (topic_24)
+ * - Heap (Priority Queue) (topic_61050)
+ * - Matrix (topic_61053)
+ * - Shortest Path (topic_61076)
+ * - Senior Staff (position_senior-staff)
+ * - Weekly Contest 334 (contest_weekly-contest-334)
+ *
+ * Stats:
+ * - Total Accepted: 88,894
+ * - Total Submissions: 157,977
+ * - Acceptance Rate: 56.3%
+ *
+ * Similar Problems:
+ * - find-minimum-time-to-reach-last-room-i (Medium)
+ * - find-minimum-time-to-reach-last-room-ii (Medium)
+ *
+ * Hints:
+ * 1. Try using some algorithm that can find the shortest paths on a graph.
+ *
+ * 2. Consider the case where you have to go back and forth between two cells
+ * of the matrix to unlock some other cells.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[][]} grid
+ * @return {number}
+ */
+const minimumTime = (grid) => {};
+
+export { minimumTime };"
+`;

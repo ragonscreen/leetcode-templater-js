@@ -1,0 +1,36 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0396_rotate-function solution template: 0396_rotate-function 1`] = `
+"/**
+ * 0396. Rotate Function
+ *
+ * Link: https://leetcode.com/problems/rotate-function/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Math (topic_8)
+ * - Dynamic Programming (topic_13)
+ * - Junior (position_junior)
+ *
+ * Stats:
+ * - Total Accepted: 199,179
+ * - Total Submissions: 368,346
+ * - Acceptance Rate: 54.1%
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number}
+ */
+const maxRotateFunction = (nums) => {};
+
+export { maxRotateFunction };"
+`;

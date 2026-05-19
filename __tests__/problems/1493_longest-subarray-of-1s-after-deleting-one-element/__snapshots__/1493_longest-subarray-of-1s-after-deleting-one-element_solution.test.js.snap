@@ -1,0 +1,43 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1493_longest-subarray-of-1s-after-deleting-one-element solution template: 1493_longest-subarray-of-1s-after-deleting-one-element 1`] = `
+"/**
+ * 1493. Longest Subarray of 1's After Deleting One Element
+ *
+ * Link: https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Dynamic Programming (topic_13)
+ * - Sliding Window (topic_55821)
+ * - Staff (position_staff)
+ * - Biweekly Contest 29 (contest_biweekly-contest-29)
+ *
+ * Stats:
+ * - Total Accepted: 648,066
+ * - Total Submissions: 910,425
+ * - Acceptance Rate: 71.2%
+ *
+ * Similar Problems:
+ * - max-consecutive-ones-iii (Medium)
+ *
+ * Hints:
+ * 1. Maintain a sliding window where there is at most one zero in it.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number}
+ */
+const longestSubarray = (nums) => {};
+
+export { longestSubarray };"
+`;

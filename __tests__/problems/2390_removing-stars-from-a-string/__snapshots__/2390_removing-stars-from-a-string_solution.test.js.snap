@@ -1,0 +1,47 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2390_removing-stars-from-a-string solution template: 2390_removing-stars-from-a-string 1`] = `
+"/**
+ * 2390. Removing Stars From a String
+ *
+ * Link: https://leetcode.com/problems/removing-stars-from-a-string/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - String (topic_10)
+ * - Stack (topic_15)
+ * - Simulation (topic_61055)
+ * - Senior (position_senior)
+ * - Weekly Contest 308 (contest_weekly-contest-308)
+ *
+ * Stats:
+ * - Total Accepted: 631,664
+ * - Total Submissions: 796,835
+ * - Acceptance Rate: 79.3%
+ *
+ * Similar Problems:
+ * - backspace-string-compare (Easy)
+ * - remove-all-adjacent-duplicates-in-string (Easy)
+ *
+ * Hints:
+ * 1. What data structure could we use to efficiently perform these removals?
+ *
+ * 2. Use a stack to store the characters. Pop one character off the stack at
+ * each star. Otherwise, we push the character onto the stack.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @return {string}
+ */
+const removeStars = (s) => {};
+
+export { removeStars };"
+`;

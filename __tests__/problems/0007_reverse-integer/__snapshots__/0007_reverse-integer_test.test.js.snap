@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0007_reverse-integer test template: 0007_reverse-integer 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { reverse } from '../../src/0001-0100/0007_reverse-integer.js';
+
+const testcases = [
+    { x: 123, expected: 321 },
+    { x: -123, expected: -321 },
+    { x: 120, expected: 21 },
+];
+
+describe('reverse', () => {
+    test.each(structuredClone(testcases))('reverse($x) -> $expected', ({ x, expected }) => {
+        expect(reverse(x)).toStrictEqual(expected);
+    });
+});"
+`;

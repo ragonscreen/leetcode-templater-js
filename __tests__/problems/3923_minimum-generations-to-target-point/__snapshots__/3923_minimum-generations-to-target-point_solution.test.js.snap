@@ -1,0 +1,35 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3923_minimum-generations-to-target-point solution template: 3923_minimum-generations-to-target-point 1`] = `
+"/**
+ * 3923. Minimum Generations to Target Point
+ *
+ * Link: https://leetcode.com/problems/minimum-generations-to-target-point/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Staff (position_staff)
+ * - Biweekly Contest 182 (contest_biweekly-contest-182)
+ *
+ * Stats:
+ * - Total Accepted: 10,447
+ * - Total Submissions: 23,991
+ * - Acceptance Rate: 43.5%
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[][]} points
+ * @param {number[]} target
+ * @return {number}
+ */
+const minGenerations = (points, target) => {};
+
+export { minGenerations };"
+`;

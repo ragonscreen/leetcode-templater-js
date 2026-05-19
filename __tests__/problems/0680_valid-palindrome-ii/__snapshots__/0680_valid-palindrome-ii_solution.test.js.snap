@@ -1,0 +1,41 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0680_valid-palindrome-ii solution template: 0680_valid-palindrome-ii 1`] = `
+"/**
+ * 0680. Valid Palindrome II
+ *
+ * Link: https://leetcode.com/problems/valid-palindrome-ii/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Two Pointers (topic_9)
+ * - String (topic_10)
+ * - Greedy (topic_17)
+ * - Mid Level (position_mid-level)
+ *
+ * Stats:
+ * - Total Accepted: 1,149,470
+ * - Total Submissions: 2,597,749
+ * - Acceptance Rate: 44.2%
+ *
+ * Similar Problems:
+ * - valid-palindrome (Easy)
+ * - valid-palindrome-iv (Medium) (Premium)
+ * - valid-palindrome-iii (Hard) (Premium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @return {boolean}
+ */
+const validPalindrome = (s) => {};
+
+export { validPalindrome };"
+`;

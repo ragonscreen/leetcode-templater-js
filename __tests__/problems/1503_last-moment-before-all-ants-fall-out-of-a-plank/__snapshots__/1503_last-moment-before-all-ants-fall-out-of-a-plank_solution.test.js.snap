@@ -1,0 +1,50 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1503_last-moment-before-all-ants-fall-out-of-a-plank solution template: 1503_last-moment-before-all-ants-fall-out-of-a-plank 1`] = `
+"/**
+ * 1503. Last Moment Before All Ants Fall Out of a Plank
+ *
+ * Link: https://leetcode.com/problems/last-moment-before-all-ants-fall-out-of-a-plank/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Brainteaser (topic_32)
+ * - Simulation (topic_61055)
+ * - Senior (position_senior)
+ * - Weekly Contest 196 (contest_weekly-contest-196)
+ *
+ * Stats:
+ * - Total Accepted: 99,638
+ * - Total Submissions: 146,158
+ * - Acceptance Rate: 68.2%
+ *
+ * Similar Problems:
+ * - count-collisions-on-a-road (Medium)
+ * - movement-of-robots (Medium)
+ *
+ * Hints:
+ * 1. The ants change their way when they meet is equivalent to continue moving
+ * without changing their direction.
+ *
+ * 2. Answer is the max distance for one ant to reach the end of the plank in
+ * the facing direction.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number} n
+ * @param {number[]} left
+ * @param {number[]} right
+ * @return {number}
+ */
+const getLastMoment = (n, left, right) => {};
+
+export { getLastMoment };"
+`;

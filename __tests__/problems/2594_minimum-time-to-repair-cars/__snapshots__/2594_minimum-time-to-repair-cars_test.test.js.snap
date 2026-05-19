@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2594_minimum-time-to-repair-cars test template: 2594_minimum-time-to-repair-cars 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { repairCars } from '../../src/2501-2600/2594_minimum-time-to-repair-cars.js';
+
+const testcases = [
+    { ranks: [4,2,3,1], cars: 10, expected: 16 },
+    { ranks: [5,1,8], cars: 6, expected: 16 },
+];
+
+describe('repairCars', () => {
+    test.each(structuredClone(testcases))('repairCars($ranks, $cars) -> $expected', ({ ranks, cars, expected }) => {
+        expect(repairCars(ranks, cars)).toStrictEqual(expected);
+    });
+});"
+`;

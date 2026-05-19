@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3208_alternating-groups-ii test template: 3208_alternating-groups-ii 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { numberOfAlternatingGroups } from '../../src/3201-3300/3208_alternating-groups-ii.js';
+
+const testcases = [
+    { colors: [0,1,0,1,0], k: 3, expected: 3 },
+    { colors: [0,1,0,0,1,0,1], k: 6, expected: 2 },
+    { colors: [1,1,0,1], k: 4, expected: 0 },
+];
+
+describe('numberOfAlternatingGroups', () => {
+    test.each(structuredClone(testcases))('numberOfAlternatingGroups($colors, $k) -> $expected', ({ colors, k, expected }) => {
+        expect(numberOfAlternatingGroups(colors, k)).toStrictEqual(expected);
+    });
+});"
+`;

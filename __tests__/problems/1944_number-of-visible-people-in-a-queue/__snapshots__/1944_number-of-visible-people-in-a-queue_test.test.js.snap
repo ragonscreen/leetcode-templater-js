@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1944_number-of-visible-people-in-a-queue test template: 1944_number-of-visible-people-in-a-queue 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { canSeePersonsCount } from '../../src/1901-2000/1944_number-of-visible-people-in-a-queue.js';
+
+const testcases = [
+    { heights: [10,6,8,5,11,9], expected: [3,1,2,1,1,0] },
+    { heights: [5,1,2,3,10], expected: [4,1,1,1,0] },
+];
+
+describe('canSeePersonsCount', () => {
+    test.each(structuredClone(testcases))('canSeePersonsCount($heights) -> $expected', ({ heights, expected }) => {
+        expect(canSeePersonsCount(heights)).toStrictEqual(expected);
+    });
+});"
+`;

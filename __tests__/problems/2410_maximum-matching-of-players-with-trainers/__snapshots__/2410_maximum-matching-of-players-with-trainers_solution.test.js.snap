@@ -1,0 +1,54 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2410_maximum-matching-of-players-with-trainers solution template: 2410_maximum-matching-of-players-with-trainers 1`] = `
+"/**
+ * 2410. Maximum Matching of Players With Trainers
+ *
+ * Link: https://leetcode.com/problems/maximum-matching-of-players-with-trainers/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Two Pointers (topic_9)
+ * - Greedy (topic_17)
+ * - Sorting (topic_61049)
+ * - Senior (position_senior)
+ * - Biweekly Contest 87 (contest_biweekly-contest-87)
+ *
+ * Stats:
+ * - Total Accepted: 184,960
+ * - Total Submissions: 245,665
+ * - Acceptance Rate: 75.3%
+ *
+ * Similar Problems:
+ * - long-pressed-name (Easy)
+ * - interval-list-intersections (Medium)
+ * - largest-merge-of-two-strings (Medium)
+ * - maximize-greatness-of-an-array (Medium)
+ * - most-profit-assigning-work (Medium)
+ * - successful-pairs-of-spells-and-potions (Medium)
+ * - the-latest-time-to-catch-a-bus (Medium)
+ * - maximum-number-of-tasks-you-can-assign (Hard)
+ *
+ * Hints:
+ * 1. Sort both the arrays.
+ *
+ * 2. Construct the matching greedily.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} players
+ * @param {number[]} trainers
+ * @return {number}
+ */
+const matchPlayersAndTrainers = (players, trainers) => {};
+
+export { matchPlayersAndTrainers };"
+`;

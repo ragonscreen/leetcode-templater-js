@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0560_subarray-sum-equals-k test template: 0560_subarray-sum-equals-k 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { subarraySum } from '../../src/0501-0600/0560_subarray-sum-equals-k.js';
+
+const testcases = [
+    { nums: [1,1,1], k: 2, expected: 2 },
+    { nums: [1,2,3], k: 3, expected: 2 },
+];
+
+describe('subarraySum', () => {
+    test.each(structuredClone(testcases))('subarraySum($nums, $k) -> $expected', ({ nums, k, expected }) => {
+        expect(subarraySum(nums, k)).toStrictEqual(expected);
+    });
+});"
+`;

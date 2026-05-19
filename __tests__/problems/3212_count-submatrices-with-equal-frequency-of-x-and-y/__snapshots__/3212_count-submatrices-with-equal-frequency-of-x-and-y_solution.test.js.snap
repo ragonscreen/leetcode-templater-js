@@ -1,0 +1,49 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`3212_count-submatrices-with-equal-frequency-of-x-and-y solution template: 3212_count-submatrices-with-equal-frequency-of-x-and-y 1`] = `
+"/**
+ * 3212. Count Submatrices With Equal Frequency of X and Y
+ *
+ * Link: https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Matrix (topic_61053)
+ * - Prefix Sum (topic_61068)
+ * - Staff (position_staff)
+ * - Weekly Contest 405 (contest_weekly-contest-405)
+ *
+ * Stats:
+ * - Total Accepted: 107,309
+ * - Total Submissions: 154,136
+ * - Acceptance Rate: 69.6%
+ *
+ * Similar Problems:
+ * - count-submatrices-with-all-ones (Medium)
+ * - maximum-equal-frequency (Hard)
+ *
+ * Hints:
+ * 1. Replace \`’X’\` with 1, \`’Y’\` with -1 and \`’.’\` with 0.
+ *
+ * 2. You need to find how many submatrices \`grid[0..x][0..y]\` have a sum of 0
+ * and at least one \`’X’\`.
+ *
+ * 3. Use prefix sum to calculate submatrices sum.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {character[][]} grid
+ * @return {number}
+ */
+const numberOfSubmatrices = (grid) => {};
+
+export { numberOfSubmatrices };"
+`;

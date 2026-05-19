@@ -1,0 +1,46 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0268_missing-number solution template: 0268_missing-number 1`] = `
+"/**
+ * 0268. Missing Number
+ *
+ * Link: https://leetcode.com/problems/missing-number/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Math (topic_8)
+ * - Binary Search (topic_11)
+ * - Bit Manipulation (topic_19)
+ * - Sorting (topic_61049)
+ *
+ * Stats:
+ * - Total Accepted: 3,897,044
+ * - Total Submissions: 5,413,116
+ * - Acceptance Rate: 72.0%
+ *
+ * Similar Problems:
+ * - find-the-largest-almost-missing-integer (Easy)
+ * - single-number (Easy)
+ * - find-the-duplicate-number (Medium)
+ * - find-unique-binary-string (Medium)
+ * - couples-holding-hands (Hard)
+ * - first-missing-positive (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number}
+ */
+const missingNumber = (nums) => {};
+
+export { missingNumber };"
+`;

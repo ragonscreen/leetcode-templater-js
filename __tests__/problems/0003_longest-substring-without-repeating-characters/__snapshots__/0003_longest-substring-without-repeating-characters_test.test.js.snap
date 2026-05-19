@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0003_longest-substring-without-repeating-characters test template: 0003_longest-substring-without-repeating-characters 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { lengthOfLongestSubstring } from '../../src/0001-0100/0003_longest-substring-without-repeating-characters.js';
+
+const testcases = [
+    { s: "abcabcbb", expected: 3 },
+    { s: "bbbbb", expected: 1 },
+    { s: "pwwkew", expected: 3 },
+];
+
+describe('lengthOfLongestSubstring', () => {
+    test.each(structuredClone(testcases))('lengthOfLongestSubstring($s) -> $expected', ({ s, expected }) => {
+        expect(lengthOfLongestSubstring(s)).toStrictEqual(expected);
+    });
+});"
+`;

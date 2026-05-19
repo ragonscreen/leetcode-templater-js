@@ -1,0 +1,41 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0874_walking-robot-simulation solution template: 0874_walking-robot-simulation 1`] = `
+"/**
+ * 0874. Walking Robot Simulation
+ *
+ * Link: https://leetcode.com/problems/walking-robot-simulation/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Simulation (topic_61055)
+ * - Senior (position_senior)
+ * - Weekly Contest 94 (contest_weekly-contest-94)
+ *
+ * Stats:
+ * - Total Accepted: 256,151
+ * - Total Submissions: 396,423
+ * - Acceptance Rate: 64.6%
+ *
+ * Similar Problems:
+ * - walking-robot-simulation-ii (Medium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} commands
+ * @param {number[][]} obstacles
+ * @return {number}
+ */
+const robotSim = (commands, obstacles) => {};
+
+export { robotSim };"
+`;

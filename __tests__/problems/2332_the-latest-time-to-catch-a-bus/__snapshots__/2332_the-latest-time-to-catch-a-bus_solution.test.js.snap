@@ -1,0 +1,53 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2332_the-latest-time-to-catch-a-bus solution template: 2332_the-latest-time-to-catch-a-bus 1`] = `
+"/**
+ * 2332. The Latest Time to Catch a Bus
+ *
+ * Link: https://leetcode.com/problems/the-latest-time-to-catch-a-bus/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Two Pointers (topic_9)
+ * - Binary Search (topic_11)
+ * - Sorting (topic_61049)
+ * - Senior (position_senior)
+ * - Biweekly Contest 82 (contest_biweekly-contest-82)
+ *
+ * Stats:
+ * - Total Accepted: 36,108
+ * - Total Submissions: 120,401
+ * - Acceptance Rate: 30.0%
+ *
+ * Similar Problems:
+ * - maximum-matching-of-players-with-trainers (Medium)
+ * - minimum-speed-to-arrive-on-time (Medium)
+ * - rearranging-fruits (Hard)
+ * - time-taken-to-cross-the-door (Hard) (Premium)
+ * - time-to-cross-a-bridge (Hard)
+ *
+ * Hints:
+ * 1. Sort the buses and passengers arrays.
+ *
+ * 2. Use 2 pointers to traverse buses and passengers with a simulation of
+ * passengers getting on a particular bus.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} buses
+ * @param {number[]} passengers
+ * @param {number} capacity
+ * @return {number}
+ */
+const latestTimeCatchTheBus = (buses, passengers, capacity) => {};
+
+export { latestTimeCatchTheBus };"
+`;

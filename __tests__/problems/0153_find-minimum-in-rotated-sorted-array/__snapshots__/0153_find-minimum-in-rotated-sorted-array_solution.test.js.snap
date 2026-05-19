@@ -1,0 +1,51 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0153_find-minimum-in-rotated-sorted-array solution template: 0153_find-minimum-in-rotated-sorted-array 1`] = `
+"/**
+ * 0153. Find Minimum in Rotated Sorted Array
+ *
+ * Link: https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Binary Search (topic_11)
+ *
+ * Stats:
+ * - Total Accepted: 3,127,987
+ * - Total Submissions: 5,720,438
+ * - Acceptance Rate: 54.7%
+ *
+ * Similar Problems:
+ * - search-in-rotated-sorted-array (Medium)
+ * - find-minimum-in-rotated-sorted-array-ii (Hard)
+ *
+ * Hints:
+ * 1. Array was originally in ascending order. Now that the array is rotated,
+ * there would be a point in the array where there is a small deflection
+ * from the increasing sequence. eg. The array would be something like [4,
+ * 5, 6, 7, 0, 1, 2].
+ *
+ * 2. You can divide the search space into two and see which direction to
+ * go.Can you think of an algorithm which has O(logN) search complexity?
+ *
+ * 3. <ol><li>All the elements to the left of inflection point > first element
+ * of the array.</li><li>All the elements to the right of inflection point <
+ * first element of the array.</li><ol>
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number}
+ */
+const findMin = (nums) => {};
+
+export { findMin };"
+`;

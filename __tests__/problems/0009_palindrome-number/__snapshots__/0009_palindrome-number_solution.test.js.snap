@@ -1,0 +1,44 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0009_palindrome-number solution template: 0009_palindrome-number 1`] = `
+"/**
+ * 0009. Palindrome Number
+ *
+ * Link: https://leetcode.com/problems/palindrome-number/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Math (topic_8)
+ *
+ * Stats:
+ * - Total Accepted: 8,144,588
+ * - Total Submissions: 13,450,224
+ * - Acceptance Rate: 60.6%
+ *
+ * Similar Problems:
+ * - count-symmetric-integers (Easy)
+ * - palindrome-linked-list (Easy)
+ * - find-palindrome-with-fixed-length (Medium)
+ * - strictly-palindromic-number (Medium)
+ * - find-the-count-of-good-integers (Hard)
+ * - find-the-largest-palindrome-divisible-by-k (Hard)
+ *
+ * Hints:
+ * 1. Beware of overflow when you reverse the integer.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number} x
+ * @return {boolean}
+ */
+const isPalindrome = (x) => {};
+
+export { isPalindrome };"
+`;

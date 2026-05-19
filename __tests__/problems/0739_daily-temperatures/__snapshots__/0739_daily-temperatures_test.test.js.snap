@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0739_daily-temperatures test template: 0739_daily-temperatures 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { dailyTemperatures } from '../../src/0701-0800/0739_daily-temperatures.js';
+
+const testcases = [
+    { temperatures: [73,74,75,71,69,72,76,73], expected: [1,1,4,2,1,1,0,0] },
+    { temperatures: [30,40,50,60], expected: [1,1,1,0] },
+    { temperatures: [30,60,90], expected: [1,1,0] },
+];
+
+describe('dailyTemperatures', () => {
+    test.each(structuredClone(testcases))('dailyTemperatures($temperatures) -> $expected', ({ temperatures, expected }) => {
+        expect(dailyTemperatures(temperatures)).toStrictEqual(expected);
+    });
+});"
+`;

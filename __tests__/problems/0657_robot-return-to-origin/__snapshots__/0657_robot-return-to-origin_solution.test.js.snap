@@ -1,0 +1,40 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0657_robot-return-to-origin solution template: 0657_robot-return-to-origin 1`] = `
+"/**
+ * 0657. Robot Return to Origin
+ *
+ * Link: https://leetcode.com/problems/robot-return-to-origin/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - String (topic_10)
+ * - Simulation (topic_61055)
+ * - Mid Level (position_mid-level)
+ *
+ * Stats:
+ * - Total Accepted: 674,621
+ * - Total Submissions: 863,643
+ * - Acceptance Rate: 78.1%
+ *
+ * Similar Problems:
+ * - furthest-point-from-origin (Easy)
+ * - execution-of-all-suffix-instructions-staying-in-a-grid (Medium)
+ * - number-of-provinces (Medium)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} moves
+ * @return {boolean}
+ */
+const judgeCircle = (moves) => {};
+
+export { judgeCircle };"
+`;

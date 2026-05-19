@@ -1,0 +1,43 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2610_convert-an-array-into-a-2d-array-with-conditions solution template: 2610_convert-an-array-into-a-2d-array-with-conditions 1`] = `
+"/**
+ * 2610. Convert an Array Into a 2D Array With Conditions
+ *
+ * Link: https://leetcode.com/problems/convert-an-array-into-a-2d-array-with-conditions/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Senior (position_senior)
+ * - Weekly Contest 339 (contest_weekly-contest-339)
+ *
+ * Stats:
+ * - Total Accepted: 227,063
+ * - Total Submissions: 263,285
+ * - Acceptance Rate: 86.2%
+ *
+ * Hints:
+ * 1. Process the elements in the array one by one in any order and only create
+ * a new row in the matrix when we cannot put it into the existing rows
+ *
+ * 2. We can simply iterate over the existing rows of the matrix to see if we
+ * can place each element.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @return {number[][]}
+ */
+const findMatrix = (nums) => {};
+
+export { findMatrix };"
+`;

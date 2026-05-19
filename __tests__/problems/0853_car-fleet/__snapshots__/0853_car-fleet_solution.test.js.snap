@@ -1,0 +1,44 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0853_car-fleet solution template: 0853_car-fleet 1`] = `
+"/**
+ * 0853. Car Fleet
+ *
+ * Link: https://leetcode.com/problems/car-fleet/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Stack (topic_15)
+ * - Sorting (topic_61049)
+ * - Monotonic Stack (topic_61054)
+ * - Senior Staff (position_senior-staff)
+ * - Weekly Contest 89 (contest_weekly-contest-89)
+ *
+ * Stats:
+ * - Total Accepted: 491,607
+ * - Total Submissions: 892,139
+ * - Acceptance Rate: 55.1%
+ *
+ * Similar Problems:
+ * - count-collisions-on-a-road (Medium)
+ * - car-fleet-ii (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number} target
+ * @param {number[]} position
+ * @param {number[]} speed
+ * @return {number}
+ */
+const carFleet = (target, position, speed) => {};
+
+export { carFleet };"
+`;

@@ -1,0 +1,38 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0092_reverse-linked-list-ii solution template: 0092_reverse-linked-list-ii 1`] = `
+"/**
+ * 0092. Reverse Linked List II
+ *
+ * Link: https://leetcode.com/problems/reverse-linked-list-ii/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Linked List (topic_7)
+ *
+ * Stats:
+ * - Total Accepted: 1,322,647
+ * - Total Submissions: 2,567,400
+ * - Acceptance Rate: 51.5%
+ *
+ * Similar Problems:
+ * - reverse-linked-list (Easy)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {ListNode} head
+ * @param {number} left
+ * @param {number} right
+ * @return {ListNode}
+ */
+const reverseBetween = (head, left, right) => {};
+
+export { reverseBetween };"
+`;

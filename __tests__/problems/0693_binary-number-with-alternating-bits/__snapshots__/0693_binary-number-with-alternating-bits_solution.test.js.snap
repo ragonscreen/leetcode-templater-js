@@ -1,0 +1,37 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0693_binary-number-with-alternating-bits solution template: 0693_binary-number-with-alternating-bits 1`] = `
+"/**
+ * 0693. Binary Number with Alternating Bits
+ *
+ * Link: https://leetcode.com/problems/binary-number-with-alternating-bits/
+ * Category: Algorithms
+ * Difficulty: Easy
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Bit Manipulation (topic_19)
+ * - Mid Level (position_mid-level)
+ *
+ * Stats:
+ * - Total Accepted: 302,817
+ * - Total Submissions: 433,372
+ * - Acceptance Rate: 69.9%
+ *
+ * Similar Problems:
+ * - number-of-1-bits (Easy)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number} n
+ * @return {boolean}
+ */
+const hasAlternatingBits = (n) => {};
+
+export { hasAlternatingBits };"
+`;
