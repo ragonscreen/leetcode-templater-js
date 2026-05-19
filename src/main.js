@@ -2,7 +2,7 @@
 
 import { CONFIG } from './config.js';
 import { run } from './run.js';
-import { createFile } from './utils.js';
+import { createFile } from './utils/create-file.js';
 
 const { ADD_TESTS } = CONFIG;
 

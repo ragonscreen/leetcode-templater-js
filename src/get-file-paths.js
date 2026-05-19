@@ -1,7 +1,7 @@
 import { join } from 'node:path';
 
 import { CONFIG } from './config.js';
-import { padNum } from './utils.js';
+import { padNum } from './utils/pad-num.js';
 
 const sanitiseDirName = (dirName) => {
         return dirName.replace(/\/|\\/g, '').replace(/^(\.|\s)+$/g, '');

@@ -1,4 +1,5 @@
 import { CONFIG } from '../../config.js';
+import { getCurrentDate } from '../../utils/get-current-date.js';
 
 const {
         ADD_DESCRIPTION,
@@ -18,15 +19,6 @@ const {
         SORT_SIMILAR_PROBLEMS,
         ADD_HINTS,
 } = CONFIG;
-
-const getCurrentDate = () => {
-        const date = new Date();
-        const y = date.getFullYear();
-        const m = String(date.getMonth() + 1).padStart(2, '0');
-        const d = String(date.getDate()).padStart(2, '0');
-
-        return `${y}-${m}-${d}`;
-};
 
 const constructStringBasicDetails = (problemData) => {
         const { id, title, titleSlug, category, difficulty } = problemData;

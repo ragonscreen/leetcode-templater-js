@@ -1,5 +1,5 @@
 import { CONFIG } from '../../config.js';
-import { gap } from '../../utils.js';
+import { gap } from '../../utils/gap.js';
 import { adjustCustomMatchers } from './adjust-custom-matchers.js';
 import { constructCustomExpect } from './construct-custom-expects.js';
 
