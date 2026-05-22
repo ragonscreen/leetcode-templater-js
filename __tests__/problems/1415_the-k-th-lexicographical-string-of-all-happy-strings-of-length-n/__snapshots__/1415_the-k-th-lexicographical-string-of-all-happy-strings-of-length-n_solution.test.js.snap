@@ -1,0 +1,42 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1415_the-k-th-lexicographical-string-of-all-happy-strings-of-length-n solution template: 1415_the-k-th-lexicographical-string-of-all-happy-strings-of-length-n 1`] = `
+"/**
+ * 1415. The k-th Lexicographical String of All Happy Strings of Length n
+ *
+ * Link: https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - String (topic_10)
+ * - Backtracking (topic_14)
+ * - Staff (position_staff)
+ * - Biweekly Contest 24 (contest_biweekly-contest-24)
+ *
+ * Stats:
+ * - Total Accepted: 276,299
+ * - Total Submissions: 317,174
+ * - Acceptance Rate: 87.1%
+ *
+ * Hints:
+ * 1. Generate recursively all the happy strings of length n.
+ *
+ * 2. Sort them in lexicographical order and return the kth string if it exists.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number} n
+ * @param {number} k
+ * @return {string}
+ */
+const getHappyString = (n, k) => {};
+
+export { getHappyString };"
+`;

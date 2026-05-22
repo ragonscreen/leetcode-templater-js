@@ -1,0 +1,45 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`2657_find-the-prefix-common-array-of-two-arrays solution template: 2657_find-the-prefix-common-array-of-two-arrays 1`] = `
+"/**
+ * 2657. Find the Prefix Common Array of Two Arrays
+ *
+ * Link: https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Hash Table (topic_6)
+ * - Bit Manipulation (topic_19)
+ * - Senior (position_senior)
+ * - Biweekly Contest 103 (contest_biweekly-contest-103)
+ *
+ * Stats:
+ * - Total Accepted: 275,079
+ * - Total Submissions: 314,078
+ * - Acceptance Rate: 87.6%
+ *
+ * Hints:
+ * 1. Consider keeping a frequency array that stores the count of occurrences
+ * of each number till index i.
+ *
+ * 2. If a number occurred two times, it means it occurred in both A and B
+ * since they’re both permutations so add one to the answer.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} A
+ * @param {number[]} B
+ * @return {number[]}
+ */
+const findThePrefixCommonArray = (A, B) => {};
+
+export { findThePrefixCommonArray };"
+`;

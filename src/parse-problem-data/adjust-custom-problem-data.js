@@ -16,8 +16,14 @@ const adjConvertAnArrayIntoA2dArrayWithConditions = (problemData) => {
         problemData.metadata.outputs.push([[4, 3, 2, 1]]);
 };
 
-// 26 and 27 are just plain weird
+// Missing "Explanation" title in the third testcase causes it to be parsed
+// inside the output.
+const adjFindTheSmallestBalancedIndex = (problemData) => {
+        problemData.metadata.outputs[2] = -1;
+};
 
+// 26 and 27 are just plain weird
+// 26
 const adjRemoveDuplicatesFromSortedArray = (problemData) => {
         problemData.metadata.outputs = [
                 { len: 2, nums: [1, 2] },
@@ -25,6 +31,7 @@ const adjRemoveDuplicatesFromSortedArray = (problemData) => {
         ];
 };
 
+// 27
 const adjRemoveElement = (problemData) => {
         problemData.metadata.outputs = [
                 { len: 2, nums: [2, 2] },
@@ -75,6 +82,8 @@ const adjustCustomProblemData = (problemData) => {
                 'count-and-say': adjCountAndSay,
                 'convert-an-array-into-a-2d-array-with-conditions':
                         adjConvertAnArrayIntoA2dArrayWithConditions,
+                'find-the-smallest-balanced-index':
+                        adjFindTheSmallestBalancedIndex,
                 'remove-element': adjRemoveElement,
                 'remove-duplicates-from-sorted-array':
                         adjRemoveDuplicatesFromSortedArray,

@@ -1,0 +1,18 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1415_the-k-th-lexicographical-string-of-all-happy-strings-of-length-n test template: 1415_the-k-th-lexicographical-string-of-all-happy-strings-of-length-n 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { getHappyString } from '../../src/1401-1500/1415_the-k-th-lexicographical-string-of-all-happy-strings-of-length-n.js';
+
+const testcases = [
+    { n: 1, k: 3, expected: "c" },
+    { n: 1, k: 4, expected: "" },
+    { n: 3, k: 9, expected: "cab" },
+];
+
+describe('getHappyString', () => {
+    test.each(structuredClone(testcases))('getHappyString($n, $k) -> $expected', ({ n, k, expected }) => {
+        expect(getHappyString(n, k)).toStrictEqual(expected);
+    });
+});"
+`;

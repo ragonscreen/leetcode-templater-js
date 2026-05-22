@@ -27,8 +27,8 @@ Highly confgurable solution and test file template generator for LeetCode proble
   - [Bucket Directories](#bucket-directories)
   - [Function Type](#function-type)
   - [ESM vs CJS syntax](#esm-vs-cjs-syntax)
-  - [Import Structure](#import-structure)
-  - [Add Comments](#add-comments)
+  - [Imports](#imports)
+  - [Comments](#comments)
   - [Solution Description](#solution-description)
 - [Limitations](#limitations)
   - [Inappropriate Matcher](#inappropriate-matcher)
@@ -78,7 +78,7 @@ Every single line of code and documentation has been written, tested, and verifi
 
 One of the major pain points of this project is parsing outputs of the default testcases. LeetCode does not provide them in an object format, and they have to be parsed from the problem description HTML, which can be very inconsistent between problems. This may result in occasional parsing errors.
 
-As of 2026 May 11, this templater has been tested against **402 LeetCode problems** with no errors. However, there are many more problems available on LeetCode, and it is beyond my scope to test all of them. As such, should you encounter an error, please create an issue and it will get fixed as soon as possible.
+As of 2026 May 22, this templater has been tested against **443 LeetCode problems** with no errors. However, there are many more problems available on LeetCode, and it is beyond my scope to test all of them. As such, should you encounter an error, please create an issue and it will get fixed as soon as possible.
 
 ## Features
 
@@ -175,7 +175,7 @@ describe('minCapability', () => {
 });
 ```
 
-Adding your own testcases is easy. Simply add more lines to the `testcases` array, containing your custom testcases.
+Adding your own testcases is easy. Simply add more lines to the `testcases` array, containing your custom testcases, including computed testcases for testing larger inputs:
 
 ```javascript
 const testcases = [
@@ -186,6 +186,10 @@ const testcases = [
         // custom testcases
         { nums: [2, 3, 5, 9, 4], k: 3, expected: 5 },
         { nums: [2, 1, 5, 1, 4, 2], k: 3, expected: 2 },
+
+        // computed testcases
+        { nums: Array.from({ length: 100_000 }, () => 1), k: 1, expected: 1 },
+        { nums: Array.from({ length: 100_000 }, (_, i) => i), k: 5, expected: 8 },
 ];
 ```
 
@@ -945,7 +949,7 @@ const { describe, expect, test } = require('bun:test');
 const { twoSum } = require('0001_two-sum.js');
 ```
 
-### Import Structure
+### Imports
 
 Use relative imports when importing solutions into test files. (recommended: `true`)
 
@@ -970,7 +974,7 @@ import { twoSum } from '../../src/0001-0100/0001_two-sum.js';
 import { twoSum } from '/src/0001-0100/0001_two-sum.js';
 ```
 
-### Add Comments
+### Comments
 
 Enable or disable comments in solution files.
 
@@ -1394,16 +1398,16 @@ const testcases = [
 ];
 
 describe('findDifferentBinaryString', () => {
-        test.each(
-                structuredClone(testcases),
-        )('findDifferentBinaryString($nums) -> $expected', ({
-                nums,
-                expected,
-        }) => {
-                expect(
-                        expected.includes(findDifferentBinaryString(nums)),
-                ).toStrictEqual(true);
-        });
+        test.each(structuredClone(testcases))(
+                'findDifferentBinaryString($nums) -> $expected',
+                ({ nums, expected }) => {
+                        expect(
+                                expected.includes(
+                                        findDifferentBinaryString(nums),
+                                ),
+                        ).toStrictEqual(true);
+                },
+        );
 });
 ```
 
@@ -1741,7 +1745,7 @@ The following problems have been manually patched to provide the correct matcher
 - `0004_median-of-two-sorted-arrays`
 - `1701_average-waiting-time`
 
-miscellaneous
+Miscellaneous
 
 - `0026_remove-duplicates-from-sorted-array`
 - `0027_remove-element`
@@ -1752,11 +1756,12 @@ miscellaneous
 - `2028_find-missing-observations`
 - `2610_convert-an-array-into-a-2d-array-with-conditions`
 
-There are certain problems with errors in their HTML description, or other issues that require custom parsing. The following problems have as such been manually patched.
+Errors in HTML description or other issues that require custom parsing
 
 - `0038_count-and-say` - The two examples provided and the two default testcases are in the opposite order.
 - `0778_swim-in-rising-water` - The "Explanation" title of the first testcase is not wrapped inside `<strong>` tags.
 - `2610_convert-an-array-into-a-2d-array-with-conditions` - The second example in the description of this problem and the second default testcase are different from each other.
+- `3862_find-the-smallest-balanced-index` - The "Explanation" title is missing in the third testcase.
 
 > The above lists are by no means exhaustive. As more issues are discovered, problems will continue to get manually patched.
 
