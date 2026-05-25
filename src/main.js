@@ -7,16 +7,12 @@ import { createFile } from './utils/create-file.js';
 const { ADD_TESTS } = CONFIG;
 
 const main = async () => {
-        const { solution, test } = await run();
+        const { filePaths, solution, test } = await run();
 
-        console.log(solution);
-        console.log();
-        console.log(test);
-
-        // await createFile(filePaths.filePathSolution, solution);
+        await createFile(filePaths.filePathSolution, solution);
 
         if (ADD_TESTS) {
-                // await createFile(filePaths.filePathTest, test);
+                await createFile(filePaths.filePathTest, test);
         }
 };
 

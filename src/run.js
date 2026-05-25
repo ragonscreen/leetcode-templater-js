@@ -58,7 +58,7 @@ const run = async () => {
         const solution = constructSolution(problemDataParsed);
         const test = constructTest(problemDataParsed, filePaths);
 
-        return { problemData, problemDataParsed, solution, test };
+        return { problemData, problemDataParsed, filePaths, solution, test };
 };
 
 export { run };
