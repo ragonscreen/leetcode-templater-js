@@ -1,0 +1,50 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0360_sort-transformed-array solution template: 0360_sort-transformed-array 1`] = `
+"/**
+ * 0360. Sort Transformed Array
+ *
+ * Link: https://leetcode.com/problems/sort-transformed-array/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Math (topic_8)
+ * - Two Pointers (topic_9)
+ * - Sorting (topic_61049)
+ *
+ * Stats:
+ * - Total Accepted: 77,360
+ * - Total Submissions: 133,019
+ * - Acceptance Rate: 58.2%
+ *
+ * Similar Problems:
+ * - squares-of-a-sorted-array (Easy)
+ * - minimum-time-to-repair-cars (Medium)
+ *
+ * Hints:
+ * 1. x^2 + x  will form a parabola.
+ *
+ * 2. Parameter A in:  A * x^2 + B * x + C dictates the shape of the
+ * parabola.</br>Positive A means the parabola remains concave
+ * (high-low-high), but negative A inverts the parabola to be convex (low-high-low).
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} nums
+ * @param {number} a
+ * @param {number} b
+ * @param {number} c
+ * @return {number[]}
+ */
+const sortTransformedArray = (nums, a, b, c) => {};
+
+export { sortTransformedArray };"
+`;

@@ -1,0 +1,17 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0360_sort-transformed-array test template: 0360_sort-transformed-array 1`] = `
+"import { describe, expect, test } from 'bun:test';
+import { sortTransformedArray } from '../../src/0301-0400/0360_sort-transformed-array.js';
+
+const testcases = [
+    { nums: [-4,-2,2,4], a: 1, b: 3, c: 5, expected: [3,9,15,33] },
+    { nums: [-4,-2,2,4], a: -1, b: 3, c: 5, expected: [-23,-5,1,7] },
+];
+
+describe('sortTransformedArray', () => {
+    test.each(structuredClone(testcases))('sortTransformedArray($nums, $a, $b, $c) -> $expected', ({ nums, a, b, c, expected }) => {
+        expect(sortTransformedArray(nums, a, b, c)).toStrictEqual(expected);
+    });
+});"
+`;

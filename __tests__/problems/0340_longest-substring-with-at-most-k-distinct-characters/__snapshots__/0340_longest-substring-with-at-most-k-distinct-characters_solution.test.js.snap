@@ -1,0 +1,44 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0340_longest-substring-with-at-most-k-distinct-characters solution template: 0340_longest-substring-with-at-most-k-distinct-characters 1`] = `
+"/**
+ * 0340. Longest Substring with At Most K Distinct Characters
+ *
+ * Link: https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Hash Table (topic_6)
+ * - String (topic_10)
+ * - Sliding Window (topic_55821)
+ *
+ * Stats:
+ * - Total Accepted: 400,766
+ * - Total Submissions: 801,255
+ * - Acceptance Rate: 50.0%
+ *
+ * Similar Problems:
+ * - longest-repeating-character-replacement (Medium)
+ * - longest-substring-with-at-most-two-distinct-characters (Medium) (Premium)
+ * - longest-substring-without-repeating-characters (Medium)
+ * - max-consecutive-ones-iii (Medium)
+ * - maximize-the-confusion-of-an-exam (Medium)
+ * - subarrays-with-k-different-integers (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @param {number} k
+ * @return {number}
+ */
+const lengthOfLongestSubstringKDistinct = (s, k) => {};
+
+export { lengthOfLongestSubstringKDistinct };"
+`;

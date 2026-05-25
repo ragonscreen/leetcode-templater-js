@@ -1,0 +1,58 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`1151_minimum-swaps-to-group-all-1s-together solution template: 1151_minimum-swaps-to-group-all-1s-together 1`] = `
+"/**
+ * 1151. Minimum Swaps to Group All 1's Together
+ *
+ * Link: https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Array (topic_5)
+ * - Sliding Window (topic_55821)
+ * - Senior (position_senior)
+ * - Biweekly Contest 6 (contest_biweekly-contest-6)
+ *
+ * Stats:
+ * - Total Accepted: 88,917
+ * - Total Submissions: 145,182
+ * - Acceptance Rate: 61.2%
+ *
+ * Similar Problems:
+ * - minimum-swaps-to-group-all-1s-together-ii (Medium)
+ * - time-needed-to-rearrange-a-binary-string (Medium)
+ * - minimum-adjacent-swaps-for-k-consecutive-ones (Hard)
+ * - minimum-moves-to-pick-k-ones (Hard)
+ *
+ * Hints:
+ * 1. How many 1's should be grouped together ? Is not a fixed number?
+ *
+ * 2. Yeah it's just the number of 1's the whole array has. Let's name this
+ * number as ones
+ *
+ * 3. Every subarray of size of ones, needs some number of swaps to reach, Can
+ * you find the number of swaps needed to group all 1's in this subarray?
+ *
+ * 4. It's the number of zeros in that subarray.
+ *
+ * 5. Do you need to count the number of zeros all over again for every
+ * position ?
+ *
+ * 6. Use Sliding Window technique.
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {number[]} data
+ * @return {number}
+ */
+const minSwaps = (data) => {};
+
+export { minSwaps };"
+`;

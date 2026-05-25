@@ -464,6 +464,8 @@ describe('sortTransformedArray', () => {
 ```
 
 > Notice that `expected` is set to `undefined` for each testcase, as outputs are unavailable for premium problems. This is not the expected return value, and as such, you must add the output yourself or copy it from some other source.
+>
+> Additionally, I have added the outputs to the premium problems I have personally encountered. For a complete list of premium problems with appropriate outputs, refer to
 
 ### JavaScript Problems
 
@@ -1755,6 +1757,16 @@ Miscellaneous
 - `1968_array-with-elements-not-equal-to-average-of-neighbors`
 - `2028_find-missing-observations`
 - `2610_convert-an-array-into-a-2d-array-with-conditions`
+
+Premium
+
+- `0159_longest-substring-with-at-most-two-distinct-characters`
+- `0249_group-shifted-strings`
+- `0340_longest-substring-with-at-most-k-distinct-characters`
+- `0360_sort-transformed-array`
+- `0487_max-consecutive-ones-ii`
+- `1100_find-k-length-substrings-with-no-repeated-characters`
+- `1151_minimum-swaps-to-group-all-1s-together`
 
 Errors in HTML description or other issues that require custom parsing
 

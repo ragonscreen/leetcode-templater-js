@@ -1,0 +1,41 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`0159_longest-substring-with-at-most-two-distinct-characters solution template: 0159_longest-substring-with-at-most-two-distinct-characters 1`] = `
+"/**
+ * 0159. Longest Substring with At Most Two Distinct Characters
+ *
+ * Link: https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/
+ * Category: Algorithms
+ * Difficulty: Medium
+ * Date: 2026-04-27
+ * Author: <SOLUTION_AUTHOR_NAME> (<SOLUTION_AUTHOR_URL>)
+ *
+ * Topics:
+ * - Hash Table (topic_6)
+ * - String (topic_10)
+ * - Sliding Window (topic_55821)
+ *
+ * Stats:
+ * - Total Accepted: 303,329
+ * - Total Submissions: 531,467
+ * - Acceptance Rate: 57.1%
+ *
+ * Similar Problems:
+ * - longest-substring-with-at-most-k-distinct-characters (Medium) (Premium)
+ * - longest-substring-without-repeating-characters (Medium)
+ * - sliding-window-maximum (Hard)
+ * - subarrays-with-k-different-integers (Hard)
+ */
+
+/**
+ * Approach:
+ * Time Complexity: O()
+ * Space Complexity: O()
+ * 
+ * @param {string} s
+ * @return {number}
+ */
+const lengthOfLongestSubstringTwoDistinct = (s) => {};
+
+export { lengthOfLongestSubstringTwoDistinct };"
+`;

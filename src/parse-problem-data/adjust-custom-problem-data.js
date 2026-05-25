@@ -72,8 +72,41 @@ const adjTestMatcherToBeOneOf = (problemData) => {
         }
 };
 
+// Premium problems
+const adjTestMatcherPremium = (problemData) => {
+        const customOutputs = {
+                'longest-substring-with-at-most-two-distinct-characters': [
+                        3, 5,
+                ],
+                'longest-substring-with-at-most-k-distinct-characters': [3, 2],
+                'sort-transformed-array': [
+                        [3, 9, 15, 33],
+                        [-23, -5, 1, 7],
+                ],
+                'max-consecutive-ones-ii': [4, 4],
+                'find-k-length-substrings-with-no-repeated-characters': [6, 0],
+                'minimum-swaps-to-group-all-1s-together': [1, 0, 3],
+                'group-shifted-strings': [
+                        [
+                                ['acef'],
+                                ['az', 'ba'],
+                                ['abc', 'bcd', 'xyz'],
+                                ['a', 'z'],
+                        ],
+                        [['a']],
+                ],
+        };
+
+        const customOutput = customOutputs[problemData.titleSlug];
+
+        if (customOutput) {
+                problemData.metadata.outputs = customOutput;
+        }
+};
+
 const adjDefault = (problemData) => {
         adjTestMatcherToBeOneOf(problemData);
+        adjTestMatcherPremium(problemData);
 };
 
 const adjustCustomProblemData = (problemData) => {
